@@ -1,7 +1,6 @@
-NIO
+About
 ===
 
-The all-signing, all-dancing, intelligent event processing machine!
+NIO - The all-singing, all-dancing, intelligent event processing machine!
 
-[Expression Properties](nio_script.md)
---------------------------------------
+###[Expression Properties](nio_script.md)
