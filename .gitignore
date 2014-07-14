@@ -19,3 +19,4 @@ test_results.xml
 dist
 build
 src/nio.egg-info
+_build
