@@ -50,17 +50,17 @@ When called with a block or service name, nio-instance outputs a list of all the
 
     $ nio-instance ls blocks TwitterPoster
     +------------------------+----------------------------------------------------+
-	| TwitterPoster          |                                                    |
-	+------------------------+----------------------------------------------------+
-	| creds                  |                                                    |
-	| +-> oauth_token        |                XXXXXXXXXXXXXXXXXXX                 |
-	| +-> consumer_key       |                XXXXXXXXXXXXXXXXXXX                 |
-	| +-> oauth_token_secret |                XXXXXXXXXXXXXXXXXXX                 |
-	| +-> app_secret         |                XXXXXXXXXXXXXXXXXXX                 |
-	| log_level              |                       DEBUG                        |
-	| status                 |                 What the {{$foo}}?                 |
-	| type                   |                    TwitterPost                     |
-	+------------------------+----------------------------------------------------+
+    | TwitterPoster          |                                                    |
+    +------------------------+----------------------------------------------------+
+    | creds                  |                                                    |
+    | +-> oauth_token        |                XXXXXXXXXXXXXXXXXXX                 |
+    | +-> consumer_key       |                XXXXXXXXXXXXXXXXXXX                 |
+    | +-> oauth_token_secret |                XXXXXXXXXXXXXXXXXXX                 |
+    | +-> app_secret         |                XXXXXXXXXXXXXXXXXXX                 |
+    | log_level              |                       DEBUG                        |
+    | status                 |                 What the {{$foo}}?                 |
+    | type                   |                    TwitterPost                     |
+    +------------------------+----------------------------------------------------+
 	
 To list the HTTP commands (with enumerated parameters) exposed by a particular block or service, simply append the '--cmd' flag:
 
@@ -85,6 +85,8 @@ This subcommand allows you to send commands to live instances. Because of the wa
 	`http://localhost:8181/services/TestPost//start` was processed successfully
 	
 The syntax for adding parameters to commands is as follows:
+
+.. code-block:: bash
 	
 	$ nio-instance co log TestPost SignalLogger --args 'phrase=foobar'
 	
