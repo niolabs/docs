@@ -95,7 +95,42 @@ If the command response body is non-empty, its contents are printed to stdout. O
 config (cfg)
 ~~~~~~~~~~~~
 
-TODO
+This subcommand allows you to configure block and service properties while the instance is live. Of course, a given service won't load a new configuration until its next startup cycle, but any changes you make here will hang around until then. Note that this is an interactive portion of the utility. If you'd like to leave the 
+
+NB: If you want to automate configuration, it may be easier to make your updates directly via HTTP PUT requests. We may add a feature like this in future.
+
+..code-block:: bash
+
+    $ nio-instance cfg services TestPost
+    
+    log_level (select):
+    Using current value: DEBUG
+    
+    auto_start (bool): T
+    
+If the block or service you're configuring holds an Object Property, each property held by that object is configured in turn:
+
+..code-block:: bash
+
+    $ nio-instance cfg blocks TwitterPoster
+    
+    creds (object):
+    +->oauth_token (str):
+    Using current value: XXXXXXXX
+    +->consumer_key (str):
+    Using current value: XXXXXXXX
+    +->app_secret (str):
+    Using current value: XXXXXXXX
+    +->oauth_token_secret (str):
+    Using current value: XXXXXXXX
+
+    status (str): "It's gonna rain"
+
+    log_level (select):
+    Using current value: DEBUG
+    
+
+
 
 link (ln)
 ~~~~~~~~~
