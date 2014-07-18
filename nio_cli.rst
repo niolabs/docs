@@ -99,7 +99,7 @@ This subcommand allows you to configure block and service properties while the i
 
 NB: If you want to automate configuration, it may be easier to make your updates directly via HTTP PUT requests. We may add a feature like this in future.
 
-..code-block:: bash
+.. code-block:: bash
 
     $ nio-instance cfg services TestPost
     
@@ -110,7 +110,7 @@ NB: If you want to automate configuration, it may be easier to make your updates
     
 If the block or service you're configuring holds an Object Property, each property held by that object is configured in turn:
 
-..code-block:: bash
+.. code-block:: bash
 
     $ nio-instance cfg blocks TwitterPoster
     
