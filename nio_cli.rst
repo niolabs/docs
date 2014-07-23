@@ -90,6 +90,8 @@ The syntax for adding parameters to commands is as follows:
 	
 	$ nio-instance co log TestPost SignalLogger --args 'phrase=foobar'
 	
+Passing the `--interactive` (`-i`) flag to command tells nio-instance to prompt you for command parameters.
+	
 If the command response body is non-empty, its contents are printed to stdout. Otherwise, the terminal remains silent.
 
 config (cfg)
@@ -132,7 +134,67 @@ If the block or service you're configuring holds an Object Property, each proper
 
 
 
-link (ln)
+build (ln)
 ~~~~~~~~~
 
-TODO
+This final subcommand allows you to build NIO services from the command line by creating links between blocks that are loaded into the sytem. Calling this subcommand on a service with no other arguments produces a tabular representation of that service's execution.
+
+.. code-block:: bash
+
+    $ nio-instance build TestPost
+    +--------------+--------------+
+    | Output Block |      0       |
+    +--------------+--------------+
+    |     met      | SignalLogger |
+    |   CountMe    |     Deb      |
+    |     Deb      | SignalLogger |
+    |   PostToMe   |   CountMe    |
+    +--------------+--------------+
+    
+Let's use `ls` to grab the list of available blocks and use `build` to send the output of `CountMe` to another block!
+
+.. code-block:: bash
+
+    $ nio-instance ls blocks
+    +----------------+--------------+-----------+
+    | name           |     type     | log_level |
+    +----------------+--------------+-----------+
+    | count          |   Counter    |   ERROR   |
+    | met            |   Metrics    |   ERROR   |
+    | SignalLogger   | LoggerBlock  |   DEBUG   |
+    | PostToMe       |  PostSignal  |   DEBUG   |
+    | Deb            |  Debouncer   |   ERROR   |
+    | FacebookPoster | FacebookPost |   ERROR   |
+    | CountMe        |   Counter    |   ERROR   |
+    | fil            |    Filter    |   ERROR   |
+    | TwitterPoster  | TwitterPost  |   DEBUG   |
+    +----------------+--------------+-----------+
+    
+    $ nio-instance build TestPost 'CountMe=>TwitterPoster'
+    +--------------+--------------+---------------+
+    | Output Block |      0       |       1       |
+    +--------------+--------------+---------------+
+    |   CountMe    |     Deb      | TwitterPoster |
+    |     met      | SignalLogger |               |
+    |   PostToMe   |   CountMe    |               |
+    |     Deb      | SignalLogger |               |
+    +--------------+--------------+---------------+
+    
+Additionally, if you need to add a block `foo` to a service without connecting it to any other blocks (e.g. a block which simply serves an HTTP endpoint):
+
+.. code-block:: bash
+
+    $ nio-instance build TestPost 'foo=>'
+    +--------------+--------------+---------------+
+    | Output Block |      0       |       1       |
+    +--------------+--------------+---------------+
+    |   CountMe    |     Deb      | TwitterPoster |
+    |     met      | SignalLogger |               |
+    |   PostToMe   |   CountMe    |               |
+    |     Deb      | SignalLogger |               |
+    |     foo      |              |               |
+    +--------------+--------------+---------------+
+    
+In this case, `foo` has no receivers, and any that you add will appear starting from column 0 of the execution table.
+
+Voila! You're now up and running with the NIO command line interface. Happy hacking!
