@@ -4,7 +4,7 @@ NIO Command Line Tools
 nio-instance
 -----------
 
-NIO exposes a rich API for interacting with running instances. We provide a robust browser-based graphical user interface to same, but such interfaces are rarely well suited to automation of tasks and rapid context switching. For this reason, we provide the nio-instance command line tool, which allows users and administrators to start, stop, view, configure, and build blocks and services from a UNIX command line.
+NIO exposes a rich API for interacting with running instances. We provide a robust browser-based graphical user interface to same, but such interfaces are rarely well suited to automation of tasks and rapid context switching. For this reason, we provide the **nio-instance** command line tool, which allows users and administrators to start, stop, view, configure, and build blocks and services from a UNIX command line.
 
 Here's an example:
 
@@ -20,15 +20,29 @@ Here's an example:
     | sys_metadata |   NULL  |
     | type         | Service |
     +--------------+---------+
+
+**nio-instance** is configurable by python `.ini` file. By default, it looks in `$HOME/.config/nio-cli.ini` under the section **nio-instance** for a hostname, port, username, and password. The path to the `.ini` file is configurable by command-line option, but make sure you put all the **nio-instance** options under the appropriate section. Here's an example:
+
+.. code-block:: conf
+
+    [DEFAULT]
+    host = localhost
+    port = 8181
+    username = User
+    password = User
     
-nio-instance exposes a number of sub-commands to perform various tasks. Each, and its syntax, is represented by one of the following subsections.
+    [nio-instance]
+    username = Admin
+    password = Admin
+    
+**nio-instance** exposes a number of sub-commands to perform various tasks. Each, and its syntax, is represented by one of the following subsections.
 
 list (ls)
 ~~~~~~~~~
 
 When called without a specific block or service name, this subcommand lists all the blocks or services loaded in the instance along with a common subset of properties:
 
-.. code-block:: bash
+.. code-block:: bash**
 
 	$ nio-instance ls blocks
 	+----------------+--------------+-----------+
@@ -44,7 +58,7 @@ When called without a specific block or service name, this subcommand lists all 
 	| SignalLogger   | LoggerBlock  |   DEBUG   |
 	+----------------+--------------+-----------+
 	
-When called with a block or service name, nio-instance outputs a list of all the properties on that block or service:
+When called with a block or service name, **nio-instance** outputs a list of all the properties on that block or service:
 
 .. code-block:: bash
 
@@ -90,7 +104,7 @@ The syntax for adding parameters to commands is as follows:
 	
 	$ nio-instance co log TestPost SignalLogger --args 'phrase=foobar'
 	
-Passing the `--interactive` (`-i`) flag to command tells nio-instance to prompt you for command parameters.
+Passing the `--interactive` (`-i`) flag to command tells **nio-instance** to prompt you for command parameters.
 	
 If the command response body is non-empty, its contents are printed to stdout. Otherwise, the terminal remains silent.
 
