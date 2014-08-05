@@ -32,7 +32,7 @@ Here's an example of the most basic possible block, one that accepts incoming si
     class IDBlock(Block):
     
         def process_signals(self, signals):
-    		self.notify_signals(
+    		self.notify_signals(signals)
     		
 With no modification, this block will be discovered by a correctly configured NIO service and could run as part of its execution. The core delivers signals notified by other blocks to `IDBlock.process_signals`, where any necessary processing is performed and, optionally, the signals are notified again.
 
