@@ -13,5 +13,7 @@ Table of Contents
    :maxdepth: 2
    
    getstarted
+   buildapplication
    expressions
    nio_cli
+   
