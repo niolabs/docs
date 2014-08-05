@@ -23,7 +23,7 @@ Blocks
 ------
 Here's an example of the most basic possible block, one that accepts incoming signals and passes them along, untouched:
 
-..code-block:: python
+.. code-block:: python
 
     from nio.common.blocks.base import Block
     from nio.common.discovery import Discoverable, DiscoverableType
