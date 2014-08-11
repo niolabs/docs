@@ -86,6 +86,20 @@ To list the HTTP commands (with enumerated parameters) exposed by a particular b
 	+---------+------------------+
 	| log     | phrase: (string) |
 	+---------+------------------+
+	
+To view the block execution of a particular service (in tabular form), append the '--exec' flag:
+
+.. code-block:: bash
+
+    $ nio-instance ls services SomeService --exec
+    +--------------+--------------+
+    | Output Block |      0       |
+    +--------------+--------------+
+    |     met      | SignalLogger |
+    |   CountMe    |     Deb      |
+    |     Deb      | SignalLogger |
+    |   PostToMe   |   CountMe    |
+    +--------------+--------------+
    	
 	
 command (co)
@@ -104,14 +118,14 @@ The syntax for adding parameters to commands is as follows:
 	
 	$ nio-instance co log TestPost SignalLogger --args 'phrase=foobar'
 	
-Passing the `--interactive` (`-i`) flag to command tells **nio-instance** to prompt you for command parameters.
+Passing the `--auto` (`-a`) flag to command tells **nio-instance** to read command arguments from the command line.
 	
-If the command response body is non-empty, its contents are printed to stdout. Otherwise, the terminal remains silent.
+If the command response body is non-empty, its contents are printed to stdout; otherwise, the terminal remains silent.
 
 config (cfg)
 ~~~~~~~~~~~~
 
-This subcommand allows you to configure block and service properties while the instance is live. Of course, a given service won't load a new configuration until its next startup cycle, but any changes you make here will hang around until then. Note that this is an interactive portion of the utility. If you'd like to leave the 
+This subcommand allows you to configure new and existing block and service instances while the NIO instance is live. Of course, a given service won't load a new configuration until its next startup cycle, but any changes you make here will hang around until then. Note that this is an interactive portion of the utility.
 
 NB: If you want to automate configuration, it may be easier to make your updates directly via HTTP PUT requests. We may add a feature like this in future.
 
@@ -145,17 +159,45 @@ If the block or service you're configuring holds an Object Property, each proper
     log_level (select):
     Using current value: DEBUG
     
+`nio-instance` interprets attempts to configure nonexistent resources as creation events. That is, the following sequence results in the creation of a block called "CriticalLogger", which can subsequently be added to any service execution in the system.
 
+.. code-block:: bash
+
+    $ nio-instance cfg blocks AnotherLogger
+    NIOClient: NIO returned status 404
+    type (str): LoggerBlock
+    log_level (select): CRITICAL
+    +----------------------+-------------+
+    | Name: CriticalLogger |             |
+    +----------------------+-------------+
+    | log_level            |   CRITICAL  |
+    | type                 | LoggerBlock |
+    +----------------------+-------------+
+    
+Currently, NIO ships with only one service type (`Service`), but developers are free to add both new blocks and services as they wish.
+
+update
+~~~~~~
+
+The `update` subcommand command is very simple but very important. It compels a running NIO instance to rediscover each of the block types in its argument list, allowing developers to perform live updates to block implementations. For example, after updating the implementation for the LoggerBlock:
+
+.. code-block:: bash
+
+    $ nio-instance update LoggerBlock
+    
+If all the block types are valid, standard out should remain silent. 
+
+NB: The current implementations of a running block will remain in memory until the enclosing service is restarted.
 
 
 build (ln)
 ~~~~~~~~~
 
-This final subcommand allows you to build NIO services from the command line by creating links between blocks that are loaded into the sytem. Calling this subcommand on a service with no other arguments produces a tabular representation of that service's execution.
+This final subcommand allows you to build NIO services from the command line by creating links between blocks that are loaded into the sytem. First, let's use `ls` to check out the execution of the `TestPost` service and view the list of blocks available in the system.
 
 .. code-block:: bash
 
-    $ nio-instance build TestPost
+    $ nio-instance ls services TestPost --exec
     +--------------+--------------+
     | Output Block |      0       |
     +--------------+--------------+
@@ -165,10 +207,6 @@ This final subcommand allows you to build NIO services from the command line by 
     |   PostToMe   |   CountMe    |
     +--------------+--------------+
     
-Let's use `ls` to grab the list of available blocks and use `build` to send the output of `CountMe` to another block!
-
-.. code-block:: bash
-
     $ nio-instance ls blocks
     +----------------+--------------+-----------+
     | name           |     type     | log_level |
@@ -183,32 +221,42 @@ Let's use `ls` to grab the list of available blocks and use `build` to send the 
     | fil            |    Filter    |   ERROR   |
     | TwitterPoster  | TwitterPost  |   DEBUG   |
     +----------------+--------------+-----------+
+
     
-    $ nio-instance build TestPost 'CountMe=>TwitterPoster'
-    +--------------+--------------+---------------+
-    | Output Block |      0       |       1       |
-    +--------------+--------------+---------------+
-    |   CountMe    |     Deb      | TwitterPoster |
-    |     met      | SignalLogger |               |
-    |   PostToMe   |   CountMe    |               |
-    |     Deb      | SignalLogger |               |
-    +--------------+--------------+---------------+
-    
-Additionally, if you need to add a block `foo` to a service without connecting it to any other blocks (e.g. a block which simply serves an HTTP endpoint):
+Finally, we can use `build` to connect the outputs of `CountMe` and `PostToMe` to the input of another block!
 
 .. code-block:: bash
 
-    $ nio-instance build TestPost 'foo=>'
+     
+    $ nio-instance build TestPost CountMe TwitterPoster
+    +--------------+--------------+---------------+
+    | Output Block |      0       |       1       |
+    +--------------+--------------+---------------+
+    |   CountMe    |     Deb      | TwitterPoster |
+    |     met      | SignalLogger |               |
+    |   PostToMe   |   CountMe    | TwitterPoster |
+    |     Deb      | SignalLogger |               |
+    +--------------+--------------+---------------+
+    
+The build subcommand behaves somewhat similarly to the UNIX `cp` command in that it takes a series of *n* block instances of which the firs *n-1* represent "source" blocks, while the *n*th block is the single sink.
+
+Additionally, if you need to add a block `fil` to a service without connecting it to any other blocks (e.g. a block which simply serves an HTTP endpoint):
+
+.. code-block:: bash
+
+    $ nio-instance build TestPost fil
     +--------------+--------------+---------------+
     | Output Block |      0       |       1       |
     +--------------+--------------+---------------+
     |   CountMe    |     Deb      | TwitterPoster |
     |     met      | SignalLogger |               |
     |   PostToMe   |   CountMe    |               |
-    |     Deb      | SignalLogger |               |
-    |     foo      |              |               |
+    |     Deb      | SignalLogger | TwitterPoster |
+    |     fil      |              |               |
     +--------------+--------------+---------------+
     
-In this case, `foo` has no receivers, and any that you add will appear starting from column 0 of the execution table.
+In this case, `fil` has no receivers, and any that you add will appear starting from column 0 of the execution table.
+
+Finally, if you'd like to remove blocks/block connections instead of create them, just append the `-rm` option to any of the above `build` invocations.
 
 Voila! You're now up and running with the NIO command line interface. Happy hacking!
