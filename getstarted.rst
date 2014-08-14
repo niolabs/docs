@@ -89,7 +89,7 @@ Click **Save Service** in the bottom right of the right panel (you should get a 
 
 .. image:: files/sim_log_config.png
 
-Don't worry too much about specific properties, here. To get familiar, though, scroll down to the `Interval` section and change the number in the `Seconds` text box from 1 to 2; click **Save Block**. The default properties on `TestLogger` will be fine for our purposes, so let's start our first service! Click the **Start Service** button in the very bottom right of the UI, and watch the terminal where you executed **run_nio**.
+Don't worry too much about specific properties, here. To get familiar, though, scroll down to the `Interval` section and change the number in the `Seconds` text box from 1 to 2; click **Save Block**. Now select `TestLogger` in the execution grid and use the drop-down menu to change it's `Log Level` to *DEBUG*, saving the block when you're done. Click the **Start Service** button in the very bottom right of the UI, and watch the terminal where you executed **run_nio**.
 
 You should see a bunch of `DEBUG` logs with information about starting and configuring the service, but no signals get logged! This is because we didn't connect the blocks in `SimulateAndLog`. Nio blocks can run in isolation until the cows come home, but they won't communicate with each other until we explicitly connect them.
 
