@@ -1,16 +1,16 @@
 NIO Command Line Tools
 ======================
 
-nio-instance
+nio
 -----------
 
-NIO exposes a rich API for interacting with running instances. We provide a robust browser-based graphical user interface to same, but such interfaces are rarely well suited to automation of tasks and rapid context switching. For this reason, we provide the **nio-instance** command line tool, which allows users and administrators to start, stop, view, configure, and build blocks and services from a UNIX command line.
+NIO exposes a rich API for interacting with running instances. We provide a robust browser-based graphical user interface to same, but such interfaces are rarely well suited to automation of tasks and rapid context switching. For this reason, we provide the **nio** command line tool, which allows users and administrators to start, stop, view, configure, and build blocks and services from a UNIX command line.
 
 Here's an example:
 
 .. code-block:: bash
 
-    $ nio-instance ls services TestPost
+    $ nio ls services TestPost
     +--------------+---------+
     | TestPost     |         |
     +--------------+---------+
@@ -21,7 +21,7 @@ Here's an example:
     | type         | Service |
     +--------------+---------+
 
-**nio-instance** is configurable by python `.ini` file. By default, it looks in `$HOME/.config/nio-cli.ini` under the section **nio-instance** for a hostname, port, username, and password. The path to the `.ini` file is configurable by command-line option, but make sure you put all the **nio-instance** options under the appropriate section. Here's an example:
+**nio** is configurable by python `.ini` file. By default, it looks in `$HOME/.config/nio-cli.ini` under the section **nio** for a hostname, port, username, and password. The path to the `.ini` file is configurable by command-line option, but make sure you put all the **nio** options under the appropriate section. Here's an example:
 
 .. code-block:: conf
 
@@ -31,11 +31,11 @@ Here's an example:
     username = User
     password = User
     
-    [nio-instance]
+    [nio]
     username = Admin
     password = Admin
     
-**nio-instance** exposes a number of sub-commands to perform various tasks. Each, and its syntax, is represented by one of the following subsections.
+**nio** exposes a number of sub-commands to perform various tasks. Each, and its syntax, is represented by one of the following subsections.
 
 list (ls)
 ~~~~~~~~~
@@ -44,7 +44,7 @@ When called without a specific block or service name, this subcommand lists all 
 
 .. code-block:: bash**
 
-	$ nio-instance ls blocks
+	$ nio ls blocks
 	+----------------+--------------+-----------+
 	|      name      |     type     | log_level |
 	+----------------+--------------+-----------+
@@ -58,11 +58,11 @@ When called without a specific block or service name, this subcommand lists all 
 	| SignalLogger   | LoggerBlock  |   DEBUG   |
 	+----------------+--------------+-----------+
 	
-When called with a block or service name, **nio-instance** outputs a list of all the properties on that block or service:
+When called with a block or service name, **nio** outputs a list of all the properties on that block or service:
 
 .. code-block:: bash
 
-    $ nio-instance ls blocks TwitterPoster
+    $ nio ls blocks TwitterPoster
     +------------------------+----------------------------------------------------+
     | TwitterPoster          |                                                    |
     +------------------------+----------------------------------------------------+
@@ -80,7 +80,7 @@ To list the HTTP commands (with enumerated parameters) exposed by a particular b
 
 .. code-block:: bash
 
-   	$ nio-instance ls services TestPost --cmd
+   	$ nio ls services TestPost --cmd
    	+---------+------------------+
 	| command |        0         |
 	+---------+------------------+
@@ -91,7 +91,7 @@ To view the block execution of a particular service (in tabular form), append th
 
 .. code-block:: bash
 
-    $ nio-instance ls services SomeService --exec
+    $ nio ls services SomeService --exec
     +--------------+--------------+
     | Output Block |      0       |
     +--------------+--------------+
@@ -109,16 +109,16 @@ This subcommand allows you to send commands to live instances. Because of the wa
 
 .. code-block:: bash
 
-	$ nio-instance co start TestPost
+	$ nio co start TestPost
 	`http://localhost:8181/services/TestPost//start` was processed successfully
 	
 The syntax for adding parameters to commands is as follows:
 
 .. code-block:: bash
 	
-	$ nio-instance co log TestPost SignalLogger --args 'phrase=foobar'
+	$ nio co log TestPost SignalLogger --args 'phrase=foobar'
 	
-Passing the `--auto` (`-a`) flag to command tells **nio-instance** to read command arguments from the command line.
+Passing the `--auto` (`-a`) flag to command tells **nio** to read command arguments from the command line.
 	
 If the command response body is non-empty, its contents are printed to stdout; otherwise, the terminal remains silent.
 
@@ -131,7 +131,7 @@ NB: If you want to automate configuration, it may be easier to make your updates
 
 .. code-block:: bash
 
-    $ nio-instance cfg services TestPost
+    $ nio cfg services TestPost
     
     log_level (select):
     Using current value: DEBUG
@@ -142,7 +142,7 @@ If the block or service you're configuring holds an Object Property, each proper
 
 .. code-block:: bash
 
-    $ nio-instance cfg blocks TwitterPoster
+    $ nio cfg blocks TwitterPoster
     
     creds (object):
     +->oauth_token (str):
@@ -159,11 +159,11 @@ If the block or service you're configuring holds an Object Property, each proper
     log_level (select):
     Using current value: DEBUG
     
-`nio-instance` interprets attempts to configure nonexistent resources as creation events. That is, the following sequence results in the creation of a block called "CriticalLogger", which can subsequently be added to any service execution in the system.
+`nio` interprets attempts to configure nonexistent resources as creation events. That is, the following sequence results in the creation of a block called "CriticalLogger", which can subsequently be added to any service execution in the system.
 
 .. code-block:: bash
 
-    $ nio-instance cfg blocks AnotherLogger
+    $ nio cfg blocks AnotherLogger
     NIOClient: NIO returned status 404
     type (str): LoggerBlock
     log_level (select): CRITICAL
@@ -183,7 +183,7 @@ The `update` subcommand command is very simple but very important. It compels a 
 
 .. code-block:: bash
 
-    $ nio-instance update LoggerBlock
+    $ nio update LoggerBlock
     
 If all the block types are valid, standard out should remain silent. 
 
@@ -197,7 +197,7 @@ This final subcommand allows you to build NIO services from the command line by 
 
 .. code-block:: bash
 
-    $ nio-instance ls services TestPost --exec
+    $ nio ls services TestPost --exec
     +--------------+--------------+
     | Output Block |      0       |
     +--------------+--------------+
@@ -207,7 +207,7 @@ This final subcommand allows you to build NIO services from the command line by 
     |   PostToMe   |   CountMe    |
     +--------------+--------------+
     
-    $ nio-instance ls blocks
+    $ nio ls blocks
     +----------------+--------------+-----------+
     | name           |     type     | log_level |
     +----------------+--------------+-----------+
@@ -228,7 +228,7 @@ Finally, we can use `build` to connect the outputs of `CountMe` and `PostToMe` t
 .. code-block:: bash
 
      
-    $ nio-instance build TestPost CountMe TwitterPoster
+    $ nio build TestPost CountMe TwitterPoster
     +--------------+--------------+---------------+
     | Output Block |      0       |       1       |
     +--------------+--------------+---------------+
@@ -244,7 +244,7 @@ Additionally, if you need to add a block `fil` to a service without connecting i
 
 .. code-block:: bash
 
-    $ nio-instance build TestPost fil
+    $ nio build TestPost fil
     +--------------+--------------+---------------+
     | Output Block |      0       |       1       |
     +--------------+--------------+---------------+
