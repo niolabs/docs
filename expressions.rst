@@ -11,19 +11,21 @@ Here's an example:
 .. code-block:: python
 
    class MyBlock(Block):
-       expr = ExpressionProperty(default=None)
+       expr = ExpressionProperty(default='', attr_default=0)
 		
        def process_signals(self, signals):
            for s in signals:
 	   value = self.expr(s)
 	   # Do some stuff with the value
 				
-It's that simple. If the Signal under inspection is missing an attribute you ask for in the expression, the default value (provided at property initialization) is used in its place. Any other errors in the expression will raise exceptions whose handling is the responsibility of the Block developer. 
+It's that simple. If the Signal under inspection is missing an attribute you ask for in the expression, the value of 'attr_default' (provided at property initialization) is used in its place. As with other NIO properties, the value of 'default' will be evaluated if no expression is configured.
+
+Any other errors in the expression will raise native exceptions whose handling is the responsibility of the Block developer. 
 
 Scripting Syntax
 --------------------
 
-There are effectively two cases to consider when configuring an expression property:
+There are two types of results to consider when configuring an expression property:
 
 * **Immediate Value** - A single python expression is evaluated and the result is returned without modification/stringification.
 
@@ -37,7 +39,7 @@ String interpolation in expression properties works similarly to string interpol
 	
    ...{{ <code goes here> }}...
 	
-and the result of evaluation is inserted directly into the surrounding string, replacing the code snipped and enclosing braces. The code inside the braces can be pure python, if you like, as in:
+and the result of each evaluation is inserted directly into the surrounding string, replacing the code snippet and enclosing braces. The code inside the braces can be pure python, if you like, as in:
 
 .. code-block:: python
 
@@ -72,6 +74,11 @@ If you'd prefer that the result of your expression evaluation not be stringified
    # given a signal s s.t. s.v1 == 1, s.v2 == 'two', s.v3 == [3]
    "{{[$v1, $v2, $v3]}}" -> [1, 'two', [3]]
 
+**Raw Signal**
+
+You can access the signal itself (rather than just its attributes) with a lone '$'. As long as it is followed by a character that could not be the first character of a valid Python identifier, the '$' evaluates to the incoming signal.
+
+
 Examples
 --------
 
@@ -90,6 +97,9 @@ Here are some more examples that we find particularly illustrative:
 	
    # given a signal s s.t. s.get_val() == 'foobar'
    "Opened it with a {{$get_val()}}" -> "Opened it with a foobar"
+
+   # given a signal s s.t. s has the attribute v1 but not v2
+   "{{hasattr($, 'v1') and hasattr($, 'v2')}}" -> False
 
 
 
