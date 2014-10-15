@@ -4,7 +4,7 @@ How to use
 ----------
 A great way to send / receive rest API calls is with the [Postman extension for Chrome](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm?hl=en)
 
-- set the url to http://IP_ADDRESS:port/COMMAND
+- set the url to http://IP_ADDRESS:PORT/COMMAND
 - set correctly to either GET, POST, PUT, or DELETE
 
 Commands
