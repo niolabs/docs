@@ -8,7 +8,7 @@ User authentication depends on the configuration of the nio project's security s
 
 **GET**
 
-Get nio version, component versionss and module versions.
+Get nio version, component versions and module versions.
 
 /blocks
 --------------------
