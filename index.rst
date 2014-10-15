@@ -17,3 +17,4 @@ Table of Contents
    expressions
    nio_cli
    log
+   rest_api
