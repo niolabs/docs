@@ -1,6 +1,9 @@
 REST API
 ===============
+#Communicating over Rest
+A great way to send / receive rest API calls is with the [Postman extension for Chrome](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CCAQFjAA&url=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fdetail%2Fpostman-rest-client%2Ffdmmgilgnpjigdojojpjoooidkmcomcm%3Fhl%3Den&ei=xsk-VMWMOIakyQTdy4HoDw&usg=AFQjCNHaecLwAKk91gpdCY_y1x_ViIrHwQ&sig2=okzoFMhfnHVhLnA_BVuXDQ&bvm=bv.77412846,d.aWw)
 
+#Commands
 User authentication depends on the configuration of the nio project's security settings.
 
 /nio
