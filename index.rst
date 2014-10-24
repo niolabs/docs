@@ -18,3 +18,4 @@ Table of Contents
    nio_cli
    log
    rest_api
+   communication

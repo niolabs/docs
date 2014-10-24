@@ -227,7 +227,7 @@ Finally, we can use `build` to connect the outputs of `CountMe` and `PostToMe` t
 
 .. code-block:: bash
 
-     
+    
     $ nio build TestPost CountMe TwitterPoster
     +--------------+--------------+---------------+
     | Output Block |      0       |       1       |
