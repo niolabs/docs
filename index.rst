@@ -17,5 +17,6 @@ Table of Contents
    expressions
    nio_cli
    log
+   component_management_publisher
    rest_api
    communication
