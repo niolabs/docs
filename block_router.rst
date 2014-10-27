@@ -9,9 +9,9 @@ Configuration
 Configuration of block routers is set in the block_router.cfg file in the project's etc/ directory.
 
 *   clone_signals: False
-   -   If clone_signals is True, then the block router will perform a deepcopy on the signals whenever they are split and passed to more than one block.
+   *   If clone_signals is True, then the block router will perform a deepcopy on the signals whenever they are split and passed to more than one block.
 *   max_workers: 50
-   -   When using ThreadedPoolExecutorRouter, this is the max number of workers.
+   *   When using ThreadedPoolExecutorRouter, this is the max number of workers.
 
 Block Router Types
 ----------------
