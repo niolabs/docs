@@ -20,3 +20,4 @@ Table of Contents
    component_management_publisher
    rest_api
    communication
+   block_router
