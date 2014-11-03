@@ -21,3 +21,4 @@ Table of Contents
    rest_api
    communication
    block_router
+   block_context
