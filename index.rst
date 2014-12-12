@@ -19,3 +19,4 @@ Table of Contents
    log
    rest_api
    communication
+   block_tests
