@@ -75,6 +75,8 @@ This is more a practice than a feature. Blocks are not required to behave synchr
             
 Now, instead of instantiating **YourBlock** in your tests, you should instantiate **EventBlock**, passing an instance of **Event** to its constructor. Check this out:
 
+.. code-block:: python
+
     e = Event()
     blk = EventBlock(e)
 	self.configure_block(blk, {'p1': 23})
