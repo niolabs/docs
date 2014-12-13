@@ -8,9 +8,11 @@ NIOBlockTestCase
 
 We recommend that you use the **NIOBlockTestCase** when building your tests. It extends **unittest.TestCase**, and ties into all the same infrastructure you're accustomed to using with the base class. However, **NIOBlockTestCase** also provides a number of helpful methods for testing blocks. Here's a real-world example straight from our internal block repositories:
 
-	from nio.util.support.block_test_case import NIOBlockTestCase
-	from nio.common.signal.base import Signal
-	from ..your_block import YourBlock
+.. code-block:: python
+
+    from nio.util.support.block_test_case import NIOBlockTestCase
+    from nio.common.signal.base import Signal
+    from ..your_block import YourBlock
 
     class TestYourBlock(NIOBlockTestCase):
          
@@ -60,6 +62,8 @@ Events
 
 This is more a practice than a feature. Blocks are not required to behave synchronously, and sometimes you might want to wait for an event (after instantiating or configuring a block) before proceeding with the tests. Rather than sleeping for a prescribed amount of time (asynchronous processes can be fickle and unpredictable from machine to machine), we recommend extending the block you're testing and adding one of Python's Event objects to signify readiness. Here's an example:
 
+.. code-block:: python
+
     class EventBlock(YourBlock):
         def __init__(self, event):
             super().__init__()
@@ -85,6 +89,8 @@ Mocking
 Patching and mocking are extremely useful concepts in software verification; this is especially relevant when the modules in question interact with external resources (e.g API's, OS services, etc.). We won't go too much into the details of mocking right now, but the [Python documentation](https://docs.python.org/3/library/unittest.mock.html) contains a ton of great material on the subject. We recommend that you use these concepts liberally; in fact, we expect that, in many cases, you won't have much choice.
 
 As you progress, one thing you might notice is that **unittest.mock.patch** doesn't play nice with relative module paths. This can be a pain when you want to patch a method at the class or module level. One solution is to import the object directly and use **unittest.mock.patch.object**:
+
+.. code-block:: python
 
     from unittest.mock import patch, ANY
     from ..queue_block import Queue
