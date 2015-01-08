@@ -15,12 +15,29 @@ Here's an example:
 		
        def process_signals(self, signals):
            for s in signals:
-	   value = self.expr(s)
+           try:
+	       value = self.expr(s)
+	   except Exception as e:
+	       value = None
+	       self._logger.error("Block property 'expr' failed to evaluate: {}".format(e))
 	   # Do some stuff with the value
 				
-It's that simple. If the Signal under inspection is missing an attribute you ask for in the expression, the value of 'attr_default' (provided at property initialization) is used in its place. As with other NIO properties, the value of 'default' will be evaluated if no expression is configured.
+It's that simple. If the Signal under inspection is missing an attribute you ask for in the expression, the value of *attr_default* (provided at property initialization) is used in its place. As with other NIO properties, the value of 'default' will be evaluated if no expression is configured.
 
 Any other errors in the expression will raise native exceptions whose handling is the responsibility of the Block developer. 
+
+**Argument: attr_default**
+
+Unique to ExpressionProperty is the attr_default argument. In evaluating an expression, if the $ notation is used to get an attribute value from a signal, but the attribute does not exist on the signal, then the value attr_default will be used in its place.
+
+If attr_default is not specified on the ExpressionProperty, then an empty string is used.
+
+attr_Default can be set to an Exception **class**. In this case, if the attribute does not exist on the signal, then that Exception will be raised.
+
+**Handling Exceptions**
+
+An ExpressionProperty should always be evaluated inside of a *try* block. Invalid python syntax inside of the expression will raise an Exception and the block needs to handle that. This is also where you would handle the Exception raised by *attr_default* if that is set to an Exception class. 
+
 
 Scripting Syntax
 --------------------
