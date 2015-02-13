@@ -22,6 +22,14 @@ Configuration
 - **poll_rate_ms** - *mysterioso*
 - **max_port** - upper bound of port range used for finding available local ports for publishers/subscribers
 - **min_port** - lower bound
+- **connect_timeout** - time to wait at start up when there is a communication failure due to ip address, port issues, etc.
+
+  * 0 - no wait, module fails right away
+  
+  * > 0 - keep retrying for specified time unless IP Address is determined to be valid
+  
+  * < 0 - keep retrying indefinitely unless IP Address is determined to be valid
+
 
 Capabilities
 ------------
