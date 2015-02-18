@@ -7,38 +7,33 @@ Logger names retrieval
 Logs can be retrieved through a GET call at the core or service level
 
 1) core level
-uri: http://[ip address]:[port]/log
+    uri: http://[ip address]:[port]/log
 
 2) service level
-uri: http://[ip address]:[port]/log/service/[Service Name]
+    uri: http://[ip address]:[port]/log/service/[Service Name]
 
 
 Changing log level
 -------------------------
 
-Log level can be changed through a POST or PUT call at the core or service level
+Log level can be changed through a POST or PUT call at the core or service level. Make a request to the corresponding URI with a PUT/POST Body formatted like this:
 
-1) core level
-uri: http://[ip address]:[port]
+.. code-block:: none
 
-body:
-{"log_level": [New Log level],
- "logger_name": [Logger name]}
+  { 
+    "log_level": [New Log level],
+    "logger_name": [Logger name]
+  }
 
-Example:
-{"log_level": "DEBUG",
-"logger_name": "Custom Scheduler"}
+**Example**:
 
-2) service level
-uri: http://[ip address]:[port]/log/service/[Service Name]
+.. code-block:: none
 
-body:
-{"log_level": [New Log level],
- "logger_name": [Logger name]}
-
-Example:
-{"log_level": "INFO",
-"logger_name": "Custom Scheduler"}
+  PUT http://[ip address]:[port]/log/service/[Service Name]
+  {
+    "log_level": "DEBUG",
+    "logger_name": "Custom Scheduler"
+  }
 
 
 Note: For core and service level changes, if  'logger_name' parameter is
