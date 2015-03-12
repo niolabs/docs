@@ -12,14 +12,25 @@ Requirements
 Installation
 ------------
 
-Download the latest nio package from the `nio Downloads Page <http://n.io/download>`_. Once downloaded, expand the zip file and navigate to the directory where it is saved. Then, execute the following commands.
+We will be installing nio to a virtual environment. This keeps nio and all its dependencies isolated from other python projects and environements you may already have on your machine. You can read more about them at `here <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_.
 
 .. code-block:: bash
 
+    $ mkdir nio
+    $ cd nio
     $ virtualenv env
     $ source env/bin/activate
-    $ pip install -r reqs.txt
 
+When you're done using nio, you can leave the virtual environment with `deactivate`. Be sure to always come back to this directory and run `source env/bin/activate` when you are going to be running nio.
+
+Download the latest nio and nioext wheels from the `nio Versions Page <http://n.io/versions>`_. Then install them using pip.
+
+.. code-block:: bash
+
+    $ wget http://n.io/versions/nio/nio-1.5.0-py3-none-any.whl
+    $ wget http://n.io/versions/nioext/nioext-1.5.0-py3-none-any.whl
+    $ pip install http://n.io/versions/nio/nio-1.5.0-py3-none-any.whl
+    $ pip install http://n.io/versions/nioext/nioext-1.5.0-py3-none-any.whl
 
 The installation of nio is now complete! You can run the instance from a project directory with the ``run_nio`` command. See :ref:`setting-up-a-project` for instructions on creating a project directory.
 
@@ -30,7 +41,7 @@ Setting up a NIO Project
 
 If you already have an existing project configuration, you can skip this section.
 
-To execute this demo, you'll need `git` (a distributed version control tool), a n account with `github <http://github.com>`, and `ruby` (a common scripting language).
+To execute this demo, you'll need `git` (a distributed version control tool), an account with `github <http://github.com>`, and `ruby` (a common scripting language).
 
 To help you get started, we provide an open source `project template <https://github.com/nio-blocks/project_template>` which reflects the standard directory structure of a nio project. Let's begin by cloning down the project template repository into the target directory of your choice:
 
