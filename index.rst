@@ -20,6 +20,7 @@ Table of Contents
    component_management_publisher
    rest_api
    communication
+   block_dev
    block_tests
    block_router
    block_context
