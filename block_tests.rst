@@ -86,7 +86,7 @@ This way, your test will wait until the meat of **YourBlock.configure** has retu
     
 
 Mocking
-------------
+-------
 
 Patching and mocking are extremely useful concepts in software verification; this is especially relevant when the modules in question interact with external resources (e.g API's, OS services, etc.). We won't go too much into the details of mocking right now, but the [Python documentation](https://docs.python.org/3/library/unittest.mock.html) contains a ton of great material on the subject. We recommend that you use these concepts liberally; in fact, we expect that, in many cases, you won't have much choice.
 
@@ -103,3 +103,56 @@ As you progress, one thing you might notice is that **unittest.mock.patch** does
         load_patch.assert_called_once_with(ANY)
     
 Again, you don't necessarily have to construct your tests in this way; however, we've found this practice to be more convenient and less prone to user error than others, so we thought we'd pass it along to you.
+
+Mocking Persistence Module
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To mock `load`:
+
+.. code-block:: python
+
+    class TestPersistenceBlock(NIOBlockTestCase):
+
+        def test_persist_load(self):
+            blk = Block()
+            with path('nio.modules.persistence.default.Persistence.load') as load:
+                load.return_value = 'i was persisted'
+                self.configure_block(blk, {})
+
+To mock `store` and `save`:
+
+.. code-block:: python
+
+    from unittest.mock import  MagicMock
+
+    class TestPersistenceBlock(NIOBlockTestCase):
+
+        def test_persist_save(self):
+             blk = Block()
+             self.configure_block(blk, {})
+             blk.persistence.store = MagicMock()
+             blk.persistence.save = MagicMock()
+
+
+n.io Modules
+------------
+
+NIOBlockTestCase configures the following n.io modules by default: ``['logging', 'scheduler', 'security', 'threading']``. If your block test case needs to use any other n.io modules then you need to specify that by implementing the ``get_test_modules`` method.
+
+For example, if your test case uses persistence:
+
+.. code-block:: python
+
+    class TestBlock(NIOBlockTestCase):
+
+        def get_test_modules(self):
+            return super().get_test_modules() + ['persistence']
+
+You can override the default configuration of modules by implementing ``get_module_config_*``. The following example will ensure that the test case uses the ``default`` implementation of the persistence module.
+
+.. code-block:: python
+
+    class TestBlock(NIOBlockTestCase):
+
+        def get_module_config_persistence(self):
+            return {'persistence': 'default'}
