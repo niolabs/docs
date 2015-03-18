@@ -113,7 +113,7 @@ To mock `load`:
 
     class TestPersistenceBlock(NIOBlockTestCase):
 
-    def test_persist_load(self):
+        def test_persist_load(self):
             blk = Block()
             with path('nio.modules.persistence.default.Persistence.load') as load:
                 load.return_value = 'i was persisted'
@@ -137,18 +137,18 @@ To mock `store` and `save`:
 n.io Modules
 ------------
 
-NIOBlockTestCase configure some n.io modules by default: logging, scheduler, security and threading. If your block is using any other n.io modules then they you need to specify that.
+NIOBlockTestCase configures the following n.io modules by default: ``['logging', 'scheduler', 'security', 'threading']``. If your block test case needs to use any other n.io modules then you need to specify that by implementing the ``get_test_modules`` method.
 
-For example, when your block uses persistence:
+For example, if your test case uses persistence:
 
 .. code-block:: python
 
     class TestBlock(NIOBlockTestCase):
 
         def get_test_modules(self):
-            return self.ServiceDefaultModules + ['persistence']
+            return super().get_test_modules() + ['persistence']
 
-You can override the default configuration of modules with get_module_config_*:
+You can override the default configuration of modules by implementing ``get_module_config_*``. The following example will ensure that the test case uses the ``default`` implementation of the persistence module.
 
 .. code-block:: python
 
