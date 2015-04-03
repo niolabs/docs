@@ -2,7 +2,7 @@ NIO Command Line Tools
 ======================
 
 nio
------------
+---
 
 NIO exposes a rich API for interacting with running instances. We provide a robust browser-based graphical user interface to same, but such interfaces are rarely well suited to automation of tasks and rapid context switching. For this reason, we provide the **nio** command line tool, which allows users and administrators to start, stop, view, configure, and build blocks and services from a UNIX command line.
 
@@ -36,6 +36,34 @@ Here's an example:
     password = Admin
     
 **nio** exposes a number of sub-commands to perform various tasks. Each, and its syntax, is represented by one of the following subsections.
+
+new
+~~~
+
+This subcommand creates a fresh nio project from the official [project tempalte](https://github.com/nio-blocks/project_template). A new project folder will be made inside the current directory.
+
+.. code-block:: bash
+
+    $ nio new project_name
+    $ cd project_name
+    $ ls
+    blocks etc extras README.md nio.conf nio.env
+
+add
+~~~
+
+This subcommand adds new block types to and existing nio project. By defualt they are pulled from the official [nio GitHub](https://github.com/nio-blocks) account.
+
+This must be run from the root level of the project that you want to add the blocks too. One ore morse lists can be added at a time.
+
+.. code-block:: bash
+
+    $ nio add logger
+    $ ls blocks
+    logger
+    $ nio add counter simulator
+    $ ls blocks
+    counter logger simulator
 
 list (ls)
 ~~~~~~~~~
