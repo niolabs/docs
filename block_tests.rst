@@ -54,7 +54,12 @@ Overridable Methods
     * communication
     * persistence
     * web
--   **signals_notified(signals)** - This method gets called every time signals are notified in your tests. If you'd like to record something in the test case, trigger and event, or perform some aggregation when that happens, override this method.
+-   **signals_notified(signals, output_id)** - This method gets called every time signals are notified in your tests. If you'd like to record something in the test case, trigger an event, or perform some aggregation when that happens, override this method. One common use it to add `self.signals = defaultdict(list)` to `setUp` and:
+
+.. code-block:: python
+
+    def signals_notified(self, signals, output_id):
+        self.signals[output_id].extend(signals)
 
 
 Events
