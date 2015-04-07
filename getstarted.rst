@@ -1,19 +1,33 @@
 Getting Started
 ===============
 
+.. _requirements:
+
 Requirements
 ------------
 
 * `Python 3.4 or greater <https://www.python.org/download/>`_
+* `pip <https://pip.pypa.io/en/latest/installing.html>`_
+* `virtualenv <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_
 * `git <http://git-scm.com/download/mac>`_
 
+First, open a terminal in to the home directory and check that you have everything you need.
 
-Installation
+.. code-block:: bash
+
+    python3 --version
+    pip3.4 --version
+    virutalenv --version
+    git --version
+
+If those four commands don't return anything, then follow the requirements links before continuing.
+
+System Setup
 ------------
 
-We will be installing nio to a virtual environment. This keeps nio and all its dependencies isolated from other python projects and environements you may already have on your machine. You can read more about them `here <https://robinwinslow.co.uk/2013/12/26/python-3-4-virtual-environment/>`_.
+As a standard, we will be installing each version of nio to its own virtual environment. This keeps nio and all its dependencies isolated from other python projects and environements you may already have on your machine. You can read more about them `here <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_.
 
-First, open a terminal in to the home directory. As a standard we will create a python virtual environement for each nio version.
+Each nio project will be in its own directory too. We will start by creating some directories for these.
 
 .. code-block:: bash
 
@@ -22,10 +36,22 @@ First, open a terminal in to the home directory. As a standard we will create a 
     cd nio
     mkdir projects
     mkdir versions
-    cd versions
-    pyvenv-3.4 1.5.1
 
-Note: that last line will fail with Ubuntu 14.04 but can be fixed with `this <http://askubuntu.com/a/528625>`.
+Installation
+------------
+
+Lets start by installing nio version 1.5.1.
+
+.. code-block:: bash
+
+    cd ~/versions
+    virtualenv-3.4 1.5.1
+
+If virtualenv was installed with a python version less than 3.4, then you will need to specify the python version when creating your virtual environtment. To check which version of python virtualenv will use, type `virtualenv -h` and look at what version is specifed in the `-p` section of the docs.
+
+.. code-block:: bash
+
+    virtualenv-3.4 -p python3 1.5.1
 
 You now need to activate your virtual environment. This will add a `(1.5.1)` to the beginning of your command line to indicate the virtual environemnt that you are using.
 
@@ -42,7 +68,7 @@ When you're done using nio, you can leave the virtual environment with `deactiva
 
 The installation of nio is now complete! You can run the instance from a project directory with the ``run_nio`` command. See :ref:`setting-up-a-project` for instructions on creating a project directory.
 
-We want to install one more thing before we move on though. We have devloped a Command Line Interface (CLI) to help manage your nio projects.
+We now install a tool that helps with common operations like creating projects, adding blocks and managing dependencies. It is called the nio Command Line Interface (CLI).
 
 .. code-block:: bash
 
@@ -53,9 +79,9 @@ We want to install one more thing before we move on though. We have devloped a C
 Setting up a NIO Project
 ------------------------
 
-To execute this demo, you'll need `git` (a distributed version control tool) and a `GitHub account <http://github.com>` with `ssh access <https://help.github.com/articles/generating-ssh-keys/#platform-mac>`.
+To execute this demo, you'll need `git` (a distributed version control tool) and a `GitHub account <http://github.com>` with `ssh access <https://help.github.com/articles/generating-ssh-keys>`.
 
-To help you get started, we provide an open source `project template <https://github.com/nio-blocks/project_template>` which reflects the standard directory structure of a nio project. Use the nio CLI to create a new project from the template.
+To help you get started, we provide a `project template <https://github.com/nio-blocks/project_template>` which reflects the standard directory structure of a nio project. Use the nio CLI to create a new project from the template.
 
 .. code-block:: bash
 
@@ -97,9 +123,9 @@ This part is simple. With the virtual environment active (which it should alread
     cd ~/nio/projects/getting_started
     run_nio
 
-You'll see a bunch of crazy log messages. They should all be INFO messages, so don't worry about those for now. If you see any ERROR messages you may have a problem. But for now lets ignore this one: `NIO [ERROR] [Discover] Failure loading module nioext.components.snmp.agent ImportError:No module named 'pysnmp'`. We won't be using that anyway.
+It is common to see many INFO log messages. If you see any ERROR messages you may have a problem. But for now lets ignore this one: `NIO [ERROR] [Discover] Failure loading module nioext.components.snmp.agent ImportError:No module named 'pysnmp'`. We won't be using that anyway.
 
-At this point we're don running commands from the terminal, but we will be keeping an eye on these logs.
+At this point we're done running commands from the terminal, but we will be keeping an eye on these logs.
 
 (Later, when you're done, you'll want to press ctrl-c to exit nio).
 
