@@ -9,7 +9,7 @@ Requirements
 * `Python 3.4 or greater <https://www.python.org/download/>`_
 * `pip <https://pip.pypa.io/en/latest/installing.html>`_
 * `virtualenv <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_
-* `git <http://git-scm.com/download/mac>`_
+* `git <http://git-scm.com/download>`_
 
 First, open a terminal in to the home directory and check that you have everything you need.
 
@@ -25,7 +25,7 @@ If those four commands don't return anything, then follow the requirements links
 System Setup
 ------------
 
-As a standard, we will be installing each version of nio to its own virtual environment. This keeps nio and all its dependencies isolated from other python projects and environements you may already have on your machine. You can read more about them `here <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_.
+As a standard, we will be installing each version of nio to its own virtual environment. This keeps nio and all its dependencies isolated from other python projects and environments you may already have on your machine. You can read more about them `here <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_.
 
 Each nio project will be in its own directory too. We will start by creating some directories for these.
 
@@ -45,21 +45,15 @@ Lets start by installing nio version 1.5.1.
 .. code-block:: bash
 
     cd ~/versions
-    virtualenv-3.4 1.5.1
+    virtualenv -p python3 1.5.1
 
-If virtualenv was installed with a python version less than 3.4, then you will need to specify the python version when creating your virtual environtment. To check which version of python virtualenv will use, type `virtualenv -h` and look at what version is specifed in the `-p` section of the docs.
-
-.. code-block:: bash
-
-    virtualenv-3.4 -p python3 1.5.1
-
-You now need to activate your virtual environment. This will add a `(1.5.1)` to the beginning of your command line to indicate the virtual environemnt that you are using.
+You now need to activate your virtual environment. This will add a `(1.5.1)` to the beginning of your command line to indicate the virtual environment that you are using.
 
 .. code-block:: bash
 
     source 1.5.1/bin/activate
 
-When you're done using nio, you can leave the virtual environment with `deactivate`. When using nio again, be sure to activate the virtual environemtn first with `source ~/nio/versions/1.5.1/bin/activate`.
+When you're done using nio, you can leave the virtual environment with `deactivate`. When using nio again, be sure to activate the virtual environment first with `source ~/nio/versions/1.5.1/bin/activate`.
 
 OK, now we can finally install `nio <http://n.io/versions/nio/>`.
 
@@ -81,7 +75,7 @@ We now install a tool that helps with common operations like creating projects, 
 Setting up a NIO Project
 ------------------------
 
-To execute this demo, you'll need `git` (a distributed version control tool) and a `GitHub account <http://github.com>` with `ssh access <https://help.github.com/articles/generating-ssh-keys>`.
+To use the nio CLI you need `git` (a distributed version control tool) and a `GitHub account <http://github.com>` with `ssh access <https://help.github.com/articles/generating-ssh-keys>`.
 
 To help you get started, we provide a `project template <https://github.com/nio-blocks/project_template>` which reflects the standard directory structure of a nio project. Use the nio CLI to create a new project from the template.
 
