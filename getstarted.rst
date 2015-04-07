@@ -23,7 +23,9 @@ First, open a terminal in to the home directory. As a standard we will create a 
     mkdir projects
     mkdir versions
     cd versions
-    pyvenv 1.5.1
+    pyvenv-3.4 1.5.1
+
+Note: that last line will fail with Ubuntu 14.04 but can be fixed with `this <http://askubuntu.com/a/528625>`.
 
 You now need to activate your virtual environment. This will add a `(1.5.1)` to the beginning of your command line to indicate the virtual environemnt that you are using.
 
