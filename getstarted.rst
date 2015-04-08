@@ -1,77 +1,113 @@
 Getting Started
 ===============
 
+.. _requirements:
+
 Requirements
 ------------
 
 * `Python 3.4 or greater <https://www.python.org/download/>`_
 * `pip <https://pip.pypa.io/en/latest/installing.html>`_
-* virtualenv - ``pip install virtualenv``
+* `virtualenv <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_
+* `git <http://git-scm.com/download>`_
 
+First, open a terminal in to the home directory and check that you have everything you need.
+
+.. code-block:: bash
+
+    python3 --version
+    pip3.4 --version
+    virutalenv --version
+    git --version
+
+If those four commands don't return anything, then follow the requirements links before continuing.
+
+System Setup
+------------
+
+As a standard, we will be installing each version of nio to its own virtual environment. This keeps nio and all its dependencies isolated from other python projects and environments you may already have on your machine. You can read more about them `here <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_.
+
+Each nio project will be in its own directory too. We will start by creating some directories for these.
+
+.. code-block:: bash
+
+    cd
+    mkdir nio
+    cd nio
+    mkdir projects
+    mkdir versions
 
 Installation
 ------------
 
-We will be installing nio to a virtual environment. This keeps nio and all its dependencies isolated from other python projects and environements you may already have on your machine. You can read more about them at `here <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_.
+Lets start by installing nio version 1.5.1.
 
 .. code-block:: bash
 
-    $ mkdir nio
-    $ cd nio
-    $ virtualenv env
-    $ source env/bin/activate
+    cd ~/versions
+    virtualenv -p python3 1.5.1
 
-When you're done using nio, you can leave the virtual environment with `deactivate`. Be sure to always come back to this directory and run `source env/bin/activate` when you are going to be running nio.
-
-Download the latest nio and nioext wheels from the `nio Versions Page <http://n.io/versions>`_. Then install them using pip.
+You now need to activate your virtual environment. This will add a `(1.5.1)` to the beginning of your command line to indicate the virtual environment that you are using.
 
 .. code-block:: bash
 
-    $ wget http://n.io/versions/nio/nio-1.5.0-py3-none-any.whl
-    $ wget http://n.io/versions/nioext/nioext-1.5.0-py3-none-any.whl
-    $ pip install http://n.io/versions/nio/nio-1.5.0-py3-none-any.whl
-    $ pip install http://n.io/versions/nioext/nioext-1.5.0-py3-none-any.whl
+    source 1.5.1/bin/activate
+
+When you're done using nio, you can leave the virtual environment with `deactivate`. When using nio again, be sure to activate the virtual environment first with `source ~/nio/versions/1.5.1/bin/activate`.
+
+OK, now we can finally install `nio <http://n.io/versions/nio/>`.
+
+.. code-block:: bash
+
+    pip install http://n.io/versions/nio/nio-1.5.1-py3-none-any.whl
+    pip install http://n.io/versions/nioext/nioext-1.5.1-py3-none-any.whl
 
 The installation of nio is now complete! You can run the instance from a project directory with the ``run_nio`` command. See :ref:`setting-up-a-project` for instructions on creating a project directory.
+
+We now install a tool that helps with common operations like creating projects, adding blocks and managing dependencies. It is called the nio Command Line Interface (CLI).
+
+.. code-block:: bash
+
+    pip install https://github.com/neutralio/nio-cli/archive/master.zip
 
 .. _setting-up-a-project:
 
 Setting up a NIO Project
---------------------
+------------------------
 
-If you already have an existing project configuration, you can skip this section.
+To use the nio CLI you need `git` (a distributed version control tool) and a `GitHub account <http://github.com>` with `ssh access <https://help.github.com/articles/generating-ssh-keys>`.
 
-To execute this demo, you'll need `git` (a distributed version control tool) and an account with `github <http://github.com>`.
-
-To help you get started, we provide an open source `project template <https://github.com/nio-blocks/project_template>` which reflects the standard directory structure of a nio project. Let's begin by cloning down the project template repository into the target directory of your choice:
+To help you get started, we provide a `project template <https://github.com/nio-blocks/project_template>` which reflects the standard directory structure of a nio project. Use the nio CLI to create a new project from the template.
 
 .. code-block:: bash
 
-    $ cd path/to/nio-projects
-    $ git clone https://github.com/nio-blocks/project_template.git getting_started
-    $ cd getting_started
-    $ ls
-    README.md	blocks  etc     extras  nio.conf         nio.env
+    cd ~/nio/projects
+    nio new getting_started
+    cd getting_started
+
+If you don't have ssh access set up for GitHub then try using the https flas:
+
+.. code-block:: bash
+
+    nio new getting_started --https
     
-The first thing we're going to need is some blocks. We provide a selection of `open source blocks <https://github.com/nio-blocks>` for your convenience, but, remember, nio is designed to make it easy for you to develop custom blocks; more on this later. For now, let's just get a group of blocks that we've categorized as *util*. Since our nio project is a git repository, we're goingn to take advantage of that and add blocks as `submodules <http://git-scm.com/docs/git-submodule>`_:
+The first thing we're going to need is some blocks. We provide a selection of `open source blocks <https://github.com/nio-blocks>` for your convenience, but, remember, nio is designed to make it easy for you to develop custom blocks; more on this later. For now, let's just get a group of blocks that we've categorized as *util*.
 
 .. code-block:: bash
 
-    $ git submodule add git@github.com:nio-blocks/util.git blocks/util
-    $ git submodule update --init --recursive
+    nio add util
 
-If you don't have ssh access set up for github then try this instead:
-
-.. code-block:: bash
-
-    $ git submodule add https://github.com/nio-blocks/util.git blocks/util
-    $ git submodule update --init --recursive
-
-Some of these blocks have python dependencies, so lets get those installed.
+Again, if you don't have ssh access set up for GitHub then try using the https flas:
 
 .. code-block:: bash
 
-    $ pip install requests
+    nio add util --https
+    
+Some of these blocks have python dependencies, so lets get those installed. (Note: in a future update to the CLI, this will happen automatically).
+
+.. code-block:: bash
+
+    pip install requests
 
 Running nio
 ~~~~~~~~~~~
@@ -80,11 +116,12 @@ This part is simple. With the virtual environment active (which it should alread
 
 .. code-block:: bash
 
-    $ run_nio
+    cd ~/nio/projects/getting_started
+    run_nio
 
-You'll see a bunch of crazy log messages. They should all be INFO messages, so don't worry about those for now. If you see any ERROR messages you may have a problem. But for now lets ignore this one: `NIO [ERROR] [Discover] Failure loading module nioext.components.snmp.agent ImportError:No module named 'pysnmp'`. We won't be using that anyway.
+It is common to see many INFO log messages. If you see any ERROR messages you may have a problem. But for now lets ignore this one: `NIO [ERROR] [Discover] Failure loading module nioext.components.snmp.agent ImportError:No module named 'pysnmp'`. We won't be using that anyway.
 
-At this point we're don running commands from the terminal, but we will be keeping an eye on these logs.
+At this point we're done running commands from the terminal, but we will be keeping an eye on these logs.
 
 (Later, when you're done, you'll want to press ctrl-c to exit nio).
 
@@ -95,7 +132,7 @@ nio has a web app that you can use to interact with a running nio instance. By d
 
 .. code-block:: bash
 
-    $ open http://builder.n.io
+    open http://builder.n.io
 
 .. image:: files/blank_ui.png
 
