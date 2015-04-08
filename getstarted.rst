@@ -11,7 +11,7 @@ Requirements
 * `virtualenv <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_
 * `git <http://git-scm.com/download>`_
 
-First, open a terminal in to the home directory and check that you have everything you need.
+First, open a terminal in your home directory and check that you have everything you need.
 
 For Windows
     run these commands in a **Git Bash** Terminal. To access this,
@@ -27,13 +27,13 @@ For Windows
     virutalenv --version
     git --version
 
-If those four commands don't return anything, then follow the requirements links before continuing.
+If those four commands don't return anything, follow the requirement links at the top before continuing.
 
 For Windows
     Sometimes the windows installation can be a pain. For help see [this link](https://docs.python.org/3.4/using/windows.html).
     In the simplest case, you simply have to do the following:
 
-    - Install Python3.4 for Windows from the link above
+    - Install Python3.4 for Windows from the link at the top of this page
     - Go to ``Control Panel`` -> ``System`` -> ``Advanced System Settings`` -> ``Environment Variables``
         - In ``System variables`` select ``Path`` and hit ``Edit``
         - **Append** (do not delete any text that exists) the following text: ``C:\Python34;C:\Python34\Scripts;``
@@ -53,7 +53,7 @@ Each nio project will be in its own directory too. We will start by creating som
 
 .. code-block:: bash
 
-    cd
+    cd ~
     mkdir nio
     cd nio
     mkdir projects
@@ -111,7 +111,7 @@ To help you get started, we provide a `project template <https://github.com/nio-
 Verify that you can connect to git with: `ssh git@github.com`. It should return something like "Hi YOUR_USER_NAME! You've successfully authenticated, but GitHub does not provide shell access."
 
 For Windows
-    if you have having trouble connecing, then type this and try again: ``eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa``
+    If you have having trouble connecing, type this and try again: ``eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa``
 
 .. code-block:: bash
 
@@ -119,7 +119,7 @@ For Windows
     nio new getting_started
     cd getting_started
 
-If you don't have ssh access set up for GitHub then try using the https flas:
+If you don't have ssh access set up for GitHub then try using the https flags:
 
 .. code-block:: bash
 
@@ -131,7 +131,7 @@ The first thing we're going to need is some blocks. We provide a selection of `o
 
     nio add util
 
-Again, if you don't have ssh access set up for GitHub then try using the https flas:
+Again, if you don't have ssh access set up for GitHub then try using the https flags:
 
 .. code-block:: bash
 
