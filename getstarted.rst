@@ -13,10 +13,12 @@ Requirements
 
 First, open a terminal in to the home directory and check that you have everything you need.
 
-> **For Windows:** users run these commands in a **Git Bash** Terminal. To access this,
-make sure you select "Git Bash Here" when installing git. Then go to any folder and 
-`right click` -> `Git Bash Here`
-> Also, pay attention to the **For Windows:** notes
+For Windows
+    run these commands in a **Git Bash** Terminal. To access this,
+    make sure you select "Git Bash Here" when installing git. Then go to any folder and 
+    ``right click`` -> ``Git Bash Here``
+
+    Also, pay attention to the **For Windows** notes
 
 .. code-block:: bash
 
@@ -27,22 +29,20 @@ make sure you select "Git Bash Here" when installing git. Then go to any folder 
 
 If those four commands don't return anything, then follow the requirements links before continuing.
 
-> **Note for Windows install:**
+For Windows
+    Sometimes the windows installation can be a pain. For help see [this link](https://docs.python.org/3.4/using/windows.html).
+    In the simplest case, you simply have to do the following:
 
-> Sometimes the windows installation can be a pain. For help see [this link](https://docs.python.org/3.4/using/windows.html).
-
-> In the simplest case, you simply have to do the following:
-
-> - Install Python3.4 from the link above
-> - Go to `Control Panel` -> `System` -> `Advanced System Settings` -> `Environment Variables`
->     - In `System variables` select `Path` and hit `Edit`
->     - **Append** (do not delete any text that exists) the following text: `;C:\Python34;C:\Python34\Scripts;`
->     - hit `OK` until out of all configuration windows
-> - Create a `python3` shortcut to work with the rest of this tutorial. You may 
-be able to skip this and just use `python` instead of `python3`
->     - Open `cmd` in Administrator Mode (`Windows Key` -> type `cmd` -> right click `cmd` -> `Open in Administrator Mode`)
->     - type: `cd C:\Python34`
->       type: `mklink python3.exe python.exe`
+    - Install Python3.4 for Windows from the link above
+    - Go to ``Control Panel`` -> ``System`` -> ``Advanced System Settings`` -> ``Environment Variables``
+        - In ``System variables`` select ``Path`` and hit ``Edit``
+        - **Append** (do not delete any text that exists) the following text: ``C:\Python34;C:\Python34\Scripts;``
+        - hit ``OK`` until out of all configuration windows
+    - Create a ``python3`` shortcut to work with the rest of this tutorial. You may 
+        be able to skip this and just use ``python`` instead of ``python3`` for the rest of this tutorial
+    - Open ``cmd`` in Administrator Mode (``Windows Key`` -> type ``cmd`` -> right click ``cmd`` -> ``Open in Administrator Mode``
+    - type: ``cd C:\Python34``
+    - type: ``mklink python3.exe python.exe``
 
 System Setup
 ------------
@@ -69,7 +69,8 @@ Lets start by installing nio version 1.5.1.
     cd ~/versions
     virtualenv -p python3 1.5.1
 
-> **For Windows:** The last command will be: `virtualenv -p C:/Python34/python.exe 1.5.1`
+For Windows
+    The last command will be: ``virtualenv -p C:/Python34/python.exe 1.5.1``
 
 You now need to activate your virtual environment. This will add a `(1.5.1)` to the beginning of your command line to indicate the virtual environment that you are using.
 
@@ -77,7 +78,8 @@ You now need to activate your virtual environment. This will add a `(1.5.1)` to 
 
     source 1.5.1/bin/activate
 
-> **For Windows:** The last command will be: `source 1.5.1/Scripts/activate`
+For Windows
+    The last command will be: ``source 1.5.1/Scripts/activate``
 
 When you're done using nio, you can leave the virtual environment with `deactivate`. When using nio again, be sure to activate the virtual environment first with `source ~/nio/versions/1.5.1/bin/activate`.
 
@@ -86,9 +88,8 @@ When you're done using nio, you can leave the virtual environment with `deactiva
     pip install nio-1.5.1-py3-none-any.whl
     pip install nioext-1.5.1-py3-none-any.whl
 
-> **For Windows:** pywin32 must also be installed. 
-
-> `easy_install http://sourceforge.net/projects/pywin32/files/pywin32/Build%20219/pywin32-219.win-amd64-py3.4.exe/download`
+For Windows
+    pywin32 must also be installed: ``easy_install http://sourceforge.net/projects/pywin32/files/pywin32/Build%20219/pywin32-219.win-amd64-py3.4.exe/download``
 
 The installation of nio is now complete! You can run the instance from a project directory with the ``run_nio`` command. See :ref:`setting-up-a-project` for instructions on creating a project directory.
 
@@ -109,9 +110,8 @@ To help you get started, we provide a `project template <https://github.com/nio-
 
 Verify that you can connect to git with: `ssh git@github.com`. It should return something like "Hi YOUR_USER_NAME! You've successfully authenticated, but GitHub does not provide shell access."
 
-> **For Windows:** if you have having trouble connecing, then type this and try again: 
-
-> `eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa`
+For Windows
+    if you have having trouble connecing, then type this and try again: ``eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa``
 
 .. code-block:: bash
 
