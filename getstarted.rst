@@ -102,12 +102,6 @@ Again, if you don't have ssh access set up for GitHub then try using the https f
 .. code-block:: bash
 
     nio add util --https
-    
-Some of these blocks have python dependencies, so lets get those installed. (Note: in a future update to the CLI, this will happen automatically).
-
-.. code-block:: bash
-
-    pip install requests
 
 Running nio
 ~~~~~~~~~~~
