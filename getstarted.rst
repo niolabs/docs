@@ -23,7 +23,7 @@ First, open a terminal in to the home directory and check that you have everythi
 If those four commands don't return anything, then follow the requirement links before continuing.
 
 For Windows
-    run the above commands in a **Git Bash** Terminal. To access this,
+    Run the above commands in a **Git Bash** Terminal. To access this,
     make sure you select "Git Bash Here" when installing git. Then go to any folder and 
     ``right click`` -> ``Git Bash Here`` Before running the commands, you'll need to follow the directions for Windows  listed below.
     Also, be sure to pay attention to the **For Windows** notes throughout the tutorial.
@@ -45,9 +45,9 @@ For Windows
     
     - type: ``mklink python3.exe python.exe``
     
-**Pro Tip**: *After modifying anything in the system (such as all the actions from the above section), you'll need to close and re-open your git bash window to see your changes reflected. Simply close the window, right click, and select "git bash here" once more.*
+    **Pro Tip**: *After modifying anything in the system (such as all the actions from the above section), you'll need to close and re-open your git bash window to see your changes reflected. Simply close the window, right click, and select "git bash here" once more.*
 
-Congratulations, Windows users! Now you can verify your requirements are met by running the  4 commands shown above this section.
+    Congratulations, Windows users! Now you can verify your requirements are met by running the  4 commands shown above this section.
 
 System Setup
 ------------
@@ -121,7 +121,7 @@ To help you get started, we provide a `project template <https://github.com/nio-
 Verify that you can connect to git with: `ssh git@github.com`. It should return something like "Hi YOUR_USER_NAME! You've successfully authenticated, but GitHub does not provide shell access."
 
 For Windows
-    if you have having trouble connecing, then type this and try again: ``eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa``
+    If you have having trouble connecing, then type this and try again: ``eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa``
 
 .. code-block:: bash
 
