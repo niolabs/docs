@@ -11,14 +11,7 @@ Requirements
 * `virtualenv <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_
 * `git <http://git-scm.com/download>`_
 
-First, open a terminal in your home directory and check that you have everything you need.
-
-For Windows
-    run these commands in a **Git Bash** Terminal. To access this,
-    make sure you select "Git Bash Here" when installing git. Then go to any folder and 
-    ``right click`` -> ``Git Bash Here``
-
-    Also, pay attention to the **For Windows** notes
+First, open a terminal in to the home directory and check that you have everything you need.
 
 .. code-block:: bash
 
@@ -27,22 +20,34 @@ For Windows
     virutalenv --version
     git --version
 
-If those four commands don't return anything, follow the requirement links at the top before continuing.
+If those four commands don't return anything, then follow the requirement links before continuing.
 
 For Windows
-    Sometimes the windows installation can be a pain. For help see [this link](https://docs.python.org/3.4/using/windows.html).
-    In the simplest case, you simply have to do the following:
+    Run the above commands in a **Git Bash** Terminal. To access this,
+    make sure you select "Git Bash Here" when installing git. Then go to any folder and 
+    ``right click`` -> ``Git Bash Here`` Before running the commands, you'll need to follow the directions for Windows  listed below.
+    Also, be sure to pay attention to the **For Windows** notes throughout the tutorial.
+    
+    Sometimes the windows installation can be a pain. For help see (https://docs.python.org/3.4/using/windows.html).
+    In the simplest case, you'll have to do the following:
 
-    - Install Python3.4 for Windows from the link at the top of this page
+    - Install Python3.4 for Windows from the link above
     - Go to ``Control Panel`` -> ``System`` -> ``Advanced System Settings`` -> ``Environment Variables``
         - In ``System variables`` select ``Path`` and hit ``Edit``
-        - **Append** (do not delete any text that exists) the following text: ``C:\Python34;C:\Python34\Scripts;``
+        - **Append** (do not delete any text that exists) the following text at the end of the line: ``;C:\Python34;C:\Python34\Scripts;``
         - hit ``OK`` until out of all configuration windows
-    - Create a ``python3`` shortcut to work with the rest of this tutorial. You may 
-        be able to skip this and just use ``python`` instead of ``python3`` for the rest of this tutorial
-    - Open ``cmd`` in Administrator Mode (``Windows Key`` -> type ``cmd`` -> right click ``cmd`` -> ``Open in Administrator Mode``
+    - **Create a** ``python3`` **shortcut to work with the rest of this tutorial** 
+    *You may be able to skip this and just use ``python`` instead of ``python3`` for the rest of this tutorial*
+   
+    - Open ``cmd`` in Administrator Mode (``Windows Key`` -> locate ``command prompt`` -> right click ``command prompt`` -> ``Run as Administrator``
+   
     - type: ``cd C:\Python34``
+    
     - type: ``mklink python3.exe python.exe``
+    
+    **Pro Tip**: *After modifying anything in the system (such as all the actions from the above section), you'll need to close and re-open your git bash window to see your changes reflected. Simply close the window, right click, and select "git bash here" once more.*
+
+    Congratulations, Windows users! Now you can verify your requirements are met by running the  4 commands shown above this section.
 
 System Setup
 ------------
@@ -70,7 +75,7 @@ Lets start by installing nio version 1.5.1.
     virtualenv -p python3 1.5.1
 
 For Windows
-    The last command will be: ``virtualenv -p C:/Python34/python.exe 1.5.1``
+    The previous command will be: ``virtualenv -p C:/Python34/python.exe 1.5.1``
 
 You now need to activate your virtual environment. This will add a `(1.5.1)` to the beginning of your command line to indicate the virtual environment that you are using.
 
@@ -79,7 +84,7 @@ You now need to activate your virtual environment. This will add a `(1.5.1)` to 
     source 1.5.1/bin/activate
 
 For Windows
-    The last command will be: ``source 1.5.1/Scripts/activate``
+    The previous command will be: ``source 1.5.1/Scripts/activate``
 
 When you're done using nio, you can leave the virtual environment with `deactivate`. When using nio again, be sure to activate the virtual environment first with `source ~/nio/versions/1.5.1/bin/activate`.
 
@@ -91,11 +96,14 @@ OK, now we can finally install `nio <http://n.io/versions/nio/>`.
     pip install http://n.io/versions/nioext/nioext-1.5.1-py3-none-any.whl
 
 For Windows
-    pywin32 must also be installed: ``easy_install http://sourceforge.net/projects/pywin32/files/pywin32/Build%20219/pywin32-219.win-amd64-py3.4.exe/download``
+    pywin32 must also be installed:
+    
+    ``easy_install http://sourceforge.net/projects/pywin32/files/pywin32/Build%20219/pywin32-219.win-amd64-py3.4.exe/download``
 
 The installation of nio is now complete! You can run the instance from a project directory with the ``run_nio`` command. See :ref:`setting-up-a-project` for instructions on creating a project directory.
 
-We now install a tool that helps with common operations like creating projects, adding blocks and managing dependencies. It is called the nio Command Line Interface (CLI).
+
+We now install the **nio CLI**, a tool that helps with common operations like creating projects, adding blocks and managing dependencies. It is called the nio Command Line Interface (CLI).
 
 .. code-block:: bash
 
@@ -113,7 +121,7 @@ To help you get started, we provide a `project template <https://github.com/nio-
 Verify that you can connect to git with: `ssh git@github.com`. It should return something like "Hi YOUR_USER_NAME! You've successfully authenticated, but GitHub does not provide shell access."
 
 For Windows
-    If you have having trouble connecing, type this and try again: ``eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa``
+    If you have having trouble connecing, then type this and try again: ``eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa``
 
 .. code-block:: bash
 
