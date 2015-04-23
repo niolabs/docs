@@ -88,6 +88,8 @@ For Windows
 
 When you're done using nio, you can leave the virtual environment with `deactivate`. When using nio again, be sure to activate the virtual environment first with `source ~/nio/versions/1.5.1/bin/activate`.
 
+OK, now we can finally install nio. If you don't have these wheels then you've got to make friends with someone who does!
+
 .. code-block:: bash
 
     pip install nio-1.5.1-py3-none-any.whl
