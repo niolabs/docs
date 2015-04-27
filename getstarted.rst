@@ -99,6 +99,10 @@ For Windows
     pywin32 must also be installed:
     
     ``easy_install http://sourceforge.net/projects/pywin32/files/pywin32/Build%20219/pywin32-219.win-amd64-py3.4.exe/download``
+    
+    *Note: make sure you take note of the "bittedness" of your python installation. The link above provides the command to install pywin32 on a system running 64-bit python. If you are running 32-bit python, the command will be:* 
+   
+    ``easy_install http://sourceforge.net/projects/pywin32/files/pywin32/Build%20219/pywin32-219.win32-py3.4.exe/download``
 
 The installation of nio is now complete! You can run the instance from a project directory with the ``run_nio`` command. See :ref:`setting-up-a-project` for instructions on creating a project directory.
 
