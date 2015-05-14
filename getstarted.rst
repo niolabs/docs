@@ -111,7 +111,7 @@ We now install the **nio CLI**, a tool that helps with common operations like cr
 
 .. code-block:: bash
 
-    pip install https://github.com/neutralio/nio-cli/archive/master.zip
+    pip install nio-cli
 
 .. _setting-up-a-project:
 
