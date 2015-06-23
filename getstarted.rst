@@ -11,7 +11,7 @@ Requirements
 * `virtualenv <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_
 * `git <http://git-scm.com/download>`_
 
-First, open a terminal in to the home directory and check that you have everything you need.
+First, open a terminal in your home directory and check that you have everything you need.
 
 .. code-block:: bash
 
@@ -37,7 +37,7 @@ For Windows
         - **Append** (do not delete any text that exists) the following text at the end of the line: ``;C:\Python34;C:\Python34\Scripts;``
         - hit ``OK`` until out of all configuration windows
     - **Create a** ``python3`` **shortcut to work with the rest of this tutorial** 
-    *You may be able to skip this and just use ``python`` instead of ``python3`` for the rest of this tutorial*
+    **You may be able to skip this and just use ``python`` instead of ``python3`` for the rest of this tutorial
    
     - Open ``cmd`` in Administrator Mode (``Windows Key`` -> locate ``command prompt`` -> right click ``command prompt`` -> ``Run as Administrator``
    
@@ -52,9 +52,7 @@ For Windows
 System Setup
 ------------
 
-As a standard, we will be installing each version of nio to its own virtual environment. This keeps nio and all its dependencies isolated from other python projects and environments you may already have on your machine. You can read more about them `here <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_.
-
-Each nio project will be in its own directory too. We will start by creating some directories for these.
+Each nio project will be in its own directory. We will start by creating some directories for these.
 
 .. code-block:: bash
 
@@ -64,31 +62,53 @@ Each nio project will be in its own directory too. We will start by creating som
     mkdir projects
     mkdir versions
 
-Installation
+Global Installation (no virtual environment)
 ------------
 
-Lets start by installing nio version 1.5.1.
+Let's start by installing nio version 1.5.3 globally (without the use of a python virtual environment). In most cases, this is the method you will want to use. If you're installing n.io onto a device where you'll need the ability to switch between different versions for development/testing purposes, you may want to skip ahead to the intructions for installing with a **virtual environment**, but for almost all other cases, a global install is the way to go.
+
+First we need to make sure the our user has the proper permissions to install python packages via ``pip``. This is done by adding our user to a group that has access to ``/usr/local/lib/python3.4/site-packages``. This group is usually ``staff`` on most linux distributions. The command to do this would be:
+
+.. code-block:: bash
+   
+    sudo usermod -a -G staff <username>
+    
+
+Now we need to get the wheels for **nio** and **nioext** onto the device which n.io will be installed to. Once the wheels are on the device, navigate to the directory they have been copied to, and install them with these commands:
 
 .. code-block:: bash
 
-    cd ~/versions
-    virtualenv -p python3 1.5.1
+    pip install nio-1.5.3-py3-none-any.whl
+    pip install nioext-1.5.3-py3-none-any.whl
 
-For Windows
-    The previous command will be: ``virtualenv -p C:/Python34/python.exe 1.5.1``
+**Note: Depending on how ``pip`` was installed, the command may be slightly different. You can verify the command to call pip by trying ``pip``, ``pip3``, or ``pip3.4`` with the ``--version`` option.
 
-You now need to activate your virtual environment. This will add a `(1.5.1)` to the beginning of your command line to indicate the virtual environment that you are using.
+
+
+Virtual Environment Installation
+------------
+This section will guide you as to how n.io is installed contained within a python virtual environment. This keeps n.io and all it's dependencies isolated, and can be useful when you need the ability to switch between different versions of n.io, such as in a development or testing environment. You can read more about virtual environments `here <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_.
 
 .. code-block:: bash
 
-    source 1.5.1/bin/activate
+    cd ~/nio/versions
+    virtualenv -p python3 1.5.3
 
 For Windows
-    The previous command will be: ``source 1.5.1/Scripts/activate``
+    The previous command will be: ``virtualenv -p C:/Python34/python.exe 1.5.3``
 
-When you're done using nio, you can leave the virtual environment with `deactivate`. When using nio again, be sure to activate the virtual environment first with `source ~/nio/versions/1.5.1/bin/activate`.
+You now need to activate your virtual environment. This will add a `(1.5.3)` to the beginning of your command line to indicate the virtual environment that you are using.
 
-OK, now we can finally install nio. If you don't have these wheels then you've got to make friends with someone who does!
+.. code-block:: bash
+
+    source 1.5.3/bin/activate
+
+For Windows
+    The previous command will be: ``source 1.5.3/Scripts/activate``
+
+When you're done using nio, you can leave the virtual environment with ``deactivate``. When using nio again, be sure to activate the virtual environment first with ``source ~/nio/versions/1.5.3/bin/activate``.
+
+OK, now we can install nio. If you don't have these wheels then you've got to make friends with someone who does!
 
 .. code-block:: bash
 
@@ -106,8 +126,10 @@ For Windows
 
 The installation of nio is now complete! You can run the instance from a project directory with the ``run_nio`` command. See :ref:`setting-up-a-project` for instructions on creating a project directory.
 
+Installing nio CLI
+------------------
 
-We now install the **nio CLI**, a tool that helps with common operations like creating projects, adding blocks and managing dependencies. It is called the nio Command Line Interface (CLI).
+We now install the **nio CLI**, a tool that takes care of common operations like creating projects, adding blocks, managing dependencies, and running n.io itself. It is called the nio Command Line Interface (CLI).
 
 .. code-block:: bash
 
@@ -125,19 +147,19 @@ To help you get started, we provide a `project template <https://github.com/nio-
 Verify that you can connect to git with: `ssh git@github.com`. It should return something like "Hi YOUR_USER_NAME! You've successfully authenticated, but GitHub does not provide shell access."
 
 For Windows
-    If you have having trouble connecing, then type this and try again: ``eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa``
+    If you have having trouble connecing, type this and then try again: ``eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa``
 
 .. code-block:: bash
 
     cd ~/nio/projects
-    nio new getting_started
-    cd getting_started
+    nio new <project_name>
+    cd <project_name>
 
 If you don't have ssh access set up for GitHub then try using the https flags:
 
 .. code-block:: bash
 
-    nio new getting_started --https
+    nio new <project_name> --https
     
 The first thing we're going to need is some blocks. We provide a selection of `open source blocks <https://github.com/nio-blocks>` for your convenience, but, remember, nio is designed to make it easy for you to develop custom blocks; more on this later. For now, let's just get a group of blocks that we've categorized as *util*.
 
@@ -154,14 +176,22 @@ Again, if you don't have ssh access set up for GitHub then try using the https f
 Running nio
 ~~~~~~~~~~~
 
-This part is simple. With the virtual environment active (which it should already be if you've been following along), run the following command from the root of your project directory (which should also already be ready if you've been following along):
+This part is simple. Navigate to your project directory (which you should still be in if you've been following along), and run the following command. If you've installed n.io to a virtual environment, make sure it's active!
 
 .. code-block:: bash
 
-    cd ~/nio/projects/getting_started
-    run_nio
+    cd ~/nio/projects/<project_name>
+    nio server
 
-It is common to see many INFO log messages. If you see any ERROR messages you may have a problem. But for now lets ignore this one: `NIO [ERROR] [Discover] Failure loading module nioext.components.snmp.agent ImportError:No module named 'pysnmp'`. We won't be using that anyway.
+It is common to see many INFO log messages. If you see any ERROR messages you may have a problem. But for now lets ignore this one: ``NIO [ERROR] [Discover] Failure loading module nioext.components.snmp.agent ImportError:No module named 'pysnmp'``. We won't be using that anyway.
+
+The previous command runs n.io with standard output to the console. This is excellent to ensure that your instance is running properly and troubleshoot dependency issues, but for the most part, you'll want n.io running in the background. This is achieved by adding the ``-bg`` flag to the ``nio server`` command, like so: 
+
+.. code-block:: bash
+
+    nio server -bg
+    
+This method will simply return you to a command prompt, with no console message output, and will keep running until the instance is terminated with ``nio co shutdown``. 
 
 At this point we're done running commands from the terminal, but we will be keeping an eye on these logs.
 
