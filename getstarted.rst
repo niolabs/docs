@@ -37,7 +37,7 @@ For Windows
         - **Append** (do not delete any text that exists) the following text at the end of the line: ``;C:\Python34;C:\Python34\Scripts;``
         - hit ``OK`` until out of all configuration windows
     - **Create a** ``python3`` **shortcut to work with the rest of this tutorial** 
-    **You may be able to skip this and just use ``python`` instead of ``python3`` for the rest of this tutorial
+        **You may be able to skip this and just use** ``python`` **instead of** ``python3`` **for the rest of this tutorial**
    
     - Open ``cmd`` in Administrator Mode (``Windows Key`` -> locate ``command prompt`` -> right click ``command prompt`` -> ``Run as Administrator``
    
@@ -67,7 +67,7 @@ Global Installation (no virtual environment)
 
 Let's start by installing nio version 1.5.3 globally (without the use of a python virtual environment). In most cases, this is the method you will want to use. If you're installing n.io onto a device where you'll need the ability to switch between different versions for development/testing purposes, you may want to skip ahead to the intructions for installing with a **virtual environment**, but for almost all other cases, a global install is the way to go.
 
-First we need to make sure the our user has the proper permissions to install python packages via ``pip``. This is done by adding our user to a group that has access to ``/usr/local/lib/python3.4/site-packages``. This group is usually ``staff`` on most linux distributions. The command to do this would be:
+First we need to make sure the our user has the proper permissions to install python packages via ``pip``. This is done by adding our user to a group that has write permissions to ``/usr/local/lib/python3.4/site-packages``. This group is usually ``staff`` on most linux distributions. The command to do this would be:
 
 .. code-block:: bash
    
@@ -78,8 +78,8 @@ Now we need to get the wheels for **nio** and **nioext** onto the device which n
 
 .. code-block:: bash
 
-    pip install nio-1.5.3-py3-none-any.whl
-    pip install nioext-1.5.3-py3-none-any.whl
+    sudo pip3.4 install nio-1.5.3-py3-none-any.whl
+    sudo pip3.4 install nioext-1.5.3-py3-none-any.whl
 
 **Note: Depending on how ``pip`` was installed, the command may be slightly different. You can verify the command to call pip by trying ``pip``, ``pip3``, or ``pip3.4`` with the ``--version`` option.
 
@@ -183,7 +183,7 @@ This part is simple. Navigate to your project directory (which you should still 
     cd ~/nio/projects/<project_name>
     nio server
 
-It is common to see many INFO log messages. If you see any ERROR messages you may have a problem. But for now lets ignore this one: ``NIO [ERROR] [Discover] Failure loading module nioext.components.snmp.agent ImportError:No module named 'pysnmp'``. We won't be using that anyway.
+If you see any ERROR messages you may have a problem. But for now lets ignore this one: ``NIO [ERROR] [Discover] Failure loading module nioext.components.snmp.agent ImportError:No module named 'pysnmp'``. We won't be using that anyway.
 
 The previous command runs n.io with standard output to the console. This is excellent to ensure that your instance is running properly and troubleshoot dependency issues, but for the most part, you'll want n.io running in the background. This is achieved by adding the ``-bg`` flag to the ``nio server`` command, like so: 
 
