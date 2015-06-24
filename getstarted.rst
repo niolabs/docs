@@ -37,7 +37,7 @@ For Windows
         - **Append** (do not delete any text that exists) the following text at the end of the line: ``;C:\Python34;C:\Python34\Scripts;``
         - hit ``OK`` until out of all configuration windows
     - **Create a** ``python3`` **shortcut to work with the rest of this tutorial** 
-        **You may be able to skip this and just use** ``python`` **instead of** ``python3`` **for the rest of this tutorial**
+        *You may be able to skip this and just use* ``python`` *instead of* ``python3`` *for the rest of this tutorial*
    
     - Open ``cmd`` in Administrator Mode (``Windows Key`` -> locate ``command prompt`` -> right click ``command prompt`` -> ``Run as Administrator``
    
