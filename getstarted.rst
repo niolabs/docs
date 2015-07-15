@@ -160,14 +160,14 @@ To help you get started, we provide a `project template <https://github.com/nio-
 .. code-block:: bash
 
     cd ~/nio/projects
-    nio new <name_your_project>
+    nio new <project_name>
     cd <project_name>
 
 If you don't have ssh access set up for GitHub then try using the https flags:
 
 .. code-block:: bash
 
-    nio new <name_your_project> --https
+    nio new <project_name> --https
     
 The first thing we're going to need is some blocks. We provide a selection of `open source blocks <https://github.com/nio-blocks>` for your convenience, but, remember, nio is designed to make it easy for you to develop custom blocks; more on this later. For now, let's just get a group of blocks that we've categorized as *util*.
 
