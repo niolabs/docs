@@ -11,7 +11,7 @@ Requirements
 * `virtualenv <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_
 * `git <http://git-scm.com/download>`_
 
-First, open a terminal in your home directory and check that you have everything you need.
+First, open a terminal in your home directory and check that you have everything you need by running these commands:
 
 .. code-block:: bash
 
@@ -20,7 +20,7 @@ First, open a terminal in your home directory and check that you have everything
     virutalenv --version
     git --version
 
-If those four commands don't return anything, then follow the requirement links before continuing.
+If those four commands don't return anything, then follow the requirement links at the top before continuing. Once all the commands return a valid version, we are ready to move on to **System Setup**.
 
 For Windows
     Run the above commands in a **Git Bash** Terminal. To access this,
@@ -47,12 +47,12 @@ For Windows
     
     **Pro Tip**: *After modifying anything in the system (such as all the actions from the above section), you'll need to close and re-open your git bash window to see your changes reflected. Simply close the window, right click, and select "git bash here" once more.*
 
-    Congratulations, Windows users! Now you can verify your requirements are met by running the  4 commands shown above this section.
+    Congratulations, Windows users! Now you can verify your requirements are met by running the  4 commands at the top of the page.
 
 System Setup
 ------------
 
-Each nio project will be in its own directory. We will start by creating some directories for these.
+Each nio project will be in its own directory. We will start by creating some directories for these:
 
 .. code-block:: bash
 
@@ -67,11 +67,17 @@ Global Installation (no virtual environment)
 
 Let's start by installing nio version 1.5.3 globally (without the use of a python virtual environment). In most cases, this is the method you will want to use. If you're installing n.io onto a device where you'll need the ability to switch between different versions for development/testing purposes, you may want to skip ahead to the intructions for installing with a **virtual environment**, but for almost all other cases, a global install is the way to go.
 
-First we need to make sure the our user has the proper permissions to install python packages via ``pip``. This is done by adding our user to a group that has write permissions to ``/usr/local/lib/python3.4/site-packages``. This group is usually ``staff`` on most linux distributions. The command to do this would be:
+First we need to make sure our user has the proper permissions to install python packages via ``pip``. This is done by adding our user to a group that has write permissions to ``/usr/local/lib/python3.4/site-packages``. This group is usually ``staff`` on most linux distributions. The command to do this on linux would be:
 
 .. code-block:: bash
    
-    sudo usermod -a -G staff <username>
+    sudo usermod -a -G staff <USERNAME>
+    
+And on OSX: 
+
+.. code-block:: bash
+   
+    sudo dseditgroup -o edit -a <USERNAME> -t user staff
     
 
 Now we need to get the wheels for **nio** and **nioext** onto the device which n.io will be installed to. Once the wheels are on the device, navigate to the directory they have been copied to, and install them with these commands:
@@ -81,7 +87,9 @@ Now we need to get the wheels for **nio** and **nioext** onto the device which n
     sudo pip3.4 install nio-1.5.3-py3-none-any.whl
     sudo pip3.4 install nioext-1.5.3-py3-none-any.whl
 
-**Note: Depending on how ``pip`` was installed, the command may be slightly different. You can verify the command to call pip by trying ``pip``, ``pip3``, or ``pip3.4`` with the ``--version`` option.
+**Note: Depending on how ``pip`` was installed, the command may be slightly different. You can verify the command to call pip by trying ``pip``, ``pip3``, or ``pip3.4`` with the ``--version`` option. Also, if you have access to the web hosted nio wheels, you can just use ``sudo pip3.4 install http://<URL-of-nio-wheels>`` and skip copying them locally to the device. 
+
+If you need to install using a virtual environment or you are using windows, follow along in the section below. If you're NOT installing to a virtual environment or using windows, we can now move on to **Installing nio CLI**. 
 
 
 
@@ -140,26 +148,26 @@ We now install the **nio CLI**, a tool that takes care of common operations like
 Setting up a NIO Project
 ------------------------
 
-To use the nio CLI you need `git` (a distributed version control tool) and a `GitHub account <http://github.com>` with `ssh access <https://help.github.com/articles/generating-ssh-keys>`.
+To use the nio CLI you need `git <https://git-scm.com>`_ (a distributed version control tool) and a `GitHub account <http://github.com>`_ with `ssh access <https://help.github.com/articles/generating-ssh-keys>`_.
 
-To help you get started, we provide a `project template <https://github.com/nio-blocks/project_template>` which reflects the standard directory structure of a nio project. Use the nio CLI to create a new project from the template.
+After getting your github account set up and adding your ssh key to it (click the links above if you need help with this), verify that you can connect to git with: `ssh -T git@github.com`. It should return something like "Hi <YOUR_USER_NAME>! You've successfully authenticated, but GitHub does not provide shell access."
 
-Verify that you can connect to git with: `ssh git@github.com`. It should return something like "Hi YOUR_USER_NAME! You've successfully authenticated, but GitHub does not provide shell access."
 
-For Windows
-    If you have having trouble connecing, type this and then try again: ``eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa``
+If you have having trouble connecing, type this and then try again: ``eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa``
+
+To help you get started, we provide a `project template <https://github.com/nio-blocks/project_template>`_ which reflects the standard directory structure of a nio project. Use the nio CLI to create a new project from the template:
 
 .. code-block:: bash
 
     cd ~/nio/projects
-    nio new <project_name>
+    nio new <name_your_project>
     cd <project_name>
 
 If you don't have ssh access set up for GitHub then try using the https flags:
 
 .. code-block:: bash
 
-    nio new <project_name> --https
+    nio new <name_your_project> --https
     
 The first thing we're going to need is some blocks. We provide a selection of `open source blocks <https://github.com/nio-blocks>` for your convenience, but, remember, nio is designed to make it easy for you to develop custom blocks; more on this later. For now, let's just get a group of blocks that we've categorized as *util*.
 
