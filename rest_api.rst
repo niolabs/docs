@@ -60,6 +60,8 @@ Get block types that are loaded into the nio instance.
 
 Get all service configurations.
 
+*   include_pids: when set to 'true', process ids are included in response.
+
 **POST**
 
 Create a new service configuration.
