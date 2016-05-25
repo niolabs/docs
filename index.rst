@@ -8,6 +8,8 @@ Contents:
 
    getting_started
    setup
+   builder
+   nio_blocks
    api_conventions
    core_apis
    blocks_types_apis
