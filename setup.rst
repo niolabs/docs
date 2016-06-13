@@ -97,7 +97,7 @@ If you want the Nio REST API to run on a different port, perhaps because you hav
 Nio environment variables
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can specify project specific environement variabls to be used in configuration files. These variables can used in ``nio.conf``, logging config and block and service property configurations. The values of these variables are not accessible through the Nio REST API so they are a good place for things that need to be kept private. It is common to use these environment variables so that you can run the same project in different environments and change the behavior simply by referencing a different variable file.
+You can specify project specific environement variables to be used in configuration files. These variables can used in ``nio.conf``, logging config and block and service property configurations. The values of these variables are not accessible through the Nio REST API so they are a good place for things that need to be kept private. It is common to use these environment variables so that you can run the same project in different environments and change the behavior simply by referencing a different variable file.
 
 The default environment variable file is ``nio.env`` and is located at the project root.
 
