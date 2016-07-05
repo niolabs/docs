@@ -62,7 +62,7 @@ When you want to update the configuration of a block configuration, PUT the json
 
 .. code-block:: bash
 
-    curl -XPUT 'http://localhost:8181/blocks/Log' --user 'Admin:Admin' --data '{"log_level": "DEBUG"}' -H 'Content-Type: applcation/json'
+    curl -XPUT 'http://localhost:8181/blocks/Log' --user 'Admin:Admin' --data '{"log_level": "DEBUG"}' -H 'Content-Type: application/json'
 
 Delete API
 ----------
