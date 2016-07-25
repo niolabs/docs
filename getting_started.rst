@@ -45,7 +45,9 @@ Once you have these basic prerequisites, you can download and install nio. The b
 
     pip3 install <nio-binary.whl>
 
-Note: Depending on how ``pip`` was installed, the command may be slightly different. You can verify the command to call pip by trying ``pip``, ``pip3``, or ``pip3.4`` with the ``--version`` option. Also, if you have access to the web hosted nio wheels, you can use ``pip3.4 install http://<URL-of-nio-wheels>``. 
+.. note::
+
+    Depending on how ``pip`` was installed, the command may be slightly different. You can verify the command to call pip by trying ``pip``, ``pip3``, or ``pip3.4`` with the ``--version`` option. Also, if you have access to the web hosted nio wheels, you can use ``pip3.4 install http://<URL-of-nio-wheels>``. 
 
 Now we're going to install the Nio CLI. While not required to run Nio, it is helpful for setting up a project and running it:
 
@@ -56,13 +58,25 @@ Now we're going to install the Nio CLI. While not required to run Nio, it is hel
 Creating and Running a Project
 ------------------------------
 
-Alright, now it's time for things to get interesting. Create a Nio project in your current directory and run it with:
+Alright, now it's time for things to get interesting. Create a Nio project in your current directory using the CLI we just installed:
 
 .. code-block:: bash
 
     nio new first_project
-    cd first_project
+
+This will create a new folder in your current directory called ``first_project`` containing the contents of the default project pulled from GitHub. You can poke around in the project directory but when you are ready to launch n.io head into the project root (``cd first_project`` if you are in your original working directory) and then execute n.io. You can use the CLI to launch n.io, or if your binary came with a custom executable name, run that.
+
+Using the CLI (if your binary didn't come with a custom executable):
+
+.. code-block:: bash
+
     nio server
+
+Using a custom executable (i.e. ``nio_pi``):
+
+.. code-block:: bash
+
+    nio_pi
 
 If all goes well, you should see something like the following logs:
 
@@ -93,6 +107,18 @@ Before we move on, you're going to want to add some blocks to your project. Pres
 .. code-block:: bash
 
     nio add logger simulator filter dynamic_fields
+
+.. note:: 
+
+    **Using n.io 2.0?**
+    
+    For n.io 2.0 you will have to update your blocks to the ``nio2`` branch. By default, the CLI will put the blocks on the master branch. To switch your blocks to the ``nio2`` branch you can run this git command, or manually go into each block folder and checkout the branch.
+
+    .. code-block:: bash
+
+        git submodule foreach git checkout nio2
+    
+    If a block doesn't have a ``nio2`` branch it means it hasn't been converted to 2.0 yet. Unfortunately, n.io 1.x blocks are not compatible with the n.io 2.x framework.
 
 Explore Nio
 -----------
