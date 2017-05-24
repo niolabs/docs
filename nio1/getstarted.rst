@@ -17,7 +17,7 @@ First, open a terminal in your home directory and check that you have everything
 
     python3 --version
     pip3.4 --version
-    virutalenv --version
+    virtualenv --version
     git --version
 
 If those four commands don't return anything, then follow the requirement links at the top before continuing. Once all the commands return a valid version, we are ready to move on to **System Setup**.
