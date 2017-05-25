@@ -143,7 +143,9 @@ It's looking pretty empty in there but you should at least see a list of blocks 
 
 Start by clicking the "add new service" button and name your service "SimulateAndLog".
 
-Now that we have a service, we'll add a CounterIntervalSimulator block and a Logger block. Double click on your "SimulateAndLog" service. From the right, click on "LB" and drag a LoggerBlock onto the service canvas. Go ahead give it the name "Log". Do the same with "CIS" and drag in a CounterIntervalSimulator and name it "Simulate". Now connect these blocks by clicking and dragging on the output terminal of Simulate and release it on the input terminal of "Log".
+Now that we have a service, we'll add a CounterIntervalSimulator block and a Logger block. Double click on your "SimulateAndLog" service. From the right, click on "LB" and drag a LoggerBlock onto the service canvas. Go ahead give it the name "Log". Do the same with "CIS" and drag in a CounterIntervalSimulator and name it "Simulate".
+
+Now connect these blocks by clicking and dragging on the output terminal of "Simulate" and release it on the input terminal of "Log".
 
 Once you are satisfied with your service, click the "save" icon at the top of the instance canvas.
 
