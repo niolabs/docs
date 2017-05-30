@@ -154,8 +154,6 @@ Running Services
 
 By now I'm sure you're more than ready to see something happen. Click the "start" icon from the top of the service canvas and you should see some logs appear in the terminal where you ran nio from.
 
-TODO: update logs for 2.x
-
 .. code-block:: bash
 
     [2016-03-05 00:32:05.189] NIO [INFO] [SimulateAndLog.Log] Block: Log (type: LoggerBlock) status is configured
