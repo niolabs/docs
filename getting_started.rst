@@ -66,21 +66,19 @@ Alright, now it's time for things to get interesting. Create a Nio project in yo
 
 This will create a new folder in your current directory called ``first_project`` containing the contents of the default project pulled from GitHub. You can poke around in the project directory but when you are ready to launch n.io head into the project root (``cd first_project`` if you are in your original working directory) and then execute n.io. You can use the CLI to launch n.io, or if your binary came with a custom executable name, run that.
 
+Using a custom executable (i.e. ``nio_run``):
+
+.. code-block:: bash
+
+    nio_run
+
 Using the CLI (if your binary didn't come with a custom executable):
 
 .. code-block:: bash
 
     nio server
 
-Using a custom executable (i.e. ``nio_pi``):
-
-.. code-block:: bash
-
-    nio_pi
-
 If all goes well, you should see something like the following logs:
-
-TODO: update logs for 2.x
 
 .. code-block:: bash
 
