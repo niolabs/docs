@@ -129,14 +129,14 @@ If you don't have Nio running already, do that now:
 
     nio_run
 
-Builder
+Designer
 ~~~~~~~
 
 While we could continue using the REST API directly, we don't need to do that in this tutorial. Instead, we'll use this handy web app:
 
 .. code-block:: bash
 
-    open http://builder.n.io
+    open http://designer.n.io
 
 
 It's looking pretty empty in there but you should at least see a list of blocks on the left. While it won't get too exciting quite yet, we'll start by building a very basic service to simulate and log signals. By default, the projects logs go to standard out as well as to files in the ``logs`` directory of your project folder.
