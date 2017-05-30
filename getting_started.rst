@@ -115,7 +115,7 @@ If you don't have Nio running already, do that now:
 
     nio_run
 
-Designer
+System Designer
 ~~~~~~~
 
 While we could continue using the REST API directly, we don't need to do that in this tutorial. Instead, we'll use this handy web app:
