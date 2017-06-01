@@ -49,7 +49,7 @@ In addition to getting the details of one block configuration, specified by name
 Create API
 ----------
 
-If you're working with a n.io project from scrach, you're going to be creating and configuring blocks. Create a new configuration of a block with the create API by POSTing JSON data. When creating a new block configuration, you can optionally include the configured values of the block type properties. At a minimum, you must specify the block ``type``, the ``name`` of the new configuration and values for any required properties that do not have a default value. For example, to create the ``Log`` block of type ``Logger``:
+If you're working with a n.io project from scratch, you're going to be creating and configuring blocks. Create a new configuration of a block with the create API by POSTing JSON data. When creating a new block configuration, you can optionally include the configured values of the block type properties. At a minimum, you must specify the block ``type``, the ``name`` of the new configuration and values for any required properties that do not have a default value. For example, to create the ``Log`` block of type ``Logger``:
 
 .. code-block:: bash
 

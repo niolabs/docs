@@ -26,7 +26,7 @@ Services
 
 The middle column is where you see all the services for the project. This is also where you view and configure your services.
 
-On the ``Service List`` tab you get a highlevel view of the services. On the left you will see a red rectangle for stopped services and a green rectangle for started services. Services in any other state are white (example: error state). A few buttons are available for some interaction:
+On the ``Service List`` tab you get a high-level view of the services. On the left you will see a red rectangle for stopped services and a green rectangle for started services. Services in any other state are white (example: error state). A few buttons are available for some interaction:
 
 * ``Start`` and ``Stop`` a service.
 * ``Clone``. Create a copy of the service with a new name.

@@ -6,7 +6,7 @@ Services are the things that run in n.io and where you connect your configured b
 Get API
 -------
 
-The get API returns a json body with information about a serivce based on its name. The following example gets the information for the service ``SimulateAndLog``:
+The get API returns a json body with information about a service based on its name. The following example gets the information for the service ``SimulateAndLog``:
 
 .. code-block:: bash
 
@@ -66,7 +66,7 @@ sys_metadata
 Get All API
 -----------
 
-In addition to getting the details of one service configuration, specified by name, you can get the details of all serivce configurations in one request:
+In addition to getting the details of one service configuration, specified by name, you can get the details of all service configurations in one request:
 
 .. code-block:: bash
 
@@ -76,7 +76,7 @@ Create API
 ----------
 
 
-If you're working with a n.io project from scrach, you're going to be creating and configuring services. Create a new service with the create API by POSTing JSON data. When creating a new service, you can optionally include the configured values of the service type properties. At a minimum, you must specify the service ``type``, the ``name`` of the new configuration and values for any required properties that do not have a default value. For example, to create the ``ServiceAndLog`` service of the basic type ``Service``:
+If you're working with a n.io project from scratch, you're going to be creating and configuring services. Create a new service with the create API by POSTing JSON data. When creating a new service, you can optionally include the configured values of the service type properties. At a minimum, you must specify the service ``type``, the ``name`` of the new configuration and values for any required properties that do not have a default value. For example, to create the ``ServiceAndLog`` service of the basic type ``Service``:
 
 .. code-block:: bash
 
@@ -85,7 +85,7 @@ If you're working with a n.io project from scrach, you're going to be creating a
 Update API
 ----------
 
-When you want to update the configuration of a serivce configuration, PUT the json data to the service name. You only need to PUT the properties that you are updating:
+When you want to update the configuration of a service configuration, PUT the json data to the service name. You only need to PUT the properties that you are updating:
 
 .. code-block:: bash
 

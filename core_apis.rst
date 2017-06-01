@@ -37,7 +37,7 @@ The following json body is returned:
       }
     }
 
-- ``start_time`` - Datetime string at which nio was started.
+- ``start_time`` - Date-time string at which nio was started.
 - ``nio``
 
    - ``binary`` - Name of executable binary that was run against the project.
