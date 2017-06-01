@@ -144,7 +144,7 @@ In addition to getting the details of one block type, specified by name, you can
 Add API
 -------
 
-When n.io starts up, it discovers and adds all the block types in the project. If you want to add a new block to an already runnning n.io instance, you can do that with the Add API. Once the block code is added to the project directory, use the following request to load it into the running n.io instance:
+When n.io starts up, it discovers and adds all the block types in the project. If you want to add a new block to an already running n.io instance, you can do that with the Add API. Once the block code is added to the project directory, use the following request to load it into the running n.io instance:
 
 .. code-block:: bash
 

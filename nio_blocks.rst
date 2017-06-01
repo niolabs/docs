@@ -3,7 +3,7 @@ n.io Blocks
 
 What is a block?
 --------
-A n.io block is a unit of functionality that runs in a service. Some examples of blocks are socical media blocks that allow interaction with social media APIs and acuator and sensor blocks which allow various levels of interaction with the real world. These blocks are able to interact with each other through their ability to take signals as input from other blocks and output signals to other blocks. They are also command-able through REST API. Blocks are implemented as python classes.
+A n.io block is a unit of functionality that runs in a service. Some examples of blocks are social media blocks that allow interaction with social media APIs and actuator and sensor blocks which allow various levels of interaction with the real world. These blocks are able to interact with each other through their ability to take signals as input from other blocks and output signals to other blocks. They are also command-able through REST API. Blocks are implemented as python classes.
 
 Block Properties
 --------
@@ -24,7 +24,7 @@ The fields of the input signal can also be accessed while using python code by u
 
 Logging
 ~~~~~~~~
-n.io has logging capabilities that give service makers more information about running n.io services for purposes such as debugging. The **LogLevel** of a block specifies the level of information that is logged when logging information using a logger block. A logger block, logs information about the signal that is passed into the block, including the key-value pairs of the signal. 
+n.io has logging capabilities that give service makers more information about running n.io services for purposes such as debugging. The **LogLevel** of a block specifies the level of information that is logged when logging information using a logger block. A logger block, logs information about the signal that is passed into the block, including the key-value pairs of the signal.
 
 Block Types
 --------
@@ -50,11 +50,11 @@ Any Python modules in the block's ``requirements.txt`` are ``pip`` installed.
 
 Signals
 --------
-Signals allow interblock interaction. They are implemented with a dictionary and as such are a collection of key-value pairs. 
+Signals allow inter-block interaction. They are implemented with a dictionary and as such are a collection of key-value pairs. 
 
 Commands
 --------
-Block commands can be used through the block API and can be used to interact with blocks that are part of a running service. 
+Block commands can be used through the block API and can be used to interact with blocks that are part of a running service.
 
 Implementation
 --------

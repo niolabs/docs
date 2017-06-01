@@ -13,7 +13,7 @@ Regardless of what form of authorization your project uses, you will have user p
 Basic Auth
 ~~~~~~~~~~
 
-When using basic authentication, the REST API is protected usernames and passwords. To use basic auth, include a base 64 encoded username and passowrd in the Authorization header of your request. For example:
+When using basic authentication, the REST API is protected usernames and passwords. To use basic auth, include a base 64 encoded username and password in the Authorization header of your request. For example:
 
 .. code-block:: bash
 
