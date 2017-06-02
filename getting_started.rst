@@ -15,18 +15,18 @@ Basic Concepts
 
 Before you install nio, it's important to understand a few core concepts.
 
-Project
-  A nio project is a directory on your computer that contains all the configuration that defines your nio implementation. Projects can run stand-alone or they can be a part of a larger nio network where many nio instances communicate with one another.
-Block
-  A block is a configurable piece of code that processes data signals. Blocks can generate signals and/or consume signals.
-Service
-  A service is a runnable piece of nio that defines your application logic. Services define how blocks are connected together.
-Signal
-  A signal is a unit of data that is passed from block to block within a service. Think of it is a little box of data, containing anything from a temperature reading to a tweet.
-Nio Framework
-  The nio library is the versioned portion of the nio code. You will install the nio library and then execute that with the appropriate nio binary. Install the framework with pip: ``pip install nio``.
 Nio Binary
   Depending on your circumstances, you will run one of many nio binaries. Binaries range in complexity and are often tuned for hardware. If you're tinkering around on a Raspberry Pi, you don't need to run the same binary as a network of a dozen super computers built to analyze hundreds of thousands signals per second.
+Nio Framework
+  The nio library is the versioned portion of the nio code. You will install the nio library and then execute that with the appropriate nio binary. Install the framework with pip: ``pip install nio``.
+Project
+  A nio project is a directory on your computer that contains all the configuration that defines your nio implementation. Projects can run stand-alone or they can be a part of a larger nio network where many nio instances communicate with one another.
+Service
+  A service is a runnable piece of nio that defines your application logic. Services define how blocks are connected together.
+Block
+  A block is a configurable piece of code that processes data signals. Blocks can generate signals and/or consume signals.
+Signal
+  A signal is a unit of data that is passed from block to block within a service. Think of it is a little box of data, containing anything from a temperature reading to a tweet.
 
 Installation
 ------------
