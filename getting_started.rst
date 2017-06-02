@@ -15,18 +15,18 @@ Basic Concepts
 
 Before you install nio, it's important to understand a few core concepts.
 
-Project
-  A nio project is a directory on your computer that contains all the configuration that defines your nio implementation. Projects can run stand-alone or they can be a part of a larger nio network where many nio instances communicate with one another.
-Block
-  A block is a configurable piece of code that processes data signals. Blocks can generate signals and/or consume signals.
-Service
-  A service is a runnable piece of nio that defines your application logic. Services define how blocks are connected together.
-Signal
-  A signal is a unit of data that is passed from block to block within a service. Think of it is a little box of data, containing anything from a temperature reading to a tweet.
-Nio Framework
-  The nio library is the versioned portion of the nio code. You will install the nio library and then execute that with the appropriate nio binary. Install the framework with pip: ``pip install nio``.
 Nio Binary
   Depending on your circumstances, you will run one of many nio binaries. Binaries range in complexity and are often tuned for hardware. If you're tinkering around on a Raspberry Pi, you don't need to run the same binary as a network of a dozen super computers built to analyze hundreds of thousands signals per second.
+Nio Framework
+  The nio library is the versioned portion of the nio code. You will install the nio library and then execute that with the appropriate nio binary. Install the framework with pip: ``pip install nio``.
+Project
+  A nio project is a directory on your computer that contains all the configuration that defines your nio implementation. Projects can run stand-alone or they can be a part of a larger nio network where many nio instances communicate with one another.
+Service
+  A service is a runnable piece of nio that defines your application logic. Services define how blocks are connected together.
+Block
+  A block is a configurable piece of code that processes data signals. Blocks can generate signals and/or consume signals.
+Signal
+  A signal is a unit of data that is passed from block to block within a service. Think of it is a little box of data, containing anything from a temperature reading to a tweet.
 
 Installation
 ------------
@@ -124,8 +124,11 @@ While we could continue using the REST API directly, we don't need to do that in
 
     open http://designer.n.io
 
+First you will need to create a system to run your nio project. Click on the '+' icon on the left of the screen and give your system a name (i.e. local).
 
-It's looking pretty empty in there but you should at least see a list of blocks on the left. While it won't get too exciting quite yet, we'll start by building a very basic service to simulate and log signals. By default, the projects logs go to standard out as well as to files in the ``logs`` directory of your project folder.
+Now you will need to add an instance to your service. We will make a local instance and not a cloud instance so click on the "add new instance" button at the top of the screen. Give your instance a name, set the host name to "localhost", change the port number to 8181, and click "accept". Now you can enter your instance canvas.
+
+It's looking pretty empty in there so we will need to create a service. While it won't get too exciting quite yet, we'll start by building a very basic service to simulate and log signals. By default, the projects logs go to standard out as well as to files in the ``logs`` directory of your project folder.
 
 Start by clicking the "add new service" button and name your service "SimulateAndLog".
 
