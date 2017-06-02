@@ -124,8 +124,11 @@ While we could continue using the REST API directly, we don't need to do that in
 
     open http://designer.n.io
 
+First you will need to create a system to run your nio project. Click on the '+' icon on the left of the screen and give your system a name (i.e. local).
 
-It's looking pretty empty in there but you should at least see a list of blocks on the left. While it won't get too exciting quite yet, we'll start by building a very basic service to simulate and log signals. By default, the projects logs go to standard out as well as to files in the ``logs`` directory of your project folder.
+Now you will need to add an instance to your service. We will make a local instance and not a cloud instance so click on the "add new instance" button at the top of the screen. Give your instance a name, set the host name to "localhost", change the port number to 8181, and click "accept". Now you can enter your instance canvas.
+
+It's looking pretty empty in there so we will need to create a service. While it won't get too exciting quite yet, we'll start by building a very basic service to simulate and log signals. By default, the projects logs go to standard out as well as to files in the ``logs`` directory of your project folder.
 
 Start by clicking the "add new service" button and name your service "SimulateAndLog".
 
