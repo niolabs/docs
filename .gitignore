@@ -1,22 +1,6 @@
-# Python 3 caching
-__pycache__
-*.pyc
+# Node
+node_modules
+package-lock.json
 
-# Unit test stuff
-test_results.xml
-
-# Rope Project stuff
-.ropeproject
-
-# Emacs swap files
-*~
-
-# vim swap files
-*.swp
-
-# log files
-*.log
-dist
-build
-src/nio.egg-info
-_build
+# Gitbook
+_book

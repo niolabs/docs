@@ -1,0 +1,28 @@
+{
+  "name": "nio-docs",
+  "version": "1.0.0",
+  "description": "Documentation for pubkeeper",
+  "main": "index.js",
+  "scripts": {
+    "build": "gitbook build",
+    "gitbook": "gitbook",
+    "serve": "gitbook serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pubkeeper/docs.git"
+  },
+  "keywords": [
+    "pubkeeper"
+  ],
+  "author": "Matt Dodge <matt@n.io> (http://n.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pubkeeper/docs/issues"
+  },
+  "homepage": "https://github.com/pubkeeper/docs#readme",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.0"
+  },
+  "dependencies": {}
+}
