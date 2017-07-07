@@ -29,18 +29,18 @@ n.io has logging capabilities that give service makers more information about ru
 
 ## Block Types ##
 
-The project template that you get with ``nio new <project-name>`` will get you started with a few block types, but you're going to want to get more. All of the block types that we provide are hosted on GitHub:
+The project template that you get with ``n.io new <project-name>`` will get you started with a few block types, but you're going to want to get more. All of the block types that we provide are hosted on GitHub:
 
-    open https://github.com/nio-blocks
+    open https://github.com/n.io-blocks
 
-1. block repository can contain one or more blocks. For example, ``communication`` includes both the ``Publisher`` and ``Subscriber`` blocks. To add a nio-blocks repository (and all its blocks) to your project, run the following command from the root of your project directory. For example:
+1. block repository can contain one or more blocks. For example, ``communication`` includes both the ``Publisher`` and ``Subscriber`` blocks. To add a n.io-blocks repository (and all its blocks) to your project, run the following command from the root of your project directory. For example:
    
 
-    nio add communication
+    n.io add communication
 
 The n.io CLI supports adding multiple block repositories with one command:
 
-    nio add communication socketio
+    n.io add communication socketio
 
 Any Python modules in the block's ``requirements.txt`` are ``pip`` installed.
 

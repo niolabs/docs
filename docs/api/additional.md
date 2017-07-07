@@ -1,6 +1,6 @@
 # Additional APIs #
 
-n.io has some additional APIs that you may find useful as you explore what nio has to offer.
+n.io has some additional APIs that you may find useful as you explore what n.io has to offer.
 
 ## Configuration Refresh API ##
 

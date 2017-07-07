@@ -1,12 +1,12 @@
 # Core APIs #
 
-n.io has a few crucial api endpoints: ``/nio`` and ``/shutdown``.
+n.io has a few crucial api endpoints: ``/n.io`` and ``/shutdown``.
 
 ## n.io API ##
 
-The ``/nio`` endpoint is where you will find information about your running nio instances:
+The ``/n.io`` endpoint is where you will find information about your running n.io instances:
 
-    curl -XGET 'localhost:8181/nio'
+    curl -XGET 'localhost:8181/n.io'
 
 The following json body is returned:
 
@@ -15,8 +15,8 @@ The following json body is returned:
   <dd>
     <p>{</p>
     <p>"start_time": "2016-05-04 18:26:46.093569",</p>
-    <p>"nio": {</p>
-    <p>"binary": "nio_full",</p>
+    <p>"n.io": {</p>
+    <p>"binary": "n.io_full",</p>
     <p>"build": "20160426",</p>
     <p>"version": "2.0.0b4"</p>
     <p>},</p>
@@ -35,12 +35,12 @@ The following json body is returned:
     <p>}</p>
   </dd>
 </dl>
-- ``start_time`` - Datetime string at which nio was started.
-- ``nio``
+- ``start_time`` - Datetime string at which n.io was started.
+- ``n.io``
   
   - ``binary`` - Name of executable binary that was run against the project.
   - ``build`` - Build version of binary.
-  - ``version`` - Version of nio framework, not to be confused with ``build`` which is the version of the ``binary``.
+  - ``version`` - Version of n.io framework, not to be confused with ``build`` which is the version of the ``binary``.
     
 
 
@@ -48,7 +48,7 @@ The following json body is returned:
 
 The ``/shutdown`` endpoint is used to shutdown a running n.io instance.
 
-    curl -XGET 'localhost:8181/nio'
+    curl -XGET 'localhost:8181/n.io'
 
 The following html is returned on a successful shutdown:
 
