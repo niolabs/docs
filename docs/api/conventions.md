@@ -1,8 +1,8 @@
 # API Conventions #
 
-Most Nio binaries can be interacted with through a REST API. The API supports the standard HTTP request types and data responses are of JSON format.
+Most n.io binaries can be interacted with through a REST API. The API supports the standard HTTP request types and data responses are of JSON format.
 
-The REST API is in Nio binaries that use the REST Nio Component. We will cover components later in the docs.
+The REST API is in n.io binaries that use the REST n.io Component. We will cover components later in the docs.
 
 ## Authentication ##
 

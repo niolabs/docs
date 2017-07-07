@@ -1,11 +1,11 @@
 # Getting Started #
 
-Nio is a highly scalable open-source stream processing engine. It allows you to asynchronously process streaming data signals and act on them in real-time. It is generally used as the 'brains' of a real-time application, particularly systems that require distributed processing.
+n.io is a highly scalable open-source stream processing engine. It allows you to asynchronously process streaming data signals and act on them in real-time. It is generally used as the 'brains' of a real-time application, particularly systems that require distributed processing.
 
 Here are a few sample use-cases that nio could be used for:
 
 - You want to know what people are saying about you on Twitter. Instantaneously get tweets that mention your business, automate responses, identify trends and alert your support team when the number of "help me" tweets passes your acceptable threshold.
-- You run a factory or farm and want to optimize workers and the end product. Nio can read from any sensor and act on that data in real-time.
+- You run a factory or farm and want to optimize workers and the end product. n.io can read from any sensor and act on that data in real-time.
   
 
 In this getting started tutorial you will learn how to get nio up and running, create a project and build a simple service.
@@ -15,11 +15,11 @@ In this getting started tutorial you will learn how to get nio up and running, c
 Before you install nio, it's important to understand a few core concepts.
 
 <dl>
-  <dt>Nio Binary</dt>
+  <dt>n.io Binary</dt>
   <dd>Depending on your circumstances, you will run one of many nio binaries. Binaries range in complexity and are often tuned for hardware. If you're tinkering around on a Raspberry Pi, you don't need to run the same binary as a network of a dozen super computers built to analyze hundreds of thousands signals per second.</dd>
 </dl>
 <dl>
-  <dt>Nio Framework</dt>
+  <dt>n.io Framework</dt>
   <dd>The nio library is the versioned portion of the nio code. You will install the nio library and then execute that with the appropriate nio binary. Install the framework with pip: ``pip install nio``.</dd>
 </dl>
 <dl>
@@ -40,7 +40,7 @@ Before you install nio, it's important to understand a few core concepts.
 </dl>
 ## Installation ##
 
-Nio requires at least Python 3.4. You will also need pip to install nio and its dependencies. Finally, nio projects are best managed using git and in this tutorial you'll be pulling down a project template from GitHub. Before you install nio, make sure you have all these things:
+n.io requires at least Python 3.4. You will also need pip to install nio and its dependencies. Finally, nio projects are best managed using git and in this tutorial you'll be pulling down a project template from GitHub. Before you install nio, make sure you have all these things:
 
 <dl>
   <dt>    python3 --version</dt>
@@ -58,13 +58,13 @@ Once you have these basic prerequisites, you can download and install nio. The b
   <dt>.. note :  : </dt>
   <dd>Depending on how ``pip`` was installed, the command may be slightly different. You can verify the command to call pip by trying ``pip``, ``pip3``, or ``pip3.4`` with the ``--version`` option. Also, if you have access to the web hosted nio wheels, you can use ``pip3.4 install http://<URL-of-nio-wheels>``.</dd>
 </dl>
-Now we're going to install the Nio CLI. While not required to run Nio, it is helpful for setting up a project and running it:
+Now we're going to install the n.io CLI. While not required to run n.io, it is helpful for setting up a project and running it:
 
     pip3 install nio-cli
 
 ## Creating and Running a Project ##
 
-Alright, now it's time for things to get interesting. Create a Nio project in your current directory using the CLI we just installed:
+Alright, now it's time for things to get interesting. Create a n.io project in your current directory using the CLI we just installed:
 
     nio new first_project
 
@@ -93,7 +93,7 @@ If all goes well, you should see something like the following logs:
     <p>[2016-03-04 23:49:41.227] NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from: starting to: started</p>
   </dd>
 </dl>
-You can see that we now have a web server running on port 8181. This is how you will communicate with Nio. Open up a new terminal window and verify that you can access the api by hitting the /nio endpoint:
+You can see that we now have a web server running on port 8181. This is how you will communicate with n.io. Open up a new terminal window and verify that you can access the api by hitting the /nio endpoint:
 
     curl localhost:8181/nio
 
@@ -103,9 +103,9 @@ Before we move on, you're going to want to add some blocks to your project. Pres
 
     nio add logger simulator filter dynamic_fields
 
-## Explore Nio ##
+## Explore n.io ##
 
-If you don't have Nio running already, do that now:
+If you don't have n.io running already, do that now:
 
     nio_run
 

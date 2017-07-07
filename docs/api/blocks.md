@@ -1,6 +1,6 @@
 # Blocks API #
 
-Configured instances of a n.io block type are simply referred to as blocks. Earlier we saw an example of a Logger block instance created with the name ``Log``. Information and interaction with the block configurations of a running Nio instance is available through the blocks API.
+Configured instances of a n.io block type are simply referred to as blocks. Earlier we saw an example of a Logger block instance created with the name ``Log``. Information and interaction with the block configurations of a running n.io instance is available through the blocks API.
 
 ## Get API ##
 

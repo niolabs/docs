@@ -1,8 +1,8 @@
 # Core APIs #
 
-Nio has a few crucial api endpoints: ``/nio`` and ``/shutdown``.
+n.io has a few crucial api endpoints: ``/nio`` and ``/shutdown``.
 
-## Nio API ##
+## n.io API ##
 
 The ``/nio`` endpoint is where you will find information about your running nio instances:
 
@@ -46,7 +46,7 @@ The following json body is returned:
 
 ## Shutdown API ##
 
-The ``/shutdown`` endpoint is used to shutdown a running Nio instance.
+The ``/shutdown`` endpoint is used to shutdown a running n.io instance.
 
     curl -XGET 'localhost:8181/nio'
 
