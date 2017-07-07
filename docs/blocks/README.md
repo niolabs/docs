@@ -14,12 +14,14 @@ TODO: Include img of the sidebar where the block properties are configurable.
 The fields in the configuration sidebar allow python syntax to be used to determine values by enclosing the code in double curly braces.
 
 For example, in order to use the current date in the block configuration, the following python code can be used enclosed in curly braces:
-::
-{{datetime.datetime.utcnow()}}
+```
+{{ datetime.datetime.utcnow() }}
+```
 
 The fields of the input signal can also be accessed while using python code by using the '$' operator, and following it with the name of the field. For example, this is how we make a value that uses the a signal with a key of 'size' and value of some integer:
-::
-{{$size + 1}}
+```
+{{ $size + 1 }}
+```
 
 ### Logging ###
 
