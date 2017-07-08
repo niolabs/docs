@@ -2,7 +2,9 @@
 
 * [Introduction](README.md)
 * [Getting Started](getting_started/README.md)
-  * [Installation](getting_started/installation.md)
+  * [In the Cloud](getting_started/in_the_cloud.md)
+  * [Locally](getting_started/locally.md)
+  * [Your First Service](getting_started/first_service.md)
 * [Blocks](blocks/README.md)
 * [API]()
   * [API Conventions](api/conventions.md)
