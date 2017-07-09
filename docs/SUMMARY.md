@@ -6,6 +6,8 @@
   * [Locally](getting_started/locally.md)
   * [Your First Service](getting_started/first_service.md)
 * [Blocks](blocks/README.md)
+* [Deployment](deployment/README.md)
+* [Testing](testing/README.md)
 * [API]()
   * [API Conventions](api/conventions.md)
   * [Blocks](api/blocks.md)
