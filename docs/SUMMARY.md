@@ -16,3 +16,4 @@
   * [Services](api/services.md)
   * [Additional APIs](api/additional.md)
 * [Glossary of Terms](GLOSSARY.md)
+* [Support](support/README.md)
