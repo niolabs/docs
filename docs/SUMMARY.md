@@ -6,9 +6,14 @@
   * [Locally](getting_started/locally.md)
   * [Your First Service](getting_started/first_service.md)
 * [Blocks](blocks/README.md)
+* [Custom Blocks](blocks/new-article.md)
+  * Block Development
+  * Block Testing
+* n.io Expressions
 * [Deployment](deployment/README.md)
 * [Testing](testing/README.md)
-* [API]()
+* Service Design Patterns \(Matt\)
+* [API](api.md)
   * [API Conventions](api/conventions.md)
   * [Blocks](api/blocks.md)
   * [Block Types](api/blocks_types.md)
@@ -17,3 +22,4 @@
   * [Additional APIs](api/additional.md)
 * [Glossary of Terms](glossary/README.md)
 * [Support](support/README.md)
+
