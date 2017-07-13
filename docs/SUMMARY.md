@@ -8,7 +8,7 @@
 * [Blocks](blocks/README.md)
 * [Deployment](deployment/README.md)
 * [Testing](testing/README.md)
-* [API]()
+* [API](api/conventions.md)
   * [API Conventions](api/conventions.md)
   * [Blocks](api/blocks.md)
   * [Block Types](api/blocks_types.md)

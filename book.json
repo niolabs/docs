@@ -1,7 +1,12 @@
 {
   "root": "./docs",
   "title": "n.io",
-  "plugins": [],
+  "variables": {
+    "brand": "n.io"
+  },
+  "plugins": [
+    "theme-nio@git+ssh:git@github.com:nioinnovation/gitbook-plugin-theme-nio.git"
+  ],
   "pluginsConfig": {
   }
 }

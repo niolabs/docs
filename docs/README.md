@@ -1,3 +1,3 @@
-# n.io Documentation
+# {{ book.brand }} Documentation
 
-Welcome to n.io. This documentation strives to help you design complex systems with n.io - a distributed orchestration platform.
+Welcome to {{ book.brand }}. This documentation strives to help you design complex systems with {{ book.brand }}—a distributed orchestration platform.
