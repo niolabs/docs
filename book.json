@@ -2,7 +2,8 @@
   "root": "./docs",
   "title": "n.io",
   "variables": {
-    "brand": "n.io"
+    "company": "niolabs",
+    "product": "nio"
   },
   "plugins": [
     "theme-nio@git+ssh:git@github.com:nioinnovation/gitbook-plugin-theme-nio.git"
