@@ -5,14 +5,15 @@
   * [In the Cloud](getting_started/in_the_cloud.md)
   * [Locally](getting_started/locally.md)
   * [Your First Service](getting_started/first_service.md)
+* [System Designer](system-designer.md)
 * [Blocks](blocks/README.md)
 * [Custom Blocks](blocks/new-article.md)
-  * Block Development
-  * Block Testing
-* n.io Expressions
+  * [Block Development](blocks/new-article/block-development.md)
+  * [Block Testing](blocks/new-article/block-testing.md)
+* [n.io Expressions](nio-expressions.md)
 * [Deployment](deployment/README.md)
 * [Testing](testing/README.md)
-* Service Design Patterns \(Matt\)
+* [Service Design Patterns \(Matt\)](service-design-patterns-matt.md)
 * [API](api.md)
   * [API Conventions](api/conventions.md)
   * [Blocks](api/blocks.md)
