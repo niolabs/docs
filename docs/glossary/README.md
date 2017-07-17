@@ -4,7 +4,7 @@
 
 Depending on your circumstances, you will run one of many n.io binaries. Binaries range in complexity and are often tuned for hardware. If you're tinkering around on a Raspberry Pi, you don't need to run the same binary as a network of a dozen supercomputers built to analyze hundreds of thousands signals per second.
 
-A binary is the executable program? Depending on your circumstances, you will run one of many n.io binaries. Binaries range in complexity and are often tuned for hardware. If you're tinkering around on a Raspberry Pi, you don't need to run the same binary as a network of a dozen supercomputers built to analyze hundreds of thousands signals per second.
+A binary is the executable program? Depending on your circumstances, you will run one of many n.io binaries. Binaries range in complexity and are often tuned for particular hardware. If you're tinkering around on a Raspberry Pi, you don't need to run the same binary as a network of a dozen supercomputers built to analyze hundreds of thousands signals per second.
 
 ## Block
 
@@ -12,11 +12,11 @@ A “black box” function that operates on streams of data. Either receives sig
 
 A block is a “black box” function that operates on streams of data. A block receives, emits, or transforms signals. Blocks are written in Python and focus on one particular function.
 
+"A black box is any device whose workings are not understood by or accessible to its user."
+
 ## Framework
 
 The n.io library is the versioned portion of the n.io code. You will install the n.io library and then execute that with the appropriate n.io binary. Install the framework with pip: `pip install nio`.
-
-
 
 "a framework is often a layered structure indicating what kind of programs can or should be built and how they would interrelate.""
 
