@@ -23,4 +23,3 @@
   * [Additional APIs](api/additional.md)
 * [Glossary of Terms](glossary/README.md)
 * [Support](support/README.md)
-
