@@ -24,5 +24,7 @@
   "devDependencies": {
     "gitbook-cli": "^2.3.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gitbook-plugin-theme-nio": "git://github.com/nioinnovation/gitbook-plugin-theme-nio.git"
+  }
 }
