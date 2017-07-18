@@ -15,6 +15,7 @@
 * [Testing](testing/README.md)
 * [Service Design Patterns](service-design-patterns/README.md)
   * [Understanding Signals](service-design-patterns/understanding-signals.md)
+  * [Pub Sub in n.io](service-design-patterns/pub-sub.md)
 * [API](api.md)
   * [API Conventions](api/conventions.md)
   * [Blocks](api/blocks.md)
