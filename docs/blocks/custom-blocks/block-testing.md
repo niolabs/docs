@@ -8,8 +8,8 @@ We recommend that you use the **NIOBlockTestCase** when building your tests. It 
 
 ```python
 
-    from nio.util.support.block_test_case import NIOBlockTestCase
-    from nio.common.signal.base import Signal
+    from nio.testing.block_test_case import NIOBlockTestCase
+    from nio.signal.base import Signal
     from ..your_block import YourBlock
 
     class TestYourBlock(NIOBlockTestCase):
@@ -27,6 +27,7 @@ We recommend that you use the **NIOBlockTestCase** when building your tests. It 
              blk.start()
              blk.process_signals([Signal()])
              blk.stop()
+             #your assertions here…
 
              ```
 
@@ -38,7 +39,7 @@ Just like **unittest.TestCase**, we support the setUp/tearDown pattern. This is 
 
 - **configure_block(block, block_properties)** - The process of configuring and initializing blocks manually is somewhat nuanced (and not something we want you to worry about), so we provide this method to configure your block instance semi-automatically. Just pass the block object itself and a dictionary containing any block properties you want to configure (and associated values).
 - **assert_num_signals_notified(num, block=None)** - This method provides access to the total number of signals notified over the course of the current test. If *block* is not **None**, then you'll get the number of signals notified by that block over its lifetime.
-
+- **last_signal_notified(output_id)** -
 
 ## Overridable Methods
 

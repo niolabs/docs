@@ -1,12 +1,12 @@
 # Block Development
 
-The easiest way to create a custom block is to clone the `block-template` repository from `https://github.com/nio-blocks`. This will provide you with the basics of a {{ book.product }} block class as well as the block's requirements, specifications, release notes, and test folder.
+To get started creating a custom block, clone the `block-template` repository from `https://github.com/nio-blocks`. This will provide you with the basic {{ book.product }} block class as well places for the block's requirements, specifications, release notes, and tests.
 
 ## How to Use the Block Template
 
 ### Copy the Block Template
 
-1. Navigate to your project's `/blocks` folder.
+1. Navigate into your project's `/blocks` folder.
 
 2. Clone the block template: `git clone --depth=1 https://github.com/nio-blocks/block_template.git <new_block_name>`
 
@@ -22,7 +22,7 @@ The easiest way to create a custom block is to clone the `block-template` reposi
 ### Track Your New Block on GitHub
 
 [[ fork from the block template
-pull down locally
+pull down locally??
 PR?? fork back??? ]]
 
 1. Create a new GitHub repository, often this will have the same name as `<new_block_name>`, and copy the URL
@@ -42,9 +42,13 @@ PR?? fork back??? ]]
 
 ## The {{ book.product }} Framework
 
- When you develop {{ book.product }} blocks, you use the {{ book.product }} framework. The framework holds all the classes you will be using to create your block and the functionality that ties everything together.
+ When you develop {{ book.product }} blocks, you use the {{ book.product }} framework. The framework holds all the classes you will be using to create your block as well as the functionality that ties everything together. Think of the framework as a toolshed of useful tools for working with {{ book.product }}.
 
- For example, the first import in `example_block.py` is `nio.block.base`. If you explore inside the `nio.block.base` code, you will find explanatory docstrings for each method, including methods to override in your custom block and higher-level context.
+ A good resource for block development is the {{ book.product }} base block along with blocks with similar functionality that have been developed using the {{ book.product }} framework.
+
+ You'll notice the first import in `example_block.py`  from your block template is `nio.block.base`. If you explore the code inside `nio.block.base`, you will find explanatory docstrings for each method, including methods to override in your custom block along with higher-level context.
+
+ As an additional resource, search the NIO-blocks collection for a block that has similar functionality to the block you want to create. Explore the code this block uses, the methods it overrides, and the modules it imports from the framework. These examples will help you develop your block.
 
 ### Block Context
 
@@ -59,7 +63,7 @@ In the configure method, blocks are passed 'context' about themselves and the en
 
 ### Block Router
 
-The block router is what manages the passing of signals from block to block. {{ book.product }} comes packaged with a variety of block routers and each is configurable to control behavior.
+The block router manages the passing of signals from block to block. {{ book.product }} comes packaged with a variety of block routers and each is configurable to control behavior.
 
 #### Configuration
 
@@ -84,11 +88,20 @@ In addition to specifying the block router for the project, each service can use
 
 ### Discoverability
 
-Stand-alone blocks are discoverable, there is no need for base blocks to be discoverable. If a block does not take in or emit signals, it is non-discoverable.
+Classes marked as `discoverable` allow the system to identify them and register them, while marking a class as  `not_discoverable` produces the opposite effect. The default state of a block is `discoverable`.
 
+To mark a class as not_discoverable, use the parameter-less decorator `@not_discoverable`
+```
+    from nio import not_discoverable, Block
+    @not_discoverable
+    class MyBlock(Block):
+        pass
 
-## Block Patterns
+```
+There is no need for base blocks to be discoverable. If a block does not take in or emit signals, it should include the `@not_discoverable` decorator.
+
+## Base Block Pattern
 
 In more complex configurable blocks it is handy to implement a base block pattern. In this pattern, all the configuration that isn't block-specific is done in a non-discoverable base block. The blocks that do the work and process signals will inherit from the base block.
 
-For example, in a block that accesses an external API, you can use a base block to set up the base url then create stand-alone, discoverable blocks to access each specific endpoint in the API. This pattern increases maintainability and reinforces the block philosophy of each block having one unit of functionality.
+For example, in a block that accesses an external API, you can use a base block to set up the base url then create discoverable blocks to access each specific endpoint in the API. This pattern increases maintainability and reinforces the philosophy of each block having one unit of functionality.
