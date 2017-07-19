@@ -1,6 +1,6 @@
 # Service Testing
 
-It is important to have confidence that changes to a block or service configuration does not negatively affect other services. Testing is an important part of designing robust {{ book.product }} systems. Setting up service unit tests is a key step in gaining this confidence.
+It is important to have confidence that changes to a block or service configuration does not negatively affect other services. Testing is an important part of designing robust {{ book.product }} systems. Setting up service unit tests is a key step towards gaining this confidence.
 
 {{ book.product }} provides support for defining unit tests for a service's behavior through the [Service Unit Test Framework](https://github.com/nioinnovation/service_tests). Service unit tests are written in Python code and make use of the [Python unittest module](https://docs.python.org/3/library/unittest.html).
 
