@@ -97,13 +97,12 @@ If you'd prefer that the result of your expression evaluation not be stringified
    "{{[$v1, $v2, $v3]}}" -> [1, 'two', [3]]
 ```
 
-**Raw Signal**
+### Raw Signal
 
-You can access the signal itself (rather than just its attributes) with a lone '$'. As long as it is followed by a character that could not be the first character of a valid Python identifier, the '$' evaluates to the incoming signal.
+You can access the raw signal itself (rather than just its attributes) with a lone `$`. As long as the following character is not a valid Python identifier, the `$` will evaluate to the incoming signal.
 
 
-Examples
-~~~~~~~~
+## Examples
 
 Here are some more examples that we find particularly illustrative:
 
