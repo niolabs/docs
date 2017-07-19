@@ -170,4 +170,4 @@ In more complex configurable blocks it is handy to implement a base block patter
 
 For example, in a block that accesses an external API, you can use a base block to set up the base url then create discoverable blocks to access each specific endpoint in the API. This pattern increases maintainability and reinforces the philosophy of each block having one unit of functionality.
 
-## Mixins (?)
+## Mixins [TODO]
