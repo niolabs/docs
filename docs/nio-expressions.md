@@ -110,7 +110,7 @@ You can access the raw signal itself (rather than just its attributes) with a lo
 
 ## Examples
 
-Here are some more examples that we find particularly illustrative:
+Here are some more examples that we find particularly illustrative of using nio expression properties:
 
 ```
 
