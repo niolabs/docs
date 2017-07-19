@@ -1,8 +1,8 @@
 # Block Development
 
-To get started creating a custom block, clone the `block-template` repository from `https://github.com/nio-blocks`. This will provide you with the basic {{ book.product }} block class as well places for the block's requirements, specifications, release notes, and tests.
+To get started creating a custom block, clone the [block-template repository](https://github.com/nio-blocks/block_template) from GitHub. This will provide you with the basic {{ book.product }} block class as well places for the block's requirements, specifications, release notes, and tests.
 
-Follow the steps in the block template's `README.md` [https://github.com/nio-blocks/block_template](https://github.com/nio-blocks/block_template).
+Follow the steps in the block template's `README.md`.
 
 ## Developing Your Block
 
@@ -13,7 +13,7 @@ Once you have your block template repo, you are ready to develop your block. A g
 All {{ book.product }} blocks inherit from the base block class. You'll notice the first import in `example_block.py`  from your block template is `nio.block.base`. If you explore the code inside `nio.block.base`, you will find explanatory docstrings for each method, including methods to override in your custom block along with higher-level context.
 
 The base block class uses the {{ book.product }} framework described below. Some good things to know about how {{ book.product }} blocks work:
-* signals are passed as lists
+* signals are passed as lists ([see more here](/service-design-patterns/understanding-signals.md))
 * block properties need to be called to get the value
 * block properties are declared as class attributes
 * commands are declared as decorators
@@ -29,10 +29,10 @@ The following method from the base block are designed to be overridden:
   * `stop`: tear down. This is where the block stops sending out signals and cancels jobs.
 * **signaling**
   * `process_signals(<list of signals>, input_id)`: receives input signals.
-  * `notify_signals(<list of signals>, output_id)`: emits signals from the block.
+  * `notify_signals(<list of signals>, output_id)`: emits signals from the block. This method isn't actually intended to be overridden, but rather called by the block to notify signals.
 
 ### Current {{ book.product }} Blocks
-An additional resource for developing your custom block is the NIO-blocks library. Search the NIO-blocks library for a block that has similar functionality to the block you want to create. Explore the code this block uses, the methods it overrides, and the modules it imports from the framework. These examples will help you develop your block.
+An additional resource for developing your custom block is the [NIO-blocks library](https://github.com/nio-blocks). Search the NIO-blocks library for a block that has similar functionality to the block you want to create. Explore the code this block uses, the methods it overrides, and the modules it imports from the framework. These examples will help you develop your block.
 
 ### Example: Convert a Python Script to a Block
 
@@ -41,7 +41,6 @@ Here is an example of how to take a Python script and turn it into a block. The 
 Python script that controls the motor:
 ```python
 #!/usr/bin/python
-#import Adafruit_MotorHAT, Adafruit_DCMotor, Adafruit_Stepper
 from Adafruit_MotorHAT import Adafruit_MotorHAT, Adafruit_DCMotor, Adafruit_StepperMotor
 
 import time
@@ -152,7 +151,7 @@ In the configure method, blocks are passed 'context' about themselves and the en
 
 ### Discoverability
 
-Classes marked as `discoverable` allow the system to identify them and register them, while marking a class as  `not_discoverable` produces the opposite effect. The default state of a block is `discoverable`.
+Classes marked as `discoverable` allow the system to identify them and register them, while marking a class as `not_discoverable` produces the opposite effect. The default state of a block is `discoverable`.
 
 To mark a class as not_discoverable, use the parameter-less decorator `@not_discoverable`
 ```
