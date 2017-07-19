@@ -5,11 +5,11 @@ The cloud is an easy way to get n.io up and running but doesn't fully encapsulat
 ## Requirements
 
 * Python 3.4.5 or 3.5.2
-* A n.io binary python wheel
+* A n.io binary Python wheel
 
-Running the n.io platform requires either python version `3.4.5` or `3.5.2`. Other versions of python 3.4 may work, but python 3.5.3 and above do not work. If you see `Bad magic number` errors when running a n.io binary, it is likely caused by an incompatible version of python.
+Running the n.io platform requires either Python version `3.4.5` or `3.5.2`. Other versions of Python 3.4 may work, but Python 3.5.3 and later do not work. If you see `Bad magic number` errors when running a n.io binary, it is likely caused by an incompatible version of Python.
 
-You will need a python `.whl` file to install the n.io binary. This should have been provided to you as part of your license agreement. Reach out to n.io support if you need a new wheel file.
+You will need a Python `.whl` file to install the n.io binary. This should have been provided to you as part of your license agreement. Reach out to n.io support if you need a new wheel file.
 
 ## Installation
 
@@ -19,7 +19,7 @@ Simply install the n.io wheel file using `pip`, probably like so:
 pip3 install your_wheel_file.whl
 ```
 
-After installation, you should be able to run `nio_run`. If that command is not available, make sure your python binary installation directory is on your PATH.
+After installation, you should be able to run `nio_run`. If that command is not available, make sure your Python binary installation directory is on your PATH.
 
 Some tasks are made easier by using the n.io CLI. This can be installed from pip as well:
 
@@ -82,6 +82,14 @@ If you prefer to install the blocks without the CLI, clone the relevant block re
 ```
 git submodule add https://github.com/nio-blocks/logger.git blocks/logger
 ```
+
+
+
+
+
+//////
+
+http://python.org/downloads
 
 
 
