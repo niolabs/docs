@@ -160,3 +160,5 @@ You can override the default configuration of modules by implementing ``get_modu
         def get_module_config_persistence(self):
             return {'persistence': 'default'}
 ```
+
+## Testing Mixins (?)
