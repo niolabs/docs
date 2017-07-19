@@ -53,21 +53,21 @@ There are two types of results to consider when configuring an expression proper
 
 String interpolation in expression properties works in a way similar to string interpolation in other dynamic languages. Snippets of code inside of double curly braces are evaluated. For example:
 
-```python
+```
 
    …{{ <code goes here> }}…
 ```
 
 results of the evaluation are inserted directly into the surrounding string, replacing the code snippet and enclosing braces. The code inside the braces can be pure Python, if you like, as in:
 
-```python
+```
 
    "{{1 + 5}} dogs went to the park" -> "6 dogs went to the park"
 ```
 
 Or you can use our special `$` syntax for accessing signal properties:
 
-```python
+```
 
     # given a signal s s.t. s.v1 == 6
     "{{$v1}} dogs went to the park" -> "6 dogs went to the park"
@@ -75,7 +75,7 @@ Or you can use our special `$` syntax for accessing signal properties:
 
 Naturally, you can combine the two approaches, as in:
 
-```python
+```
 
    "My favorite Integer is {{$v1 if isinstance($v1, int) else 'not an Integer…'}}"
 
