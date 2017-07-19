@@ -25,19 +25,19 @@ Here's an example:
 
 It's that simple. If the signal under inspection is missing an attribute you ask for in the expression, the value of `attr_default` (provided at property initialization) is used in its place. As with other {{ book.product }} properties, the value of `default` will be evaluated if no expression is configured.
 
-Any other errors in the expression will raise native exceptions whose handling is the responsibility of the Block developer.
+Any other errors in the expression will raise native exceptions whose handling is the responsibility of the block developer.
 
 **Argument: `attr_default`**
 
-Unique to ExpressionProperty is the `attr_default` argument. In evaluating an expression, if the $ notation is used to get an attribute value from a signal, but the attribute does not exist on the signal, then the value `attr_default` will be used in its place.
+Unique to `ExpressionProperty` is the `attr_default` argument. In evaluating an expression, if the `$` notation is used to get an attribute value from a signal, but the attribute does not exist on the signal, then the value `attr_default` will be used in its place.
 
-If `attr_default` is not specified on the ExpressionProperty, then an empty string is used.
+If `attr_default` is not specified in `ExpressionProperty`, an empty string is used.
 
 `attr_Default` can be set to an Exception **class**. In this case, if the attribute does not exist on the signal, then that Exception will be raised.
 
 **Handling Exceptions**
 
-An expression property should always be evaluated inside of a *try* block. Invalid Python syntax inside of the expression will raise an Exception and the block needs to handle that. This is also where you would handle the Exception raised by `attr_default` if that is set to an Exception class.
+An expression property should always be evaluated inside of a *try* block. Invalid Python syntax inside of the expression will raise an Exception and the block needs to handle that. This is also where you would handle the Exception raised by `attr_default` if it is set to an Exception class.
 
 
 ## Scripting Syntax
@@ -51,11 +51,11 @@ There are two types of results to consider when configuring an expression proper
 
 ### String Interpolation
 
-String interpolation in expression properties works similarly to string interpolation in other dynamic languages. Snippets of code inside of double curly braces are evaluated. For example:
+String interpolation in expression properties works in a way similar to string interpolation in other dynamic languages. Snippets of code inside of double curly braces are evaluated. For example:
 
 ```python
 
-   ...{{ <code goes here> }}...
+   …{{ <code goes here> }}…
 ```
 
 results of the evaluation are inserted directly into the surrounding string, replacing the code snippet and enclosing braces. The code inside the braces can be pure Python, if you like, as in:
@@ -77,21 +77,27 @@ Naturally, you can combine the two approaches, as in:
 
 ```python
 
-   "My favorite Integer is {{$v1 if isinstance($v1, int) else 'not an Integer...'}}"
+   "My favorite Integer is {{$v1 if isinstance($v1, int) else 'not an Integer…'}}"
+
+   # given a signal s s.t. s.v1 == 6
+   -> "My favorite Integer is 6"
+
+   # given a signal s s.t. s.v1 == 'A'
+   -> "My favorite Integer is not an Integer…"
 ```
 
-If you'd like to include a `$` character in a string literal inside a code snippet, just escape it with a `\`. Similarly, escaping the `}}` or `{{` with a `\` causes the braces to be treated as strings rather than as delimiters. For example:
+If you'd like to include a $ character in a string literal inside a code snippet, just escape it with a `\`. Similarly, escaping the `}}` or `{{` with a `\` causes the braces to be treated as strings rather than as delimiters. For example:
 
-```python
+```
 
    "Code snippets are delimited by \{{ and \}}" -> "Code snippets are delimited by {{ and }}"
 ```
 
 ### Immediate Value
 
-If you'd prefer that the result of your expression evaluation not be stringified, you can populate an expression field with a single snippet enclosed in double-curlies:
+If you'd prefer that the result of your expression evaluation not be part of a string, you can populate an expression field with a single snippet enclosed in double curlies:
 
-```python
+```
 
    # given a signal s s.t. s.v1 == 1, s.v2 == 'two', s.v3 == [3]
    "{{[$v1, $v2, $v3]}}" -> [1, 'two', [3]]
@@ -106,7 +112,7 @@ You can access the raw signal itself (rather than just its attributes) with a lo
 
 Here are some more examples that we find particularly illustrative:
 
-```python
+```
 
    "{{1 + 5}} dogs went to the {{'p' + 'ark'}}" -> "6 dogs went to the park"
 
