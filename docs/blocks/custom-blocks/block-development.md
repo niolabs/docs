@@ -68,7 +68,7 @@ The following method from the base block are designed to be overridden:
   * `notify_signals(<list of signals>, output_id)`: emits signals from the block.
 
 ### Current {{ book.product }} Blocks
-An additional resource for developing your custom block is the NIO-blocks collection. Search the NIO-blocks collection for a block that has similar functionality to the block you want to create. Explore the code this block uses, the methods it overrides, and the modules it imports from the framework. These examples will help you develop your block.
+An additional resource for developing your custom block is the NIO-blocks library. Search the NIO-blocks library for a block that has similar functionality to the block you want to create. Explore the code this block uses, the methods it overrides, and the modules it imports from the framework. These examples will help you develop your block.
 
 ### Example: Convert a Python Script to a Block
 
