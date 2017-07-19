@@ -1,10 +1,10 @@
 # Custom Blocks
 
-The sky's the limit. If you want to connect to a new framework, library, or custom piece of hardware not currently included in the NIO-blocks library, you can develop your own custom block.
+The sky's the limit. If you want to connect to a new framework, library, or custom piece of hardware not currently included in the nio-blocks library, you can develop your own custom block.
 
 Block development can take one of two approaches:
 
-Blocks are simple and generic and very reusable. Examples of this type of block can be found in the NIO-blocks library. Blocks developed with this approach are meant to have a single unit of functionality and you can chain blocks together to get complex behavior.
+Blocks are simple and generic and very reusable. Examples of this type of block can be found in the nio-blocks library. Blocks developed with this approach are meant to have a single unit of functionality and you can chain blocks together to get complex behavior.
 
 Blocks can be extremely custom and meant for a single purpose. This type of block is not likely to be used by more than the one service it was designed for.
 
