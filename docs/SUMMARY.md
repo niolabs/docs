@@ -10,7 +10,7 @@
 * [Custom Blocks](blocks/new-article.md)
   * [Block Development](blocks/new-article/block-development.md)
   * [Block Testing](blocks/new-article/block-testing.md)
-* [n.io Expressions](nio-expressions.md)
+* [nio Expressions](nio-expressions.md)
 * [Deployment](deployment/README.md)
 * [Testing](testing/README.md)
 * [Service Design Patterns](service-design-patterns/README.md)
