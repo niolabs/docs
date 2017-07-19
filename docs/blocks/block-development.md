@@ -1,5 +1,15 @@
 # Block Development
 
+The sky's the limit. If you want to connect to a new framework, library, or custom piece of hardware not currently included in the nio-blocks library, you can develop your own custom block.
+
+Block development can take one of two approaches:
+
+1. Blocks are simple and generic and very reusable. Examples of generic blocks can be found in the [nio-blocks GitHub organization](https://github.com/nio-blocks). Blocks developed with this approach are meant to have a single unit of functionality and you can chain blocks together to get complex behavior.
+
+2. Blocks can be extremely custom and meant for a single purpose. This type of block is not likely to be used by more than the one service it was designed for.
+
+If the type of functionality you desire is not yet available in an existing block, it is not difficult to create a custom block.
+
 To get started creating a custom block, clone the [block-template repository](https://github.com/nio-blocks/block_template) from GitHub. This will provide you with the basic {{ book.product }} block class as well places for the block's requirements, specifications, release notes, and tests.
 
 Follow the steps in the block template's `README.md`.
