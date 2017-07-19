@@ -21,5 +21,7 @@
   * [Core](api/core.md)
   * [Services](api/services.md)
   * [Additional APIs](api/additional.md)
+* [Core Components](components/README.md)
+  * [SNMP Agent](components/snmp.md)
 * [Glossary of Terms](glossary/README.md)
 * [Support](support/README.md)
