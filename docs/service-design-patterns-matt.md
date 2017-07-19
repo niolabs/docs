@@ -1,4 +1,0 @@
-# Service Design Patterns
-
-
-
