@@ -4,7 +4,11 @@ The SNMP Agent core component allows you to monitor the n.io system's health thr
 
 ## Behavior
 
-The SNMP component can be configured to work as an agent that can issue traps (asynchronous) or respond to requests (synchronous).
+The SNMP component can be configured to work as an agent that can issue traps (asynchronous) or respond to requests (synchronous) as follows:
+
+* (asynchronous) sends traps whenever a Service changes its status, and the new status is configured as part of the `status_traps` setting.
+* (synchronous) allows retrieving the system uptime and service statuses.
+
 
 ## Configuration
 
