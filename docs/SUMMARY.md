@@ -16,6 +16,7 @@
 * [Service Design Patterns](service-design-patterns/README.md)
   * [Understanding Signals](service-design-patterns/understanding-signals.md)
   * [Pub/Sub in n.io](service-design-patterns/pub-sub.md)
+  * [Simulators](service-design-patterns/simulators.md)
   * [Environment Variables](service-design-patterns/environment-variables.md)
 * [API](api.md)
   * [API Conventions](api/conventions.md)
