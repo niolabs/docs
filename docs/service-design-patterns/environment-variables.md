@@ -40,12 +40,13 @@ See the [Deployment](/deployment) section for more information.
 
 ## Setting Environment Variables
 
-n.io environment variables are slightly different than operating system environment variables. n.io environment variables can also be set by operation system environment variables. This is often useful when running n.io using Docker, systemd, or some other process manager where you can pass environment variables to the process.
+n.io environment variables are slightly different than operating system environment variables. n.io environment variables can also be set by operation system environment variables. This can be useful when running n.io using Docker, systemd, or some other process manager where you can pass environment variables to the process.
 
 In general, environment variables can be sourced from two places:
 
-1. The operating system environment variables
+1. The operating system environment variables  
    Examples:
+
    ```bash
    $ export DB_HOST=localhost
    $ nio_run
@@ -54,6 +55,7 @@ In general, environment variables can be sourced from two places:
    ```bash
    $ docker run -e DB_HOST=localhost nio_binary_image
    ```
+
 2. The `.env` files in your project directory. Assuming you have a `prod.env` file in your project directory, you can source from that using the `-e` flag of `nio_run` like so:
    ```bash
    $ nio_run -e prod.env
