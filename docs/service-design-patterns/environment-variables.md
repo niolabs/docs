@@ -57,9 +57,10 @@ In general, environment variables can be sourced from two places:
    ```
 
 2. The `.env` files in your project directory. Assuming you have a `prod.env` file in your project directory, you can source from that using the `-e` flag of `nio_run` like so:
+
    ```bash
    $ nio_run -e prod.env
    ```
 
-In the event that an environment variable is set both at the system level and also in the `.env` file, the system environment variable will take precedence.
+In the event that an environment variable is set both at the system level and the local  `.env` file level, the system environment variable will take precedence.
 
