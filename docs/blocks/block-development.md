@@ -2,11 +2,11 @@
 
 The sky's the limit. If you want to connect to a new framework, library, or custom piece of hardware not currently included in the nio-blocks library, you can develop your own custom block.
 
-Block development can take one of two approaches:
+Block development can adopt one of two philosophies:
 
-1. Blocks are simple and generic and very reusable. Examples of generic blocks can be found in the [nio-blocks GitHub organization](https://github.com/nio-blocks). Blocks developed with this approach are meant to have a single unit of functionality and you can chain blocks together to get complex behavior.
+  1. Blocks are simple and generic and very reusable. Examples of generic blocks can be found in the [nio-blocks GitHub organization](https://github.com/nio-blocks). Blocks developed with this approach are designed to have a single unit of functionality and you can chain blocks together to get complex behavior.
 
-2. Blocks can be extremely custom and meant for a single purpose. This type of block is not likely to be used by more than the one service it was designed for.
+  2. Blocks are extremely custom and meant for a single purpose. This type of block is not likely to be used by more than the one service it was designed for. For example, a block might contains a script to run a series of calculations for a model. Instead of a complicated chain of blocks, a single block can encompasses the entire model.
 
 If the type of functionality you desire is not yet available in an existing block, it is not difficult to create a custom block.
 
@@ -16,22 +16,26 @@ Follow the steps in the block template's `README.md`.
 
 ## Developing Your Block
 
-Once you have your block template repo, you are ready to develop your block. A good resource for block development is the {{ book.product }} base block along with blocks with similar functionality that have been developed using the {{ book.product }} framework.
+Once you have your block template repo, you are ready to develop your block.
+
+A good resource for block development is the {{ book.product }} base block along with blocks with similar functionality that have been developed using the {{ book.product }} framework.
+
+As outlined in your block README (rename it from BLOCK_README.md to README.md: `mv BLOCK_README.md README.md`), you will have the option to add properties, dependencies, commands, inputs, and outputs to your block.
 
 ### Base Block Class
 
-All {{ book.product }} blocks inherit from the base block class. You'll notice the first import in `example_block.py`  from your block template is `nio.block.base`. If you explore the code inside `nio.block.base`, you will find explanatory docstrings for each method, including methods to override in your custom block along with higher-level context.
+All {{ book.product }} blocks inherit from the base block class. You'll notice the first import in `example_block.py` from your block template is `nio.block.base`. If you explore the code inside `nio.block.base`, you will find explanatory docstrings for each method, including methods to override in your custom block along with higher-level context.
 
 The base block class uses the {{ book.product }} framework described below. Some good things to know about how {{ book.product }} blocks work:
 * signals are passed as lists ([see more here](/service-design-patterns/understanding-signals.md))
-* block properties need to be called to get the value
-* block properties are declared as class attributes
-* commands are declared as decorators
-* inputs/outputs are declared as decorators
+* block properties are declared as class attributes, for example: `speed = IntProperty(title='Speed', default=30)`
+* block properties need to be called with a function invocation to get the value, for example: `setSpeed(self.speed())`
+* commands are declared as decorators, for example: `@command("emit")`
+* inputs/outputs are declared as decorators, for example: `@output('false', label='False')` `@input('input_1', default=True)`
 
 #### Methods to Override
 
-The following method from the base block are designed to be overridden:
+The following methods from the base block are designed to be overridden:
 
 * **life cycle management**
   * `configure`: at the end of `configure`, the block is ready to receive signals. If an exception is raised during configure, the service won’t start.
@@ -39,10 +43,10 @@ The following method from the base block are designed to be overridden:
   * `stop`: tear down. This is where the block stops sending out signals and cancels jobs.
 * **signaling**
   * `process_signals(<list of signals>, input_id)`: receives input signals.
-  * `notify_signals(<list of signals>, output_id)`: emits signals from the block. This method isn't actually intended to be overridden, but rather called by the block to notify signals.
+  * `notify_signals(<list of signals>, output_id)`: emits signals from the block. This method isn't actually intended to be overridden, but is it called by the block to send out signals.
 
 ### Current {{ book.product }} Blocks
-An additional resource for developing your custom block is the [NIO-blocks library](https://github.com/nio-blocks). Search the NIO-blocks library for a block that has similar functionality to the block you want to create. Explore the code this block uses, the methods it overrides, and the modules it imports from the framework. These examples will help you develop your block.
+An additional resource for developing your custom block is the [nio-blocks library](https://github.com/nio-blocks). Search the nio-blocks library for a block that has similar functionality to the block you want to create. Explore the code this block uses, the properties it has, the methods it overrides, and the modules it imports from the framework. 
 
 ### Example: Convert a Python Script to a Block
 
@@ -179,4 +183,12 @@ In more complex configurable blocks it is handy to implement a base block patter
 
 For example, in a block that accesses an external API, you can use a base block to set up the base url then create discoverable blocks to access each specific endpoint in the API. This pattern increases maintainability and reinforces the philosophy of each block having one unit of functionality.
 
-## Mixins [TODO]
+## Mixins
+
+Extend mixins to add functionality such as persistance, group-by, and retry to your blocks. You'll find some mixins in `nio.block.mixins`.
+
+Mixins are not blocks, they are meant to enhance blocks by providing commonly used functionality.
+
+Because these follow the Python mixin model, any block mixins will need to be extended before extending the base Block class. See the [Buffer block](https://github.com/nio-blocks/buffer) for examples of how to use the persistence and group-by mixins.
+
+Docstrings inside each mixin give more information about their respective arguments and functionality.
