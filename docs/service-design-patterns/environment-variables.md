@@ -44,7 +44,7 @@ n.io environment variables are slightly different than operating system environm
 
 In general, environment variables can be sourced from two places:
 
-1. The operating system environment variables  
+1. The operating system environment variables.  
    Examples:
 
    ```bash
@@ -56,7 +56,7 @@ In general, environment variables can be sourced from two places:
    $ docker run -e DB_HOST=localhost nio_binary_image
    ```
 
-2. The `.env` files in your project directory. Assuming you have a `prod.env` file in your project directory, you can source from that using the `-e` flag of `nio_run` like so:
+2. The `.env` files in your project directory. Assuming you have a `prod.env` file in your project directory, you can source from that using the `-e` flag of `nio_run` :
 
    ```bash
    $ nio_run -e prod.env
