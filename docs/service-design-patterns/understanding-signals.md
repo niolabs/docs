@@ -1,6 +1,6 @@
 # Understanding Signals
 
-Signals are the pieces of information that are passed from block to block throughout your system. They are the fundamental message type that n.io understands. Structurally, signals are key-value objects. Here is an example of a signal: 
+Signals are the pieces of information that are passed from block to block throughout your system. They are the fundamental message type that n.io understands. Structurally, signals are key-value objects. Here is an example of a signal:
 
 ```
 {
@@ -15,7 +15,7 @@ That signal has two attributes, a `name` and an `age`.
 
 Signals are passed from block to block. You define your systems by designing how signals should move from block to block throughout the system. However, what is actually happening under the hood is that **lists** of signals are being passed between blocks. If a block notifies only one signal, then the next block will receive a list of signals that contains that signal.
 
-Lists of signals are an important concept to understand. Blocks will typically operate independently on an entire list of incoming signals. This means that blocks act on the entire list of incoming signals rather than the individual signals themselves. Another safe assumption is that if you get only one list of signals in you will get only one list of signals out.
+Lists of signals are an important concept to understand. Blocks will typically operate independently on an entire list of incoming signals. This means that blocks act on the entire list of incoming signals rather than the individual signals themselves. When a block only receives one list of signals as input, you can safely assume that you will only get one list of signals as output.
 
 For example, let's imagine a [filter block](https://github.com/nio-blocks/filter) that filters out a stream of odd numbers:
 
@@ -49,13 +49,13 @@ then the block would output the following list:
 ]
 ```
 
-In other words, the block will only call `notify_signals` once for the incoming list, even though 3 signals would be notified. It would **not** call `notify_signals` 3 times, once for each signal out.
+In other words, the block will only call `notify_signals` once for the incoming list, even though three signals would be notified. It would **not** call `notify_signals` three times--once for each signal out.
 
 ## Paring Down Lists of Signals
 
-Let's say you have a list of signals but want to condense it into fewer signals or even one signal. There are a few blocks that will help you do that, the [hash table block](https://github.com/nio-blocks/hash_table.git) being one of the most commonly used ones.
+If you have a list of signals but want to condense it into fewer signals or even one signal. There are a few blocks that will help you do that. The [hash table block](https://github.com/nio-blocks/hash_table.git) is commonly used ones.  
 
-The `HashTable` block goes through every signal in an incoming list and consolidates them into a single signal based on some criteria. For example, if we have our signals with the numbers 1 through 5 from the previous example, we can shrink the list of 5 signals into one signal containing two attributes, one for odds and one for evens. The following block configuration would do that:
+The `HashTable` block goes through every signal in an incoming list and consolidates them into a single signal based on the specified criteria. For example, if we have our signals with the numbers 1 through 5 from the previous example, we can shrink the list of five signals into one signal containing two attributes--one for odds and one for evens. The following block configuration would do that:
 
 ```
 {
@@ -66,7 +66,7 @@ The `HashTable` block goes through every signal in an incoming list and consolid
 }
 ```
 
-More explanation of the `HashTable` block's behavior can be found on the [GitHub README](https://github.com/nio-blocks/hash_table.git) but this configuration will create a new signal that has two attributes \(based on the configuration of `key`\). The resulting output signal would look like this:
+More explanation of the `HashTable` block's behavior can be found on the [GitHub README](https://github.com/nio-blocks/hash_table.git), but this configuration will create a new signal that has two attributes \(based on the configuration of `key`\). The resulting output signal would look like this:
 
 ```
 {
@@ -107,7 +107,7 @@ We could use a `HashTable` block to create a signal where the key was the depart
 }
 ```
 
-This block config would result in a single output signal that looks like the following:
+This block config would result in a single output signal:
 
 ```
 {
@@ -116,17 +116,17 @@ This block config would result in a single output signal that looks like the fol
 }
 ```
 
-That looks great, but what if we wanted to have a separate signal for each department, but still have a list of names. One \(tedious\) option would be to filter the stream based on the department and then put the individual streams into copies of the `HashTable` block from before. The following screenshot shows an example of this, note that this is **not** the advised way to do this:
+That looks great, but what if we wanted to have a separate signal for each department, but still have a list of names. One inefficient option would be to filter the stream based on the department, and then put the individual streams into copies of the `HashTable` block from before. The following image displays this example. Note that this **not** the advised way to do this:
 
 ![Bad HashTable](/img/bad-hash-table.png)
 
 There are several downsides to this approach.
 
-1. It is not dynamic based on department. If we add another department we have to add a new `Filter` block and replicate the `HashTable` again.
-2. We lose our original list. When the chain started we had a list of all employees, now we have different lists floating around. We would have to merge the streams together to get a list of all employee names again.
+1. It is not dynamic based on department. If we add another department, we have to add a new `Filter` block and replicate the `HashTable` again.
+2. We lose our original list. When the chain started we had a list of all employees, now we have different lists floating around. We would have to merge the streams back together to get a list of all employee names again.
 3. It is very tedious and repetitive. We have the same blocks used over and over again.
 
-But we have a solution! Enter the [Group By mixin](https://github.com/nioinnovation/nio/tree/master/nio/block/mixins/group_by). This mixin can easily be added to a block to allow it to perform the same action but first group the signals into smaller lists. This is very similar to how SQL's [`GROUP BY`](https://www.w3schools.com/sql/sql_groupby.asp) operator works. Fortunately for us, the `HashTable` block uses the group by mixin, so we can drop all of those pesky `Filter` blocks and rely on only one `HashTable` block. The block will group the hash table functionality by the department of the employee. And since we don't need the department name as the signal attribute key anymore, we can hard code that to be a string `"names"` instead. The block's config looks like this:
+But we have a solution! Enter the [Group By mixin](https://github.com/nioinnovation/nio/tree/master/nio/block/mixins/group_by). To group the signals into smaller lists first before performing the same action, this mixin can be added. This is very similar to how SQL's [`GROUP BY`](https://www.w3schools.com/sql/sql_groupby.asp) operator works. Fortunately, the `HashTable` block uses the Group By mixin, so we can drop all of those pesky `Filter` blocks and rely on only one `HashTable` block. The block will group the hash table functionality by the department of the employee. And since we don't need the department name as the signal attribute key anymore, we can hard code that to be a string `"names"` instead. The block's config looks like this:
 
 ```
 {
@@ -138,7 +138,7 @@ But we have a solution! Enter the [Group By mixin](https://github.com/nioinnovat
 }
 ```
 
-Notice we've just added an attribute to our block config telling it what value to group by. The output of the block will be a list of two signals, one for each department. Again, remember that since we had a list come in we only have one list go out. Even though there are two signals being notified, they will be notified together in the same list. The block's output looks like this:
+Notice we've just added an attribute to our block config indentifying the value to group by. The output of the block will be a list of two signals, one for each department. Again, remember that since we had only one list of inputs, we can only have one list of outputs. Even though there are two signals being notified, they will be notified together in the same list. The block's output looks like this:
 
 ```
 [
@@ -153,5 +153,5 @@ Notice we've just added an attribute to our block config telling it what value t
 ]
 ```
 
-Understanding how Group By works and when to use it can save a lot of headaches and repetition in n.io services. It can also allow you to build very powerful services without many blocks. In general, if you have to repeat yourself a lot when desiging with n.io, you're probably doing something wrong.
+Understanding how Group By works and when to use it can save a lot of headaches and repetition in n.io services. It can also allow you to build very powerful services without many blocks. In general, if you are frequently repeating the same blocks when designing in n.io, there is probably a more efficient way of performing the task.
 
