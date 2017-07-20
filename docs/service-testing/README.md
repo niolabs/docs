@@ -4,7 +4,7 @@ Testing is a necessary part of designing a robust system. To ensure your block o
  
 Use the the [Service Unit Test Framework](https://github.com/nioinnovation/service_tests) to define unit tests for a service's behavior. Service unit tests are written in Python code and make use of the [Python unittest module](https://docs.python.org/3/library/unittest.html).
 
-1. If you are validating publisher or subscriber services, install the `jsonschema` Python package.
+1. Install the `jsonschema` Python package. This allows you to validate publishers and subscribers in services.
 2. Clone the [n.io Service Units Test](https://github.com/nioinnovation/service_tests) repo into your project directory as a submodule.
 3. Create a `tests` directory to store your own custom service unit tests.
 4. Set up a test class. See the [Service Unit Test](https://github.com/nioinnovation/service_tests) repository's readme file. 
