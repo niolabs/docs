@@ -6,11 +6,11 @@ Block development can adopt one of two philosophies:
 
   1. Blocks are simple and generic and very reusable. Examples of generic blocks can be found in the [nio-blocks GitHub organization](https://github.com/nio-blocks). Blocks developed with this approach are designed to have a single unit of functionality and you can chain blocks together to get complex behavior.
 
-  2. Blocks are extremely custom and meant for a single purpose. This type of block is not likely to be used by more than the one service it was designed for. For example, a block might contains a script to run a series of calculations for a model. Instead of a complicated chain of blocks, a single block can encompasses the entire model.
+  2. Blocks can be complex or intended for a single use. This type of block is not likely to be used by more than the one service it was designed for. For example, a block might contain a script to run a series of calculations for a model. Instead of a complicated chain of blocks, a single block can encompasses the entire model. Or a single block might parse a Tweet in a unique way, but not be designed for generic use.
 
 If the type of functionality you desire is not yet available in an existing block, it is not difficult to create a custom block.
 
-To get started creating a custom block, clone the [block-template repository](https://github.com/nio-blocks/block_template) from GitHub. This will provide you with the basic {{ book.product }} block class as well places for the block's requirements, specifications, release notes, and tests.
+To get started creating a custom block, clone the [block-template repository](https://github.com/nio-blocks/block_template) from GitHub. This will provide you with the basic {{ book.product }} block class as well as placeholders for the block's requirements, specifications, release notes, and tests.
 
 Follow the steps in the block template's `README.md`.
 
@@ -29,9 +29,38 @@ All {{ book.product }} blocks inherit from the base block class. You'll notice t
 The base block class uses the {{ book.product }} framework described below. Some good things to know about how {{ book.product }} blocks work:
 * signals are passed as lists ([see more here](/service-design-patterns/understanding-signals.md))
 * block properties are declared as class attributes, for example: `speed = IntProperty(title='Speed', default=30)`
-* block properties need to be called with a function invocation to get the value, for example: `setSpeed(self.speed())`
-* commands are declared as decorators, for example: `@command("emit")`
-* inputs/outputs are declared as decorators, for example: `@output('false', label='False')` `@input('input_1', default=True)`
+* block properties need to be called with a function invocation to get the value, for example to get value the speed property defined above: `self.setSpeed(self.speed())`
+* commands are declared as decorators, for example:
+  ```python
+  from nio.block.base import Block
+  from nio.command import command
+
+  @command("emit")
+  class MyBlock(Block):
+    # properties and block methods here…
+
+    # emit method that will be invoked when the "emit" command is received
+    def emit(self, foo=None):
+          self._emit_job(foo) # where you have set up your own _emit_job method…
+  ```
+* inputs/outputs are declared as decorators, for example:
+  ```python
+  from nio.block.base import Block
+  from nio.block import output
+
+  @output('false', label='False')
+  @output('true', label='True')
+  class MyBlock(Block):
+    # properties and block methods here…
+
+    def process_signals(self, signals):
+      true_result, false_result = self._filter_signals(signals) # where you have set up your own _filter_signals method…
+
+      # add any other functionality to process_signals
+
+      self.notify_signals(true_result, 'true')
+      self.notify_signals(false_result, 'false')
+  ```
 
 #### Methods to Override
 
@@ -43,10 +72,10 @@ The following methods from the base block are designed to be overridden:
   * `stop`: tear down. This is where the block stops sending out signals and cancels jobs.
 * **signaling**
   * `process_signals(<list of signals>, input_id)`: receives input signals.
-  * `notify_signals(<list of signals>, output_id)`: emits signals from the block. This method isn't actually intended to be overridden, but is it called by the block to send out signals.
+  * `notify_signals(<list of signals>, output_id)`: emits signals from the block. This method isn't actually intended to be overridden, but is it called by the block to send out signals. For example, you will usually call `notify_signals` at the end of your `process_signals` method.
 
 ### Current {{ book.product }} Blocks
-An additional resource for developing your custom block is the [nio-blocks library](https://github.com/nio-blocks). Search the nio-blocks library for a block that has similar functionality to the block you want to create. Explore the code this block uses, the properties it has, the methods it overrides, and the modules it imports from the framework. 
+An additional resource for developing your custom block is the [nio-blocks library](https://github.com/nio-blocks). Search the nio-blocks library for a block that has similar functionality to the block you want to create. Explore the code this block uses, the properties it has, the methods it overrides, and the modules it imports from the framework.
 
 ### Example: Convert a Python Script to a Block
 
@@ -185,7 +214,7 @@ For example, in a block that accesses an external API, you can use a base block 
 
 ## Mixins
 
-Extend mixins to add functionality such as persistance, group-by, and retry to your blocks. You'll find some mixins in `nio.block.mixins`.
+Extend mixins to add functionality such as persistence, group-by, and retry to your blocks. You'll find some mixins in `nio.block.mixins`.
 
 Mixins are not blocks, they are meant to enhance blocks by providing commonly used functionality.
 
