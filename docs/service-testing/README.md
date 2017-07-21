@@ -13,3 +13,5 @@ py.test tests
 Note: The service unit test framework requires a {{ book.product }} binary to be installed as well as the `jsonschema` Python package.
 
 More documentation about how to use the service unit test framework can be found in the [Service Unit Test repository's README](https://github.com/nioinnovation/service_tests).
+
+Test add
