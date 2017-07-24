@@ -222,6 +222,6 @@ For example, in a block that accesses an external API, you can use a base block 
 
 Mixins are not blocks. Instead, mixins provide commonly used functionality to existing blocks. You can add functions such as persistence, group-by, retry, or authentication to blocks. You can find some mixins in `nio.block.mixins`. //Matt: where is this? I've found two mixins in the nio-blocks repository??//
 
-Mixins follow the Python mixin model, thus any block mixins need to be extended before extending the base Block class. To use persistence and group-by mixins, see [Buffer block](https://github.com/nio-blocks/buffer).
+Mixins follow the Python mixin model, thus any block mixins need to be extended prior to extending the base Block class. To use persistence and group-by mixins, see [Buffer block](https://github.com/nio-blocks/buffer).
 
 Read the docstrings inside each mixin for information on the functionality and arguments.
