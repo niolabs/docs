@@ -2,130 +2,106 @@
 
 An expression is an element of code that can be evaluated and returns a result.
 
-## Expression Properties
+In order to dynamically define the value of a property when a signal enters a block, we can use {{ book.product }} expressions.
 
-Given the event-driven nature of most {{ book.product }} applications, it can be difficult or impossible to completely define the contents of block properties because these properties are not static. To access dynamic signal attributes at run time, we provide a simple syntax using `ExpressionProperty`. If the value of a block property reflects a value that can vary from signal to signal, simply declare that property an `ExpressionProperty` and grab its value inside `Block.process_signals`.
-
-Here's an example:
-
-```python
-
-   class MyBlock(Block):
-       expr = ExpressionProperty(default='', attr_default=0)
-
-       def process_signals(self, signals):
-           for s in signals:
-           try:
-	       value = self.expr(s)
-	   except Exception as e:
-	       value = None
-	       self._logger.error("Block property 'expr' failed to evaluate: {}".format(e))
-	   # Do some stuff with the value
-```
-
-It's that simple. If the signal under inspection is missing an attribute you ask for in the expression, the value of `attr_default` (provided at property initialization) is used in its place. As with other {{ book.product }} properties, the value of `default` will be evaluated if no expression is configured.
-
-Any other errors in the expression will raise native exceptions whose handling is the responsibility of the block developer.
-
-**Argument: `attr_default`**
-
-Unique to `ExpressionProperty` is the `attr_default` argument. In evaluating an expression, if the `$` notation is used to get an attribute value from a signal, but the attribute does not exist on the signal, then the value `attr_default` will be used in its place.
-
-If `attr_default` is not specified in `ExpressionProperty`, an empty string is used.
-
-`attr_Default` can be set to an Exception **class**. In this case, if the attribute does not exist on the signal, then that Exception will be raised.
-
-**Handling Exceptions**
-
-An expression property should always be evaluated inside of a *try* block. Invalid Python syntax inside of the expression will raise an Exception and the block needs to handle that. This is also where you would handle the Exception raised by `attr_default` if it is set to an Exception class.
-
-
-## Scripting Syntax
-
-There are two types of results to consider when configuring an expression property:
-
-* **String Interpolation**: Snippets of Python code are evaluated and interpolated based on their position in an enclosing string.
-
-* **Immediate Value**: A single Python expression is evaluated and the result is returned without modification/stringification.
-
-
-### String Interpolation
-
-String interpolation in expression properties works in a way similar to string interpolation in other dynamic languages. Snippets of code inside of double curly braces are evaluated. For example:
+{{ book.product }} expressions work in a way similar to string interpolation in other dynamic languages. Snippets of code inside of double curly braces are evaluated. For example:
 
 ```
-
-   …{{ <code goes here> }}…
+{{ <code goes here> }}
 ```
 
-results of the evaluation are inserted directly into the surrounding string, replacing the code snippet and enclosing braces. The code inside the braces can be pure Python, if you like, as in:
+The curly braces indicate that anything inside is Python code. The Python code will be evaluated and, if a valid expression, its value will replace the curly braces and their contents.
+
+For example:
 
 ```
-
-   "{{1 + 5}} dogs went to the park" -> "6 dogs went to the park"
+"{{1 + 5}} dogs went to the park" -> "6 dogs went to the park"
+"{{1 + 5}} dogs went to the {{'p'+'ark'}}" -> "6 dogs went to the park"
 ```
 
-Or you can use our special `$` syntax for accessing signal properties:
+You can also use the special `$` syntax for accessing signal properties:
 
 ```
-
-    # given a signal s s.t. s.v1 == 6
-    "{{$v1}} dogs went to the park" -> "6 dogs went to the park"
+# given a signal s where s.v1 == 6
+"{{$v1}} dogs went to the park" -> "6 dogs went to the park"
 ```
 
-Naturally, you can combine the two approaches, as in:
+You can combine the two approaches, as in:
 
 ```
+"My favorite Integer is {{$v1 if isinstance($v1, int) else 'not an Integer…'}}"
 
-   "My favorite Integer is {{$v1 if isinstance($v1, int) else 'not an Integer…'}}"
+# given a signal s where s.v1 == 6
+-> "My favorite Integer is 6"
 
-   # given a signal s s.t. s.v1 == 6
-   -> "My favorite Integer is 6"
-
-   # given a signal s s.t. s.v1 == 'A'
-   -> "My favorite Integer is not an Integer…"
+# given a signal s where s.v1 == 'A'
+-> "My favorite Integer is not an Integer…"
 ```
 
 If you'd like to include a $ character in a string literal inside a code snippet, just escape it with a `\`. Similarly, escaping the `}}` or `{{` with a `\` causes the braces to be treated as strings rather than as delimiters. For example:
 
 ```
-
-   "Code snippets are delimited by \{{ and \}}" -> "Code snippets are delimited by {{ and }}"
+"Code snippets are delimited by \{{ and \}}" -> "Code snippets are delimited by {{ and }}"
 ```
 
-### Immediate Value
-
-If you'd prefer that the result of your expression evaluation not be part of a string, you can populate an expression field with a single snippet enclosed in double curlies:
-
+Inner dictionaries need spaces before and after.
+```
+'{{ {"a": 1} }}' -> {"a": 1}
 ```
 
-   # given a signal s s.t. s.v1 == 1, s.v2 == 'two', s.v3 == [3]
-   "{{[$v1, $v2, $v3]}}" -> [1, 'two', [3]]
+## Conditionals
+
+Conditional expressions can be formatted in Python in one line as follows:
+
+```
+# given a signal s == { v1: 23, v2: "zabow!", v3: "sad trombone…"}
+
+"When there are {{$v1}} things, we say {{$v2 if $v1 == 23 else $v3}}" -> "When there are 23 things, we say zabow!"
+"When there are {{$v1}} things, we say {{$v2 if $v1 == 42 else $v3}}" -> "When there are 23 things, we say sad trombone..."
 ```
 
-### Raw Signal
+## Raw Signal
 
 You can access the raw signal itself (rather than just its attributes) with a lone `$`. As long as the following character is not a valid Python identifier, the `$` will evaluate to the incoming signal.
 
+## Using Libraries
+
+The following libraries are imported by default and can be used in expressions:
+  - datetime
+  - json
+  - math
+  - random
+  - re
+
+You can import other libraries from your Python install with the following one-line syntax:
+
+```
+{{ __import__('module_name').method_name() }}
+{{ __import__('numpy').amax([2, 1, 4]) }}
+```
 
 ## Examples
 
-Here are some more examples that we find particularly illustrative of using nio expression properties:
+Here are some more examples that we find particularly illustrative of using nio expressions:
 
 ```
+# given a signal s where s.v1 == {'who': 'Baron Samedi'}
+"{{$v1['who']}} and the Jets" -> "Baron Samedi and the Jets"
 
-   "{{1 + 5}} dogs went to the {{'p' + 'ark'}}" -> "6 dogs went to the park"
+# given a signal s where s.v1 raises AttributeError, s.v2 == 'Cogito' and a default value of None
+"{{$v1 or $v2}} ergo sum" -> "Cogito ergo sum"
 
-   # given a signal s s.t. s.v1 == {'who': 'Baron Samedi'}
-   "{{$v1['who']}} and the Jets" -> "Baron Samedi and the Jets"
+# given a signal s where s.get_val() == 'foobar'
+"Opened it with a {{$get_val()}}" -> "Opened it with a foobar"
 
-   # given a signal s s.t. s.v1 raises AttributeError, s.v2 == 'Cogito'
-   # and a default value of None
-   "{{$v1 or $v2}} ergo sum" -> "Cogito ergo sum"
+# given a signal s where s has the attribute v1 but not v2
+"{{hasattr($, 'v1') and hasattr($, 'v2')}}" -> False
 
-   # given a signal s s.t. s.get_val() == 'foobar'
-   "Opened it with a {{$get_val()}}" -> "Opened it with a foobar"
+# math operations are allowed (as are regex, datetime, random, and json)
+"{{ math.sin(math.radians(90)) }}" -> 1.0
 
-   # given a signal s s.t. s has the attribute v1 but not v2
-   "{{hasattr($, 'v1') and hasattr($, 'v2')}}" -> False
+"If you don't close the brackets {{1 + 5" -> "If you don't close the brackets {{1 + 5"
+
+# given a signal s == { v1: 23, v2: "zabow!", v3: "sad trombone…"}
+{{ $.to_dict() }} -> {v1: 23, v2: "zabow!", v3: "sad trombone…"}
 ```
