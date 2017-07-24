@@ -2,13 +2,13 @@
 
 Blocks are the units of {{ book.product }} that send, receive, and process. What makes a block a block?
 
-A block has a **life cycle** and at least one **input** terminal or one **output** terminal. \Matt: Should this be and/or?\\ Optionally, you can configure properties within the block. A block also has the potential to accept **commands** from the block REST API.
+A block has a **life cycle** and at least one **input** terminal or one **output** terminal. Optionally, you can configure properties within the block. A block also has the potential to accept **commands** from the block REST API.
 
 In summary, a {{ book.product }} block is:
 - A unit of functionality that runs in a service
 - A process that goes through the six stages of the block life cycle: configuring, configured, starting, started, stopping, stopped, (and hopefully not an error)
 - A functional piece of code that receives streaming input signals and/or emits streaming output signals
-- A commandable \\Matt: executable?\\ through the block REST API.
+- A commandable through the block REST API.
 - A Python class that inherits from `nio.block.base.Block`
 
 
