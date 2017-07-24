@@ -75,17 +75,17 @@ The following methods from the base block are designed to be overridden: //Matt:
 * **life cycle management** //matt: is this a command you run? where? does this cover the 6 step life cycle (starting, started, etc)//
   * `configure`: at the end of `configure`, the block is ready to receive signals. If an exception is raised during configure, the service won’t start.
   * `start`: during start, a block begins to send out signals. This method needs to eventually return so that the block status can change to “started”. For this reason, anything that runs continuously, should be run in a new thread.
-  * `stop`: tear down. This is where the block stops sending out signals and cancels jobs.
+  * `stop`: after top, the block stops sending out signals and cancels jobs.
 * **signaling**
   * `process_signals(<list of signals>, input_id)`: receives input signals.
-  * `notify_signals(<list of signals>, output_id)`: emits signals from the block. This method isn't actually intended to be overridden, but is it called by the block to send out signals. For example, you will usually call `notify_signals` at the end of your `process_signals` method.
+  * `notify_signals(<list of signals>, output_id)`: emits signals from the block. This method isn't intended to be overridden, but is it called by the block to send out signals. For example, you will usually call `notify_signals` at the end of your `process_signals` method.
 
-### Current {{ book.product }} Blocks
-An additional resource for developing your custom block is the [nio-blocks library](https://github.com/nio-blocks). Search the nio-blocks library for a block that has similar functionality to the block you want to create. Explore the code this block uses, the properties it has, the methods it overrides, and the modules it imports from the framework.
+### Current {{ book.product }} Blocks //Matt: Is there a name for "standard" blocks instead of current? Core blocks? ??//
+An additional resource for developing your custom block is the [nio-blocks library](https://github.com/nio-blocks). Search the nio-blocks library for a block that has similar functionality to the block you need. Once you find a block, explore the code, properties, methods, and modules imported from the framework.
 
-### Example: Convert a Python Script to a Block
+### Example: Convert a Python Script to a Block //Matt: are these steps complete?//
 
-Here is an example of how to take a Python script and turn it into a block. The developer wanted to use a script that would control a simple motor inside of a {{ book.product }} block.
+The developer wants to use a script to control a simple motor inside of a {{ book.product }} block. To convert a Python script to a block:
 
 Python script that controls the motor:
 ```python
@@ -185,22 +185,22 @@ class StepMotor(Block):
 
 ## The {{ book.product }} Framework
 
- When you develop {{ book.product }} blocks, you use the {{ book.product }} framework. The framework holds all the classes you will be using to create your block as well as the functionality that ties everything together. Think of the framework as a toolshed of useful tools for working with {{ book.product }}.
+ When you develop {{ book.product }} blocks, you use the {{ book.product }} framework. The framework holds all the classes required to create your block as well as the functionality to tie everything together. Think of the framework as a toolshed of useful tools for working with {{ book.product }}.
 
 ### Block Context
 
-In the configure method, blocks are passed 'context' about themselves and the environment that they are running in. This information is available to be used by block developers:
+In the configure method, blocks are passed 'context' about themselves and their. Block developers should refer to the following information:
 
-* **block_router** (BlockRouter):The router in which the block will be running. The only requirements are that it can handle signals notified by its blocks.
-* **properties** (dict): The block properties (metadata) that will be deserialized and loaded as block properties.
-* **hooks** (Hooks): Hooks to subscribe to participate in the lifecycle process involving all blocks running together.
+* **block_router** (BlockRouter): The router in which the block will be run. The router must be able to handle signals notified by its blocks.
+* **properties** (dict): The block properties (metadata) that will be deserialized and loaded.
+* **hooks** (Hooks): Hooks to subscribe to participate in the lifecycle process involving all blocks running together. //Matt: Alternate: not sure what this means//
 * **service_name** (str): The name of the service this block belongs to.
-* **command_url** (str): The URL at which this block can be commanded. This URL will not have host or port information, as that may be different based on public/private IP. It will look like "/services/ServiceName/BlockAlias/".
-* **mgmt_signal_handler** (method): method to use to publish management signals
+* **command_url** (str): The URL at which this block can be commanded. This URL will not have host or port information, as that may be different based on public/private IP. For example,  "/services/ServiceName/BlockAlias/".
+* **mgmt_signal_handler** (method): The method used to publish management signals.
 
 ### Discoverability
 
-Classes marked as `discoverable` allow the system to identify them and register them, while marking a class as `not_discoverable` produces the opposite effect. The default state of a block is `discoverable`.
+By default, a class is marked as `discoverable` to permit the system to identify and register the class. Marking a class as `not_discoverable` produces the opposite effect. 
 
 To mark a class as not_discoverable, use the parameter-less decorator `@not_discoverable`
 ```
@@ -210,7 +210,7 @@ To mark a class as not_discoverable, use the parameter-less decorator `@not_disc
         pass
 
 ```
-There is no need for base blocks to be discoverable. If a block does not take in or emit signals, it should include the `@not_discoverable` decorator.
+Base blocks do not need to be discoverable. If a block does not consume or emit signals, include the `@not_discoverable` decorator.
 
 ## Base Block Pattern
 
