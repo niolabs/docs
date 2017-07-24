@@ -1,0 +1,107 @@
+# {{ book.product }} Expressions
+
+An expression is an element of code that can be evaluated and returns a result.
+
+In order to dynamically define the value of a property when a signal enters a block, we can use {{ book.product }} expressions.
+
+{{ book.product }} expressions work in a way similar to string interpolation in other dynamic languages. Snippets of code inside of double curly braces are evaluated. For example:
+
+```
+{{ <code goes here> }}
+```
+
+The curly braces indicate that anything inside is Python code. The Python code will be evaluated and, if valid, its value will replace the curly braces and their contents.
+
+For example:
+
+```
+"{{1 + 5}} dogs went to the park" -> "6 dogs went to the park"
+"{{1 + 5}} dogs went to the {{'p'+'ark'}}" -> "6 dogs went to the park"
+```
+
+You can also use the special `$` syntax for accessing signal properties:
+
+```
+# given a signal s where s.v1 == 6
+"{{$v1}} dogs went to the park" -> "6 dogs went to the park"
+```
+
+You can combine the two approaches, as in:
+
+```
+"My favorite Integer is {{$v1 if isinstance($v1, int) else 'not an Integer…'}}"
+
+# given a signal s where s.v1 == 6
+-> "My favorite Integer is 6"
+
+# given a signal s where s.v1 == 'A'
+-> "My favorite Integer is not an Integer…"
+```
+
+If you'd like to include a $ character in a string literal inside a code snippet, just escape it with a `\`. Similarly, escaping the `}}` or `{{` with a `\` causes the braces to be treated as strings rather than as delimiters. For example:
+
+```
+"Code snippets are delimited by \{{ and \}}" -> "Code snippets are delimited by {{ and }}"
+```
+
+Inner dictionaries need spaces before and after.
+```
+'{{ {"a": 1} }}' -> {"a": 1}
+```
+
+## Conditionals
+
+Conditional expressions can be formatted in Python in one line as follows:
+
+```
+# given a signal s = { v1: 23, v2: "zabow!", v3: "sad trombone…"}
+
+"When there are {{$v1}} things, we say {{$v2 if $v1 == 23 else $v3}}" -> "When there are 23 things, we say zabow!"
+"When there are {{$v1}} things, we say {{$v2 if $v1 == 42 else $v3}}" -> "When there are 23 things, we say sad trombone..."
+```
+
+## Raw Signal
+
+You can access the raw signal itself (rather than just its attributes) with a lone `$`. As long as the following character is not a valid Python identifier, the `$` will evaluate to the incoming signal.
+
+## Using Libraries
+
+The following libraries are imported by default and do not need to be imported to use in expressions:
+  - datetime
+  - json
+  - math
+  - random
+  - re
+
+You can import other libraries from your python install by doing the following:
+
+```
+{{ __import__('module_name').method_name() }}
+{{ __import__('numpy').amax([2, 1, 4]) }}
+```
+
+## Examples
+
+Here are some more examples that we find particularly illustrative of using nio expressions:
+
+```
+# given a signal s where s.v1 == {'who': 'Baron Samedi'}
+"{{$v1['who']}} and the Jets" -> "Baron Samedi and the Jets"
+
+# given a signal s where s.v1 raises AttributeError, s.v2 == 'Cogito' and a default value of None
+"{{$v1 or $v2}} ergo sum" -> "Cogito ergo sum"
+
+# given a signal s where s.get_val() == 'foobar'
+"Opened it with a {{$get_val()}}" -> "Opened it with a foobar"
+
+# given a signal s where s has the attribute v1 but not v2
+"{{hasattr($, 'v1') and hasattr($, 'v2')}}" -> False
+
+# math operations are allowed (as are regex, datetime, random, and json)
+"{{ math.sin(math.radians(90)) }}" -> 1.0
+
+"If you don't close the brackets {{1 + 5" -> "If you don't close the brackets {{1 + 5"
+
+# given a signal s with attribute "attribute_1" with value 1
+{{ $.to_dict() }} -> {"attribute_1": 1}
+```
