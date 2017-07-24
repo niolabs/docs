@@ -1,36 +1,41 @@
 # Block Development
 
-The sky's the limit. If you want to connect to a new framework, library, or custom piece of hardware not currently included in the nio-blocks library, you can develop your own custom block.
+The sky's the limit. To connect to a new framework, library, or custom piece of hardware not currently included in the nio-blocks library, you can develop your own custom block.
 
-Block development can adopt one of two philosophies:
+You can adopt one of two philosophies when creating blocks:
 
-  1. Blocks are simple and generic and very reusable. Examples of generic blocks can be found in the [nio-blocks GitHub organization](https://github.com/nio-blocks). Blocks developed with this approach are designed to have a single unit of functionality and you can chain blocks together to get complex behavior.
+  1. Blocks can be simple, generic, and reusable. Examples of generic blocks can be found in the [nio-blocks GitHub organization](https://github.com/nio-blocks). Blocks developed with this approach have a single function and and you can chain blocks together to develop complex behaviors.
 
-  2. Blocks can be complex or intended for a single use. This type of block is not likely to be used by more than the one service it was designed for. For example, a block might contain a script to run a series of calculations for a model. Instead of a complicated chain of blocks, a single block can encompasses the entire model. Or a single block might parse a Tweet in a unique way, but not be designed for generic use.
+  2. Blocks can be complex or built for a single use. You would not likely use this block for more than the service it was defined for.  For example, a block might contain a script to run a series of calculations for a model. Instead of a complicated chain of blocks, a single block may encompass the entire model. You could also design  a single block to parse a Tweet in a unique way that would not be reused.
 
-If the type of functionality you desire is not yet available in an existing block, it is not difficult to create a custom block.
+If the function you need does not exist in [nio-blocks](https://github.com/nio-blocks), you can easily create a custom block.
 
-To get started creating a custom block, clone the [block-template repository](https://github.com/nio-blocks/block_template) from GitHub. This will provide you with the basic {{ book.product }} block class as well as placeholders for the block's requirements, specifications, release notes, and tests.
+To create a custom block, clone the [block-template repository](https://github.com/nio-blocks/block_template) from GitHub. The block template includes the basic {{ book.product }} block class as well as placeholders for the block's requirements, specifications, release notes, and tests.
 
-Follow the steps in the block template's `README.md`.
+See the [`README.md`](https://github.com/nio-blocks/block_template)  for complete instructions. 
 
 ## Developing Your Block
 
-Once you have your block template repo, you are ready to develop your block.
+After downloading the block template repository, you are ready to develop your block.
 
-A good resource for block development is the {{ book.product }} base block along with blocks with similar functionality that have been developed using the {{ book.product }} framework.
+The {{ book.product }} base block and blocks with similar functionality that have been developed using the {{ book.product }} framework are good resources for block development.
 
-As outlined in your block README (rename it from BLOCK_README.md to README.md: `mv BLOCK_README.md README.md`), you will have the option to add properties, dependencies, commands, inputs, and outputs to your block.
+As outlined in your block readme file, you have the option to add properties, dependencies, commands, inputs, and outputs to your block. 
+
+Before developing your own block, rename the block from  BLOCK_README.md to README.md by executing the following command: 
+`mv BLOCK_README.md README.md`
 
 ### Base Block Class
 
-All {{ book.product }} blocks inherit from the base block class. You'll notice the first import in `example_block.py` from your block template is `nio.block.base`. If you explore the code inside `nio.block.base`, you will find explanatory docstrings for each method, including methods to override in your custom block along with higher-level context.
+All {{ book.product }} blocks inherit from the base block class. The first import in `example_block.py` from the block template is `nio.block.base`. If you explore the code inside `nio.block.base`, you find explanatory docstrings for each method, including methods to override in your custom block along with higher-level context.
 
-The base block class uses the {{ book.product }} framework described below. Some good things to know about how {{ book.product }} blocks work:
-* signals are passed as lists ([see more here](/service-design-patterns/understanding-signals.md))
-* block properties are declared as class attributes, for example: `speed = IntProperty(title='Speed', default=30)`
-* block properties need to be called with a function invocation to get the value, for example to get value the speed property defined above: `self.setSpeed(self.speed())`
-* commands are declared as decorators, for example:
+The base block class uses the {{ book.product }} framework described below. {{ book.product }} blocks work according the following principals:
+* Signals are passed as lists. See [Understanding Signals](/service-design-patterns/understanding-signals.md).
+* Block properties are declared as class attributes. 
+For example, `speed = IntProperty(title='Speed', default=30)`
+* Block properties must be called with a function invocation to obtain the value. For example to get value the speed property defined above, call `self.setSpeed(self.speed())`
+* Commands are declared as decorator. 
+For example:
   ```python
   from nio.block.base import Block
   from nio.command import command
@@ -43,7 +48,8 @@ The base block class uses the {{ book.product }} framework described below. Some
     def emit(self, foo=None):
           self._emit_job(foo) # where you have set up your own _emit_job method…
   ```
-* inputs/outputs are declared as decorators, for example:
+* Inputs/outputs are declared as decorators. 
+For example:
   ```python
   from nio.block.base import Block
   from nio.block import output
@@ -64,11 +70,11 @@ The base block class uses the {{ book.product }} framework described below. Some
 
 #### Methods to Override
 
-The following methods from the base block are designed to be overridden:
+The following methods from the base block are designed to be overridden: //Matt: do you mean overwritten?//
 
-* **life cycle management**
+* **life cycle management** //matt: is this a command you run? where? does this cover the 6 step life cycle (starting, started, etc)//
   * `configure`: at the end of `configure`, the block is ready to receive signals. If an exception is raised during configure, the service won’t start.
-  * `start`: during start, a block can begin to send out signals. This method needs to eventually return so that the block status can change to “started”. For this reason, anything that runs forever (or for a long time), should be done in a new thread.
+  * `start`: during start, a block begins to send out signals. This method needs to eventually return so that the block status can change to “started”. For this reason, anything that runs continuously, should be run in a new thread.
   * `stop`: tear down. This is where the block stops sending out signals and cancels jobs.
 * **signaling**
   * `process_signals(<list of signals>, input_id)`: receives input signals.
