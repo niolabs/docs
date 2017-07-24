@@ -1,10 +1,10 @@
 # Block Testing
 
-{{ book.product }} blocks are not meant to be run as stand-alone Python modules, so testing them can sometimes be a challenging process. We provide a couple of tools and best practices to make this a bit easier.
+{{ book.product }} blocks are not meant to be run as stand-alone Python modules, so testing can be a challenging process. n.io provides a couple of tools and offers best practices to make your testing easier.
 
 ## NIOBlockTestCase
 
-We recommend that you use the `NIOBlockTestCase` when building your tests. It extends `unittest.TestCase` and ties into all the same infrastructure you're accustomed to using with the base class. However, `NIOBlockTestCase` also provides a number of helpful methods for testing blocks. Here's a real-world example straight from our internal block repositories:
+When building your tests, use the `NIOBlockTestCase`. The test case extends `unittest.TestCase` and uses the same infrastructure as the base class. However, `NIOBlockTestCase` also provides a number of helpful methods for testing blocks. Here's a real-world example straight from our internal block repositories:
 
 ```python
 
