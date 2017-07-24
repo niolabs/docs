@@ -210,13 +210,13 @@ To mark a class as not_discoverable, use the parameter-less decorator `@not_disc
         pass
 
 ```
-Base blocks do not need to be discoverable. If a block does not consume or emit signals, include the `@not_discoverable` decorator.
+Base blocks do not need to be discoverable. If a block does not consume or emit signals, include the `@not_discoverable` decorator. //Matt: earlier we said that all blocks take signals in or out--what about transforms?//
 
 ## Base Block Pattern
 
-In more complex configurable blocks it is handy to implement a base block pattern. In this pattern, all the configuration that isn't block-specific is done in a non-discoverable base block. The blocks that do the work and process signals will inherit from the base block.
+Implementing a base block pattern is useful in complex configurable blocks. In this pattern, configure the options that are not block-specific in a non-discoverable base block. The blocks that do the work and process signals will inherit from the base block.
 
-For example, in a block that accesses an external API, you can use a base block to set up the base url then create discoverable blocks to access each specific endpoint in the API. This pattern increases maintainability and reinforces the philosophy of each block having one unit of functionality.
+For example, in a block that accesses an external API, you can use a base block to set up the base url then create discoverable blocks to access each specific endpoint in the API. A base block pattern is easier to maintain and reinforces one-function-per block philosophy.
 
 ## Mixins
 
