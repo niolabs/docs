@@ -1,7 +1,6 @@
 # Glossary of Terms
 
 ## Binary
-
 A binary is the executable program. Depending on your circumstances, you will run one of many n.io binaries. Binaries range in complexity and are often tuned for particular hardware. If you're tinkering around on a Raspberry Pi, you don't need to run the same binary as a network of a dozen supercomputers built to analyze hundreds of thousands signals per second.
 
 ## Block
