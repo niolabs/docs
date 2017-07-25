@@ -1,8 +1,8 @@
 # Core Components
 
-Part of the {{ book.product }} binary consists of core components. These are pieces of functionality that run along side the {{ book.product }} core process. Unlike modules which run in every {{ book.product }} service, a core component will only be run once and will run in the core/main process.
+Part of the {{ book.product }} binary consists of core components. These are pieces of functionality that run alongside the {{ book.product }} core process. Unlike modules which run in every {{ book.product }} service, a core component will only be run once and will run in the core/main process.
 
-some examples of core components??
+Communications protocols such as ZMQ, HTTP, and SNMP are examples of {{ book.product }} core components. 
 
 ## Disabling Core Components
 
