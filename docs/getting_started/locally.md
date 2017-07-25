@@ -83,9 +83,7 @@ If you see those logs, it means n.io is up and running, congratulations!
 
 ## Add a local instance to the System Designer
 
-Once we have a local instance running, we'll want to edit it using the System Designer. Based on the log messages, your n.io instance is available at `http://localhost:8181` and you need to tell it to use basic authentication to communicate with the instance. 
-
-
+Once we have a local instance running, we'll want to edit it using the System Designer. Based on the log messages, your n.io instance is available at `http://localhost:8181` and you need to tell it to use basic authentication to communicate with the instance.
 
 To create a local instance:
 
@@ -94,21 +92,18 @@ To create a local instance:
 3. Click "Accept."
 4. Select the name of the system you created.
 5. Click "Add New Instance."
-6. Type the name of the instance, enter  `localhost` for host and `8181` for port, and leave the access mode as
+6. Type the name of the instance, enter  `localhost` for host and `8181` for port, and leave the access mode as  
    `basic.`
 
 7. Click "Accept".
+
 8. Wait for the instance to spin-up and note the name of the new instance on the left side of the screen.
 
+Note: When you connect to a n.io instance to edit it, you are communicating with that instance directly from your browser via an XHR request. Hostnames like `localhost` and other internal IP addresses will work. These instances won't be available to be designed through the System Designer unless you are able to access them from your machine.
 
+You may see an issue regarding HTTPS and HTTP instances. Since you launched your instance and presumably didn't load any SSL certificates into it, the instance is accessible only by HTTP. However, if you are logged into the System Designer via HTTPS, then an XHR request going over HTTP is not permitted due to a browser restriction. Instead, log into the designer [via HTTP](http://designer.n.io). All of your instances and systems will be the same, only the n.io commands to edit these instances won't happen over HTTPS.
 
-Give your instance a name, then specify `localhost` for host and `8181` for port. Leave the access mode as `basic` for now. You are telling the designer that your n.io instance is available at `http://localhost:8181` which is what our log messages from n.io indicated to us. You are also telling it to use basic authentication to communicate with the instance.
-
-Note this important detail about the System Designer: when you connect to a n.io instance to edit it you are communicating with that instance directly from your browser \(via an XHR request\). That means hostnames like `localhost` and other internal IP addresses work. It also means these instances won't be available to be designed through the System Designer unless you are able to access them from your machine.
-
-You may see an issue regarding HTTPS and HTTP instances. Since you launched your instance and presumably didn't load any SSL certificates into it, the instance is accessible only by HTTP. However, if you are logged into the System Designer via HTTPS then an XHR request going over HTTP is not permitted \(this is a browser restriction\). Instead, log into the designer [via HTTP](http://designer.n.io). All of your instances and systems will be the same, only the n.io commands to edit these instances won't happen over HTTPS.
-
-Once your instance is loaded and available, you can add services and blocks to it just like a cloud instance. Any errors or activity that happens will be available through the logs in your terminal that is running n.io. This makes local instances a much more useful tool for designing n.io systems where debugging is needed.
+Once your instance is loaded and available, you can add services and blocks to it just like a cloud instance \(//link to . Any errors or activity that happens will be available through the logs in your terminal that is running n.io. This makes local instances a much more useful tool for designing n.io systems where debugging is needed.
 
 ## Adding Blocks to a Project
 
