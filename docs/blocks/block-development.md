@@ -70,9 +70,9 @@ For example:
 
 #### Methods to Override
 
-The following methods from the base block are designed to be overridden: //Matt: do you mean overwritten?//
+The following methods from the base block are designed to be overridden: 
 
-* **life cycle management** //matt: is this a command you run? where? does this cover the 6 step life cycle (starting, started, etc)//
+* **life cycle management** 
   * `configure`: at the end of `configure`, the block is ready to receive signals. If an exception is raised during configure, the service won’t start.
   * `start`: during start, a block begins to send out signals. This method needs to eventually return so that the block status can change to “started”. For this reason, anything that runs continuously, should be run in a new thread.
   * `stop`: after top, the block stops sending out signals and cancels jobs.
@@ -80,108 +80,8 @@ The following methods from the base block are designed to be overridden: //Matt:
   * `process_signals(<list of signals>, input_id)`: receives input signals.
   * `notify_signals(<list of signals>, output_id)`: emits signals from the block. This method isn't intended to be overridden, but is it called by the block to send out signals. For example, you will usually call `notify_signals` at the end of your `process_signals` method.
 
-### Current {{ book.product }} Blocks //Matt: Is there a name for "standard" blocks instead of current? Core blocks? ??//
+### Current {{ book.product }} Blocks 
 An additional resource for developing your custom block is the [nio-blocks library](https://github.com/nio-blocks). Search the nio-blocks library for a block that has similar functionality to the block you need. Once you find a block, explore the code, properties, methods, and modules imported from the framework.
-
-### Example: Convert a Python Script to a Block //Matt: are these steps complete?//
-
-The developer wants to use a script to control a simple motor inside of a {{ book.product }} block. To convert a Python script to a block:
-
-Python script that controls the motor:
-```python
-#!/usr/bin/python
-from Adafruit_MotorHAT import Adafruit_MotorHAT, Adafruit_DCMotor, Adafruit_StepperMotor
-
-import time
-import atexit
-
-# create a default object, no changes to I2C address or frequency
-mh = Adafruit_MotorHAT()
-
-# recommended for auto-disabling motors on shutdown!
-def turnOffMotors():
-    mh.getMotor(1).run(Adafruit_MotorHAT.RELEASE)
-    mh.getMotor(2).run(Adafruit_MotorHAT.RELEASE)
-    mh.getMotor(3).run(Adafruit_MotorHAT.RELEASE)
-    mh.getMotor(4).run(Adafruit_MotorHAT.RELEASE)
-
-atexit.register(turnOffMotors)
-
-myStepper = mh.getStepper(200, 1)  # 200 steps/rev, motor port #1
-myStepper.setSpeed(30)             # 30 RPM
-
-while (True):
-    print("Single coil steps")
-    myStepper.step(100, Adafruit_MotorHAT.FORWARD,  Adafruit_MotorHAT.SINGLE)
-    myStepper.step(100, Adafruit_MotorHAT.BACKWARD, Adafruit_MotorHAT.SINGLE)
-
-    print("Double coil steps")
-    myStepper.step(100, Adafruit_MotorHAT.FORWARD,  Adafruit_MotorHAT.DOUBLE)
-    myStepper.step(100, Adafruit_MotorHAT.BACKWARD, Adafruit_MotorHAT.DOUBLE)
-
-    print("Interleaved coil steps")
-    myStepper.step(100, Adafruit_MotorHAT.FORWARD,  Adafruit_MotorHAT.INTERLEAVE)
-    myStepper.step(100, Adafruit_MotorHAT.BACKWARD, Adafruit_MotorHAT.INTERLEAVE)
-
-    print("Microsteps")
-    myStepper.step(100, Adafruit_MotorHAT.FORWARD,  Adafruit_MotorHAT.MICROSTEP)
-    myStepper.step(100, Adafruit_MotorHAT.BACKWARD, Adafruit_MotorHAT.MICROSTEP)
-```
-
-Python stepper-motor script inside of {{ book.product }} block code:
-
-```python
-from nio.block.base import Block
-from nio.properties import VersionProperty, IntProperty, SelectProperty
-
-from Adafruit_MotorHAT import Adafruit_MotorHAT, Adafruit_DCMotor, Adafruit_StepperMotor
-
-import time
-import atexit
-from enum import Enum
-
-class Directions(Enum):
-    FORWARD = Adafruit_MotorHAT.FORWARD
-    BACKWARD = Adafruit_MotorHAT.BACKWARD
-
-class CoilSteps(Enum):
-    SINGLE = Adafruit_MotorHAT.SINGLE
-    DOUBLE = Adafruit_MotorHAT.DOUBLE
-    INTERLEAVE = Adafruit_MotorHAT.INTERLEAVE
-    MICROSTEP = Adafruit_MotorHAT.MICROSTEP
-
-class StepMotor(Block):
-
-    version = VersionProperty('0.1.0')
-    motor = IntProperty(title='Motor number', default=1)
-    steprate = IntProperty(title='Step Rate', default=200)
-    speed = IntProperty(title='Speed', default=30)
-    steps = IntProperty(title='Number of Steps', default=100)
-    direction = SelectProperty(Directions, title="Direction", default="FORWARD")
-    coil_steps = SelectProperty(CoilSteps, title="Coil Steps", default="SINGLE")
-
-    def __init__(self):
-        super().__init__()
-        self.mh = None
-        self.stepper = None
-
-    def turnOffMotors(self):
-        self.mh.getMotor(1).run(Adafruit_MotorHAT.RELEASE)
-        self.mh.getMotor(2).run(Adafruit_MotorHAT.RELEASE)
-        self.mh.getMotor(3).run(Adafruit_MotorHAT.RELEASE)
-        self.mh.getMotor(4).run(Adafruit_MotorHAT.RELEASE)
-
-    def start(self):
-        self.mh = Adafruit_MotorHAT()
-        atexit.register(self.turnOffMotors)
-        self.stepper = self.mh.getStepper(self.steprate(), self.motor())
-        self.stepper.setSpeed(self.speed())
-
-    def process_signals(self, signals):
-        for signal in signals:
-            self.stepper.step(self.steps(), self.direction().value,  self.coil_steps().value)
-        self.notify_signals(signals)
-```
 
 ## The {{ book.product }} Framework
 
@@ -193,7 +93,7 @@ In the configure method, blocks are passed 'context' about themselves and their.
 
 * **block_router** (BlockRouter): The router in which the block will be run. The router must be able to handle signals notified by its blocks.
 * **properties** (dict): The block properties (metadata) that will be deserialized and loaded.
-* **hooks** (Hooks): Hooks to subscribe to participate in the lifecycle process involving all blocks running together. //Matt: Alternate: not sure what this means//
+* **hooks** (Hooks): Hooks to subscribe to participate in the lifecycle process involving all blocks running together. 
 * **service_name** (str): The name of the service this block belongs to.
 * **command_url** (str): The URL at which this block can be commanded. This URL will not have host or port information, as that may be different based on public/private IP. For example,  "/services/ServiceName/BlockAlias/".
 * **mgmt_signal_handler** (method): The method used to publish management signals.
@@ -210,7 +110,7 @@ To mark a class as not_discoverable, use the parameter-less decorator `@not_disc
         pass
 
 ```
-Base blocks do not need to be discoverable. If a block does not consume or emit signals, include the `@not_discoverable` decorator. //Matt: earlier we said that all blocks take signals in or out--what about transforms?//
+Base blocks do not need to be discoverable. If a block does not consume or emit signals, include the `@not_discoverable` decorator. 
 
 ## Base Block Pattern
 
@@ -220,7 +120,7 @@ For example, in a block that accesses an external API, you can use a base block 
 
 ## Mixins
 
-Mixins are not blocks. Instead, mixins provide commonly used functionality to existing blocks. You can add functions such as persistence, group-by, or retry to blocks. You can find some mixins in `nio.block.mixins`. //Matt: where is this? I've found two mixins in the nio-blocks repository?? https://github.com/nioinnovation/nio/tree/master/nio/block/mixins  or https://github.com/nio-blocks/mixins-nio1   //
+Mixins are not blocks. Instead, mixins provide commonly used functionality to existing blocks. You can add functions such as persistence, group-by, or retry to blocks. To view the available mixins, see the [mixin repository](https://github.com/nioinnovation/nio/tree/master/nio/block/mixins).
 
 Mixins follow the Python mixin model, thus any block mixins need to be extended prior to extending the base Block class. To use persistence and group-by mixins, see [Buffer block](https://github.com/nio-blocks/buffer).
 
