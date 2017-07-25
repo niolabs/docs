@@ -16,13 +16,21 @@ To create a new system, click the "+" icon on the lower left side of the screen.
 
 ## Instance
 
-A list of instances is displayed in a column on the left side of the screen. 
+A list of instances is displayed in a column on the left side of the screen.
 
 &lt;INSERT IMAGE&gt;
 
 To view the service workflow within the instance, click the down arrow next to the name of the instance. The list of services is displayed below the instance name.
 
 To create a new instance, click the "create a cloud instance" or "add a new instance" button.
+
+
+
+## Service Workflow
+
+The service workflow represents the interactions between the services.
+
+&lt;INSERT IMAGE&gt;
 
 ## Service
 
@@ -48,9 +56,7 @@ Clone
 
 Delete
 
-## service workflow
-
-The service workflow represents the interactions between the services.
+## 
 
 ## block workflow
 
@@ -75,4 +81,6 @@ Note the breadcrumb which reveals the level \(system, instance, service, or bloc
 ## contextual toolbar
 
 The contextual toolbar displays the icons based on the functions available on that screen.
+
+toggle / hover for text
 
