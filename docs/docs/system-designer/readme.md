@@ -1,6 +1,8 @@
 # System Designer Overview
 
-The System Designer is the graphical user interface used to build your n.io system. Note that your screen may look slightly different than the images in the documentation.
+The System Designer is the graphical user interface used to build your n.io system. This overview provides you with a quick tour of the user interface including the navigation, work areas, and toolbars. 
+
+Note that your screen may look slightly different than the images in this document.
 
 ## System
 
@@ -38,9 +40,11 @@ To create a new service, click the "add new service" button.
 
 ## Block Library
 
+The block library contains a list of the blocks that have been categorized by their function. 
+
 ![](/docs/img/vg-block-library.png)
 
-
+To find a block, click the category to view the individual blocks within that category. 
 
 ## Block Workflow
 
@@ -52,7 +56,7 @@ To view the block workflow, click the service name.
 
 To add a block to the service, drag and drop a block from the block library to the canvas.
 
-To create a new block, drag and drop the "create" block from the block library to the canvas. 
+To create a new block, drag and drop the "create" block from the block library to the canvas.
 
 ## Breadcrumb
 
