@@ -51,7 +51,8 @@ You can access the raw signal itself, rather than just the attributes, with a lo
 
 ## Escape Characters
 
-To include a`$` character in a string literal inside a code snippet, use an escape with a `\`. Similarly, escaping the `}}` or `{{` with a `\` causes the braces to be treated as strings rather than as delimiters. For example:
+To include a $ character in a string literal inside a code snippet, use the backslash (`\`) character to escape it. Similarly, escaping the `}}` or `{{` with a `\` causes the braces to be treated as strings rather than as delimiters. 
+For example:
 
 ```
 "Code snippets are delimited by \{{ and \}}"
@@ -80,7 +81,7 @@ The following libraries are imported by default and can be used in expressions:
   - random
   - re
 
-You can import other libraries from your Python installation with the following syntax:
+Import other libraries from your Python installation with the following syntax:
 
 ```
 {{ __import__('module_name').method_name() }}
