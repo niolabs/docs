@@ -5,7 +5,7 @@
   * [In the Cloud](getting_started/in_the_cloud.md)
   * [Locally](getting_started/locally.md)
   * [Your First Service](getting_started/first_service.md)
-* [System Designer](/docs/system-designer/readme.md)
+* [System Designer](system-designer/README.md)
 * [Blocks](blocks/README.md)
 * [Custom Blocks](blocks/custom-blocks.md)
   * [Block Development](blocks/custom-blocks/block-development.md)
@@ -29,6 +29,3 @@
   * [SNMP Agent](components/snmp.md)
 * [Glossary of Terms](glossary/README.md)
 * [Support](support/README.md)
-
-
-
