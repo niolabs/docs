@@ -2,7 +2,7 @@
 
 The System Designer is a graphical user interface used to build your system.
 
-&lt;LILLY IS UPDATING IMAGES FROM VISUAL GLOSSARY&gt;
+&lt;LILLY IS UPDATING IMAGES FROM VISUAL GLOSSARY--needs block library on interface - disclaimer on interface&gt;
 
 ## System
 
@@ -48,11 +48,11 @@ Clone
 
 Delete
 
-# service workflow
+## service workflow
 
 The service workflow represents the interactions between the services.
 
-# block workflow
+## block workflow
 
 The block workflow represents how the blocks consume, transform, and produce signals.
 
@@ -68,11 +68,11 @@ Revert
 
 Delete
 
-breadcrumb
+## breadcrumb
 
 Note the breadcrumb which reveals the level \(system, instance, service, or block\)
 
-contextual toolbar
+## contextual toolbar
 
 The contextual toolbar displays the icons based on the functions available on that screen.
 
