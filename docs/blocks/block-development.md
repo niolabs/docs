@@ -4,7 +4,7 @@ The sky's the limit. To connect to a new framework, library, or custom piece of 
 
 You can adopt one of two philosophies when creating blocks:
 
-  1. Blocks can be simple, generic, and reusable. Examples of generic blocks can be found in the [nio-blocks GitHub repository](https://github.com/nio-blocks). Blocks developed with this approach have a single function and and you can chain blocks together to develop complex behaviors.
+  1. Blocks can be simple, generic, and reusable. Examples of generic blocks can be found in the [nio-blocks GitHub repository](https://github.com/nio-blocks). Blocks developed with this approach have a single function and you can chain blocks together to develop complex behaviors.
 
   2. Blocks can be complex or built for a single use. You would not likely use this block for more than the service it was defined for.  For example, a block might contain a script to run a series of calculations for a model. Instead of a complicated chain of blocks, a single block may encompass the entire model. You could also design  a single block to parse a Tweet in a unique way that would not be reused.
 
