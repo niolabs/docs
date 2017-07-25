@@ -30,7 +30,7 @@ To add a block:
 
 1. Click "All" on the right side of the screen. If you have an empty instance, no blocks will be displayed.
 2. Click the Add Block icon which looks like a cloud with an arrow.
-3. To import the block, enter the Github clone URL of the block and click "Accept."
+3. To import the block, enter the Github clone URL of the block, and click "Accept."
 4. After uploading, the block type displays on the right side of the screen under its group.
 
 

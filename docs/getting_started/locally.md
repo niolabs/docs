@@ -103,11 +103,14 @@ Note: When you connect to a n.io instance to edit it, you are communicating with
 
 You may see an issue regarding HTTPS and HTTP instances. Since you launched your instance and presumably didn't load any SSL certificates into it, the instance is accessible only by HTTP. However, if you are logged into the System Designer via HTTPS, then an XHR request going over HTTP is not permitted due to a browser restriction. Instead, log into the designer [via HTTP](http://designer.n.io). All of your instances and systems will be the same, only the n.io commands to edit these instances won't happen over HTTPS.
 
-Once your instance is loaded and available, you can add services and blocks to it just like a cloud instance \(//link to . Any errors or activity that happens will be available through the logs in your terminal that is running n.io. This makes local instances a much more useful tool for designing n.io systems where debugging is needed.
+Once your instance is loaded and available, you can add services and blocks to it just like a cloud instance \(link to In The Cloud\). Any errors or activity that happens will be available through the logs in your terminal that is running n.io. This makes local instances a much more useful tool for designing n.io systems where debugging is needed.
 
 ## Adding Blocks to a Project
 
-Before we move on, you're going to want to add some blocks to your project. Press ctrl-c to ext n.io. We'll add four popular blocks using the n.io CLI to get you started:
+Before we move on, you're going to want to add some blocks to your project. 
+
+1. Enter Ctrl-C to ext n.io. 
+2. To add four popular blocks, type the following command. 
 
 ```
 nio add logger simulator filter dynamic_fields
