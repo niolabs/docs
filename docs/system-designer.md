@@ -1,8 +1,0 @@
-# System Designer
-
-
-
-Insert image
-
-
-
