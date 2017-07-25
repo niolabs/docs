@@ -91,7 +91,7 @@ In the configure method, blocks are passed 'context' about themselves and the en
 
 * **block_router** (BlockRouter): The router in which the block will be run. The router must be able to handle signals notified by its blocks.
 * **properties** (dict): The block properties (metadata) that will be deserialized and loaded.
-* **hooks** (Hooks): Hooks to subscribe to participate in the lifecycle process involving all blocks running together. 
+* **hooks** (Hooks): Hooks are used by the service internally to subscribe to certain overall nio instance lifecycle events. It is not advised to use or rely on these hooks in your blocks. 
 * **service_name** (str): The name of the service this block belongs to.
 * **command_url** (str): The URL at which this block can be commanded. This URL will not have host or port information, as that may be different based on public/private IP. For example,  "/services/ServiceName/BlockAlias/".
 * **mgmt_signal_handler** (method): The method used to publish management signals.
