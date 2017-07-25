@@ -2,28 +2,25 @@
 
 In the System designer, you start with an empty canvas full of possibilities, but there are no services yet. We will add a service to fix that. While it won't get too exciting quite yet, we can start by building a very basic service to simulate and log signals.
 
-By default, the projects logs go to standard out as well as to files in the `logs/` directory of your project folder.
+To add a service:
 
-
-
-To add a block:
-
-1. Click "All" on the right side of the screen. If you have an empty instance, no blocks will be displayed.
-2. Click the Add Block icon which looks like a cloud with an arrow.
-3. To import the block, enter the Github clone URL of the block, and click "Accept."
-4. After uploading, the block type displays on the right side of the screen under its group.
-
-Start by clicking the "add new service" button and name your service "SimulateAndLog".
-
-Now that we have a service, we'll add a CounterIntervalSimulator block and a Logger block. Double click on your "SimulateAndLog" service. From the right, click on "LB" and drag a LoggerBlock onto the service canvas. Go ahead give it the name "Log". Do the same with "CIS" and drag in a CounterIntervalSimulator and name it "Simulate".
-
-Now connect these blocks by clicking and dragging on the output terminal of "Simulate" and release it on the input terminal of "Log".
-
-Once you are satisfied with your service, click the "save" icon at the top of the instance canvas.
+1. Select the name of the instance you created.
+2. Click "Add New Service."
+3. Type SimulateAndLog, leave the service type as Service, and click "Accept."
+4. Double-click on the SimulateAndLog Service. 
+5. From the right, click on "LB" and drag a LoggerBlock block on to the canvas.
+6. Name the block Log.
+7. Click on CIS and drag a CounterIntervalSimulator block on to the canvas.
+8. Name the block Simulate. 
+9. Connect the blocks by clicking and dragging the output terminal of the Simulate block and release it on the input terminal of the Log block.
+10. Click Save. 
 
 ## Running Services
 
-By now I'm sure you're more than ready to see something happen. Click the "start" icon from the top of the service canvas and you should see some logs appear in the terminal where you ran n.io from.
+By now, you are more than ready to see something happen. 
+
+1. Click the "start" icon from the top of the service canvas.
+2. View the logs in the terminal.  Note: Logs are saved in the  `logs/` directory of your project folder.
 
 ```
 [2016-03-05 00:32:05.189] NIO [INFO] [SimulateAndLog.Log] Block : Log (type : LoggerBlock) status is configured
@@ -42,17 +39,28 @@ By now I'm sure you're more than ready to see something happen. Click the "start
 [2016-03-05 00:32:10.204] NIO [INFO] [SimulateAndLog.Log] {'sim': 1}
 ```
 
-Click the "stop" icon when you're ready to move on.
+3. Click the "stop" icon when finished.
 
 ## Configuring Blocks
 
-So far we're only using the default behavior of these blocks. Why don't you try changing things up by configuring the Simulate block. Click on the top right of the block and take a look at it's properties on the pop out menu. You'll notice that Interval is configured to 1 second. Change that to 2 and then click "save". Now when you start the service, you'll only see signals logged every other second.
+So far we're only using the default behavior of these blocks, but let's change things up by configuring the Simulate block. We want to change the interval from 1 to 2 seconds to see the signals logged every other second.
+
+To configure blocks:
+
+1. Double-click on the Simulate block to view the properties in a dialog box.
+2. Change the interval value from 1 \(the default\) to 2.
+3. Click Save.
 
 ## Commanding Blocks and Services
 
 Commands are a way to execute code in a block or service. Technically, you've already commanded services with "start" and "stop".
 
-Running blocks can also be commanded. With the SimulateAndLog service running, select the Log block and then click the "command" button from the menu. Select "log", type in a phrase and then click "execute". You'll see your phrase logged alongside the simulated signals.
+To command a block:
+
+1. With the SimulateAndLog running, select the Log block.
+2. Click Command &lt;/&gt; on the menu. 
+3. Select the Log block and type in a phrase in the results box.
+4. Click Execute to view the phrase logged with the simulate signals. 
 
 ## Conclusion
 
