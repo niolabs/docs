@@ -1,6 +1,17 @@
-# Your First n.io Service
+# Building Your First n.io Service
 
-After selecting your instance you will probably notice a blank canvas showing no services in there. Let's add a service to fix that. While it won't get too exciting quite yet, we'll start by building a very basic service to simulate and log signals. By default, the projects logs go to standard out as well as to files in the `logs/` directory of your project folder.
+In the System designer, you start with an empty canvas full of possibilities, but there are no services yet. We will add a service to fix that. While it won't get too exciting quite yet, we can start by building a very basic service to simulate and log signals.
+
+By default, the projects logs go to standard out as well as to files in the `logs/` directory of your project folder.
+
+
+
+To add a block:
+
+1. Click "All" on the right side of the screen. If you have an empty instance, no blocks will be displayed.
+2. Click the Add Block icon which looks like a cloud with an arrow.
+3. To import the block, enter the Github clone URL of the block, and click "Accept."
+4. After uploading, the block type displays on the right side of the screen under its group.
 
 Start by clicking the "add new service" button and name your service "SimulateAndLog".
 
@@ -43,6 +54,7 @@ Commands are a way to execute code in a block or service. Technically, you've al
 
 Running blocks can also be commanded. With the SimulateAndLog service running, select the Log block and then click the "command" button from the menu. Select "log", type in a phrase and then click "execute". You'll see your phrase logged alongside the simulated signals.
 
-## Conclusion ##
+## Conclusion
 
-At this point you should feel comfortable installing n.io, creating a project with blocks and configuring and running services. You can find block [documentation on GitHub](https://github.com/nio-blocks).
+At this point you should feel comfortable installing n.io, creating a project with blocks, and configuring and running services. You can find block [documentation on GitHub](https://github.com/nio-blocks).
+
