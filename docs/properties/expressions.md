@@ -8,7 +8,7 @@ An expression is an element of code that needs be evaluated to return a result. 
 {{ <code goes here> }}
 ```
 
-The curly braces indicate that anything inside is Python code. The Python code will be evaluated and, if valid, the value will replace the curly braces and their contents.
+The content between the curly braces is evaluated as Python code. Once the code is evaluated, the value will be replace the curly braces and its contents.
 
 For example:
 
@@ -23,9 +23,9 @@ Inner dictionaries need spaces before and after the curly braces.
 '{{ {"a": 1} }}' -> {"a": 1}
 ```
 
-## `$` Signal Property Syntax
+## Signal Property Syntax `$`
 
-You can also use the special `$` syntax for accessing signal properties:
+Use the `$` syntax to access signal properties:
 
 ```
 # given a signal s where s.v1 == 6
@@ -33,7 +33,7 @@ You can also use the special `$` syntax for accessing signal properties:
 -> "6 dogs went to the park"
 ```
 
-You can combine the two approaches, For example:
+You can also combine the two approaches. For example:
 
 ```
 "My favorite Integer is {{$v1 if isinstance($v1, int) else 'not an Integer…'}}"
@@ -47,12 +47,11 @@ You can combine the two approaches, For example:
 
 ## Raw Signal
 
-You can access the raw signal itself (rather than just its attributes) with a lone `$`. As long as the character following the `$` is not a valid Python identifier, the `$` will evaluate to the incoming signal.
-
+You can access the raw signal itself, rather than just the attributes, with a lone `$`. As long as the character following the `$` is not a valid Python identifier, the `$` will evaluate to the incoming signal.
 
 ## Escape Characters
 
-To include a $ character in a string literal inside a code snippet, use an escape with a `\`. Similarly, escaping the `}}` or `{{` with a `\` causes the braces to be treated as strings rather than as delimiters. For example:
+To include a`$` character in a string literal inside a code snippet, use an escape with a `\`. Similarly, escaping the `}}` or `{{` with a `\` causes the braces to be treated as strings rather than as delimiters. For example:
 
 ```
 "Code snippets are delimited by \{{ and \}}"
