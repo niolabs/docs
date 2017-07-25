@@ -107,7 +107,9 @@ Once your instance is loaded and available, you can add services and blocks to i
 
 ## Adding Blocks to a Project
 
-Before we move on, you're going to want to add some blocks to your project. 
+Before we move on, you're going to want to add some blocks to your project.
+
+To add blocks using the CLI:
 
 1. Enter Ctrl-C to ext n.io. 
 2. To add four popular blocks, type the following command. 
@@ -116,13 +118,13 @@ Before we move on, you're going to want to add some blocks to your project.
 nio add logger simulator filter dynamic_fields
 ```
 
-If you prefer to install the blocks without the CLI, clone the relevant block repositories into the `blocks/` folder of your project. In other words, from your project root you can run:
+To add blocks:
+
+1. Clone the relevant block repositories into the `blocks/` folder of your project by entering the following command from the project root:
 
 ```
 git submodule add https://github.com/nio-blocks/logger.git blocks/logger
 ```
 
-//////
 
-[http://python.org/downloads](http://python.org/downloads)
 
