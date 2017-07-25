@@ -6,7 +6,7 @@ The System Designer is a graphical user interface used to build your system.
 
 ## System
 
-A list of systems is displayed in a column on the left side of the screen. The designer automatically creates an abbreviation for each system name. 
+A list of systems is displayed in a column on the left side of the screen. The designer automatically creates an abbreviation for each system name.
 
 &lt;INSERT IMAGE&gt;
 
@@ -16,7 +16,7 @@ To create a new system, click the "+" icon.
 
 ## Instance
 
-A list of instances is displayed in a column on the left side of the screen. The designer automatically creates an abbreviation for each instance name. 
+A list of instances is displayed in a column on the left side of the screen. The designer automatically creates an abbreviation for each instance name.
 
 &lt;INSERT IMAGE&gt;
 
@@ -26,19 +26,19 @@ To create a new instance, click the "create a cloud instance" or "add a new inst
 
 ## Service
 
-A list of services is displayed below the instance name. 
+A list of services is displayed below the instance name.
 
 &lt;INSERT IMAGE&gt;
 
-To create a new service, click the "add a new service" button. 
+To create a new service, click the "add a new service" button.
 
-Service
+Service toobar
 
 Edit
 
 Save
 
-Toggle Start/Stop 
+Toggle Start/Stop
 
 Toggle Auto-start off/On
 
@@ -48,19 +48,14 @@ Clone
 
 Delete
 
-  
-service workflow
+# service workflow
 
 The service workflow represents the interactions between the services.
 
-  
-
-
-block workflow
+# block workflow
 
 The block workflow represents how the blocks consume, transform, and produce signals.
 
-  
 Block Selected
 
 Edit
@@ -73,23 +68,11 @@ Revert
 
 Delete
 
-  
-
-
-
-
 breadcrumb
 
-Note the breadcrumb which reveals the level \(system, instance, service, or block\) 
-
-
+Note the breadcrumb which reveals the level \(system, instance, service, or block\)
 
 contextual toolbar
 
 The contextual toolbar displays the icons based on the functions available on that screen.
-
-  
-
-
-
 
