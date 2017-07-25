@@ -10,7 +10,7 @@ In order to dynamically define the value of a property when a signal enters a bl
 {{ <code goes here> }}
 ```
 
-The curly braces indicate that anything inside is Python code. The Python code will be evaluated and, if valid, its value will replace the curly braces and their contents.
+The curly braces indicate that anything inside is Python code. The Python code will be evaluated and, if valid, the value will replace the curly braces and their contents.
 
 For example:
 
@@ -20,7 +20,7 @@ For example:
 "{{1 + 5}} dogs went to the {{'p'+'ark'}}"
 -> "6 dogs went to the park"
 ```
-Inner dictionaries need spaces before and after.
+Inner dictionaries need spaces before and after the curly braces.
 ```
 '{{ {"a": 1} }}' -> {"a": 1}
 ```
@@ -35,7 +35,7 @@ You can also use the special `$` syntax for accessing signal properties:
 -> "6 dogs went to the park"
 ```
 
-You can combine the two approaches, as in:
+You can combine the two approaches, For example:
 
 ```
 "My favorite Integer is {{$v1 if isinstance($v1, int) else 'not an Integer…'}}"
@@ -49,12 +49,12 @@ You can combine the two approaches, as in:
 
 ## Raw Signal
 
-You can access the raw signal itself (rather than just its attributes) with a lone `$`. As long as the following character is not a valid Python identifier, the `$` will evaluate to the incoming signal.
+You can access the raw signal itself (rather than just its attributes) with a lone `$`. As long as the character following the `$` is not a valid Python identifier, the `$` will evaluate to the incoming signal.
 
 
 ## Escape Characters
 
-If you'd like to include a $ character in a string literal inside a code snippet, just escape it with a `\`. Similarly, escaping the `}}` or `{{` with a `\` causes the braces to be treated as strings rather than as delimiters. For example:
+To include a $ character in a string literal inside a code snippet, use an escape with a `\`. Similarly, escaping the `}}` or `{{` with a `\` causes the braces to be treated as strings rather than as delimiters. For example:
 
 ```
 "Code snippets are delimited by \{{ and \}}"
@@ -83,7 +83,7 @@ The following libraries are imported by default and can be used in expressions:
   - random
   - re
 
-You can import other libraries from your Python install with the following one-line syntax:
+You can import other libraries from your Python installation with the following syntax:
 
 ```
 {{ __import__('module_name').method_name() }}
