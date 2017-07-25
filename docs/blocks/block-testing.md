@@ -38,7 +38,7 @@ Just like `unittest.TestCase`, we support the setUp/tearDown pattern. This is a 
 
 - **configure_block(block, block_properties)** - The process of configuring and initializing blocks manually is somewhat nuanced (and not something we want you to worry about). We provide this method to configure your block instance semi-automatically. Just pass the block object itself and a dictionary containing any block properties you want to configure (and associated values).
 - **assert_num_signals_notified(num, block=None)** - This method provides access to the total number of signals notified over the course of the current test. If `block` is not `None`, then you will receive the number of signals notified by that block over its lifetime.
-- **last_signal_notified(output_id)** - 
+- **last_signal_notified(output_id)** - This method returns the last signal that was notified from a particular output. If an output_id is not specified, it will return the last signal notified from any output on the block.
 
 ## Overridable Methods
 
