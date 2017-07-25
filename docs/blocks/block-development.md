@@ -4,19 +4,17 @@ The sky's the limit. To connect to a new framework, library, or custom piece of 
 
 You can adopt one of two philosophies when creating blocks:
 
-  1. Blocks can be simple, generic, and reusable. Examples of generic blocks can be found in the [nio-blocks GitHub organization](https://github.com/nio-blocks). Blocks developed with this approach have a single function and and you can chain blocks together to develop complex behaviors.
+  1. Blocks can be simple, generic, and reusable. Examples of generic blocks can be found in the [nio-blocks GitHub repository](https://github.com/nio-blocks). Blocks developed with this approach have a single function and and you can chain blocks together to develop complex behaviors.
 
   2. Blocks can be complex or built for a single use. You would not likely use this block for more than the service it was defined for.  For example, a block might contain a script to run a series of calculations for a model. Instead of a complicated chain of blocks, a single block may encompass the entire model. You could also design  a single block to parse a Tweet in a unique way that would not be reused.
 
 If the function you need does not exist in [nio-blocks](https://github.com/nio-blocks), you can easily create a custom block.
 
-To create a custom block, clone the [block-template repository](https://github.com/nio-blocks/block_template) from GitHub. The block template includes the basic {{ book.product }} block class as well as placeholders for the block's requirements, specifications, release notes, and tests.
-
-See the [`README.md`](https://github.com/nio-blocks/block_template)  for complete instructions. 
+To create a custom block, clone the [block-template repository](https://github.com/nio-blocks/block_template) from GitHub. The block template includes the basic {{ book.product }} block class as well as placeholders for the block's requirements, specifications, release notes, and tests. See [`README.md`](https://github.com/nio-blocks/block_template)  for complete instructions. 
 
 ## Developing Your Block
 
-After downloading the block template repository, you are ready to develop your block.
+After downloading the block template repository, you are ready to develop your own block.
 
 The {{ book.product }} base block and blocks with similar functionality that have been developed using the {{ book.product }} framework are good resources for block development.
 
@@ -29,11 +27,11 @@ Before developing your own block, rename the block from  BLOCK_README.md to READ
 
 All {{ book.product }} blocks inherit from the base block class. The first import in `example_block.py` from the block template is `nio.block.base`. If you explore the code inside `nio.block.base`, you find explanatory docstrings for each method, including methods to override in your custom block along with higher-level context.
 
-The base block class uses the {{ book.product }} framework described below. {{ book.product }} blocks work according the following principals:
+The base block class uses the {{ book.product }} framework described below. {{ book.product }} blocks work according to the following principles:
 * Signals are passed as lists. See [Understanding Signals](/service-design-patterns/understanding-signals.md).
 * Block properties are declared as class attributes. 
 For example, `speed = IntProperty(title='Speed', default=30)`
-* Block properties must be called with a function invocation to obtain the value. For example to get value the speed property defined above, call `self.setSpeed(self.speed())`
+* Block properties must be called with a function invocation to obtain the value. For example to get the value of the speed property defined above, call `self.setSpeed(self.speed())`
 * Commands are declared as decorator. 
 For example:
   ```python
@@ -89,7 +87,7 @@ An additional resource for developing your custom block is the [nio-blocks libra
 
 ### Block Context
 
-In the configure method, blocks are passed 'context' about themselves and their. Block developers should refer to the following information:
+In the configure method, blocks are passed 'context' about themselves and the environment in which they run. Block developers should refer to the following information:
 
 * **block_router** (BlockRouter): The router in which the block will be run. The router must be able to handle signals notified by its blocks.
 * **properties** (dict): The block properties (metadata) that will be deserialized and loaded.
@@ -120,7 +118,7 @@ For example, in a block that accesses an external API, you can use a base block 
 
 ## Mixins
 
-Mixins are not blocks. Instead, mixins provide commonly used functionality to existing blocks. You can add functions such as persistence, group-by, or retry to blocks. To view the available mixins, see the [mixin repository](https://github.com/nioinnovation/nio/tree/master/nio/block/mixins).
+Mixins are not blocks. Instead, mixins add commonly used functionality to existing blocks. You can add functions such as persistence, group-by, or retry to blocks. To view the available mixins, see the [mixin repository](https://github.com/nioinnovation/nio/tree/master/nio/block/mixins).
 
 Mixins follow the Python mixin model, thus any block mixins need to be extended prior to extending the base Block class. To use persistence and group-by mixins, see [Buffer block](https://github.com/nio-blocks/buffer).
 
