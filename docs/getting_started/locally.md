@@ -1,6 +1,6 @@
 # Running n.io Locally
 
-The cloud is an easy way to get n.io up and running, but doesn't fully encapsulate the distributed power of the n.io platform. To do that, we should n.io on a local or edge node. 
+The cloud is an easy way to get n.io up and running, but doesn't fully encapsulate the distributed power of the n.io platform. To do that, we should n.io on a local or edge node.
 
 Running the n.io platform requires either Python version `3.4.5` or `3.5.2`. Other versions of Python 3.4 may work, but Python 3.5.3 and later do not work. When running the n.io binary, the `Bad magic number` error is most likely caused by an incompatible version of Python.
 
@@ -9,10 +9,11 @@ Requirements
 * Python 3.4.5 or 3.5.2
 * A n.io binary Python wheel
 
-1. Download Python from https://www.python.org/downloads/.
-2. Obtain the Python `.whl` file from n.io with your license agreement. 
+* Download Python from [https://www.python.org/downloads/](https://www.python.org/downloads/).
 
-See support if you require a new wheel file. 
+* Obtain the Python `.whl` file from n.io with your license agreement.
+
+See support if you require a new wheel file.
 
 ## Installation
 
@@ -24,17 +25,13 @@ Type the following command:
 pip3 install your_wheel_file.whl
 ```
 
-
-
 To run n.io:
 
 Type the following command:
 
- `nio_run`
+`nio_run`
 
 If that command is not available, make sure your Python binary installation directory is on your PATH.
-
-
 
 To install CLI \(Command Line Interface\):
 
@@ -55,7 +52,7 @@ To clone the project template using CLI:
 
 To clone the project template using git:
 
-Clone the template and then initialize the submodules which contain the blocks by entering the following commands: 
+Clone the template and then initialize the submodules which contain the blocks by entering the following commands:
 
 ```
 git clone https://github.com/nioinnovation/project_template.git first_project
@@ -68,7 +65,7 @@ To run n.io:
 1. Enter `cd first_project` to go to the project directory.
 2. Type `nio_run`.
 
-Log messages will be displayed, but there should be no errors. 
+Log messages will be displayed, but there should be no errors.
 
 ```
 [2016-03-04 23:49:41.035] NIO [INFO] [main.WebServer] Server configured on 0.0.0.0 : 8181
@@ -86,7 +83,24 @@ If you see those logs, it means n.io is up and running, congratulations!
 
 ## Add a local instance to the System Designer
 
-Once we have a local instance running, we'll want to edit it using the System Designer. Log in to the System Designer and select a system to add your locally running n.io instance to. Once the system is selected, click the "Add New Instance" button at the top.
+Once we have a local instance running, we'll want to edit it using the System Designer. Based on the log messages, your n.io instance is available at `http://localhost:8181` and you need to tell it to use basic authentication to communicate with the instance. 
+
+
+
+To create a local instance:
+
+1. Log in to the System Designer.
+2. Click the "+" icon on the lower left corner to create and name a new system.
+3. Click "Accept."
+4. Select the name of the system you created.
+5. Click "Add New Instance."
+6. Type the name of the instance, enter  `localhost` for host and `8181` for port, and leave the access mode as
+   `basic.`
+
+7. Click "Accept".
+8. Wait for the instance to spin-up and note the name of the new instance on the left side of the screen.
+
+
 
 Give your instance a name, then specify `localhost` for host and `8181` for port. Leave the access mode as `basic` for now. You are telling the designer that your n.io instance is available at `http://localhost:8181` which is what our log messages from n.io indicated to us. You are also telling it to use basic authentication to communicate with the instance.
 

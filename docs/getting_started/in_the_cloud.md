@@ -14,7 +14,7 @@ To create a cloud instance:
 
 ## Add a Service and Blocks
 
-You now have an instance, but it is empty, let's fix that! 
+You now have an instance, but it is empty, let's fix that!
 
 To add a service:
 
@@ -24,7 +24,7 @@ To add a service:
 
 You now have an empty canvas to build, but we do not have any blocks yet.
 
-Blocks are installed to instances via git URLs. Specifically, [nio-blocks GitHub](https://github.com/nio-blocks) is the repository of the blocks created by n.io.  Browse and search the blocks to determine the function you want to produce. For example, the `Filter` block is located at the git URL `https://github.com/nio-blocks/filter.git` . 
+Blocks are installed to instances via git URLs. Specifically, [nio-blocks GitHub](https://github.com/nio-blocks) is the repository of the blocks created by n.io.  Browse and search the blocks to determine the function you want to produce. For example, the `Filter` block is located at the git URL `https://github.com/nio-blocks/filter.git` .
 
 To add a block:
 
