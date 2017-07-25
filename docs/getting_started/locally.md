@@ -1,27 +1,44 @@
 # Running n.io Locally
 
-The cloud is an easy way to get n.io up and running but doesn't fully encapsulate the distributed power of the n.io platform. To do that, we should run n.io on a local or edge node.
+The cloud is an easy way to get n.io up and running, but doesn't fully encapsulate the distributed power of the n.io platform. To do that, we should n.io on a local or edge node. 
 
-## Requirements
+Running the n.io platform requires either Python version `3.4.5` or `3.5.2`. Other versions of Python 3.4 may work, but Python 3.5.3 and later do not work. When running the n.io binary, the `Bad magic number` error is most likely caused by an incompatible version of Python.
+
+Requirements
 
 * Python 3.4.5 or 3.5.2
 * A n.io binary Python wheel
 
-Running the n.io platform requires either Python version `3.4.5` or `3.5.2`. Other versions of Python 3.4 may work, but Python 3.5.3 and later do not work. If you see `Bad magic number` errors when running a n.io binary, it is likely caused by an incompatible version of Python.
+1. Download Python from https://www.python.org/downloads/.
+2. Obtain the Python `.whl` file from n.io with your license agreement. 
 
-You will need a Python `.whl` file to install the n.io binary. This should have been provided to you as part of your license agreement. Reach out to n.io support if you need a new wheel file.
+See support if you require a new wheel file. 
 
 ## Installation
 
-Simply install the n.io wheel file using `pip`, probably like so:
+To install n.io:
+
+Type the following command:
 
 ```
 pip3 install your_wheel_file.whl
 ```
 
-After installation, you should be able to run `nio_run`. If that command is not available, make sure your Python binary installation directory is on your PATH.
 
-Some tasks are made easier by using the n.io CLI. This can be installed from pip as well:
+
+To run n.io:
+
+Type the following command:
+
+ `nio_run`
+
+If that command is not available, make sure your Python binary installation directory is on your PATH.
+
+
+
+To install CLI \(Command Line Interface\):
+
+Type the following command:
 
 ```
 pip3 install nio-cli
@@ -31,9 +48,14 @@ pip3 install nio-cli
 
 Now that we have the n.io binary to run, we need a n.io project to run it against. You can obtain a n.io project template by cloning down the [Project Template repository](https://github.com/nioinnovation/project_template) or by using the n.io CLI.
 
-To use the CLI, run `nio new first_project`. This will create a directory called `first_project` in your working directory containing a n.io project.
+To clone the project template using CLI:
 
-To use git to set up the project, you will need to clone the template and then initialize the submodules which contain the blocks:
+1. Run `nio new first_project`. 
+2. The `first_project` directory is created in your working directory containing the n.io project.
+
+To clone the project template using git:
+
+Clone the template and then initialize the submodules which contain the blocks by entering the following commands: 
 
 ```
 git clone https://github.com/nioinnovation/project_template.git first_project
@@ -41,7 +63,12 @@ cd first_project
 git submodule update --init --recursive
 ```
 
-Once the project directory is set up, we can run n.io from inside of it. Go to the project directory \(`cd first_project`\) and then run `nio_run`. You should see some log messages displayed but no errors. Logs should look something like this:
+To run n.io:
+
+1. Enter `cd first_project` to go to the project directory.
+2. Type `nio_run`.
+
+Log messages will be displayed, but there should be no errors. 
 
 ```
 [2016-03-04 23:49:41.035] NIO [INFO] [main.WebServer] Server configured on 0.0.0.0 : 8181
@@ -83,13 +110,7 @@ If you prefer to install the blocks without the CLI, clone the relevant block re
 git submodule add https://github.com/nio-blocks/logger.git blocks/logger
 ```
 
-
-
-
-
 //////
 
-http://python.org/downloads
-
-
+[http://python.org/downloads](http://python.org/downloads)
 
