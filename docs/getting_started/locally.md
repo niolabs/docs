@@ -1,6 +1,6 @@
 # Running n.io Locally
 
-The cloud is an easy way to get n.io up and running, but doesn't fully encapsulate the distributed power of the n.io platform. To do that, we should n.io on a local or edge node.
+The cloud is an easy way to get n.io up and running, but doesn't fully encapsulate the distributed power of the n.io platform. To do that, we should run n.io on a local or edge node.
 
 Running the n.io platform requires either Python version `3.4.5` or `3.5.2`. Other versions of Python 3.4 may work, but Python 3.5.3 and later do not work. When running the n.io binary, the `Bad magic number` error is most likely caused by an incompatible version of Python.
 
@@ -94,9 +94,7 @@ To create a local instance:
 5. Click "Add New Instance."
 6. Type the name of the instance, enter  `localhost` for host and `8181` for port, and leave the access mode as  
    `basic.`
-
 7. Click "Accept".
-
 8. Wait for the instance to spin-up and note the name of the new instance on the left side of the screen.
 
 Note: When you connect to a n.io instance to edit it, you are communicating with that instance directly from your browser via an XHR request. Hostnames like `localhost` and other internal IP addresses will work. These instances won't be available to be designed through the System Designer unless you are able to access them from your machine.
@@ -111,7 +109,7 @@ Before we move on, you're going to want to add some blocks to your project.
 
 To add blocks using the CLI:
 
-1. Enter Ctrl-C to ext n.io. 
+1. Press Ctrl-C to exit n.io. 
 2. To add four popular blocks, type the following command. 
 
 ```
