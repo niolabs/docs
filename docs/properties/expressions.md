@@ -1,10 +1,8 @@
 # {{ book.product }} Expressions
 
-An expression is an element of code that can be evaluated and returns a result.
+An expression is an element of code that needs be evaluated to return a result. You can use {{ book.product }} expressions to dynamically define the value of a property when the signal enters a block. 
 
-In order to dynamically define the value of a property when a signal enters a block, we can use {{ book.product }} expressions.
-
-{{ book.product }} expressions are modeled on string interpolation in other dynamic languages. Snippets of code inside of double curly braces are evaluated. For example:
+{{ book.product }} expressions are modeled on string interpolation in other dynamic languages. The snippets of code between the double curly braces are evaluated. For example:
 
 ```
 {{ <code goes here> }}
