@@ -1,18 +1,14 @@
 # System Designer Overview
 
-The System Designer is the graphical user interface used to build your n.io system. Note that your screen may look slightly different as changes are made to the interface.
+The System Designer is the graphical user interface used to build your n.io system. Note that your screen may look slightly different than the images in the documentation.
 
 ## System
 
 A list of systems is displayed in a column on the left side of the screen. The designer automatically creates an abbreviation for each system name.
 
-
-
 ![](/docs/img/vg-system.png)
 
-
-
-To view the system details, click the system name.
+To view the system, click the system name.
 
 To create a new system, click the "+" icon on the lower left side of the screen.
 
@@ -20,15 +16,7 @@ To create a new system, click the "+" icon on the lower left side of the screen.
 
 A list of instances is displayed in a column next to the list of systems.
 
-
-
 ![](/docs/img/vg-instance.png)
-
-
-
-
-
-To view the service workflow within the instance, click the arrow next to the name of the instance. The list of services displays  below the instance name.
 
 To create a new instance, click the "create a cloud instance" or "add a new instance" button.
 
@@ -36,77 +24,45 @@ To create a new instance, click the "create a cloud instance" or "add a new inst
 
 The service workflow represents the interactions between the services.
 
-
-
 ![](/docs/img/vg-service-workflow.png)
 
-
+To view the service workflow within the instance, click the arrow next to the name of the instance. The list of services displays  below the instance name.
 
 ## Service
 
 A list of services is displayed below the instance name. Toggle the arrow to hide and display the list.
 
-
-
 ![](/docs/img/vg-service.png)
 
-
-
-
-
-To create a new service, click the "add a new service" button.
-
-## Block Workflow
-
-The block workflow represents the the inputs, outputs, and logic for the workflow.
-
-
-
-![](/docs/img/vg-block-workflow.png)
-
-
-
-To view the block workflow, click the service name.
-
-To add a block to the service, click the levels in the block library and then drag the block onto the canvas.
-
-To create a new block, click the "icon" on the lower right side of the screen and enter the configuration properties.
-
-To xxx, drag the instance of the block onto the canvas.
-
-To edit an existing block, double-click the block to view the configuration properties.
-
-
+To create a new service, click the "add new service" button.
 
 ## Block Library
-
-
 
 ![](/docs/img/vg-block-library.png)
 
 
 
+## Block Workflow
 
+The block workflow represents the the inputs, outputs, and logic for the workflow.
+
+![](/docs/img/vg-block-workflow.png)
+
+To view the block workflow, click the service name.
+
+To add a block to the service, drag and drop a block from the block library to the canvas.
+
+To create a new block, drag and drop the "create" block from the block library to the canvas. 
 
 ## Breadcrumb
 
 As you travel up and down the levels of your system, note that the breadcrumb changes allowing you to easily identify your location in the system.
 
-
-
 ![](/docs/img/vg-breadcrumb.png)
-
-
 
 ## Contextual Toolbar
 
 The contextual toolbar changes based on your location in the project to represent the available functions. Hover over the icon to reveal the name of the icon. Some icons have dual functions where you click to toggle an action, such as starting and stopping a service.
 
 ![](/docs/img/vg-contextual-toolbar.png)
-
-
-
-
-
-
 
