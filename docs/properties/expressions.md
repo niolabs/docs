@@ -100,13 +100,6 @@ Bracket notation:
 -> "Baron Samedi and the Jets"
 ```
 
-Missing signal attribute: # this doesn't seem to work?
-```
-# given a signal s where s.v1 raises AttributeError, s.v2 == 'Cogito' and a default value of None
-"{{$v1 or $v2}} ergo sum"
--> "Cogito ergo sum"
-```
-
 Methods on signals can be called:
 ```
 # given a signal s where s.get_val() == 'foobar'
@@ -118,6 +111,16 @@ Methods on signals can be called:
 "{{hasattr($, 'v1') and hasattr($, 'v2')}}"
 -> False
 ```
+
+Check signal attribute exists:
+```
+# given a signal s where s.v1 raises AttributeError, s.v2 == 'Cogito' and a default value of None
+"{{ ($v2 + ' ') if (hasattr($, 'v1') or hasattr($, 'v2')) else ''}}ergo sum"
+-> "Cogito ergo sum"
+"{{ ($v2 + ' ') if (hasattr($, 'v1') and hasattr($, 'v2')) else '' }}ergo sum"
+-> "ergo sum"
+```
+
 
 Default libraries can be used in expressions:
 ```

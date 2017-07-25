@@ -2,7 +2,7 @@
 
 Block properties are the configuration fields of a block.
 
-In the System Designer, when you click on a block, the configuration panel appears and displays the block's properties. Below is the configuration panel for a Dynamic Fields block containing the following properties: Fields, Log Level, and Version:
+In the System Designer, when you double click a block, the configuration panel appears and displays the block's properties. Below is the configuration panel for a Dynamic Fields block containing the following properties: Fields, Log Level, and Version:
 
 <img src="/img/DF-block-config.png" width="300" />
 
