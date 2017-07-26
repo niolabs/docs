@@ -4,8 +4,7 @@
 
 ## Access Tokens and Other Secrets
 
-Often a block will need some sort of access token or password in its configuration. Rather than store those in the block config directly, where they are visible in plain text, we recommend using an environment variable for that. To do so, add an entry to your environment variable such as  `nio.env`:
-
+Often a block will need some sort of access token or password in its configuration. Rather than store those in the block config directly, where they are visible in plain text, we recommend using an environment variable for that. Add an entry to your environment variable such as  `nio.env`
 ```
 MY_SECRET: p@$$w0rd
 ```
@@ -14,7 +13,7 @@ Then, in your block config you can use that secret token by using the environmen
 
 ## Different Environments
 
-A large-scale {{ book.product }} system will generally run in multiple environments. There are several examples of this:
+A large-scale {{ book.product }} system will generally run in multiple environments. Here are several examples:
 
 1. A multi-tenant setup where the same project runs in many different locations. For example, a smart retail store system where the project runs in every store.
 2. A staging environment used for validation and testing.
@@ -42,10 +41,9 @@ See the [Deployment](/deployment) section for more information.
 
 {{ book.product }} environment variables are slightly different than operating system environment variables. {{ book.product }} environment variables can also be set by operation system environment variables. This can be useful when running {{ book.product }} using Docker, systemd, or some other process manager where you can pass environment variables to the process.
 
-In general, environment variables can be sourced from two places:
+In general, environment variables can be sourced from two places.
 
 1. The operating system environment variables.  
-   Examples:
 
    ```bash
    $ export DB_HOST=localhost
@@ -56,7 +54,7 @@ In general, environment variables can be sourced from two places:
    $ docker run -e DB_HOST=localhost nio_binary_image
    ```
 
-2. The `.env` files in your project directory. Assuming you have a `prod.env` file in your project directory, you can source from that using the `-e` flag of `nio_run` :
+2. The `.env` files in your project directory. Assuming you have a `prod.env` file in your project directory, you can source from that using the `-e` flag of `nio_run`.
 
    ```bash
    $ nio_run -e prod.env
