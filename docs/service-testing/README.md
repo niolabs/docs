@@ -14,3 +14,4 @@ If you installed the [project template](https://github.com/nioinnovation/project
 ```
 py.test tests
 ```
+
