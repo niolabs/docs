@@ -26,4 +26,4 @@ Signals are implemented as a collection of key-value pairs. Signals are always p
 
 ## Commands
 
-Commands allow a user to interact with a running instance of a block. You can use a command to inspect the internal state of a block. When you develop a block, you can make certain methods in your block class exposable as commands. This allows you to run functions inside the instance of your block from the System Designer. Read more about block commands in [API](/api).
+Commands allow a user to interact with a running instance of a block. You can use a command to inspect the internal state of a block. When you develop a block, you can make certain methods in your block class exposable as commands. This allows you to run functions inside the instance of your block from the System Designer.
