@@ -1,6 +1,6 @@
 # System Designer Overview
 
-The System Designer is the graphical user interface used to build your n.io system. This overview provides you with a quick tour of the user interface including the navigation, work areas, and toolbars.
+The System Designer is the graphical user interface used to build your {{ book.product }} system. This overview provides you with a quick tour of the user interface including the navigation, work areas, and toolbars.
 
 Note that your screen may look slightly different than the images in this document.
 

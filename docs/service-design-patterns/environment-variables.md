@@ -1,6 +1,6 @@
 # Environment Variables
 
-n.io allows you to define and use variables when configuring your instance, services, or blocks. These variables are called "environment variables" and are specified using the square bracket syntax: `[[ ENV_VAR_NAME ]]`. There are several different use cases for environment variables which are detailed below.
+{{ book.product }} allows you to define and use variables when configuring your instance, services, or blocks. These variables are called "environment variables" and are specified using the square bracket syntax: `[[ ENV_VAR_NAME ]]`. There are several different use cases for environment variables which are detailed below.
 
 ## Access Tokens and Other Secrets
 
@@ -14,7 +14,7 @@ Then, in your block config you can use that secret token by using the environmen
 
 ## Different Environments
 
-A large-scale n.io system will generally run in multiple envirnoments. There are several examples of this:
+A large-scale {{ book.product }} system will generally run in multiple environments. There are several examples of this:
 
 1. A multi-tenant setup where the same project runs in many different locations. For example, a smart retail store system where the project runs in every store.
 2. A staging environment used for validation and testing.
@@ -34,13 +34,13 @@ DB_HOST: localhost
 DB_PASS: password
 ```
 
-In your blocks and services, you can use `[[ DB_HOST ]]` as the database host and be assured that when you are running n.io locally you aren't talking to the production database.
+In your blocks and services, you can use `[[ DB_HOST ]]` as the database host and be assured that when you are running {{ book.product }} locally you aren't talking to the production database.
 
 See the [Deployment](/deployment) section for more information.
 
 ## Setting Environment Variables
 
-n.io environment variables are slightly different than operating system environment variables. n.io environment variables can also be set by operation system environment variables. This can be useful when running n.io using Docker, systemd, or some other process manager where you can pass environment variables to the process.
+{{ book.product }} environment variables are slightly different than operating system environment variables. {{ book.product }} environment variables can also be set by operation system environment variables. This can be useful when running {{ book.product }} using Docker, systemd, or some other process manager where you can pass environment variables to the process.
 
 In general, environment variables can be sourced from two places:
 
@@ -63,4 +63,3 @@ In general, environment variables can be sourced from two places:
    ```
 
 In the event that an environment variable is set both at the system level and the local  `.env` file level, the system environment variable will take precedence.
-

@@ -1,6 +1,6 @@
 # Blocks Types API #
 
-n.io blocks are the functional pieces of code that generate signals and/or do work with them. Earlier we saw examples of blocks such as CounterIntervalSimulator and Logger. Information and interaction with the blocks of a running n.io instance is available through the blocks types API.
+{{ book.product }} blocks are the functional pieces of code that generate signals and/or do work with them. Earlier we saw examples of blocks such as CounterIntervalSimulator and Logger. Information and interaction with the blocks of a running {{ book.product }} instance is available through the blocks types API.
 
 ## Get API ##
 
@@ -122,7 +122,7 @@ The result of the previous request is:
 </dl>
 <dl>
   <dt>version</dt>
-  <dd>The version of the block type that is being used by the running n.io instance.</dd>
+  <dd>The version of the block type that is being used by the running {{ book.product }} instance.</dd>
 </dl>
 <dl>
   <dt>namespace</dt>
@@ -148,12 +148,12 @@ In addition to getting the details of one block type, specified by name, you can
 
 ## Add API ##
 
-When n.io starts up, it discovers and adds all the block types in the project. If you want to add a new block to an already runnning n.io instance, you can do that with the Add API. Once the block code is added to the project directory, use the following request to load it into the running n.io instance:
+When {{ book.product }} starts up, it discovers and adds all the block types in the project. If you want to add a new block to an already runnning {{ book.product }} instance, you can do that with the Add API. Once the block code is added to the project directory, use the following request to load it into the running {{ book.product }} instance:
 
     curl -XPUT 'http://localhost:8181/blocks_types/Logger' --user 'Admin:Admin'
 
 ## Update API ##
 
-When n.io starts up, it discovers and adds all the block types in the project. When block code is changed in a project (likely as a result of upgrading to a newer version of the block) to an already runnning n.io instance, the running n.io instance needs to be told to use that new updated code. You can do that with the Update API. Once the new block code is updated in the project directory, use the following request to load it into the running n.io instance:
+When {{ book.product }} starts up, it discovers and adds all the block types in the project. When block code is changed in a project (likely as a result of upgrading to a newer version of the block) to an already runnning {{ book.product }} instance, the running {{ book.product }} instance needs to be told to use that new updated code. You can do that with the Update API. Once the new block code is updated in the project directory, use the following request to load it into the running {{ book.product }} instance:
 
     curl -XPUT 'http://localhost:8181/blocks_types/Logger' --user 'Admin:Admin'

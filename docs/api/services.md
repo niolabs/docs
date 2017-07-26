@@ -1,10 +1,10 @@
 # Services API #
 
-Services are the things that run in n.io and where you connect your configured blocks together to make interesting things happen. Earlier we created a service called ``SimulateAndLog`` where we connected a CounterIntervalSimulator to a Logger block. Information and interaction with the services of a running n.io instance is available through the services API.
+Services are the things that run in {{ book.product }} and where you connect your configured blocks together to make interesting things happen. Earlier we created a service called ``SimulateAndLog`` where we connected a CounterIntervalSimulator to a Logger block. Information and interaction with the services of a running {{ book.product }} instance is available through the services API.
 
 ## Get API ##
 
-The get API returns a json body with information about a serivce based on its name. The following example gets the information for the service ``SimulateAndLog``:
+The get API returns a JSON body with information about a service based on its name. The following example gets the information for the service ``SimulateAndLog``:
 
     curl -XGET 'http://localhost:8181/services/SimulateAndLog' --user 'Admin:Admin'
 
@@ -60,7 +60,7 @@ The result of the previous request is:
 </dl>
 <dl>
   <dt>auto_start</dt>
-  <dd>Boolean that indicates if the services will start when n.io starts up.</dd>
+  <dd>Boolean that indicates if the services will start when {{ book.product }} starts up.</dd>
 </dl>
 <dl>
   <dt>status</dt>
@@ -86,7 +86,7 @@ In addition to getting the details of one service configuration, specified by na
 
 ## Create API ##
 
-If you're working with a n.io project from scrach, you're going to be creating and configuring services. Create a new service with the create API by POSTing JSON data. When creating a new service, you can optionally include the configured values of the service type properties. At a minimum, you must specify the service ``type``, the ``name`` of the new configuration and values for any required properties that do not have a default value. For example, to create the ``ServiceAndLog`` service of the basic type ``Service``:
+If you're working with a {{ book.product }} project from scratch, you're going to be creating and configuring services. Create a new service with the create API by POSTing JSON data. When creating a new service, you can optionally include the configured values of the service type properties. At a minimum, you must specify the service ``type``, the ``name`` of the new configuration and values for any required properties that do not have a default value. For example, to create the ``ServiceAndLog`` service of the basic type ``Service``:
 
     curl -XPOST 'http://localhost:8181/services' --user 'Admin:Admin' --data '{"type": "Service", "name": "SimulateAndLog"}' -H 'Content-Type: applcation/json'
 

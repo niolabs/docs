@@ -1,10 +1,10 @@
 # Core APIs #
 
-n.io has a few crucial api endpoints: ``/n.io`` and ``/shutdown``.
+{{ book.product }} has a few crucial api endpoints: ``/n.io`` and ``/shutdown``.
 
 ## n.io API ##
 
-The ``/n.io`` endpoint is where you will find information about your running n.io instances:
+The ``/n.io`` endpoint is where you will find information about your running {{ book.product }} instances:
 
     curl -XGET 'localhost:8181/n.io'
 
@@ -35,18 +35,18 @@ The following json body is returned:
     <p>}</p>
   </dd>
 </dl>
-- ``start_time`` - Datetime string at which n.io was started.
+- ``start_time`` - Datetime string at which {{ book.product }} was started.
 - ``n.io``
-  
+
   - ``binary`` - Name of executable binary that was run against the project.
   - ``build`` - Build version of binary.
-  - ``version`` - Version of n.io framework, not to be confused with ``build`` which is the version of the ``binary``.
-    
+  - ``version`` - Version of {{ book.product }} framework, not to be confused with ``build`` which is the version of the ``binary``.
+
 
 
 ## Shutdown API ##
 
-The ``/shutdown`` endpoint is used to shutdown a running n.io instance.
+The ``/shutdown`` endpoint is used to shutdown a running {{ book.product }} instance.
 
     curl -XGET 'localhost:8181/n.io'
 

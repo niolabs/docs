@@ -1,6 +1,6 @@
 # Understanding Signals
 
-Signals are the pieces of information that are passed from block to block throughout your system. They are the fundamental message type that n.io understands. Structurally, signals are key-value objects. Here is an example of a signal:
+Signals are the pieces of information that are passed from block to block throughout your system. They are the fundamental message type that {{ book.product }} understands. Structurally, signals are key-value objects. Here is an example of a signal:
 
 ```
 {
@@ -153,5 +153,4 @@ Notice we've just added an attribute to our block config indentifying the value 
 ]
 ```
 
-Understanding how Group By works and when to use it can save a lot of headaches and repetition in n.io services. It can also allow you to build very powerful services without many blocks. In general, if you are frequently repeating the same blocks when designing in n.io, there is probably a more efficient way of performing the task.
-
+Understanding how Group By works and when to use it can save a lot of headaches and repetition in {{ book.product }} services. It can also allow you to build very powerful services without many blocks. In general, if you are frequently repeating the same blocks when designing in {{ book.product }}, there is probably a more efficient way of performing the task.

@@ -1,6 +1,6 @@
 {
   "root": "./docs",
-  "title": "n.io",
+  "title": "nio documentation",
   "variables": {
     "company": "niolabs",
     "product": "nio"

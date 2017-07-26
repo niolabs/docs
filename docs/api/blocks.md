@@ -1,6 +1,6 @@
 # Blocks API #
 
-Configured instances of a n.io block type are simply referred to as blocks. Earlier we saw an example of a Logger block instance created with the name ``Log``. Information and interaction with the block configurations of a running n.io instance is available through the blocks API.
+Configured instances of a {{ book.product }} block type are simply referred to as blocks. Earlier we saw an example of a Logger block instance created with the name ``Log``. Information and interaction with the block configurations of a running {{ book.product }} instance is available through the blocks API.
 
 ## Get API ##
 
@@ -52,7 +52,7 @@ In addition to getting the details of one block configuration, specified by name
 
 ## Create API ##
 
-If you're working with a n.io project from scrach, you're going to be creating and configuring blocks. Create a new configuration of a block with the create API by POSTing JSON data. When creating a new block configuration, you can optionally include the configured values of the block type properties. At a minimum, you must specify the block ``type``, the ``name`` of the new configuration and values for any required properties that do not have a default value. For example, to create the ``Log`` block of type ``Logger``:
+If you're working with a {{ book.product }} project from scratch, you're going to be creating and configuring blocks. Create a new configuration of a block with the create API by POSTing JSON data. When creating a new block configuration, you can optionally include the configured values of the block type properties. At a minimum, you must specify the block ``type``, the ``name`` of the new configuration and values for any required properties that do not have a default value. For example, to create the ``Log`` block of type ``Logger``:
 
     curl -XPOST 'http://localhost:8181/blocks' --user 'Admin:Admin' --data '{"type": "LoggerBlock", "name": "Log"}' -H 'Content-Type: applcation/json'
 
