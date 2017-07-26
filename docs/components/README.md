@@ -1,10 +1,15 @@
 # Core Components
 
-Part of the n.io binary consists of core components. These are pieces of functionality that run along side the n.io core process. Unlike modules which run in every n.io service, a core component will only be run once and will run in the core/main process.
+Part of the {{ book.product }} binary consists of core components. These are pieces of functionality that run alongside the {{ book.product }} core process. Unlike modules which run in every {{ book.product }} service, a core component will only be run once and will run in the core/main process.
+
+Examples of core components include:  
+  * A project manager component that exposes an API to interact with your project contents
+  * An SNMP agent component that exposes runtime information in SNMP form for easy ingestion from monitoring tools
+  * A logging component that exposes an API to retrieve an instance's log messages
 
 ## Disabling Core Components
 
-Your binary will include some core components. You cannot add core components to your binary but you can disable existing ones if you do not want or need them. To do so, in your `nio.conf` file add (or uncomment) the disable line under the `component` section. For example, to disable the [`SNMPAgent`](/components/snmp.md) component, your `nio.conf` should look like the following:
+You cannot add core components to your binary, but you can disable existing ones if you do not want or need them. To disable a core component, in the `nio.conf` file under the `component` section, add or uncomment the disable line. For example, to disable the [`SNMPAgent`](/components/snmp.md) component, your `nio.conf` would look like the following example:
 ```
 [components]
 disable=SNMPAgent
