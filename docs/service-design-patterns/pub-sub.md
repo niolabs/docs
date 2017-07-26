@@ -1,10 +1,10 @@
-# Publishing and Subscribing to Data in n.io
+# Publishing and Subscribing to Data in {{ book.product }}
 
-Designing systems with n.io means designing how information, or signals,  moves through the system. The recommended way to get data from one service to another is to use the Pub/Sub mechanisms that are built in to n.io. This can be done using the `Publisher` and `Subscriber` blocks located in the [communication block repository](https://github.com/nio-blocks/communication).
+Designing systems with {{ book.product }} means designing how information, or signals,  moves through the system. The recommended way to get data from one service to another is to use the Pub/Sub mechanisms that are built in to {{ book.product }}. This can be done using the `Publisher` and `Subscriber` blocks located in the [communication block repository](https://github.com/nio-blocks/communication).
 
 ## Topic Tree
 
-When using the `Publisher` and `Subscriber` blocks, you will need to decide which topic you wish to publish to or subscribe to. The information organization of an entire n.io system can be viewed as a hierarchical topic tree.
+When using the `Publisher` and `Subscriber` blocks, you will need to decide which topic you wish to publish to or subscribe to. The information organization of an entire {{ book.product }} system can be viewed as a hierarchical topic tree.
 
 ### Publishers
 
@@ -60,9 +60,8 @@ Subscribers can subscribe to a single topic or also portions of the topic tree t
 
 ## Pubkeeper
 
-Perhaps the most impactful reason to use the n.io pub/sub system is because of the interoperability enabled through the use of [Pubkeeper](https://pubkeeper.com). Pubkeeper allows us to separate our information hierarchy, or topic tree, from the underlying protocols that will be responsible for transmitting data between services and instances. In other words, it allows service designers to define what data goes to which services without worrying about how it will get there.
+Perhaps the most impactful reason to use the {{ book.product }} pub/sub system is because of the interoperability enabled through the use of [Pubkeeper](https://pubkeeper.com). Pubkeeper allows us to separate our information hierarchy, or topic tree, from the underlying protocols that will be responsible for transmitting data between services and instances. In other words, it allows service designers to define what data goes to which services without worrying about how it will get there.
 
 ## Hints in the System Designer
 
-One of the benefits to using the n.io pub/sub mechanism is that the System Designer understands the topic tree as well. If your service has a `Publisher` or `Subscriber` block with a topic, the designer can show you services that either subscribe to or publish to that topic, respectively. It also permits the System Designer to draw the graph relationship between services and instances.
-
+One of the benefits to using the {{ book.product }} pub/sub mechanism is that the System Designer understands the topic tree as well. If your service has a `Publisher` or `Subscriber` block with a topic, the designer can show you services that either subscribe to or publish to that topic, respectively. It also permits the System Designer to draw the graph relationship between services and instances.

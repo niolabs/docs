@@ -1,23 +1,23 @@
-# Running n.io Locally
+# Running {{ book.product}} Locally
 
-The cloud is an easy way to get n.io up and running, but doesn't fully encapsulate the distributed power of the n.io platform. To do that, we should run n.io on a local or edge node.
+The cloud is an easy way to get {{ book.product}} up and running, but doesn't fully encapsulate the distributed power of the {{ book.product}} platform. To do that, we should run {{ book.product}} on a local or edge node.
 
-Running the n.io platform requires either Python version `3.4.5` or `3.5.2`. Other versions of Python 3.4 may work, but Python 3.5.3 and later do not work. When running the n.io binary, the `Bad magic number` error is most likely caused by an incompatible version of Python.
+Running the {{ book.product}} platform requires either Python version `3.4.5` or `3.5.2`. Other versions of Python 3.4 may work, but Python 3.5.3 and later do not work. When running the {{ book.product}} binary, the `Bad magic number` error is most likely caused by an incompatible version of Python.
 
 Requirements
 
 * Python 3.4.5 or 3.5.2
-* A n.io binary Python wheel
+* A {{ book.product}} binary Python wheel
 
 * Download Python from [https://www.python.org/downloads/](https://www.python.org/downloads/).
 
-* Obtain the Python `.whl` file from n.io with your license agreement.
+* Obtain the Python `.whl` file from {{ book.product}} with your license agreement.
 
 See support if you require a new wheel file.
 
 ## Installation
 
-To install n.io:
+To install {{ book.product}}:
 
 Type the following command:
 
@@ -25,7 +25,7 @@ Type the following command:
 pip3 install your_wheel_file.whl
 ```
 
-To run n.io:
+To run {{ book.product}}:
 
 Type the following command:
 
@@ -43,12 +43,12 @@ pip3 install nio-cli
 
 ## First Project
 
-Now that we have the n.io binary to run, we need a n.io project to run it against. You can obtain a n.io project template by cloning down the [Project Template repository](https://github.com/nioinnovation/project_template) or by using the n.io CLI.
+Now that we have the {{ book.product}} binary to run, we need a {{ book.product}} project to run it against. You can obtain a {{ book.product}} project template by cloning down the [Project Template repository](https://github.com/nioinnovation/project_template) or by using the {{ book.product}} CLI.
 
 To clone the project template using CLI:
 
-1. Run `nio new first_project`. 
-2. The `first_project` directory is created in your working directory containing the n.io project.
+1. Run `nio new first_project`.
+2. The `first_project` directory is created in your working directory containing the {{ book.product}} project.
 
 To clone the project template using git:
 
@@ -60,7 +60,7 @@ cd first_project
 git submodule update --init --recursive
 ```
 
-To run n.io:
+To run {{ book.product}}:
 
 1. Enter `cd first_project` to go to the project directory.
 2. Type `nio_run`.
@@ -79,11 +79,11 @@ Log messages will be displayed, but there should be no errors.
 [2016-03-04 23:49:41.227] NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from: starting to: started
 ```
 
-If you see those logs, it means n.io is up and running, congratulations!
+If you see those logs, it means {{ book.product}} is up and running, congratulations!
 
 ## Add a local instance to the System Designer
 
-Once we have a local instance running, we'll want to edit it using the System Designer. Based on the log messages, your n.io instance is available at `http://localhost:8181` and you need to tell it to use basic authentication to communicate with the instance.
+Once we have a local instance running, we'll want to edit it using the System Designer. Based on the log messages, your {{ book.product}} instance is available at `http://localhost:8181` and you need to tell it to use basic authentication to communicate with the instance.
 
 To create a local instance:
 
@@ -97,11 +97,11 @@ To create a local instance:
 7. Click "Accept".
 8. Wait for the instance to spin-up and note the name of the new instance on the left side of the screen.
 
-Note: When you connect to a n.io instance to edit it, you are communicating with that instance directly from your browser via an XHR request. Hostnames like `localhost` and other internal IP addresses will work. These instances won't be available to be designed through the System Designer unless you are able to access them from your machine.
+Note: When you connect to a {{ book.product}} instance to edit it, you are communicating with that instance directly from your browser via an XHR request. Hostnames like `localhost` and other internal IP addresses will work. These instances won't be available to be designed through the System Designer unless you are able to access them from your machine.
 
-You may see an issue regarding HTTPS and HTTP instances. Since you launched your instance and presumably didn't load any SSL certificates into it, the instance is accessible only by HTTP. However, if you are logged into the System Designer via HTTPS, then an XHR request going over HTTP is not permitted due to a browser restriction. Instead, log into the designer [via HTTP](http://designer.n.io). All of your instances and systems will be the same, only the n.io commands to edit these instances won't happen over HTTPS.
+You may see an issue regarding HTTPS and HTTP instances. Since you launched your instance and presumably didn't load any SSL certificates into it, the instance is accessible only by HTTP. However, if you are logged into the System Designer via HTTPS, then an XHR request going over HTTP is not permitted due to a browser restriction. Instead, log into the designer [via HTTP](http://designer.n.io). All of your instances and systems will be the same, only the {{ book.product}} commands to edit these instances won't happen over HTTPS.
 
-Once your instance is loaded and available, you can add services and blocks to it just like a cloud instance \(link to In The Cloud\). Any errors or activity that happens will be available through the logs in your terminal that is running n.io. This makes local instances a much more useful tool for designing n.io systems where debugging is needed.
+Once your instance is loaded and available, you can add services and blocks to it just like a cloud instance \(link to In The Cloud\). Any errors or activity that happens will be available through the logs in your terminal that is running {{ book.product}}. This makes local instances a much more useful tool for designing {{ book.product}} systems where debugging is needed.
 
 ## Adding Blocks to a Project
 
@@ -109,8 +109,8 @@ Before we move on, you're going to want to add some blocks to your project.
 
 To add blocks using the CLI:
 
-1. Press Ctrl-C to exit n.io. 
-2. To add four popular blocks, type the following command. 
+1. Press Ctrl-C to exit {{ book.product}}.
+2. To add four popular blocks, type the following command.
 
 ```
 nio add logger simulator filter dynamic_fields
@@ -123,6 +123,3 @@ To add blocks:
 ```
 git submodule add https://github.com/nio-blocks/logger.git blocks/logger
 ```
-
-
-

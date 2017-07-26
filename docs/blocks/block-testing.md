@@ -1,6 +1,6 @@
 # Block Testing
 
-{{ book.product }} blocks are not meant to be run as stand-alone Python modules, so testing can be a challenging process. n.io provides a couple of tools and offers best practices to make your testing easier.
+{{ book.product }} blocks are not meant to be run as stand-alone Python modules, so testing can be a challenging process. {{ block.product }} provides a couple of tools and offers best practices to make your testing easier.
 
 ## NIOBlockTestCase
 
