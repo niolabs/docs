@@ -1,27 +1,41 @@
 # Running n.io Locally
 
-The cloud is an easy way to get n.io up and running but doesn't fully encapsulate the distributed power of the n.io platform. To do that, we should run n.io on a local or edge node.
+The cloud is an easy way to get n.io up and running, but doesn't fully encapsulate the distributed power of the n.io platform. To do that, we should run n.io on a local or edge node.
 
-## Requirements
+Running the n.io platform requires either Python version `3.4.5` or `3.5.2`. Other versions of Python 3.4 may work, but Python 3.5.3 and later do not work. When running the n.io binary, the `Bad magic number` error is most likely caused by an incompatible version of Python.
+
+Requirements
 
 * Python 3.4.5 or 3.5.2
 * A n.io binary Python wheel
 
-Running the n.io platform requires either Python version `3.4.5` or `3.5.2`. Other versions of Python 3.4 may work, but Python 3.5.3 and later do not work. If you see `Bad magic number` errors when running a n.io binary, it is likely caused by an incompatible version of Python.
+* Download Python from [https://www.python.org/downloads/](https://www.python.org/downloads/).
 
-You will need a Python `.whl` file to install the n.io binary. This should have been provided to you as part of your license agreement. Reach out to n.io support if you need a new wheel file.
+* Obtain the Python `.whl` file from n.io with your license agreement.
+
+See support if you require a new wheel file.
 
 ## Installation
 
-Simply install the n.io wheel file using `pip`, probably like so:
+To install n.io:
+
+Type the following command:
 
 ```
 pip3 install your_wheel_file.whl
 ```
 
-After installation, you should be able to run `nio_run`. If that command is not available, make sure your Python binary installation directory is on your PATH.
+To run n.io:
 
-Some tasks are made easier by using the n.io CLI. This can be installed from pip as well:
+Type the following command:
+
+`nio_run`
+
+If that command is not available, make sure your Python binary installation directory is on your PATH.
+
+To install CLI \(Command Line Interface\):
+
+Type the following command:
 
 ```
 pip3 install nio-cli
@@ -31,9 +45,14 @@ pip3 install nio-cli
 
 Now that we have the n.io binary to run, we need a n.io project to run it against. You can obtain a n.io project template by cloning down the [Project Template repository](https://github.com/nioinnovation/project_template) or by using the n.io CLI.
 
-To use the CLI, run `nio new first_project`. This will create a directory called `first_project` in your working directory containing a n.io project.
+To clone the project template using CLI:
 
-To use git to set up the project, you will need to clone the template and then initialize the submodules which contain the blocks:
+1. Run `nio new first_project`. 
+2. The `first_project` directory is created in your working directory containing the n.io project.
+
+To clone the project template using git:
+
+Clone the template and then initialize the submodules which contain the blocks by entering the following commands:
 
 ```
 git clone https://github.com/nioinnovation/project_template.git first_project
@@ -41,7 +60,12 @@ cd first_project
 git submodule update --init --recursive
 ```
 
-Once the project directory is set up, we can run n.io from inside of it. Go to the project directory \(`cd first_project`\) and then run `nio_run`. You should see some log messages displayed but no errors. Logs should look something like this:
+To run n.io:
+
+1. Enter `cd first_project` to go to the project directory.
+2. Type `nio_run`.
+
+Log messages will be displayed, but there should be no errors.
 
 ```
 [2016-03-04 23:49:41.035] NIO [INFO] [main.WebServer] Server configured on 0.0.0.0 : 8181
@@ -59,37 +83,46 @@ If you see those logs, it means n.io is up and running, congratulations!
 
 ## Add a local instance to the System Designer
 
-Once we have a local instance running, we'll want to edit it using the System Designer. Log in to the System Designer and select a system to add your locally running n.io instance to. Once the system is selected, click the "Add New Instance" button at the top.
+Once we have a local instance running, we'll want to edit it using the System Designer. Based on the log messages, your n.io instance is available at `http://localhost:8181` and you need to tell it to use basic authentication to communicate with the instance.
 
-Give your instance a name, then specify `localhost` for host and `8181` for port. Leave the access mode as `basic` for now. You are telling the designer that your n.io instance is available at `http://localhost:8181` which is what our log messages from n.io indicated to us. You are also telling it to use basic authentication to communicate with the instance.
+To create a local instance:
 
-Note this important detail about the System Designer: when you connect to a n.io instance to edit it you are communicating with that instance directly from your browser \(via an XHR request\). That means hostnames like `localhost` and other internal IP addresses work. It also means these instances won't be available to be designed through the System Designer unless you are able to access them from your machine.
+1. Log in to the System Designer.
+2. Click the "+" icon on the lower left corner to create and name a new system.
+3. Click "Accept."
+4. Select the name of the system you created.
+5. Click "Add New Instance."
+6. Type the name of the instance, enter  `localhost` for host and `8181` for port, and leave the access mode as  
+   `basic.`
+7. Click "Accept".
+8. Wait for the instance to spin-up and note the name of the new instance on the left side of the screen.
 
-You may see an issue regarding HTTPS and HTTP instances. Since you launched your instance and presumably didn't load any SSL certificates into it, the instance is accessible only by HTTP. However, if you are logged into the System Designer via HTTPS then an XHR request going over HTTP is not permitted \(this is a browser restriction\). Instead, log into the designer [via HTTP](http://designer.n.io). All of your instances and systems will be the same, only the n.io commands to edit these instances won't happen over HTTPS.
+Note: When you connect to a n.io instance to edit it, you are communicating with that instance directly from your browser via an XHR request. Hostnames like `localhost` and other internal IP addresses will work. These instances won't be available to be designed through the System Designer unless you are able to access them from your machine.
 
-Once your instance is loaded and available, you can add services and blocks to it just like a cloud instance. Any errors or activity that happens will be available through the logs in your terminal that is running n.io. This makes local instances a much more useful tool for designing n.io systems where debugging is needed.
+You may see an issue regarding HTTPS and HTTP instances. Since you launched your instance and presumably didn't load any SSL certificates into it, the instance is accessible only by HTTP. However, if you are logged into the System Designer via HTTPS, then an XHR request going over HTTP is not permitted due to a browser restriction. Instead, log into the designer [via HTTP](http://designer.n.io). All of your instances and systems will be the same, only the n.io commands to edit these instances won't happen over HTTPS.
+
+Once your instance is loaded and available, you can add services and blocks to it just like a cloud instance \(link to In The Cloud\). Any errors or activity that happens will be available through the logs in your terminal that is running n.io. This makes local instances a much more useful tool for designing n.io systems where debugging is needed.
 
 ## Adding Blocks to a Project
 
-Before we move on, you're going to want to add some blocks to your project. Press ctrl-c to ext n.io. We'll add four popular blocks using the n.io CLI to get you started:
+Before we move on, you're going to want to add some blocks to your project.
+
+To add blocks using the CLI:
+
+1. Press Ctrl-C to exit n.io. 
+2. To add four popular blocks, type the following command. 
 
 ```
 nio add logger simulator filter dynamic_fields
 ```
 
-If you prefer to install the blocks without the CLI, clone the relevant block repositories into the `blocks/` folder of your project. In other words, from your project root you can run:
+To add blocks:
+
+1. Clone the relevant block repositories into the `blocks/` folder of your project by entering the following command from the project root:
 
 ```
 git submodule add https://github.com/nio-blocks/logger.git blocks/logger
 ```
-
-
-
-
-
-//////
-
-http://python.org/downloads
 
 
 
