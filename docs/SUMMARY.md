@@ -5,7 +5,7 @@
   * [In the Cloud](getting_started/in_the_cloud.md)
   * [Locally](getting_started/locally.md)
   * [Your First Service](getting_started/first_service.md)
-* [System Designer](system-designer.md)
+* [System Designer](system-designer/README.md)
 * [Blocks](blocks/README.md)
   * [Block Development](blocks/block-development.md)
   * [Block Testing](blocks/block-testing.md)
