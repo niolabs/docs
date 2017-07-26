@@ -4,7 +4,7 @@ The SNMP Agent core component allows you to monitor the health of a {{ book.prod
 
 ## Behavior
 
-The SNMP component can be configured to work as an agent that can issue traps asynchronously or respond to requests synchronously as follows:
+The SNMP component can be configured to work as an agent that can issue traps asynchronously or respond to requests synchronously.
 
 * Asynchronous mode sends traps whenever a service changes its status, and the new status is configured as part of the `status_traps` setting.
 * Synchronous mode allows retrieving the system uptime and service statuses.
