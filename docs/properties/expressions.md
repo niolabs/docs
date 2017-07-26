@@ -2,15 +2,12 @@
 
 An expression is an element of code that needs be evaluated to return a result. You can use {{ book.product }} expressions to dynamically define the value of a property when the signal enters a block. 
 
-{{ book.product }} expressions are modeled on string interpolation in other dynamic languages. The snippets of code between the double curly braces are evaluated as Python code. For example:
-
+{{ book.product }} expressions are modeled on string interpolation in other dynamic languages. The piece of code between the double curly braces is evaluated as Python code. 
 ```
 {{ <code goes here> }}
 ```
 
 Once the code is evaluated, the value will be replaced by the curly braces and its contents.
-
-For example:
 
 ```
 "{{1 + 5}} dogs went to the park"
@@ -25,7 +22,7 @@ Inner dictionaries need spaces before and after the curly braces.
 
 ## Signal Property Syntax `$`
 
-Use the `$` syntax to access signal properties:
+Use the `$` syntax to access signal properties.
 
 ```
 # given a signal s where s.v1 == 6
@@ -33,7 +30,7 @@ Use the `$` syntax to access signal properties:
 -> "6 dogs went to the park"
 ```
 
-You can also combine the two approaches. For example:
+You can also combine the two approaches.
 
 ```
 "My favorite Integer is {{$v1 if isinstance($v1, int) else 'not an Integer…'}}"
