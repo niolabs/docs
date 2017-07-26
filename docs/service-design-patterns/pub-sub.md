@@ -27,16 +27,16 @@ These topics can be visualized as the following tree:
                                              │                          
                             ┌────────────────┴──────────────────┐          
                             ▼                                   ▼       
-                     ┌────────────┐                      ┌────────────┐ 
-                     │ California │                      │  Colorado  │ 
-                     └────────────┘                      └────────────┘ 
+                     ┌────────────┐                      ┌────────────┐
+                     │ California │                      │  Colorado  │
+                     └────────────┘                      └────────────┘
                             │                                   │       
               ┌─────────────┴──────┬─────────────┐              │       
               ▼                    ▼             ▼              ▼       
-       ┌────────────┐       ┌────────────┐┌────────────┐ ┌────────────┐ 
-       │    San     │       │    Los     ││    (4)     │ │ Broomfield │ 
-       │ Francisco  │       │  Angeles   ││ Population │ │            │ 
-       └────────────┘       └────────────┘└────────────┘ └────────────┘ 
+       ┌────────────┐       ┌────────────┐┌────────────┐ ┌────────────┐
+       │    San     │       │    Los     ││    (4)     │ │ Broomfield │
+       │ Francisco  │       │  Angeles   ││ Population │ │            │
+       └────────────┘       └────────────┘└────────────┘ └────────────┘
               │                    │                            │       
        ┌──────┴──────┐             │                            │       
        ▼             ▼             ▼                            ▼       
@@ -58,9 +58,9 @@ Subscribers can subscribe to a single topic or also portions of the topic tree t
 * Subscribe: `California.*.**` - Publishers: 1, 2, 3 - Publisher 4 is still not matched since the single asterisk forces us down one more level
 * Subscribe: `California.**` - Publishers: 1, 2, 3, 4
 
-## Pubkeeper
+<!-- ## Pubkeeper
 
-Perhaps the most impactful reason to use the {{ book.product }} pub/sub system is because of the interoperability enabled through the use of [Pubkeeper](https://pubkeeper.com). Pubkeeper allows us to separate our information hierarchy, or topic tree, from the underlying protocols that will be responsible for transmitting data between services and instances. In other words, it allows service designers to define what data goes to which services without worrying about how it will get there.
+Perhaps the most impactful reason to use the {{ book.product }} pub/sub system is because of the interoperability enabled through the use of [Pubkeeper](https://pubkeeper.com). Pubkeeper allows us to separate our information hierarchy, or topic tree, from the underlying protocols that will be responsible for transmitting data between services and instances. In other words, it allows service designers to define what data goes to which services without worrying about how it will get there. -->
 
 ## Hints in the System Designer
 
