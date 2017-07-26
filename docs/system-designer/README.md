@@ -12,7 +12,7 @@ A list of systems is displayed in a column on the left side of the screen. The d
 
 To view the system, click the system name.
 
-To create a new system, click the **+** button on the lower-left corner.
+To create a new system, click the **+** button at the lower-left corner.
 
 ## Instance
 
