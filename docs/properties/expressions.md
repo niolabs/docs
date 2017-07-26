@@ -2,13 +2,13 @@
 
 An expression is an element of code that needs be evaluated to return a result. You can use {{ book.product }} expressions to dynamically define the value of a property when the signal enters a block. 
 
-{{ book.product }} expressions are modeled on string interpolation in other dynamic languages. The snippets of code between the double curly braces are evaluated. For example:
+{{ book.product }} expressions are modeled on string interpolation in other dynamic languages. The snippets of code between the double curly braces are evaluated as Python code. For example:
 
 ```
 {{ <code goes here> }}
 ```
 
-The content between the curly braces is evaluated as Python code. Once the code is evaluated, the value will be replace the curly braces and its contents.
+Once the code is evaluated, the value will be replaced by the curly braces and its contents.
 
 For example:
 
