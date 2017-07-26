@@ -14,7 +14,7 @@ Together, a block's property configuration is what makes a block unique. A block
 
 In the example above, Log Level is a drop-down menu and Version is a series of three numbers separated by dots (0.1.0), Fields is a list of input pairs. The length of the Fields list can be defined by the user with the `+ Fields` to add items and the `x` to remove items. In this example, there are three pairs defined in the list.
 
-The different inputs in the configuration panel reflect different property types. Some properties can take any type of input while others can only take integers or select from specific options (e.g. the Log Level drop down menu is a select type). If your property input is filled with the incorrect type of content, your block will not configure and your service will not run.
+The different inputs in the configuration panel reflect different property types. Some properties can take any type of input while others can only take integers or select from specific options (e.g., the Log Level drop down menu is a select type). If your property input is filled with the incorrect type of content, your block will not configure and your service will not run.
 
 Block properties can include the following types:
   - **boolean**: One of two mutually exclusive options. Usually a checkbox.

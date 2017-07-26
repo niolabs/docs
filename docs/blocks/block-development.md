@@ -1,6 +1,6 @@
 # Block Development
 
-The sky's the limit. To connect to a new framework, library, or custom piece of hardware not currently included in the nio-blocks library, you can develop your own custom block.
+The sky's the limit. To connect to a new framework, library, or custom piece of hardware not currently included in the [nio-blocks library](https://github.com/nio-blocks), you can develop your own custom block.
 
 You can adopt one of two philosophies when creating blocks:
 
@@ -10,17 +10,19 @@ You can adopt one of two philosophies when creating blocks:
 
 If the function you need does not exist in [nio-blocks](https://github.com/nio-blocks), you can easily create a custom block.
 
-To create a custom block, clone the [block-template repository](https://github.com/nio-blocks/block_template) from GitHub. The block template includes the basic {{ book.product }} block class as well as placeholders for the block's requirements, specifications, release notes, and tests. See the repository's [`README.md`](https://github.com/nio-blocks/block_template) for complete instructions.
+## Block Template
+
+To create a custom block, clone the [block template repository](https://github.com/nio-blocks/block_template) from GitHub. The block template includes the basic {{ book.product }} block class as well as placeholders for the block's requirements, specifications, release notes, and tests. See the repository's [`README.md`](https://github.com/nio-blocks/block_template) for complete instructions.
 
 ## Developing Your Block
 
-After downloading the block template repository, you are ready to develop your own block.
+After downloading the block template repository, you are ready to develop your block.
 
 The {{ book.product }} base block and blocks with similar functionality that have been developed using the {{ book.product }} framework are good resources for block development.
 
-As outlined in your BLOCK_README.md file, you have the option to add properties, dependencies, commands, inputs, and outputs to your block.
+As outlined in your `BLOCK_README.md` file, you have the option to add **properties**, **dependencies**, **commands**, **inputs**, and **outputs** to your block.
 
-Before developing your own block, rename the BLOCK_README.md to README.md by executing the following command:
+Before developing your own block, rename the `BLOCK_README.md` to `README.md` by executing the following command:
 `mv BLOCK_README.md README.md`
 
 ### Base Block Class
@@ -30,9 +32,12 @@ All {{ book.product }} blocks inherit from the base block class. The first impor
 The base block class uses the {{ book.product }} framework described below. {{ book.product }} blocks work according to the following principles:
 * Signals are passed as lists. See [Understanding Signals](/service-design-patterns/understanding-signals.md).
 * Block properties are declared as class attributes.
-For example, `speed = IntProperty(title='Speed', default=30)`
+For example:
+```python
+speed = IntProperty(title='Speed', default=30)
+```
 * Block properties must be called with a function invocation to obtain the value. For example to get the value of the speed property defined above, call `self.setSpeed(self.speed())`
-* Commands are declared as decorator.
+* Commands are declared as decorators.
 For example:
   ```python
   from nio.block.base import Block
@@ -73,7 +78,7 @@ The following methods from the base block are designed to be overridden:
 * **life cycle management**
   * `configure`: at the end of `configure`, the block is ready to receive signals. If an exception is raised during configure, the service won’t start.
   * `start`: during start, a block begins to send out signals. This method needs to eventually return so that the block status can change to “started”. For this reason, anything that runs continuously, should be run in a new thread.
-  * `stop`: after top, the block stops sending out signals and cancels jobs.
+  * `stop`: after stop, the block stops sending out signals and cancels jobs.
 * **signaling**
   * `process_signals(<list of signals>, input_id)`: receives input signals.
   * `notify_signals(<list of signals>, output_id)`: emits signals from the block. This method isn't intended to be overridden, but is it called by the block to send out signals. For example, you will usually call `notify_signals` at the end of your `process_signals` method.
@@ -120,6 +125,6 @@ For example, in a block that accesses an external API, you can use a base block 
 
 Mixins are not blocks. Instead, mixins add commonly used functionality to existing blocks. You can add functions such as persistence, group-by, or retry to blocks. To view the available mixins, see the [mixin repository](https://github.com/nioinnovation/nio/tree/master/nio/block/mixins).
 
-Mixins follow the Python mixin model, thus any block mixins need to be extended prior to extending the base Block class. To use persistence and group-by mixins, see [Buffer block](https://github.com/nio-blocks/buffer).
+Mixins follow the Python mixin model, thus any block mixins need to be extended prior to extending the base Block class. To see an example of how to use the persistence and group-by mixins, see the [Buffer block](https://github.com/nio-blocks/buffer).
 
 Read the docstrings inside each mixin for information on the functionality and arguments.
