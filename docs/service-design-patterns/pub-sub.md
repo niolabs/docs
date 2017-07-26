@@ -64,4 +64,4 @@ Perhaps the most impactful reason to use the {{ book.product }} pub/sub system i
 
 ## Hints in the System Designer
 
-One of the benefits to using the {{ book.product }} pub/sub mechanism is that the System Designer understands the topic tree as well. If your service has a `Publisher` or `Subscriber` block with a topic, the designer can show you services that either subscribe to or publish to that topic, respectively. It also permits the System Designer to draw the graph relationship between services and instances.
+One of the benefits of using the {{ book.product }} pub/sub mechanism is that the System Designer understands the topic tree as well. If your service has a `Publisher` or `Subscriber` block with a topic, the designer can show you services that either subscribe to or publish to that topic, respectively. It also permits the System Designer to draw the graph relationship between services and instances.
