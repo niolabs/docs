@@ -131,7 +131,7 @@ class TestPersistenceBlock(NIOBlockTestCase):
 
 `NIOBlockTestCase` configures the following {{ book.product }} modules by default: `['logging', 'scheduler', 'security', 'threading']`. If your block test case needs to use any other {{ book.product }} modules, you must specify by implementing the `get_test_modules` method.
 
-If your test case uses persistence:
+If your test case uses persistence, enter the following code:
 
 ```python
 class TestBlock(NIOBlockTestCase):

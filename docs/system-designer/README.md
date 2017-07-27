@@ -12,7 +12,7 @@ A list of systems is displayed in a column on the left side of the screen. The d
 
 To view the system, click the system name.
 
-To create a new system, click the **+** button at the lower-left corner.
+To create a new system, click the **+** button in the lower-left corner.
 
 ## Instance
 
@@ -20,7 +20,7 @@ A list of instances is displayed in a column next to the list of systems.
 
 ![](/img/vg-instance.png)
 
-To create a new instance, click **create a cloud instance** or **add a new instance**.
+To create a new instance, click **Create a Cloud Instance** or **Add a New Instance**.
 
 ## Service Workflow
 
@@ -36,7 +36,7 @@ A list of services is displayed below the instance name. Toggle the arrow to hid
 
 ![](/img/vg-service.png)
 
-To create a new service, click **add new service**.
+To create a new service, click **Add New Service**.
 
 ## Block Library
 
@@ -56,7 +56,7 @@ To view the block workflow, click the service name.
 
 To add a block to the service, drag and drop a block from the block library to the canvas.
 
-To create a new block, drag and drop the "create" block from the block library to the canvas.
+To create a new block, drag and drop the **Create** block from the block library to the canvas.
 
 ## Breadcrumb
 

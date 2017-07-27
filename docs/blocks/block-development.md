@@ -91,7 +91,7 @@ An additional resource for developing your custom block is the [nio-blocks libra
 
 ## The {{ book.product }} Framework
 
- When you develop {{ book.product }} blocks, you use the {{ book.product }} framework. The framework holds all the classes required to create your block as well as the functionality to tie everything together. Think of the framework as a toolshed of useful tools for working with {{ book.product }}.
+When you develop {{ book.product }} blocks, you use the {{ book.product }} framework. The framework holds all the classes required to create your block as well as the functionality to tie everything together. Think of the framework as a toolshed of useful tools for working with {{ book.product }}.
 
 ### Block Context
 
@@ -108,7 +108,7 @@ In the configure method, blocks are passed context about themselves and the envi
 
 By default, a class is marked as `discoverable` to permit the system to identify and register the class. Marking a class as `not_discoverable` produces the opposite effect.
 
-To mark a class as not_discoverable, use the parameter-less decorator `@not_discoverable`
+To mark a class as not_discoverable, use the parameter-less decorator `@not_discoverable`.
 ```
     from nio import not_discoverable, Block
     @not_discoverable

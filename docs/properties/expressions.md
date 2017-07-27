@@ -86,7 +86,7 @@ You can import other libraries from your Python installation.
 
 ## Examples
 
-Bracket notation
+Bracket notation can be used.
 
 ```
 # given a signal s where s.v1 == {'who': 'Baron Samedi'}
