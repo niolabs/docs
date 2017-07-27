@@ -5,21 +5,21 @@ In the System designer, you begin with an empty canvas full of possibilities, bu
 To add a service:
 
 1. Select the name of the instance.
-2. Click **add new service**. 
-3. Type **SimulateAndLog**, leave the service type as **service**, and click **accept**.
-4. Double-click the SimulateAndLog service.
+2. Click **Add New Service**. 
+3. Type **SimulateAndLog**, leave the service type as **Service**, and click **Accept**.
+4. Double-click the **SimulateAndLog** service.
 5. From the right, click **LB** and drag a LoggerBlock block on to the canvas.
 6. Name the block **Log**.
-7. Click on **CIS** and drag a CounterIntervalSimulator block on to the canvas.
+7. Click on **CIS** and drag a **CounterIntervalSimulator** block on to the canvas.
 8. Name the block **Simulate**.
-9. Connect the blocks by clicking and dragging the output terminal of the Simulate block and release it on the input terminal of the Log block.
-10. Click **save**.
+9. Connect the blocks by clicking and dragging the output terminal of the **Simulate** block and release it on the input terminal of the **Log** block.
+10. Click **Save**.
 
 ## Running Services
 
 By now, you are more than ready to see something happen.
 
-1. Click **start** on the toolbar.
+1. Click **Start** on the toolbar.
 2. View the logs in the terminal.  Note: Logs are saved in the  `logs/` directory of your project folder.
 
 ```
@@ -39,16 +39,16 @@ By now, you are more than ready to see something happen.
 [2016-03-05 00:32:10.204] NIO [INFO] [SimulateAndLog.Log] {'sim': 1}
 ```
 
-3. Click **stop** when finished.
+3. Click **Stop** when finished.
 
 ## Configuring Blocks
 
-So ar you have only viewed the default behavior of this block. You can modify that by configuring Simulate block. You can change the interval from 1 to 2 seconds to see the signals logged every other second..
+So far you have only viewed the default behavior of this block. You can modify that by configuring Simulate block. You can change the interval from 1 to 2 seconds to see the signals logged every other second.
 
 To configure blocks:
-1. Double-click on the Simulate block to view the properties in a dialog box.
-2. Change the interval value from 1 \(the default\) to 2.
-3. Click Save.
+1. Double-click the **Simulate** block to view the properties in a dialog box.
+2. Change the interval value from **1** \(the default\) to **2**.
+3. Click **Save**.
 
 ## Commanding Blocks and Services
 
@@ -56,10 +56,10 @@ Commands are a way to execute code in a block or service. Technically, you have 
 
 To command a block:
 
-1. With SimulateAndLog running, select the Log block.
-2. Click **command** (&lt;/&gt;) on the menu.
-3. Select the Log block and type in a phrase in the results box.
-4. Click **execute** to view the phrase logged with the simulate signals.
+1. With SimulateAndLog running, select the **Log** block.
+2. Click **Command** **(&lt;/&gt;)** on the toolbar.
+3. Select the **Log** block and type in a phrase in the results box.
+4. Click **Execute** to view the phrase logged with the simulate signals.
 
 ## Conclusion
 
