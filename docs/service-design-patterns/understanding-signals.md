@@ -118,7 +118,7 @@ There are several downsides to this approach.
 * You lose your original list. When the chain started you had a list of all employees, and now you have different lists floating around. You would have to merge the streams back together to get a list of all the employee names.
 * It is very tedious and repetitive. We have the same blocks used over and over again.
 
-The [Group By mixin](https://github.com/nioinnovation/nio/tree/master/nio/block/mixins/group_by) groups the signals into smaller lists first before performing the same action. This is very similar to the SQL [`GROUP BY`](https://www.w3schools.com/sql/sql_groupby.asp) operator. Fortunately, the `HashTable` block uses the Group By mixin, so you can eliminate the `Filter` blocks and rely on only one `HashTable` block. The block will group the hash table functionality by the department of the employee. Since you don't need the department name as the signal attribute key anymore, you can hard code that to be a string `"names"` instead
+The [Group By mixin](https://github.com/nioinnovation/nio/tree/master/nio/block/mixins/group_by) groups the signals into smaller lists first before performing the same action. This is very similar to the SQL [`GROUP BY`](https://www.w3schools.com/sql/sql_groupby.asp) operator. Fortunately, the `HashTable` block uses the Group By mixin, so you can eliminate the `Filter` blocks and rely on only one `HashTable` block. The block will group the hash table functionality by the department of the employee. Since you don't need the department name as the signal attribute key anymore, you can hard code that to be a string `"names"` instead.
 
 ```
 {
