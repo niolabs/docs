@@ -20,7 +20,7 @@ A list of instances is displayed in a column next to the list of systems.
 
 ![](/img/vg-instance.png)
 
-To create a new instance, click **Create a cloud instance** or **Add a new instance**.
+To create a new instance, click **Create a Cloud Instance** or **Add a New Instance**.
 
 ## Service Workflow
 
@@ -36,7 +36,7 @@ A list of services is displayed below the instance name. Toggle the arrow to hid
 
 ![](/img/vg-service.png)
 
-To create a new service, click **Add new service**.
+To create a new service, click **Add New Service**.
 
 ## Block Library
 
