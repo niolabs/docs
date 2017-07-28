@@ -4,8 +4,7 @@ The System Designer is the graphical user interface used to build your {{ book.p
 
 Note that your screen may look slightly different than the images in the document and video.
 
-
-
+{% video %}https://www.youtube.com/watch?v=OkfVMPjzkhE{% endvideo %}
 ## System
 
 A list of systems is displayed in a column on the left side of the screen. The designer automatically creates an abbreviation for each system name.
