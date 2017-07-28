@@ -2,7 +2,7 @@
   "root": "./docs",
   "title": "nio documentation",
   "variables": {
-    "company": "niolabs",
+    "company": "nio",
     "product": "nio"
   },
   "plugins": [
