@@ -2,8 +2,9 @@
 
 The System Designer is the graphical user interface used to build your {{ book.product }} system. This overview provides you with a quick tour of the user interface including the navigation, work areas, and toolbars.
 
-Note that your screen may look slightly different than the images in this document.
+Note that your screen may look slightly different than the images in the document and video.
 
+{% video %}https://www.youtube.com/watch?v=OkfVMPjzkhE{% endvideo %}
 ## System
 
 A list of systems is displayed in a column on the left side of the screen. The designer automatically creates an abbreviation for each system name.
