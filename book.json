@@ -6,7 +6,8 @@
     "product": "nio"
   },
   "plugins": [
-    "theme-nio@git://github.com/nioinnovation/gitbook-plugin-theme-nio.git", "video"
+    "theme-nio@git://github.com/nioinnovation/gitbook-plugin-theme-nio.git",
+    "video@git://github.com/xgrommx/gitbook-plugin-video"
   ],
   "pluginsConfig": {
   }
