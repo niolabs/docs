@@ -1,14 +1,20 @@
 {
   "root": "./docs",
   "title": "nio documentation",
+  "description": "Design complex systems with the simple building blocks of nio.",
   "variables": {
     "company": "nio",
     "product": "nio"
   },
   "plugins": [
     "theme-nio@git://github.com/nioinnovation/gitbook-plugin-theme-nio.git",
+    "favicon",
     "video@git://github.com/xgrommx/gitbook-plugin-video"
   ],
   "pluginsConfig": {
+    "favicon":{
+        "shortcut": "img/favicon.ico",
+        "bookmark": "img/favicon.ico"
+    }
   }
 }
