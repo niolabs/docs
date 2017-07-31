@@ -3,12 +3,13 @@
   "title": "nio documentation",
   "description": "Design complex systems with nio.",
   "variables": {
-    "company": "niolabs",
+    "company": "nio",
     "product": "nio"
   },
   "plugins": [
     "theme-nio@git://github.com/nioinnovation/gitbook-plugin-theme-nio.git",
-    "favicon"
+    "favicon",
+    "video@git://github.com/xgrommx/gitbook-plugin-video"
   ],
   "pluginsConfig": {
     "favicon":{

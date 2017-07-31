@@ -1,10 +1,10 @@
-# Publishing and Subscribing to Data in {{ book.product }}
+# Publishing and Subscribing to Data
 
-Designing systems with {{ book.product }} means designing how information, or signals,  moves through the system. The recommended way to get data from one service to another is to use the Pub/Sub mechanisms that are built in to {{ book.product }}. This can be done using the `Publisher` and `Subscriber` blocks located in the [communication block repository](https://github.com/nio-blocks/communication).
+Designing systems with {{ book.product }} includes designing how information, or signals,  moves through the system. {{ book.product }} recommends using the Pub/Sub mechanisms to move data from one service to another. The `Publisher` and `Subscriber` blocks are located in the [communication block repository](https://github.com/nio-blocks/communication).
 
 ## Topic Tree
 
-When using the `Publisher` and `Subscriber` blocks, you will need to decide which topic you wish to publish to or subscribe to. The information organization of an entire {{ book.product }} system can be viewed as a hierarchical topic tree.
+When using the `Publisher` and `Subscriber` blocks, you need to decide which topic you wish to publish to or subscribe to. The information organization of an entire {{ book.product }} system can be viewed as a hierarchical topic tree.
 
 ### Publishers
 
@@ -64,4 +64,4 @@ Perhaps the most impactful reason to use the {{ book.product }} pub/sub system i
 
 ## Hints in the System Designer
 
-One of the benefits to using the {{ book.product }} pub/sub mechanism is that the System Designer understands the topic tree as well. If your service has a `Publisher` or `Subscriber` block with a topic, the designer can show you services that either subscribe to or publish to that topic, respectively. It also permits the System Designer to draw the graph relationship between services and instances.
+One of the benefits of using the {{ book.product }} pub/sub mechanism is that the System Designer understands the topic tree as well. If your service has a `Publisher` or `Subscriber` block with a topic, the designer can show you services that either subscribe to or publish to that topic, respectively. It also permits the System Designer to draw the graph relationship between services and instances.

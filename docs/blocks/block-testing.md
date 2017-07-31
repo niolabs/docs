@@ -4,10 +4,9 @@
 
 ## NIOBlockTestCase
 
-When building your tests, use the `NIOBlockTestCase`. The test case extends `unittest.TestCase` and uses the same infrastructure as the base class. However, `NIOBlockTestCase` also provides a number of helpful methods for testing blocks. Here's a real-world example from our internal block repositories:
+When building your tests, use the `NIOBlockTestCase`. The test case extends the `unittest.TestCase` and uses the same infrastructure as the base class. However, `NIOBlockTestCase` also provides a number of helpful methods for testing blocks. Here's a real-world example from our internal block repositories:
 
 ```python
-
 from nio.testing.block_test_case import NIOBlockTestCase
 from nio.signal.base import Signal
 from ..your_block import YourBlock
@@ -32,17 +31,17 @@ class TestYourBlock(NIOBlockTestCase):
 
 ## setUp/tearDown
 
-Just like `unittest.TestCase`, we support the setUp/tearDown pattern. This is a great place to do any initialization and/or cleanup that will be required across every test. Do not repeat yourself! Be aware, though, that the block provides crucial initialization and finalization in `NIOBlockTestCase.setUp/tearDown`. If you override either of these methods, you need to call the method in the parent class at the top of your method.
+Just like the `unittest.TestCase`, {{ book.product }} supports the setUp/tearDown pattern. This is a great place to do any initialization and/or cleanup that will be required across every test. Do not repeat yourself! Be aware, though, that the block provides crucial initialization and finalization in `NIOBlockTestCase.setUp/tearDown`. If you override either of these methods, you need to call the method in the parent class at the top of your method.
 
 ## Helper Methods
 
-- **configure_block(block, block_properties)** - The process of configuring and initializing blocks manually is somewhat nuanced (and not something we want you to worry about). We provide this method to configure your block instance semi-automatically. Just pass the block object itself and a dictionary containing any block properties you want to configure (and associated values).
+- **configure_block(block, block_properties)** - The process of configuring and initializing blocks manually is somewhat nuanced (and not something we want you to worry about). We provide this method to configure your block instance semi-automatically. Just pass the block object itself and a dictionary containing any block properties you want to configure (and the associated values).
 - **assert_num_signals_notified(num, block=None)** - This method provides access to the total number of signals notified over the course of the current test. If `block` is not `None`, then you will receive the number of signals notified by that block over its lifetime.
 - **last_signal_notified(output_id)** - This method returns the last signal that was notified from a particular output. If an output_id is not specified, it will return the last signal notified from any output on the block.
 
 ## Overridable Methods
 
--   **get_test_modules()** - By default, `NIOBlockTestCase` automatically initializes the logging, threading, scheduler, and security modules. However, you can customize this by overriding this method and returning a list of strings corresponding to the particular modules you want to initialize. Your options are as follows:
+-   **get_test_modules()** - By default, `NIOBlockTestCase` automatically initializes the logging, threading, scheduler, and security modules. However, you can customize this by overriding this method and returning a list of strings corresponding to the particular modules you want to initialize.
     * logging
     * threading
     * scheduler
@@ -50,7 +49,7 @@ Just like `unittest.TestCase`, we support the setUp/tearDown pattern. This is a 
     * communication
     * persistence
     * web
--   **signals_notified(signals, output_id)** - This method gets called every time signals are notified in your tests. If you'd like to record something in the test case, trigger an event, or perform some aggregation when that happens, override this method. One common use is to add `self.signals = defaultdict(list)` to `setUp` and:
+-   **signals_notified(signals, output_id)** - This method gets called every time signals are notified in your tests. If you'd like to record something in the test case, trigger an event, or perform some aggregation when that happens, override this method. One common use is to add `self.signals = defaultdict(list)` to `setUp` and
 
 ```python
 def signals_notified(self, signals, output_id):
@@ -59,7 +58,7 @@ def signals_notified(self, signals, output_id):
 
 ## Events
 
-This is more a best practice than a feature. Blocks are not required to behave synchronously, and sometimes you may want to wait for an event (after instantiating or configuring a block) before proceeding with the tests. Rather than sleeping for a prescribed amount of time (asynchronous processes can be fickle and unpredictable from machine to machine), we recommend extending the block and adding one of Python's Event objects to signify readiness. For example:
+Blocks are not required to behave synchronously, and sometimes you may want to wait for an event (after instantiating or configuring a block) before proceeding with the tests. Rather than sleeping for a prescribed amount of time (asynchronous processes can be fickle and unpredictable from machine to machine). You can extend  the block and add one of Python's Event objects to signify readiness.
 
 ```python
 class EventBlock(YourBlock):
@@ -72,7 +71,7 @@ class EventBlock(YourBlock):
 		self.e.set()
 ```
 
-Now, instead of instantiating `YourBlock` in the tests, instantiate `EventBlock` passing an instance of `Event` to its constructor. Fox example:
+Now, instead of instantiating `YourBlock` in the tests, instantiate `EventBlock` passing an instance of `Event` to its constructor.
 
 ```python
 from threading import Event
@@ -86,9 +85,9 @@ Using the `EventBlock`, your test will wait until  `YourBlock.configure` returns
 
 ## Mocking
 
-Patching and mocking are extremely useful concepts in software verification; this is especially relevant when the modules in question interact with external resources (such as APIs, OS services, and so on). We won't go into too much details of mocking right now, but the [Python documentation](https://docs.python.org/3/library/unittest.mock.html) contains great material on the subject. We recommend using these concepts liberally; in fact, in many cases you won't have much choice.
+Patching and mocking are extremely useful concepts in software verification; this is especially relevant when the modules in question interact with external resources (such as APIs and OS services). We won't go into too much details of mocking right now, but the [Python documentation](https://docs.python.org/3/library/unittest.mock.html) contains great material on the subject. We recommend using these concepts liberally; in fact, in many cases you won't have much choice.
 
-As you progress, one thing you may notice is that `unittest.mock.patch` doesn't play nice with relative module paths. This makes patching a method at the class or module level difficult.  One solution is to import the object directly and use `unittest.mock.patch.object`
+As you progress, one thing you may notice is that `unittest.mock.patch` doesn't play nice with relative module paths. This makes patching a method at the class or module level difficult.  One solution is to directly import the object using  `unittest.mock.patch.object`
 
 ```python
 from unittest.mock import patch, ANY
@@ -132,7 +131,7 @@ class TestPersistenceBlock(NIOBlockTestCase):
 
 `NIOBlockTestCase` configures the following {{ book.product }} modules by default: `['logging', 'scheduler', 'security', 'threading']`. If your block test case needs to use any other {{ book.product }} modules, you must specify by implementing the `get_test_modules` method.
 
-For example, if your test case uses persistence:
+If your test case uses persistence, enter the following code:
 
 ```python
 class TestBlock(NIOBlockTestCase):
@@ -140,7 +139,7 @@ class TestBlock(NIOBlockTestCase):
 	def get_test_modules(self):
 		return super().get_test_modules() + ['persistence']
 ```
-You can override the default configuration of modules by implementing `get_module_config_*`. The following example will ensure that the test case uses the `default` implementation of the persistence module.
+You can override the default configuration of modules by implementing `get_module_config_*`. This ensures that the test case uses the `default` implementation of the persistence module.
 
 ```python
 class TestBlock(NIOBlockTestCase):

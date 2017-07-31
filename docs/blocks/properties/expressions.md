@@ -2,15 +2,12 @@
 
 An expression is an element of code that needs be evaluated to return a result. You can use {{ book.product }} expressions to dynamically define the value of a property when the signal enters a block. 
 
-{{ book.product }} expressions are modeled on string interpolation in other dynamic languages. The snippets of code between the double curly braces are evaluated as Python code. For example:
-
+{{ book.product }} expressions are modeled on string interpolation in other dynamic languages. The piece of code between the double curly braces is evaluated as Python code. 
 ```
 {{ <code goes here> }}
 ```
 
 Once the code is evaluated, the value will be replaced by the curly braces and its contents.
-
-For example:
 
 ```
 "{{1 + 5}} dogs went to the park"
@@ -25,7 +22,7 @@ Inner dictionaries need spaces before and after the curly braces.
 
 ## Signal Property Syntax `$`
 
-Use the `$` syntax to access signal properties:
+Use the `$` syntax to access signal properties.
 
 ```
 # given a signal s where s.v1 == 6
@@ -33,7 +30,7 @@ Use the `$` syntax to access signal properties:
 -> "6 dogs went to the park"
 ```
 
-You can also combine the two approaches. For example:
+You can also combine the two approaches.
 
 ```
 "My favorite Integer is {{$v1 if isinstance($v1, int) else 'not an Integer…'}}"
@@ -51,8 +48,7 @@ You can access the raw signal itself, rather than just the attributes, with a lo
 
 ## Escape Characters
 
-To include a $ character in a string literal inside a code snippet, use the backslash (`\`) character to escape it. Similarly, escaping the `}}` or `{{` with a `\` causes the braces to be treated as strings rather than as delimiters. 
-For example:
+To include a $ character in a string literal inside a piece of code, use the backslash (`\`) character to escape it. Similarly, escaping the `}}` or `{{` with a `\` causes the braces to be treated as strings rather than as delimiters. 
 
 ```
 "Code snippets are delimited by \{{ and \}}"
@@ -61,7 +57,7 @@ For example:
 
 ## Conditionals
 
-Conditional expressions can be formatted in Python in one line as follows:
+Conditional expressions can be formatted in Python in one line.
 
 ```
 # given a signal s == { v1: 23, v2: "zabow!", v3: "sad trombone…"}
@@ -81,7 +77,7 @@ The following libraries are imported by default and can be used in expressions:
   - random
   - re
 
-Import other libraries from your Python installation with the following syntax:
+You can import other libraries from your Python installation.
 
 ```
 {{ __import__('module_name').method_name() }}
@@ -90,7 +86,7 @@ Import other libraries from your Python installation with the following syntax:
 
 ## Examples
 
-Bracket notation:
+Bracket notation can be used.
 
 ```
 # given a signal s where s.v1 == {'who': 'Baron Samedi'}
@@ -98,7 +94,7 @@ Bracket notation:
 -> "Baron Samedi and the Jets"
 ```
 
-Methods on signals can be called:
+Methods on signals can be called.
 ```
 # given a signal s where s.get_val() == 'foobar'
 "Opened it with a {{$get_val()}}"
@@ -110,7 +106,7 @@ Methods on signals can be called:
 -> False
 ```
 
-Check signal attribute exists:
+Check that a signal attribute exists.
 ```
 # given a signal s where s.v1 raises AttributeError, s.v2 == 'Cogito' and a default value of None
 "{{ ($v2 + ' ') if (hasattr($, 'v1') or hasattr($, 'v2')) else ''}}ergo sum"
@@ -119,21 +115,20 @@ Check signal attribute exists:
 -> "ergo sum"
 ```
 
-
-Default libraries can be used in expressions:
+Default libraries can be used in expressions.
 ```
 # math operations are allowed by default (as are regex, datetime, random, and json)
 "{{ math.sin(math.radians(90)) }}"
 -> 1.0
 ```
 
-Syntax error:
+Syntax error
 ```
 "If you don't close the brackets {{1 + 5"
 -> "If you don't close the brackets {{1 + 5"
 ```
 
-Raw signal with method:
+Raw signal with method
 ```
 # given a signal s == { v1: 23, v2: "zabow!", v3: "sad trombone…"}
 {{ $.to_dict() }}
