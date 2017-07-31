@@ -1,7 +1,7 @@
 {
   "root": "./docs",
   "title": "nio documentation",
-  "description": "Design complex systems with nio.",
+  "description": "Design complex systems with the simple building blocks of nio.",
   "variables": {
     "company": "nio",
     "product": "nio"
