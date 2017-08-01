@@ -1,5 +1,10 @@
 {% extends template.self %}
 
+{% block search_input %}
+  <div id="book-search-input" role="search">
+    <input type="text" placeholder="search" />
+  </div>
+{% endblock %}
 
 {% block body %}
     {% include "./_header.html" %}
