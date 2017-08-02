@@ -6,6 +6,16 @@
   </div>
 {% endblock %}
 
+{% block javascript %}
+    <script type="text/javascript">
+        (function() {
+          var qtm = document.createElement('script'); qtm.type = 'text/javascript'; qtm.async = 1;
+          qtm.src = 'https://cdn.quantummetric.com/qscripts/quantum-nio.js';
+          var d = document.getElementsByTagName('script')[0]; d.parentNode.insertBefore(qtm, d);
+        })();
+    </script>
+{% endblock %}
+
 {% block body %}
     {% include "./_header.html" %}
 
