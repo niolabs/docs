@@ -1,22 +1,93 @@
-# API Conventions #
+# API Conventions
 
-Most {{ book.product }} binaries can be interacted with through a REST API. The API supports the standard HTTP request types and data responses are of JSON format.
+You can interact with most {{ book.product }} binaries through a REST API. The API supports the standard HTTP request types of `GET`, `POST`, `PUT`, and `DELETE`. Data responses are returned in JSON format.
 
-The REST API is in {{ book.product }} binaries that use the {{ book.product }} REST Component. We will cover components later in the docs.
+The REST API is available in {{ book.product }} binaries that include the {{ book.product }} REST Component. Read more about {{ book.product }} core components in [components](../components/README.md).
 
-## Authentication ##
+## Authentication
 
-Regardless of what form of authorization your project uses, you will have user permissions specified in the file permissions.json in the etc directory of your project.
+Authentication is about who somebody is.
 
-### Basic Auth ###
+Authorization is about what they're allowed to do.
 
-When using basic authentication, the REST API is protected usernames and passwords. To use basic auth, include a base 64 encoded username and password in the Authorization header of your request. For example:
+Authorization for your project's users are specified in the `permissions.json` file in the `etc` directory of your project.
 
-- 'Authorization': 'Basic VXNlcjpVU2Vy' }
+// Need help here...
+Authentication is stored separately and is used to access the {{ book.product }} core.  {{ book.product }} uses two different types of authentication: basic, and OAuth2.
+
+### Basic Auth
+
+When using basic authentication, the REST API is protected by usernames and passwords. To use basic auth, include a base-64 encoded username and password in the Authorization header of your request. For example:
+
+`{ "authorization": "Basic <your encrypted password>" }`
 
 
-### OAuth2 ###
+### OAuth2
 
 When using OAuth 2.0, you need to first get an access token. Once you have one, include it in the header. For example:
 
-- 'Authorization': 'Bearer 0b79bab50daca910b000d4f1a2b675d604257e42' }
+`{ "authorization": "Bearer 0b79bab50daca910b000d4f1a2b675d604257e42" }`
+
+## Testing with cURL
+
+To test API requests and responses, you can use a tool like Postman or, more basic, a cURL command from your terminal. cURL commands start with `curl` and then include the request type, a URL, and possibly a request header and a request body.
+
+### Request Type
+Your request type will be one of `GET`, `POST`, `PUT`, or `DELETE`.
+
+In your cURL command you specify these with
+
+      -XGET
+      -XPOST
+      -XPUT
+      -XDELETE
+
+### Base URL
+Your request type will be followed by a URL.
+
+The base of the URL for your API request will be the address where your {{ book.product }} project is running. This will show up in your terminal in the nio logs.
+
+For a local project
+
+    http://localhost:8181/
+
+For a remote project
+
+    https:// <IP address:port> /
+
+### Endpoint
+
+The endpoint is added to the base URL
+
+    http://localhost:8181/blocks_types
+
+You can also add query parameters to the URL, but the {{ book.product }} API does not use query parameters.
+
+### Headers/Auth
+
+You will need to include your basic auth or OAuth2 authentication as described above. You can add auth to your cURL requests with the `-H` header flag or the `--user` flag followed by a string. Any one of these formats should work
+
+      -H 'authorization: Basic <you encrypted password>'
+
+      -H 'authorization: Bearer <your token here>'
+
+      --user 'Admin:Admin'
+
+Other things you might need in your header include Content-Type.
+
+      -H 'Content-Type: application/json'
+
+### Body
+
+In your request body, sometimes you will need to include data. You can add body data to a cURL request with the `-d` or `--data` flag
+
+    -d '{"type": "LoggerBlock", "name": "Log"}'
+
+    --data '{"type": "LoggerBlock", "name": "Log"}'
+
+
+### Putting It All Together
+
+A typical cURL request the the {{ book.product }} API incorporating all these parts might look like
+
+    curl -XPOST 'http://localhost:8181/blocks' --user 'Admin:Admin' --data '{"type": "LoggerBlock", "name": "Log"}' -H 'Content-Type: application/json'
