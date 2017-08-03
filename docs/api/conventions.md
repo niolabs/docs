@@ -42,9 +42,10 @@ In your cURL command you specify these with
       -XPUT
       -XDELETE
 
-### Base URL
+### URL
 Your request type will be followed by a URL.
 
+#### base URL
 The base of the URL for your API request will be the address where your {{ book.product }} project is running. This will show up in your terminal in the nio logs.
 
 For a local project
@@ -55,7 +56,7 @@ For a remote project
 
     https:// <IP address:port> /
 
-### Endpoint
+#### Endpoint
 
 The endpoint is added to the base URL
 
