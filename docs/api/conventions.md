@@ -4,16 +4,25 @@ You can interact with most {{ book.product }} binaries through a REST API. The A
 
 The REST API is available in {{ book.product }} binaries that include the {{ book.product }} REST Component. Read more about {{ book.product }} core components in [components](../components/README.md).
 
+## Authorization
+
+Setting up permissions in your project.
+
+Authorization is about what users are allowed to do.
+
+Project template sets you up with default users and permissions.
+
+You should change these.
+
+Authorization for your project's users are specified in the `permissions.json` file in the `etc` directory of your project.
+
 ## Authentication
 
 Authentication is about who somebody is.
 
-Authorization is about what they're allowed to do.
+Authentication for your project's users are specified in the `users.json` file in the `etc` directory of your project.
 
-Authorization for your project's users are specified in the `permissions.json` file in the `etc` directory of your project.
-
-// Need help here...
-Authentication is stored separately and is used to access the {{ book.product }} core.  {{ book.product }} uses two different types of authentication: basic, and OAuth2.
+{{ book.product }} can use different types of authentication, for example basic auth and OAuth2.
 
 ### Basic Auth
 
