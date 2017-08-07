@@ -2,7 +2,7 @@
 
 {{ book.product }} block types are the functional pieces of code that generate signals and/or do work with them. Earlier we saw examples of block types such as _CounterIntervalSimulator_ and _Logger_. Information about and interaction with the blocks of a running {{ book.product }} instance is available through the **blocks types** API.
 
-## Get
+## Get API
 
 A `GET` request sent to the `/block_types/<block type name>` endpoint will return a JSON body with information about that block type.
 
@@ -136,19 +136,19 @@ The result of the previous request is:
   - **input**<br>The signal input terminal(s).
   - **output**<br>The signal output terminal(s).
 
-## Get All
+## Get All API
 
 In addition to getting the details of one block type, specified by name, you can get the details of all of your project's block types in one request
 
     curl -XGET 'http://localhost:8181/blocks_types' --user 'Admin:Admin'
 
-## Add
+## Add API
 
 When {{ book.product }} starts up, it discovers and adds all the block types in the project. If you add a block type to a running instance of {{ book.product }}, it will not be discovered until nio starts again. However, you can add the new block type to a running instance with the Add API. After the block code is added to the project directory, use the following request to load the new block type into the running {{ book.product }} instance:
 
     curl -XPUT 'http://localhost:8181/blocks_types/<NewBlockTypeName>' --user 'Admin:Admin'
 
-## Update
+## Update API
 
 When {{ book.product }} starts up, it discovers and adds all the block types in the project. When code in an existing block type is changed in a project (likely as a result of upgrading to a newer version of the block) in a running {{ book.product }} instance, the running {{ book.product }} instance needs to be told to use that new updated code. You can do that with the Update API. Once the new block code is updated in the project directory, use the following request to load the updated block into the running {{ book.product }} instance:
 

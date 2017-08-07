@@ -8,13 +8,15 @@
   },
   "plugins": [
     "theme-nio@git://github.com/nioinnovation/gitbook-plugin-theme-nio.git",
-    "favicon",
-    "video@git://github.com/xgrommx/gitbook-plugin-video"
+    "favicon"
   ],
   "pluginsConfig": {
     "favicon":{
         "shortcut": "img/favicon.ico",
         "bookmark": "img/favicon.ico"
+    },
+    "theme-nio": {
+      "active-location": "docs"
     }
   }
 }

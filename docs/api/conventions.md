@@ -6,9 +6,9 @@ The REST API is available in {{ book.product }} binaries that include the {{ boo
 
 ## Authorization
 
-Setting up permissions in your project.
-
 Authorization is about what users are allowed to do.
+
+Setting up permissions in your project.
 
 Project template sets you up with default users and permissions.
 
@@ -22,7 +22,7 @@ Authentication is about who somebody is.
 
 Authentication for your project's users are specified in the `users.json` file in the `etc` directory of your project.
 
-{{ book.product }} can use different types of authentication, for example basic auth and OAuth2.
+{{ book.product }} can use different types of authentication, for example basic auth and JWT.
 
 ### Basic Auth
 
@@ -30,12 +30,11 @@ When using basic authentication, the REST API is protected by usernames and pass
 
 `{ "authorization": "Basic <your encrypted password>" }`
 
-
-### OAuth2
+### JWT
 
 When using OAuth 2.0, you need to first get an access token. Once you have one, include it in the header. For example:
 
-`{ "authorization": "Bearer 0b79bab50daca910b000d4f1a2b675d604257e42" }`
+`{ "authorization": "Bearer <your token>" }`
 
 ## Testing with cURL
 
