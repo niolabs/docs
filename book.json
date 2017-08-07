@@ -17,6 +17,9 @@
         "shortcut": "img/favicon.ico",
         "bookmark": "img/favicon.ico"
     },
+    "theme-nio": {
+      "active-location": "docs"
+    },
     "toolbar": {
       "buttons":[
         {
