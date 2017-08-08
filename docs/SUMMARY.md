@@ -24,6 +24,7 @@
   * [Blocks Types](api/blocks_types.md)
   * [Blocks](api/blocks.md)
   * [Services](api/services.md)
+  * [Services Types](api/services_types.md)
   * [Additional Endpoints](api/additional.md)
 * [Core Components](components/README.md)
   * [SNMP Agent](components/snmp.md)

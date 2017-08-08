@@ -1,9 +1,9 @@
-# Additional APIs #
+# Additional APIs
 
 {{ book.product }} has some additional APIs that you may find useful as you explore what {{ book.product }} has to offer.
 
-## Configuration Refresh API ##
+## Configuration Refresh API
 
-The ``/config/refresh`` endpoint is used when you update block or service configuration files through some means outside of the {{ book.product }} ``blocks`` and ``services`` APIs. For example, if you use a text editor to modify a block configuration file, you will need to tell a running {{ book.product }} instance to use those changes:
+The `/config/refresh` endpoint is used to update a running {{ book.product }} instance when its block or service configuration files were modified through some means other than the `/blocks` and `/services` APIs. For example, if you use a text editor to modify a block configuration file, you will need to tell a running {{ book.product }} instance to use those changes. You can do this with a GET request to the `/config/request` endpoint of your running instance.
 
     curl -XGET 'localhost:8181/config/refresh' --user 'Admin:Admin'

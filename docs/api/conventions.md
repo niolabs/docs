@@ -36,13 +36,13 @@ The default configuration is shown. You can uncomment the default configuration 
 
 ### Basic Auth
 
-When using basic authentication, the REST API is protected by usernames and passwords. To use basic auth, include a base-64 encoded username and password in the Authorization header of your request. For example:
+When using basic authentication, the REST API is protected by usernames and passwords. To use basic auth, include a base-64 encoded username and password in the Authorization header of your request.
 
 `{ "authorization": "Basic <your encrypted password>" }`
 
 ### JWT
 
-When using JWT (JSON Web Token), you need to first get an access token. Once you have one, include it in the header. For example:
+When using JWT (JSON Web Token), you need to first get an access token. Once you have one, include it in the header.
 
 `{ "authorization": "Bearer <your token>" }`
 
@@ -80,7 +80,7 @@ The endpoint is added to the base URL
 
     http://localhost:8181/blocks_types
 
-You can also add query parameters to the URL, but the {{ book.product }} API does not use query parameters.
+You can also add query parameters to the URL, but for the most part, the {{ book.product }} API does not use query parameters.
 
 ### Headers/Auth
 
@@ -92,7 +92,7 @@ In your request, you will need to include your basic auth or JWT authentication 
 
       --user 'Admin:Admin'
 
-Other things you might need in your header include Content-Type.
+If you are sending data with your request, you will also want to include the data's Content-Type in your header.
 
       -H 'Content-Type: application/json'
 

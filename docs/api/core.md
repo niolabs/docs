@@ -4,7 +4,7 @@
 
 ## nio
 
-The `/nio` endpoint is where you will find information about your running {{ book.product }} instances:
+The `/nio` endpoint is where you will find information about your running {{ book.product }} instances
 
     curl -XGET 'localhost:8181/nio' -H 'authorization: Basic <your encrypted password>'
 
@@ -33,16 +33,16 @@ The following JSON body is returned
 }
 ```
 
-**components**<br>Core [components](../components/README.md) running in the binary.
+**components**<br>The core [components](../components/README.md) running in the binary.
 
-**modules**<br>Modules that interface between the core and blocks such as Communication and Persistence.
+**modules**<br>The modules that interface between the core and blocks such as Communication and Persistence.
 
 **nio**
-  - **binary**<br>Name of executable binary that was run against the project.
-  - **build**<br>Build version of binary.
-  - **version**<br>Version of {{ book.product }} framework, not to be confused with `build` which is the version of the `binary`.
+  - **binary**<br>The name of executable binary that was run against the project.
+  - **build**<br>The build version of the binary.
+  - **version**<br>The version of the {{ book.product }} framework, not to be confused with the **build** version which is the version of the **binary**.
 
-**start_time**<br>Datetime string at which {{ book.product }} was started.
+**start_time**<br>A datetime string that indicates when {{ book.product }} was started.
 
 
 ## Shutdown

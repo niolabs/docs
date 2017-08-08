@@ -1,69 +1,61 @@
-# Blocks API #
+# Blocks API
 
-A configured instance of a {{ book.product }} block type referred to simply as a block. While block types are classes and have code, blocks are specific configurations of those block type's properties. Earlier we saw an example of a _Logger_ block instance created with the name `Log`. Information about and interaction with individual block configurations in a running {{ book.product }} instance are available through the blocks API.
+A configured instance of a {{ book.product }} block type is referred to simply as a block. While block types are classes and have code, blocks are specific configurations of a block type's properties. Earlier we saw an example of a _Logger_ block instance created with the name `Log`. Information about and interaction with individual block configurations in a running {{ book.product }} instance are available through the `/blocks` API.
 
 ## Get API
 
-The get API returns a JSON body with information about a block based on its name. The following example gets the information for the configured Logger block `Log`:
+The get API returns a JSON body with information about a block based on its name. The following example gets the information for the configured _Logger_ block with the name `Log`
 
     curl -XGET 'http://localhost:8181/blocks/Log' --user 'Admin:Admin'
 
-The result of the previous request is:
+The result of the previous request is
 
-<dl>
-  <dt>    {</dt>
-  <dd>
-    <p>{</p>
-    <p>"type": "Logger",</p>
-    <p>"name": "Log"</p>
-    <p>"version": "0.0.0",</p>
-    <p>"log_level": "INFO",</p>
-    <p>"log_at": "INFO",</p>
-    <p>}</p>
-  </dd>
-</dl>
-<dl>
-  <dt>type</dt>
-  <dd>The block type of the block configuration.</dd>
-</dl>
-<dl>
-  <dt>version</dt>
-  <dd>The version of the block type when the block configuration was created.</dd>
-</dl>
-<dl>
-  <dt>name</dt>
-  <dd>The name of the block configuration. This must be unique among all blocks, regardless of type.</dd>
-</dl>
-<dl>
-  <dt>log_level</dt>
-  <dd>Level at which the block logs messages. Messages are logged for the specified `log_level` and all higher level.</dd>
-</dl>
-<dl>
-  <dt>log_at</dt>
-  <dd>`log_at` is specific to the `Logger` block. It is the level at which Signal enter the block will be logged at. `log_level` needs to be at least `log_at` or lower for the Signals ot be logged.</dd>
-</dl>
-Each block type has its own unique properties that will be viewable here.
+```json
+{
+  "type": "Logger",
+  "version": "1.0.0",
+  "name": "Log",
+  "log_level": "INFO",
+  "log_at": "INFO"
+}
+```
+
+**type**<br>The block type of the block configuration.
+
+**version**<br>The version of the block when the block configuration was created.
+
+**name**<br>The name of the block configuration. This must be unique among all blocks, regardless of type.
+
+**log_level**<br>The number of log messages displayed, from `NOTSET` on the bottom, which includes all messages logged, to `CRITICAL` on the top, which contains only the most critical messages. Messages are shown for the specified `log_level` and all levels above.
+
+The four properties listed above are common to all block types.
+
+**log_at**<br>`log_at` is a property specific to the _Logger_ block type and is detailed in the _Logger_ block type specifications.
+
+Other block types will show their own properties in the response. For example, the _AttributeSelector_ block type has an `attributes` property instead of 'log_at'.
+
+      "attributes": []
 
 ## Get All API
 
-In addition to getting the details of one block configuration, specified by name, you can get the details of all block configurations in one request:
+In addition to getting the details of one block configuration, specified by name, you can get the details of all block configurations in one request
 
     curl -XGET 'http://localhost:8181/blocks' --user 'Admin:Admin'
 
 ## Create API
 
-If you're working with a {{ book.product }} project from scratch, you're going to be creating and configuring blocks. Create a new configuration of a block with the create API by POSTing JSON data. When creating a new block configuration, you can optionally include the configured values of the block type properties. At a minimum, you must specify the block `type`, the `name` of the new configuration and values for any required properties that do not have a default value. For example, to create the `Log` block of type `Logger`:
+If you're working with a {{ book.product }} project from scratch, you're going to be creating and configuring blocks. You can create a new configuration of a block with the create API by sending a POST request to `/blocks` with the applicable JSON data. When creating a new block configuration, you can optionally include the configured values of the block type's properties. At a minimum, you must specify the block `type`, the `name` of the new configuration, and values for any required properties that do not have a default value. For example, to create a _Logger_ block type with the name `Log`
 
     curl -XPOST 'http://localhost:8181/blocks' --user 'Admin:Admin' --data '{"type": "LoggerBlock", "name": "Log"}' -H 'Content-Type: application/json'
 
 ## Update API
 
-When you want to update the configuration of a block configuration, PUT the JSON data to the block name. You only need to PUT the properties that you are updating:
+When you want to update the configuration of a block, send a PUT request to `/blocks` with the block-name endpoint and include the new JSON data. You only need to include the properties that you are updating in your PUT request, in this case `log_level`.
 
     curl -XPUT 'http://localhost:8181/blocks/Log' --user 'Admin:Admin' --data '{"log_level": "DEBUG"}' -H 'Content-Type: application/json'
 
 ## Delete API
 
-Naturally, you'll make mistakes or refactor and want to delete a configured block:
+Naturally, you'll make mistakes or refactor and want to delete a configured block. To delete a named block, send a DELETE request to `/blocks` with the name of the block you want to delete as the endpoint.
 
     curl -XDELETE 'http://localhost:8181/blocks/Log' --user 'Admin:Admin'
