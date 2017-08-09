@@ -4,7 +4,7 @@ Services are the things that run in {{ book.product }} and where you connect you
 
 ## Get API
 
-The get API returns a JSON body with information about a service based on its name. The following example gets the information for the service `SimulateAndLog`.
+The Get API returns a JSON body with information about a service based on its name. The following example gets the information for the service `SimulateAndLog`.
 
     curl -XGET 'http://localhost:8181/services/SimulateAndLog' --user 'Admin:Admin'
 
@@ -60,19 +60,19 @@ The result of the previous request is
 
 ## Get All API
 
-In addition to getting the details of one service configuration, specified by name, you can get the details of all service configurations in one request:
+In addition to getting the details of one service configuration, specified by name, you can get the details of all service configurations in one request
 
     curl -XGET 'http://localhost:8181/services' --user 'Admin:Admin'
 
 ## Create API
 
-If you're working with a {{ book.product }} project from scratch, you're going to be creating and configuring services. Create a new service with the create API by sending a POST request with the applicable JSON data. When creating a new service, you can optionally include the configured values of the service type properties. At a minimum, you must specify the service `type` and `name` and any configuration values for required service properties that do not have a default value. For example, to create the `SimulateAndLog` service of the basic type `Service`
+If you're working with a {{ book.product }} project from scratch, you're going to be creating and configuring services. Create a new service with the Create API by sending a POST request with the applicable JSON data. When creating a new service, you can optionally include the configured values of the service type properties. At a minimum, you must specify the service `type` and `name` and any configuration values for required service properties that do not have a default value. For example, to create the `SimulateAndLog` service of the basic type `Service`
 
     curl -XPOST 'http://localhost:8181/services' --user 'Admin:Admin' --data '{"type": "Service", "name": "SimulateAndLog"}' -H 'Content-Type: applcation/json'
 
 ## Update API
 
-When you want to update the configuration of a service, send a PUT request to `/services` with the service name as the endpoint and include any new JSON data. You only need to include the properties that you are updating in your PUT request, in this case `log_level`
+When you want to update the configuration of a service, send a PUT request to `/services` with the service name as the endpoint and include any new JSON data. You only need to include the properties that you are updating in your PUT request, in this case, `log_level`
 
     curl -XPUT 'http://localhost:8181/services/SimulateAndLog' --user 'Admin:Admin' --data '{"log_level": "DEBUG"}' -H 'Content-Type: applcation/json'
 

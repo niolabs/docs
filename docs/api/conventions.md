@@ -16,7 +16,7 @@ Authorization for your project's users are specified in the `permissions.json` f
 
 If you want to secure your project and its API, you should change these user names and passwords and specify permissions.
 
-You can set up the location of your users and permissions files in the `[security]` section of the `nio.conf` file.
+You can set up the location of your users and permissions files in the `[security]` section of the `nio.conf` file, which uses YAML.
 
 ```
 [security]
@@ -30,7 +30,7 @@ You can set up the location of your users and permissions files in the `[securit
 #permissions=etc/permissions.json
 ```
 
-The default configuration is shown. You can uncomment the default configuration and it will not change. Uncomment the configuration and change it to direct {{ book.product }} to find your users and permissions files other than `users.json` and `permissions.json`.
+The default configuration is shown. You can uncomment the default configuration and it will not change. Uncomment the configuration and edit it if you want to direct {{ book.product }} to find your users and permissions in files other than `users.json` and `permissions.json`.
 
 {{ book.product }} can use different types of authentication, for example basic auth and JWT.
 
