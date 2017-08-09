@@ -4,7 +4,7 @@ Services are the things that run in {{ book.product }} and where you connect you
 
 ## Get API
 
-The get API returns a JSON body with information about a service based on its name. The following example gets the information for the service `SimulateAndLog`
+The get API returns a JSON body with information about a service based on its name. The following example gets the information for the service `SimulateAndLog`.
 
     curl -XGET 'http://localhost:8181/services/SimulateAndLog' --user 'Admin:Admin'
 

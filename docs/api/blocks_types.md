@@ -13,7 +13,7 @@ The following example gets the information for the _Logger_ block type
 The result of the previous request is
 ```json
 {
-  "name": "Logger"
+  "name": "Logger",
   "version": "0.0.0",
   "namespace": "blocks.logger.logger_block.Logger",
   "properties": {
@@ -74,18 +74,18 @@ The result of the previous request is
   },
   "commands": {
     "properties": {
-      "title": "properties"
-      "params": {},
+      "title": "properties",
+      "params": {}
     },
     "log": {
-      "title": "log"
+      "title": "log",
       "params": {
         "phrase": {
           "allow_none": false,
           "title": "phrase",
           "default": "Default phrase"
         }
-      },
+      }
     }
   },
   "attributes": {

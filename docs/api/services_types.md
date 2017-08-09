@@ -1,14 +1,14 @@
 # Services Types API
 
-Service types contain meta data for services and can be accessed with `/services_types` endpoint.
+Service types contain metadata for services and can be accessed with `/services_types` API.
 
 ## Get API
 
-The get API returns a JSON body with information about the service type with the name `Service` and its properties.
+The get API returns a JSON body with information about the service type with a particular name. For example, send a GET request to `/services_types` with the name `Service` as its endpoint
 
     curl -XGET 'http://localhost:8181/services_types/Service' --user 'Admin:Admin'
 
-The result of the previous request is
+and the result will be
 
 ```
 {
