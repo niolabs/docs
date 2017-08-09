@@ -6,7 +6,7 @@ Service types contain metadata for services and can be accessed with `/services_
 
 The Get API returns a JSON body with information about the service type with a particular name. For example, send a GET request to `/services_types` with the name `Service` as its endpoint
 
-    curl -XGET 'http://localhost:8181/services_types/Service' --user 'Admin:Admin'
+    curl -XGET 'http://localhost:8181/services_types/Service'
 
 and the result will be
 
@@ -153,4 +153,4 @@ and the result will be
 
 Get details of all the service types in your project with a request to the `/services_types` endpoint.
 
-      curl -XGET 'http://localhost:8181/services_types' --user 'Admin:Admin'
+      curl -XGET 'http://localhost:8181/services_types'

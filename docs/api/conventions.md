@@ -8,15 +8,17 @@ The REST API is available in {{ book.product }} binaries that include the {{ boo
 
 Authentication is about verifying identity.
 
-Authorization is about what users are allowed to do (also know as "permissions").
+Authorization is about what users are allowed to do (also known as "permissions").
 
-User names and passwords (authentication) are specified in the `users.json` file in the `etc` directory.
+You will need to include an authorization header with your {{ book.product }} API requests. For examples of authorization headers, see [Basic Auth](#basic-auth) and [JWT](#jwt). For examples of adding headers to cURL requests see [Headers](#headers).
+
+User names and passwords are specified in the `users.json` file in the `etc` directory.
 
 Authorization for your project's users are specified in the `permissions.json` file in the `etc` directory of your project.
 
 If you want to secure your project and its API, you should change these user names and passwords and specify permissions.
 
-You can set up the location of your users and permissions files in the `[security]` section of the `nio.conf` file, which uses YAML.
+You can change the location of your users and permissions files in the `[security]` section of `nio.conf`, a YAML file.
 
 ```
 [security]
@@ -30,25 +32,29 @@ You can set up the location of your users and permissions files in the `[securit
 #permissions=etc/permissions.json
 ```
 
-The default configuration is shown. You can uncomment the default configuration and it will not change. Uncomment the configuration and edit it if you want to direct {{ book.product }} to find your users and permissions in files other than `users.json` and `permissions.json`.
+The default configuration is shown. You can uncomment the default configuration and it will not change. Uncomment the configuration and edit it if you want to direct {{ book.product }} to find your users and permissions in files other than `etc/users.json` and `etc/permissions.json`.
 
-{{ book.product }} can use different types of authentication, for example basic auth and JWT.
+{{ book.product }} can use different types of authentication, for example basic authentication and JWT.
 
 ### Basic Auth
 
-When using basic authentication, the REST API is protected by usernames and passwords. To use basic auth, include a base-64 encoded username and password in the Authorization header of your request.
+When using basic authentication, the REST API requires a username and password. To use basic auth, include a base-64 encoded version of your `username:password` in the Authorization header of your request. The default `username:password` from the project template is `Admin:Admin`. Basic authorization in your request header looks like
 
-`{ "authorization": "Basic <your encrypted password>" }`
+`{ "authorization": "Basic QWRtaW46QWRtaW4=" }`
+
+For examples of adding headers to a cURL request see [Headers](#headers).
 
 ### JWT
 
-When using JWT (JSON Web Token), you need to first get an access token. Once you have one, include it in the header.
+When using JWT (JSON Web Tokens), you need to first get an access token. Once you have one, include it in the header.
 
 `{ "authorization": "Bearer <your token>" }`
 
+For examples of adding headers to a cURL request see [Headers](#headers).
+
 ## Testing with cURL
 
-To test API requests and responses, you can use a tool like Postman or, more basic, a cURL command from your terminal. cURL commands start with `curl` and then include the request type, a URL, and possibly a request header and a request body.
+To test {{ book.product }} API requests and responses, you can use a tool like [Postman](https://www.getpostman.com/) or, more basic, a cURL command from your terminal. cURL commands start with `curl` and then include the request type, a URL, and possibly a request header and a request body. For the {{ book.product }} API, an authorization [header](#headers) is required.
 
 ### Request Type
 Your request type will be one of `GET`, `POST`, `PUT`, or `DELETE`.
@@ -63,7 +69,7 @@ In your cURL command you specify these with
 ### URL
 Your request type will be followed by a URL.
 
-#### base URL
+#### Base URL
 The base of the URL for your API request will be the address where your {{ book.product }} project is running. This will show up in your terminal in the nio logs.
 
 For a local project
@@ -82,11 +88,11 @@ The endpoint is added to the base URL
 
 You can also add query parameters to the URL, but for the most part, the {{ book.product }} API does not use query parameters.
 
-### Headers/Auth
+### Headers
 
-In your request, you will need to include your basic auth or JWT authentication as described above. You can add auth to your cURL requests with the `-H` header flag or the `--user` flag followed by a string. Any one of these formats should work
+In your request, you will need to include a header with your [basic auth](#basic-auth) or [JWT](#jwt) authentication. You can add auth to your cURL requests with the `-H` header flag or the `--user` flag followed by a string. Any one of these formats should work
 
-      -H 'authorization: Basic <you encrypted password>'
+      -H 'authorization: Basic <64-bit encoded username:password>'
 
       -H 'authorization: Bearer <your token here>'
 

@@ -6,7 +6,7 @@
 
 The `/nio` endpoint is where you will find information about your running {{ book.product }} instances
 
-    curl -XGET 'localhost:8181/nio' -H 'authorization: Basic <your encrypted password>'
+    curl -XGET 'localhost:8181/nio'
 
 The following JSON body is returned
 
@@ -49,7 +49,7 @@ The following JSON body is returned
 
 The `/shutdown` endpoint is used to shutdown a running {{ book.product }} instance.
 
-    curl -X GET 'http://localhost:8181/shutdown' -H 'authorization: Basic QWRtaW46QWRtaW4='
+    curl -XGET 'http://localhost:8181/shutdown'
 
 The following HTML is returned after a successful shutdown request
 

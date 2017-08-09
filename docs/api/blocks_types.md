@@ -8,7 +8,7 @@ A `GET` request sent to the `/blocks_types/<block type name>` endpoint will retu
 
 The following example gets the information for the _Logger_ block type
 
-    curl -XGET 'http://localhost:8181/blocks_types/Logger' -H 'authorization: Basic <your encrypted password>'
+    curl -XGET 'http://localhost:8181/blocks_types/Logger'
 
 The result of the previous request is
 ```json
@@ -141,16 +141,16 @@ The result of the previous request is
 
 In addition to getting the details of one block type, specified by name, you can get the details of all of your project's block types in one request.
 
-    curl -XGET 'http://localhost:8181/blocks_types' --user 'Admin:Admin'
+    curl -XGET 'http://localhost:8181/blocks_types'
 
 ## Add API
 
 When {{ book.product }} starts up, it discovers and adds all the block types in the project. If you add a new block type to a running instance of {{ book.product }}, it will not be discovered until nio starts again. However, you can add the new block type to a running instance with the Add API. After the block code is added to the project directory, send a PUT request to the new block type name to load the new block type into the running {{ book.product }} instance
 
-    curl -XPUT 'http://localhost:8181/blocks_types/<NewBlockTypeName>' --user 'Admin:Admin'
+    curl -XPUT 'http://localhost:8181/blocks_types/<NewBlockTypeName>'
 
 ## Update API
 
 When {{ book.product }} starts up, it discovers and adds all the block types in the project. When code in an existing block type is changed in a project (usually after upgrading to a newer version of the block type) in a running {{ book.product }} instance, the running {{ book.product }} instance needs to be told to use that updated code. You can do that with the Update API. Once the new block code is updated in the project directory, send a PUT request to the updated block type to load it into the running {{ book.product }} instance
 
-    curl -XPUT 'http://localhost:8181/blocks_types/Logger' --user 'Admin:Admin'
+    curl -XPUT 'http://localhost:8181/blocks_types/Logger'
