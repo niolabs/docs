@@ -6,6 +6,7 @@
   * [Locally](getting_started/locally.md)
   * [Your First Service](getting_started/first_service.md)
 * [System Designer](system-designer/README.md)
+  * [Browser Support](system-designer/browser-support.md)
 * [Blocks](blocks/README.md)
   * [Properties](blocks/properties/README.md)
     * [Expressions](blocks/properties/expressions.md)
