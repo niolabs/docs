@@ -1,55 +1,56 @@
-# Core APIs #
+# Core APIs
 
-{{ book.product }} has a few crucial api endpoints: ``/n.io`` and ``/shutdown``.
+{{ book.product }} core has a few crucial API endpoints: `/nio` and `/shutdown`.
 
-## n.io API ##
+## nio
 
-The ``/n.io`` endpoint is where you will find information about your running {{ book.product }} instances:
+The `/nio` endpoint is where you will find information about your running {{ book.product }} instances
 
-    curl -XGET 'localhost:8181/n.io'
+    curl -XGET 'localhost:8181/nio'
 
-The following json body is returned:
+The following JSON body is returned
 
-<dl>
-  <dt>    {</dt>
-  <dd>
-    <p>{</p>
-    <p>"start_time": "2016-05-04 18:26:46.093569",</p>
-    <p>"n.io": {</p>
-    <p>"binary": "n.io_full",</p>
-    <p>"build": "20160426",</p>
-    <p>"version": "2.0.0b4"</p>
-    <p>},</p>
-    <p>"modules": {},</p>
-    <p>"components": {</p>
-    <p>"ProjectManager": {},</p>
-    <p>"ManagementPublisher": {},</p>
-    <p>"BlockManager": {},</p>
-    <p>"LogManager": {},</p>
-    <p>"ServiceExecutor": {},</p>
-    <p>"ConfigMonitor": {},</p>
-    <p>"RESTManager": {},</p>
-    <p>"ServiceMonitor": {},</p>
-    <p>"ServiceManager": {}</p>
-    <p>}</p>
-    <p>}</p>
-  </dd>
-</dl>
-- ``start_time`` - Datetime string at which {{ book.product }} was started.
-- ``n.io``
+```json
+{
+    "components": {
+        "ServiceMonitor": {},
+        "ConfigMonitor": {},
+        "ProjectManager": {},
+        "LogManager": {},
+        "BlockManager": {},
+        "ManagementPublisher": {},
+        "RESTManager": {},
+        "ServiceManager": {},
+        "ZmqCommunicationAPIManager": {}
+    },
+    "modules": {},
+    "nio": {
+        "version": "2.1.0",
+        "binary": "nio_full",
+        "build": "20170509"
+    },
+    "start_time": "2017-08-02 11:24:19.427352"
+}
+```
 
-  - ``binary`` - Name of executable binary that was run against the project.
-  - ``build`` - Build version of binary.
-  - ``version`` - Version of {{ book.product }} framework, not to be confused with ``build`` which is the version of the ``binary``.
+**components**<br>The core [components](../components/README.md) running in the binary.
+
+**modules**<br>The modules that interface between the core and blocks such as Communication and Persistence.
+
+**nio**
+  - **binary**<br>The name of executable binary that was run against the project.
+  - **build**<br>The build version of the binary.
+  - **version**<br>The version of the {{ book.product }} framework, not to be confused with the **build** version which is the version of the **binary**.
+
+**start_time**<br>A datetime string that indicates when {{ book.product }} was started.
 
 
+## Shutdown
 
-## Shutdown API ##
+The `/shutdown` endpoint is used to shutdown a running {{ book.product }} instance.
 
-The ``/shutdown`` endpoint is used to shutdown a running {{ book.product }} instance.
+    curl -XGET 'http://localhost:8181/shutdown'
 
-    curl -XGET 'localhost:8181/n.io'
-
-The following html is returned on a successful shutdown:
+The following HTML is returned after a successful shutdown request
 
     Shutdown complete

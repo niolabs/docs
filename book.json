@@ -8,8 +8,8 @@
   },
   "plugins": [
     "theme-nio@git://github.com/nioinnovation/gitbook-plugin-theme-nio.git",
-    "-sharing",
     "favicon",
+    "-sharing",
     "toolbar"
   ],
   "pluginsConfig": {

@@ -4,6 +4,7 @@ Part of the {{ book.product }} binary consists of core components. These are pie
 
 Examples of core components include:  
   * A project manager component that exposes an API to interact with your project contents
+  * A REST component that provides an interface for interacting with {{ book.product }} services and blocks
   * An SNMP agent component that exposes runtime information in SNMP form for easy ingestion from monitoring tools
   * A logging component that exposes an API to retrieve an instance's log messages
 
