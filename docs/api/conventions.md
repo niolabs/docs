@@ -92,7 +92,7 @@ You can also add query parameters to the URL, but for the most part, the {{ book
 
 In your request, you will need to include a header with your [basic auth](#basic-auth) or [JWT](#jwt) authentication. You can add auth to your cURL requests with the `-H` header flag or the `--user` flag followed by a string. Any one of these formats should work
 
-      -H 'authorization: Basic <64-bit encoded username:password>'
+      -H 'authorization: Basic <base 64 encoded username:password>'
 
       -H 'authorization: Bearer <your token here>'
 
