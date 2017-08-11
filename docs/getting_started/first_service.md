@@ -47,7 +47,7 @@ By now, you are more than ready to see something happen.
 
 ## Configure Blocks
 
-So far you have only viewed the default behavior of this block. You can modify that by configuring the Simulate block. You can change the interval from 1 to 2 seconds to see the signals logged every other second.
+So far you have only viewed the default behavior of this block. You can configure the Simulate block to change the interval from 1 to 2 seconds to see the signals logged every other second.
 
 To configure blocks:
 1. Double-click the **Simulate** block to view the properties in the dialog box.
