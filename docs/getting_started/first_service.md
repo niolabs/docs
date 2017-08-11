@@ -8,7 +8,7 @@ To add a service:
 2. Click **Add New Service**. 
 3. Type **SimulateAndLog**, leave the service type as **Service**, and click **Accept**.
 4. Select the **SimulateAndLog** service.
-5. In the Search box, type `counter`.
+5. In the Search box, type `counterintervalsimulator`.
 6. Click  **Install Block**.
 7. Drag the **CounterIntervalSimulator** block on to the canvas.
 8. Name the block **Simulate** and click **Accept**.
