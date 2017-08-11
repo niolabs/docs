@@ -2,6 +2,8 @@
 
 The easiest way to run {{ book.product }} is by running it in the cloud.
 
+## Add a Cloud Instance
+
 To create a cloud instance:
 
 1. Log in to the System Designer.
