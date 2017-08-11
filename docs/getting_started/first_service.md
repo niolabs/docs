@@ -2,7 +2,7 @@
 
 In the System Designer, you begin with an empty canvas full of possibilities, but there are no services yet. While it won't get too exciting quite yet, you can start by building a very basic service to simulate and log signals.
 
-``To add a service:
+To add a service:
 
 1. Select the name of the instance.
 2. Click **Add New Service**. 
