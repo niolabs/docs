@@ -42,11 +42,12 @@ To create a new service, click **Add New Service**.
 
 ## Block Library
 
-The block library contains a list of the blocks that have been categorized by their function.
+The block library contains a list of blocks.
 
 ![](/img/vg-block-library.png)
 
-To find a block, click the category and browse through the individual blocks within that category.
+In the Search box, enter the name of a block. As you type, the list is filtered.
+
 
 ## Block Workflow
 
@@ -56,9 +57,7 @@ The block workflow represents the the inputs, outputs, and logic for the workflo
 
 To view the block workflow, click the service name.
 
-To add a block to the service, drag and drop a block from the block library to the canvas.
-
-To create a new block, drag and drop the **Create** block from the block library to the canvas.
+To add a block to the service, install and then drag and drop a block from the block library to the canvas.
 
 ## Breadcrumb
 
