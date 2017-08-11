@@ -16,8 +16,11 @@ To install {{ book.product}}, enter the following command:
 pip3 install your_wheel_file.whl
 ```
 To run {{ book.product}}, enter the following command:
+
 `nio_run`
+
 If that command is not available, make sure your Python binary installation directory is on your PATH.
+
 To install the {{ book.product}} Command Line Interface \(CLI\), enter the following command:
 ```
 pip3 install nio-cli
@@ -28,9 +31,12 @@ pip3 install nio-cli
 Now that we have the {{ book.product}} binary to run, we need a {{ book.product}} project to run it against. Obtain a {{ book.product}} project template by cloning the [Project Template repository](https://github.com/nioinnovation/project_template) or  use the {{ book.product}} CLI.
 
 To clone the project template using CLI, enter the following command:
+
 `nio new first_project`
+
 The `first_project` directory is created in your working directory containing the {{ book.product}} project.
-To clone the project template using git, clone the template and initialize the submodules which contain the blocks.
+
+To clone the project template using git, clone the template,  and initialize the submodules which contain the blocks.
 ```
 git clone https://github.com/nioinnovation/project_template.git first_project
 cd first_project
@@ -55,7 +61,7 @@ The log messages display, similar to the following output, but there should be n
 [2016-03-04 23:49:41.227] NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from: starting to: started
 ```
 
-If you see those logs, it means {{ book.product}} is up and running. Congratulations!
+If you see those logs, {{ book.product}} is up and running. Congratulations!
 
 ## Add a Local Instance
 
@@ -80,7 +86,7 @@ Once your instance is loaded and available, you can add services and blocks in t
 
 ## Add Blocks to a Project
 
-Before we move on, you're going to want to add some blocks to your project. Block can be added from the command line or in the System Designer.
+Before we move on, you're going to want to add some blocks to your project. Blocks can be added from the command line or in the System Designer.
 
 nio blocks are installed to instances using the Block Library. The collection of blocks created by {{ book.product }} is also stored in the [nio-blocks GitHub repository](https://github.com/nio-blocks). You can search for blocks in the System Designer or in GitHub. 
 
