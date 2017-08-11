@@ -86,7 +86,7 @@ Once your instance is loaded and available, you can add services and blocks in t
 
 ## Add Blocks to a Project
 
-Before we move on, you're going to want to add some blocks to your project. Blocks can be added from the command line or in the System Designer.
+Before we move on, you're going to want to add some blocks to your project. Blocks can be added in the System Designer or from the command line.
 
 nio blocks are installed to instances using the Block Library. The collection of blocks created by {{ book.product }} is also stored in the [nio-blocks GitHub repository](https://github.com/nio-blocks). You can search for blocks in the System Designer or in GitHub. 
 
@@ -106,9 +106,10 @@ To add four popular blocks using the Command Line Interface (CLI):
 nio add logger simulator filter dynamic_fields
 ```
 
-To add blocks:
+To add private blocks manually:
 
-1. From the project root directory, clone the relevant block repository into the `blocks/` folder
+1. From your private site, determine the URL of the block you want to add.
+2. From the project root directory, clone the relevant block from your private repository into the `blocks/` folder
 ```
-git submodule add https://github.com/nio-blocks/logger.git blocks/logger
+git submodule add https://github.com/yourprivate-blocks/logger.git blocks/logger
 ```
