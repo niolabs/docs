@@ -95,16 +95,8 @@ To add a block in the System Designer:
 1. Click the **Block Library** in the upper-right corner.
 2. In the Search box, enter the name of a block. As you type, the list is filtered.
 3. Click the **Install Block** button which resembles a cloud with a down arrow.
-3. Drag a block onto the canvas.
+4. Drag a block onto the canvas.
 5. Type the name of the block and click **Accept**. 
-
-To add four popular blocks using the Command Line Interface (CLI):
-
-1. Press Ctrl-C to exit {{ book.product}}.
-2. Type the following command to add the blocks.
-```
-nio add logger simulator filter dynamic_fields
-```
 
 To add private blocks manually:
 
