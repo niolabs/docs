@@ -22,13 +22,11 @@ To add a service:
 2. Click **Add New Service**.
 3. Type the name of the service, leave the service type as **Service**, and click **Accept**.
 
-## Add Blocks
+## Add A Block
 
 You now have an empty canvas, and now you are ready for blocks.
 
-
-
-Blocks are installed to instances using git URLs. Specifically, the [nio-blocks GitHub repository](https://github.com/nio-blocks) is the collection of blocks created by {{ book.product }}.  Browse and search the blocks to determine the function you want to use. For example, the `Filter` block is located at `https://github.com/nio-blocks/filter.git` .
+nio blocks are installed to instances using the Block Library. The collection of blocks created by {{ book.product }} is also stored in the [nio-blocks GitHub repository](https://github.com/nio-blocks). You can search for blocks in the System Designer or in GitHub. 
 
 To add a block:
 
@@ -36,4 +34,4 @@ To add a block:
 2. In the Search box, enter the name of a block. As you type, the list is filtered.
 3. Click the **Install Block** button which resembles a cloud with a down arrow.
 3. Drag the **Logger** block onto the canvas.
-5. Name the block and click **Accept**. 
+5. Type the name of the block and click **Accept**. 
