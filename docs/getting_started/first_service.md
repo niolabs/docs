@@ -18,13 +18,13 @@ To add a service:
 6. Click  **Install Block**.
 7. Drag the **CounterIntervalSimulator** block on to the canvas.
 8. Name the block **Simulate** and click **Accept**.
-9. Double-click on the **Simulate** block to open the properties and click **Save**.
+9. Double-click the **Simulate** block to open the properties and click **Save**.
 5. In the Search box, type logger. 
 6. Click **Install Block**.
 5. Drag the **Logger** block onto the canvas.
 6. Name the block **Log** and click **Accept**.
-9. Double-click on the **Log** block to open the properties and click **Save**.
-9. Connect the blocks by clicking and dragging the output terminal of the **Simulate** block and release it on the input terminal of the **Log** block.
+9. Double-click the **Log** block to open the properties and click **Save**.
+9. Click and drag the output terminal of the **Simulate** block and release it on the input terminal of the **Log** block to connect the blocks.
 10. Click **Save**.
 
 ## Running Services
