@@ -95,7 +95,7 @@ To add a block in the System Designer:
 1. Click the **Block Library** in the upper-right corner.
 2. In the Search box, enter the name of a block. As you type, the list is filtered.
 3. Click the **Install Block** button which resembles a cloud with a down arrow.
-3. Drag the a block onto the canvas.
+3. Drag a block onto the canvas.
 5. Type the name of the block and click **Accept**. 
 
 To add four popular blocks using the Command Line Interface (CLI):
@@ -116,6 +116,5 @@ git submodule add https://github.com/yourprivate-blocks/logger.git blocks/logger
 3. Restart the System Designer.
 4. Click the **Block Library** in the upper-right corner.
 5. In the Search box, enter the name of a block. As you type, the list is filtered.
-6. Click the **Install Block** button which resembles a cloud with a down arrow.
-7. Drag the your block onto the canvas.
-8. Type the name of the block and click **Accept**. 
+6. Drag the your block onto the canvas.
+7. Type the name of the block and click **Accept**. 
