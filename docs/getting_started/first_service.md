@@ -2,13 +2,21 @@
 
 In the System Designer, you begin with an empty canvas full of possibilities, but there are no services yet. While it won't get too exciting quite yet, you can start by building a very basic service to simulate and log signals.
 
+1. Click the **Block Library** in the upper-right corner.
+2. In the Search box, enter the name of a block. As you type, the list is filtered.
+3. Click the **Install Block** button which resembles a cloud with a down arrow.
+3. Drag the **Logger** block onto the canvas.
+5. Type the name of the block and click **Accept**. 
+
 To add a service:
 
 1. Select the name of the instance.
 2. Click **Add New Service**. 
 3. Type **SimulateAndLog**, leave the service type as **Service**, and click **Accept**.
-4. Double-click the **SimulateAndLog** service.
-5. From the right, click **LB** and drag a LoggerBlock block on to the canvas.
+4. Select the **SimulateAndLog** service.
+5. In the Search box, type logger. 
+6. Click the **Install Block** button which resembles a cloud with a down arrow.
+5. Drag the **Logger** block onto the canvas.
 6. Name the block **Log**.
 7. Click on **CIS** and drag a **CounterIntervalSimulator** block on to the canvas.
 8. Name the block **Simulate**.
