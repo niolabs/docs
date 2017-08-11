@@ -9,7 +9,7 @@ Requirements
 * Download Python 3.4.5 or 3.5.2 from [https://www.python.org/downloads/](https://www.python.org/downloads/).
 * Obtain the {{ book.product}} binary Python wheel file (`.whl`) with your license agreement.
 
-## Install
+## Install {{ book.product}}
 
 To install {{ book.product}}, enter the following command:
 ```
@@ -26,7 +26,7 @@ To install the {{ book.product}} Command Line Interface \(CLI\), enter the follo
 pip3 install nio-cli
 ```
 
-## Create Project
+## Create a Project
 
 Now that we have the {{ book.product}} binary to run, we need a {{ book.product}} project to run it against. Obtain a {{ book.product}} project template by cloning the [Project Template repository](https://github.com/nioinnovation/project_template) or  use the {{ book.product}} CLI.
 
@@ -84,7 +84,7 @@ You may see an issue regarding HTTPS and HTTP instances. Since you launched your
 
 Once your instance is loaded and available, you can add services and blocks in the same manner as the cloud instance. Any errors or activity are available in the logs in your terminal that is running {{ book.product}}. When you need to debug a system, a local instance is a useful tool.
 
-## Add Blocks to a Project
+## Add a Block
 
 Before we move on, you're going to want to add some blocks to your project. Blocks can be added in the System Designer or from the command line.
 
@@ -95,7 +95,7 @@ To add a block in the System Designer:
 1. Click the **Block Library** in the upper-right corner.
 2. In the Search box, enter the name of a block. As you type, the list is filtered.
 3. Click the **Install Block** button which resembles a cloud with a down arrow.
-4. Drag a block onto the canvas.
+4. Drag the block onto the canvas.
 5. Type the name of the block and click **Accept**. 
 
 To add private blocks manually:

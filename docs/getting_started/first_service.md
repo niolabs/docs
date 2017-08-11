@@ -21,7 +21,7 @@ To add a service:
 9. Click and drag the output terminal of the **Simulate** block and release it on the input terminal of the **Log** block to connect the blocks.
 10. Click **Save**.
 
-## Running Services
+## Run Services
 
 By now, you are more than ready to see something happen.
 
