@@ -10,13 +10,13 @@ Authentication is the action to verify the identity of a user or process.
 
 Authorization is the process of giving someone permission to perform an action.
 
-You will need to include an authorization header with your {{ book.product }} API requests. For examples of authorization headers, see [Basic Auth](#basic-auth) and [JWT](#jwt). For examples of adding headers to cURL requests, see [Headers](#headers).
+You will need to include an authorization header with your {{ book.product }} API requests. For examples, see [Basic Auth](#basic-auth) and [JWT](#jwt). For examples of adding headers to cURL requests, see [Headers](#headers).
 
 User names and passwords are specified in the `users.json` file in the `etc` directory.
 
-Authorization for your project's users are specified in the `permissions.json` file in the `etc` directory of your project.
+Authorization for your project's users is specified in the `permissions.json` file in the `etc` directory of your project.
 
-If you want to secure your project and its API, you should change these user names and passwords and specify permissions.
+If you want to secure your project and its API, change these user names and passwords and specify the permissions.
 
 You can change the location of your users and permissions files in the `[security]` section of `nio.conf`, a YAML file.
 
@@ -40,11 +40,11 @@ You can use different types of authentication, such as basic authentication and 
 
 When using basic authentication, the REST API requires a username and password. 
 
-To use basic auth, include a base-64 encoded version of your `username:password` in the Authorization header of your request. The default `username:password` from the project template is `Admin:Admin`. Basic authorization in your request header looks like
+To use basic auth, include a base-64 encoded version of your `username:password` in the Authorization header of your request. The default `username:password` from the project template is `Admin:Admin`. An example of basic authorization in your request header follows:
 
 `{ "authorization": "Basic QWRtaW46QWRtaW4=" }`
 
-For examples of adding headers to a cURL request see, [Headers](#headers).
+For examples of adding headers to a cURL request, see  [Headers](#headers).
 
 ### Jason Web Tokens (JWT)
 
