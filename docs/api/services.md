@@ -66,7 +66,7 @@ In addition to getting the details of one service configuration, specified by na
 
 ## Create API
 
-If you're working with a {{ book.product }} project from scratch, you're going to be creating and configuring services. Create a new service with the Create API by sending a POST request with the applicable JSON data. When creating a new service, you can optionally include the configured values of the service type properties. At a minimum, you must specify the service `type` and `name` and any configuration values for required service properties that do not have a default value. For example, to create the `SimulateAndLog` service of the basic type `Service`
+If you're working with a {{ book.product }} project from scratch, you need to create and configure services. Create a new service with the Create API by sending a POST request with the applicable JSON data. When creating a new service, you can optionally include the configured values of the service type properties. At a minimum, you must specify the service `type` and `name` and any configuration values for required service properties that do not have a default value. For example, to create the `SimulateAndLog` service of the basic type `Service`
 
     curl -XPOST 'http://localhost:8181/services' --data '{"type": "Service", "name": "SimulateAndLog"}' -H 'Content-Type: applcation/json'
 
