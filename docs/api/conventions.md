@@ -6,7 +6,7 @@ The REST API is available in {{ book.product }} binaries that include the {{ boo
 
 ## Authentication and Authorization
 
-Authentication is about verifying identity.
+Authentication is about verifying identity. 
 
 Authorization is about what users are allowed to do (also known as "permissions").
 
