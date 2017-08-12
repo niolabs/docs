@@ -19,6 +19,7 @@ The result of the previous request is
   "log_at": "INFO"
 }
 ```
+The following four properties are common to all block types:
 
 **type**<br>The block type of the block configuration.
 
@@ -28,7 +29,7 @@ The result of the previous request is
 
 **log_level**<br>The number of log messages displayed, from `NOTSET` on the bottom, which includes all messages logged, to `CRITICAL` on the top, which contains only the most critical messages. Messages are shown for the specified `log_level` and all levels above.
 
-The four properties listed above are common to all block types.
+Other properties are block type-specific: 
 
 **log_at**<br>`log_at` is a property specific to the _Logger_ block type and is detailed in the _Logger_ block type specifications.
 
@@ -56,6 +57,6 @@ When you want to update the configuration of a block, send a PUT request to `/bl
 
 ## Delete API
 
-Naturally, you'll make mistakes or refactor and want to delete a configured block. To delete a named block, send a DELETE request to `/blocks` with the name of the block you want to delete as the endpoint.
+To delete a named block, send a DELETE request to `/blocks` with the name of the block you want to delete as the endpoint.
 
     curl -XDELETE 'http://localhost:8181/blocks/Log'
