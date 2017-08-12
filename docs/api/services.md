@@ -1,6 +1,6 @@
 # Services API
 
-Services are the things that run in {{ book.product }} and where you connect your configured blocks together to do work and make interesting things happen. Earlier we created a service called `SimulateAndLog` where we connected a _CounterIntervalSimulator_ to a _Logger_. Information about and interaction with the services of a running {{ book.product }} instance are available through the `/services` API.
+Services are the real-time processes that run on an instance in {{ book.product }} where you configure the logic of the workflow of blocks to make interesting things happen. Earlier we created a service called `SimulateAndLog` where we connected a _CounterIntervalSimulator_ to a _Logger_. Information about and interaction with the services of a running {{ book.product }} instance are available through the `/services` API.
 
 ## Get API
 
@@ -40,7 +40,7 @@ The result of the previous request is
 }
 ```
 
-  **type**<br>The service type of the service configuration. Generally, this will simply be `Service`.
+  **type**<br>The service type of the service configuration. Usually, the type is `Service`.
 
   **version**<br>The version of the service type when the service configuration was created.
 
@@ -50,7 +50,7 @@ The result of the previous request is
 
   **auto_start**<br>A boolean that indicates if the service will start when {{ book.product }} starts up.
 
-  **status**<br>Current status of the service: configuring, configured, starting, started, stopping, stopped, and error
+  **status**<br>Current status of the service: configuring, configured, starting, started, stopping, stopped, and error.
 
   **execution**<br>The configuration of inter-block connections in the service. Block connections are defined as a list of dictionaries that specify a block `name` and the blocks it sends signals to, called `receivers`. The `receivers` specify the output terminal in the source block that emits signals and the input terminal in the receiver block that receives signals.
 
