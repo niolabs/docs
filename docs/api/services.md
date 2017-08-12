@@ -78,6 +78,6 @@ When you want to update the configuration of a service, send a PUT request to `/
 
 ## Delete API
 
-Naturally, you'll make mistakes or refactor and want to delete a service. To delete a service, send a DELETE request to `/services` with the name of the service you want to delete as the endpoint.
+To delete a service, send a DELETE request to `/services` with the name of the service you want to delete as the endpoint.
 
     curl -XDELETE 'http://localhost:8181/services/SimulateAndLog'
