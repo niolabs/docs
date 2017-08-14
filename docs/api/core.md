@@ -1,6 +1,6 @@
 # Core APIs
 
-{{ book.product }} core has a few crucial API endpoints: `/nio` and `/shutdown`.
+{{ book.product }} core has a few crucial API endpoints: `/nio` and `/shutdown`. 
 
 ## nio
 

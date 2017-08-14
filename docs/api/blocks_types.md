@@ -1,6 +1,6 @@
 # Blocks Types API
 
-{{ book.product }} block types are the functional pieces of code that generate or transform signals. Earlier we saw examples of block types, such as _CounterIntervalSimulator_ and _Logger_. Information about and interaction with the blocks of a running {{ book.product }} instance are available through the `/blocks_types` API.
+{{ book.product }} block types are the functional pieces of code that generate or transform signals. Earlier we saw examples of block types, such as _CounterIntervalSimulator_ and _Logger_. Information about and interaction with the blocks of a running {{ book.product }} instance are available through the `/blocks_types` API. 
 
 ## Get API
 

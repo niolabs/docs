@@ -1,6 +1,6 @@
 # Blocks API
 
-A configured instance of a {{ book.product }} block type is referred to simply as a block. While block types are classes and have code, blocks are specific configurations of a block type's properties. Earlier we saw an example of a _Logger_ block instance created with the name `Log`. Information about and interaction with individual block configurations in a running {{ book.product }} instance are available through the `/blocks` API.
+A configured instance of a {{ book.product }} block type is referred to simply as a block. While block types are classes and have code, blocks are specific configurations of a block type's properties. Earlier we saw an example of a _Logger_ block instance created with the name `Log`. Information about and interaction with individual block configurations in a running {{ book.product }} instance are available through the `/blocks` API. 
 
 ## Get API
 
