@@ -98,15 +98,14 @@ To add a block in the System Designer:
 4. Drag the block onto the canvas.
 5. Type the name of the block and click **Accept**. 
 
-To add private blocks manually:
+To add blocks manually:
 
-1. From your private site, determine the URL of the block you want to add.
-2. From the project root directory, clone the relevant block from your private repository into the `blocks/` folder
+1. From the project root directory, clone the relevant block repository into the `blocks/` folder. For example, the logger block:
 ```
-git submodule add https://github.com/yourprivate-blocks/logger.git blocks/logger
+git submodule add https://github.com/nio-blocks/logger.git blocks/logger
 ```
-3. Restart the System Designer.
-4. Click the **Block Library** in the upper-right corner.
-5. In the Search box, enter the name of a block. As you type, the list is filtered.
-6. Drag the your block onto the canvas.
-7. Type the name of the block and click **Accept**. 
+2. Restart the System Designer.
+3. Click the **Block Library** in the upper-right corner.
+4. In the Search box, enter the name of the block. As you type, the list is filtered.
+5. Drag the your block onto the canvas.
+6. Type the name of the block and click **Accept**. 
