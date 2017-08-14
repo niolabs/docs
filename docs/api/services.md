@@ -1,6 +1,6 @@
 # Services API
 
-Services are the real-time processes that run on an instance in {{ book.product }} where you configure the logic of the workflow of blocks to make interesting things happen. Earlier we created a service called `SimulateAndLog` where we connected a _CounterIntervalSimulator_ to a _Logger_. Information about and interaction with the services of a running {{ book.product }} instance are available through the `/services` API.
+Services are the real-time processes that run on an instance in {{ book.product }} where you configure the logic of the workflow of blocks to make interesting things happen. Earlier we created a service called `SimulateAndLog` where we connected a _CounterIntervalSimulator_ to a _Logger_. Information about and interaction with the services of a running {{ book.product }} instance are available through the `/services` API. 
 
 ## Get API
 
