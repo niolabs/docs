@@ -1,6 +1,6 @@
 # Services Types API
 
-Service types contain metadata for services and can be accessed with `/services_types` API.
+Service types contain metadata for services and can be accessed with `/services_types` API. 
 
 ## Get API
 
