@@ -1,14 +1,14 @@
 # Core APIs
 
-{{ book.product }} core has a few crucial API endpoints: `/nio` and `/shutdown`. 
+{{ book.product }} core has a few crucial API endpoints: `/nio` and `/shutdown`.  
 
 ## nio
 
-The `/nio` endpoint is where you will find information about your running {{ book.product }} instances
+The `/nio` endpoint is used to find information, such as versioning, about your running {{ book.product }} instances 
 
     curl -XGET 'localhost:8181/nio'
 
-The following JSON body is returned
+The following JSON body is returned:
 
 ```json
 {
@@ -35,12 +35,12 @@ The following JSON body is returned
 
 **components**<br>The core [components](../components/README.md) running in the binary.
 
-**modules**<br>The modules that interface between the core and blocks such as Communication and Persistence.
+**modules**<br>The modules that interface between the core and blocks, such as Communication and Persistence.
 
 **nio**
-  - **binary**<br>The name of executable binary that was run against the project.
+  - **binary**<br>The name of the executable binary that was run against the project.
   - **build**<br>The build version of the binary.
-  - **version**<br>The version of the {{ book.product }} framework, not to be confused with the **build** version which is the version of the **binary**.
+  - **version**<br>The version of the {{ book.product }} framework (not the version of the **binary**).
 
 **start_time**<br>A datetime string that indicates when {{ book.product }} was started.
 
@@ -51,6 +51,7 @@ The `/shutdown` endpoint is used to shutdown a running {{ book.product }} instan
 
     curl -XGET 'http://localhost:8181/shutdown'
 
-The following HTML is returned after a successful shutdown request
+The following HTML is returned after a successful shutdown request:
 
     Shutdown complete
+[](fake comment)

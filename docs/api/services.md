@@ -1,6 +1,6 @@
 # Services API
 
-Services are the things that run in {{ book.product }} and where you connect your configured blocks together to do work and make interesting things happen. Earlier we created a service called `SimulateAndLog` where we connected a _CounterIntervalSimulator_ to a _Logger_. Information about and interaction with the services of a running {{ book.product }} instance are available through the `/services` API.
+Services are the real-time processes that run on an instance in {{ book.product }} where you configure the logic of the workflow of blocks to make interesting things happen. Earlier we created a service called `SimulateAndLog` where we connected a _CounterIntervalSimulator_ to a _Logger_. Information about and interaction with the services of a running {{ book.product }} instance are available through the `/services` API. 
 
 ## Get API
 
@@ -40,7 +40,7 @@ The result of the previous request is
 }
 ```
 
-  **type**<br>The service type of the service configuration. Generally, this will simply be `Service`.
+  **type**<br>The service type of the service configuration. Usually, the type is `Service`.
 
   **version**<br>The version of the service type when the service configuration was created.
 
@@ -50,7 +50,7 @@ The result of the previous request is
 
   **auto_start**<br>A boolean that indicates if the service will start when {{ book.product }} starts up.
 
-  **status**<br>Current status of the service: configuring, configured, starting, started, stopping, stopped, and error
+  **status**<br>Current status of the service: configuring, configured, starting, started, stopping, stopped, and error.
 
   **execution**<br>The configuration of inter-block connections in the service. Block connections are defined as a list of dictionaries that specify a block `name` and the blocks it sends signals to, called `receivers`. The `receivers` specify the output terminal in the source block that emits signals and the input terminal in the receiver block that receives signals.
 
@@ -66,7 +66,7 @@ In addition to getting the details of one service configuration, specified by na
 
 ## Create API
 
-If you're working with a {{ book.product }} project from scratch, you're going to be creating and configuring services. Create a new service with the Create API by sending a POST request with the applicable JSON data. When creating a new service, you can optionally include the configured values of the service type properties. At a minimum, you must specify the service `type` and `name` and any configuration values for required service properties that do not have a default value. For example, to create the `SimulateAndLog` service of the basic type `Service`
+If you're working with a {{ book.product }} project from scratch, you need to create and configure services. Create a new service with the Create API by sending a POST request with the applicable JSON data. When creating a new service, you can optionally include the configured values of the service type properties. At a minimum, you must specify the service `type` and `name` and any configuration values for required service properties that do not have a default value. For example, to create the `SimulateAndLog` service of the basic type `Service`
 
     curl -XPOST 'http://localhost:8181/services' --data '{"type": "Service", "name": "SimulateAndLog"}' -H 'Content-Type: applcation/json'
 
@@ -78,6 +78,7 @@ When you want to update the configuration of a service, send a PUT request to `/
 
 ## Delete API
 
-Naturally, you'll make mistakes or refactor and want to delete a service. To delete a service, send a DELETE request to `/services` with the name of the service you want to delete as the endpoint.
+To delete a service, send a DELETE request to `/services` with the name of the service you want to delete as the endpoint.
 
     curl -XDELETE 'http://localhost:8181/services/SimulateAndLog'
+[](fake comment)
