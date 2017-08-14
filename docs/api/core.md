@@ -1,10 +1,10 @@
 # Core APIs
 
-{{ book.product }} core has a few crucial API endpoints: `/nio` and `/shutdown`. 
+{{ book.product }} core has a few crucial API endpoints: `/nio` and `/shutdown`.  
 
 ## nio
 
-The `/nio` endpoint is used to find information, such as versioning, about your running {{ book.product }} instances
+The `/nio` endpoint is used to find information, such as versioning, about your running {{ book.product }} instances 
 
     curl -XGET 'localhost:8181/nio'
 
