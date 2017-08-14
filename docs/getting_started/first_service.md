@@ -18,13 +18,13 @@ To add a service:
 12. Connect the blocks by clicking and dragging the output terminal of the **Simulate** block and release it on the input terminal of the **Log** block.
 13. Click **Save**.
 
-## Running Services
+
+## Run Services
 
 By now, you are more than ready to see something happen.
 
 1. Click **Start** on the toolbar.
 2. View the logs in the terminal.  Note: Logs are saved in the  `logs/` directory of your project folder.
-
 ```
 [2016-03-05 00:32:05.189] NIO [INFO] [SimulateAndLog.Log] Block : Log (type : LoggerBlock) status is configured
 [2016-03-05 00:32:05.189] NIO [INFO] [SimulateAndLog.Log] Block: Log (type: LoggerBlock) status is configured
@@ -41,29 +41,29 @@ By now, you are more than ready to see something happen.
 [2016-03-05 00:32:09.203] NIO [INFO] [SimulateAndLog.Log] {'sim': 0}
 [2016-03-05 00:32:10.204] NIO [INFO] [SimulateAndLog.Log] {'sim': 1}
 ```
-
 3. Click **Stop** when finished.
 
-## Configuring Blocks
+## Configure Blocks
 
-So far you have only viewed the default behavior of this block. You can modify that by configuring Simulate block. You can change the interval from 1 to 2 seconds to see the signals logged every other second.
+So far you have only viewed the default behavior of this block. You can configure the Simulate block to change the interval from 1 to 2 seconds to see the signals logged every other second.
 
 To configure blocks:
-1. Double-click the **Simulate** block to view the properties in a dialog box.
+1. Double-click the **Simulate** block to view the properties in the dialog box.
 2. Change the interval value from **1** \(the default\) to **2**.
 3. Click **Save**.
 
-## Commanding Blocks and Services
+## Command Blocks and Services
 
-Commands are a way to execute code in a block or service. Technically, you have already commanded services with start and stop. 
+You can execute code in a block or service with commands. Technically, you have already commanded services with start and stop. 
 
 To command a block:
 
 1. With SimulateAndLog running, select the **Log** block.
 2. Click **Command** **(&lt;/&gt;)** on the toolbar.
-3. Select the **Log** block and type in a phrase in the results box.
+3. In the Command block dialog, type in a phrase in the results box.
 4. Click **Execute** to view the phrase logged with the simulate signals.
 
 ## Conclusion
 
 At this point you should feel comfortable installing {{ book.product }}, creating a project with blocks, and configuring and running services. You can find block documentation on the [nio-blocks repository](https://github.com/nio-blocks).
+   

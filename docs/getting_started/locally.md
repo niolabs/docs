@@ -9,32 +9,24 @@ Requirements
 * Download Python 3.4.5 or 3.5.2 from [https://www.python.org/downloads/](https://www.python.org/downloads/).
 * Obtain the {{ book.product}} binary Python wheel file (`.whl`) with your license agreement.
 
-## Installation
+## Install {{ book.product}}
 
 To install {{ book.product}}, enter the following command:
-
-
 ```
 pip3 install your_wheel_file.whl
 ```
-
-
 To run {{ book.product}}, enter the following command:
 
 `nio_run`
 
 If that command is not available, make sure your Python binary installation directory is on your PATH.
 
-
-To install CLI \(Command Line Interface\), enter the following command:
-
-
-
+To install the {{ book.product}} Command Line Interface \(CLI\), enter the following command:
 ```
 pip3 install nio-cli
 ```
 
-## First Project
+## Create a Project
 
 Now that we have the {{ book.product}} binary to run, we need a {{ book.product}} project to run it against. Obtain a {{ book.product}} project template by cloning the [Project Template repository](https://github.com/nioinnovation/project_template) or  use the {{ book.product}} CLI.
 
@@ -44,20 +36,17 @@ To clone the project template using CLI, enter the following command:
 
 The `first_project` directory is created in your working directory containing the {{ book.product}} project.
 
-To clone the project template using git, clone the template and initialize the submodules which contain the blocks.
-
+To clone the project template using git, clone the template,  and initialize the submodules which contain the blocks.
 ```
 git clone https://github.com/nioinnovation/project_template.git first_project
 cd first_project
 git submodule update --init --recursive
 ```
-
 To run {{ book.product}}, enter the following commands:
 ```
 cd first_project
 nio_run
 ```
-
 The log messages display, similar to the following output, but there should be no errors.
 
 ```
@@ -72,9 +61,9 @@ The log messages display, similar to the following output, but there should be n
 [2016-03-04 23:49:41.227] NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from: starting to: started
 ```
 
-If you see those logs, it means {{ book.product}} is up and running. Congratulations!
+If you see those logs, {{ book.product}} is up and running. Congratulations!
 
-## Add a local instance to the System Designer
+## Add a Local Instance
 
 Once you have a local instance running, you can edit it using the System Designer. Based on the log messages, your {{ book.product}} instance is available at `http://localhost:8181` and you need basic authentication to communicate with the instance.
 
@@ -95,21 +84,28 @@ You may see an issue regarding HTTPS and HTTP instances. Since you launched your
 
 Once your instance is loaded and available, you can add services and blocks in the same manner as the cloud instance. Any errors or activity are available in the logs in your terminal that is running {{ book.product}}. When you need to debug a system, a local instance is a useful tool.
 
-## Adding Blocks to a Project
+## Add a Block
 
-Before we move on, you're going to want to add some blocks to your project.
+Before we move on, you're going to want to add some blocks to your project. Blocks can be added in the System Designer or from the command line.
 
-To add four popular blocks using the CLI:
+nio blocks are installed to instances using the Block Library. The collection of blocks created by {{ book.product }} is also stored in the [nio-blocks GitHub repository](https://github.com/nio-blocks). You can search for blocks in the System Designer or in GitHub. 
 
-1. Press Ctrl-C to exit {{ book.product}}.
-2. Type the following command to add the blocks.
-```
-nio add logger simulator filter dynamic_fields
-```
+To add a block in the System Designer:
 
-To add blocks:
+1. Click the **Block Library** in the upper-right corner.
+2. In the Search box, enter the name of a block. As you type, the list is filtered.
+3. Click the **Install Block** button which resembles a cloud with a down arrow.
+4. Drag the block onto the canvas.
+5. Type the name of the block and click **Accept**. 
 
-1. From the project root directory, clone the relevant block repository into the `blocks/` folder
+To add blocks manually:
+
+1. From the project root directory, clone the relevant block repository into the `blocks/` folder. For example, the logger block:
 ```
 git submodule add https://github.com/nio-blocks/logger.git blocks/logger
 ```
+2. Restart the System Designer.
+3. Click the **Block Library** in the upper-right corner.
+4. In the Search box, enter the name of the block. As you type, the list is filtered.
+5. Drag the your block onto the canvas.
+6. Type the name of the block and click **Accept**. 
