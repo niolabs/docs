@@ -1,6 +1,6 @@
 # Additional APIs
 
-{{ book.product }} has  additional APIs that you may find useful as you explore what {{ book.product }} has to offer.
+{{ book.product }} has  additional APIs that you may find useful as you explore what {{ book.product }} has to offer. 
 
 ## Configuration Refresh API
 
