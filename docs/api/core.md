@@ -54,3 +54,4 @@ The `/shutdown` endpoint is used to shutdown a running {{ book.product }} instan
 The following HTML is returned after a successful shutdown request:
 
     Shutdown complete
+[](fake comment)

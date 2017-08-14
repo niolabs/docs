@@ -154,3 +154,4 @@ and the result will be
 You can get the details of all the service types configurations in one request with a request to the `/services_types` endpoint.
 
       curl -XGET 'http://localhost:8181/services_types'
+[](fake comment)

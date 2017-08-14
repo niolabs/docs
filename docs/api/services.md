@@ -81,3 +81,4 @@ When you want to update the configuration of a service, send a PUT request to `/
 To delete a service, send a DELETE request to `/services` with the name of the service you want to delete as the endpoint.
 
     curl -XDELETE 'http://localhost:8181/services/SimulateAndLog'
+[](fake comment)

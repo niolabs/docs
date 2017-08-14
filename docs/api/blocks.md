@@ -60,3 +60,4 @@ When you want to update the configuration of a block, send a PUT request to `/bl
 To delete a named block, send a DELETE request to `/blocks` with the name of the block you want to delete as the endpoint.
 
     curl -XDELETE 'http://localhost:8181/blocks/Log'
+[](fake comment)
