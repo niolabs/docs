@@ -6,7 +6,7 @@ Note that your screen may look slightly different than the images in the documen
 
 {% video %}https://www.youtube.com/watch?v=TfZmH7KGMr8{% endvideo %}
 
-{% video %}https://www.youtube.com/watch?v=OkfVMPjzkhE{% endvideo %}
+[]({% video %}https://www.youtube.com/watch?v=OkfVMPjzkhE{% endvideo %})
 
 ## System
 
