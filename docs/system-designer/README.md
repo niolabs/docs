@@ -6,8 +6,6 @@ Note that your screen may look slightly different than the images in the documen
 
 {% video %}https://www.youtube.com/watch?v=TfZmH7KGMr8{% endvideo %}
 
-[]({% video %}https://www.youtube.com/watch?v=OkfVMPjzkhE{% endvideo %})
-
 ## System
 
 A list of systems is displayed in a column on the left side of the screen. The designer automatically creates an abbreviation for each system name.
