@@ -23,16 +23,6 @@
     "toolbar": {
       "buttons":[
         {
-            "label": "Share on Twitter",
-            "icon": "fa fa-twitter fa-inverse circle-background",
-            "url": "http://twitter.com/home?status={{title}}%20{{url}}"
-        },
-        {
-            "label": "Search page title on StackOverflow",
-            "icon": "fa fa-stack-overflow fa-inverse circle-background",
-            "url": "http://stackoverflow.com/search?q=nio"
-        },
-        {
             "label": "GitHub",
             "icon": "fa fa-github fa-inverse circle-background",
             "url": "http://github.com/nioinnovation"
