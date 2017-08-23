@@ -2,34 +2,25 @@
 
 Block properties are the configuration fields of a block.
 
-In the System Designer, when you double-click a block, the configuration panel  displays the block's properties. Below is the configuration panel for a Dynamic Fields block containing three properties: Fields, Log Level, and Version
+In the System Designer, when you double-click a block, the configuration panel displays the block's properties. The configuration panel for a _Dynamic Fields_ block is shown below. It displays four properties: Exclude Existing Fields, Fields, Log Level, and Version.
 
 <img src="/img/DF-block-config.png" width="300" />
 
-Block properties are input fields that can be edited and updated and saved with the block configuration.
+The input fields are block properties that can be edited, updated, and saved to create a configured block.
 
-The property configuration of the block makes it unique. A **block type name**—_Filter_, _Dynamic Fields_, _Counter Interval Simulator_—defines the block type and the configurable fields. Each block types has an abbreviation such as _DF_ for _Dynamic Fields_. The unique **block name**, defined when created, saves configuration of the specific block and defines how the block acts on signals. All blocks with the same **block name** share a configuration. If you change the configuration of your "isWatering" Filter block, the configuration of every "isWatering" block will be be updated to match. The unique **block name** is the link to its configuration. For this reason, it is good to give your blocks unique names that reflect their configuration.
+The property configuration of the block makes it unique. A **block type name**—_Filter_, _Dynamic Fields_, _Counter Interval Simulator_—defines the block type and the configurable fields. (In the System Designer, this name is abbreviated in a vertical bar on the left side of the block.) The unique **block name**, which you define when dragging a new instance of the block type onto the canvas of the System Designer, saves a specific configuration of the block and defines how the block acts on signals. All blocks with the same **block name** share a configuration. For example, if you change the configuration of your "isWatering" _Filter_ block, the configuration of every "isWatering" block will be be updated to match. The unique **block name** is the link to a block's property configuration. For this reason, it is good to give your blocks descriptive names that reflect their configured properties.
 
 ## Property Types
 
-In the example above, Log Level is a drop-down menu and Version is a series of three numbers separated by periods (0.1.0), and Fields is a list of input pairs. The length of the Fields list can be defined by the user with `+ Fields` to add items and `x` to remove items. In this example, there are three pairs defined in the list.
+In the example above, Exclude Existing Fields is a checkbox, Fields is a list of input pairs, Log Level is a drop-down menu, and Version is a series of three numbers separated by periods (0.1.0).
 
-The different inputs in the configuration panel reflect different property types. Some properties can take any type of input while others can only take integers or select from specific options (e.g., the Log Level drop-down menu is a select type). If your property input is filled with the incorrect type of content, your block will not configure and your service will not run.
+The different types of inputs in the configuration panel represent different [property types](../block-development.html#property-types).
 
-Block properties can include the following types:
-  - **boolean**: One of two mutually exclusive options. Usually a check box.
-  - **string**
-  - **integer**
-  - **float**
-  - **file**
-  - **list**: List properties hold a list of object types which contain properties themselves or can be {{ book.product }} types such as IntType.
-  - **dictionary**: Object types contain properties themselves.
-  - **select**: Select properties enumerate a list of options. For example, Log Level—found in the base block and therefore a property of all blocks—is an example of a select property type where the level can be selected from the following options: CRITICAL, ERROR, WARNING, INFO, DEBUG, NOTSET.
-  - **timedelta**: A duration property expressing the difference between two date, time, or datetime instances.
-  - **version**: A version property permits saving version information with the `(major.minor.build)` format. All blocks contain this property type since it is inherited from the base block.
-  - **property**: A property that can assume any type.
+In the above example, Exclude Existing Fields is a "BoolProperty" that can be true or false and is represented by a checkbox. Log Level is a "SelectProperty" that enumerates available options and is represented by a drop-down menu. Fields is a "ListProperty" and is represented by a list of items that can be defined by the user with `+ Fields` to add items and `x` to remove items. In this example, there are three key-value pairs defined in the list. Each item in a list can also have a type, in this case, a dictionary defined by a "PropertyHolder" property made up of two properties represented by the Attribute Name and Attribute Value input areas. And finally, Version is a special "VersionProperty" that takes three integers separated by periods.
 
-In the Dynamic Fields block shown above, each element of the Fields list is a dictionary defined by a property holder with two properties: Attribute Name and Attribute Value. In this particular block named `ShowAlertLevel`, the structure of the fields added to the signal would look something as follows. For illustration purposes, the expressions in curly braces have not been evaluated.
+Some properties (the base Property property) can take any type of input while others require specific types of input. The IntProperty can only take integers while the SelectProperty requires a selection from a specific list. If your property input is filled with the incorrect type of content, your block will not configure and your service will not run.
+
+In the _Dynamic Fields_ block shown above, the `ShowAlertLevel` block is configured so that it will enrich the signal with three new fields, one each for danger, caution, and success. The structure of the fields added to the signal would look similar to the following. (For illustration purposes, the expressions in curly braces have not been evaluated.)
 
 ```python
 [
@@ -50,11 +41,11 @@ In the Dynamic Fields block shown above, each element of the Fields list is a di
 
 ## Expressions
 
-Expressions are used to dynamically define properties. Many property types can accept expressions. Expressions are found inside the double curly braces. In the Dynamic Fields block configuration shown above, you can see example expressions in the Attribute Value inputs. Learn more about how to create expressions in [{{ book.product }} expressions](./expressions.html).
+Expressions are used to dynamically define properties. Many property types can accept expressions. Expressions are found inside the double curly braces. In the _Dynamic Fields_ block configuration shown above, you can see example expressions in the Attribute Value inputs. Learn more about how to create expressions in [{{ book.product }} Expressions](./expressions.html).
 
 ## Environment Variables
 
-Another syntax that {{ book.product }} uses is the double-square-bracket notation to indicate an environment variable.
+Another syntax that {{ book.product }} uses in property configuration is the double-square-bracket notation for an [environment variable](/deployment/README.md#different-environments).
 
 `[[YOUR_ENV_VAR]]`
 
@@ -62,6 +53,6 @@ Environment variables are used when you want your instance to function in differ
 
 Your environment variable can be used alone, or you can embed it, with the double-square-bracket notation, inside of strings and expressions.
 
-To embed you environment variable inside of single brackets, you need to include a space between the single bracket and the double brackets of the environment variable:
+To embed you environment variable inside of single brackets, you need to include a space between the single bracket and the double brackets of the environment variable
 
 ```[ [[MY_ACCESS_TOKEN]] ]```

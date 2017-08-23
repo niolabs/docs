@@ -10,37 +10,84 @@ You can adopt one of two philosophies when creating blocks:
 
 If the function you need does not exist in [the nio-blocks repository](https://github.com/nio-blocks), you can easily create a custom block.
 
+{% include "git+https://github.com/nio-blocks/block_template.git/README.md" %}
+
 ## Block Template
 
 To create a custom block, clone the [block template repository](https://github.com/nio-blocks/block_template). The block template includes the basic {{ book.product }} block class as well as placeholders for the block's requirements, specifications, release notes, and tests as well as complete instructions in [`README.md`](https://github.com/nio-blocks/block_template).
 
 ## Developing Your Block
 
-After downloading the block template repository, you are ready to develop your block.
+After cloning the block template repository, you are ready to develop your block.
 
-The {{ book.product }} base block and other blocks with similar functionality that have been developed using the {{ book.product }} framework are good resources for new block development.
+A good resource for new block development is the {{ book.product }} base block along with other blocks that have functionality similar to the one you would like to develop.
 
-As outlined in the [`BLOCK_README.md`](https://github.com/nio-blocks/block_template) file, you have the option to add properties, dependencies, commands, inputs, and outputs to your block.
+The basic elements of a block that you will define are its [properties](#properties), [commands](#commands), and [inputs, and outputs](#inputs and outputs).
 
-Before developing your own block, rename the file from `BLOCK_README.md` to `README.md`.
-```
-mv BLOCK_README.md README.md
-```
+Any required Python dependencies for your block can be added to your `requirements.txt` file and will be automatically installed when your block is installed.  
 
 ### Base Block Class
 
-All {{ book.product }} blocks inherit from the base block class. The first import in `example_block.py` from the block template is `nio.block.base`. If you explore the code inside `nio.block.base`, you find explanatory docstrings for each method, including methods to override your custom block along with higher-level context.
+All {{ book.product }} blocks inherit from the base block class. The first import in the block template's `example_block.py` is `nio.block.base`. If you explore the code inside `nio.block.base`, you'll find explanatory docstrings for each method—including methods to override in your custom block—along with higher-level context.
 
-The base block class uses the {{ book.product }} framework described below. {{ book.product }} blocks work according to the following principles:
-* [Signals](/service-design-patterns/understanding-signals.md) are passed as lists.
-* Block properties are declared as class attributes.
+An important principle to remember when developing your block is that [Signals](/service-design-patterns/understanding-signals.md#lists-of-signals) are passed as lists.
+
+#### Methods to Override
+
+The following methods from the base block are designed to be overridden:
+
+##### life cycle management
+  * `configure`: at the end of the `configure` method, the block is ready to receive signals. If an exception is raised during configure, the service will not start.
+  * `start`: during start, a block begins to send out signals. This method needs to eventually return so that the block status can change to “started”. For this reason, anything that runs continuously, should be run in a new thread.
+  * `stop`: after stop, the block stops sending out signals and cancels jobs.
+
+##### signaling
+  * `process_signals(<list of signals>, input_id)`: receives input signals.
+  * `notify_signals(<list of signals>, output_id)`: emits signals from the block. This method isn't intended to be overridden, but should be called by the block to send out signals. For example, you will usually call `notify_signals` at the end of your `process_signals` method.
+
+### Current {{ book.product }} Blocks
+
+An additional resource for developing your custom block is the [nio-blocks library](https://github.com/nio-blocks). Search the nio-blocks library for a block that has similar functionality to the block you need. Explore its properties, methods, commands, inputs, outputs, [mixins](#mixins), and any modules imported from the [framework](#the-nio-framework).
+
+### Properties
+
+Block properties are declared as class attributes and specify a [property type](#property-types).
 ```python
 speed = IntProperty(title='Speed', default=30)
+conditions = ListProperty(Condition, title='Filter Conditions', default=[])
 ```
 * Block properties must be called with a function invocation to obtain the value. For example, you can get the value of the speed property defined above.
 ```python
  self.setSpeed(self.speed())
  ```
+
+#### Property Types
+
+Block properties can include the following types:
+
+- **boolean** **BoolType**<br>One of two mutually exclusive options. Usually a check box.
+
+- **string**
+
+- **integer**
+
+- **float**
+
+- **file**
+
+- **list**<br>List properties hold a list of object types which contain properties themselves or can be {{ book.product }} types such as IntType.
+
+- **dictionary**<br>Object types contain properties themselves.
+
+- **select**<br>Select properties enumerate a list of options. For example, Log Level—found in the base block and therefore a property of all blocks—is an example of a select property type where the level can be selected from the following options<br>CRITICAL, ERROR, WARNING, INFO, DEBUG, NOTSET.
+
+- **timedelta**<br>A duration property expressing the difference between two date, time, or datetime instances.
+
+- **version**<br>A version property permits saving version information with the `(major.minor.build)` format. All blocks contain this property type since it is inherited from the base block.
+
+- **property**<br>A property that can assume any type.
+
+### Commands
 
 * Commands are declared as decorators.
   ```python
@@ -55,6 +102,9 @@ speed = IntProperty(title='Speed', default=30)
     def emit(self, foo=None):
           self._emit_job(foo) # where you have set up your own _emit_job method…
   ```
+
+### Inputs and Outputs
+
 * Inputs and outputs are declared as decorators.
   ```python
   from nio.block.base import Block
@@ -73,21 +123,6 @@ speed = IntProperty(title='Speed', default=30)
       self.notify_signals(true_result, 'true')
       self.notify_signals(false_result, 'false')
   ```
-
-#### Methods to Override
-
-The following methods from the base block are designed to be overridden:
-
-* **life cycle management**
-  * `configure`: at the end of `configure`, the block is ready to receive signals. If an exception is raised during configure, the service won’t start.
-  * `start`: during start, a block begins to send out signals. This method needs to eventually return so that the block status can change to “started”. For this reason, anything that runs continuously, should be run in a new thread.
-  * `stop`: after stop, the block stops sending out signals and cancels jobs.
-* **signaling**
-  * `process_signals(<list of signals>, input_id)`: receives input signals.
-  * `notify_signals(<list of signals>, output_id)`: emits signals from the block. This method isn't intended to be overridden, but is it called by the block to send out signals. For example, you will usually call `notify_signals` at the end of your `process_signals` method.
-
-### Current {{ book.product }} Blocks
-An additional resource for developing your custom block is the [nio-blocks library](https://github.com/nio-blocks). Search the nio-blocks library for a block that has similar functionality to the block you need. Once you find a block, explore the code, properties, methods, and modules imported from the framework.
 
 ## The {{ book.product }} Framework
 
