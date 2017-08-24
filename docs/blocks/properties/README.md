@@ -2,13 +2,13 @@
 
 Block properties are the configuration fields of a block.
 
-In the System Designer, when you double-click a block, the configuration panel displays the block's properties. The configuration panel for a _Dynamic Fields_ block is shown below. It displays four properties: Exclude Existing Fields, Fields, Log Level, and Version.
+In the System Designer, when you double-click a block, the configuration panel displays the block's properties. The configuration panel for a _Modifier_ block is shown below. It displays four properties: **Exclude Existing Fields**, **Fields**, **Log Level**, and **Version**.
 
 <img src="/img/DF-block-config.png" width="300" />
 
 The input fields are block properties that can be edited, updated, and saved to create a configured block.
 
-The property configuration of the block makes it unique. A **block type name**—_Filter_, _Dynamic Fields_, _Counter Interval Simulator_—defines the block type and the configurable fields. (In the System Designer, this name is abbreviated in a vertical bar on the left side of the block.) The unique **block name**, which you define when dragging a new instance of the block type onto the canvas of the System Designer, saves a specific configuration of the block and defines how the block acts on signals. All blocks with the same **block name** share a configuration. For example, if you change the configuration of your "isWatering" _Filter_ block, the configuration of every "isWatering" block will be be updated to match. The unique **block name** is the link to a block's property configuration. For this reason, it is good to give your blocks descriptive names that reflect their configured properties.
+The property configuration of the block makes it unique. A **block type name**—_Filter_, _Modifier_, _Counter Interval Simulator_—defines the block type and the configurable fields. (In the System Designer, this name is abbreviated in a vertical bar on the left side of the block.) The unique **block name**, which you define when dragging a new instance of the block type onto the canvas of the System Designer, saves a specific configuration of the block and defines how the block acts on signals. All blocks with the same **block name** share a configuration. For example, if you change the configuration of your "isWatering" _Filter_ block, the configuration of every "isWatering" block will be be updated to match. The unique **block name** is the link to a block's property configuration. For this reason, it is good to give your blocks descriptive names that reflect their configured properties.
 
 ## Property Types
 
@@ -20,7 +20,7 @@ In the above example, Exclude Existing Fields is a "BoolProperty" that can be tr
 
 Some properties (the base Property property) can take any type of input while others require specific types of input. The IntProperty can only take integers while the SelectProperty requires a selection from a specific list. If your property input is filled with the incorrect type of content, your block will not configure and your service will not run.
 
-In the _Dynamic Fields_ block shown above, the `ShowAlertLevel` block is configured so that it will enrich the signal with three new fields, one each for danger, caution, and success. The structure of the fields added to the signal would look similar to the following. (For illustration purposes, the expressions in curly braces have not been evaluated.)
+In the _Modifier_ block shown above, the `ShowAlertLevel` block is configured so that it will enrich the signal with three new fields, one each for danger, caution, and success. The structure of the fields added to the signal would look similar to the following. (For illustration purposes, the expressions in curly braces have not been evaluated.)
 
 ```python
 [
