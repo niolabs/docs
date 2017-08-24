@@ -113,7 +113,7 @@ class TestPersistenceBlock(NIOBlockTestCase):
 			load.return_value = 'i was persisted'
 			self.configure_block(blk, {})
 ```
-To mock `store` and `save`:
+To mock `save`:
 
 ```python
 from unittest.mock import  MagicMock
@@ -124,7 +124,6 @@ class TestPersistenceBlock(NIOBlockTestCase):
 		 blk = Block()
 		 self.configure_block(blk, {})
 		 blk.persistence.store = MagicMock()
-		 blk.persistence.save = MagicMock()
 ```
 
 ## {{ book.product }} Modules
