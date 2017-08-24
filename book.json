@@ -10,7 +10,8 @@
     "theme-nio@git://github.com/nioinnovation/gitbook-plugin-theme-nio.git",
     "favicon",
     "-sharing",
-    "toolbar"
+    "toolbar",
+    "toggle2"
   ],
   "pluginsConfig": {
     "favicon":{
