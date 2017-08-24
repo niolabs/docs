@@ -8,7 +8,9 @@ The basic elements of a block that you will define are its [properties](#propert
 
 Any required Python dependencies for your block can be added to your `requirements.txt` file and will be automatically installed when your block is installed.
 
-Other elements of a block to keep in mind include [block patterns](block-patterns.md), the [nio framework](framework.md) (including [discoverability](framework.md#discoverability)), and [mixins](mixins.md).
+Other elements of a block to keep in mind include [block patterns](block-patterns.md), the [nio framework](framework.md) (including [discoverability](framwork.md#discoverability)), and [mixins](mixins.md).
+
+Once you have developed your block, you will want to [test](block-testing.md) and [document](documenting.md) your block.
 
 ## Base Block Class
 

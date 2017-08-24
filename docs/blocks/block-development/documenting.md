@@ -1,4 +1,4 @@
-# Block Documentation
+# Documenting Your Block
 
 There is a standard way to document a {{ book.product }} block. Much of this documentation can be generated automatically using the `nio-cli`.
 
@@ -13,7 +13,7 @@ To create your `spec.json` file, type
 ```
 nio buildspec <block repo name>
 ```
-Navigate into your `spec.json` file and manually add all descriptions. You will need to add a description for your block and all properties, commands, inputs, and outputs.
+Navigate into your `spec.json` file and manually add a text string description to any key labeled "description". You will need to add a description to the block and its properties, commands, inputs, and outputs.
 ```py
 "description": "List of attribute names and corresponding values to add to the incoming signals."
 ```

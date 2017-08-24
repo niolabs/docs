@@ -14,7 +14,7 @@ The property configuration of the block makes it unique. A **block type name**â€
 
 In the example above, Exclude Existing Fields is a checkbox, Fields is a list of input pairs, Log Level is a drop-down menu, and Version is a series of three numbers separated by periods (0.1.0).
 
-The different types of inputs in the configuration panel represent different [property types](../block-development.html#property-types).
+The different types of inputs in the configuration panel represent different [property types](../block-development/development.md#property-types).
 
 In the above example, Exclude Existing Fields is a "BoolProperty" that can be true or false and is represented by a checkbox. Log Level is a "SelectProperty" that enumerates available options and is represented by a drop-down menu. Fields is a "ListProperty" and is represented by a list of items that can be defined by the user with `+ Fields` to add items and `x` to remove items. In this example, there are three key-value pairs defined in the list. Each item in a list can also have a type, in this case, a dictionary defined by a "PropertyHolder" property made up of two properties represented by the Attribute Name and Attribute Value input areas. And finally, Version is a special "VersionProperty" that takes three integers separated by periods.
 
@@ -45,7 +45,7 @@ Expressions are used to dynamically define properties. Many property types can a
 
 ## Environment Variables
 
-Another syntax that {{ book.product }} uses in property configuration is the double-square-bracket notation for an [environment variable](/deployment/README.md#different-environments).
+Another syntax that {{ book.product }} uses in property configuration is the double-square-bracket notation for an [environment variable](/service-design-patterns/environment-variables.md).
 
 `[[YOUR_ENV_VAR]]`
 
