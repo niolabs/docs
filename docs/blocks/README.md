@@ -22,8 +22,8 @@ In the System Designer, you modify the properties in the configuration panel. Pr
 
 A block receives or sends signals through the input and output terminals to allow interblock interaction. In the System Designer, you draw connectors between the terminals to show the signal flow.
 
-Signals are implemented as a collection of key-value pairs. Signals are always passed between blocks inside of a list. See [Understanding Signals](/service-design-patterns/understanding-signals.md).
+Signals are implemented as a collection of key-value pairs. Signals are always passed between blocks inside of a list. See [Understanding Signals](/service-design-patterns/understanding-signals.md#lists-of-signals).
 
 ## Commands
 
-Commands allow a user to interact with a running instance of a block. You can use a command to inspect the internal state of a block. When you develop a block, you can make certain methods in your block class exposable as commands. This allows you to run functions inside the instance of your block from the System Designer.
+Commands allow a user to interact with a running instance of a block. You can use a command to inspect the internal state of a block. When you develop a block type, you can expose certain methods in your block class as commands. This allows you to run functions inside the instance of your block from the System Designer.

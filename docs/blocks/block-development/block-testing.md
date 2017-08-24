@@ -1,4 +1,4 @@
-# Block Testing
+# Testing Your Block
 
 {{ book.product }} blocks are not meant to be run as stand-alone Python modules, so testing can be a challenging process. {{ book.product }} provides a couple of tools and offers best practices to make your testing easier.
 
@@ -113,7 +113,7 @@ class TestPersistenceBlock(NIOBlockTestCase):
 			load.return_value = 'i was persisted'
 			self.configure_block(blk, {})
 ```
-To mock `store` and `save`:
+To mock `save`:
 
 ```python
 from unittest.mock import  MagicMock
@@ -123,7 +123,6 @@ class TestPersistenceBlock(NIOBlockTestCase):
 	def test_persist_save(self):
 		 blk = Block()
 		 self.configure_block(blk, {})
-		 blk.persistence.store = MagicMock()
 		 blk.persistence.save = MagicMock()
 ```
 

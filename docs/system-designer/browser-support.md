@@ -7,7 +7,8 @@ To have the best experience with the System Designer on your computer, use a sup
 | Browser | Level of Support |
 | ------------- | ------------- |
 |  Chrome  |  Recommended. Supports all System Designer features and functionality.|
-|  Firefox<br>Safari<br>Microsoft&nbsp;Edge<br>Internet&nbsp;Explorer | Supports all System Designer features and functionality. There may be small visual imperfections.  |
+|  Firefox<br>Safari<br>Microsoft&nbsp;Edge | Supports all System Designer features and functionality. There may be minor visual imperfections.  |
+| Internet&nbsp;Explorer |  Supports all System Designer features and functionality. There may be moderate visual imperfections. |
 
 ## Supported Versions
 The current, or most recent, version of all supported browsers is supported.
