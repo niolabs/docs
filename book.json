@@ -12,7 +12,8 @@
     "-sharing",
     "toolbar",
     "back-to-top-button",
-    "alerts"
+    "alerts",
+    "page-toc"
   ],
   "pluginsConfig": {
     "favicon":{
