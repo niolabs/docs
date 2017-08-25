@@ -4,7 +4,7 @@ Block properties are the configuration fields of a block.
 
 In the System Designer, when you double-click a block, the configuration panel displays the block's properties. The configuration panel for a _Modifier_ block is shown below. It displays four properties: **Exclude Existing Fields**, **Fields**, **Log Level**, and **Version**.
 
-<img src="/img/DF-block-config.png" width="300" />
+<img src="/img/modifier-block-config.png" width="300" />
 
 The input fields are block properties that can be edited, updated, and saved to create a configured block.
 
@@ -41,7 +41,7 @@ In the _Modifier_ block shown above, the `ShowAlertLevel` block is configured so
 
 ## Expressions
 
-Expressions are used to dynamically define properties. Many property types can accept expressions. Expressions are found inside the double curly braces. In the _Dynamic Fields_ block configuration shown above, you can see example expressions in the Attribute Value inputs. Learn more about how to create expressions in [{{ book.product }} Expressions](./expressions.html).
+Expressions are used to dynamically define properties. Many property types can accept expressions. Expressions are found inside the double curly braces. In the _Dynamic Fields_ block configuration shown above, you can see example expressions in the Attribute Value inputs. Learn more about how to create expressions in [{{ book.product }} Expressions](./expressions.md).
 
 ## Environment Variables
 

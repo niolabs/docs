@@ -1,12 +1,12 @@
 # API Conventions
 
-You can interact with most {{ book.product }} binaries through a REST API. The API supports the standard HTTP request types of `GET`, `POST`, `PUT`, and `DELETE`. Data responses are returned in JSON format. 
+You can interact with most {{ book.product }} binaries through a REST API. The API supports the standard HTTP request types of `GET`, `POST`, `PUT`, and `DELETE`. Data responses are returned in JSON format.
 
-The REST API is available in {{ book.product }} binaries that include the {{ book.product }} REST Component. Read more about {{ book.product }} core components in [components](../components/README.md). 
+The REST API is available in {{ book.product }} binaries that include the {{ book.product }} REST Component. Read more about {{ book.product }} core components in [components](../components/README.md).
 
 ## Authentication and Authorization
 
-Authentication is the action to verify the identity of a user or process. 
+Authentication is the action to verify the identity of a user or process.
 
 Authorization is the process of giving someone permission to perform an action.
 
@@ -38,7 +38,7 @@ You can use different types of authentication, such as basic authentication and 
 
 ### Basic Authentication (Basic Auth)
 
-When using basic authentication, the REST API requires a username and password. 
+When using basic authentication, the REST API requires a username and password.
 
 To use basic auth, include a base-64 encoded version of your `username:password` in the Authorization header of your request. The default `username:password` from the project template is `Admin:Admin`. An example of basic authorization in your request header follows:
 
@@ -118,5 +118,3 @@ In the request body, if you need to include data, add body data to a cURL reques
 A typical cURL request to the {{ book.product }} API incorporating all these parts follows:
 
     curl -XPOST 'http://localhost:8181/blocks' --user 'Admin:Admin' --data '{"type": "LoggerBlock", "name": "Log"}' -H 'Content-Type: application/json'
-
-[](fake comment)
