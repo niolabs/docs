@@ -11,7 +11,7 @@
     "favicon",
     "-sharing",
     "toolbar",
-    "toggle2"
+    "wikify"
   ],
   "pluginsConfig": {
     "favicon":{
