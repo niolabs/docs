@@ -35,7 +35,7 @@ To add a block:
 
 1. Click the **Block Library** in the upper-right corner.
 2. In the Search box, enter the name of a block. As you type, the list is filtered.
-3. Click **Available**, **Installed**, and **Configured** to search for the block.
+3. If the block is not displayed, click **Available**, **Installed**, and **Configured** to search for the block.
 3. If the block is not already pre-installed, click the **Install Block** button which resembles a cloud with a down arrow.
 3. Drag the block onto the canvas.
 5. Type the name of the block and click **Accept**. 
