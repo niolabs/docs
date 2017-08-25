@@ -4,7 +4,7 @@ Block properties are the configuration fields of a block.
 
 In the System Designer, when you double-click a block, the configuration panel displays the block's properties. The configuration panel for a _Modifier_ block is shown below. It displays four properties: **Exclude Existing Fields**, **Fields**, **Log Level**, and **Version**.
 
-<img src="/img/DF-block-config.png" width="300" />
+<img src="/img/modifier-block-config.png" width="300" />
 
 The input fields are block properties that can be edited, updated, and saved to create a configured block.
 
