@@ -94,6 +94,7 @@ To add a block in the System Designer:
 
 1. Click the **Block Library** in the upper-right corner.
 2. In the Search box, enter the name of a block. As you type, the list is filtered.
+3. Click **Available**, **Installed**, and **Configured** to search for the block.
 3. Click the **Install Block** button which resembles a cloud with a down arrow.
 4. Drag the block onto the canvas.
 5. Type the name of the block and click **Accept**. 
