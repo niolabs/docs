@@ -8,11 +8,12 @@ To create a cloud instance:
 
 1. Log in to the System Designer.
 2. Click the **+** button in the lower-left corner to create and name a new system.
+3. Select **Auto** for the Pubkeeper configuration.
 3. Click **Accept**.
 4. Select the name of the system.
 5. Click **Create a Cloud Instance**.
 6. Type the name of the instance, leave the instance type as **n.io Cloud**, and click **Accept**.
-7. Wait for the instance to spin-up and note the name of the new instance on the left side.
+7. Wait for the instance to spin up and note the name of the new instance on the left side.
 
 ## Add a Service
 
@@ -34,6 +35,7 @@ To add a block:
 
 1. Click the **Block Library** in the upper-right corner.
 2. In the Search box, enter the name of a block. As you type, the list is filtered.
+3. If the block is not displayed, click **Available**, **Installed**, and **Configured** to search for the block.
 3. If the block is not already pre-installed, click the **Install Block** button which resembles a cloud with a down arrow.
 3. Drag the block onto the canvas.
 5. Type the name of the block and click **Accept**. 
