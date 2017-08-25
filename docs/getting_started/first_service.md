@@ -25,6 +25,8 @@ To add a service:
 
 By now, you are more than ready to see something happen.
 
+To view logs in the terminal:
+
 1. Click **Start** on the toolbar.
 2. View the logs in the terminal.  Note: Logs are saved in the  `logs/` directory of your project folder.
 ```
@@ -44,6 +46,15 @@ By now, you are more than ready to see something happen.
 [2016-03-05 00:32:10.204] NIO [INFO] [SimulateAndLog.Log] {'sim': 1}
 ```
 3. Click **Stop** when finished.
+
+To view logs in the logger panel:
+
+1. Click **Open Logger** button on the toolbar.
+1. Click **Start** on the toolbar.
+2. View the logs in the logger panel. 
+![](/assets/LoggerPanel.png)
+3. Click **Stop** when finished.
+
 
 ## Configure Blocks
 
