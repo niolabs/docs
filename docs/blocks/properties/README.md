@@ -41,7 +41,7 @@ In the _Modifier_ block shown above, the `ShowAlertLevel` block is configured so
 
 ## Expressions
 
-Expressions are used to dynamically define properties. Many property types can accept expressions. Expressions are found inside the double curly braces. In the _Dynamic Fields_ block configuration shown above, you can see example expressions in the Attribute Value inputs. Learn more about how to create expressions in [{{ book.product }} Expressions](./expressions.html).
+Expressions are used to dynamically define properties. Many property types can accept expressions. Expressions are found inside the double curly braces. In the _Dynamic Fields_ block configuration shown above, you can see example expressions in the Attribute Value inputs. Learn more about how to create expressions in [{{ book.product }} Expressions](./expressions.md).
 
 ## Environment Variables
 

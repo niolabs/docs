@@ -1,6 +1,6 @@
 # Services Types API
 
-Service types contain metadata for services and can be accessed with `/services_types` API. 
+Service types contain metadata for services and can be accessed with `/services_types` API.
 
 ## Get API
 
@@ -154,4 +154,3 @@ and the result will be
 You can get the details of all the service types configurations in one request with a request to the `/services_types` endpoint.
 
       curl -XGET 'http://localhost:8181/services_types'
-[](fake comment)

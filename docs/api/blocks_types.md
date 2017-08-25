@@ -121,7 +121,7 @@ The result of the previous request follows:
 
 **namespace**<br>The class the block type is imported from.
 
-**properties**<br>The configurable attributes and information of the block type including: 
+**properties**<br>The configurable attributes and information of the block type including:
  - **type**<br>The property type.
  - **name**<br>The block name.
  - **default**<br>The default value.
@@ -154,4 +154,3 @@ When {{ book.product }} starts, it discovers and adds all the block types in the
 When {{ book.product }} starts, it discovers and adds all the block types in the project. When code in an existing block type is changed in a project (for example, when upgrading to a newer version of the block type) in a running {{ book.product }} instance, you need to tell {{ book.product }} to use the updated code. You can do that with the Update API. Once the new block code is updated in the project directory, send a PUT request to the updated block type to load it into the running {{ book.product }} instance
 
     curl -XPUT 'http://localhost:8181/blocks_types/Logger'
-[](fake comment)

@@ -4,7 +4,7 @@
 
 ## nio
 
-The `/nio` endpoint is used to find information, such as versioning, about your running {{ book.product }} instances 
+The `/nio` endpoint is used to find information, such as versioning, about your running {{ book.product }} instances
 
     curl -XGET 'localhost:8181/nio'
 
@@ -54,4 +54,3 @@ The `/shutdown` endpoint is used to shutdown a running {{ book.product }} instan
 The following HTML is returned after a successful shutdown request:
 
     Shutdown complete
-[](fake comment)
