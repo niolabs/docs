@@ -52,7 +52,7 @@ To view logs in the logger panel:
 1. Click **Open Logger** button on the toolbar.
 1. Click **Start** on the toolbar.
 2. View the logs in the logger panel. 
-![](/assets/LoggerPanel.png)
+![](/docs/img/LoggerPanel.png)
 3. Click **Stop** when finished.
 
 
