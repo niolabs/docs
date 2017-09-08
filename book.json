@@ -3,7 +3,7 @@
   "title": "nio documentation",
   "description": "Design complex systems with the simple building blocks of nio.",
   "variables": {
-    "company": "nio",
+    "company": "niolabs",
     "product": "nio"
   },
   "plugins": [
