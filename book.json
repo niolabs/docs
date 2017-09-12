@@ -19,8 +19,9 @@
         "bookmark": "img/favicon.ico"
     },
     "theme-nio": {
-      "active-location": "docs"
-    },
+      "active-location": "docs",
+      "ga-code": "UA-51072171-18"
+      },
     "toolbar": {
       "buttons":[
         {
