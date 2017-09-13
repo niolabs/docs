@@ -73,7 +73,7 @@ This configuration (based on the configuration of `key`\ will create a new signa
 
 ## Group By
 
-By default, a block operates over an entire list of signals. However, sometimes you need to perform the block's operation multiple times over a subset of the incoming list. For example, you may want to pass around a list of all employees at a company and  want to reduce the list down to a signal that contains all of their names. 
+By default, a block operates over an entire list of signals. However, sometimes you need to perform the block's operation multiple times over a subset of the incoming list. For example, you may want to pass around a list of all employees at a company and  want to reduce the list down to a signal that contains all of their names.
 ```
 [
   {
@@ -118,7 +118,7 @@ There are several downsides to this approach.
 * You lose your original list. When the chain started you had a list of all employees, and now you have different lists floating around. You would have to merge the streams back together to get a list of all the employee names.
 * It is very tedious and repetitive. We have the same blocks used over and over again.
 
-The [Group By mixin](https://github.com/nioinnovation/nio/tree/master/nio/block/mixins/group_by) groups the signals into smaller lists first before performing the same action. This is very similar to the SQL [`GROUP BY`](https://www.w3schools.com/sql/sql_groupby.asp) operator. Fortunately, the `HashTable` block uses the Group By mixin, so you can eliminate the `Filter` blocks and rely on only one `HashTable` block. The block will group the hash table functionality by the department of the employee. Since you don't need the department name as the signal attribute key anymore, you can hard code that to be a string `"names"` instead.
+The [Group By mixin](https://github.com/niolabs/nio/tree/master/nio/block/mixins/group_by) groups the signals into smaller lists first before performing the same action. This is very similar to the SQL [`GROUP BY`](https://www.w3schools.com/sql/sql_groupby.asp) operator. Fortunately, the `HashTable` block uses the Group By mixin, so you can eliminate the `Filter` blocks and rely on only one `HashTable` block. The block will group the hash table functionality by the department of the employee. Since you don't need the department name as the signal attribute key anymore, you can hard code that to be a string `"names"` instead.
 
 ```
 {
@@ -130,7 +130,7 @@ The [Group By mixin](https://github.com/nioinnovation/nio/tree/master/nio/block/
 }
 ```
 
-You added an attribute to your block configuration indentifying the value to group by. The output of the block is a list of two signals, one for each department. Again, remember that since you only have one list of inputs, you can only have one list of outputs. Even though there are two signals being notified, they will be notified together in the same list. 
+You added an attribute to your block configuration indentifying the value to group by. The output of the block is a list of two signals, one for each department. Again, remember that since you only have one list of inputs, you can only have one list of outputs. Even though there are two signals being notified, they will be notified together in the same list.
 ```
 [
   {

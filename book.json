@@ -7,9 +7,10 @@
     "product": "nio"
   },
   "plugins": [
-    "theme-nio@git://github.com/nioinnovation/gitbook-plugin-theme-nio.git",
+    "theme-nio@git://github.com/niolabs/gitbook-plugin-theme-nio.git",
     "favicon",
     "-sharing",
+    "-fontsettings",
     "toolbar",
     "back-to-top-button"
   ],
@@ -27,7 +28,7 @@
         {
             "label": "GitHub",
             "icon": "fa fa-github fa-inverse circle-background",
-            "url": "http://github.com/nioinnovation"
+            "url": "http://github.com/niolabs"
         }
       ]
     }
