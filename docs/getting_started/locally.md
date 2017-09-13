@@ -28,7 +28,7 @@ pip3 install nio-cli
 
 ## Create a Project
 
-Now that we have the {{ book.product}} binary to run, we need a {{ book.product}} project to run it against. Obtain a {{ book.product}} project template by cloning the [Project Template repository](https://github.com/nioinnovation/project_template) or  use the {{ book.product}} CLI.
+Now that we have the {{ book.product}} binary to run, we need a {{ book.product}} project to run it against. Obtain a {{ book.product}} project template by cloning the [Project Template repository](https://github.com/niolabs/project_template) or  use the {{ book.product}} CLI.
 
 To clone the project template using CLI, enter the following command:
 
@@ -38,7 +38,7 @@ The `first_project` directory is created in your working directory containing th
 
 To clone the project template using git, clone the template,  and initialize the submodules which contain the blocks.
 ```
-git clone https://github.com/nioinnovation/project_template.git first_project
+git clone https://github.com/niolabs/project_template.git first_project
 cd first_project
 git submodule update --init --recursive
 ```
@@ -73,12 +73,12 @@ To create a local instance:
 2. Click the **+** button in the lower-left corner to create and name a new system.
 3. Click **Accept**.
 4. Select the name of the system.
-5. Click **Add new instance**. 
+5. Click **Add new instance**.
 6. Type the name of the instance, enter **localhost** for host and **8181** for port, and leave the access mode as **basic**.
 7. Click **Accept**.
 8. Wait for the instance to spin-up and note the name of the new instance on the left.
 
-Note: When you connect to a {{ book.product}} instance, you are communicating with that instance directly from your browser via an XHR request. Hostnames like `localhost` and other internal IP addresses will work. You must have access to the localhost or other IP address from your machine to use the System Designer. 
+Note: When you connect to a {{ book.product}} instance, you are communicating with that instance directly from your browser via an XHR request. Hostnames like `localhost` and other internal IP addresses will work. You must have access to the localhost or other IP address from your machine to use the System Designer.
 
 You may see an issue regarding HTTPS and HTTP instances. Since you launched your instance and presumably didn't load any SSL certificates, the instance is accessible only by HTTP. However, if you are logged into the System Designer via HTTPS, then an XHR request going over HTTP is not permitted due to a browser restriction. Instead, log into the designer via HTTP. All of your instances and systems will be the same, except the {{ book.product}} commands to edit these instances won't happen over HTTPS.
 
@@ -88,7 +88,7 @@ Once your instance is loaded and available, you can add services and blocks in t
 
 Before we move on, you're going to want to add some blocks to your project. Blocks can be added in the System Designer or from the command line.
 
-nio blocks are installed to instances using the Block Library. The collection of blocks created by {{ book.product }} is also stored in the [nio-blocks GitHub repository](https://github.com/nio-blocks). You can search for blocks in the System Designer or in GitHub. 
+nio blocks are installed to instances using the Block Library. The collection of blocks created by {{ book.product }} is also stored in the [nio-blocks GitHub repository](https://github.com/nio-blocks). You can search for blocks in the System Designer or in GitHub.
 
 To add a block in the System Designer:
 
@@ -97,7 +97,7 @@ To add a block in the System Designer:
 3. If the block is not displayed, click **Available**, **Installed**, and **Configured** to search for the block.
 3. Click the **Install Block** button which resembles a cloud with a down arrow.
 4. Drag the block onto the canvas.
-5. Type the name of the block and click **Accept**. 
+5. Type the name of the block and click **Accept**.
 
 To add blocks manually:
 
@@ -109,4 +109,4 @@ git submodule add https://github.com/nio-blocks/logger.git blocks/logger
 3. Click the **Block Library** in the upper-right corner.
 4. In the Search box, enter the name of the block. As you type, the list is filtered.
 5. Drag the your block onto the canvas.
-6. Type the name of the block and click **Accept**. 
+6. Type the name of the block and click **Accept**.

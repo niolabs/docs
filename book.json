@@ -7,7 +7,7 @@
     "product": "nio"
   },
   "plugins": [
-    "theme-nio@git://github.com/nioinnovation/gitbook-plugin-theme-nio.git",
+    "theme-nio@git://github.com/niolabs/gitbook-plugin-theme-nio.git",
     "favicon",
     "-sharing",
     "-fontsettings",
