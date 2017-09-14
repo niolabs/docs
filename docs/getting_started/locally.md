@@ -103,7 +103,7 @@ To add a block in the System Designer:
 
 To add blocks manually:
 
-1. From the project root directory, clone the relevant block repository into the `blocks/` folder. For example, the logger block:
+1. From the project root directory, add the relevant block repository into the `blocks/` folder as a submodule. For example, the logger block:
 ```
 git submodule add https://github.com/nio-blocks/logger.git blocks/logger
 ```
