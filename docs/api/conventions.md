@@ -44,7 +44,7 @@ To use basic auth, include a base-64 encoded version of your `username:password`
 
 `{ "authorization": "Basic QWRtaW46QWRtaW4=" }`
 
-For examples of adding headers to a cURL request, see  [Headers](#headers).
+For examples of adding headers to a curl request, see  [Headers](#headers).
 
 ### JSON Web Tokens (JWT)
 
@@ -52,16 +52,16 @@ When using JSON Web Tokens (JWT), first obtain an access, and then include it in
 
 `{ "authorization": "Bearer <your token>" }`
 
-For examples of adding headers to a cURL request, see [Headers](#headers).
+For examples of adding headers to a curl request, see [Headers](#headers).
 
-## Testing with cURL
+## Testing with curl
 
-To test {{ book.product }} API requests and responses, you can use a tool such as [Postman](https://www.getpostman.com/) or a cURL command from your terminal. cURL commands start with `curl`, and then include the request type, a URL, and possibly a request header and a request body. For the {{ book.product }} API, an authorization [header](#headers) is required.
+To test {{ book.product }} API requests and responses, you can use a tool such as [Postman](https://www.getpostman.com/) or a curl command from your terminal. curl commands start with `curl`, and then include the request type, a URL, and possibly a request header and a request body. For the {{ book.product }} API, an authorization [header](#headers) is required.
 
 ### Request Type
 Your request type will be one of `GET`, `POST`, `PUT`, or `DELETE`.
 
-With the cURL command, you can specify with following options:
+With the curl command, you can specify with following options:
 
       -XGET
       -XPOST
@@ -106,7 +106,7 @@ To send data with your request, you need to include the data's Content-Type in y
 
 ### Body
 
-In the request body, if you need to include data, add body data to a cURL request with the `-d` or `--data` flag.
+In the request body, if you need to include data, add body data to a curl request with the `-d` or `--data` flag.
 
     -d '{"type": "LoggerBlock", "name": "Log"}'
 
@@ -115,6 +115,6 @@ In the request body, if you need to include data, add body data to a cURL reques
 
 ### Putting It All Together
 
-A typical cURL request to the {{ book.product }} API incorporating all these parts follows:
+A typical curl request to the {{ book.product }} API incorporating all these parts follows:
 
     curl -XPOST 'http://localhost:8181/blocks' --user 'Admin:Admin' --data '{"type": "LoggerBlock", "name": "Log"}' -H 'Content-Type: application/json'
