@@ -16,7 +16,7 @@ Signals are passed from block to block. You define your systems by designing how
 
 Lists of signals are an important concept to understand. Blocks will typically operate independently on an entire list of incoming signals. This means that blocks act on the entire list of incoming signals rather than the individual signals themselves. When a block only receives one list of signals as input, you can safely assume that you will only get one list of signals as output.
 
-For example, let's imagine a [filter block](https://github.com/nio-blocks/filter) that filters out a stream of odd numbers:
+For example, let's imagine a [filter block](https://blocks.n.io/Filter) that filters out a stream of odd numbers:
 
 ```
 {

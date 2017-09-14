@@ -10,7 +10,7 @@ Authentication is the action to verify the identity of a user or process.
 
 Authorization is the process of giving someone permission to perform an action.
 
-You will need to include an authorization header with your {{ book.product }} API requests. For examples, see [Basic Auth](#basic-auth) and [JWT](#jwt). For examples of adding headers to cURL requests, see [Headers](#headers).
+You will need to include an authorization header with your {{ book.product }} API requests. For examples, see [Basic Auth](#basic-authentication-basic-auth) and [JWT](#json-web-tokens-jwt). For examples of adding headers to cURL requests, see [Headers](#headers).
 
 User names and passwords are specified in the `users.json` file in the `etc` directory.
 
@@ -34,7 +34,7 @@ You can change the location of your users and permissions files in the `[securit
 
 The default configuration is shown. You can uncomment the default configuration and it will not change. To find your users and permissions in files other than `etc/users.json` and `etc/permissions.json`, uncomment the configuration and edit it.
 
-You can use different types of authentication, such as basic authentication and Jason Web Tokens, with {{ book.product }}.
+You can use different types of authentication, such as basic authentication and JSON Web Tokens, with {{ book.product }}.
 
 ### Basic Authentication (Basic Auth)
 
@@ -46,7 +46,7 @@ To use basic auth, include a base-64 encoded version of your `username:password`
 
 For examples of adding headers to a cURL request, see  [Headers](#headers).
 
-### Jason Web Tokens (JWT)
+### JSON Web Tokens (JWT)
 
 When using JSON Web Tokens (JWT), first obtain an access, and then include it in the header.
 
@@ -92,7 +92,7 @@ You can also add query parameters to the URL, but for the most part, the {{ book
 
 ### Headers
 
-In your request, you need to include a header with your [basic auth](#basic-auth) or [JWT](#jwt) authentication. You can add auth to your cURL requests with the `-H` header flag or the `--user` flag followed by a string. The following formats will work:
+In your request, you need to include a header with your [Basic Auth](#basic-authentication-basic-auth) and [JWT](#json-web-tokens-jwt) authentication. You can add auth to your cURL requests with the `-H` header flag or the `--user` flag followed by a string. The following formats will work:
 
       -H 'authorization: Basic <base 64 encoded username:password>'
 
