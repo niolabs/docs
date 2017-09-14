@@ -1,6 +1,10 @@
 # Publishing and Subscribing to Data
 
-Designing systems with {{ book.product }} includes designing how information, or signals,  moves through the system. {{ book.product }} recommends using the Pub/Sub mechanisms to move data from one service to another. The `Publisher` and `Subscriber` blocks are located in the [communication block repository](https://github.com/nio-blocks/communication).
+Designing systems with {{ book.product }} includes designing how information, or signals,  moves through the system. {{ book.product }} recommends using the Pub/Sub mechanisms to move data from one service to another.
+The following communication blocks are located at [blocks.n.io](https://blocks.n.io/):
+* [Publisher](https://blocks.n.io/Publisher)
+* [Subscriber](https://blocks.n.io/Subscriber)
+
 
 ## Topic Tree
 

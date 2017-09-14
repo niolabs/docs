@@ -20,6 +20,8 @@ To run {{ book.product}}, enter the following command:
 `nio_run`
 
 If that command is not available, make sure your Python binary installation directory is on your PATH.
+* If you need help setting your PATH in Windows, click [here](https://msdn.microsoft.com/en-us/library/aa922003.aspx).
+* If you need help setting your PATH in MacOS, click [here](http://osxdaily.com/2014/08/14/add-new-path-to-path-command-line/).
 
 To install the {{ book.product}} Command Line Interface \(CLI\), enter the following command:
 ```
@@ -88,7 +90,7 @@ Once your instance is loaded and available, you can add services and blocks in t
 
 Before we move on, you're going to want to add some blocks to your project. Blocks can be added in the System Designer or from the command line.
 
-nio blocks are installed to instances using the Block Library. The collection of blocks created by {{ book.product }} is also stored in the [nio-blocks GitHub repository](https://github.com/nio-blocks). You can search for blocks in the System Designer or in GitHub.
+nio blocks are installed to instances using the Block Library. The collection of blocks created by {{ book.product }} are also located at [blocks.n.io](https://blocks.n.io/). You can search for blocks in the System Designer or at [blocks.n.io](https://blocks.n.io/).
 
 To add a block in the System Designer:
 
@@ -105,6 +107,7 @@ To add blocks manually:
 ```
 git submodule add https://github.com/nio-blocks/logger.git blocks/logger
 ```
+This can also be done with the nio-cli with `nio add logger`.
 2. Restart the System Designer.
 3. Click the **Block Library** in the upper-right corner.
 4. In the Search box, enter the name of the block. As you type, the list is filtered.

@@ -5,7 +5,7 @@ In the System Designer, you begin with an empty canvas full of possibilities, bu
 To add a service:
 
 1. Select the name of the instance.
-2. Click **Add New Service**. 
+2. Click **Add New Service**.
 3. Type **SimulateAndLog**, leave the service type as **Service**, and click **Accept**.
 4. Click the **SimulateAndLog** service.
 5. Click the **Block Library** in the upper-right corner.
@@ -53,7 +53,7 @@ To view logs in the logger panel:
 
 1. Click **Open Logger** button on the toolbar.
 1. Click **Start** on the toolbar.
-2. View the logs in the logger panel. 
+2. View the logs in the logger panel.
    ![](/img/LoggerPanel.png)
 3. Click **Stop** when finished.
 
@@ -69,7 +69,7 @@ To configure blocks:
 
 ## Command Blocks and Services
 
-You can execute code in a block or service with commands. Technically, you have already commanded services with start and stop. 
+You can execute code in a block or service with commands. Technically, you have already commanded services with start and stop.
 
 To command a block:
 
@@ -80,5 +80,4 @@ To command a block:
 
 ## Conclusion
 
-At this point you should feel comfortable installing {{ book.product }}, creating a project with blocks, and configuring and running services. You can find block documentation on the [nio-blocks repository](https://github.com/nio-blocks).
-   
+At this point you should feel comfortable installing {{ book.product }}, creating a project with blocks, and configuring and running services. You can find block documentation in the [Block Library at blocks.n.io](https://blocks.n.io/).
