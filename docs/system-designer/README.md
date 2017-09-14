@@ -4,7 +4,7 @@ The System Designer is the graphical user interface used to build your {{ book.p
 
 Note that your screen may look slightly different than the images in the document and video.
 
-{% video %}https://www.youtube.com/watch?v=wvFLtfMSsDs{% endvideo %}
+{% video %}https://www.youtube.com/watch?v=kqY7Z0IJ50E{% endvideo %}
 
 ## System
 

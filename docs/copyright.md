@@ -1,4 +1,4 @@
-© {% year %}{% endyear %} {{ book.company }}.
+© {% year %}{% endyear %} n.io innovation, LLC.
 
 All Rights Reserved.
 
