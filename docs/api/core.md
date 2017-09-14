@@ -13,18 +13,65 @@ The following JSON body is returned:
 ```json
 {
     "components": {
-        "ServiceMonitor": {},
-        "ConfigMonitor": {},
-        "ProjectManager": {},
-        "LogManager": {},
-        "BlockManager": {},
-        "ManagementPublisher": {},
-        "RESTManager": {},
-        "ServiceManager": {},
-        "ZmqCommunicationAPIManager": {}
+        "ServiceMonitor": {
+            "version": "0.1.0"
+        },
+        "ConfigManager": {
+            "version": "0.1.0"
+        },
+        "ProjectManager": {
+            "version": "2.0.0"
+        },
+        "LogManager": {
+            "version": "0.1.0"
+        },
+        "BlockManager": {
+            "version": "0.1.0"
+        },
+        "ManagementPublisher": {
+            "version": "0.1.1"
+        },
+        "RESTManager": {
+            "version": "0.1.0"
+        },
+        "ServiceManager": {
+            "version": "0.1.0"
+        }
     },
-    "modules": {},
+    "modules": {
+        "security": {
+            "BasicSecurityModule": {
+                "version": "0.1.0"
+            }
+        },
+        "settings": {
+            "SettingsIniModule": {
+                "version": "0.1.0"
+            }
+        },
+        "scheduler": {
+            "CustomSchedulerModule": {
+                "version": "0.1.0"
+            }
+        },
+        "communication": {
+            "PubkeeperCommunicationModule": {
+                "version": "0.1.0"
+            }
+        },
+        "persistence": {
+            "FilePersistenceModule": {
+                "version": "0.1.0"
+            }
+        },
+        "web": {
+            "CherryPyWebModule": {
+                "version": "0.1.0"
+            }
+        }
+    },
     "nio": {
+        "instance_id": "agriculture_master",
         "version": "2.1.0",
         "binary": "nio_full",
         "build": "20170509"

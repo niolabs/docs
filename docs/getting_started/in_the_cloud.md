@@ -25,7 +25,7 @@ To add a service:
 2. Click **Add New Service**.
 3. Type the name of the service, leave the service type as **Service**, and click **Accept**.
 
-## Add A Block
+## Add a Block
 
 You now have an empty canvas, and now you are ready for blocks.
 
