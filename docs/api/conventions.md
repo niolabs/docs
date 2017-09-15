@@ -10,7 +10,7 @@ Authentication is the action to verify the identity of a user or process.
 
 Authorization is the process of giving someone permission to perform an action.
 
-You will need to include an authorization header with your {{ book.product }} API requests. For examples, see [Basic Auth](#basic-auth) and [JWT](#jwt). For examples of adding headers to curl requests, see [Headers](#headers).
+You will need to include an authorization header with your {{ book.product }} API requests. For examples, see [Basic Auth](#basic-authentication-basic-auth) and [JWT](#json-web-tokens-jwt). For examples of adding headers to cURL requests, see [Headers](#headers).
 
 User names and passwords are specified in the `users.json` file in the `etc` directory.
 
@@ -92,7 +92,7 @@ You can also add query parameters to the URL, but for the most part, the {{ book
 
 ### Headers
 
-In your request, you need to include a header with your [basic auth](#basic-auth) or [JWT](#jwt) authentication. You can add auth to your curl requests with the `-H` header flag or the `--user` flag followed by a string. The following formats will work:
+In your request, you need to include a header with your [Basic Auth](#basic-authentication-basic-auth) and [JWT](#json-web-tokens-jwt) authentication. You can add auth to your cURL requests with the `-H` header flag or the `--user` flag followed by a string. The following formats will work:
 
       -H 'authorization: Basic <base 64 encoded username:password>'
 

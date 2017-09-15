@@ -9,6 +9,12 @@ Requirements
 * Download Python 3.4.5 or 3.5.2 from [https://www.python.org/downloads/](https://www.python.org/downloads/).
 * Obtain the {{ book.product}} binary Python wheel file (`.whl`) with your license agreement.
 
+## Download {{ book.product}}
+
+Download {{ book.product}} from the following URL: 
+
+https://app.n.io/binaries/download
+
 ## Install {{ book.product}} binary and CLI
 
 To install {{ book.product}}, enter the following command:
@@ -117,7 +123,7 @@ Once your instance is loaded and available, you can add services and blocks in t
 
 Before we move on, you're going to want to add some blocks to your project. Blocks can be added in the System Designer or from the command line.
 
-nio blocks are installed to instances using the Block Library. The collection of blocks created by {{ book.product }} is also stored in the [nio-blocks GitHub repository](https://github.com/nio-blocks). You can search for blocks in the System Designer or in GitHub.
+nio blocks are installed to instances using the Block Library. The collection of blocks created by {{ book.product }} are also located at [blocks.n.io](https://blocks.n.io/). You can search for blocks in the System Designer or at [blocks.n.io](https://blocks.n.io/).
 
 To add a block in the System Designer:
 
@@ -130,10 +136,11 @@ To add a block in the System Designer:
 
 To add blocks manually:
 
-1. From the project root directory, clone the relevant block repository into the `blocks/` folder. For example, the logger block:
+1. From the project root directory, add the relevant block repository into the `blocks/` folder as a submodule. For example, the logger block:
 ```
 git submodule add https://github.com/nio-blocks/logger.git blocks/logger
 ```
+This can also be done with the nio-cli with `nio add logger`.
 2. Restart the System Designer.
 3. Click the **Block Library** in the upper-right corner.
 4. In the Search box, enter the name of the block. As you type, the list is filtered.

@@ -29,7 +29,7 @@ To add a service:
 
 You now have an empty canvas, and now you are ready for blocks.
 
-nio blocks are installed to instances using the Block Library. The collection of blocks created by {{ book.product }} is also stored in the [nio-blocks GitHub repository](https://github.com/nio-blocks). You can search for blocks in the System Designer or in GitHub.
+nio blocks are installed to instances using the Block Library. The collection of blocks created by {{ book.product }} is also stored in the [Block Library at blocks.n.io](https://blocks.n.io/). You can search for blocks in the System Designer or in the Block Library.
 
 To add a block:
 

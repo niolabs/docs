@@ -30,16 +30,16 @@ Because of the way we use simulators to kick off the actions of a service, almos
 
 ## Testing and Custom Simulators
 
-To test a service, you may want data that looks like an actual signal, but do not want to connect to a real data source. To do this, you can create a custom generator for your data format, and then use a simulator block with that generator. The process of creating a custom generator requires writing python code and is documented in more detail in the [simulator repository readme file](https://github.com/nio-blocks/simulator).
+To test a service, you may want data that looks like an actual signal, but do not want to connect to a real data source. To do this, you can create a custom generator for your data format, and then use a simulator block with that generator. The process of creating a custom generator requires writing python code and is documented in more detail in the [signal generator / simulator readme files] https://blocks.n.io/?category=Signal%20Generator).
 
-You can create custom simulated data without writing any code, but this is not as flexible. By pairing a simulator with the `Identity` trigger with a `DynamicFields` block, a service builder can generate empty signals on a schedule and then route the empty signal to a `DynamicFields` block where it fills in the information that the signal should consist of. A service building expert would make use of the `random` module inside of a {{ book.product }} expression to generate random data. For example, to generate a signal with a random number from 1 to 10 each time, connect the output of an `IdentityIntervalSimulator` block to a `DynamicFields` block.
+You can create custom simulated data without writing any code, but this is not as flexible. By pairing a simulator with the `Identity` trigger with a `Modifier` block, a service builder can generate empty signals on a schedule and then route the empty signal to a `Modifier` block where it fills in the information that the signal should consist of. A service building expert would make use of the `random` module inside of a {{ book.product }} expression to generate random data. For example, to generate a signal with a random number from 1 to 10 each time, connect the output of an `IdentityIntervalSimulator` block to a `Modifier` block.
 ```
 {
   "name": "Random Number",
-  "type": "DynamicFields",
+  "type": "Modifier",
   "fields": [{
     "title": "num",
-    "formula": "{{ __import__('random').randint(1,10) }}"
+    "formula": "{{ random.randint(1,10) }}"
   }]
 }
 ```
