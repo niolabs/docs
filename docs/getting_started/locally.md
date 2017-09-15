@@ -11,7 +11,7 @@ Requirements
 
 ## Download {{ book.product}}
 
-Download {{ book.product}} from the following URL: 
+Download {{ book.product}} from the following URL:
 
 https://app.n.io/binaries/download
 
@@ -84,6 +84,11 @@ To run {{ book.product}}, enter the following command:
 ```
 nio_run
 ```
+If that command is not available, make sure your Python binary installation directory is on your PATH.
+
+* If you need help setting your PATH in Windows, click here.
+* If you need help setting your PATH in MacOS, click here.
+
 The log messages display, similar to the following output, but there should be no errors.
 
 ```
