@@ -31,12 +31,15 @@ pip3 install nio-cli
 
 Now that we have the {{ book.product}} binary to run, we need a {{ book.product}} project to run it against. Obtain a {{ book.product}} project template by cloning the [Project Template repository](https://github.com/niolabs/project_template) or  use the {{ book.product}} CLI.
 
+
+### Download using the {{book.product}} CLI
 To clone the project template using CLI, enter the following command:
 
 `nio new first_project`
 
 The `first_project` directory is created in your working directory containing the {{ book.product}} project.
 
+### Download using git
 To clone the project template using git, clone the template,  and initialize the submodules which contain the blocks.
 ```
 git clone https://github.com/niolabs/project_template.git first_project
@@ -44,15 +47,12 @@ cd first_project
 git submodule update --init --recursive
 ```
 
+## Set up {{book.product}} enviroment
+
 After adding the new project, enter the project directory by running
 ```
 cd first_project
 ```
-
-Disable the local SNMPAgent and PubkeeperServer.
-1. Open the `nio.conf` file from within your project directory.
-2. Navigate to line 16 `#disabled=SNMPAgent, PubkeeperServer`.
-3. Uncomment the line by removing the `#` character from the beginning of the line.
 
 In your browser, navigate to the [System Designer](http://designer.n.io) and create a new system:
 1. Log in to the System Designer.
