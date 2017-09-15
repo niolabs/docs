@@ -9,6 +9,12 @@ Requirements
 * Download Python 3.4.5 or 3.5.2 from [https://www.python.org/downloads/](https://www.python.org/downloads/).
 * Obtain the {{ book.product}} binary Python wheel file (`.whl`) with your license agreement.
 
+## Download {{ book.product}}
+
+Download {{ book.product}} from the following URL: 
+
+https://app.n.io/binaries/download
+
 ## Install {{ book.product}}
 
 To install {{ book.product}}, enter the following command:
