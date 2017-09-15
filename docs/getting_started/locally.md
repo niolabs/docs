@@ -1,6 +1,6 @@
 # Running {{ book.product}} Locally
 
-The cloud is an easy way to get {{ book.product}} up and running, but doesn't fully encapsulate the distributed power of the {{ book.product}} platform. Instead, you should run {{ book.product}} on a local or edge node.
+The cloud is an easy way to get {{ book.product}} up and running, but doesn't fully encapsulate the distributed power of the {{ book.product}} platform. Instead, you should run {{ book.product}} on a local or edge node.  In this guide we will walk you through creating a local instance that uses a cloud based Pubkeeper server to handle communication.  If you would like to also run a Pubkeeper server locally, follow [this](**Insert link**) here.
 
 Running the {{ book.product}} platform requires Python version 3.4.5 or 3.5.2. Other versions of Python 3.4.x may work, but Python 3.5.3 and later do not work. When running the {{ book.product}} binary, the `Bad magic number` error is most likely caused by an incompatible version of Python.
 
@@ -15,19 +15,12 @@ Download {{ book.product}} from the following URL:
 
 https://app.n.io/binaries/download
 
-## Install {{ book.product}}
+## Install {{ book.product}} binary and CLI
 
 To install {{ book.product}}, enter the following command:
 ```
 pip3 install your_wheel_file.whl
 ```
-To run {{ book.product}}, enter the following command:
-
-`nio_run`
-
-If that command is not available, make sure your Python binary installation directory is on your PATH.
-* If you need help setting your PATH in Windows, click [here](https://msdn.microsoft.com/en-us/library/aa922003.aspx).
-* If you need help setting your PATH in MacOS, click [here](http://osxdaily.com/2014/08/14/add-new-path-to-path-command-line/).
 
 To install the {{ book.product}} Command Line Interface \(CLI\), enter the following command:
 ```
@@ -50,9 +43,45 @@ git clone https://github.com/niolabs/project_template.git first_project
 cd first_project
 git submodule update --init --recursive
 ```
-To run {{ book.product}}, enter the following commands:
+
+After adding the new project, enter the project directory by running
 ```
 cd first_project
+```
+
+Disable the local SNMPAgent and PubkeeperServer.
+1. Open the `nio.conf` file from within your project directory.
+2. Navigate to line 16 `#disabled=SNMPAgent, PubkeeperServer`.
+3. Uncomment the line by removing the `#` character from the beginning of the line.
+
+In your browser, navigate to the [System Designer](http://designer.n.io) and create a new system:
+1. Log in to the System Designer.
+2. Click the **+** button in the lower-left corner to create and name a new system.
+3. Name your system
+4. Keep the Pubkeeper configuration as `auto`
+5. Click **Accept**
+6. Click **edit** to open the system's configuration
+7. Make note of the values for **host** and **token** for the following steps.
+
+In your first_project directory, open the `nio.env` file.
+
+Update the following four lines in the `# Pubkeeper Client` section
+```
+PK_TOKEN: [your copied token]
+PK_HOST: [your copied host]
+PK_PORT: 443
+PK_SECURE: True
+```
+
+Update the following three lines in the `# Websocket Brew Variables` section
+```
+WS_HOST: [your copied host, replacing `pubkeeper` with `websocket`]
+WS_PORT: 443
+WS_SECURE: True
+```
+
+To run {{ book.product}}, enter the following command:
+```
 nio_run
 ```
 The log messages display, similar to the following output, but there should be no errors.
@@ -78,13 +107,11 @@ Once you have a local instance running, you can edit it using the System Designe
 To create a local instance:
 
 1. Log in to the System Designer.
-2. Click the **+** button in the lower-left corner to create and name a new system.
-3. Click **Accept**.
-4. Select the name of the system.
-5. Click **Add new instance**.
-6. Type the name of the instance, enter **localhost** for host and **8181** for port, and leave the access mode as **basic**.
-7. Click **Accept**.
-8. Wait for the instance to spin-up and note the name of the new instance on the left.
+2. Select the name of the system.
+3. Click **Add new instance**.
+4. Type the name of the instance, enter **localhost** for host and **8181** for port, and leave the access mode as **basic**.
+5. Click **Accept**.
+6. Wait for the instance to spin-up and note the name of the new instance on the left.
 
 Note: When you connect to a {{ book.product}} instance, you are communicating with that instance directly from your browser via an XHR request. Hostnames like `localhost` and other internal IP addresses will work. You must have access to the localhost or other IP address from your machine to use the System Designer.
 
