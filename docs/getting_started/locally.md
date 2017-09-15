@@ -54,7 +54,7 @@ Disable the local SNMPAgent and PubkeeperServer.
 2. Navigate to line 16 `#disabled=SNMPAgent, PubkeeperServer`.
 3. Uncomment the line by removing the `#` character from the beginning of the line.
 
-In your browser, navigate to the [System Designer](designer.n.io) and create a new system:
+In your browser, navigate to the [System Designer](http://designer.n.io) and create a new system:
 1. Log in to the System Designer.
 2. Click the **+** button in the lower-left corner to create and name a new system.
 3. Name your system
@@ -106,7 +106,7 @@ Once you have a local instance running, you can edit it using the System Designe
 
 To create a local instance:
 
-1. Navigate to the [System Designer](designer.n.io).
+1. Log in to the System Designer.
 2. Select the name of the system.
 3. Click **Add new instance**.
 4. Type the name of the instance, enter **localhost** for host and **8181** for port, and leave the access mode as **basic**.
