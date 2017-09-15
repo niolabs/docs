@@ -7,16 +7,9 @@ Running the {{ book.product}} platform requires Python version 3.4.5 or 3.5.2. O
 Requirements
 
 * Download Python 3.4.5 or 3.5.2 from [https://www.python.org/downloads/](https://www.python.org/downloads/).
-* Obtain the `pubkeeper.server` binary Python wheel file (`.whl`) with your license agreement.
 * Obtain the {{ book.product}} binary Python wheel file (`.whl`) with your license agreement.
 
-## Install `pubkeeper.server` (`.whl`)
-## Install {{ book.product}}
-
-To install `pubkeeper.server`, enter the following command:
-```
-pip3 install your_wheel_file.whl
-```
+## Install {{ book.product}} binary and CLI
 
 To install {{ book.product}}, enter the following command:
 ```
@@ -45,12 +38,15 @@ cd first_project
 git submodule update --init --recursive
 ```
 
-After adding the new project run
+After adding the new project, enter the project directory by running
 ```
 cd first_project
 ```
 
-Open the `nio.conf` file of your project and uncomment line 16 to disable the local SNMPAgent and PubkeeperServer
+Disable the local SNMPAgent and PubkeeperServer.
+1. Open the `nio.conf` file from within your project directory.
+2. Navigate to line 16 `#disabled=SNMPAgent, PubkeeperServer`.
+3. Uncomment the line by removing the `#` character from the beginning of the line.
 
 In your browser, navigate to the [System Designer](designer.n.io) and create a new system:
 1. Log in to the System Designer.
@@ -59,11 +55,11 @@ In your browser, navigate to the [System Designer](designer.n.io) and create a n
 4. Keep the Pubkeeper configuration as `auto`
 5. Click **Accept**
 6. Click **edit** to open the system's configuration
-7. Copy down your host and token (the long, unreadable strings)
+7. Make note of the values for **host** and **token** for the following steps.
 
-Go back to your first_project directory and open the `nio.env` file
+In your first_project directory, open the `nio.env` file.
 
-Update the following three lines in the `# Pubkeeper Client` section
+Update the following four lines in the `# Pubkeeper Client` section
 ```
 PK_TOKEN: [your copied token]
 PK_HOST: [your copied host]
@@ -71,14 +67,14 @@ PK_PORT: 443
 PK_SECURE: True
 ```
 
-Update the `# Websocket Brew Variables`
+Update the following three lines in the `# Websocket Brew Variables` section
 ```
-WS_HOST: [your copied host, but replace .pubkeeper. with .websocket. inside the string]
+WS_HOST: [your copied host, replacing `pubkeeper` with `websocket`]
 WS_PORT: 443
 WS_SECURE: True
 ```
 
-To run {{ book.product}}, enter the following commands:
+To run {{ book.product}}, enter the following command:
 ```
 nio_run
 ```
@@ -104,11 +100,12 @@ Once you have a local instance running, you can edit it using the System Designe
 
 To create a local instance:
 
-1. Select the name of the system.
-2. Click **Add new instance**.
-3. Type the name of the instance, enter **localhost** for host and **8181** for port, and leave the access mode as **basic**.
-4. Click **Accept**.
-5. Wait for the instance to spin-up and note the name of the new instance on the left.
+1. Navigate to the [System Designer](designer.n.io).
+2. Select the name of the system.
+3. Click **Add new instance**.
+4. Type the name of the instance, enter **localhost** for host and **8181** for port, and leave the access mode as **basic**.
+5. Click **Accept**.
+6. Wait for the instance to spin-up and note the name of the new instance on the left.
 
 Note: When you connect to a {{ book.product}} instance, you are communicating with that instance directly from your browser via an XHR request. Hostnames like `localhost` and other internal IP addresses will work. You must have access to the localhost or other IP address from your machine to use the System Designer.
 
