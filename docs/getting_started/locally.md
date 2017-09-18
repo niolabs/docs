@@ -1,6 +1,6 @@
 # Running {{ book.product}} Locally
 
-The cloud is an easy way to get {{ book.product}} up and running, but doesn't fully encapsulate the distributed power of the {{ book.product}} platform. Instead, you should run {{ book.product}} on a local or edge node.  In this guide we will walk you through creating a local instance that uses a cloud based Pubkeeper server to handle communication.  If you would like to also run a Pubkeeper server locally, follow [this](**Insert link**) here.
+The cloud is an easy way to get {{ book.product}} up and running, but doesn't fully encapsulate the distributed power of the {{ book.product}} platform. Instead, you should run {{ book.product}} on a local or edge node.  In this guide we will walk you through creating a local instance that uses a cloud based Pubkeeper server to handle communication.
 
 Running the {{ book.product}} platform requires Python version 3.4.5 or 3.5.2. Other versions of Python 3.4.x may work, but Python 3.5.3 and later do not work. When running the {{ book.product}} binary, the `Bad magic number` error is most likely caused by an incompatible version of Python.
 
