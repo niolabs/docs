@@ -51,13 +51,13 @@ In other words, the block will only call `notify_signals` once for the incoming 
 
 ## Paring Down Lists of Signals
 
-If you have a list of signals that you want to condense into fewer signals or even one signal, there are a few blocks that will help. The [hash table block](https://github.com/nio-blocks/hash_table.git) is commonly used.  
+If you have a list of signals that you want to condense into fewer signals or even one signal, there are a few blocks that will help. The [join block](https://blocks.n.io/Join) is commonly used.  
 
-The `HashTable` block goes through every signal in an incoming list and consolidates them into a single signal based on the specified criteria. For example, if your have your with the numbers 1 through 5 from the previous example, you can shrink the list of five signals into one signal containing two attributes--one for odds and one for evens.
+The `Join` block goes through every signal in an incoming list and consolidates them into a single signal based on the specified criteria. For example, if your have your with the numbers 1 through 5 from the previous example, you can shrink the list of five signals into one signal containing two attributes--one for odds and one for evens.
 ```
 {
   "name": "Split Odds and Evens",
-  "type": "HashTable",
+  "type": "Join",
   "key": "{{ $num % 2 }}",
   "value": "{{ $num }}"
 }
@@ -90,11 +90,11 @@ By default, a block operates over an entire list of signals. However, sometimes 
   }
 ]
 ```
-You can use a `HashTable` block to create a signal where the key is the department name and the value of that key is a list of names in the department.
+You can use a `Join` block to create a signal where the key is the department name and the value of that key is a list of names in the department.
 ```
 {
   "name": "List Names",
-  "type": "HashTable",
+  "type": "Join",
   "key": "{{ $department }}",
   "value": "{{ $name }}"
 }
@@ -108,7 +108,7 @@ The block configuration results in a single output signal.
 }
 ```
 
-That looks great, but what if you want to have a separate signal for each department, but still have a list of names. One inefficient option would be to filter the stream based on the department, and then put the individual streams into copies of the `HashTable` block from before. The following image displays this example. Note that this is **not** the advised way to do this.
+That looks great, but what if you want to have a separate signal for each department, but still have a list of names. One inefficient option would be to filter the stream based on the department, and then put the individual streams into copies of the `Join` block from before. The following image displays this example. Note that this is **not** the advised way to do this.
 
 ![Bad HashTable](/img/bad-hash-table.png)
 
