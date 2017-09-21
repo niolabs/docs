@@ -70,3 +70,5 @@ As you travel up and down the levels of your system, note that the breadcrumb ch
 The contextual toolbar changes based on your location in the project to represent the available functions. Hover over the icon to reveal the name of the icon. Some icons have dual functions where you click to toggle an action, such as starting and stopping a service.
 
 ![](/img/vg-contextual-toolbar.png)
+
+[Designer Tasks](/system-designer/designer-tasks.md)

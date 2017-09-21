@@ -12,7 +12,8 @@
     "-sharing",
     "-fontsettings",
     "toolbar",
-    "back-to-top-button"
+    "back-to-top-button",
+    "accordion"
   ],
   "pluginsConfig": {
     "favicon":{
