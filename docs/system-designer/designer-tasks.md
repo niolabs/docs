@@ -9,6 +9,35 @@ The System Designer is the graphical user interface used to build your {{ book.p
 ##### h5 Heading
 ###### h6 Heading
 
+We'll paint one happy little tree right here. Let's do it again then, what the heck. We'll put some happy little leaves here and there.
+
+1. Do this (1)
+1. Do this (1)
+  1. Do this (1)
+  1. Do this (1)
+
+We'll paint one happy little tree right here. Let's do it again then, what the heck. We'll put some happy little leaves here and there.
+
+1. Do this (1)
+1. Do this (1)
+  * Do this (+)
+  * Do this (+)
+
+We'll paint one happy little tree right here. Let's do it again then, what the heck. We'll put some happy little leaves here and there.
+
+1. Do this (1)
+1. Do this (1)
+  + Do this (+2)
+  + Do this (+2)
+
+We'll paint one happy little tree right here. Let's do it again then, what the heck. We'll put some happy little leaves here and there.
+
+* Level 1 one (+)
+* Level 1 one (+)
+  * Level 2 two (+)
+    * Level 3 three (+)
+      * Level 4 four (+)
+
 ## Project Hierarchy
 ![](/img/ProjectHierarchy.gif)
 
@@ -111,10 +140,10 @@ The very first time you open the {{ book.product }} platform, you are literally 
 * Choose your Pubkeeper configuration:
   1. Auto (recommended)
   1. Advanced (advanced users only)
-      * Hostname
-      * Port
-      * Token
-      * Secure
+    * Hostname
+    * Port
+    * Token
+    * Secure
   1. None (advanced users only)
 1. Click **Accept**.
 
@@ -191,10 +220,12 @@ Now you are ready to create a simple service named `simulate-and-log`.
   >
   >![](/img/hovertoolbar.gif)
 1. Click **Auto-Start Off** in the toolbar.
-> By default, services are set to auto-start when a {{ book.product }} instance is started.
+
+  By default, services are set to auto-start when a {{ book.product }} instance is started.
 1. Click **Edit** in the toolbar.
 1. Optional. Select one of the colored circles to represent this service and click **Accept**.
-> By default, the color of a service is white. Color coding your services can help you keep your instances organized when working on larger projects with multiple instances.
+
+  By default, the color of a service is white. Color coding your services can help you keep your instances organized when working on larger projects with multiple instances.
 
   %accordion%**Click arrow to expand image**%accordion%
 
@@ -354,51 +385,6 @@ Macro names use upper case with underscores: INT_MAX.
 Template parameter names use camel case: InputIterator.
 All other names use snake case: unordered_map.
 
-1. Do this (1)
-1. Do this (1)
-  1. Do this (1)
-  1. Do this (1)
-
-Use this for help for beginners--informational messages that add to the learning experience. Do not place steps in this message.
-
-* Level one (****)
-* Level one (****)
-  * Level two (****)
-    * Level three (****)
-      * Level four (****)
-
-Use this for help for beginners--informational messages that add to the learning experience. Do not place steps in this message.
-
-1. Level one (1)
-1. Level one (1)
-  1. Level two (1)
-    1. Level three (1)
-      1. Level four (1)
-
-Use this for help for beginners--informational messages that add to the learning experience. Do not place steps in this message.
-
-1. Level one (1)
-1. Level one (1)
-  * Level two (****)
-    1. Level three (1)
-      * Level four (****)
-
-Use this for help for beginners--informational messages that add to the learning experience. Do not place steps in this message.
-
-- Level one (-)
-- Level one (-)
-  - Level two (-)
-    - Level three (-)
-      - Level four (-)
-
-
-Use this for help for beginners--informational messages that add to the learning experience. Do not place steps in this message.
-
-1. Level one (1)
-1. Level one (1)
-  - Level two (-)
-    1. Level three (1)
-      - Level four (-)
 
 > Use this for help for beginners--informational messages that add to the learning experience. Do not place steps in this message.
 
