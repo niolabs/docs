@@ -61,8 +61,8 @@ cd first_project
 
 1. In the lower-left corner, click the **`+`** button to build.
 1. Complete the **Create a new system** window:
-  * In the **System name** box, enter your system name.
-  * Select **Auto** for the Pubkeeper configuration. This is the default.
+  1. In the **System name** box, enter your system name.
+  1. Select **Auto** for the Pubkeeper configuration. This is the default.
 1. Click **Accept**.
 1. Click **Edit** in the contextual toolbar to open the system's configuration.
 > Make note of the values for **host** and **token** which will be used in the following steps.
@@ -116,10 +116,10 @@ Once you have a local instance running, you can edit it using the System Designe
 
 1. Click **Add new instance**.
 1. Complete the **Create a new cloud instance** window:
-  * In the **Instance name** box, enter your instance name.
-  * In the **Host name** box, enter **localhost**.
-  * In the **Port** box, enter **8181**.
-  * Leave the **Access mode** as **basic**.
+  1. In the **Instance name** box, enter your instance name.
+  1. In the **Host name** box, enter **localhost**.
+  1. In the **Port** box, enter **8181**.
+  1. Leave the **Access mode** as **basic**.
 1. Click **Accept**.
 1. Wait for the instance to spin-up and note the name of the new instance on the left.
 
@@ -134,8 +134,8 @@ Once your instance is loaded and available, you can add services and blocks in t
 1. Select the name of your instance under the system name in the left navigation panel or on the breadcrumb above the contextual toolbar.
 1. Click **Add new service**.
 1. Complete the **Create new service** window:
-  * In the **Service name** box, enter a service name.
-  * Leave the **Service type** as **Service**.
+  1. In the **Service name** box, enter a service name.
+  1. Leave the **Service type** as **Service**.
 1. Click **Accept**.
 1. Click **Save** in the toolbar.
 1. Click **Edit** in the toolbar.
