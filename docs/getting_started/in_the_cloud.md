@@ -12,8 +12,8 @@ Below you can walk through the foundational steps of building a project includin
 
 1. In the lower-left corner, click the **`+`** button to build.
 1. Complete the **Create a new system** window:
-  * In the **System name** box, enter your system name.
-  * Select **Auto** for the Pubkeeper configuration. This is the default.
+  1. In the **System name** box, enter your system name.
+  1. Select **Auto** for the Pubkeeper configuration. This is the default.
 1. Click **Accept**.
 
 ## Create a Cloud Instance
@@ -24,8 +24,8 @@ Below you can walk through the foundational steps of building a project includin
 
 1. Click **Create a cloud instance**.
 1. Complete the **Create a new cloud instance** window:
-  * In the **Instance name** box, enter your instance name.
-  * Leave the **Instance type** as **n.io Cloud**.
+  1. In the **Instance name** box, enter your instance name.
+  1. Leave the **Instance type** as **n.io Cloud**.
 1. Click **Accept**.
 
 ## Create a Service
@@ -33,8 +33,8 @@ Below you can walk through the foundational steps of building a project includin
 1. Select the name of your instance under the system name in the left navigation panel or on the breadcrumb above the contextual toolbar.
 1. Click **Add new service**.
 1. Complete the **Create new service** window:
-  * In the **Service name** box, enter a service name.
-  * Leave the **Service type** as **Service**.
+  1. In the **Service name** box, enter a service name.
+  1. Leave the **Service type** as **Service**.
 1. Click **Accept**.
 1. Click **Save** in the toolbar.
 1. Click **Edit** in the toolbar.
