@@ -15,7 +15,7 @@ Download {{ book.product}} from the following URL:
 
 https://app.n.io/binaries/download
 
-## Install {{ book.product}} binary and CLI
+## Install the {{ book.product}} binary and CLI
 
 To install {{ book.product}}, enter the following command:
 ```
@@ -25,6 +25,18 @@ pip3 install your_wheel_file.whl
 To install the {{ book.product}} Command Line Interface \(CLI\), enter the following command:
 ```
 pip3 install nio-cli
+```
+
+## Upgrade the {{ book.product}} binary and CLI
+
+To upgrade {{ book.product}}, enter the following command:
+```
+pip3 install -u your_wheel_file.whl
+```
+
+To upgrade the {{ book.product}} Command Line Interface \(CLI\), enter the following command:
+```
+pip3 install -u nio-cli
 ```
 
 ## Create a Project

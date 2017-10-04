@@ -11,8 +11,28 @@ Examples of core components include:
 
 ## Disabling Core Components
 
-You cannot add core components to your binary, but you can disable existing ones if you do not want or need them. To disable a core component, in the `nio.conf` file under the `component` section, add or uncomment the disable line. For example, to disable the [`SNMPAgent`](/components/snmp.md) component, your `nio.conf` would look like the following example:
+You cannot add core components to your binary, but you can disable existing ones if you do not want or need them. To disable a core component, in the `nio.conf` file under the `component` section, add or uncomment the disable line.
+
+To disable the [`SNMPAgent`](/components/snmp.md) component, your `nio.conf` would look like the following example:
 ```
 [components]
-disable=SNMPAgent
+disabled=SNMPAgent
+```
+
+To disable the `Diagnostic Manager` component, your `nio.conf` would look like the following example:
+```
+[components]
+disabled=DiagnosticManager
+```
+
+To disable the `Service Diagnostics` component, your `nio.conf` would look like the following example:
+```
+[diagnostic]
+service=false
+```
+
+To disable the `Signals Diagnostics` component, your `nio.conf` would look like the following example:
+```
+[diagnostic]
+signals=false
 ```
