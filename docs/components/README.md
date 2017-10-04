@@ -19,6 +19,12 @@ To disable the [`SNMPAgent`](/components/snmp.md) component, your `nio.conf` wou
 disabled=SNMPAgent
 ```
 
+To disable the `Diagnostic Manager` component, your `nio.conf` would look like the following example:
+```
+[components]
+disabled=DiagnosticManager
+```
+
 To disable the `Service Diagnostics` component, your `nio.conf` would look like the following example:
 ```
 [diagnostic]
