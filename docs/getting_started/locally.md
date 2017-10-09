@@ -31,12 +31,12 @@ pip3 install nio-cli
 
 To upgrade {{ book.product}}, enter the following command:
 ```
-pip3 install -u your_wheel_file.whl
+pip3 install -U your_wheel_file.whl
 ```
 
 To upgrade the {{ book.product}} Command Line Interface \(CLI\), enter the following command:
 ```
-pip3 install -u nio-cli
+pip3 install -U nio-cli
 ```
 
 ## Create a Project
