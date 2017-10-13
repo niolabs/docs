@@ -2,21 +2,8 @@
 
 The System Designer is the graphical user interface used to build your {{ book.product }} system. This overview provides you with a quick tour of the basics of creating a system, instance, service, and block.
 
-
-## Get Help
-
-1. Click the menu in the upper-right corner next to your name.
-1. Select one of the available options:
-
-  ![](/img/tasks/helpoptions.png)
-  * **docs** - reference documentation
-  * **blocks** - information on all of the nio blocks
-  * **workshops** - self-paced tutorials
-  * **support** - FAQs and contact form
-  * **forum** - interact with other nio users
-  * **account** - edit your profile
-
 ## Systems
+A system is a distributed set of entities that work together as a whole. For nio, this means a collection of nio back end instances and front end user interfaces that can communicate with one another in real time.
 
 ### Create a System
 
@@ -204,14 +191,13 @@ The System Designer is the graphical user interface used to build your {{ book.p
 
 1. Select the block you want to delete.
 1. Click **Delete** in the toolbar.
-1. Click **Delete** in the confirmation window.
 
 ## Delete a Configured Block
 
 1. Search for the configured block in the **Block library**.
 1. Click the vertical ellipsis menu and select **Delete**.
-1. If the **Block in use** warning is displayed, click **Got it!** and delete the block from all services before deleting the configured block.
-1. Click **Delete** in the confirmation window.
+1. If the **Block in use** warning is displayed, you must delete the block from all services before deleting it.
+1.  
 
 ## Connect Blocks
 
@@ -225,19 +211,29 @@ The System Designer is the graphical user interface used to build your {{ book.p
 
 1. Double-click the block to view the configuration window.
 1. Enter the required parameters.
-1. Click **Accept**.
+1. Click **Accept.
 
-## View Logs
+
+
+
+
+
+## Step 6: Configure Blocks and Run Service
+Now you can start your first service.
 
 1. Click anywhere on the canvas to deselect the blocks.
 1. Click **Start** on the toolbar.
-1. Click **Open logger panel** to view the logs.
+1. Click **Open logger panel** to view the logs. The logs are displayed with the default settings.
 
   %accordion%**Click arrow to expand image**%accordion%
 
   ![](/img/hello_nio/Hello-SimLogger.png)
 
   %/accordion%
+
+
+
+
 
 ## Contextual Toolbar
 The contextual toolbar changes based on your location in the project to represent the available functions. Hover over the icon to reveal the name of the icon. Some icons have dual functions where you click to toggle an action, such as starting and stopping a service.
@@ -296,3 +292,118 @@ Icon                      |Label             | Description      |
 ![](/img/IconEdit.gif)    |Edit              | Edit block configuration.
 ![](/img/IconCommand.gif) |Command           | Command block.
 ![](/img/IconDelete.gif)  |Delete            | Delete block.
+
+## Blocks
+
+### Block Library
+![](/img/BlockLibrary.gif)
+
+### Connect and Disconnect blocks
+![](/img/JoinUnjoin.gif)
+
+
+
+
+
+
+
+
+
+Icon                      |Description       |
+--------------------------|------------------|
+![](/img/IconDownload.gif)    |Download block
+![](/img/IconBlockLibrary.gif)|Block Library
+
+
+%accordion%Some title here%accordion%
+
+Any content here
+
+%/accordion%
+
+> Use this for help for beginners--informational messages that add to the learning experience. Do not place steps in this message.
+
+
+## INVALID CHARACTERS
+
+
+
+
+Info styling
+
+> **[info] For beginners/tips**
+>
+> Use this for help for beginners--informational messages that add to the learning experience. Do not place steps in this message.
+
+Warning styling
+
+> **[warning] For warning**
+>
+> Use this for warning messages.
+
+Danger styling
+
+> **[danger] For danger**
+>
+> Use this for danger messages. Use sparingly.
+
+Success styling
+
+> **[success] For success**
+>
+> Use this for success messages. Also, for items needed in tutorials before you begin.
+
+
+
+
+## Project Hierarchy/Breadcrumb
+![](/img/hello_nio/hierarchy.gif)
+
+
+
+
+Common C++ Naming Conventions
+
+Types start with upper case: MyClass.
+Functions and variables start with lower case: myMethod.
+Constants are all upper case: const double PI=3.14159265358979323;.
+C++ Standard Library (and other well-known C++ libraries like Boost) use these guidelines:
+Macro names use upper case with underscores: INT_MAX.
+Template parameter names use camel case: InputIterator.
+All other names use snake case: unordered_map.
+
+
+> Use this for help for beginners--informational messages that add to the learning experience. Do not place steps in this message.
+
+- [ ] Open
+- [x] Closed
+
+
+We'll paint one happy little tree right here. Let's do it again then, what the heck. We'll put some happy little leaves here and there.
+
+1. Do this (1)
+1. Do this (1)
+  1. Do this (1)
+  1. Do this (1)
+
+We'll paint one happy little tree right here. Let's do it again then, what the heck. We'll put some happy little leaves here and there.
+
+1. Do this (1)
+1. Do this (1)
+  * Do this (+)
+  * Do this (+)
+
+We'll paint one happy little tree right here. Let's do it again then, what the heck. We'll put some happy little leaves here and there.
+
+1. Do this (1)
+1. Do this (1)
+  + Do this (+2)
+  + Do this (+2)
+
+We'll paint one happy little tree right here. Let's do it again then, what the heck. We'll put some happy little leaves here and there.
+
+* Level 1 one (+)
+* Level 1 one (+)
+  * Level 2 two (+)
+    * Level 3 three (+)
+      * Level 4 four (+)

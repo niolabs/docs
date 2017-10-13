@@ -59,13 +59,12 @@ cd first_project
 
   https://designer.n.io/
 
-1. In the lower-left corner, click the **`+`** button to build.
-1. Complete the **Create a new system** window:
+1. In the lower-left corner, click the **`+`** button to create a new system.
+1. Complete the **Create new system** window:
   * In the **System name** box, enter your system name.
-  * Select **Auto** for the Pubkeeper configuration. This is the default.
 1. Click **Accept**.
 1. Click **Edit** in the contextual toolbar to open the system's configuration.
-> Make note of the values for **host** and **token** which will be used in the following steps.
+> Make note of the values for **hostname** and **token** which will be used in the following steps.
 1. From your terminal, in your first_project directory, open the `nio.env` file.
 1. Update the following four lines in the `# Pubkeeper Client` section
 ```
@@ -114,10 +113,10 @@ Once you have a local instance running, you can edit it using the System Designe
 
   ![](/img/hierarchy.gif)
 
-1. Click **Add new instance**.
-1. Complete the **Create a new cloud instance** window:
+1. Click **Create local instance**.
+1. Complete the **Create local instance** window:
   * In the **Instance name** box, enter your instance name.
-  * In the **Host name** box, enter **localhost**.
+  * In the **Hostname** box, enter **localhost**.
   * In the **Port** box, enter **8181**.
   * Leave the **Access mode** as **basic**.
 1. Click **Accept**.
@@ -132,13 +131,12 @@ Once your instance is loaded and available, you can add services and blocks in t
 ## Create a Service
 
 1. Select the name of your instance under the system name in the left navigation panel or on the breadcrumb above the contextual toolbar.
-1. Click **Add new service**.
+1. Click **Create new service**.
 1. Complete the **Create new service** window:
   * In the **Service name** box, enter a service name.
   * Leave the **Service type** as **Service**.
 1. Click **Accept**.
 1. Click **Save** in the toolbar.
-1. Click **Edit** in the toolbar.
 1. Click **Auto-Start Off** in the toolbar.
 
 ## Add Blocks
@@ -147,7 +145,7 @@ Before you move on, you're going to want to add some blocks to your project. Blo
 nio blocks are installed to instances using the Block Library. The collection of blocks created by {{ book.product }} is also stored in the [Block Library at blocks.n.io](https://blocks.n.io/). You can search for blocks in the System Designer or in the Block Library.
 
 ###To add a block in the System Designer:
-1. Click the service name under the instance name in the left navigation panel or on the breadcrumb above the contextual toolbar.
+1. Select the service by clicking the service name under the instance name in the left navigation panel or on the breadcrumb above the contextual toolbar.
 1. In the **Block library** search box, enter a search term.
 * If the block is not displayed, click **Available**, **Installed**, and **Configured** to search for the block.
 * If the block is not already pre-installed, click the **Install Block** button which resembles a cloud with a down arrow.
@@ -162,8 +160,8 @@ nio blocks are installed to instances using the Block Library. The collection of
 git submodule add https://github.com/nio-blocks/logger.git blocks/logger
 ```
 This can also be done with the nio-cli with `nio add logger`.
-1. Restart the System Designer.
-1. Click the **Block Library** in the upper-right corner.
+1. Close and reopen the instance.
+1. Click the **Block library** in the upper-right corner.
 1. In the Search box, enter the name of the block. As you type, the list is filtered.
 1. Drag the your block onto the canvas.
 1. Type the name of the block and click **Accept**.
