@@ -31,8 +31,8 @@ Below you can walk through the foundational steps of building a project includin
 1. Select the name of your instance under the system name in the left navigation panel or on the breadcrumb above the contextual toolbar.
 1. Click **Create new service**.
 1. Complete the **Create new service** window:
-  * In the **Service name** box, enter a service name.
-  * Leave the **Service type** as **Service**.
+  1. In the **Service name** box, enter a service name.
+  1. Leave the **Service type** as **Service**.
 1. Click **Accept**.
 1. Click **Save** in the toolbar.
 1. Click **Auto-Start Off** in the toolbar.

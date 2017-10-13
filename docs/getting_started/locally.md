@@ -2,11 +2,11 @@
 
 The cloud is an easy way to get {{ book.product}} up and running, but doesn't fully encapsulate the distributed power of the {{ book.product}} platform. Instead, you should run {{ book.product}} on a local or edge node.  In this guide, you will create a local instance that uses a cloud-based Pubkeeper server to handle communications.
 
-Running the {{ book.product}} platform requires Python version 3.4.5 or 3.5.2. Other versions of Python 3.4.x may work, but Python 3.5.3 and later do not work. When running the {{ book.product}} binary, the `Bad magic number` error is most likely caused by an incompatible version of Python.
+Running the {{ book.product}} platform requires Python version 3.4 or greater.
 
 Requirements
 
-* Download Python 3.4.5 or 3.5.2 from [https://www.python.org/downloads/](https://www.python.org/downloads/).
+* Download Python 3.4 or greater from [https://www.python.org/downloads/](https://www.python.org/downloads/).
 * Obtain the {{ book.product}} binary Python wheel file (`.whl`) with your license agreement.
 
 ## Download {{ book.product}}
@@ -15,7 +15,7 @@ Download {{ book.product}} from the following URL:
 
 https://app.n.io/binaries/download
 
-## Install {{ book.product}} binary and CLI
+## Install the {{ book.product}} binary and CLI
 
 To install {{ book.product}}, enter the following command:
 ```
@@ -25,6 +25,18 @@ pip3 install your_wheel_file.whl
 To install the {{ book.product}} Command Line Interface \(CLI\), enter the following command:
 ```
 pip3 install nio-cli
+```
+
+## Upgrade the {{ book.product}} binary and CLI
+
+To upgrade {{ book.product}}, enter the following command:
+```
+pip3 install -u your_wheel_file.whl
+```
+
+To upgrade the {{ book.product}} Command Line Interface \(CLI\), enter the following command:
+```
+pip3 install -u nio-cli
 ```
 
 ## Create a Project
@@ -133,8 +145,8 @@ Once your instance is loaded and available, you can add services and blocks in t
 1. Select the name of your instance under the system name in the left navigation panel or on the breadcrumb above the contextual toolbar.
 1. Click **Create new service**.
 1. Complete the **Create new service** window:
-  * In the **Service name** box, enter a service name.
-  * Leave the **Service type** as **Service**.
+  1. In the **Service name** box, enter a service name.
+  1. Leave the **Service type** as **Service**.
 1. Click **Accept**.
 1. Click **Save** in the toolbar.
 1. Click **Auto-Start Off** in the toolbar.
