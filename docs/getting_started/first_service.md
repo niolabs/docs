@@ -1,6 +1,6 @@
 # Workshops
 
-Ready to jump in and start creating the next new thing? Head over to the tutorial site at https://workshops.n.io/ and start the [Hello nio!](https://workshops.n.io/hello_nio/) tutorial.
+Ready to jump in and start creating the next new thing? Head over to the tutorial site at https://workshops.n.io/ and start the [Hello nio!](https://workshops.n.io/nio-101/hello_nio/) tutorial.
 
 <!--
 # Building Your First {{ book.product }} Service
