@@ -80,9 +80,9 @@ cd first_project
 1. From your terminal, in your first_project directory, open the `nio.env` file.
 1. Update the following four lines in the `# Pubkeeper Client` section
 ```
-PK_TOKEN: [your copied token]
 PK_HOST: [your copied host]
 PK_PORT: 443
+PK_TOKEN: [your copied token]
 PK_SECURE: True
 ```
 1. Update the following three lines in the `# Websocket Brew Variables` section
