@@ -41,11 +41,11 @@ In the _Modifier_ block shown above, the `ShowAlertLevel` block is configured so
 
 ## Expressions
 
-Expressions are used to dynamically define properties. Many property types can accept expressions. Expressions are found inside the double curly braces. In the _Dynamic Fields_ block configuration shown above, you can see example expressions in the Attribute Value inputs. Learn more about how to create expressions in [{{ book.product }} Expressions](./expressions.md).
+Expressions are used to dynamically define properties. Many property types can accept expressions. Expressions are found inside the double curly braces. In the _Dynamic Fields_ block configuration shown above, you can see example expressions in the Attribute Value inputs. Learn more about how to create expressions in [nio Expressions](./expressions.md).
 
 ## Environment Variables
 
-Another syntax that {{ book.product }} uses in property configuration is the double-square-bracket notation for an [environment variable](/service-design-patterns/environment-variables.md).
+Another syntax that nio uses in property configuration is the double-square-bracket notation for an [environment variable](/service-design-patterns/environment-variables.md).
 
 `[[YOUR_ENV_VAR]]`
 

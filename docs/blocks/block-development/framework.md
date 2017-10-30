@@ -1,6 +1,6 @@
-# The {{ book.product }} Framework
+# The nio Framework
 
-When you develop {{ book.product }} blocks, you use the {{ book.product }} framework. The framework holds all the classes required to create your block as well as the functionality to tie everything together. Think of the framework as a toolshed of useful tools for working with {{ book.product }}.
+When you develop nio blocks, you use the nio framework. The framework holds all the classes required to create your block as well as the functionality to tie everything together. Think of the framework as a toolshed of useful tools for working with nio.
 
 ## Block Context
 

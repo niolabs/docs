@@ -1,10 +1,10 @@
 # Core APIs
 
-{{ book.product }} core has a few crucial API endpoints: `/nio` and `/shutdown`.  
+nio core has a few crucial API endpoints: `/nio` and `/shutdown`.  
 
 ## nio
 
-The `/nio` endpoint is used to find information, such as versioning, about your running {{ book.product }} instances
+The `/nio` endpoint is used to find information, such as versioning, about your running nio instances
 
     curl -XGET 'localhost:8181/nio'
 
@@ -87,14 +87,14 @@ The following JSON body is returned:
 **nio**
   - **binary**<br>The name of the executable binary that was run against the project.
   - **build**<br>The build version of the binary.
-  - **version**<br>The version of the {{ book.product }} framework (not the version of the **binary**).
+  - **version**<br>The version of the nio framework (not the version of the **binary**).
 
-**start_time**<br>A datetime string that indicates when {{ book.product }} was started.
+**start_time**<br>A datetime string that indicates when nio was started.
 
 
 ## Shutdown
 
-The `/shutdown` endpoint is used to shutdown a running {{ book.product }} instance.
+The `/shutdown` endpoint is used to shutdown a running nio instance.
 
     curl -XGET 'http://localhost:8181/shutdown'
 

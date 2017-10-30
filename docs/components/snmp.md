@@ -1,6 +1,6 @@
 # SNMP Agent Component
 
-The SNMP Agent core component allows you to monitor the health of a {{ book.product }} system through the standard [SNMP protocol](https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol).
+The SNMP Agent core component allows you to monitor the health of a nio system through the standard [SNMP protocol](https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol).
 
 ## Behavior
 

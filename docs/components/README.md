@@ -1,10 +1,10 @@
 # Core Components
 
-Part of the {{ book.product }} binary consists of core components. These are pieces of functionality that run alongside the {{ book.product }} core process. Unlike modules which run in every {{ book.product }} service, a core component will only be run once and will run in the core/main process.
+Part of the nio binary consists of core components. These are pieces of functionality that run alongside the nio core process. Unlike modules which run in every nio service, a core component will only be run once and will run in the core/main process.
 
 Examples of core components include:  
   * A project manager component that exposes an API to interact with your project contents
-  * A REST component that provides an interface for interacting with {{ book.product }} services and blocks
+  * A REST component that provides an interface for interacting with nio services and blocks
   * An SNMP agent component that exposes runtime information in SNMP form for easy ingestion from monitoring tools
   * A logging component that exposes an API to retrieve an instance's log messages and to change log levels for currently running services, blocks and components
   * A service monitor component that monitors service statuses able to restart a service if it becomes unresponsive

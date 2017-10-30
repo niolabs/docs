@@ -3,8 +3,7 @@
   "title": "nio documentation",
   "description": "Design complex systems with the simple building blocks of nio.",
   "variables": {
-    "company": "niolabs",
-    "product": "nio"
+    "company": "niolabs"
   },
   "plugins": [
     "theme-nio@git://github.com/niolabs/gitbook-plugin-theme-nio.git",

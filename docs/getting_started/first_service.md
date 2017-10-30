@@ -3,7 +3,7 @@
 Ready to jump in and start creating the next new thing? Head over to the tutorial site at https://workshops.n.io/ and start the [Hello nio!](https://workshops.n.io/nio-101/hello_nio/) tutorial.
 
 <!--
-# Building Your First {{ book.product }} Service
+# Building Your First nio Service
 
 In the System Designer, you begin with an empty canvas full of possibilities, but there are no services yet. While it won't get too exciting quite yet, you can start by building a very basic service to simulate and log signals.
 
@@ -85,5 +85,5 @@ To command a block:
 
 ## Conclusion
 
-At this point you should feel comfortable installing {{ book.product }}, creating a project with blocks, and configuring and running services. You can find block documentation in the [Block Library at blocks.n.io](https://blocks.n.io/).
+At this point you should feel comfortable installing nio, creating a project with blocks, and configuring and running services. You can find block documentation in the [Block Library at blocks.n.io](https://blocks.n.io/).
 -->
