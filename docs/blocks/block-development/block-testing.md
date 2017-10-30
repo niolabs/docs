@@ -1,6 +1,6 @@
 # Testing Your Block
 
-{{ book.product }} blocks are not meant to be run as stand-alone Python modules, so testing can be a challenging process. {{ book.product }} provides a couple of tools and offers best practices to make your testing easier.
+nio blocks are not meant to be run as stand-alone Python modules, so testing can be a challenging process. nio provides a couple of tools and offers best practices to make your testing easier.
 
 ## NIOBlockTestCase
 
@@ -31,7 +31,7 @@ class TestYourBlock(NIOBlockTestCase):
 
 ## setUp/tearDown
 
-Just like the `unittest.TestCase`, {{ book.product }} supports the setUp/tearDown pattern. This is a great place to do any initialization and/or cleanup that will be required across every test. Do not repeat yourself! Be aware, though, that the block provides crucial initialization and finalization in `NIOBlockTestCase.setUp/tearDown`. If you override either of these methods, you need to call the method in the parent class at the top of your method.
+Just like the `unittest.TestCase`, nio supports the setUp/tearDown pattern. This is a great place to do any initialization and/or cleanup that will be required across every test. Do not repeat yourself! Be aware, though, that the block provides crucial initialization and finalization in `NIOBlockTestCase.setUp/tearDown`. If you override either of these methods, you need to call the method in the parent class at the top of your method.
 
 ## Helper Methods
 
@@ -126,9 +126,9 @@ class TestPersistenceBlock(NIOBlockTestCase):
 		 blk.persistence.save = MagicMock()
 ```
 
-## {{ book.product }} Modules
+## nio Modules
 
-`NIOBlockTestCase` configures the following {{ book.product }} modules by default: `['logging', 'scheduler', 'security', 'threading']`. If your block test case needs to use any other {{ book.product }} modules, you must specify by implementing the `get_test_modules` method.
+`NIOBlockTestCase` configures the following nio modules by default: `['logging', 'scheduler', 'security', 'threading']`. If your block test case needs to use any other nio modules, you must specify by implementing the `get_test_modules` method.
 
 If your test case uses persistence, enter the following code:
 

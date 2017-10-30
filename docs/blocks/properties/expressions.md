@@ -1,8 +1,8 @@
-# {{ book.product }} Expressions
+# nio Expressions
 
-An expression is an element of code that needs be evaluated to return a result. You can use {{ book.product }} expressions to dynamically define the value of a property when the signal enters a block. 
+An expression is an element of code that needs be evaluated to return a result. You can use nio expressions to dynamically define the value of a property when the signal enters a block. 
 
-{{ book.product }} expressions are modeled on string interpolation in other dynamic languages. The piece of code between the double curly braces is evaluated as Python code. 
+nio expressions are modeled on string interpolation in other dynamic languages. The piece of code between the double curly braces is evaluated as Python code. 
 ```
 {{ <code goes here> }}
 ```

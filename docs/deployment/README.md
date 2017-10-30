@@ -1,14 +1,14 @@
 # Deployment
 
-Designing a stable {{ book.product }} system means having reliable mechanisms for deployment and maintenance. The deployment of {{ book.product }} systems is very flexible, but there are a few best practices to follow.
+Designing a stable nio system means having reliable mechanisms for deployment and maintenance. The deployment of nio systems is very flexible, but there are a few best practices to follow.
 
 ## Git for Version Control
 
-{{ book.product }} projects can be defined as files in a file system. Git permits you to use a standard version control system to record changes to a project. The [project template repository](https://github.com/niolabs/project_template) provides a good starting point to model how you store a project in a git repository. With git, you can use different branches for development and production.
+nio projects can be defined as files in a file system. Git permits you to use a standard version control system to record changes to a project. The [project template repository](https://github.com/niolabs/project_template) provides a good starting point to model how you store a project in a git repository. With git, you can use different branches for development and production.
 
 ## Different Environments
 
-You should use staging and other test environments to run {{ book.product }} projects outside of production. Using {{ book.product }} environment variable files is a good way to achieve this. For example, your project could have two environment variable files `stage.env` and `prod.env` that define how {{ book.product }} should run in the respective environment. You can run {{ book.product }} using a different environment variable by using the `-e` flag of `nio_run`.
+You should use staging and other test environments to run nio projects outside of production. Using nio environment variable files is a good way to achieve this. For example, your project could have two environment variable files `stage.env` and `prod.env` that define how nio should run in the respective environment. You can run nio using a different environment variable by using the `-e` flag of `nio_run`.
 ```
 nio_run -e stage.env
 ```

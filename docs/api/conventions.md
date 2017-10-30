@@ -1,8 +1,8 @@
 # API Conventions
 
-You can interact with most {{ book.product }} binaries through a REST API. The API supports the standard HTTP request types of `GET`, `POST`, `PUT`, and `DELETE`. Data responses are returned in JSON format.
+You can interact with most nio binaries through a REST API. The API supports the standard HTTP request types of `GET`, `POST`, `PUT`, and `DELETE`. Data responses are returned in JSON format.
 
-The REST API is available in {{ book.product }} binaries that include the {{ book.product }} REST Component. Read more about {{ book.product }} core components in [components](../components/README.md).
+The REST API is available in nio binaries that include the nio REST Component. Read more about nio core components in [components](../components/README.md).
 
 ## Authentication and Authorization
 
@@ -10,7 +10,7 @@ Authentication is the action to verify the identity of a user or process.
 
 Authorization is the process of giving someone permission to perform an action.
 
-You will need to include an authorization header with your {{ book.product }} API requests. For examples, see [Basic Auth](#basic-authentication-basic-auth) and [JWT](#json-web-tokens-jwt). For examples of adding headers to cURL requests, see [Headers](#headers).
+You will need to include an authorization header with your nio API requests. For examples, see [Basic Auth](#basic-authentication-basic-auth) and [JWT](#json-web-tokens-jwt). For examples of adding headers to cURL requests, see [Headers](#headers).
 
 User names and passwords are specified in the `users.json` file in the `etc` directory.
 
@@ -34,7 +34,7 @@ You can change the location of your users and permissions files in the `[securit
 
 The default configuration is shown. You can uncomment the default configuration and it will not change. To find your users and permissions in files other than `etc/users.json` and `etc/permissions.json`, uncomment the configuration and edit it.
 
-You can use different types of authentication, such as basic authentication and JSON Web Tokens, with {{ book.product }}.
+You can use different types of authentication, such as basic authentication and JSON Web Tokens, with nio.
 
 ### Basic Authentication (Basic Auth)
 
@@ -56,7 +56,7 @@ For examples of adding headers to a curl request, see [Headers](#headers).
 
 ## Testing with curl
 
-To test {{ book.product }} API requests and responses, you can use a tool such as [Postman](https://www.getpostman.com/) or a curl command from your terminal. curl commands start with `curl`, and then include the request type, a URL, and possibly a request header and a request body. For the {{ book.product }} API, an authorization [header](#headers) is required.
+To test nio API requests and responses, you can use a tool such as [Postman](https://www.getpostman.com/) or a curl command from your terminal. curl commands start with `curl`, and then include the request type, a URL, and possibly a request header and a request body. For the nio API, an authorization [header](#headers) is required.
 
 ### Request Type
 Your request type will be one of `GET`, `POST`, `PUT`, or `DELETE`.
@@ -72,7 +72,7 @@ With the curl command, you can specify with following options:
 Your request type will be followed by a URL.
 
 #### Base URL
-The base of the URL for your API request is the address where your {{ book.product }} project is running. Obtain the base URL from terminal in your nio logs.
+The base of the URL for your API request is the address where your nio project is running. Obtain the base URL from terminal in your nio logs.
 
 For a local project
 
@@ -88,7 +88,7 @@ The endpoint is added to the base URL
 
     http://localhost:8181/blocks_types
 
-You can also add query parameters to the URL, but for the most part, the {{ book.product }} API does not use query parameters.
+You can also add query parameters to the URL, but for the most part, the nio API does not use query parameters.
 
 ### Headers
 
@@ -115,6 +115,6 @@ In the request body, if you need to include data, add body data to a curl reques
 
 ### Putting It All Together
 
-A typical curl request to the {{ book.product }} API incorporating all these parts follows:
+A typical curl request to the nio API incorporating all these parts follows:
 
     curl -XPOST 'http://localhost:8181/blocks' --user 'Admin:Admin' --data '{"type": "LoggerBlock", "name": "Log"}' -H 'Content-Type: application/json'

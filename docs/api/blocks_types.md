@@ -1,6 +1,6 @@
 # Blocks Types API
 
-{{ book.product }} block types are the functional pieces of code that generate or transform signals. Earlier we saw examples of block types, such as _CounterIntervalSimulator_ and _Logger_. Information about and interaction with the blocks of a running {{ book.product }} instance are available through the `/blocks_types` API.  
+nio block types are the functional pieces of code that generate or transform signals. Earlier we saw examples of block types, such as _CounterIntervalSimulator_ and _Logger_. Information about and interaction with the blocks of a running nio instance are available through the `/blocks_types` API.  
 
 ## Get API
 
@@ -117,7 +117,7 @@ The result of the previous request follows:
 
 **name**<br>The name of the block type.
 
-**version**<br>The version of the block type that is being used by the running {{ book.product }} instance.
+**version**<br>The version of the block type that is being used by the running nio instance.
 
 **namespace**<br>The class the block type is imported from.
 
@@ -145,12 +145,12 @@ In addition to getting the details of one block type, specified by name, you can
 
 ## Add API
 
-When {{ book.product }} starts, it discovers and adds all the block types in the project. If you add a new block type to a running instance of {{ book.product }}, it will not be discovered until nio restarts. However, you can add the new block type to a running instance with the Add API. After the block code is added to the project directory, send a PUT request to the new block type name to load the new block type into the running {{ book.product }} instance
+When nio starts, it discovers and adds all the block types in the project. If you add a new block type to a running instance of nio, it will not be discovered until nio restarts. However, you can add the new block type to a running instance with the Add API. After the block code is added to the project directory, send a PUT request to the new block type name to load the new block type into the running nio instance
 
     curl -XPUT 'http://localhost:8181/blocks_types/<NewBlockTypeName>'
 
 ## Update API
 
-When {{ book.product }} starts, it discovers and adds all the block types in the project. When code in an existing block type is changed in a project (for example, when upgrading to a newer version of the block type) in a running {{ book.product }} instance, you need to tell {{ book.product }} to use the updated code. You can do that with the Update API. Once the new block code is updated in the project directory, send a PUT request to the updated block type to load it into the running {{ book.product }} instance
+When nio starts, it discovers and adds all the block types in the project. When code in an existing block type is changed in a project (for example, when upgrading to a newer version of the block type) in a running nio instance, you need to tell nio to use the updated code. You can do that with the Update API. Once the new block code is updated in the project directory, send a PUT request to the updated block type to load it into the running nio instance
 
     curl -XPUT 'http://localhost:8181/blocks_types/Logger'

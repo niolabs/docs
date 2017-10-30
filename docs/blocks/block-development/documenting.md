@@ -1,6 +1,6 @@
 # Documenting Your Block
 
-There is a standard way to document a {{ book.product }} block. Much of this documentation can be generated automatically using the `nio-cli`.
+There is a standard way to document a nio block. Much of this documentation can be generated automatically using the `nio-cli`.
 
 Once you have built your block, navigate to the root of your project directory and type
 ```

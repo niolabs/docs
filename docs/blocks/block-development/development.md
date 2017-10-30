@@ -2,7 +2,7 @@
 
 After cloning the [block template](block-template.md) repository, you are ready to develop your block.
 
-A good resource for new block development is the {{ book.product }} base block along with other blocks that have functionality similar to the one you would like to develop.
+A good resource for new block development is the nio base block along with other blocks that have functionality similar to the one you would like to develop.
 
 The basic elements of a block that you will define are its [properties](#properties), [commands](#commands), and [inputs and outputs](#inputs-and-outputs).
 
@@ -14,7 +14,7 @@ Once you have developed your block, you will want to [test](block-testing.md) an
 
 ## Base Block Class
 
-All {{ book.product }} blocks inherit from the base block class. The first import in the block template's `example_block.py` is `nio.block.base`. If you explore the code inside `nio.block.base`, you'll find explanatory docstrings for each method—including methods to override in your custom block—along with higher-level context.
+All nio blocks inherit from the base block class. The first import in the block template's `example_block.py` is `nio.block.base`. If you explore the code inside `nio.block.base`, you'll find explanatory docstrings for each method—including methods to override in your custom block—along with higher-level context.
 
 An important principle to remember when developing your block is that [signals are passed as lists](/service-design-patterns/understanding-signals.md#lists-of-signals).
 
@@ -31,7 +31,7 @@ The following methods from the base block are designed to be overridden:
   * `process_signals(<list of signals>, input_id)`: receives input signals.
   * `notify_signals(<list of signals>, output_id)`: emits signals from the block. This method isn't intended to be overridden, but should be called by the block to send out signals. For example, you will usually call `notify_signals` at the end of your `process_signals` method.
 
-## Current {{ book.product }} Blocks
+## Current nio Blocks
 
 An additional resource for developing your custom block is the [nio-blocks library](https://github.com/nio-blocks). Search the nio-blocks library for a block that has similar functionality to the block you need. Explore its properties, methods, commands, inputs, outputs, [mixins](mixins.md), and any modules imported from the [framework](framework.md).
 
@@ -68,7 +68,7 @@ Block properties can include the following types:
 
 - **FileProperty**<br>A file stream.
 
-- **ListProperty**<br>List properties hold a list of object types which contain properties themselves or can be {{ book.product }} types such as IntType.
+- **ListProperty**<br>List properties hold a list of object types which contain properties themselves or can be nio types such as IntType.
 
 - **ObjectProperty**<br>Object types contain properties themselves.
 
