@@ -2,7 +2,7 @@
 
 Welcome to nio! This documentation strives to help you design complex systems with nio—a distributed orchestration platform.
 
-This is a work in progress and {{ book.company }} welcomes your feedback on the documentation. If you have questions, comments, or suggestions about this document, please email [editor@n.io](mailto:editor@n.io).
+This is a work in progress and niolabs welcomes your feedback on the documentation. If you have questions, comments, or suggestions about this document, please email [editor@n.io](mailto:editor@n.io).
 
 <table border=0 cellpadding=0 cellspacing=0 style="width:100%">
  <tr>
