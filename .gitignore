@@ -4,3 +4,5 @@ package-lock.json
 
 # Gitbook
 _book
+
+.DS_Store
