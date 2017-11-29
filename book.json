@@ -9,7 +9,6 @@
     "favicon",
     "-sharing",
     "-fontsettings",
-    "toolbar",
     "back-to-top-button",
     "accordion"
   ],
@@ -21,15 +20,6 @@
     "theme-nio": {
       "active-location": "docs",
       "ga-code": "UA-51072171-18"
-      },
-    "toolbar": {
-      "buttons":[
-        {
-            "label": "GitHub",
-            "icon": "fa fa-github fa-inverse circle-background",
-            "url": "http://github.com/niolabs"
-        }
-      ]
     }
   }
 }
