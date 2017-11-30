@@ -23,7 +23,7 @@ The System Designer is the graphical user interface used to build your nio syste
 1. You can create a new system in two ways.
   * If this is your first time opening nio, the **Create new system** window displays.
 
-    %accordion%**Click arrow to expand image**%accordion%
+    %accordion%**Click arrow to collapse/expand image**%accordion%
 
     ![](/img/tasks/createnewsystem.png)
 
@@ -31,7 +31,7 @@ The System Designer is the graphical user interface used to build your nio syste
 
   * If you have already been working in nio, in the lower-left corner, click the **`+`** button.
 
-    %accordion%**Click arrow to expand image**%accordion%
+    %accordion%**Click arrow to collapse/expand image**%accordion%
 
     ![](/img/tasks/Hello-BlankCanvas.png)
 
@@ -54,7 +54,7 @@ The System Designer is the graphical user interface used to build your nio syste
 
 1. Select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
 
-  %accordion%**Click arrow to expand image**%accordion%
+  %accordion%**Click arrow to collapse/expand image**%accordion%
 
   ![](/img/hello_nio/Hello-SelectSystemCreateInstancePoint.png)
 
@@ -68,7 +68,7 @@ The System Designer is the graphical user interface used to build your nio syste
 1. Click **Create cloud instance**.
 1. Complete the **Create cloud instance** window:
 
-  %accordion%**Click arrow to expand image**%accordion%
+  %accordion%**Click arrow to collapse/expand image**%accordion%
 
   ![](/img/tasks/createcloudinstance.png)
 
@@ -85,7 +85,7 @@ The System Designer is the graphical user interface used to build your nio syste
 
 1. Select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
 
-  %accordion%**Click arrow to expand image**%accordion%
+  %accordion%**Click arrow to collapse/expand image**%accordion%
 
   ![](/img/hello_nio/Hello-SelectSystemCreateInstancePoint.png)
 
@@ -94,7 +94,7 @@ The System Designer is the graphical user interface used to build your nio syste
 1. Click **Create local instance**.
 1. Complete the **Create local instance** window:
 
-  %accordion%**Click arrow to expand image**%accordion%
+  %accordion%**Click arrow to collapse/expand image**%accordion%
 
   ![](/img/tasks/createlocalinstance.png)
 
@@ -117,7 +117,7 @@ The System Designer is the graphical user interface used to build your nio syste
 
 1. Select the name of the instance in the left navigation panel or on the breadcrumb above the contextual toolbar.
 
-  %accordion%**Click arrow to expand image**%accordion%
+  %accordion%**Click arrow to collapse/expand image**%accordion%
 
   ![](/img/hello_nio/Hello-SelectInstancePoint.png)
 
@@ -125,7 +125,7 @@ The System Designer is the graphical user interface used to build your nio syste
 1. Click **Create new service**.
 1. Complete the **Create new service** window:
 
-  %accordion%**Click arrow to expand image**%accordion%
+  %accordion%**Click arrow to collapse/expand image**%accordion%
 
   ![](/img/tasks/createnewservice.png)
 
@@ -152,7 +152,7 @@ The System Designer is the graphical user interface used to build your nio syste
 
   By default, the color of a service is white. Color coding your services can help you keep your instances organized when working on larger projects with multiple instances.
 
-  %accordion%**Click arrow to expand image**%accordion%
+  %accordion%**Click arrow to collapse/expand image**%accordion%
 
   ![](/img/hello_nio/Hello-EditServiceColor.png)
 
@@ -164,14 +164,14 @@ The System Designer is the graphical user interface used to build your nio syste
 
 1. Click the service name in the left navigation panel or on the breadcrumb above the contextual toolbar.
 
-  %accordion%**Click arrow to expand image**%accordion%
+  %accordion%**Click arrow to collapse/expand image**%accordion%
 
   ![](/img/hello_nio/Hello-SelectInstanceName.png)
 
   %/accordion%
 1. In the **Block library** search box, enter block type name.
 
-  %accordion%**Click arrow to expand image**%accordion%
+  %accordion%**Click arrow to collapse/expand image**%accordion%
 
   ![](/img/BlockLibrary.gif)
 
@@ -187,7 +187,7 @@ The System Designer is the graphical user interface used to build your nio syste
 1. Drag the block type to the canvas.
 1. In the **Block name** box, enter a meaningful name and click **Accept**.
 
-  %accordion%**Click arrow to expand image**%accordion%
+  %accordion%**Click arrow to collapse/expand image**%accordion%
 
   ![](/img/hello_nio/Hello-CreateBlockSimulate.png)
 
@@ -233,7 +233,7 @@ The System Designer is the graphical user interface used to build your nio syste
 1. Click **Start** on the toolbar.
 1. Click **Open logger panel** to view the logs.
 
-  %accordion%**Click arrow to expand image**%accordion%
+  %accordion%**Click arrow to collapse/expand image**%accordion%
 
   ![](/img/hello_nio/Hello-SimLogger.png)
 
