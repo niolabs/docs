@@ -46,7 +46,7 @@ The System Designer is the graphical user interface used to build your nio syste
 1. Select the system name.
 1. Click **Delete** in the toolbar.
 1. If you the **Cannot delete system** message is displayed, you must delete the instances before deleting the system.
-1. Click **Delete.
+1. Click **Delete**.
 
 ## Instance
 

@@ -11,3 +11,5 @@ You can adopt one of two philosophies when creating a block:
 If the function you need does not exist in [Block Library at blocks.n.io](https://blocks.n.io/), you can easily create a custom block.
 
 Begin development of your block with the [block template](block-template.md).
+
+For a tutorial to step you through block development, go to [workshops.n.io](https://workshops.n.io).
