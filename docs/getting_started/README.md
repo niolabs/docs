@@ -1,10 +1,30 @@
-# Getting Started
+# nio
 
-nio is a highly-scalable stream processing engine that allows you to asynchronously process streaming data signals and act on them in real time. nio is the brain of your real-time application, particularly systems that require distributed processing.
+Every state, every change, and every interaction in our world is a signal—from the percentage of moisture in the soil beneath your feet, to the vibration of your car motor, to the individual characters within your last tweet. Every _thing_ is producing context that already has, or will soon, become digitally available in the Internet of Things era. But how can these trillions of disparate signals work harmoniously to produce any meaningful value?
 
-Here are a few sample use cases for nio:
+The nio platform was built to act as the nervous system for a world with trillions of unique signals. It  allows you to create real-world, innovative, and impactful solutions with connected, distributed systems.
 
-* You want to know what people are posting about your company on Twitter. You can instantaneously receive notifications when tweets mention your business, automate responses, and identify trends are received. You can even alert your support team when the number of "help me" tweets passes your acceptable threshold.
-* You run a factory and want to measure equipment performance and maintenance factors. To optimize the business processes and reduce downtime,  nio can read the signal from any sensor and act on the data in real time.
+We’ve built solutions in [agriculture](https://niolabs.com/case-studies/agriculture), with [machine learning](https://niolabs.com/case-studies/industrial), for [enterprise IT](https://niolabs.com/case-studies/case-study-real-time-database-migration),  with [smart toys](https://niolabs.com/case-studies/raspberry-pi-car), and for [industrial operations](https://niolabs.com/case-studies/case-study-industrial-operations-intelligence). We can’t wait to see what you build!
 
-In this getting started tutorial you will learn how to get nio up and running before you proceed to the tutorials.
+## Blocks
+A [block](https://docs.n.io/blocks/) is the component nio uses to apply logic to a signal. Blocks consume, alter, and publish signals. They are the basic units of functionality that allow unlimited interoperability and possibilities.
+
+![](/assets/intro-blocks.png)
+
+## Service
+Multiple nio blocks are intelligently connected to form a nio service. A [service](https://docs.n.io/system-designer/#service) is a real-time process that can be connected with other services to create more complex processes.
+
+![](/assets/intro-service.png)
+
+## Instance
+Services exist within a running version of nio, known as a nio [instance](https://docs.n.io/system-designer/#instance). The nio instance can be installed on a chip, cloud, or anywhere in between to distribute processing and intelligence throughout an entire nio system.
+
+![](/assets/intro-instance.png)
+
+## System
+Just like your biological system is a group of organs working together to keep you alive, a nio [system](https://docs.n.io/system-designer/#system) is a group of distributed instances working together to achieve a common goal. Regardless of where the instances live within the system (chip, gateway, or cloud), they work in harmony on the same platform to listen, transform, share, and act upon signals with intelligence.
+
+![](/assets/intro-system.png)
+
+## System Designer
+The [System Designer](https://docs.n.io/system-designer/) is the tool that allows you to arrange these blocks, services and instances to build your own nio systems. The only limitation is your imagination.
