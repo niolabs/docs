@@ -1,55 +1,55 @@
-# Running {{ book.product}} Locally
+# Running nio Locally
 
-The cloud is an easy way to get {{ book.product}} up and running, but doesn't fully encapsulate the distributed power of the {{ book.product}} platform. Instead, you should run {{ book.product}} on a local or edge node.  In this guide, you will create a local instance that uses a cloud-based Pubkeeper server to handle communications.
+The cloud is an easy way to get nio up and running, but doesn't fully encapsulate the distributed power of the nio platform. Instead, you should run nio on a local or edge node.  In this guide, you will create a local instance that uses a cloud-based Pubkeeper server to handle communications.
 
-Running the {{ book.product}} platform requires Python version 3.4 or greater.
+Running the nio platform requires Python version 3.4 or greater.
 
 Requirements
 
 * Download Python 3.4 or greater from [https://www.python.org/downloads/](https://www.python.org/downloads/).
-* Obtain the {{ book.product}} binary Python wheel file (`.whl`) with your license agreement.
+* Obtain the nio binary Python wheel file (`.whl`) with your license agreement.
 
-## Download {{ book.product}}
+## Download nio
 
-Download {{ book.product}} from the following URL:
+Download nio from the following URL:
 
 https://app.n.io/binaries/download
 
-## Install the {{ book.product}} binary and CLI
+## Install the nio binary and CLI
 
-To install {{ book.product}}, enter the following command:
+To install nio, enter the following command:
 ```
 pip3 install your_wheel_file.whl
 ```
 
-To install the {{ book.product}} Command Line Interface \(CLI\), enter the following command:
+To install the nio Command Line Interface \(CLI\), enter the following command:
 ```
 pip3 install nio-cli
 ```
 
-## Upgrade the {{ book.product}} binary and CLI
+## Upgrade the nio binary and CLI
 
-To upgrade {{ book.product}}, enter the following command:
+To upgrade nio, enter the following command:
 ```
-pip3 install -u your_wheel_file.whl
+pip3 install -U your_wheel_file.whl
 ```
 
-To upgrade the {{ book.product}} Command Line Interface \(CLI\), enter the following command:
+To upgrade the nio Command Line Interface \(CLI\), enter the following command:
 ```
-pip3 install -u nio-cli
+pip3 install -U nio-cli
 ```
 
 ## Create a Project
 
-Now that you have the {{ book.product}} binary to run, you need a {{ book.product}} project to run it against. Obtain a {{ book.product}} project template by cloning the [Project Template repository](https://github.com/niolabs/project_template) or use the {{ book.product}} CLI.
+Now that you have the nio binary to run, you need a nio project to run it against. Obtain a nio project template by cloning the [Project Template repository](https://github.com/niolabs/project_template) or use the nio CLI.
 
 
-### Download using the {{book.product}} CLI
+### Download using the nio CLI
 To clone the project template using CLI, enter the following command:
 
 `nio new first_project`
 
-The `first_project` directory is created in your working directory containing the {{ book.product}} project.
+The `first_project` directory is created in your working directory containing the nio project.
 
 ### Download using git
 To clone the project template using git, clone the template, and initialize the submodules which contain the blocks.
@@ -59,7 +59,7 @@ cd first_project
 git submodule update --init --recursive
 ```
 
-## Set up {{book.product}} environment
+## Set up nio environment
 
 After adding the new project, change to the project directory
 ```
@@ -80,9 +80,9 @@ cd first_project
 1. From your terminal, in your first_project directory, open the `nio.env` file.
 1. Update the following four lines in the `# Pubkeeper Client` section
 ```
-PK_TOKEN: [your copied token]
 PK_HOST: [your copied host]
 PK_PORT: 443
+PK_TOKEN: [your copied token]
 PK_SECURE: True
 ```
 1. Update the following three lines in the `# Websocket Brew Variables` section
@@ -92,7 +92,7 @@ WS_PORT: 443
 WS_SECURE: True
 ```
 
-1. To run {{ book.product}}, enter the following command:
+1. To run nio, enter the following command:
 ```
 nio_run
 ```
@@ -115,11 +115,11 @@ nio_run
   [2016-03-04 23:49:41.227] NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from: starting to: started
   ```
 
-If you see those logs, {{ book.product}} is up and running. Congratulations!
+If you see those logs, nio is up and running. Congratulations!
 
 ## Add a Local Instance
 
-Once you have a local instance running, you can edit it using the System Designer. Based on the log messages, your {{ book.product}} instance is available at `http://localhost:8181` and you need basic authentication to communicate with the instance.
+Once you have a local instance running, you can edit it using the System Designer. Based on the log messages, your nio instance is available at `http://localhost:8181` and you need basic authentication to communicate with the instance.
 
 1. Select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
 
@@ -134,11 +134,11 @@ Once you have a local instance running, you can edit it using the System Designe
 1. Click **Accept**.
 1. Wait for the instance to spin-up and note the name of the new instance on the left.
 
-Note: When you connect to a {{ book.product}} instance, you are communicating with that instance directly from your browser via an XHR request. Hostnames like `localhost` and other internal IP addresses will work. You must have access to the localhost or other IP address from your machine to use the System Designer.
+Note: When you connect to a nio instance, you are communicating with that instance directly from your browser via an XHR request. Hostnames like `localhost` and other internal IP addresses will work. You must have access to the localhost or other IP address from your machine to use the System Designer.
 
-You may see an issue regarding HTTPS and HTTP instances. Since you launched your instance and presumably didn't load any SSL certificates, the instance is accessible only by HTTP. However, if you are logged into the System Designer via HTTPS, then an XHR request going over HTTP is not permitted due to a browser restriction. Instead, log into the designer via HTTP. All of your instances and systems will be the same, except the {{ book.product}} commands to edit these instances won't happen over HTTPS.
+You may see an issue regarding HTTPS and HTTP instances. Since you launched your instance and presumably didn't load any SSL certificates, the instance is accessible only by HTTP. However, if you are logged into the System Designer via HTTPS, then an XHR request going over HTTP is not permitted due to a browser restriction. Instead, log into the designer via HTTP. All of your instances and systems will be the same, except the nio commands to edit these instances won't happen over HTTPS.
 
-Once your instance is loaded and available, you can add services and blocks in the same manner as the cloud instance. Any errors or activity are available in the logs in your terminal that is running {{ book.product}}. When you need to debug a system, a local instance is a useful tool.
+Once your instance is loaded and available, you can add services and blocks in the same manner as the cloud instance. Any errors or activity are available in the logs in your terminal that is running nio. When you need to debug a system, a local instance is a useful tool.
 
 ## Create a Service
 
@@ -154,7 +154,7 @@ Once your instance is loaded and available, you can add services and blocks in t
 ## Add Blocks
 Before you move on, you're going to want to add some blocks to your project. Blocks can be added in the System Designer or from the command line.
 
-nio blocks are installed to instances using the Block Library. The collection of blocks created by {{ book.product }} is also stored in the [Block Library at blocks.n.io](https://blocks.n.io/). You can search for blocks in the System Designer or in the Block Library.
+nio blocks are installed to instances using the Block Library. The collection of blocks created by nio is also stored in the [Block Library at blocks.n.io](https://blocks.n.io/). You can search for blocks in the System Designer or in the Block Library.
 
 ###To add a block in the System Designer:
 1. Select the service by clicking the service name under the instance name in the left navigation panel or on the breadcrumb above the contextual toolbar.
@@ -178,4 +178,4 @@ This can also be done with the nio-cli with `nio add logger`.
 1. Drag the your block onto the canvas.
 1. Type the name of the block and click **Accept**.
 
-Once you have {{ book.product }} running, you can create many different projects. To guide you through the process, view the tutorials at https://workshops.n.io/.
+Once you have nio running, you can create many different projects. To guide you through the process, view the tutorials at https://workshops.n.io/.

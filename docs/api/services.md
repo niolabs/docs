@@ -1,6 +1,6 @@
 # Services API
 
-Services are the real-time processes that run on an instance in {{ book.product }} where you configure the logic of the workflow of blocks to make interesting things happen. Earlier we created a service called `SimulateAndLog` where we connected a _CounterIntervalSimulator_ to a _Logger_. Information about and interaction with the services of a running {{ book.product }} instance are available through the `/services` API.
+Services are the real-time processes that run on an instance in nio where you configure the logic of the workflow of blocks to make interesting things happen. Earlier we created a service called `SimulateAndLog` where we connected a _CounterIntervalSimulator_ to a _Logger_. Information about and interaction with the services of a running nio instance are available through the `/services` API.
 
 ## Get API
 
@@ -48,7 +48,7 @@ The result of the previous request is
 
   **log_level**<br>The number of log messages displayed, from `NOTSET` on the bottom, which includes all messages logged, to `CRITICAL` on the top, which contains only the most critical messages. Messages are shown for the specified `log_level` and all levels above.
 
-  **auto_start**<br>A boolean that indicates if the service will start when {{ book.product }} starts up.
+  **auto_start**<br>A boolean that indicates if the service will start when nio starts up.
 
   **status**<br>Current status of the service: configuring, configured, starting, started, stopping, stopped, and error.
 
@@ -66,7 +66,7 @@ In addition to getting the details of one service configuration, specified by na
 
 ## Create API
 
-If you're working with a {{ book.product }} project from scratch, you need to create and configure services. Create a new service with the Create API by sending a POST request with the applicable JSON data. When creating a new service, you can optionally include the configured values of the service type properties. At a minimum, you must specify the service `type` and `name` and any configuration values for required service properties that do not have a default value. For example, to create the `SimulateAndLog` service of the basic type `Service`
+If you're working with a nio project from scratch, you need to create and configure services. Create a new service with the Create API by sending a POST request with the applicable JSON data. When creating a new service, you can optionally include the configured values of the service type properties. At a minimum, you must specify the service `type` and `name` and any configuration values for required service properties that do not have a default value. For example, to create the `SimulateAndLog` service of the basic type `Service`
 
     curl -XPOST 'http://localhost:8181/services' --data '{"type": "Service", "name": "SimulateAndLog"}' -H 'Content-Type: applcation/json'
 

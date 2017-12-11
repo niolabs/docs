@@ -1,6 +1,6 @@
 # Understanding Signals
 
-Signals are the pieces of information that are passed from block to block throughout your system. They are the fundamental messages type that {{ book.product }} understands. Structurally, signals are key-value objects.
+Signals are the pieces of information that are passed from block to block throughout your system. They are the fundamental messages type that nio understands. Structurally, signals are key-value objects.
 ```
 {
   "name": "John Doe",
@@ -144,4 +144,4 @@ You added an attribute to your block configuration indentifying the value to gro
 ]
 ```
 
-Understanding how Group By works and when to use it can save a lot of headaches and repetition in {{ book.product }} services allowing you to build very powerful services without many blocks. In general, if you are frequently repeating the same blocks when designing in {{ book.product }}, there is probably a more efficient way to perform the task.
+Understanding how Group By works and when to use it can save a lot of headaches and repetition in nio services allowing you to build very powerful services without many blocks. In general, if you are frequently repeating the same blocks when designing in nio, there is probably a more efficient way to perform the task.
