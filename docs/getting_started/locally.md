@@ -34,7 +34,7 @@ To upgrade nio, enter the following command:
 pip3 install -U your_wheel_file.whl
 ```
 
-To upgrade the nio Command Line Interface \(CLI\), enter the following command:
+To upgrade the nio CLI, enter the following command:
 ```
 pip3 install -U nio-cli
 ```
