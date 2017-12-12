@@ -41,8 +41,7 @@ pip3 install -U nio-cli
 
 ## Create a Project
 
-Now that you have the nio binary to run, you need a nio project to run it against. Obtain a nio project template by cloning the [Project Template repository](https://github.com/niolabs/project_template) or use the nio CLI.
-
+Now that you have the nio binary to run, you need a nio [project](https://docs.n.io/glossary/#project) to run it with. Obtain a nio project template by using the nio CLI or by cloning the [Project Template repository](https://github.com/niolabs/project_template) from Github directly.
 
 ### Download using the nio CLI
 To clone the project template using CLI, enter the following command:
@@ -51,8 +50,8 @@ To clone the project template using CLI, enter the following command:
 
 The `first_project` directory is created in your working directory containing the nio project.
 
-### Download using git
-To clone the project template using git, clone the template, and initialize the submodules which contain the blocks.
+### Download using Git
+To clone the project template using Git, clone the template, and initialize the submodules which contain the blocks.
 ```
 git clone https://github.com/niolabs/project_template.git first_project
 cd first_project
@@ -66,16 +65,32 @@ After adding the new project, change to the project directory
 cd first_project
 ```
 ## Create a System
+When you first open the **System Designer**, you will see your canvas. The canvas is where you will build [systems](https://docs.n.io/glossary#system) containing instances, services, and blocks. To begin, create a system that will contain projects you create as you learn to use nio.
 
-1. Open the **System Designer** in a browser.
+1. Open the **System Designer** in a new tab in your browser.
 
   https://designer.n.io/
 
-1. In the lower-left corner, click the **`+`** button to create a new system.
-1. Complete the **Create new system** window:
-  * In the **System name** box, enter your system name.
-1. Click **Accept**.
-1. Click **Edit** in the contextual toolbar to open the system's configuration.
+1. You can create a new system in two ways.
+  * If this is your first time opening nio, the **create new system** window displays.
+
+    %accordion%**Click arrow to collapse/expand**%accordion%
+
+    ![](/img/CreateNewSystem.png)
+
+    %/accordion%
+
+  * If you have already been working in nio, in the lower-left corner, click the **`+`** button.
+
+    %accordion%**Click arrow to collapse/expand**%accordion%
+
+    ![](/img/BlankCanvas.png)
+
+    %/accordion%
+1. Complete the **create new system** window:
+  1. In the **system name** box, enter your system name.
+  1. Click **accept**.
+1. Click **edit** in the contextual toolbar to open the system's configuration.
 > Make note of the values for **hostname** and **token** which will be used in the following steps.
 1. From your terminal, in your first_project directory, open the `nio.env` file.
 1. Update the following four lines in the `# Pubkeeper Client` section
@@ -101,81 +116,47 @@ nio_run
   * If you need help setting your PATH in Windows, click [here](https://msdn.microsoft.com/en-us/library/aa922003.aspx).
   * If you need help setting your PATH in MacOS, click [here](http://osxdaily.com/2014/08/14/add-new-path-to-path-command-line/).
 
-1. The log messages display, similar to the following output, but there should be no errors.
+1. You should see log messages display similar to the following output.
 
   ```
-  [2016-03-04 23:49:41.035] NIO [INFO] [main.WebServer] Server configured on 0.0.0.0 : 8181
-  [2016-03-04 23:49:41.035] NIO [INFO] [main.WebServer] Server configured on 0.0.0.0:8181
-  [2016-03-04 23:49:41.042] NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from:  to: created
-  [2016-03-04 23:49:41.055] NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from: created to: configuring
-  [2016-03-04 23:49:41.109] NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from: configuring to: configured
-  [2016-03-04 23:49:41.123] NIO [INFO] [main.WebServer] Starting server on 0.0.0.0:8181
-  [2016-03-04 23:49:41.226] NIO [INFO] [main.WebServer] Server 0.0.0.0:8181 started on 0.0.0.0:8181
-  [2016-03-04 23:49:41.226] NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from: configured to: starting
-  [2016-03-04 23:49:41.227] NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from: starting to: started
+  NIO [INFO] [main.WebServer] Server configured on 0.0.0.0:8181
+  NIO [INFO] [main.WebServer] Server configured on 0.0.0.0:8181
+  NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from:
+    to: created
+  NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from:
+    created to: configuring
+  NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from:
+    configuring to: configured
+  NIO [INFO] [main.WebServer] Starting server on 0.0.0.0:8181
+  NIO [INFO] [main.WebServer] Server 0.0.0.0:8181 started on 0.0.0.0:8181
+  NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from:
+    configured to: starting
+  NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from:
+    starting to: started
   ```
 
 If you see those logs, nio is up and running. Congratulations!
 
 ## Add a Local Instance
 
-Once you have a local instance running, you can edit it using the System Designer. Based on the log messages, your nio instance is available at `http://localhost:8181` and you need basic authentication to communicate with the instance.
+Once you have a local [instance](https://docs.n.io/glossary#instance) running, you can edit it using the **System Designer**. Based on the log messages, your nio instance is available at `http://localhost:8181` and you need basic authentication to communicate with the instance.
 
 1. Select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
 
   ![](/img/hierarchy.gif)
-
-1. Click **Create local instance**.
-1. Complete the **Create local instance** window:
-  * In the **Instance name** box, enter your instance name.
-  * In the **Hostname** box, enter **localhost**.
-  * In the **Port** box, enter **8181**.
-  * Leave the **Access mode** as **basic**.
-1. Click **Accept**.
+1. Click **create local instance**.
+1. Complete the **create local instance** window:
+  * In the **instance name** box, enter your instance name.
+  * In the **hostname** box, enter **localhost**.
+  * In the **port** box, enter **8181**.
+  * Leave the **access mode** as **basic**.
+1. Click **accept**.
 1. Wait for the instance to spin-up and note the name of the new instance on the left.
 
-Note: When you connect to a nio instance, you are communicating with that instance directly from your browser via an XHR request. Hostnames like `localhost` and other internal IP addresses will work. You must have access to the localhost or other IP address from your machine to use the System Designer.
+  >Note: When you connect to a nio instance, you are communicating with that instance directly from your browser via an XHR request. Hostnames like `localhost` and other internal IP addresses will work. You must have access to the localhost or other IP address from your machine to use the **System Designer**.
 
-You may see an issue regarding HTTPS and HTTP instances. Since you launched your instance and presumably didn't load any SSL certificates, the instance is accessible only by HTTP. However, if you are logged into the System Designer via HTTPS, then an XHR request going over HTTP is not permitted due to a browser restriction. Instead, log into the designer via HTTP. All of your instances and systems will be the same, except the nio commands to edit these instances won't happen over HTTPS.
+You may see an issue regarding HTTPS and HTTP instances. Since you launched your instance and presumably didn't load any SSL certificates, the instance is accessible only by HTTP. However, if you are logged into the **System Designer** via HTTPS, then an XHR request going over HTTP is not permitted due to a browser restriction. Instead, log into the designer via HTTP. All of your instances and systems will be the same, except the nio commands to edit these instances won't happen over HTTPS.
 
-Once your instance is loaded and available, you can add services and blocks in the same manner as the cloud instance. Any errors or activity are available in the logs in your terminal that is running nio. When you need to debug a system, a local instance is a useful tool.
-
-## Create a Service
-
-1. Select the name of your instance under the system name in the left navigation panel or on the breadcrumb above the contextual toolbar.
-1. Click **Create new service**.
-1. Complete the **Create new service** window:
-  1. In the **Service name** box, enter a service name.
-  1. Leave the **Service type** as **Service**.
-1. Click **Accept**.
-1. Click **Save** in the toolbar.
-1. Click **Auto-Start Off** in the toolbar.
-
-## Add Blocks
-Before you move on, you're going to want to add some blocks to your project. Blocks can be added in the System Designer or from the command line.
-
-nio blocks are installed to instances using the Block Library. The collection of blocks created by nio is also stored in the [Block Library at blocks.n.io](https://blocks.n.io/). You can search for blocks in the System Designer or in the Block Library.
-
-###To add a block in the System Designer:
-1. Select the service by clicking the service name under the instance name in the left navigation panel or on the breadcrumb above the contextual toolbar.
-1. In the **Block library** search box, enter a search term.
-* If the block is not displayed, click **Available**, **Installed**, and **Configured** to search for the block.
-* If the block is not already pre-installed, click the **Install Block** button which resembles a cloud with a down arrow.
-1. Drag the block type to the canvas.
-1. Name the block.
-1. Click **Accept**.
-
-###To add blocks manually:
-
-1. From the project root directory, add the relevant block repository into the `blocks/` folder as a submodule. For example, the logger block:
-```
-git submodule add https://github.com/nio-blocks/logger.git blocks/logger
-```
-This can also be done with the nio-cli with `nio add logger`.
-1. Close and reopen the instance.
-1. Click the **Block library** in the upper-right corner.
-1. In the Search box, enter the name of the block. As you type, the list is filtered.
-1. Drag the your block onto the canvas.
-1. Type the name of the block and click **Accept**.
+Once your instance is loaded and available, you can add [services](https://docs.n.io/glossary#service) and [blocks](https://docs.n.io/glossary#block) in the same manner as the cloud instance. You can view any errors or activity from the logs in your terminal that is running nio. When you need to debug a system, a local instance is a useful tool.
 
 Once you have nio running, you can create many different projects. To guide you through the process, view the tutorials at https://workshops.n.io/.
