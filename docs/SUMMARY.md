@@ -4,7 +4,7 @@
 * [Getting Started](getting_started/README.md)
   * [In the Cloud](getting_started/in_the_cloud.md)
   * [Locally](getting_started/locally.md)
-  * [Workshops](getting_started/first_service.md)
+  * [Workshops](getting_started/workshops.md)
 * [System Designer](system-designer/README.md)
   * [Designer Basics](system-designer/designer-tasks.md)
   * [Browser Support](system-designer/browser-support.md)
