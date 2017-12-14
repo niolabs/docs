@@ -9,22 +9,22 @@ We’ve built solutions in [agriculture](https://niolabs.com/case-studies/agricu
 ## Blocks
 A [block](https://docs.n.io/blocks/) is the component nio uses to apply logic to a signal. Blocks consume, alter, and publish signals. They are the basic units of functionality that allow unlimited interoperability and possibilities.
 
-![](/assets/intro-blocks.png)
+![](https://docs.n.io/assets/intro-blocks.png)
 
 ## Service
 Multiple nio blocks are intelligently connected to form a nio service. A [service](https://docs.n.io/system-designer/#service) is a real-time process that can be connected with other services to create more complex processes.
 
-![](/assets/intro-service.png)
+![](https://docs.n.io/assets/intro-service.png)
 
 ## Instance
 Services exist within a running version of nio, known as a nio [instance](https://docs.n.io/system-designer/#instance). The nio instance can be installed on a chip, cloud, or anywhere in between to distribute processing and intelligence throughout an entire nio system.
 
-![](/assets/intro-instance.png)
+![](https://docs.n.io/assets/intro-instance.png)
 
 ## System
 Just like your biological system is a group of organs working together to keep you alive, a nio [system](https://docs.n.io/system-designer/#system) is a group of distributed instances working together to achieve a common goal. Regardless of where the instances live within the system (chip, gateway, or cloud), they work in harmony on the same platform to listen, transform, share, and act upon signals with intelligence.
 
-![](/assets/intro-system.png)
+![](https://docs.n.io/assets/intro-system.png)
 
 ## System Designer
 The [System Designer](https://docs.n.io/system-designer/) is the tool that allows you to arrange these blocks, services and instances to build your own nio systems. The only limitation is your imagination.
