@@ -2,9 +2,10 @@
 
 * [Introduction](README.md)
 * [Getting Started](getting_started/README.md)
+  * [Portal/Account Sign up](getting_started/portal.md)
+  * [Workshops](getting_started/workshops.md)
   * [In the Cloud](getting_started/in_the_cloud.md)
   * [Locally](getting_started/locally.md)
-  * [Workshops](getting_started/workshops.md)
 * [System Designer](system-designer/README.md)
   * [Designer Basics](system-designer/designer-tasks.md)
   * [Browser Support](system-designer/browser-support.md)

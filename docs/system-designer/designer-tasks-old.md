@@ -43,13 +43,13 @@ A system is a distributed set of entities that work together as a whole. For nio
 
   %accordion%**Click arrow to collapse/expand image**%accordion%
 
-  ![](/img/hello_nio/Hello-SelectSystemCreateInstancePoint.png)
+  ![](/img/cloud/Hello-SelectSystemCreateInstancePoint.png)
 
   %/accordion%
 
   > **[info] Breadcrumb**
   >
-  > ![](/img/hello_nio/hierarchy.gif)
+  > ![](/img/cloud/hierarchy.gif)
   >
   > Click on a hyperlink in the breadcrumb above the toolbar to navigate between the levels of your system. The breadcrumb allows you to visualize your location in the project.
 1. Click **Create cloud instance**.
@@ -74,7 +74,7 @@ A system is a distributed set of entities that work together as a whole. For nio
 
   %accordion%**Click arrow to collapse/expand image**%accordion%
 
-  ![](/img/hello_nio/Hello-SelectSystemCreateInstancePoint.png)
+  ![](/img/cloud/Hello-SelectSystemCreateInstancePoint.png)
 
   %/accordion%
 
@@ -106,7 +106,7 @@ A system is a distributed set of entities that work together as a whole. For nio
 
   %accordion%**Click arrow to collapse/expand image**%accordion%
 
-  ![](/img/hello_nio/Hello-SelectInstancePoint.png)
+  ![](/img/cloud/Hello-SelectInstancePoint.png)
 
   %/accordion%
 1. Click **Create new service**.
@@ -141,7 +141,7 @@ A system is a distributed set of entities that work together as a whole. For nio
 
   %accordion%**Click arrow to collapse/expand image**%accordion%
 
-  ![](/img/hello_nio/Hello-EditServiceColor.png)
+  ![](/img/cloud/Hello-EditServiceColor.png)
 
   %/accordion%
 
@@ -153,7 +153,7 @@ A system is a distributed set of entities that work together as a whole. For nio
 
   %accordion%**Click arrow to collapse/expand image**%accordion%
 
-  ![](/img/hello_nio/Hello-SelectInstanceName.png)
+  ![](/img/cloud/Hello-SelectInstanceName.png)
 
   %/accordion%
 1. In the **Block library** search box, enter block type name.
@@ -176,7 +176,7 @@ A system is a distributed set of entities that work together as a whole. For nio
 
   %accordion%**Click arrow to collapse/expand image**%accordion%
 
-  ![](/img/hello_nio/Hello-CreateBlockSimulate.png)
+  ![](/img/cloud/Hello-CreateBlockSimulate.png)
 
   %/accordion%
 
@@ -227,7 +227,7 @@ Now you can start your first service.
 
   %accordion%**Click arrow to collapse/expand image**%accordion%
 
-  ![](/img/hello_nio/Hello-SimLogger.png)
+  ![](/img/cloud/Hello-SimLogger.png)
 
   %/accordion%
 
@@ -357,7 +357,7 @@ Success styling
 
 
 ## Project Hierarchy/Breadcrumb
-![](/img/hello_nio/hierarchy.gif)
+![](/img/cloud/hierarchy.gif)
 
 
 
