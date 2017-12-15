@@ -1,27 +1,16 @@
-# System Designer Basics
+# System Designer Reference
 
-The System Designer is the graphical user interface used to build your nio system. This overview provides you with a quick tour of the basics of creating a system, instance, service, and block.
-
-
-## Get Help
-
-1. Click the menu in the upper-right corner next to your name.
-1. Select one of the available options:
-
-  ![](/img/tasks/helpoptions.png)
-  * **docs** - reference documentation
-  * **blocks** - information on all of the nio blocks
-  * **workshops** - self-paced tutorials
-  * **support** - FAQs and contact form
-  * **forum** - interact with other nio users
-  * **account** - edit your profile
+This section details all of the tasks that can be performed in the System Designer, nio's graphical user interface.
 
 ## Systems
+System are the largest container for projects in the nio System Designer.
+
+Systems are created in the System Designer to contain instances (running installations) of nio.
 
 ### Create a System
 
-1. You can create a new system in two ways.
-  * If this is your first time opening nio, the **Create new system** window displays.
+You can create a new system in two ways.
+  1. If this is your first time opening nio, the **Create new system** window displays.
 
     %accordion%**Click arrow to collapse/expand image**%accordion%
 
@@ -29,7 +18,7 @@ The System Designer is the graphical user interface used to build your nio syste
 
     %/accordion%
 
-  * If you have already been working in nio, in the lower-left corner, click the **`+`** button.
+  2. If you have already been working in nio, in the lower-left corner, click the **`+`** button.
 
     %accordion%**Click arrow to collapse/expand image**%accordion%
 
@@ -37,36 +26,41 @@ The System Designer is the graphical user interface used to build your nio syste
 
     %/accordion%
 
-1. Complete the **Create new system** window:
-  1. In the **System name** box, enter a meaningful name.
-  1. Click **Accept**.
+Complete the **create new system** window:
+  1. In the **system name** box, enter a meaningful name.
+  1. Click **accept**.
 
-### Delete a System
+### System Context and Toolbar
 
-1. Select the system name.
-1. Click **Delete** in the toolbar.
-1. If you the **Cannot delete system** message is displayed, you must delete the instances before deleting the system.
-1. Click **Delete**.
+Once you create a system, you can enter the system context by clicking on a system in the system list, on the system name at the top of the navigation list, or on the system name in the breadcrumb.
+
+In the system context you will see the system toolbar that can perform the following tasks:
+  ![](/img/Toolbar-System.gif)
+
+  Icon                      |Label             | Description      |
+  --------------------------|------------------|------------------|
+  ![](/img/IconEdit.gif)    |Edit              | Edit system name. View Pubkeeper configuration information.
+  ![](/img/IconShare.gif)   |Share             | Share system. See more info about system sharing [here](/system-designer/sharing.html)
+  ![](/img/IconDelete.gif)  |Delete            | Delete system. Instances must be deleted first.
 
 ## Instance
 
+Instances are running versions of nio.
+
+Instances are created inside a system and contain services.
+
 ### Create a Cloud Instance
 
-1. Select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
+To enter the system context, select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
 
   %accordion%**Click arrow to collapse/expand image**%accordion%
 
-  ![](/img/cloud/Hello-SelectSystemCreateInstancePoint.png)
+  ![](/img/hello_nio/Hello-SelectSystemCreateInstancePoint.png)
 
   %/accordion%
 
-  > **[info] Breadcrumb**
-  >
-  > ![](/img/cloud/hierarchy.gif)
-  >
-  > Click on a hyperlink in the breadcrumb above the toolbar to navigate between the levels of your system. The breadcrumb allows you to visualize your location in the project.
-1. Click **Create cloud instance**.
-1. Complete the **Create cloud instance** window:
+1. Click **create cloud instance**.
+1. Complete the **create cloud instance** window:
 
   %accordion%**Click arrow to collapse/expand image**%accordion%
 
@@ -74,7 +68,7 @@ The System Designer is the graphical user interface used to build your nio syste
 
   %/accordion%
 
-  * In the **Instance name** box, enter a meaningful name.
+  * In the **instance name** box, enter a meaningful name.
 
     > **[info] Instance Naming**
     >
@@ -83,16 +77,16 @@ The System Designer is the graphical user interface used to build your nio syste
 
 ### Create a Local Instance
 
-1. Select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
+To enter the system context, select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
 
   %accordion%**Click arrow to collapse/expand image**%accordion%
 
-  ![](/img/cloud/Hello-SelectSystemCreateInstancePoint.png)
+  ![](/img/hello_nio/Hello-SelectSystemCreateInstancePoint.png)
 
   %/accordion%
 
-1. Click **Create local instance**.
-1. Complete the **Create local instance** window:
+1. Click **create local instance**.
+1. Complete the **create local instance** window:
 
   %accordion%**Click arrow to collapse/expand image**%accordion%
 
@@ -105,32 +99,52 @@ The System Designer is the graphical user interface used to build your nio syste
     > **[info] Instance Naming**
     >
     >Instance names cannot contain spaces or underscores.
-  * In the **Hostname** box, enter the hostname.
-  * In the **Port** box, enter the port number.
-  * Leave the **Access mode** as **basic**.
+  * In the **hostname** box, enter the hostname for the instance.
+  * In the **port** box, enter the port number configured on the instance.
+  * Leave the **access mode** as **basic**.
 
-1. Click **Accept**.
+1. Click **accept**.
+
+### Instance Context and Toolbar
+
+Once you create an instance, you can enter the instance context by clicking on the instance name in the instance list or in the breadcrumb.
+
+In the instance context you will see the the instance toolbar that can perform the following tasks:
+
+![](/img/Toolbar-Instance.gif)
+
+Icon                      |Label             | Description      |
+--------------------------|------------------|------------------|
+![](/img/IconEdit.gif)    |Edit              | Edit instance name.
+![](/img/IconSave.gif)    |Save              | Save instance.
+![](/img/IconDelete.gif)  |Delete            | Delete instance.
+
 
 ## Service
 
+A service is a collection of blocks that work together to perform a service.
+
+Services are created inside an instance and contain blocks.
+
+
 ### Create a Service
 
-1. Select the name of the instance in the left navigation panel or on the breadcrumb above the contextual toolbar.
+Select the name of the instance in the left navigation panel or on the breadcrumb above the contextual toolbar.
 
   %accordion%**Click arrow to collapse/expand image**%accordion%
 
-  ![](/img/cloud/Hello-SelectInstancePoint.png)
+  ![](/img/hello_nio/Hello-SelectInstancePoint.png)
 
   %/accordion%
-1. Click **Create new service**.
-1. Complete the **Create new service** window:
+1. Click **create new service**.
+1. Complete the **create new service** window:
 
   %accordion%**Click arrow to collapse/expand image**%accordion%
 
   ![](/img/tasks/createnewservice.png)
 
   %/accordion%
-  * In the **Service name** box, enter a meaningful name.
+  * In the **service name** box, enter a meaningful name.
 
     > **[info] Service Naming**
     >
@@ -138,25 +152,28 @@ The System Designer is the graphical user interface used to build your nio syste
     >
   * Leave the **Service type** as **Service**.
 
-1. Click **Accept**.
-1. Click **Save** in the toolbar.
-  >**[info] Contextual Toolbar Functions**
-  >
-  >Hover over each icon on the contextual toolbar to display its function. The available functions change depending on your location in the project.
-  >
-  >![](/img/Toolbar-Service.gif)
-1. Click **Auto-Start Off** in the toolbar.
+1. Click **accept**.
+1. Click **save** in the toolbar.
 
-  By default, services are set to auto-start when a nio instance is started.
-1. Optional. Click **Edit** in the toolbar, select one of the colored circles to represent this service, and click **Accept**.
+### Service Context and Toolbar
 
-  By default, the color of a service is white. Color coding your services can help you keep your instances organized when working on larger projects with multiple instances.
+Once you create a service, you can enter the service context by clicking on the service name in the service list or in the breadcrumb.
 
-  %accordion%**Click arrow to collapse/expand image**%accordion%
+In the service context you will see the the service toolbar that can perform the following tasks:
 
-  ![](/img/cloud/Hello-EditServiceColor.png)
+![](/img/Toolbar-Service.gif)
 
-  %/accordion%
+Icon                      |Label             | Description      |
+--------------------------|------------------|------------------|
+![](/img/IconEdit.gif)    |Edit              | Edit service name and color.
+![](/img/IconSave.gif)    |Save              | Save service.
+![](/img/IconStopAnim.gif)|Start/Stop        | Toggle to start and stop service.
+![](/img/IconAuto.gif)    |Auto-Start On/Off | Toggle Auto-Start on and off.
+![](/img/IconRevert.gif)  |Revert            | Revert changes to service.
+![](/img/IconClone.gif)   |Clone             | Clone service.
+![](/img/IconDelete.gif)  |Delete            | Delete service.
+
+By default, services are set to auto-start when a nio instance is started.
 
 ## Blocks
 
@@ -166,7 +183,7 @@ The System Designer is the graphical user interface used to build your nio syste
 
   %accordion%**Click arrow to collapse/expand image**%accordion%
 
-  ![](/img/cloud/Hello-SelectInstanceName.png)
+  ![](/img/hello_nio/Hello-SelectInstanceName.png)
 
   %/accordion%
 1. In the **Block library** search box, enter block type name.
@@ -189,7 +206,7 @@ The System Designer is the graphical user interface used to build your nio syste
 
   %accordion%**Click arrow to collapse/expand image**%accordion%
 
-  ![](/img/cloud/Hello-CreateBlockSimulate.png)
+  ![](/img/hello_nio/Hello-CreateBlockSimulate.png)
 
   %/accordion%
 
@@ -235,42 +252,10 @@ The System Designer is the graphical user interface used to build your nio syste
 
   %accordion%**Click arrow to collapse/expand image**%accordion%
 
-  ![](/img/cloud/Hello-SimLogger.png)
+  ![](/img/hello_nio/Hello-SimLogger.png)
 
   %/accordion%
 
-## Contextual Toolbar
-The contextual toolbar changes based on your location in the project to represent the available functions. Hover over the icon to reveal the name of the icon. Some icons have dual functions where you click to toggle an action, such as starting and stopping a service.
-
-Icon                      |Description       |
---------------------------|------------------|
-![](/img/IconAuto.gif)    |Auto-Start On/Off
-![](/img/IconClone.gif)   |Clone             
-![](/img/IconCommand.gif) |Command           
-![](/img/IconDelete.gif)  |Delete            
-![](/img/IconEdit.gif)    |Edit              
-![](/img/IconRevert.gif)  |Revert            
-![](/img/IconSave.gif)    |Save              
-![](/img/IconShare.gif)   |Share             
-![](/img/IconStopAnim.gif)|Start/Stop        
-
-### System Toolbar
-![](/img/Toolbar-System.gif)
-
-Icon                      |Label             | Description      |
---------------------------|------------------|------------------|
-![](/img/IconEdit.gif)    |Edit              | Edit system name. View Pubkeeper configuration information.
-![](/img/IconShare.gif)   |Share             | Share system.
-![](/img/IconDelete.gif)  |Delete            | Delete system. Instances must be deleted first.
-
-### Instance Toolbar
-![](/img/Toolbar-Instance.gif)
-
-Icon                      |Label             | Description      |
---------------------------|------------------|------------------|
-![](/img/IconEdit.gif)    |Edit              | Edit instance name.
-![](/img/IconSave.gif)    |Save              | Save instance.
-![](/img/IconDelete.gif)  |Delete            | Delete instance.
 
 
 ### Service Toolbar
@@ -296,3 +281,15 @@ Icon                      |Label             | Description      |
 ![](/img/IconEdit.gif)    |Edit              | Edit block configuration.
 ![](/img/IconCommand.gif) |Command           | Command block.
 ![](/img/IconDelete.gif)  |Delete            | Delete block.
+
+## Resources
+
+In the upper-right corner next to your name, a navigation menu provides links to other helpful resources.
+
+  ![](/img/tasks/helpoptions.png)
+  * **docs**—reference documentation
+  * **blocks**—information about all the nio blocks
+  * **workshops**—self-paced tutorials
+  * **support**—FAQs and contact form
+  * **forum**—interact with other nio users
+  * **account**—edit your profile

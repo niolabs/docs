@@ -126,7 +126,7 @@ You may see an issue regarding HTTPS and HTTP instances. Since you launched your
 
 Once your instance is loaded and available, you can add services and blocks in the same manner as the [cloud instance](/getting_started/in_the_cloud#create-a-service).
 
-Available blocks can be explored in the [Block Library](blocks.n.io) where you will find a summary of the block's purpose, a list of its properties, commands, inputs, and outputs, and a link to the block code repository.
+Available blocks can be explored in the [block library](blocks.n.io) where you will find a summary of the block's purpose, a list of its properties, commands, inputs, and outputs, and a link to the block code repository.
 
 ## Create a Service
 
@@ -140,10 +140,10 @@ Available blocks can be explored in the [Block Library](blocks.n.io) where you w
 1. Click **auto-start off** in the toolbar.
 
 ## Add Blocks
-Once you have successfully created a service, you will be switched to the service context where blocks are available in the Block library for you to build your logic. Blocks can either be added in the System Designer or from the command line.
+Once you have successfully created a service, you will be switched to the service context where you will see the block library containing blocks available for you to use to build your logic. Blocks can be added to your project either from the System Designer or from the command line.
 
 ### To Add a Block in the System Designer
-1. In the **Block library** search box, enter a search term. As you type, the list is filtered.
+1. In the **block library** search box, enter a search term. As you type, the list is filtered.
 * If the block is not displayed, click **available**, **installed**, and **configured** to search for the block.
 * If the block is not already pre-installed, click the **install block** button which resembles a cloud with a down arrow.
 1. Drag the block type to the canvas.

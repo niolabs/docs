@@ -1,6 +1,6 @@
-# Accessing the nio Platform
+# Access to the nio Platform
 
-Before you can access the downloadable nio binaries and System Designer, you must license nio using one of the options listed below. [Choose the plan](https://niolabs.com/licensing) that works best for you or your organization.
+Before you can download the nio binaries and access the System Designer, you must license nio using one of the options listed below. [Choose the plan](https://niolabs.com/licensing) that works best for you or your organization.
 
 ### [Sandbox](https://niolabs.com/licensing)
 The nio Sandbox is a limited, self-service license for non-commercial use. It is recommended for initial exploration and prototyping.
