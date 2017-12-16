@@ -1,94 +1,183 @@
-# Running nio in the Cloud
+# nio in the Cloud
+**Estimated time: 5–10 minutes**
 
-The easiest way to run nio is by running it in the cloud.
+Hello to a new world of connected intelligence using nio!
 
-Below you can walk through the foundational steps of building a project including creating a system, cloud instance, and service, followed by adding blocks.
+This tutorial introduces you to the System Designer and the fundamental concepts of building a nio [project](https://docs.n.io/glossary#project) including how to create
+[systems](https://docs.n.io/glossary#system),
+[instances](https://docs.n.io/glossary#instance),
+[services](https://docs.n.io/glossary#service), and
+[blocks](https://docs.n.io/glossary#block).
+
+## Before You Begin
+
+The [**System Designer**](https://docs.n.io/system-designer/) is the graphical user interface used to build your nio system. This video provides you with a quick tour of the System Designer including the navigation, work areas, and toolbars.
+
+{% video %}https://www.youtube.com/watch?v=kqY7Z0IJ50E{% endvideo %}
 
 ## Create a System
 
-1. Open the **System Designer** in a new tab.
+The very first time you open the System Designer, you are literally starting with a blank canvas. The canvas is where you will build systems containing instances, services, and blocks. To begin, create a system named `workshops` that will contain the projects you create as you learn to use nio.
+
+1. Open the **System Designer** in a new tab in your browser.
 
   https://designer.n.io/
 
-1. In the lower-left corner, click the **`+`** button to create a new system.
-1. Complete the **Create new system** window:
-  * In the **System name** box, enter your system name.
-1. Click **Accept**.
+1. You can create a new system in two ways.
+  * If this is your first time opening nio, the **create new system** window displays.
 
-## Create a Cloud Instance
+    %accordion%**Click arrow to collapse/expand**%accordion%
 
-1. Select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
+    ![](/img/cloud/Hello-CreateNewSystem.png)
 
-  ![](/img/hierarchy.gif)
+    %/accordion%
 
-1. Click **Create cloud instance**.
-1. Complete the **Create cloud instance** window:
-  * In the **Instance name** box, enter your instance name.
-1. Click **Accept**.
+  * If you have already been working in nio, in the lower-left corner, click the **`+`** button.
+
+    %accordion%**Click arrow to collapse/expand**%accordion%
+
+    ![](/img/cloud/Hello-BlankCanvas.png)
+
+    %/accordion%
+
+1. Complete the **create new system** window:
+  1. In the **system name** box, enter `workshops`.
+  1. Click **accept**.
+
+Way to go! You just created a [system](https://docs.n.io/glossary#system) to hold the projects you will build in these tutorials. Your canvas has expanded to include the contextual toolbar and you are currently in the system context. The next step is to create a cloud [instance](https://docs.n.io/glossary#instance) within your newly created system.
+
+## Create an Instance
+An [instance](https://docs.n.io/glossary#instance) is an installation of nio that you are running. It is possible to have multiple instances running in a system and multiple services in an instance.
+
+A cloud instance runs a version of nio that is installed in the cloud. You will create a cloud instance named `Tutorials` to hold the services that you will create in these tutorials.
+
+1. Click **create cloud instance**.
+
+  %accordion%**Click arrow to collapse/expand**%accordion%
+
+  ![](/img/cloud/Hello-Create-Cloud-Instance.png)
+
+  %/accordion%
+
+1. Complete the **create cloud instance** window.
+
+  %accordion%**Click arrow to collapse/expand**%accordion%
+
+  ![](/img/cloud/Hello-CreateCloudInstance.png)
+
+  %/accordion%
+
+  1. In the **instance name** box, enter `Tutorials`.
+  1. Click **accept**.
+
+Alright! You just created a cloud [instance](https://docs.n.io/glossary#instance) of nio. Your contextual toolbar now shows you the instance context where you can view and edit your instance. You can create all of your [services](https://docs.n.io/glossary#service) for the tutorials within this cloud instance. In the next step you will learn how to make your first service.
 
 ## Create a Service
+A service is a real-time process that runs on an instance. It is a collection of blocks that perform a service. Now you can create a simple `simulate-and-log` service that will generate a signal and log it to the logger panel.
 
-1. Select the name of your instance under the system name in the left navigation panel or on the breadcrumb above the contextual toolbar.
-1. Click **Create new service**.
-1. Complete the **Create new service** window:
-  1. In the **Service name** box, enter a service name.
-  1. Leave the **Service type** as **Service**.
-1. Click **Accept**.
-1. Click **Save** in the toolbar.
-1. Click **Auto-Start Off** in the toolbar.
+1. Click **create new service**.
+
+  %accordion%**Click arrow to collapse/expand**%accordion%
+
+  ![](/img/cloud/Hello-Create-New-Service.png)
+
+  %/accordion%
+
+1. Complete the **create new service** window.
+
+  %accordion%**Click arrow to collapse/expand**%accordion%
+
+  ![](/img/cloud/Hello-CreateNewService.png)
+
+  %/accordion%
+  1. In the **service name** box, enter `simulate-and-log`.
+  1. Click **accept**.
+
+You’re cruising now! You just created your first [service](https://docs.n.io/glossary#service). Notice that the block library appeared on the right side of your canvas and your contextual toolbar now has you in the service context where you can edit, save, and start and stop your service. The service will hold the logic created by a workflow of [blocks](https://docs.n.io/glossary#block). In the next step, you will use the block library to add blocks to your service.
 
 ## Add Blocks
-You now have an empty canvas, and now you are ready for blocks.
 
-nio blocks are installed to instances using the Block Library. The collection of blocks created by nio is also stored in the [Block Library at blocks.n.io](https://blocks.n.io/). You can search for blocks in the System Designer or in the Block Library.
+The blocks are the units that do the work inside a service.
 
-1. Select the service by clicking the service name under the instance name in the left navigation panel or on the breadcrumb above the contextual toolbar.
-1. In the **Block library** search box, enter a search term.
-* If the block is not displayed, click **Available**, **Installed**, and **Configured** to search for the block.
-* If the block is not already pre-installed, click the **Install block** button which resembles a cloud with a down arrow.
-1. Drag the block type to the canvas.
-1. Name the block.
-1. Click **Accept**.
+The basic `simulate-and-log` service needs two blocks:
+  The _CounterIntervalSimulator_ block to simulate and emit a [signal](https://docs.n.io/glossary/#signal) at a specified interval, and the _Logger_ block to log each incoming signal to the logger panel.
 
-Once you have nio running, you can create many different projects. To guide you through the process, view the tutorials at https://workshops.n.io/.
+| Block Type           | Block Name                |
+|----------------------|---------------------------|
+| [CounterIntervalSimulator](https://blocks.n.io/CounterIntervalSimulator) | Simulate |
+| [Logger](https://blocks.n.io/Logger) | Log       |
 
-<!--
-## Add a Cloud Instance
+1. In the **block library** search box, enter `CounterIntervalSimulator`.
 
-To create a cloud instance:
+  %accordion%**Click arrow to collapse/expand**%accordion%
 
-1. Log in to the System Designer.
-2. Click the **+** button in the lower-left corner to create and name a new system.
-3. Select the name of the system.
-4. Select **Auto** for the Pubkeeper configuration.
-5. Click **Accept**.
-6. Click **Create a Cloud Instance**.
-7. Type the name of the instance, leave the instance type as **n.io Cloud**, and click **Accept**.
-8. Wait for the instance to spin up and note the name of the new instance on the left side.
+  ![](/img/cloud/Hello-SearchCISBlock.png)
 
-## Add a Service
+  %/accordion%
 
-You now have an instance, but it is empty. Let's fix that!
+1. Drag the *CounterIntervalSimulator* block type to the canvas.
+1. In the **block name** box, enter `Simulate` and click **accept**.
 
-To add a service:
+  %accordion%**Click arrow to collapse/expand**%accordion%
 
-1. Select the name of the instance.
-2. Click **Add New Service**.
-3. Type the name of the service, leave the service type as **Service**, and click **Accept**.
+  ![](/img/cloud/Hello-CreateBlockSimulate.png)
 
+  %/accordion%
+1. In the **block library** search box, enter `Logger`.
+1. Drag the *Logger* block type to the canvas.
+1. In the **block name** box, enter `Log` and click **accept**.
 
-## Add a Block
+  %accordion%**Click arrow to collapse/expand**%accordion%
 
-You now have an empty canvas, and now you are ready for blocks.
+  ![](/img/cloud/Hello-Blockname-Log.png)
 
-nio blocks are installed to instances using the Block Library. The collection of blocks created by nio is also stored in the [Block Library at blocks.n.io](https://blocks.n.io/). You can search for blocks in the System Designer or in the Block Library.
+  %/accordion%
 
-To add a block:
+To learn about all the blocks nio has to offer, visit [https://blocks.n.io](https://blocks.n.io).
 
-1. Click the **Block Library** in the upper-right corner.
-2. In the Search box, enter the name of a block. As you type, the list is filtered.
-3. If the block is not displayed, click **Available**, **Installed**, and **Configured** to search for the block.
-3. If the block is not already pre-installed, click the **Install Block** button which resembles a cloud with a down arrow.
-3. Drag the block onto the canvas.
-5. Type the name of the block and click **Accept**.
--->
+Way to go! You are now familiar with how to add blocks to your nio service! The first block simulates data and the second block logs that data to the logger panel.
+
+## Connect the Blocks
+To do their work, the two blocks on your canvas need to communicate. In nio, signals are is passed between blocks via their terminals. A terminal is shown as a blue circle on the top or bottom of a block. Signals are emitted from an output terminal on the bottom of a block and received by an input terminal on top of a block. The lines connecting the terminals configure the route the signal will take. Once a signal is emitted from one block, the next block(s) in the route will receive it.
+
+1. Click and drag the output terminal of the **Simulate** block and release the connector on the input terminal of the **Log**  block.
+
+  %accordion%**Click arrow to collapse/expand**%accordion%
+
+  ![](/img/cloud/Hello-ConnectAndSaveBlocks.png)
+
+  %/accordion%
+1. Click anywhere on the canvas to ensure you have deselected the blocks and returned to the service context.
+1. Click **save** on the contextual toolbar to save your service with its new block connections.
+
+>**[info] Disconnecting Blocks**
+>
+>To disconnect two blocks, click the input terminal of the receiving block, then drag and release the connector anywhere on the canvas.
+
+Now that you connected the two blocks, your service is fully functional.
+
+## Run Service
+Start your service to see the simulated signals log to the logger panel.
+
+1. Click **start** (![](/img/cloud/Start.png)) on the contextual toolbar.
+1. Click **open logger panel** to view the logs of the signal created by the counter interval simulator.
+
+  %accordion%**Click arrow to collapse/expand**%accordion%
+
+  ![](/img/cloud/Hello-SimLogger.png)
+
+  %/accordion%
+
+Congratulations! You just learned the basics of using the nio Platform with the **System Designer**.
+
+You created a signal in one block and sent it to another block to be logged and visualized.
+
+To nio, all data is a signal whether it is received from a simulator, an API, a hardware sensor, or a database. You just need to select the appropriate block to access your particular data source. Integrating a new data source is as simple as dragging a new block to your canvas.
+
+Similarly, the logger screen is just one easy way to visualize the output of a service, but signals can be visualized in many other ways by using different blocks. For example, if you want to see outputs in a tweet, add and configure the Twitter block, or if you wanted to receive outputs in a text message, add and configure a Twilio block.
+
+If the output doesn’t need to be visualized, the signals can be sent to other services by way of a publisher block, or to a database with a database block.
+
+You can browse all of the available blocks at http://blocks.n.io. Feel free to make more services by connecting blocks to perform various tasks on your own.
+
+If you would like to explore configuring blocks and sharing signals across services and instances, be sure to check out the nio 101 [tutorials](/nio-101/restful-api/README.md) that expand in complexity. The [first tutorial](/nio-101/restful-api/README.md) shows you how to connect your service to a RESTful API, and the [second tutorial](/nio-101/streaming-api/README.md) shows you how to drive your service using signals from a streaming API. The [fifth tutorial](/nio-101/database-insertion/README.md) in the nio 101 series shows you how to send a signal to a database.
