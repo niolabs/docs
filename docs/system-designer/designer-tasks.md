@@ -1,9 +1,15 @@
-# System Designer Reference
+# System Designer Functionality
 
-This section details all of the tasks that can be performed in the System Designer, nio's graphical user interface.
+This section details all of the tasks that can be performed in the nio System Designer, and is organized by context:
+ - [system](/system-designer/designer-tasks.md#system)
+ - [instance](/system-designer/designer-tasks.md#instance)
+ - [service](/system-designer/designer-tasks.md#service)
+ - [block](/system-designer/designer-tasks.md#block)
 
-## Systems
-System are the largest container for projects in the nio System Designer.
+It can help you answer questions about what you can do in each level of the System Designer as you navigate from creating a system, to editing an instance name, to deleting a block.
+
+## System
+Systems are the largest container for projects in the nio System Designer.
 
 Systems are created in the System Designer to contain instances (running installations) of nio.
 
@@ -30,9 +36,16 @@ Complete the **create new system** window:
   1. In the **system name** box, enter a meaningful name.
   1. Click **accept**.
 
-### System Context and Toolbar
+### System Context and Toolbar: Edit, Share, Delete
 
-Once you create a system, you can enter the system context by clicking on a system in the system list, on the system name at the top of the navigation list, or on the system name in the breadcrumb.
+Once you create a system, you can enter the system context by clicking a system in the system list, the system name at the top of the navigation list, or the system name in the breadcrumb.
+
+%accordion%**Click arrow to collapse/expand image**%accordion%
+
+![](/img/hello_nio/Hello-SelectSystemCreateInstancePoint.png)
+
+%/accordion%
+
 
 In the system context you will see the system toolbar that can perform the following tasks:
   ![](/img/Toolbar-System.gif)
@@ -40,7 +53,7 @@ In the system context you will see the system toolbar that can perform the follo
   Icon                      |Label             | Description      |
   --------------------------|------------------|------------------|
   ![](/img/IconEdit.gif)    |Edit              | Edit system name. View Pubkeeper configuration information.
-  ![](/img/IconShare.gif)   |Share             | Share system. See more info about system sharing [here](/system-designer/sharing.html)
+  ![](/img/IconShare.gif)   |Share             | Share system. Read more information about system sharing [here](/system-designer/sharing.html).
   ![](/img/IconDelete.gif)  |Delete            | Delete system. Instances must be deleted first.
 
 ## Instance
@@ -49,15 +62,15 @@ Instances are running versions of nio.
 
 Instances are created inside a system and contain services.
 
-### Create a Cloud Instance
+### Create an Instance in the Cloud
 
 To enter the system context, select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
 
-  %accordion%**Click arrow to collapse/expand image**%accordion%
+%accordion%**Click arrow to collapse/expand image**%accordion%
 
-  ![](/img/hello_nio/Hello-SelectSystemCreateInstancePoint.png)
+![](/img/hello_nio/Hello-SelectSystemCreateInstancePoint.png)
 
-  %/accordion%
+%/accordion%
 
 1. Click **create cloud instance**.
 1. Complete the **create cloud instance** window:
@@ -70,20 +83,17 @@ To enter the system context, select the name of your system in the left navigati
 
   * In the **instance name** box, enter a meaningful name.
 
-    > **[info] Instance Naming**
-    >
-    >Instance names cannot contain spaces or underscores.
-1. Click **Accept**.
+1. Click **accept**.
 
-### Create a Local Instance
+### Connect to a Local Instance
 
 To enter the system context, select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
 
-  %accordion%**Click arrow to collapse/expand image**%accordion%
+%accordion%**Click arrow to collapse/expand image**%accordion%
 
-  ![](/img/hello_nio/Hello-SelectSystemCreateInstancePoint.png)
+![](/img/hello_nio/Hello-SelectSystemCreateInstancePoint.png)
 
-  %/accordion%
+%/accordion%
 
 1. Click **create local instance**.
 1. Complete the **create local instance** window:
@@ -94,22 +104,28 @@ To enter the system context, select the name of your system in the left navigati
 
   %/accordion%
 
-  * In the **Instance name** box, enter a meaningful name.
-
-    > **[info] Instance Naming**
-    >
-    >Instance names cannot contain spaces or underscores.
-  * In the **hostname** box, enter the hostname for the instance.
-  * In the **port** box, enter the port number configured on the instance.
-  * Leave the **access mode** as **basic**.
+  * **instance name**: enter a meaningful name
+  * **hostname**: enter the hostname for the instance
+  * **port**: enter the port number configured on the instance
+  * **access mode**: leave as **basic**
 
 1. Click **accept**.
 
-### Instance Context and Toolbar
+> **[info] Instance Names**
+>
+> Instance names cannot contain spaces or underscores.
 
-Once you create an instance, you can enter the instance context by clicking on the instance name in the instance list or in the breadcrumb.
+### Instance Context and Toolbar: Edit, Save, Delete
 
-In the instance context you will see the the instance toolbar that can perform the following tasks:
+Once you create an instance, you can enter the instance context by clicking the instance name in the instance list or in the breadcrumb.
+
+%accordion%**Click arrow to collapse/expand image**%accordion%
+
+![](/img/hello_nio/Hello-SelectInstancePoint.png)
+
+%/accordion%
+
+In the instance context you will see the the instance toolbar and can perform the following tasks:
 
 ![](/img/Toolbar-Instance.gif)
 
@@ -122,7 +138,7 @@ Icon                      |Label             | Description      |
 
 ## Service
 
-A service is a collection of blocks that work together to perform a service.
+A service is a collection of blocks that work together to perform a desired task or service.
 
 Services are created inside an instance and contain blocks.
 
@@ -131,11 +147,11 @@ Services are created inside an instance and contain blocks.
 
 Select the name of the instance in the left navigation panel or on the breadcrumb above the contextual toolbar.
 
-  %accordion%**Click arrow to collapse/expand image**%accordion%
+%accordion%**Click arrow to collapse/expand image**%accordion%
 
-  ![](/img/hello_nio/Hello-SelectInstancePoint.png)
+![](/img/hello_nio/Hello-SelectInstancePoint.png)
 
-  %/accordion%
+%/accordion%
 1. Click **create new service**.
 1. Complete the **create new service** window:
 
@@ -145,19 +161,20 @@ Select the name of the instance in the left navigation panel or on the breadcrum
 
   %/accordion%
   * In the **service name** box, enter a meaningful name.
+  * Leave the **service type** as **Service**.
 
-    > **[info] Service Naming**
-    >
-    > Service names cannot contain the following characters: ` *  |  \ /  :  ”  <> / ? `
-    >
-  * Leave the **Service type** as **Service**.
 
 1. Click **accept**.
 1. Click **save** in the toolbar.
 
-### Service Context and Toolbar
+> **[info] Service Names**
+>
+> Service names cannot contain the following characters: ` *  |  \ /  :  ”  <> / ? `
+>
 
-Once you create a service, you can enter the service context by clicking on the service name in the service list or in the breadcrumb.
+### Service Context and Toolbar: Edit, Save, Start/Stop, Auto-Start, Revert, Clone, Delete
+
+Once you create a service, you can enter the service context by clicking the service name in the service list or by double clicking the service in the canvas.
 
 In the service context you will see the the service toolbar that can perform the following tasks:
 
@@ -168,87 +185,27 @@ Icon                      |Label             | Description      |
 ![](/img/IconEdit.gif)    |Edit              | Edit service name and color.
 ![](/img/IconSave.gif)    |Save              | Save service.
 ![](/img/IconStopAnim.gif)|Start/Stop        | Toggle to start and stop service.
-![](/img/IconAuto.gif)    |Auto-Start On/Off | Toggle Auto-Start on and off.
+![](/img/IconAuto.gif)    |Auto-Start On/Off | Toggle Auto-Start on and off. Default is on.
 ![](/img/IconRevert.gif)  |Revert            | Revert changes to service.
 ![](/img/IconClone.gif)   |Clone             | Clone service.
 ![](/img/IconDelete.gif)  |Delete            | Delete service.
 
-By default, services are set to auto-start when a nio instance is started.
 
-## Blocks
+### Connect/Disconnect Blocks
 
-### Add a Block
+Blockflow is a service-level change. If you change the connections between your blocks, you will need to save your service in the service toolbar.
 
-1. Click the service name in the left navigation panel or on the breadcrumb above the contextual toolbar.
+To connect two blocks, click and drag the output terminal of one block and release the connector on the input terminal of the next block.
 
-  %accordion%**Click arrow to collapse/expand image**%accordion%
+To disconnect, click the input terminal of the block receiving signals and drag and release the connector anywhere on the canvas.
 
-  ![](/img/hello_nio/Hello-SelectInstanceName.png)
+### View Logs
 
-  %/accordion%
-1. In the **Block library** search box, enter block type name.
+Logs show the output of a running service.
 
-  %accordion%**Click arrow to collapse/expand image**%accordion%
-
-  ![](/img/BlockLibrary.gif)
-
-  %/accordion%
-
-  > **[info] Block library Tabs**
-  >
-  > Notice that as you type, the list of installed blocks is filtered. A block can be displayed under one or more tabs.
-  >
-  > * The **Available** tab contains block types that are available, but may or may not have not been installed.
-  > * The **Installed** tab contains block types that have been downloaded and installed. The most frequently used blocks are already pre-installed in your system.
-  > * The **Configured** tab contains blocks that have already been installed, named, and configured.
-1. Drag the block type to the canvas.
-1. In the **Block name** box, enter a meaningful name and click **Accept**.
-
-  %accordion%**Click arrow to collapse/expand image**%accordion%
-
-  ![](/img/hello_nio/Hello-CreateBlockSimulate.png)
-
-  %/accordion%
-
-    > **[info] Block Naming**
-    >
-    > Block names cannot be edited after creation.
-    > Block names cannot contain the following characters: `*  |  \ /  :  ”  <> / ?`
-1. Click **Accept**.
-
-
-## Delete a Block
-
-1. Select the block you want to delete.
-1. Click **Delete** in the toolbar.
-1. Click **Delete** in the confirmation window.
-
-## Delete a Configured Block
-
-1. Search for the configured block in the **Block library**.
-1. Click the vertical ellipsis menu and select **Delete**.
-1. If the **Block in use** warning is displayed, click **Got it!** and delete the block from all services before deleting the configured block.
-1. Click **Delete** in the confirmation window.
-
-## Connect Blocks
-
-1. Click and drag the output terminal of one block and release it on the input terminal of the next block to connect the blocks.
-
-## Disconnect Blocks
-
-1. Click the input terminal of the block receiving signals and drag and release it anywhere on the canvas.
-
-## Configure Blocks
-
-1. Double-click the block to view the configuration window.
-1. Enter the required parameters.
-1. Click **Accept**.
-
-## View Logs
-
-1. Click anywhere on the canvas to deselect the blocks.
-1. Click **Start** on the toolbar.
-1. Click **Open logger panel** to view the logs.
+To view the logger panel, click anywhere on the canvas to deselect the blocks and enter the service context.
+1. Click **start** on the toolbar to run your service.
+1. Click **open logger panel** to view the logs.
 
   %accordion%**Click arrow to collapse/expand image**%accordion%
 
@@ -257,23 +214,57 @@ By default, services are set to auto-start when a nio instance is started.
   %/accordion%
 
 
+## Blocks
 
-### Service Toolbar
-![](/img/Toolbar-Service.gif)
+Blocks are the units of work inside a nio service.
 
-Icon                      |Label             | Description      |
---------------------------|------------------|------------------|
-![](/img/IconEdit.gif)    |Edit              | Edit service name and color.
-![](/img/IconSave.gif)    |Save              | Save service.
-![](/img/IconStopAnim.gif)|Start/Stop        | Toggle to start and stop service.
-![](/img/IconAuto.gif)    |Auto-Start On/Off | Toggle Auto-Start on and off.
-![](/img/IconRevert.gif)  |Revert            | Revert changes to service.
-![](/img/IconClone.gif)   |Clone             | Clone service.
-![](/img/IconDelete.gif)  |Delete            | Delete service.
+### Add a Block
+
+Click the service name in the service list or on the breadcrumb above the contextual toolbar to enter the service context.
+
+%accordion%**Click arrow to collapse/expand image**%accordion%
+
+![](/img/hello_nio/Hello-SelectInstanceName.png)
+
+%/accordion%
+
+In the **block library** search box, enter a block type name.
+
+%accordion%**Click arrow to collapse/expand image**%accordion%
+
+![](/img/BlockLibrary.gif)
+
+%/accordion%
+
+  > **[info] Block library Tabs**
+  >
+  > Notice that as you type, the list of installed blocks is filtered. A block can be displayed under one or more tabs.
+  >
+  > * The **available** tab contains block types that are available, but may or may not have not been installed.
+  > * The **installed** tab contains block types that have been downloaded and installed. The most frequently used blocks come pre-installed in your system.
+  > * The **configured** tab contains blocks that have already been installed, named, and configured.
+
+1. Drag the block type to the canvas.
+1. In the **block name** box, enter a meaningful name and click **accept**.
+
+  %accordion%**Click arrow to collapse/expand image**%accordion%
+
+  ![](/img/hello_nio/Hello-CreateBlockSimulate.png)
+
+  %/accordion%
+
+> **[info] Block Names**
+>
+> Block names cannot be edited after creation.
+> Block names cannot contain the following characters: `*  |  \ /  :  ”  <> / ?`
+
+### Block Context and Toolbar: Edit, Command, Delete
+
+Once you have added a block, you can enter the block context by clicking the block.
+
+In the block context you will see the the block toolbar that can perform the following tasks:
 
 
-
-### Block Toolbar
 ![](/img/Toolbar-Block.gif)
 
 Icon                      |Label             | Description      |
@@ -282,7 +273,21 @@ Icon                      |Label             | Description      |
 ![](/img/IconCommand.gif) |Command           | Command block.
 ![](/img/IconDelete.gif)  |Delete            | Delete block.
 
-## Resources
+
+### Delete a Configured Block
+
+1. Search for the configured block in the **block library**.
+1. Click the vertical ellipsis menu and select **delete**.
+1. If the **block in use** warning is displayed, click **Got it!** and delete the block from all services before deleting the configured block.
+1. Click **delete** in the confirmation window.
+
+### Configure Blocks
+
+1. Double-click the block to view the configuration window.
+1. Enter the required parameters.
+1. Click **accept**.
+
+## Additional Resources
 
 In the upper-right corner next to your name, a navigation menu provides links to other helpful resources.
 
