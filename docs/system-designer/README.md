@@ -7,7 +7,7 @@ The System Designer is the graphical user interface used to build your nio syste
 
 ## System List
 
-A list of systems is displayed in a column on the left side of the screen. The designer automatically creates an abbreviation for each system name.
+A list of [systems](/systems/README.md) is displayed in a column on the left side of the screen. The designer automatically creates an abbreviation for each system name.
 
 To create a system, click the **`+`** button in the lower-left corner.
 
@@ -15,9 +15,9 @@ To change into the system context and view a system, click the system name.
 
 ## Instance and Service List
 
-A list of instances is displayed in the left navigation panel next to the list of systems.
+A list of [instances](/instances/README.md) is displayed in the left navigation panel next to the list of systems.
 
-To view the list of services within an instance, click the arrow next to the instance name. The list of services displays below the instance name.
+To view the list of [services](/services/README.md) within an instance, click the arrow next to the instance name. The list of services displays below the instance name.
 
 To change into the instance context and view the contents of an instance in the canvas, click the instance name.
 
@@ -37,7 +37,7 @@ To view the service workflow graph in the canvas, click the instance name.
 
 In the service context, the canvas displays the interactive block workflow.
 
-The block workflow is designed by the user and represents the flow of data between the inputs and outputs of the blocks in a service.
+The block workflow is designed by the user and represents the flow of data between the inputs and outputs of the [blocks](/blocks/README.md) in a service.
 
 To view a service's block workflow in the canvas, click the service's name.
 
