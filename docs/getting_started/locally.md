@@ -34,14 +34,14 @@ If you already have a version of nio installed and want to upgrade it, enter the
 pip3 install -U your_wheel_file.whl
 ```
 
-To upgrade the nio Command Line Interface \(CLI\), enter the following command:
+To upgrade the nio CLI, enter the following command:
 ```
 pip3 install -U nio-cli
 ```
 
 ## Create a Project
 
-Now that the nio binary is installed, you need a nio project to run it against. A project folder is a way to organize and maintain the blocks, variables, and configurations that you want use with an instance of nio. The easiest way to create a new nio project is by using the nio CLI. If you prefer not to use the nio CLI, you can create a project by cloning the [Project Template repository](https://github.com/niolabs/project_template). Follow the instructions below for your preferred method.
+Now that the nio binary is installed, you need a nio project to run it against. A project folder is a way to organize and maintain the blocks, variables, and configurations that you want use with an instance of nio. The easiest way to create a new nio project is by using the nio CLI. If you prefer not to use the nio CLI, you can create a project by cloning the [Project Template repository](https://github.com/niolabs/project_template) from GitHub. Follow the instructions below for your preferred method.
 
 ### Create a new nio Project Using the nio CLI
 To create a project template using the CLI, enter the following command:
@@ -90,18 +90,23 @@ nio_run
 
 > If you need help setting your PATH in MacOS, click [here](http://osxdaily.com/2014/08/14/add-new-path-to-path-command-line/).
 
-Log messages should display, similar to the following output, but there should be no errors.
+Log messages should display, similar to the following output. There should be no errors.
 
   ```
-  [2016-03-04 23:49:41.035] NIO [INFO] [main.WebServer] Server configured on 0.0.0.0 : 8181
-  [2016-03-04 23:49:41.035] NIO [INFO] [main.WebServer] Server configured on 0.0.0.0:8181
-  [2016-03-04 23:49:41.042] NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from:  to: created
-  [2016-03-04 23:49:41.055] NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from: created to: configuring
-  [2016-03-04 23:49:41.109] NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from: configuring to: configured
-  [2016-03-04 23:49:41.123] NIO [INFO] [main.WebServer] Starting server on 0.0.0.0:8181
-  [2016-03-04 23:49:41.226] NIO [INFO] [main.WebServer] Server 0.0.0.0:8181 started on 0.0.0.0:8181
-  [2016-03-04 23:49:41.226] NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from: configured to: starting
-  [2016-03-04 23:49:41.227] NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from: starting to: started
+  NIO [INFO] [main.WebServer] Server configured on 0.0.0.0:8181
+  NIO [INFO] [main.WebServer] Server configured on 0.0.0.0:8181
+  NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from:
+    to: created
+  NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from:
+    created to: configuring
+  NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from:
+    configuring to: configured
+  NIO [INFO] [main.WebServer] Starting server on 0.0.0.0:8181
+  NIO [INFO] [main.WebServer] Server 0.0.0.0:8181 started on 0.0.0.0:8181
+  NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from:
+    configured to: starting
+  NIO [INFO] [main.ServiceManager] Component: ServiceManager status changed from:
+    starting to: started
   ```
 
 If you see those logs, nio is up and running. Congratulations!
