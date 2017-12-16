@@ -13,10 +13,4 @@ Organizers can add users, create teams, and manage the permission levels of user
 ### Collaborator
 Collaborators can view users and teams but are not be able to add users or manage teams. Collaborators can only see systems that have been shared with them in the nio System Designer.
 
-When an owner or organizer shares a system with a collaborator or team, they must assign one of the three permissions:
-
-	admin
-	editor
-	viewer
-
-Each of these three levels of permissions allows varying level of access within the nio [System Designer](system-designer/permissions.md).
+{% include "/includes/sd-sharing.md" %}
