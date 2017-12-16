@@ -47,4 +47,4 @@ then the block would output the following list:
 ]
 ```
 
-In other words, the block will only call `notify_signals` once for the incoming list, even though three signals would be notified. It would not call `notify_signals` three times—once for each signal out.
+In other words, the block will only call the block method `notify_signals` once for the incoming list, even though three signals would be emitted. It would not call `notify_signals` three times, one time for each signal out.

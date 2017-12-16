@@ -4,12 +4,12 @@ nio allows you to define and use variables when configuring your instance, servi
 
 ## Access Tokens and Other Secrets
 
-Often a block will need some sort of access token or password in its configuration. Rather than store those in the block config directly, where they are visible in plain text, we recommend using an environment variable for that. Add an entry to your environment variable such as  `nio.env`
+Often a block will need some sort of access token or password in its configuration. Rather than store those in the block config directly, where they are visible in plain text, we recommend using an environment variable for that. Add an entry to your environment variable file `nio.env`.
 ```
 MY_SECRET: p@$$w0rd
 ```
 
-Then, in your block config you can use that secret token by using the environment variable syntax: `[[ MY_SECRET ]]`. The block will receive the proper value when the service is started , but the block's configuration will always contain the unreplaced environment variable value.
+Then, in your block config you can use that secret token by using the environment variable syntax: `[[ MY_SECRET ]]`. The block will receive the proper value when the service is started, but the block's configuration will always contain the unreplaced environment variable.
 
 ## Different Environments
 
@@ -43,7 +43,7 @@ nio environment variables are slightly different than operating system environme
 
 In general, environment variables can be sourced from two places.
 
-1. The operating system environment variables.  
+1. The operating system environment variables.
 
    ```bash
    $ export DB_HOST=localhost
@@ -60,4 +60,4 @@ In general, environment variables can be sourced from two places.
    $ nio_run -e prod.env
    ```
 
-In the event that an environment variable is set both at the system level and the local  `.env` file level, the system environment variable will take precedence.
+In the event that an environment variable is set both at the system level and the local `.env` file level, the system environment variable will take precedence.
