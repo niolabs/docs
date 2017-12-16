@@ -1,14 +1,14 @@
 # Publishing and Subscribing to Data
 
-Designing systems with nio includes designing how information, or signals,  moves through the system. nio recommends using the Pub/Sub mechanisms to move data from one service to another.
-The following communication blocks are located at [blocks.n.io](https://blocks.n.io/):
+An easy way to communicate between services and instances in nio is by using a publisher/subscriber pattern.
+
+The following communication blocks are used for publishing and subscribing to data signals:
 * [Publisher](https://blocks.n.io/Publisher)
 * [Subscriber](https://blocks.n.io/Subscriber)
 
-
 ## Topic Tree
 
-When using the `Publisher` and `Subscriber` blocks, you need to decide which topic you wish to publish to or subscribe to. The information organization of an entire nio system can be viewed as a hierarchical topic tree.
+When using the `Publisher` and `Subscriber` blocks, you connect systems and instances by defining a topic you wish to publish to or subscribe to. The information structure of an entire nio system can be viewed as a hierarchical topic tree.
 
 ### Publishers
 
@@ -54,18 +54,18 @@ These topics can be visualized as the following tree:
 
 Subscribers can subscribe to a single topic or also portions of the topic tree through a similar dot-separated string that publishers use. The only difference is that subscribers can supply wildcards represented as `*` and `**`. The single asterisk will match one and only one level of the topic tree. The double asterisk will match zero or more levels of the topic tree. Below are some examples of subscribers and the corresponding publishers they would receive data from according to the publisher examples above.
 
-* Subscribe: `California.*.Temperature` - Publishers: 1, 3
-* Subscribe: `California.*.Population` - Publishers: 2 - Publisher 4 is not matched since the single asterisk is used
-* Subscribe: `California.**.Population` - Publishers: 2, 4 - Publisher 4 is matched this time because we supplied a double asterisk which can match zero levels of the tree.
-* Subscribe: `**.Temperature` - Publishers: 1, 3, 5
-* Subscribe: `California.*.*` - Publishers: 1, 2, 3
-* Subscribe: `California.*.**` - Publishers: 1, 2, 3 - Publisher 4 is still not matched since the single asterisk forces us down one more level
-* Subscribe: `California.**` - Publishers: 1, 2, 3, 4
+* Subscribe: `California.*.Temperature`—Publishers: 1, 3
+* Subscribe: `California.*.Population`—Publishers: 2 (Publisher 4 is not matched since the single asterisk is used.)
+* Subscribe: `California.**.Population`—Publishers: 2, 4 (Publisher 4 is matched this time because we supplied a double asterisk which can match zero levels of the tree.)
+* Subscribe: `**.Temperature`—Publishers: 1, 3, 5
+* Subscribe: `California.*.*`—Publishers: 1, 2, 3
+* Subscribe: `California.*.**`—Publishers: 1, 2, 3 (Publisher 4 is still not matched since the single asterisk forces us down one more level)
+* Subscribe: `California.**`—Publishers: 1, 2, 3, 4
 
-<!-- ## Pubkeeper
+## Pubkeeper
 
-Perhaps the most impactful reason to use the nio pub/sub system is because of the interoperability enabled through the use of [Pubkeeper](https://pubkeeper.com). Pubkeeper allows us to separate our information hierarchy, or topic tree, from the underlying protocols that will be responsible for transmitting data between services and instances. In other words, it allows service designers to define what data goes to which services without worrying about how it will get there. -->
+Perhaps the most impactful reason to use the nio pub/sub system is because of the interoperability enabled through the use of [Pubkeeper](/pubkeeper/README.md). Pubkeeper allows the information hierarchy, or topic tree, to be independent of the underlying protocols that are be responsible for transmitting data between services and instances. In other words, it allows service designers to define what data goes to which services without worrying about how it will get there.
 
 ## Hints in the System Designer
 
-One of the benefits of using the nio pub/sub mechanism is that the System Designer understands the topic tree as well. If your service has a `Publisher` or `Subscriber` block with a topic, the designer can show you services that either subscribe to or publish to that topic, respectively. It also permits the System Designer to draw the graph relationship between services and instances.
+Another benefit of using the nio pub/sub mechanism is that the System Designer understands the topic tree as well. If your service has a `Publisher` or `Subscriber` block with a topic, the designer can show you services that either subscribe to or publish to that topic, respectively. It also permits the System Designer to draw the graph relationship between services and instances that share topics.

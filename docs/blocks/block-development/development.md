@@ -16,7 +16,7 @@ Once you have developed your block, you will want to [test](block-testing.md) an
 
 All nio blocks inherit from the base block class. The first import in the block template's `example_block.py` is `nio.block.base`. If you explore the code inside `nio.block.base`, you'll find explanatory docstrings for each method—including methods to override in your custom block—along with higher-level context.
 
-An important principle to remember when developing your block is that [signals are passed as lists](/services/service-design-patterns/understanding-signals.md#lists-of-signals).
+An important principle to remember when developing your block is that [signals are passed as lists](/services/service-design-patterns/signal-structure.md#lists-of-signals).
 
 ### Methods to Override
 
