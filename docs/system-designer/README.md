@@ -57,7 +57,7 @@ In the search box, enter the name of a block. As you type, the list of blocks is
 
 As you travel up and down the levels of your system, note that the breadcrumb changes allowing you to easily identify your location in the system.
 
-![](/img/hello_nio/hierarchy.gif)
+![](/img/cloud/hierarchy.gif)
 
 ## Contextual Toolbar
 

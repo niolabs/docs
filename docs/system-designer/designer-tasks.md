@@ -42,7 +42,7 @@ Once you create a system, you can enter the system context by clicking a system 
 
 %accordion%**Click arrow to collapse/expand image**%accordion%
 
-![](/img/hello_nio/Hello-SelectSystemCreateInstancePoint.png)
+![](/img/cloud/Hello-SelectSystemCreateInstancePoint.png)
 
 %/accordion%
 
@@ -68,7 +68,7 @@ To enter the system context, select the name of your system in the left navigati
 
 %accordion%**Click arrow to collapse/expand image**%accordion%
 
-![](/img/hello_nio/Hello-SelectSystemCreateInstancePoint.png)
+![](/img/cloud/Hello-SelectSystemCreateInstancePoint.png)
 
 %/accordion%
 
@@ -91,7 +91,7 @@ To enter the system context, select the name of your system in the left navigati
 
 %accordion%**Click arrow to collapse/expand image**%accordion%
 
-![](/img/hello_nio/Hello-SelectSystemCreateInstancePoint.png)
+![](/img/cloud/Hello-SelectSystemCreateInstancePoint.png)
 
 %/accordion%
 
@@ -121,7 +121,7 @@ Once you create an instance, you can enter the instance context by clicking the 
 
 %accordion%**Click arrow to collapse/expand image**%accordion%
 
-![](/img/hello_nio/Hello-SelectInstancePoint.png)
+![](/img/cloud/Hello-SelectInstancePoint.png)
 
 %/accordion%
 
@@ -149,7 +149,7 @@ Select the name of the instance in the left navigation panel or on the breadcrum
 
 %accordion%**Click arrow to collapse/expand image**%accordion%
 
-![](/img/hello_nio/Hello-SelectInstancePoint.png)
+![](/img/cloud/Hello-SelectInstancePoint.png)
 
 %/accordion%
 1. Click **create new service**.
@@ -209,7 +209,7 @@ To view the logger panel, click anywhere on the canvas to deselect the blocks an
 
   %accordion%**Click arrow to collapse/expand image**%accordion%
 
-  ![](/img/hello_nio/Hello-SimLogger.png)
+  ![](/img/cloud/Hello-SimLogger.png)
 
   %/accordion%
 
@@ -224,7 +224,7 @@ Click the service name in the service list or on the breadcrumb above the contex
 
 %accordion%**Click arrow to collapse/expand image**%accordion%
 
-![](/img/hello_nio/Hello-SelectInstanceName.png)
+![](/img/cloud/Hello-SelectInstanceName.png)
 
 %/accordion%
 
@@ -236,7 +236,7 @@ In the **block library** search box, enter a block type name.
 
 %/accordion%
 
-  > **[info] Block library Tabs**
+  > **[info] Block library tabs**
   >
   > Notice that as you type, the list of installed blocks is filtered. A block can be displayed under one or more tabs.
   >
@@ -249,7 +249,7 @@ In the **block library** search box, enter a block type name.
 
   %accordion%**Click arrow to collapse/expand image**%accordion%
 
-  ![](/img/hello_nio/Hello-CreateBlockSimulate.png)
+  ![](/img/cloud/Hello-CreateBlockSimulate.png)
 
   %/accordion%
 

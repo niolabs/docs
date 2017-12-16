@@ -28,7 +28,7 @@ The very first time you open the System Designer, you are literally starting wit
 
     %accordion%**Click arrow to collapse/expand**%accordion%
 
-    ![](/assets/cloud/Hello-CreateNewSystem.png)
+    ![](/img/cloud/Hello-CreateNewSystem.png)
 
     %/accordion%
 
@@ -36,7 +36,7 @@ The very first time you open the System Designer, you are literally starting wit
 
     %accordion%**Click arrow to collapse/expand**%accordion%
 
-    ![](/assets/cloud/Hello-BlankCanvas.png)
+    ![](/img/cloud/Hello-BlankCanvas.png)
 
     %/accordion%
 
@@ -55,7 +55,7 @@ A cloud instance runs a version of nio that is installed in the cloud. You will 
 
   %accordion%**Click arrow to collapse/expand**%accordion%
 
-  ![](/assets/cloud/Hello-Create-Cloud-Instance.png)
+  ![](/img/cloud/Hello-Create-Cloud-Instance.png)
 
   %/accordion%
 
@@ -63,7 +63,7 @@ A cloud instance runs a version of nio that is installed in the cloud. You will 
 
   %accordion%**Click arrow to collapse/expand**%accordion%
 
-  ![](/assets/cloud/Hello-CreateCloudInstance.png)
+  ![](/img/cloud/Hello-CreateCloudInstance.png)
 
   %/accordion%
 
@@ -79,7 +79,7 @@ A service is a real-time process that runs on an instance. It is a collection of
 
   %accordion%**Click arrow to collapse/expand**%accordion%
 
-  ![](/assets/cloud/Hello-Create-New-Service.png)
+  ![](/img/cloud/Hello-Create-New-Service.png)
 
   %/accordion%
 
@@ -87,7 +87,7 @@ A service is a real-time process that runs on an instance. It is a collection of
 
   %accordion%**Click arrow to collapse/expand**%accordion%
 
-  ![](/assets/cloud/Hello-CreateNewService.png)
+  ![](/img/cloud/Hello-CreateNewService.png)
 
   %/accordion%
   1. In the **service name** box, enter `simulate-and-log`.
@@ -111,7 +111,7 @@ The basic `simulate-and-log` service needs two blocks:
 
   %accordion%**Click arrow to collapse/expand**%accordion%
 
-  ![](/assets/cloud/Hello-SearchCISBlock.png)
+  ![](/img/cloud/Hello-SearchCISBlock.png)
 
   %/accordion%
 
@@ -120,7 +120,7 @@ The basic `simulate-and-log` service needs two blocks:
 
   %accordion%**Click arrow to collapse/expand**%accordion%
 
-  ![](/assets/cloud/Hello-CreateBlockSimulate.png)
+  ![](/img/cloud/Hello-CreateBlockSimulate.png)
 
   %/accordion%
 1. In the **block library** search box, enter `Logger`.
@@ -129,7 +129,7 @@ The basic `simulate-and-log` service needs two blocks:
 
   %accordion%**Click arrow to collapse/expand**%accordion%
 
-  ![](/assets/cloud/Hello-Blockname-Log.png)
+  ![](/img/cloud/Hello-Blockname-Log.png)
 
   %/accordion%
 
@@ -144,7 +144,7 @@ To do their work, the two blocks on your canvas need to communicate. In nio, sig
 
   %accordion%**Click arrow to collapse/expand**%accordion%
 
-  ![](/assets/cloud/Hello-ConnectAndSaveBlocks.png)
+  ![](/img/cloud/Hello-ConnectAndSaveBlocks.png)
 
   %/accordion%
 1. Click anywhere on the canvas to ensure you have deselected the blocks and returned to the service context.
@@ -159,12 +159,12 @@ Now that you connected the two blocks, your service is fully functional.
 ## Run Service
 Start your service to see the simulated signals log to the logger panel.
 
-1. Click **start** (![](/assets/cloud/Start.png)) on the contextual toolbar.
+1. Click **start** (![](/img/cloud/Start.png)) on the contextual toolbar.
 1. Click **open logger panel** to view the logs of the signal created by the counter interval simulator.
 
   %accordion%**Click arrow to collapse/expand**%accordion%
 
-  ![](/assets/cloud/Hello-SimLogger.png)
+  ![](/img/cloud/Hello-SimLogger.png)
 
   %/accordion%
 
