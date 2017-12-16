@@ -1,6 +1,6 @@
 # Block Development
 
-To connect to a new framework, library, or custom piece of hardware not currently included in the [Block Library at blocks.n.io](https://blocks.n.io/), you can develop your own custom block.
+To connect to a new framework, library, or custom piece of hardware not currently included in the [Block Library at blocks.n.io](https://blocks.n.io/), you can develop your own custom block. To create a custom block, follow the resources here under Block Development as well as the [Develop a Custom Block tutorial](https://workshops.n.io/custom-block/) in workshops.
 
 You can adopt one of two philosophies when creating a block:
 
