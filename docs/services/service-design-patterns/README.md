@@ -1,3 +1,3 @@
 # Service Design Patterns
 
-You define the logic of your entire system by designing services and configuring and connecting blocks. The nio service design language is very flexible and allows you to design services in many different ways. However, it is often helpful to follow the suggested patterns in this section of the documentation.
+The logic of your entire system is determined by the design of your services and how the blocks inside them are configured and connected. nio service design is very flexible and allows you to design services in many different ways. To get you started, this section introduces some common patterns for designing systems that will be helpful.

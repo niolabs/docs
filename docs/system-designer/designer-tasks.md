@@ -138,10 +138,9 @@ Icon                      |Label             | Description      |
 
 ## [Service](/services/README.md)
 
-A service is a collection of blocks that work together to perform a desired task or service.
+A service is a user-configurable signal path that connects a collection of blocks so they can work together to perform a desired task or service.
 
 Services are created inside an instance and contain blocks.
-
 
 ### Create a Service
 
@@ -193,7 +192,7 @@ Icon                      |Label             | Description      |
 
 ### Connect/Disconnect Blocks
 
-Blockflow is a service-level change. If you change the connections between your blocks, you will need to save your service in the service toolbar.
+The signal paths between blocks are part of the service-level configuration. If you change the connections between your blocks, you will need to save your service in the service toolbar.
 
 To connect two blocks, click and drag the output terminal of one block and release the connector on the input terminal of the next block.
 
