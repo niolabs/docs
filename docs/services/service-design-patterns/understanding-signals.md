@@ -49,7 +49,7 @@ then the block would output the following list:
 
 In other words, the block will only call `notify_signals` once for the incoming list, even though three signals would be notified. It would not call `notify_signals` three times—once for each signal out.
 
-## Paring Down Lists of Signals
+## Paring Down Lists of Signals with the Join Block
 
 If you have a list of signals that you want to condense into fewer signals or even one signal, there are a few blocks that will help. The [join block](https://blocks.n.io/Join) is commonly used.  
 
@@ -71,7 +71,7 @@ This configuration (based on the configuration of `key`\ will create a new signa
 }
 ```
 
-## Group By
+## Using Group By
 
 By default, a block operates over an entire list of signals. However, sometimes you need to perform the block's operation multiple times over a subset of the incoming list. For example, you may want to pass around a list of all employees at a company and want to reduce the list down to a signal that contains all of their names.
 ```
@@ -110,7 +110,7 @@ The block configuration results in a single output signal.
 
 That looks great, but what if you want to have a separate signal for each department, but still have a list of names. One inefficient option would be to filter the stream based on the department and then put the individual streams into copies of the `Join` block from before. The following image displays this example. Note that this is **not** the advised way to do this.
 
-![Bad HashTable](/img/bad-hash-table.png)
+![Bad Join Example](/img/bad-join.png)
 
 There are several downsides to this approach.
 
@@ -118,7 +118,7 @@ There are several downsides to this approach.
 * You lose your original list. When the chain started you had a list of all employees, and now you have different lists floating around. You would have to merge the streams back together to get a list of all the employee names.
 * It is very tedious and repetitive. We have the same blocks used over and over again.
 
-The [Group By mixin](https://github.com/niolabs/nio/tree/master/nio/block/mixins/group_by) can group the signals into smaller lists first before performing the same action. This is very similar to the SQL [`GROUP BY`](https://www.w3schools.com/sql/sql_groupby.asp) operator. Fortunately, the `Join` block uses the Group By mixin, so you can eliminate the `Filter` blocks and rely on only one `Join` block. Using the Group By mixin, the block will first group the signals by the department attribute under a new key "group". Since you don't need the department name as the key to the list of names anymore, you can hard code the new key to be a string `"names"` instead.
+The [Group By mixin](https://github.com/niolabs/nio/tree/master/nio/block/mixins/group_by) can group the signals into smaller lists first before performing the same action. This is very similar to the SQL [`GROUP BY`](https://www.w3schools.com/sql/sql_groupby.asp) operator. Fortunately, the `Join` block includes the Group By mixin, so you can eliminate the `Filter` blocks and rely on only one `Join` block. Using the Group By mixin, the block will first group the signals by the department attribute under a new key called "group". Then, since you don't need the department name as the key to the list of names anymore, you can hard code the new key to be the string `"names"` instead.
 
 ```
 {
@@ -130,7 +130,7 @@ The [Group By mixin](https://github.com/niolabs/nio/tree/master/nio/block/mixins
 }
 ```
 
-You added an attribute to your block configuration identifying the key to group by. The output of the block is a list of two signals, one for each department. Again, remember that since you only have one list of inputs, you can only have one list of outputs. Even though there are two signals being notified, they will be notified together in the same list.
+You added an attribute to your block configuration identifying the attribute to group by. The output of the block is a list of two signals, one for each department. Again, remember that since you only have one list of inputs, you can only have one list of outputs. Even though there are two signals being notified, they will be notified together in the same list.
 ```
 [
   {
