@@ -22,7 +22,7 @@ In the System Designer, you modify the properties in the configuration panel. Pr
 
 A block receives or sends signals through the input and output terminals to allow interblock interaction. In the System Designer, you draw connectors between the terminals to show the signal flow.
 
-Signals are implemented as a collection of key-value pairs. Signals are always passed between blocks inside of a list. See [Understanding Signals](/service-design-patterns/understanding-signals.md#lists-of-signals).
+Signals are implemented as a collection of key-value pairs. Signals are always passed between blocks inside of a list. See [Understanding Signals](/services/service-design-patterns/understanding-signals.md#lists-of-signals).
 
 ## Commands
 
