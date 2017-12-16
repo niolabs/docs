@@ -8,7 +8,7 @@ All instances run on some form of compute. We have specialized nio [binaries](/b
 
 A single instance of nio can have multiple [services](/services/README.md) with related or unrelated functions. In general, each device or cloud instance will run one instance of nio. However, running parallel instances of nio is possible and is sometimes helpful for failover and load balancing.
 
-[insert instances example figure]
+![instances](/img/intro-instance.png)
 
 Fig. Instance with multiple interrelated services used for precision agriculture.
 

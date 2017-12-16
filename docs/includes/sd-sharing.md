@@ -12,9 +12,9 @@ Per permission level assigned to collaborators in the nio system designer
 
 | | system |
 | ------------- | ------------- |
-| **admin** | ![](/img/checkmark-green.svg) |
-| **editor** | ![](/img/times-red.svg) |
-| **viewer** | ![](/img/times-red.svg) |
+| **admin** | ![](/img/icons/checkmark-green.svg) |
+| **editor** | ![](/img/icons/times-red.svg) |
+| **viewer** | ![](/img/icons/times-red.svg) |
 
 ### Creating
 
@@ -22,9 +22,9 @@ Per permission level assigned to collaborators in the nio system designer
 
 | | system |instance | service | block |
 | ------------- | ------------- |------------- |------------- |------------- |
-| **admin** | ![](/img/checkmark-green.svg) | ![](/img/checkmark-green.svg) | ![](/img/checkmark-green.svg) | ![](/img/checkmark-green.svg) |
-| **editor** | ![](/img/times-red.svg) | ![](/img/times-red.svg) | ![](/img/checkmark-green.svg) | ![](/img/checkmark-green.svg) |
-| **viewer** | ![](/img/times-red.svg) | ![](/img/times-red.svg) | ![](/img/times-red.svg) | ![](/img/times-red.svg) |
+| **admin** | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) |
+| **editor** | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) |
+| **viewer** | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) |
 
 ### Editing
 
@@ -32,9 +32,9 @@ Per permission level assigned to collaborators in the nio system designer
 
 | | system |instance | service | block |
 | ------------- | ------------- |------------- |------------- |------------- |
-| **admin** | ![](/img/checkmark-green.svg) | ![](/img/checkmark-green.svg) | ![](/img/checkmark-green.svg) | ![](/img/checkmark-green.svg) |
-| **editor** | ![](/img/times-red.svg) | ![](/img/times-red.svg) | ![](/img/checkmark-green.svg) | ![](/img/checkmark-green.svg) |
-| **viewer** | ![](/img/times-red.svg) | ![](/img/times-red.svg) | ![](/img/times-red.svg) | ![](/img/times-red.svg) |
+| **admin** | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) |
+| **editor** | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) |
+| **viewer** | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) |
 
 
 ### Viewing
@@ -43,9 +43,9 @@ Per permission level assigned to collaborators in the nio system designer
 
 | | system |instance | service | block |
 | ------------- | ------------- |------------- |------------- |------------- |
-| **admin** | ![](/img/checkmark-green.svg) | ![](/img/checkmark-green.svg) | ![](/img/checkmark-green.svg) | ![](/img/checkmark-green.svg) |
-| **editor** | ![](/img/checkmark-green.svg) | ![](/img/checkmark-green.svg) | ![](/img/checkmark-green.svg) | ![](/img/checkmark-green.svg) |
-| **viewer** | ![](/img/times-red.svg) | ![](/img/checkmark-green.svg) | ![](/img/checkmark-green.svg) | ![](/img/checkmark-green.svg) |
+| **admin** | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) |
+| **editor** | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) |
+| **viewer** | ![](/img/icons/times-red.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) |
 
 
 ### Deleting
@@ -54,9 +54,9 @@ Users with `deleting` access can delete nio artifacts as shown in the table belo
 
 | | system |instance | service | block |
 | ------------- | ------------- |------------- |------------- |------------- |
-| **admin** | ![](/img/checkmark-green.svg) | ![](/img/checkmark-green.svg) | ![](/img/checkmark-green.svg) | ![](/img/checkmark-green.svg) |
-| **editor** | ![](/img/times-red.svg) | ![](/img/times-red.svg) | ![](/img/checkmark-green.svg) | ![](/img/checkmark-green.svg) |
-| **viewer** | ![](/img/times-red.svg) | ![](/img/times-red.svg) | ![](/img/times-red.svg) | ![](/img/times-red.svg) |
+| **admin** | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) |
+| **editor** | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) |
+| **viewer** | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) |
 
 
 ### See who has access
@@ -65,9 +65,9 @@ Users with `see who has access` privileges can see which nio systems another use
 
 | | system |
 | ------------- | ------------- |
-| **admin** | ![](/img/checkmark-green.svg) |
-| **editor** | ![](/img/times-red.svg) |
-| **viewer** | ![](/img/times-red.svg) |
+| **admin** | ![](/img/icons/checkmark-green.svg) |
+| **editor** | ![](/img/icons/times-red.svg) |
+| **viewer** | ![](/img/icons/times-red.svg) |
 
 ### Revoking access
 
@@ -75,6 +75,6 @@ Users with `revoking access` can revoke other user’s access to a nio system as
 
 | | system |
 | ------------- | ------------- |
-| **admin** | ![](/img/checkmark-green.svg) |
-| **editor** | ![](/img/times-red.svg) |
-| **viewer** | ![](/img/times-red.svg) |
+| **admin** | ![](/img/icons/checkmark-green.svg) |
+| **editor** | ![](/img/icons/times-red.svg) |
+| **viewer** | ![](/img/icons/times-red.svg) |
