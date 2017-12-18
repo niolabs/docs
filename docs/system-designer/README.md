@@ -4,7 +4,7 @@ The System Designer is the graphical user interface used to build your nio syste
 
 Note that your screen may look slightly different than the images in the document and video.
 
-{% video %}https://www.youtube.com/watch?v=kqY7Z0IJ50E{% endvideo %}
+{% video %}https://www.youtube.com/watch?v=GFs5EK6zao8{% endvideo %}
 
 ## System
 
