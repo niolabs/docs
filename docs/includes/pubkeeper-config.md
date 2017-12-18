@@ -1,4 +1,11 @@
-To configure your local project to use the cloud Pubkeeper server, copy the Pubkeeper 'host', 'port', 'token', and 'secure' settings shown in your system's edit modal to the following four lines in the `# Pubkeeper Client` section of your project directory's `nio.env` file:
+%accordion%**Click arrow to collapse/expand**%accordion%
+
+![Pubkeeper config](/img/pubkeeper-edit-modal.png)
+
+%/accordion%
+
+
+To configure your local project to use the cloud Pubkeeper server, copy the Pubkeeper `host`, `port`, `token`, and `secure` settings shown in your system's edit modal to the following four lines in the `# Pubkeeper Client` section of your project directory's `nio.env` file:
 
   ```
   PK_HOST: [your copied host]
