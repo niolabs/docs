@@ -2,7 +2,7 @@
 
 A module is one of the three parts of a nio [binary](/binaries/README.md), along with the nio core and [components](/binaries/components.md). A module is broken down into two parts, an interface and an implementation.
 
-The interface of a module exists in the [block development framework]() <!-- TODO: add correct link --> and can be called by the nio core or by blocks. This allows blocks to use the same implementation that the core uses in a particular installation without having to worry about that implementation.
+The interface of a module exists in the [block development framework](/blocks/block-development/framework.html) and can be called by the nio core or by blocks. This allows blocks to use the same implementation that the core uses in a particular installation without having to worry about that implementation.
 
 For example, rather than a block having to define its own communication module, it can publish data using the agreed upon communication module interface. The core will use this same module interface. This allows us to swap out the implementation of how communication actually works without having to update all of our block code.
 
