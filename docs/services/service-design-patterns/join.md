@@ -69,7 +69,7 @@ There are several downsides to this approach.
 * You lose your original list. When the chain started you had a list of all employees, and now you have different lists floating around. You would have to merge the streams back together to get a list of all the employee names.
 * It is very tedious and repetitive. We have the same blocks used over and over again.
 
-The [Group By mixin](https://github.com/niolabs/nio/tree/master/nio/block/mixins/group_by) can group the signals into smaller lists first before performing the same action. This is very similar to the SQL [`GROUP BY`](https://www.w3schools.com/sql/sql_groupby.asp) operator. Fortunately, the `Join` block includes the Group By mixin, so you can eliminate the `Filter` blocks and rely on only one `Join` block. Using the Group By mixin, the block will first group the signals by the department attribute under a new key called "group". Then, since you don't need the department name as the key to the list of names anymore, you can hard code the new key to be the string `"names"` instead.
+The [group-by mixin](https://github.com/niolabs/nio/tree/master/nio/block/mixins/group_by) can group the signals into smaller lists first before performing the same action. This is very similar to the SQL [`GROUP BY`](https://www.w3schools.com/sql/sql_groupby.asp) operator. Fortunately, the `Join` block includes the group-by mixin, so you can eliminate the `Filter` blocks and rely on only one `Join` block. Using the group-by mixin, the block will first group the signals by the department attribute under a new key called "group". Then, since you don't need the department name as the key to the list of names anymore, you can hard code the new key to be the string `"names"` instead.
 
 ```
 {
@@ -95,4 +95,4 @@ You added an attribute to your block configuration identifying the attribute to 
 ]
 ```
 
-Understanding how Group By works and when to use it can save a lot of headaches and repetition in nio services, allowing you to build very powerful services without many blocks. In general, if you are frequently repeating the same blocks when designing in nio, there is probably a more efficient way to perform the task.
+Understanding how group-by works and when to use it can save a lot of headaches and repetition in nio services, allowing you to build very powerful services without many blocks. In general, if you are frequently repeating the same blocks when designing in nio, there is probably a more efficient way to perform the task.

@@ -29,14 +29,14 @@ The nio Portal is the gateway to the nio Platform and serves the following purpo
 - [Workshops](workshops.n.io)—tutorials to teach new users how to build with nio
 - [Support](https://app.n.io/support)—live chat, forums, and other support resources
 
-### Team management*
-*Available for enterprise and OEM customers only.
+### Team management\*
+\*Available for enterprise and OEM customers only.
 - Add/delete users
 - Create teams and add and remove team members
 - Edit user roles and permissions
 - Notification center for team and licensing plan changes
 
 ### Account management
-  - Edit your username and password
-  - View receipts
-  - Edit/upgrade/cancel your plan
+- Edit your username and password
+- View receipts
+- Edit/upgrade/cancel your plan
