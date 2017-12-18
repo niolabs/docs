@@ -9,4 +9,4 @@ While the more technical users may dive right into the nio System Designer and t
 
 Ready to jump in and start creating? Head over to workshops at [https://workshops.n.io/](https://workshops.n.io/) and start with the first tutorial.
 
-Have any feedback or ideas for additional workshops?  Contact editor@niolabs.com.
+Have any feedback or ideas for additional workshops? Contact <editor@niolabs.com>.

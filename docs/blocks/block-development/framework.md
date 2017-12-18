@@ -1,12 +1,12 @@
 # The nio Framework
 
-When you develop nio blocks, you use the nio framework. The framework holds all the classes required to create your block as well as the functionality to tie everything together. Think of the framework as a toolshed of useful tools for working with nio.
+When you develop nio blocks, you use the nio framework. The framework holds all the classes required to create your block as well as the functionality to tie everything together. Think of the framework as a toolshed of useful tools and context for working with nio.
 
 ## Block Context
 
 In the configure method, blocks are passed context about themselves and the environment in which they run. Block developers should refer to the following information:
 
-* **block_router** (BlockRouter): The router in which the block runs. The router must be able to handle signals notified by its blocks.
+* **block_router** (BlockRouter): The router in which the block runs. The router must be able to handle signals emitted by its blocks.
 * **properties** (dict): The block properties (metadata) that will be deserialized and loaded.
 * **hooks** (Hooks): Hooks are used by the service internally to subscribe to certain overall nio instance lifecycle events. It is not advised to use or rely on these hooks in your blocks.
 * **service_name** (str): The name of the service the block belongs to.
