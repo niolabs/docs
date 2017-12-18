@@ -1,6 +1,6 @@
 # Kits and Sensors
 
-nio is a lot more powerful and fun when you start to distribute it. If you do not already own any lightweight computers or sensors, here are a few recommended kits to get you started:
+For lightweight edge nodes to use with nio, try some of the following: 
 
 * [Raspberry Pi 3 Starter Kit](https://www.sparkfun.com/products/13826)
 * [Raspberry Pi Sense HAT](https://pimylifeup.com/raspberry-pi-sense-hat/)
