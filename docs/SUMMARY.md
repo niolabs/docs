@@ -62,8 +62,6 @@
   * [Services](api/services.md)
   * [Services Types](api/services_types.md)
   * [Additional Endpoints](api/additional.md)
-* [Core Components](core-components/README.md)
-  * [SNMP Agent](core-components/snmp.md)
 * [Glossary of Terms](glossary/README.md)
 * [Support](support/README.md)
 * [Copyright](copyright.md)

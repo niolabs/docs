@@ -31,3 +31,7 @@ To see which brews are configured for your project, go to the `[pubkeeper_client
 
 ### Locally
 If your nio license includes the Pubkeeper component, you can also run a Pubkeeper server on a local instance. See the documentation at [docs.pubkeeper.com](https://docs.pubkeeper.com) to learn more.
+
+## Pubkeeper Documentation
+
+Find the documentation for Pubkeeper at [docs.pubkeeper.com](https://docs.pubkeeper.com).
