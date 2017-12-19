@@ -7,6 +7,13 @@ There is only one owner and the owner has complete administrative access to the 
 
 The owner is able to invite users at two different permission levels: organizer or collaborator.
 
+| | Create Organizations | Create Teams | Add Users | Share Systems | Manage Plan |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| **Owner** | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) |
+| **Organizer** | ![](/img/icons/times-red.svg) |  ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/times-red.svg) |
+| **Collaborator** | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) |
+
+
 ### Organizer
 Organizers can add users, create teams, and manage the permission levels of users and teams. The main difference between the owner and an organizer is that the owner has access to the billing information of the organization.
 
