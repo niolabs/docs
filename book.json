@@ -10,7 +10,10 @@
     "-sharing",
     "-fontsettings",
     "back-to-top-button",
-    "accordion"
+    "accordion",
+    "-lunr",
+    "-search",
+    "search-plus"
   ],
   "pluginsConfig": {
     "favicon":{
