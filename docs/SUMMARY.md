@@ -44,7 +44,7 @@
   * [Kits and Sensors](hardware/kits-sensors.md)
 * [Data](data/README.md)
   * [Cloud Storage](data/cloud-storage.md)
-  * [Common Blocks](data/common-blocks.md)
+  <!-- * [Common Blocks](data/common-blocks.md) -->
   * [Persistence](data/persistence.md)
 * [User Interfaces](ui/README.md)
   * [How to Build a UI with nio](ui/build-a-ui.md)
