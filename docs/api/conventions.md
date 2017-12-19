@@ -2,7 +2,7 @@
 
 You can interact with most nio binaries through a REST API. The API supports the standard HTTP request types of `GET`, `POST`, `PUT`, and `DELETE`. Data responses are returned in JSON format.
 
-The REST API is available in nio binaries that include the nio REST Component. Read more about nio core components in [components](../components/README.md).
+The REST API is available in nio binaries that include the nio REST Component. Read more about nio core components in [components](/binaries/components.md).
 
 ## Authentication and Authorization
 
@@ -10,7 +10,7 @@ Authentication is the action to verify the identity of a user or process.
 
 Authorization is the process of giving someone permission to perform an action.
 
-You will need to include an authorization header with your nio API requests. For examples, see [Basic Auth](#basic-authentication-basic-auth) and [JWT](#json-web-tokens-jwt). For examples of adding headers to cURL requests, see [Headers](#headers).
+You will need to include an authorization header with your nio API requests. For examples, see [Basic Auth](#basic-authentication-basic-auth) and [JWT](#json-web-tokens-jwt). For examples of adding headers to curl requests, see [Headers](#headers).
 
 User names and passwords are specified in the `users.json` file in the `etc` directory.
 
@@ -48,7 +48,7 @@ For examples of adding headers to a curl request, see  [Headers](#headers).
 
 ### JSON Web Tokens (JWT)
 
-When using JSON Web Tokens (JWT), first obtain an access, and then include it in the header.
+When using JSON Web Tokens (JWT), first obtain an access token, and then include it in the header.
 
 `{ "authorization": "Bearer <your token>" }`
 
@@ -61,7 +61,7 @@ To test nio API requests and responses, you can use a tool such as [Postman](htt
 ### Request Type
 Your request type will be one of `GET`, `POST`, `PUT`, or `DELETE`.
 
-With the curl command, you can specify with following options:
+With the curl command, you can specify the request type with following options:
 
       -XGET
       -XPOST
@@ -72,7 +72,7 @@ With the curl command, you can specify with following options:
 Your request type will be followed by a URL.
 
 #### Base URL
-The base of the URL for your API request is the address where your nio project is running. Obtain the base URL from terminal in your nio logs.
+The base of the URL for your API request is the address where your nio project is running. Obtain the base URL from your nio logs.
 
 For a local project
 
@@ -92,7 +92,7 @@ You can also add query parameters to the URL, but for the most part, the nio API
 
 ### Headers
 
-In your request, you need to include a header with your [Basic Auth](#basic-authentication-basic-auth) and [JWT](#json-web-tokens-jwt) authentication. You can add auth to your cURL requests with the `-H` header flag or the `--user` flag followed by a string. The following formats will work:
+In your request, you need to include a header with your [Basic Auth](#basic-authentication-basic-auth) or [JWT](#json-web-tokens-jwt) authentication. You can add auth to your curl requests with the `-H` header flag or the `--user` flag followed by a string. The following formats will work:
 
       -H 'authorization: Basic <base 64 encoded username:password>'
 
