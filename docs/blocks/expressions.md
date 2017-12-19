@@ -98,7 +98,3 @@ Additional Python libraries can be imported within blocks for more advanced or s
 {{ __import__('module_name').method_name() }}
 {{ __import__('numpy').amax([2, 1, 4]) }}
 ```
-
-In addition to the default library imports, additional python libraries can be imported within blocks for more advanced or specific operations.
-{{ __import__('module_name').method_name() }}
-{{ __import__('numpy').amax([2, 1, 4]) }}
