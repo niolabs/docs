@@ -39,6 +39,7 @@
   * [nio Core](binaries/core.md)
   * [Modules](binaries/modules.md)
   * [Components](binaries/components.md)
+    * [SNMP](binaries/snmp.md)
 * [Hardware](hardware/README.md)
   * [Supported Compute and Install](hardware/compute-install.md)
   * [Kits and Sensors](hardware/kits-sensors.md)

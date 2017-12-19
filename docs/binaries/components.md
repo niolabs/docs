@@ -1,6 +1,6 @@
 # Components
 
-Components are optional pieces of functionality that can be included in a nio [binary](/binaries/README.md) and r un in the core process. They provide a means to augment the features that are included in a nio binary.
+Components are optional pieces of functionality that can be included in a nio [binary](/binaries/README.md) and run in the core process. They provide a means to augment the features that are included in a nio binary.
 
 For example, a core component may be responsible for managing an instance’s blocks. This component could expose an API that allows users to fetch and/or upgrade their blocks. This makes sense to run as a component rather than a [module](/binaries/modules.md) because it only needs to run once per instance and it doesn’t expose functionality that blocks need to use.
 
