@@ -50,7 +50,7 @@ Anything typed directly into a field is stored as a string, for example:
 
 This will create the following signal:  `{"string": "this is a string"}`.
 
-### Conditionals:
+### Conditionals
 Expressions can perform logic.
 
 With a signal stream `{“sim”:1}, {“sim”: 0}`:
@@ -63,7 +63,7 @@ Will result in the following signal output:
 {"sim": 0, "zero": true}
 ```
 
-### Negation:
+### Negation
 Negation (!=) can also be used.
 With a signal stream `{“sim”:1}, {“sim”: 0}`:
 
@@ -75,7 +75,7 @@ Will result in the following signal output:
 {"sim": 0, "zero": true}
 ```
 
-### Timestamp (default libraries):
+### Timestamp (default libraries)
 nio expressions allow you to import the following Python libraries by default:
 - datetime
 - json
@@ -83,18 +83,23 @@ nio expressions allow you to import the following Python libraries by default:
 - random
 - re
 
-Datetime, used to apply a timestamp to data:
+For example, datetime, used to apply a timestamp to data:
 
 ![timestamp](/img/expressions/timestamp.png)
 
 Will output:
-`{"timestamp": "2017-12-13 23:52:09.661182"}`
+```
+{"timestamp": "2017-12-13 23:52:09.661182"}
+```
 
-### Library Imports:
+### Library Imports
 
 Additional Python libraries can be imported within blocks for more advanced or specific operations.
 
 ```
 {{ __import__('module_name').method_name() }}
+```
+For example, to import the `amax` method from numpy:
+```
 {{ __import__('numpy').amax([2, 1, 4]) }}
 ```
