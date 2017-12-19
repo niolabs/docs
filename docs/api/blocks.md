@@ -1,10 +1,10 @@
 # Blocks API
 
-A configured instance of a nio block type is referred to simply as a block. While block types are classes and have code, blocks are specific configurations of a block type's properties. Earlier we saw an example of a _Logger_ block instance created with the name `Log`. Information about and interaction with individual block configurations in a running nio instance are available through the `/blocks` API.  
+A configured instance of a nio block type is referred to simply as a block. While block types are classes and have code, blocks are specific configurations of a block type's properties. Information about and interaction with individual block configurations in a running nio instance are available through the `/blocks` API.
 
 ## Get API
 
-The Get API returns a JSON body with information about a block based on its name. The following example gets the information for the configured _Logger_ block with the name `Log`
+The Get API returns a JSON body with information about a block based on its name. The following example gets the information for a configured _Logger_ block with the name `Log`
 
     curl -XGET 'http://localhost:8181/blocks/Log'
 
@@ -27,7 +27,7 @@ The following four properties are common to all block types:
 
 **name**<br>The name of the block configuration. This must be unique among all blocks, regardless of type.
 
-**log_level**<br>The number of log messages displayed, from `NOTSET` on the bottom, which includes all messages logged, to `CRITICAL` on the top, which contains only the most critical messages. Messages are shown for the specified `log_level` and all levels above.
+**log_level**<br>The number of log messages displayed, from `NOTSET` on the bottom, which includes all messages logged, through `DEBUG`, `INFO`, `WARNING`, and `ERROR`, to `CRITICAL` on the top, which contains only the most critical messages. Messages are shown for the specified `log_level` and all levels above.
 
 Other properties are block-type specific:
 

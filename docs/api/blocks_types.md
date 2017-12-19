@@ -1,6 +1,6 @@
 # Blocks Types API
 
-nio block types are the functional pieces of code that generate or transform signals. Earlier we saw examples of block types, such as _CounterIntervalSimulator_ and _Logger_. Information about and interaction with the blocks of a running nio instance are available through the `/blocks_types` API.  
+nio block types are the functional pieces of code that generate or transform signals. Information about and interaction with the block types in a running nio instance are available through the `/blocks_types` API.
 
 ## Get API
 

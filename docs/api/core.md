@@ -80,7 +80,7 @@ The following JSON body is returned:
 }
 ```
 
-**components**<br>The core [components](../components/README.md) running in the binary.
+**components**<br>The core [components](/binaries/components.md) running in the binary.
 
 **modules**<br>The modules that interface between the core and blocks, such as Communication and Persistence.
 
