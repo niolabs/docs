@@ -2,7 +2,7 @@
 
 The standard nio binaries available with a license have a few basic dependencies for local installation.
 
-For a quick start to running nio locally, please refer to our guide [here](/getting_started/locally.md).
+For a quick start to running nio locally, please refer to our guide [here](/getting-started/locally.md).
 
 More technical details about installing nio in various environments follow.
 
