@@ -1,11 +1,11 @@
 # Summary
 
 * [Introduction](README.md)
-* [Getting Started](getting_started/README.md)
-  * [nio Platform](getting_started/portal.md)
-  * [Workshops](getting_started/workshops.md)
-  * [In the Cloud](getting_started/in_the_cloud.md)
-  * [Locally](getting_started/locally.md)
+* [Getting Started](getting-started/README.md)
+  * [nio Platform](getting-started/portal.md)
+  * [Workshops](getting-started/workshops.md)
+  * [In the Cloud](getting-started/in-the-cloud.md)
+  * [Locally](getting-started/locally.md)
 * [System Designer](system-designer/README.md)
   * [Functionality](system-designer/designer-tasks.md)
   * [Sharing](system-designer/sharing.md)

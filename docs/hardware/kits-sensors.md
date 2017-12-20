@@ -9,6 +9,6 @@ Check out our [blog](https://niolabs.com/build-ideas) and [Hackster.io page](htt
 
 ## See Also
 
-[Local Quick Start](/getting_started/locally.md)
+[Local Quick Start](/getting-started/locally.md)
 
 [Supported Systems](/hardware/compute-install.md)
