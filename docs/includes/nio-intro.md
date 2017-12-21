@@ -176,5 +176,3 @@ Similarly, the logger screen is just one easy way to visualize the output of a s
 If the output doesn’t need to be visualized, the signals can be sent to other services by way of a publisher block, or to a database with a database block.
 
 You can browse all of the available blocks at http://blocks.n.io. Feel free to make more services by connecting blocks to perform various tasks on your own.
-
-If you would like to explore configuring blocks and sharing signals across services and instances, be sure to check out the nio 101 [tutorials](/nio-101/restful-api/README.md) that expand in complexity. As a next step, we recommend exploring the [Distributed Demo](https://workshops.n.io/plant) to better understand the value of distributed computing and how nio can be applied to a real-world application.
