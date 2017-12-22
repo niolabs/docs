@@ -35,13 +35,13 @@ Just like the `unittest.TestCase`, nio supports the setUp/tearDown pattern. This
 
 ## Helper Methods
 
-- **configure_block(block, block_properties)** - The process of configuring and initializing blocks manually is somewhat nuanced (and not something we want you to worry about). We provide this method to configure your block instance semi-automatically. Just pass the block object itself and a dictionary containing any block properties you want to configure (and the associated values).
-- **assert_num_signals_notified(num, block=None)** - This method provides access to the total number of signals notified over the course of the current test. If `block` is not `None`, then you will receive the number of signals notified by that block over its lifetime.
-- **last_signal_notified(output_id)** - This method returns the last signal that was notified from a particular output. If an output_id is not specified, it will return the last signal notified from any output on the block.
+- **configure_block(block, block_properties)**<br>The process of configuring and initializing blocks manually is somewhat nuanced (and not something we want you to worry about). We provide this method to configure your block instance semi-automatically. Just pass the block object itself and a dictionary containing any block properties you want to configure (and the associated values).
+- **assert_num_signals_notified(num, block=None)**<br>This method provides access to the total number of signals notified over the course of the current test. If `block` is not `None`, then you will receive the number of signals notified by that block over its lifetime.
+- **last_signal_notified(output_id)**<br>This method returns the last signal that was notified from a particular output. If an output_id is not specified, it will return the last signal notified from any output on the block.
 
 ## Overridable Methods
 
--   **get_test_modules()** - By default, `NIOBlockTestCase` automatically initializes the logging, threading, scheduler, and security modules. However, you can customize this by overriding this method and returning a list of strings corresponding to the particular modules you want to initialize.
+-   **get_test_modules()**<br>By default, `NIOBlockTestCase` automatically initializes the logging, threading, scheduler, and security modules. However, you can customize this by overriding this method and returning a list of strings corresponding to the particular modules you want to initialize.
     * logging
     * threading
     * scheduler
@@ -49,7 +49,7 @@ Just like the `unittest.TestCase`, nio supports the setUp/tearDown pattern. This
     * communication
     * persistence
     * web
--   **signals_notified(signals, output_id)** - This method gets called every time signals are notified in your tests. If you'd like to record something in the test case, trigger an event, or perform some aggregation when that happens, override this method. One common use is to add `self.signals = defaultdict(list)` to `setUp` and
+-   **signals_notified(signals, output_id)**<br>This method gets called every time signals are notified in your tests. If you'd like to record something in the test case, trigger an event, or perform some aggregation when that happens, override this method. One common use is to add `self.signals = defaultdict(list)` to `setUp` and
 
 ```python
 def signals_notified(self, signals, output_id):
@@ -102,7 +102,7 @@ Again, you don't necessarily have to construct your tests in this manner; howeve
 
 ## Mocking Persistence Module
 
-To mock `load` the persistence module:
+To mock `load`, the persistence module:
 
 ```python
 class TestPersistenceBlock(NIOBlockTestCase):

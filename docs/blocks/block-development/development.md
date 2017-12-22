@@ -16,7 +16,7 @@ Once you have developed your block, you will want to [test](block-testing.md) an
 
 All nio blocks inherit from the base block class. The first import in the block template's `example_block.py` is `nio.block.base`. If you explore the code inside `nio.block.base`, you'll find explanatory docstrings for each method—including methods to override in your custom block—along with higher-level context.
 
-An important principle to remember when developing your block is that [signals are passed as lists](/service-design-patterns/understanding-signals.md#lists-of-signals).
+An important principle to remember when developing your block is that [signals are passed as lists](/services/service-design-patterns/signal-structure.md#lists-of-signals).
 
 ### Methods to Override
 
@@ -24,7 +24,7 @@ The following methods from the base block are designed to be overridden:
 
 #### life cycle management
   * `configure`: at the end of the `configure` method, the block is ready to receive signals. If an exception is raised during configure, the service will not start.
-  * `start`: during start, a block begins to send out signals. This method needs to eventually return so that the block status can change to “started”. For this reason, anything that runs continuously, should be run in a new thread.
+  * `start`: during start, a block begins to send out signals. This method needs to eventually return so that the block status can change to “started." For this reason, anything that runs continuously, should be run in a new thread.
   * `stop`: after stop, the block stops sending out signals and cancels jobs.
 
 #### signaling
@@ -33,7 +33,7 @@ The following methods from the base block are designed to be overridden:
 
 ## Current nio Blocks
 
-An additional resource for developing your custom block is the [nio-blocks library](https://github.com/nio-blocks). Search the nio-blocks library for a block that has similar functionality to the block you need. Explore its properties, methods, commands, inputs, outputs, [mixins](mixins.md), and any modules imported from the [framework](framework.md).
+An additional resource for developing your custom block is the [Block Library](https://blocks.n.io). Search the nio Block Library for a block that has similar functionality to the block you need. Open the link to its code and explore its properties, methods, commands, inputs, outputs, mixins, and any modules imported from the [framework](framework.md).
 
 ## Properties
 

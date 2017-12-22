@@ -1,17 +1,17 @@
 # Browser Support
 
-To have the best experience with the System Designer on your computer, use a supported, up-to-date version of the Chrome browser. You will have access to the latest features along with improved security and performance.
+To have the best experience with the System Designer on your computer, use a supported, up-to-date browser. You will have access to the latest features along with improved security and performance.
 
-<!-- ## Level of Browser Support
+## Level of Browser Support
 
 | Browser | Level of Support |
 | ------------- | ------------- |
 |  Chrome  |  Recommended. Supports all System Designer features and functionality.|
-|  Firefox<br>Safari<br>Microsoft&nbsp;Edge | Supports all System Designer features and functionality. There may be minor visual imperfections.  |
+|  Firefox<br>Safari<br>Microsoft&nbsp;<br>Edge | Supports all System Designer features and functionality. There may be minor visual imperfections.  |
 | Internet&nbsp;Explorer |  Supports all System Designer features and functionality. There may be moderate visual imperfections. |
 
 ## Supported Versions
-The current, or most recent, version of all supported browsers is supported. -->
+Development of the System Designer is targeted at the current, or most recent, version of supported browsers.
 
 ## Required Browser Settings
 To use the System Designer, enable cookies and JavaScript<sup>®</sup> in your browser.

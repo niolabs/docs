@@ -1,6 +1,6 @@
 # Services API
 
-Services are the real-time processes that run on an instance in nio where you configure the logic of the workflow of blocks to make interesting things happen. Earlier we created a service called `SimulateAndLog` where we connected a _CounterIntervalSimulator_ to a _Logger_. Information about and interaction with the services of a running nio instance are available through the `/services` API.
+Services are the real-time processes that run on an instance in nio where you configure the logic of the workflow of blocks to make interesting things happen. Information about and interaction with the services of a running nio instance are available through the `/services` API.
 
 ## Get API
 
@@ -46,7 +46,7 @@ The result of the previous request is
 
   **name**<br>The name of the service configuration. This must be unique among all services in the instance.
 
-  **log_level**<br>The number of log messages displayed, from `NOTSET` on the bottom, which includes all messages logged, to `CRITICAL` on the top, which contains only the most critical messages. Messages are shown for the specified `log_level` and all levels above.
+  **log_level**<br>The number of log messages displayed, from `NOTSET` on the bottom, which includes all messages logged, through `DEBUG`, `INFO`, `WARNING`, and `ERROR`, to `CRITICAL` on the top, which contains only the most critical messages. Messages are shown for the specified `log_level` and all levels above.
 
   **auto_start**<br>A boolean that indicates if the service will start when nio starts up.
 
