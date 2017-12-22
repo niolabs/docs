@@ -1,6 +1,6 @@
 Hello to a new world of connected intelligence using nio!
 
-This tutorial introduces you to the System Designer and the fundamental concepts of building a nio [project](/instances/projects.html?h=project) including how to create
+This tutorial introduces you to the System Designer and the fundamental concepts of building a nio [project](/instances/projects.md) including how to create
 [systems](/systems/),
 [instances](/instances/),
 [services](/services/), and
@@ -97,7 +97,7 @@ You’re cruising now! You just created your first [service](/services/). Notice
 The blocks are the units that do the work inside a service.
 
 The basic `simulate-and-log` service needs two blocks:
-  The _CounterIntervalSimulator_ block to simulate and emit a [signal](/services/service-design-patterns/signal-structure.html?h=signal) at a specified interval, and the _Logger_ block to log each incoming signal to the logger panel.
+  The _CounterIntervalSimulator_ block to simulate and emit a [signal](/services/service-design-patterns/signal-structure.md) at a specified interval, and the _Logger_ block to log each incoming signal to the logger panel.
 
 | Block Type           | Block Name                |
 |----------------------|---------------------------|
