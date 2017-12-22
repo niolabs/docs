@@ -4,7 +4,7 @@ Every state, every change, and every interaction in our world is a signal—from
 
 The nio platform was built to act as the nervous system for a world with trillions of unique signals. It  allows you to create real-world, innovative, and impactful solutions with connected, distributed systems.
 
-We’ve built solutions in [agriculture](https://niolabs.com/case-studies/agriculture), with [machine learning](https://niolabs.com/case-studies/industrial), for [enterprise IT](https://niolabs.com/case-studies/case-study-real-time-database-migration),  with [smart toys](https://niolabs.com/case-studies/raspberry-pi-car), and for [industrial operations](https://niolabs.com/case-studies/case-study-industrial-operations-intelligence). We can’t wait to see what you build!
+We’ve built solutions for [agriculture](https://niolabs.com/case-studies/agriculture), [machine learning](https://niolabs.com/case-studies/industrial), [enterprise IT](https://niolabs.com/case-studies/case-study-real-time-database-migration), [smart toys](https://niolabs.com/case-studies/raspberry-pi-car), and [industrial operations](https://niolabs.com/case-studies/case-study-industrial-operations-intelligence). We can’t wait to see what you build!
 
 ## Blocks
 A [block](/blocks/) is the component nio uses to apply logic to a signal. Blocks consume, alter, and publish signals. They are the basic units of functionality that allow unlimited interoperability and possibilities.
