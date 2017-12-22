@@ -79,6 +79,6 @@ Environment variables are used when you want your instance to function in differ
 
 Your environment variable can be used alone, or you can embed it, with the double-square-bracket notation, inside of strings and expressions.
 
-To embed you environment variable inside of single brackets, you need to include a space between the single bracket and the double brackets of the environment variable
+To embed your environment variable inside of single brackets, you need to include a space between the single bracket and the double brackets of the environment variable
 
 ```[ [[MY_ACCESS_TOKEN]] ]```
