@@ -4,7 +4,9 @@ When an owner or organizer shares a system with a collaborator or team, they mus
 	editor
 	viewer
 
-Each of these three levels of permissions allows varying level of access within the nio System Designer.
+![](/img/organizations/org-share-viewer.jpg)
+
+Each of these three levels of permissions allows a varying level of access within the nio System Designer.
 
 ### Sharing
 
@@ -61,7 +63,7 @@ Users with `deleting` access can delete nio artifacts as shown in the table belo
 
 ### See who has access
 
-Users with `see who has access` privileges can see which nio systems another user has access to. As shown in the table below, only admins can see which nio systems another user has access to.
+Users with `see-who-has-access` privileges can see which nio systems another user has access to. As shown in the table below, only admins can see which nio systems another user has access to.
 
 | | system |
 | ------------- | ------------- |
@@ -71,7 +73,7 @@ Users with `see who has access` privileges can see which nio systems another use
 
 ### Revoking access
 
-Users with `revoking access` can revoke other user’s access to a nio system as shown in the table below. Only admins can revoke a user’s access to a nio system.
+Users with `revoking-access` can revoke another user’s access to a nio system as shown in the table below. Only admins can revoke a user’s access to a nio system.
 
 | | system |
 | ------------- | ------------- |
