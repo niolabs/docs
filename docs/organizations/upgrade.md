@@ -1,8 +1,10 @@
 # Upgrade Plan
 
-You can view your plan info under your account settings. To navigate to your account settings, click the user icon in the top navigation and select your name from the dropdown.
+You can view your plan info under your account settings. To navigate to your account settings, click the user icon in the top navigation and select your name or an organization that you own from the dropdown.
 
-To view your plan information from your account settings, click the **Plan** tab in the left navigation.
+![](/img/organizations/org-account-settings.jpg)
+
+To view your plan information, click the **Plan** tab in the left navigation.
 
 ## Upgrade Plan
 
@@ -14,7 +16,7 @@ If you signed up for the Sandbox plan, you were presented with two payment optio
 To upgrade to an Enterprise or OEM plan, click the button or text link that says **contact us** and fill out and submit your inquiry. We will get back to you shortly to discuss additional plan options.
 
 ### Upgrade Enterprise or OEM Plan
-If you have outgrown your Sandbox, Enterprise, or OEM plan, you can upgrade to a more robust plan by contacting us. From your plan page, click the button or text link that says **contact us** and fill out and submit your inquiry. We will get back to you shortly to discuss additional plan options.
+If you have outgrown your Enterprise or OEM plan, you can upgrade to a more robust plan by contacting us. From your plan page, click the button or text link that says **contact us** and fill out and submit your inquiry. We will get back to you shortly to discuss additional plan options.
 
 ### Billing and Plan Questions
 

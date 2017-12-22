@@ -19,7 +19,7 @@ If you want to invite multiple users with the same [permission level](/organizat
 ![](/img/organizations/org-invite-multiple.jpg)
 
 ## Status of Users: Invited or Active
-Users that have been invited but have not yet set up an account will have an gold circle next to their photos.
+Users that have been invited but have not yet set up an account will have a gold circle next to their photos.
 
 ![](/img/organizations/org-status-orange-grey-dots.jpg)
 
@@ -28,7 +28,7 @@ If you want to remind someone to set up an account, from the users page, find th
 
 ![](/img/organizations/org-status-resend.jpg)
 
-You may also revoke an invitation from the same drop-down menu. If you no longer wish to invite the user to be a part of your organization click **remove**.
+You may also revoke an invitation from the same drop-down menu. If you no longer wish to invite the user to be a part of your organization, click **remove**.
 
 Users that have been invited and have set up accounts will have a green circle next to their photo indicating that they are active within your organization.
 
@@ -50,7 +50,7 @@ While on a user’s profile page, you can quickly add the user to existing teams
 After you have added the user to a team, an icon will appear in the user’s card to show which team(s) that user is on. This icon also acts as a link to the team profile page.
 
 ### Remove a User from a Team
-The “Current Teams” section on a user’s profile shows all of the teams a user belongs to. To remove the user from a team, click the blue button in the top right corner of the team card.
+The “Current Teams” section on a user’s profile page shows all of the teams a user belongs to. To remove the user from a team, click the blue button in the top right corner of the team card.
 
 ### Remove a User from an Organization
 To remove a user from your organization, go to the user's profile page. In the top right corner of the user’s profile, click the red text link. You will be prompted with a pop up modal to confirm that you want to remove the user from the organization.
