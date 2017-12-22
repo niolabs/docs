@@ -1,13 +1,21 @@
-H1 - Upgrade Plan
-H2 - Upgrade Plan (insert org/team video)
-Body copy - Whether you are a sandbox, enterprise, OEM user, you have several options to upgrade your plan.
+# Upgrade Plan
 
-H3 - Update Sandbox Billing Cycle
-If you signed up for the Free Trial/Sandbox plan, you were presented with two payment options. If you selected to pay $9/month and would prefer to pay a full year in advance then navigate to your account Profile Page. Click on the User Icon in the top navigation and click your name in the dropdown. This will navigate you to your Account Settings where you can view your plan information. Click Plan in the left navigation. You will see an overview of your current plan information. Within the plan card, toggle to the 'annually' option, click 'upgrade plan.' A modal will pop up asking you to confirm. Click 'update license' to confirm or 'cancel' if you want to keep your current billing cycle.
+You can view your plan info under your account settings. To navigate to your account settings, click the user icon in the top navigation and select your name from the dropdown.
 
-H3 - Upgrade Plan
-If you have outgrown your Sandbox, enterprise, or OEM plan, you can upgrade to a more robust plan by contacting us. To do so, click the User Icon in the top navigation and click your name in the dropdown. This will navigate you to your account settings where you can view the Plan information. Click on the button within the pricing cards or text link that says “contact us” and fill out the inquiry form. We will get back to you within 48 hours to discuss additional plan options.
+To view your plan information from your account settings, click the **Plan** tab in the left navigation.
 
-H3 - Billing and Plan Questions
+## Upgrade Plan
 
-If you have additional questions about billing or your licensing plan, please contact our support team at sales@niolabs.com.
+Whether you are a Sandbox, Enterprise, or OEM user, you have several options to upgrade your plan.
+
+### Update Sandbox Billing Cycle
+If you signed up for the Sandbox plan, you were presented with two payment options. If you selected to pay monthly and would prefer to pay a full year in advance with a discount, toggle to the **annually** option and click **update plan**. A modal will pop up asking you to confirm. Click **update license** to confirm or **cancel** if you want to keep your current billing cycle.
+
+To upgrade to an Enterprise or OEM plan, click the button or text link that says **contact us** and fill out and submit your inquiry. We will get back to you shortly to discuss additional plan options.
+
+### Upgrade Enterprise or OEM Plan
+If you have outgrown your Sandbox, Enterprise, or OEM plan, you can upgrade to a more robust plan by contacting us. From your plan page, click the button or text link that says **contact us** and fill out and submit your inquiry. We will get back to you shortly to discuss additional plan options.
+
+### Billing and Plan Questions
+
+If you have additional questions about billing or your licensing plan, please contact our support team at [sales@niolabs.com](mailto:sales@niolabs.com).
