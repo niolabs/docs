@@ -7,7 +7,7 @@ To view your organization, click the user icon in the top navigation and select 
 Each user in an organization can have one of three roles: owner, organizer, or collaborator.
 
 ## Owner
-There is only one owner and the owner has complete administrative access to the organization. The owner role is limited to the person who originally set up the enterprise or OEM plan.
+There is only one owner and the owner has complete administrative access to the organization. The owner role is limited to the person who originally set up the Enterprise or OEM plan.
 
 The owner is able to invite users at two different permission levels: organizer or collaborator.
 
