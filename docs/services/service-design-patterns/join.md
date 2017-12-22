@@ -1,4 +1,4 @@
-# Restructure and Group signals
+# Restructure and Group Signals
 
 If you have a list of signals that you want to condense into fewer signals or even one signal, there are a few blocks that will help. The [Join block](https://blocks.n.io/Join) is commonly used.  
 

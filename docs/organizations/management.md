@@ -1,11 +1,24 @@
 # Organization Management
 
+To view your organization, click the user icon in the top navigation and select your organization from the dropdown.
+
+![](/img/organizations/org-account-settings.jpg)
+
 Each user in an organization can have one of three roles: owner, organizer, or collaborator.
 
+<<<<<<< HEAD
 ## Owner
 There is only one owner and the owner has complete administrative access to the organization. The owner role is limited to the person who originally set up the enterprise or OEM plan.
+=======
+### Owner
+There is only one owner and the owner has complete administrative access to the organization. The owner role is limited to the person who originally set up the Enterprise or OEM plan.
+>>>>>>> origin/stage
 
 The owner is able to invite users at two different permission levels: organizer or collaborator.
+
+![](/img/organizations/org-inviteuser.jpg)
+
+Each permission level comes with the following abilities:
 
 | | Create Organizations | Create Teams | Add Users | Share Systems | Manage Plan |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |

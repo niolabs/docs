@@ -2,7 +2,7 @@
 
 You can interact with most nio binaries through a REST API. The API supports the standard HTTP request types of `GET`, `POST`, `PUT`, and `DELETE`. Data responses are returned in JSON format.
 
-The REST API is available in nio binaries that include the nio REST Component. Read more about nio core components in [components](/binaries/components.md).
+The REST API is available in nio binaries that include the nio REST Component. Read more about nio core components [here](/binaries/components.md).
 
 ## Authentication and Authorization
 
