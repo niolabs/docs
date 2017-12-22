@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/niolabs/docs#readme",
   "devDependencies": {
-    "gitbook-cli": "^2.3.0"
+    "gitbook-cli": "^2.3.2"
   },
   "dependencies": {
     "gitbook-plugin-theme-nio": "git://github.com/niolabs/gitbook-plugin-theme-nio.git"

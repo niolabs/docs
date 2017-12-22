@@ -39,7 +39,7 @@ See the [Deployment](/deployment) section for more information.
 
 ## Setting Environment Variables
 
-nio environment variables are slightly different than operating system environment variables. nio environment variables can also be set by operation system environment variables. This can be useful when running nio using Docker, systemd, or some other process manager where you can pass environment variables to the process.
+nio environment variables are slightly different than operating system environment variables. nio environment variables can also be set by operating system environment variables. This can be useful when running nio using Docker, systemd, or some other process manager where you can pass environment variables to the process.
 
 In general, environment variables can be sourced from two places.
 

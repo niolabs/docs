@@ -10,7 +10,7 @@ A single instance of nio can have multiple [services](/services/README.md) with 
 
 ![instances](/img/intro-instance.png)
 
-Fig. Instance with multiple interrelated services used for precision agriculture.
+**Fig. Instance with multiple interrelated services used for precision agriculture.**
 
 Where you decide to install nio instances (or logic) throughout a system should ultimately be determined by the desired outcome and constraints of your specific application. These decisions are usually decided during the design and solution architecture phase of a project.
 

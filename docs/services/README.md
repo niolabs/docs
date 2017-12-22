@@ -6,7 +6,7 @@ Services are user-configurable signal paths that run on [nio instances](/instanc
 
 A service can be as simple as the one illustrated above which takes in a data stream from a soil moisture sensor then reformats and publishes the signal for another service or UI to consume.
 
-On the other end of the spectrum, a service can be as complicated as the one below, which subscribes to streams produced by nio instances all running within the niolabs office (door security, HVAC, laptops, etc.) and publishes that data to a UI for our team to view.
+On the other end of the spectrum, a service can be as complicated as the one below, which subscribes to streams produced by all nio instances running within the niolabs office (door security, HVAC, laptops, etc.) and publishes that data to a UI for our team to view.
 
 ![agriculture system example](/img/lab-service.png)
 

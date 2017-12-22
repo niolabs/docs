@@ -33,7 +33,7 @@ The following methods from the base block are designed to be overridden:
 
 ## Current nio Blocks
 
-An additional resource for developing your custom block is the [Block Library](https://blocks.n.io). Search the nio Block Library for a block that has similar functionality to the block you need. Open the link to its code and explore its properties, methods, commands, inputs, outputs, [mixins](mixins.md), and any modules imported from the [framework](framework.md).
+An additional resource for developing your custom block is the [Block Library](https://blocks.n.io). Search the nio Block Library for a block that has similar functionality to the block you need. Open the link to its code and explore its properties, methods, commands, inputs, outputs, mixins, and any modules imported from the [framework](framework.md).
 
 ## Properties
 
