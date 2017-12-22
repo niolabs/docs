@@ -22,7 +22,7 @@ The unique **block name**, which you define when dragging a new instance of the 
 
 In the example above, **Exclude existing fields** is a checkbox, **Fields** is a list of input pairs, **Log Level** is a drop-down menu, and **Version** is a series of three numbers separated by periods (0.1.0).
 
-The different types of inputs in the configuration panel represent different [property types](../block-development/development.md#property-types). Below you’ll find a list of the property types used in nio blocks.
+The different types of inputs in the configuration panel represent different property types. Below you’ll find a list of the property types used in nio blocks.
 
 - **BoolProperty**<br>Represented by a checkbox, and can equal either True or False
 - **FileProperty**<br>Reference to a local file to be opened and read
@@ -36,7 +36,7 @@ The different types of inputs in the configuration panel represent different [pr
 - **TimeDeltaProperty**<br>Requires integer values in minutes, seconds, and milliseconds
 - **VersionProperty**<br>Specifies the version of the block type. It represents the block’s version when this configuration was created. One should only update the version property of a block configuration once they have updated a block’s version and have confirmed that the block configuration works with the new version of the block.
 
-Some properties (the base Property property) can take any type of input while others require specific types of input. The IntProperty can only take integers while the SelectProperty requires a selection from a specific list. If your property input is filled with the incorrect type of content, your block will not configure and your service will not run.
+Some properties can take any type of input while others require specific types of input. The IntProperty can only take integers while the SelectProperty requires a selection from a specific list. If your property input is filled with the incorrect type of content, your block will not configure and your service will not run.
 
 For more information on applying these properties, please feel free to check out our GitHub repository for the nio framework [https://github.com/niolabs/nio/tree/master/nio/properties](https://github.com/niolabs/nio/tree/master/nio/properties).
 
@@ -79,6 +79,6 @@ Environment variables are used when you want your instance to function in differ
 
 Your environment variable can be used alone, or you can embed it, with the double-square-bracket notation, inside of strings and expressions.
 
-To embed you environment variable inside of single brackets, you need to include a space between the single bracket and the double brackets of the environment variable
+To embed your environment variable inside of single brackets, you need to include a space between the single bracket and the double brackets of the environment variable
 
 ```[ [[MY_ACCESS_TOKEN]] ]```
