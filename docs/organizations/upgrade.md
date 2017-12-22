@@ -1,4 +1,4 @@
-# Upgrade Plan
+# Change Your Plan
 
 You can view your plan info under your account settings. To navigate to your account settings, click the user icon in the top navigation and select your name or an organization that you own from the dropdown.
 
@@ -21,3 +21,15 @@ If you have outgrown your Enterprise or OEM plan, you can upgrade to a more robu
 ### Billing and Plan Questions
 
 If you have additional questions about billing or your licensing plan, please contact our support team at [sales@niolabs.com](mailto:sales@niolabs.com).
+
+## Billing
+
+If you are the owner of the plan, you can update your credit card information and view invoices.
+
+### Update Credit Card Information
+
+If you are the owner of the plan, you can update your credit card information by completing and submitting the form on the **Plan** page.
+
+### Invoices
+
+If you are the owner of the plan, you can view and print invoices from the **Plan** page. 
