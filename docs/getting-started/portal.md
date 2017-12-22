@@ -24,10 +24,10 @@ A nio Member is an unpaid access level that allows you to explore all of the sup
 The nio [Portal](https://app.n.io) is the gateway to the nio Platform and serves the following purposes:
 
 ### Learning
-- [Docs](https://docs.n.io)—technical reference documentation
+- [Docs](https://docs.n.io/)—technical reference documentation
 - [Blocks](https://blocks.n.io/)—a searchable library with a description of each individual block
 - [Workshops](https://workshops.n.io/)—tutorials to teach new users how to build with nio
-- [Support](https://app.n.io/support)—live chat, forums, and other support resources
+- [Support](https://app.n.io/support/)—live chat, forums, and other support resources
 
 ### Team management\*
 \*Available for enterprise and OEM customers only.
