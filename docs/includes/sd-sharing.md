@@ -8,7 +8,7 @@ Each of these three levels of permissions allows varying level of access within 
 
 ### Sharing
 
-Per permission level assigned to collaborators in the nio System Designer
+Permission levels assigned to collaborators in the nio System Designer
 
 | | system |
 | ------------- | ------------- |
@@ -18,7 +18,7 @@ Per permission level assigned to collaborators in the nio System Designer
 
 ### Creating
 
-Per permission level assigned to collaborators in the nio System Designer
+Permission levels assigned to collaborators in the nio System Designer
 
 | | system |instance | service | block |
 | ------------- | ------------- |------------- |------------- |------------- |
@@ -28,7 +28,7 @@ Per permission level assigned to collaborators in the nio System Designer
 
 ### Editing
 
-Per permission level assigned to collaborators in the nio System Designer
+Permission levels assigned to collaborators in the nio System Designer
 
 | | system |instance | service | block |
 | ------------- | ------------- |------------- |------------- |------------- |
@@ -39,7 +39,7 @@ Per permission level assigned to collaborators in the nio System Designer
 
 ### Viewing
 
-Per permission level assigned to collaborators in the nio System Designer
+Permission levels assigned to collaborators in the nio System Designer
 
 | | system |instance | service | block |
 | ------------- | ------------- |------------- |------------- |------------- |

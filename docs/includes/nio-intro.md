@@ -1,14 +1,14 @@
 Hello to a new world of connected intelligence using nio!
 
-This tutorial introduces you to the System Designer and the fundamental concepts of building a nio [project](https://docs.n.io/glossary#project) including how to create
-[systems](https://docs.n.io/glossary#system),
-[instances](https://docs.n.io/glossary#instance),
-[services](https://docs.n.io/glossary#service), and
-[blocks](https://docs.n.io/glossary#block).
+This tutorial introduces you to the System Designer and the fundamental concepts of building a nio [project](/instances/projects.html?h=project) including how to create
+[systems](/systems/),
+[instances](/instances/),
+[services](/services/), and
+[blocks](/blocks/).
 
 ## Before You Begin
 
-The [**System Designer**](https://docs.n.io/system-designer/) is the graphical user interface used to build your nio system. This video provides you with a quick tour of the System Designer including the navigation, work areas, and toolbars.
+The [System Designer](https://docs.n.io/system-designer/) is the graphical user interface used to build your nio system. This video provides you with a quick tour of the System Designer including the navigation, work areas, and toolbars.
 
 {% video %}https://www.youtube.com/watch?v=GFs5EK6zao8{% endvideo %}
 
@@ -41,10 +41,10 @@ The very first time you open the System Designer, you are literally starting wit
   1. In the **system name** box, enter `workshops`.
   1. Click **accept**.
 
-Way to go! You just created a [system](https://docs.n.io/glossary#system) to hold the projects you will build in these tutorials. Your canvas has expanded to include the contextual toolbar and you are currently in the system context. The next step is to create a cloud [instance](https://docs.n.io/glossary#instance) within your newly created system.
+Way to go! You just created a [system](/systems/) to hold the projects you will build in these tutorials. Your canvas has expanded to include the contextual toolbar and you are currently in the system context. The next step is to create a cloud [instance](/instances/) within your newly created system.
 
 ## Create an Instance
-An [instance](https://docs.n.io/glossary#instance) is an installation of nio that you are running. It is possible to have multiple instances  (both cloud and local) running in a system and multiple services in an instance.
+An [instance](/instances/) is an installation of nio that you are running. It is possible to have multiple instances  (both cloud and local) running in a system and multiple services in an instance.
 
 A cloud instance runs a version of nio that is installed in the cloud and managed by niolabs. You will create a cloud instance named `Tutorials` to hold the services that you will create in these tutorials.
 
@@ -67,7 +67,7 @@ A cloud instance runs a version of nio that is installed in the cloud and manage
   1. In the **instance name** box, enter `Tutorials`.
   1. Click **accept**.
 
-Alright! You just created a cloud [instance](https://docs.n.io/glossary#instance) of nio. Your contextual toolbar now shows you the instance context where you can view and edit your instance. You can create all of your [services](https://docs.n.io/glossary#service) for the tutorials within this cloud instance. In the next step you will learn how to make your first service.
+Alright! You just created a cloud [instance](/instances/) of nio. Your contextual toolbar now shows you the instance context where you can view and edit your instance. You can create all of your [services](/services/) for the tutorials within this cloud instance. In the next step you will learn how to make your first service.
 
 ## Create a Service
 A service is a real-time process that runs on an instance. It is a collection of blocks that perform a service. Now you can create a simple `simulate-and-log` service that will generate a signal and log it to the logger panel.
@@ -90,14 +90,14 @@ A service is a real-time process that runs on an instance. It is a collection of
   1. In the **service name** box, enter `simulate-and-log`.
   1. Click **accept**.
 
-You’re cruising now! You just created your first [service](https://docs.n.io/glossary#service). Notice that the block library appeared on the right side of your canvas and your contextual toolbar now has you in the service context where you can edit, save, and start and stop your service. The service will hold the logic created by a workflow of [blocks](https://docs.n.io/glossary#block). In the next step, you will use the block library to add blocks to your service.
+You’re cruising now! You just created your first [service](/services/). Notice that the block library appeared on the right side of your canvas and your contextual toolbar now has you in the service context where you can edit, save, and start and stop your service. The service will hold the logic created by a workflow of [blocks](/blocks/). In the next step, you will use the block library to add blocks to your service.
 
 ## Add Blocks
 
 The blocks are the units that do the work inside a service.
 
 The basic `simulate-and-log` service needs two blocks:
-  The _CounterIntervalSimulator_ block to simulate and emit a [signal](https://docs.n.io/glossary/#signal) at a specified interval, and the _Logger_ block to log each incoming signal to the logger panel.
+  The _CounterIntervalSimulator_ block to simulate and emit a [signal](/services/service-design-patterns/signal-structure.html?h=signal) at a specified interval, and the _Logger_ block to log each incoming signal to the logger panel.
 
 | Block Type           | Block Name                |
 |----------------------|---------------------------|

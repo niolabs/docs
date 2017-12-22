@@ -8,7 +8,7 @@ Building digital distributed systems can be extraordinarily complex.  nio simpli
 
 ![agriculture system example](/img/intro-system.png)
 
-Fig. Example precision agriculture system
+**Fig 1. Example precision agriculture system**
 
 ## See Also
 [Systems in the System Designer](/system-designer/designer-tasks.html#system)

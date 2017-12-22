@@ -1,6 +1,6 @@
 # Running nio Locally
 
-The cloud is an easy way to get nio up and running, but it doesn't fully capture the distributed power of the nio Platform. To see the power of nio as a distributed system, you should install and run nio on a local or edge node. In this guide, you will create a local instance that uses a cloud-based [Pubkeeper](/Pubkeeper) server to handle communications.
+The cloud is an easy way to get nio up and running, but it doesn't fully capture the distributed power of the nio Platform. To see the power of nio as a distributed system, you should install and run nio on a local or edge node. In this guide, you will create a local instance that uses a cloud-based [Pubkeeper](/Pubkeeper/) server to handle communications.
 
 Running the nio Platform requires Python version 3.4 or greater.
 
@@ -41,7 +41,7 @@ pip3 install -U nio-cli
 
 ## Create a Project
 
-Now that the nio binary is installed, you need a nio project to run it against. A project folder is a way to organize and maintain the blocks, variables, and configurations that you want use with an instance of nio. The easiest way to create a new nio project is by using the nio CLI. If you prefer not to use the nio CLI, you can create a project by cloning the [Project Template repository](https://github.com/niolabs/project_template) from GitHub. Follow the instructions below for your preferred method.
+Now that the nio binary is installed, you need a nio project to run it against. A project folder is a way to organize and maintain the blocks, variables, and configurations that you want to use with an instance of nio. The easiest way to create a new nio project is by using the nio CLI. If you prefer not to use the nio CLI, you can create a project by cloning the [Project Template repository](https://github.com/niolabs/project_template) from GitHub. Follow the instructions below for your preferred method.
 
 ### Create a new nio Project Using the nio CLI
 To create a project template using the CLI, enter the following command:

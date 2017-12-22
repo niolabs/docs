@@ -7,7 +7,7 @@ The System Designer is the graphical user interface used to build your nio syste
 
 ## System Designer Navigation
 
-The screen of the System Designer in laid out in three columns with the systems column and instances and services list on the left; breadcrumb, contextual toolbar, and canvas in the middle; and the block library on the right.
+The screen of the System Designer is laid out in three columns with the systems column and instances and services list on the left; breadcrumb, contextual toolbar, and canvas in the middle; and the block library on the right.
 
 ![map of System Designer](/img/system-designer-overview.png)
 

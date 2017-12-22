@@ -1,6 +1,6 @@
 # Blocks API
 
-A configured instance of a nio block type is referred to simply as a block. While block types are classes and have code, blocks are specific configurations of a block type's properties. Information about and interaction with individual block configurations in a running nio instance are available through the `/blocks` API.
+While block types are classes and have code, blocks are specific configurations of a block type's properties. Information about and interaction with individual block configurations in a running nio instance are available through the `/blocks` API.
 
 ## Get API
 
