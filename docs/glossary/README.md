@@ -16,7 +16,7 @@ A running version of the nio back end platform. Each host in a system will likel
 A nio project is stored in a directory on your computer that contains the configuration that defines your nio implementation. Projects can run on their own or can be a part of a larger nio network where many instances communicate with one another.
 
 ## Pubkeeper
-Pubkeeper™ is a communications broker that enables real-time data transfer between a system of disparate devices through standard publish-subscribe patterns. With Pubkeeper, two devices can interact with each other even if they do not share the same communication protocol.
+Pubkeeper is a communications broker that enables real-time data transfer between a system of disparate devices through standard publish-subscribe patterns. With Pubkeeper, two devices can interact with each other even if they do not share the same communication protocol.
 
 ## Service
 A service is a real-time process that runs on an instance. The logic is configured as a workflow of blocks. Services can be started and stopped.
