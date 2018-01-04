@@ -1,6 +1,6 @@
 # Start nio server
 
-The `server` command will start your nio instance. This command allows nio to be run as a foreground process or it can be run as a background process using the `-d` or `--daemon` command.
+The `server` command starts a nio instance. This command allows nio to be run as a foreground process or it can be run as a background process using the `-d` or `--daemon` command.
 
 ```bash
 nio server

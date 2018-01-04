@@ -1,6 +1,6 @@
 # New Project
 
-The `new` command will create a fresh project from the official [project template](https;//github.com/niolabs/project_template) repository. This command will run through the steps of cloning the project, updating all block submodules, and set the initial commit for your project. The new project folder will be made inside the current directory.
+The `new` command creates a fresh project from the official [project template](https;//github.com/niolabs/project_template) repository. This command will run through the steps of cloning the project, updating all block submodules, and set the initial commit for your project. The new project folder will be made inside the current directory.
 
 Example:
 ```bash

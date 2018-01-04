@@ -1,6 +1,6 @@
 # Clone Services
 
-The `clone services` command will create a copy of one service configuration.
+The `clone services` command creates a copy of one service configuration.
 
 Example:
 ```bash

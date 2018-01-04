@@ -1,6 +1,6 @@
 # Config
 
-The `config` or `cfg` command will display the configuration of any block or service within your running nio instance. The configuration is returned from nio in JSON format and displayed.
+The `config` or `cfg` command displays the configuration of any block or service within your running nio instance. The configuration is returned from nio in JSON format and displayed.
 
 Example (blocks):
 ```bash

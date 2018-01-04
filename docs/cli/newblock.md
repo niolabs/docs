@@ -1,6 +1,6 @@
 # New Block
 
-The `newblock` command will create a custom block from the official [block template](https;//github.com/nio-blocks/block_template) repository. This command will run through the steps of cloning the project, rename all of the example files, and set the initial commit for your block. The new block folder will be made inside the current directory.
+The `newblock` command creates a custom block from the official [block template](https;//github.com/nio-blocks/block_template) repository. This command will run through the steps of cloning the project, rename all of the example files, and set the initial commit for your block. The new block folder will be made inside the current directory.
 
 Example:
 ```bash

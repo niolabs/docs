@@ -1,6 +1,6 @@
 # List
 
-The `list` or `ls` command will list all of the blocks or services within a running nio instance.
+The `list` or `ls` command lists all of the blocks or services within a running nio instance.
 
 Example (blocks):
 ```bash

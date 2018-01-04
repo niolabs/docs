@@ -1,6 +1,6 @@
 # Add Block
 
-The `add` command will add new blocks to your nio project. These blocks are pulled from the official [nio-blocks GitHub](https://github.com/nio-blocks) repository. All of the requirements for the block will be installed along with it.
+The `add` command adds new blocks to your nio project. These blocks are pulled from the official [nio-blocks GitHub](https://github.com/nio-blocks) repository. All of the requirements for the block will be installed along with it.
 
 This command must be run from the root level of your project. Multiple blocks can also be specified by listing them with spaces.
 

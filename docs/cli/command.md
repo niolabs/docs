@@ -15,4 +15,4 @@ Passing the `--auto` (`-a`) flag to command tells **nio** to read command argume
 If the command response body is non-empty, its contents are printed to stdout; otherwise, the terminal remains silent.
 
 ------
-The `command` or `co` command will
+The `command` or `co` command 
