@@ -13,3 +13,6 @@ The syntax for adding parameters to commands is as follows:
 Passing the `--auto` (`-a`) flag to command tells **nio** to read command arguments from the command line.
 
 If the command response body is non-empty, its contents are printed to stdout; otherwise, the terminal remains silent.
+
+------
+The `command` or `co` command will

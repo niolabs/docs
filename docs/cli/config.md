@@ -1,43 +1,21 @@
 # Config
 
-This subcommand allows you to configure new and existing block and service instances while the NIO instance is live. Of course, a given service won't load a new configuration until its next startup cycle, but any changes you make here will hang around until then. Note that this is an interactive portion of the utility.
-NB: If you want to automate configuration, it may be easier to make your updates directly via HTTP PUT requests. We may add a feature like this in future.
-.. code-block:: bash
-    $ nio cfg services TestPost
+The `config` or `cfg` command will display the configuration of any block or service within your running nio instance. The configuration is returned from nio in JSON format and displayed.
 
-    log_level (select):
-    Using current value: DEBUG
+Example (blocks):
+```bash
+nio cfg blocks Simulate
+```
+Will return the following JSON:
+```
+{'log_level': 'NOTSET', 'total_signals': -1, 'num_signals': 1, 'attr_name': 'sim', 'type': 'CounterIntervalSimulator', 'name': 'Simulate', 'version': '1.3.0', 'interval': {'days': 0, 'seconds': 1, 'microseconds': 0}, 'attr_value': {'end': 1, 'step': 1, 'start': 0}}
+```
 
-    auto_start (bool): T
-
-If the block or service you're configuring holds an Object Property, each property held by that object is configured in turn:
-.. code-block:: bash
-    $ nio cfg blocks TwitterPoster
-
-    creds (object):
-    +->oauth_token (str):
-    Using current value: XXXXXXXX
-    +->consumer_key (str):
-    Using current value: XXXXXXXX
-    +->app_secret (str):
-    Using current value: XXXXXXXX
-    +->oauth_token_secret (str):
-    Using current value: XXXXXXXX
-    status (str): "It's gonna rain"
-    log_level (select):
-    Using current value: DEBUG
-
-`nio` interprets attempts to configure nonexistent resources as creation events. That is, the following sequence results in the creation of a block called "CriticalLogger", which can subsequently be added to any service execution in the system.
-.. code-block:: bash
-    $ nio cfg blocks AnotherLogger
-    NIOClient: NIO returned status 404
-    type (str): LoggerBlock
-    log_level (select): CRITICAL
-    +----------------------+-------------+
-    | Name: CriticalLogger |             |
-    +----------------------+-------------+
-    | log_level            |   CRITICAL  |
-    | type                 | LoggerBlock |
-    +----------------------+-------------+
-
-Currently, NIO ships with only one service type (`Service`), but developers are free to add both new blocks and services as they wish.
+Example (services):
+```bash
+nio cfg services simulate-and-log
+```
+Will return the following JSON:
+```
+{'sys_metadata': '{"Simulate":{"locX":443,"locY":238},"Log":{"locX":398,"locY":477}}', 'mappings': [], 'auto_start': True, 'log_level': 'NOTSET', 'type': 'Service', 'version': '0.1.0', 'name': 'simulate-and-log', 'execution': [{'receivers': {'__default_terminal_value': [{'input': '__default_terminal_value', 'name': 'Log'}]}, 'name': 'Simulate'}, {'receivers': {}, 'name': 'Log'}], 'status': 'stopped'}
+```

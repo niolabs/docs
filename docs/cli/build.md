@@ -1,7 +1,8 @@
 # Build
 
 This final subcommand allows you to build NIO services from the command line by creating links between blocks that are loaded into the sytem. First, let's use `ls` to check out the execution of the `TestPost` service and view the list of blocks available in the system.
-.. code-block:: bash
+
+```
     $ nio ls services TestPost --exec
     +--------------+--------------+
     | Output Block |      0       |
@@ -18,18 +19,18 @@ This final subcommand allows you to build NIO services from the command line by 
     +----------------+--------------+-----------+
     | count          |   Counter    |   ERROR   |
     | met            |   Metrics    |   ERROR   |
-    | SignalLogger   | LoggerBlock  |   DEBUG   |
-    | PostToMe       |  PostSignal  |   DEBUG   |
-    | Deb            |  Debouncer   |   ERROR   |
+    | SignalLogger   | Loggger      |   DEBUG   |
+    | PostToMe       |  WebHandler  |   DEBUG   |
+    | Deb            |  Debounce    |   ERROR   |
     | FacebookPoster | FacebookPost |   ERROR   |
     | CountMe        |   Counter    |   ERROR   |
     | fil            |    Filter    |   ERROR   |
     | TwitterPoster  | TwitterPost  |   DEBUG   |
     +----------------+--------------+-----------+
-
+```
 Finally, we can use `build` to connect the outputs of `CountMe` and `PostToMe` to the input of another block!
-.. code-block:: bash
 
+```
     $ nio build TestPost CountMe TwitterPoster
     +--------------+--------------+---------------+
     | Output Block |      0       |       1       |
@@ -39,10 +40,11 @@ Finally, we can use `build` to connect the outputs of `CountMe` and `PostToMe` t
     |   PostToMe   |   CountMe    | TwitterPoster |
     |     Deb      | SignalLogger |               |
     +--------------+--------------+---------------+
-
+```
 The build subcommand behaves somewhat similarly to the UNIX `cp` command in that it takes a series of *n* block instances of which the firs *n-1* represent "source" blocks, while the *n* th block is the single sink.
 Additionally, if you need to add a block `fil` to a service without connecting it to any other blocks (e.g. a block which simply serves an HTTP endpoint):
-.. code-block:: bash
+
+```
     $ nio build TestPost fil
     +--------------+--------------+---------------+
     | Output Block |      0       |       1       |
@@ -53,7 +55,10 @@ Additionally, if you need to add a block `fil` to a service without connecting i
     |     Deb      | SignalLogger | TwitterPoster |
     |     fil      |              |               |
     +--------------+--------------+---------------+
-
+```
 In this case, `fil` has no receivers, and any that you add will appear starting from column 0 of the execution table.
 Finally, if you'd like to remove blocks/block connections instead of create them, just append the `-rm` option to any of the above `build` invocations.
-Voila! You're now up and running with the NIO command line interface. Happy hacking!
+
+
+--------
+The `build` command (Doesn't really do anything as of now)
