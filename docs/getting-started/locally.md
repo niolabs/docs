@@ -1,6 +1,6 @@
 # Running nio Locally
 
-The cloud is an easy way to get nio up and running, but it doesn't fully capture the distributed power of the nio Platform. To see the power of nio as a distributed system, you should install and run nio on a local or edge node. In this guide, you will create a local instance that uses a cloud-based [Pubkeeper](/Pubkeeper/) server to handle communications.
+The cloud is an easy way to get nio up and running, but it doesn't fully capture the distributed power of the nio Platform. To see the power of nio as a distributed system, you should install and run nio on a local or edge node. In this guide, you will create a local instance that uses a cloud-based [Pubkeeper](/pubkeeper/) server to handle communications.
 
 Running the nio Platform requires Python version 3.4 or greater.
 
