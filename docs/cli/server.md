@@ -10,4 +10,4 @@ When run from the root of the project directory will start nio. Similar to runni
 ```bash
 nio server -d
 ```
-Will do the same thing but run nio as a background process.
+Does the same thing but runs nio as a background process.

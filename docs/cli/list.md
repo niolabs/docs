@@ -6,7 +6,7 @@ Example (blocks):
 ```bash
 nio list blocks
 ```
-Will return a list of configured blocks in your running instance
+returns a list of configured blocks in your running instance
 ```
 Simulate
 Log
@@ -16,7 +16,7 @@ Example (services):
 ```bash
 nio list services
 ```
-Will return a list of services in your running instance
+returns a list of services in your running instance
 ```
 simulate-and-log
 ```

@@ -6,4 +6,4 @@ Example:
 ```bash
 nio new first_project
 ```
-Will create a new folder in your current directory named `first_project` containing everything needed for your nio project.
+Creates a new folder in your current directory named `first_project` containing everything needed for your nio project.
