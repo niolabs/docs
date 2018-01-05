@@ -82,7 +82,7 @@ With your system selected, click **edit** in the contextual toolbar to open the 
 
 With your project installed and Pubkeeper communication configured, you are ready to run your nio binary. In your terminal, from the root of your project directory, enter the following command:
 ```
-nio_run
+niod
 ```
 > If that command is not available, make sure your Python binary installation directory is on your PATH.
 

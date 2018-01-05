@@ -47,17 +47,17 @@ In general, environment variables can be sourced from two places.
 
    ```bash
    $ export DB_HOST=localhost
-   $ nio_run
+   $ niod
    ```
 
    ```bash
    $ docker run -e DB_HOST=localhost nio_binary_image
    ```
 
-2. The `.env` files in your project directory. Assuming you have a `prod.env` file in your project directory, you can source from that using the `-e` flag of `nio_run`.
+2. The `.env` files in your project directory. Assuming you have a `prod.env` file in your project directory, you can source from that using the `-e` flag of `niod`.
 
    ```bash
-   $ nio_run -e prod.env
+   $ niod -e prod.env
    ```
 
 In the event that an environment variable is set both at the system level and the local `.env` file level, the system environment variable will take precedence.
