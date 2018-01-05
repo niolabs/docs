@@ -4,8 +4,8 @@ To run the nio Platform locally, you need a version of a nio [binary](/binaries)
 
 >**[info] Requirements**
 >
->* Download Python 3.4 or greater from [https://www.python.org/downloads/](https://www.python.org/downloads/).
->* Obtain the nio binary Python wheel file (`.whl`) with your license agreement.
+>* Python 3.4 or greater. This can be downloaded from [https://www.python.org/downloads/](https://www.python.org/downloads/).
+>* The nio binary Python wheel file (`.whl`). You will need a license agreement.
 
 ## Download nio
 
