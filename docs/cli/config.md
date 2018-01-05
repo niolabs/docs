@@ -2,6 +2,8 @@
 
 The `config` or `cfg` command displays the configuration of any block or service within your running nio instance. The configuration is returned from nio in JSON format and displayed.
 
+When run without any parameters or with the optional `project` parameter, you will be promoted to enter configuration for pubkeeper. These values are optional. Pressing enter without typing in configuration values will not change the corresponding fields in `nio.env`.
+
 This command must be run from the root level of your project directory.
 
 Example (blocks):
@@ -21,3 +23,9 @@ returns the following JSON:
 ```
 {'sys_metadata': '{"Simulate":{"locX":443,"locY":238},"Log":{"locX":398,"locY":477}}', 'mappings': [], 'auto_start': True, 'log_level': 'NOTSET', 'type': 'Service', 'version': '0.1.0', 'name': 'simulate-and-log', 'execution': [{'receivers': {'__default_terminal_value': [{'input': '__default_terminal_value', 'name': 'Log'}]}, 'name': 'Simulate'}, {'receivers': {}, 'name': 'Log'}], 'status': 'stopped'}
 ```
+
+Example (project):
+```bash
+nio cfg project
+```
+Will prompt you for `PK Host` and `PK Token` values to be put in the `nio.env` file of your project.
