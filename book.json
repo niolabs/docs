@@ -22,7 +22,8 @@
     },
     "theme-nio": {
       "active-location": "docs",
-      "ga-code": "UA-51072171-18"
+      "ga-code": "UA-51072171-18",
+      "gtm-code": "GTM-P92LHPR"
     }
   }
 }
