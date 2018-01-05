@@ -43,7 +43,6 @@
 * [CLI](cli/README.md)
   * [new](cli/new.md)
   * [add](cli/add.md)
-  * [server](cli/server.md)
   * [newblock](cli/newblock.md)
   * [list](cli/list.md)
   * [config](cli/config.md)
