@@ -6,11 +6,7 @@ This tutorial introduces you to the System Designer and the fundamental concepts
 [services](/services/), and
 [blocks](/blocks/).
 
-## Before You Begin
-
-The [System Designer](https://docs.n.io/system-designer/) is the graphical user interface used to build your nio system. This video provides you with a quick tour of the System Designer including the navigation, work areas, and toolbars.
-
-{% video %}https://www.youtube.com/watch?v=GFs5EK6zao8{% endvideo %}
+{% video %}https://www.youtube.com/watch?v=8XFcEts6gco{% endvideo %}
 
 ## Create a System
 
