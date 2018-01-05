@@ -5,7 +5,12 @@
   <!-- * [nio Platform](getting-started/portal.md) -->
   * [Workshops](getting-started/workshops.md)
   * [Cloud Quickstart](getting-started/in-the-cloud.md)
-  * [Local Quickstart](getting-started/locally.md)
+  * [Local Quickstart](getting-started/locally/locally.md)
+    * [Install Binary](getting-started/locally/binary.md)
+    * [Create a Project](getting-started/locally/project.md)
+    * [Run nio](getting-started/locally/run-nio.md)
+    * [Add Instance](getting-started/locally/add-instance.md)
+    * [Manual Installation](getting-started/locally/manual.md)
 * [System Designer](system-designer/README.md)
   * [Functionality](system-designer/designer-tasks.md)
   * [Sharing](system-designer/sharing.md)
