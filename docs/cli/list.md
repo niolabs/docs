@@ -2,6 +2,8 @@
 
 The `list` or `ls` command lists all of the blocks or services within a running nio instance.
 
+This command must be run from the root level of your project directory.
+
 Example (blocks):
 ```bash
 nio list blocks

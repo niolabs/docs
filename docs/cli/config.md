@@ -2,6 +2,8 @@
 
 The `config` or `cfg` command displays the configuration of any block or service within your running nio instance. The configuration is returned from nio in JSON format and displayed.
 
+This command must be run from the root level of your project directory.
+
 Example (blocks):
 ```bash
 nio cfg blocks Simulate

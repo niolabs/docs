@@ -2,6 +2,8 @@
 
 The `clone services` command creates a copy of one service configuration. This is useful when you would like to replicate the functionality of a service. Simply clone the service and make any desired changes without needing to recreate the blocks and connections.
 
+This command must be run from the root level of your project directory.
+
 Example:
 ```bash
 nio clone service simulate-and-log simulate-and-log2
