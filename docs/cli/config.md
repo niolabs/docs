@@ -2,7 +2,7 @@
 
 The `config` or `cfg` command displays the configuration of any block or service within your running nio instance. The configuration is returned from nio in JSON format and displayed.
 
-When run without any parameters or with the optional `project` parameter, you will be promoted to enter configuration for pubkeeper. These values are optional. Pressing enter without typing in configuration values will not change the corresponding fields in `nio.env`.
+When run without any parameters or with the optional `project` parameter, you will be prompted to enter configuration for Pubkeeper. These values are optional. Pressing enter without typing in configuration values will not change the corresponding fields in `nio.env`.
 
 This command must be run from the root level of your project directory.
 

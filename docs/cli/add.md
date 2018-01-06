@@ -1,6 +1,6 @@
 # Add Block
 
-The `add` command adds new blocks to your nio project. These blocks are pulled from the official [nio-blocks GitHub](https://github.com/nio-blocks) repository. All of the requirements for the block will be installed along with it.
+The `add` command adds new blocks to your nio project. The block code is pulled from the official [nio-blocks GitHub](https://github.com/nio-blocks) repository. The command installs all of the requirements for the block along with the block.
 
 This command must be run from the root level of your project directory.
 
@@ -10,9 +10,9 @@ Example:
 ```bash
 nio add web_handler
 ```
-Will add a the web_handler block submodule under the `blocks/` directory of the project.
+adds the _web_handler_ block submodule under the `blocks/` directory of the project.
 
 ```bash
 nio add queue debounce
 ```
-Will add both the queue and the debounce block submodules under the `blocks/` directory.
+adds both the _queue_ and the _debounce_ block submodules under the `blocks/` directory.
