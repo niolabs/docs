@@ -161,7 +161,7 @@ Start your service to see the simulated signals log to the logger panel.
 
   %/accordion%
 
-Congratulations! You just learned the basics of using the nio with the **System Designer**.
+Congratulations! You just learned the basics of using nio with the **System Designer**.
 
 You created a signal in one block and sent it to another block to be logged and visualized.
 
