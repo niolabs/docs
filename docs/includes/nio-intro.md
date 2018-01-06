@@ -1,4 +1,4 @@
-Hello to a new world of connected intelligence using nio!
+Hello to a new world of connected intelligence using the nio Platform!
 
 This tutorial introduces you to the System Designer and the fundamental concepts of building a nio [project](/instances/projects.md) including how to create
 [systems](/systems/),
@@ -126,12 +126,12 @@ The basic `simulate-and-log` service needs two blocks:
 
   %/accordion%
 
-To learn about all the blocks nio has to offer, visit [https://blocks.n.io](https://blocks.n.io).
+To learn about all of the nio Blocks, visit [https://blocks.n.io](https://blocks.n.io).
 
 Way to go! You are now familiar with how to add blocks to your nio service! The first block simulates data and the second block logs that data to the logger panel.
 
 ## Connect the Blocks
-To do their work, the two blocks on your canvas need to communicate. In nio, signals are is passed between blocks via their terminals. A terminal is shown as a blue circle on the top or bottom of a block. Signals are emitted from an output terminal on the bottom of a block and received by an input terminal on top of a block. The lines connecting the terminals configure the route the signal will take. Once a signal is emitted from one block, the next block(s) in the route will receive it.
+To do their work, the two blocks on your canvas need to communicate. In nio, signals are passed between blocks via their terminals. A terminal is shown as a blue circle on the top or bottom of a block. Signals are emitted from an output terminal on the bottom of a block and received by an input terminal on top of a block. The lines connecting the terminals configure the route the signal will take. Once a signal is emitted from one block, the next block(s) in the route will receive it.
 
 1. Click and drag the output terminal of the **Simulate** block and release the connector on the input terminal of the **Log**  block.
 
@@ -161,7 +161,7 @@ Start your service to see the simulated signals log to the logger panel.
 
   %/accordion%
 
-Congratulations! You just learned the basics of using the nio Platform with the **System Designer**.
+Congratulations! You just learned the basics of using the nio with the **System Designer**.
 
 You created a signal in one block and sent it to another block to be logged and visualized.
 
@@ -171,4 +171,4 @@ Similarly, the logger screen is just one easy way to visualize the output of a s
 
 If the output doesn’t need to be visualized, the signals can be sent to other services by way of a publisher block, or to a database with a database block.
 
-You can browse all of the available blocks at http://blocks.n.io. Feel free to make more services by connecting blocks to perform various tasks on your own.
+You can browse all of the available nio Blocks at http://blocks.n.io. Feel free to make more services by connecting blocks to perform various tasks on your own.
