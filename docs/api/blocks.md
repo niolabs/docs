@@ -4,7 +4,7 @@ While block types are classes and have code, blocks are specific configurations 
 
 ## Get API
 
-The Get API returns a JSON body with information about a block based on its name. The following example gets the information for a configured _Logger_ block with the name `Log`
+The Get API returns a JSON body with information about a block based on its name. The following example gets the information for a configured _Logger_ block with the name **Log**
 
     curl -XGET 'http://localhost:8181/blocks/Log'
 

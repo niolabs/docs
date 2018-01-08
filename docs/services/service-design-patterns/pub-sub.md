@@ -1,14 +1,14 @@
 # Publishing and Subscribing to Data
 
-An easy way to communicate between services and instances in nio is by using a publisher/subscriber pattern.
+An easy way to communicate between nio services and instances in the nio Platform is by using a publisher/subscriber pattern.
 
 The following communication blocks are used for publishing and subscribing to data signals:
-* [Publisher](https://blocks.n.io/Publisher)
-* [Subscriber](https://blocks.n.io/Subscriber)
+* [_Publisher_](https://blocks.n.io/Publisher)
+* [_Subscriber_](https://blocks.n.io/Subscriber)
 
 ## Topic Tree
 
-When using the `Publisher` and `Subscriber` blocks, you connect systems and instances by defining a topic you wish to publish to or subscribe to. The information structure of an entire nio system can be viewed as a hierarchical topic tree.
+When using the _Publisher_ and _Subscriber_ blocks, you connect systems and instances by defining a topic you wish to publish to or subscribe to. The information structure of an entire nio system can be viewed as a hierarchical topic tree.
 
 ### Publishers
 
@@ -68,4 +68,4 @@ Perhaps the most impactful reason to use the nio pub/sub system is because of th
 
 ## Hints in the System Designer
 
-Another benefit of using the nio pub/sub mechanism is that the System Designer understands the topic tree as well. If your service has a `Publisher` or `Subscriber` block with a topic, the designer can show you services that either subscribe to or publish to that topic, respectively. It also permits the System Designer to draw the graph relationship between services and instances that share topics.
+Another benefit of using the nio pub/sub mechanism is that the nio System Designer understands the topic tree as well. If your service has a _Publisher_ or _Subscriber_ block with a topic, the designer can show you services that either subscribe to or publish to that topic, respectively. It also permits the System Designer to draw the graph relationship between services and instances that share topics.

@@ -10,9 +10,9 @@ Example:
 ```bash
 nio add web_handler
 ```
-adds the _web_handler_ block submodule under the `blocks/` directory of the project.
+adds the _WebHandler_ block submodule under the `blocks/` directory of the project.
 
 ```bash
 nio add queue debounce
 ```
-adds both the _queue_ and the _debounce_ block submodules under the `blocks/` directory.
+adds both the _Queue_ and the _Debounce_ block submodules under the `blocks/` directory.

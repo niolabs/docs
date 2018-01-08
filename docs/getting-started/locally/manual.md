@@ -23,7 +23,7 @@ You can also add a block to your project using Git. From the `blocks/` directory
 git submodule add https://github.com/nio-blocks/logger.git blocks/logger
 ```
 
-Learn more about how to configure blocks and connect them to perform various services in the tutorials at https://workshops.n.io/.
+Learn more about how to configure blocks and connect them to perform various nio services in the tutorials at https://workshops.n.io/.
 
 ## Upgrade the nio binary and CLI
 

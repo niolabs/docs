@@ -33,7 +33,7 @@ The following methods from the base block are designed to be overridden:
 
 ## Current nio Blocks
 
-An additional resource for developing your custom block is the [Block Library](https://blocks.n.io). Search the nio Block Library for a block that has similar functionality to the block you need. Open the link to its code and explore its properties, methods, commands, inputs, outputs, mixins, and any modules imported from the [framework](framework.md).
+An additional resource for developing your custom block is the [nio Block Library](https://blocks.n.io). Search the nio Block Library for a block that has similar functionality to the block you need. Open the link to its code and explore its properties, methods, commands, inputs, outputs, mixins, and any modules imported from the [framework](framework.md).
 
 ## Properties
 
@@ -41,7 +41,7 @@ Block properties are declared as class attributes and have a [property type](#pr
 ```python
 speed = IntProperty(title='Speed', default=30)
 ```
-And in the _File Reader_ block type a `file` property is declared with a `FileProperty` type.
+And in the _FileReader_ block type a `file` property is declared with a `FileProperty` type.
 ```python
 file = FileProperty(title='File', default='/tmp/file.txt')
 ```
@@ -49,7 +49,7 @@ To obtain the value of a block property, call the property with a function invoc
 ```python
  self.setSpeed(self.speed())
  ```
-If you want to use the `$` syntax to refer to your signal, pass in `signal` when you call the property. The _File Reader_ block accesses the value of the `file` property with
+If you want to use the `$` syntax to refer to your signal, pass in `signal` when you call the property. The _FileReader_ block accesses the value of the `file` property with
 ```python
  file = self.file(signal).value
  ```

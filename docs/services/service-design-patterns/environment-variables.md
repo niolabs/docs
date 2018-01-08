@@ -1,6 +1,6 @@
 # Environment Variables
 
-nio allows you to define and use variables when configuring your instance, services, or blocks. These variables are called "environment variables" and are specified using the square bracket syntax: `[[ ENV_VAR_NAME ]]`. There are several different use cases for environment variables which are detailed below.
+The nio Platform allows you to define and use variables when configuring your instance, services, or blocks. These variables are called "environment variables" and are specified using the square bracket syntax: <br>`[[ ENV_VAR_NAME ]]`. There are several different use cases for environment variables which are detailed below.
 
 ## Access Tokens and Other Secrets
 
@@ -9,7 +9,7 @@ Often a block will need some sort of access token or password in its configurati
 MY_SECRET: p@$$w0rd
 ```
 
-Then, in your block config you can use that secret token by using the environment variable syntax: `[[ MY_SECRET ]]`. The block will receive the proper value when the service is started, but the block's configuration will always contain the unreplaced environment variable.
+Then, in your block config you can use that secret token by using the environment variable syntax: <br>`[[ MY_SECRET ]]`. The block will receive the proper value when the service is started, but the block's configuration will always contain the unreplaced environment variable.
 
 ## Different Environments
 

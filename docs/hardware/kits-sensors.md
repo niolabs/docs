@@ -1,6 +1,6 @@
 # Kits and Sensors
 
-For lightweight edge nodes to use with nio, try some of the following: 
+For lightweight edge nodes to use with the nio Platform, try some of the following: 
 
 * [Raspberry Pi 3 Starter Kit](https://www.sparkfun.com/products/13826)
 * [Raspberry Pi Sense HAT](https://pimylifeup.com/raspberry-pi-sense-hat/)

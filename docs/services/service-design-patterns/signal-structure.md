@@ -1,6 +1,6 @@
 # Signal Structure
 
-Signals are the pieces of information that are passed from block to block throughout your system. They are the fundamental message types that nio understands. Structurally, signals are objects made up of key-value pairs. The following signal has two key-value pairs:
+Signals are the pieces of information that are passed from block to block throughout your nio system. They are the fundamental message types that the nio Platform understands. Structurally, signals are objects made up of key-value pairs. The following signal has two key-value pairs:
 ```
 {
   "name": "John Doe",

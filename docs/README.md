@@ -1,6 +1,6 @@
 # nio Documentation
 
-Welcome to nio! This documentation will help you design and build distributed systems with nio.
+Welcome to nio! This documentation will help you design and build distributed systems with the nio Platform.
 
 nio is a platform for users like you to build real-world, innovative, and impactful solutions.
 

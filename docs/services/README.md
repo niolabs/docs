@@ -1,6 +1,6 @@
 # Services
 
-Services are user-configurable signal paths that run on [nio instances](/instances/README.md). They dictate how data is created, moved, transformed, and used. Services consist of multiple connected blocks. The routing of input/output signals is defined within the System Designer.
+nio services are user-configurable signal paths that run on [nio instances](/instances/README.md). They dictate how data is created, moved, transformed, and used. Services consist of multiple connected blocks. The routing of incoming/outgoing signals is defined within the nio System Designer.
 
 ![services](/img/intro-service.png)
 

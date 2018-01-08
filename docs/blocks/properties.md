@@ -2,7 +2,7 @@
 
 Block properties are the configuration fields of a block.
 
-In the System Designer, when you double-click a block, the configuration panel displays the block's properties.
+In the nio System Designer, when you double-click a block, the configuration panel displays the block's properties.
 
 As an example, the configuration panel for a _Modifier_ block is shown below. It displays four properties of the _Modifier_ block:
 - **Exclude existing fields**
@@ -14,7 +14,7 @@ As an example, the configuration panel for a _Modifier_ block is shown below. It
 
 The input fields are block properties that can be edited, updated, and saved to create a configured block.
 
-The property configuration of the block makes it unique. A **block type name**—_Filter_, _Modifier_, _Counter Interval Simulator_—defines the block type and the configurable fields. (In the System Designer, this name is abbreviated in a vertical bar on the left side of the block.)
+The property configuration of the block makes it unique. A **block type name**—_Filter_, _Modifier_, _CounterIntervalSimulator_—defines the block type and the configurable fields. (In the System Designer, this name is abbreviated in a vertical bar on the left side of the block.)
 
 The unique **block name**, which you define when dragging a new instance of the block type onto the canvas of the System Designer, saves a specific configuration of the block and defines how the block acts on signals. All blocks with the same **block name** share a configuration. For example, if you change the configuration of your "isWatering" _Filter_ block, the configuration of every "isWatering" block will be be updated to match. The unique **block name** is the link to a block's property configuration. For this reason, it is good to give your blocks descriptive names that reflect their configured properties.
 
@@ -46,7 +46,7 @@ In the above example
 - **Fields** is a "ListProperty" and is represented by a list of items that can be defined by the user with `+ Fields` to add items and `x` to remove items. In this example, there are three key-value pairs defined in the list. Each item in a list can also have a type, in this case, a dictionary defined by a "PropertyHolder" property made up of two properties represented by the **Attribute Name** and **Attribute Value** input areas.
 - **Version** is a special "VersionProperty" that takes three integers separated by periods.
 
-This _Modifier_ block is named `ShowAlertLevel` and is configured to enrich the signal with three new fields, one each for danger, caution, and success. The structure of the fields added to the signal would look similar to the following. (For illustration purposes, the expressions in curly braces have not been evaluated.)
+This _Modifier_ block is named **ShowAlertLevel** and is configured to enrich the signal with three new fields, one each for danger, caution, and success. The structure of the fields added to the signal would look similar to the following. (For illustration purposes, the expressions in curly braces have not been evaluated.)
 
 ```python
 [
