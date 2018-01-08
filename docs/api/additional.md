@@ -1,6 +1,6 @@
 # Additional APIs
 
-nio has  additional APIs that you may find useful as you explore what nio has to offer.
+The nio Platform has additional APIs that you may find useful as you explore what nio has to offer.
 
 ## Configuration Refresh API
 

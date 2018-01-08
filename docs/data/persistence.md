@@ -1,4 +1,4 @@
-# Persistence with nio
+# Persistence with the nio Platform
 
 Certain block types, such as [_StateChange_](https://blocks.n.io/StateChange), [_Buffer_](https://blocks.n.io/Buffer), and [_Sleep_](https://blocks.n.io/Sleep), give the user an option to "Load from Persistence."
 

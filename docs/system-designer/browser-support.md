@@ -1,6 +1,6 @@
 # Browser Support
 
-To have the best experience with the System Designer on your computer, use a supported, up-to-date browser. You will have access to the latest features along with improved security and performance.
+To have the best experience with the nio System Designer on your computer, use a supported, up-to-date browser. You will have access to the latest features along with improved security and performance.
 
 ## Level of Browser Support
 

@@ -1,6 +1,6 @@
 # Blocks Types API
 
-nio block types are the functional pieces of code that generate or transform signals. Information about and interaction with the block types in a running nio instance are available through the `/blocks_types` API.
+nio Block types are the functional pieces of code that generate or transform signals. Information about and interaction with the block types in a running nio instance are available through the `/blocks_types` API.
 
 ## Get API
 
@@ -145,7 +145,7 @@ In addition to getting the details of one block type, specified by name, you can
 
 ## Add API
 
-When nio starts, it discovers and adds all the block types in the project. If you add a new block type to a running instance of nio, it will not be discovered until nio restarts. However, you can add the new block type to a running instance with the Add API. After the block code is added to the project directory, send a PUT request to the new block type name to load the new block type into the running nio instance
+When the nio Platform starts, it discovers and adds all the block types in the project. If you add a new block type to a running instance of nio, it will not be discovered until nio restarts. However, you can add the new block type to a running instance with the Add API. After the block code is added to the project directory, send a PUT request to the new block type name to load the new block type into the running nio instance
 
     curl -XPUT 'http://localhost:8181/blocks_types/<NewBlockTypeName>'
 

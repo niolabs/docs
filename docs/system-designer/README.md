@@ -1,4 +1,4 @@
-# nio System Designer Introduction
+# System Designer Introduction
 
 The nio System Designer is the graphical user interface used to build your nio system. This overview provides you with a quick tour of the user interface including the navigation, work areas, and toolbars.
 

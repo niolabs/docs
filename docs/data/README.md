@@ -1,6 +1,6 @@
 # Data Storage with nio
 
-nio acts on streams of signals in real time and data storage is optional. But often, data storage is desired.
+The nio Platform acts on streams of signals in real time and data storage is optional. But often, data storage is desired.
 
 When designing your system, consider building services/logic close to the signal producer to pare down data storage, network transmission, and latency. [Signal flow blocks](https://blocks.n.io/?category=Signal%20Flow) like _StateChange_ and _Filter_ can be used to save (and actuate) only when specified conditions are met. A simple example service is shown below:
 

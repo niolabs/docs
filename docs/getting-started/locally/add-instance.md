@@ -1,8 +1,8 @@
 # Add Instance
 
-Once you have a local instance running, you can edit it using the System Designer. The log messages indicate that your nio instance is available at `http://localhost:8181`. Based on the configured **access mode** in the instance, you need Basic Authentication to communicate with the instance. To connect to your local instance:
+Once you have a local instance running, you can edit it using the nio System Designer. The log messages indicate that your nio instance is available at `http://localhost:8181`. Based on the configured **access mode** in the instance, you need Basic Authentication to communicate with the instance. To connect to your local instance:
 
-1. Select the name of your system, either in the left navigation panel or the breadcrumb above the contextual toolbar.
+1. Select the name of your nio system, either in the left navigation panel or the breadcrumb above the contextual toolbar.
 1. Click **create local instance**.
 1. Complete the **create local instance** window:
   * In the **instance name** box, enter your instance name.
@@ -17,4 +17,4 @@ You may see an issue regarding HTTPS and HTTP instances. Since you launched your
 
 Once your instance is loaded and available, you can add services and blocks in the same manner as the [cloud instance](/getting-started/in-the-cloud#create-a-service).
 
-Available blocks can be explored in the [block library](blocks.n.io) where you will find a summary of the block's purpose, a list of its properties, commands, inputs, and outputs, and a link to the block code repository.
+Available nio Blocks can be explored in the nio [Block Library](blocks.n.io) where you will find a summary of the block's purpose, a list of its properties, commands, inputs, and outputs, and a link to the block code repository.

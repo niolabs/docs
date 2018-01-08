@@ -1,6 +1,6 @@
 # nio Expressions
 
-nio leverages Python syntax inside blocks to operate on signals. To perform block operations using Python, simply place your desired expression between two sets of curly brackets `{{ }}` inside a block configuration field. In addition to Python, block configurations can also accept environment variables by using two sets of double brackets `[[ ]]`, as well as string values without any brackets. For more information on environment variables, please see our documentation here: [https://docs.n.io/service-design-patterns/environment-variables.html](https://docs.n.io/service-design-patterns/environment-variables.html)
+The nio Platform leverages Python syntax inside blocks to operate on signals. To perform block operations using Python, simply place your desired expression between two sets of curly brackets `{{ }}` inside a block configuration field. In addition to Python, block configurations can also accept environment variables by using two sets of double brackets `[[ ]]`, as well as string values without any brackets. For more information on environment variables, please see our documentation here: [https://docs.n.io/service-design-patterns/environment-variables.html](https://docs.n.io/service-design-patterns/environment-variables.html)
 
 ```
 {{ <code goes here> }}
@@ -24,7 +24,7 @@ You can access the raw signal itself, rather than just the attributes, with a lo
 
 ### Rename a Signal
 
-With an incoming signal of `{“sim”: 1}`, we can rename it inside a modifier block:
+With an incoming signal of `{“sim”: 1}`, we can rename it inside a _Modifier_ block:
 
 ![rename a signal](/img/expressions/rename.png)
 
@@ -35,11 +35,11 @@ To remove `{“sim”: 1}` from the output, check the **Exclude existing fields?
 
 ### Math Operations
 
-With an incoming signal of `{“sim”: 1}` we can perform math inside a modifier block:
+With an incoming signal of `{“sim”: 1}` we can perform math inside a _Modifier_ block:
 
 ![math](/img/expressions/plus-one.png)
 
-This operation creates a new attribute `plus_one` that will be equal to `sim + 1`.
+This operation creates a new attribute **plus_one** that will be equal to `sim + 1`.
 The new output signal will be `{"plus_one": 2, "sim": 1}`.
 
 ### Create Attributes

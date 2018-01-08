@@ -1,6 +1,6 @@
 # Core APIs
 
-nio core has a few crucial API endpoints: `/nio` and `/shutdown`.  
+The nio core has a few crucial API endpoints: `/nio` and `/shutdown`.  
 
 ## nio
 

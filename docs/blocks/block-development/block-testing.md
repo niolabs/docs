@@ -1,6 +1,6 @@
 # Testing Your Block
 
-nio blocks are not meant to be run as stand-alone Python modules, so testing can be a challenging process. nio provides a couple of tools and offers best practices to make your testing easier.
+nio Blocks are not meant to be run as stand-alone Python modules, so testing can be a challenging process. The nio Platform provides a couple of tools and offers best practices to make your testing easier.
 
 ## NIOBlockTestCase
 
@@ -81,7 +81,7 @@ self.configure_block(blk, {'p1': 23})
 e.wait(2)
 ```
 
-Using the `EventBlock`, your test will wait until  `YourBlock.configure` returns control to the method on the child class. Your test will never proceed until `EventBlock.e` is set.
+Using the _EventBlock_, your test will wait until  `YourBlock.configure` returns control to the method on the child class. Your test will never proceed until `EventBlock.e` is set.
 
 ## Mocking
 

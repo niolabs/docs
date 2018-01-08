@@ -1,12 +1,12 @@
 # Run nio
 
-You will want to use the System Designer to see your local instance running.
+You will want to use the nio System Designer to see your local instance running.
 
 Open the **System Designer** in a browser.
 
   https://designer.n.io/
 
-If you don't already have a system you want to use for this project in the designer, click the **`+`** button to create one.
+If you don't already have a nio system you want to use for this project in the System Designer, click the **`+`** button to create one.
 
 When you complete the **create new system** window and click **accept**, a new Pubkeeper server will be created in the cloud to handle the communications in your system.
 
@@ -49,4 +49,4 @@ Log messages should display, similar to the following output. There should be no
     starting to: started
   ```
 
-If you see those logs, nio is up and running. Congratulations!
+If you see those logs, the nio Platform is up and running. Congratulations!

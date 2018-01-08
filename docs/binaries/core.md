@@ -1,6 +1,6 @@
 # nio Core
 
-The nio Core is the engine that runs in every nio binary. It is responsible for orchestrating all of the different pieces that constitute the nio instance. In most cases, the core will run in its own main process and will spawn services in their own individual system processes. This allows service builders to make use of multiprocessing by splitting their logic across different services. The core process will take care of setting up the appropriate IPC pipes and will monitor the lifecycle of the service process.
+The nio core is the engine that runs in every nio binary. It is responsible for orchestrating all of the different pieces that constitute the nio instance. In most cases, the core will run in its own main process and will spawn services in their own individual system processes. This allows service builders to make use of multiprocessing by splitting their logic across different services. The core process will take care of setting up the appropriate IPC pipes and will monitor the lifecycle of the service process.
 
 ## Block and Service Managers
 

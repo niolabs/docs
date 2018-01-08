@@ -1,6 +1,6 @@
 # Self-Managed and nio-Managed Instances
 
-The System Designer works with both nio-managed (cloud) and self-managed (local) nio instances.
+The nio System Designer works with both nio-managed (cloud) and self-managed (local) nio instances.
 
 ## nio Managed
 nio-managed cloud instances are a quick, headache-free way for users to spin up a nio instance and quickly start building. They run in containers with up to 512MB of RAM hosted on the Google Cloud Platform.
