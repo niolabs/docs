@@ -5,7 +5,6 @@ The cloud is an easy way to get the nio Platform up and running, but to see the 
 >**[info] Requirements**
 >
 >* **Python3**: https://www.python.org/downloads (you need Python 3.4+)
->* **Git**: https://git-scm.com/downloads (nio uses git to manage projects)
 >* **nio**: https://app.n.io/binaries/download (you'll need to agree to the license)
 >  * Windows users should download the Windows Installer. Double-click and follow the prompts.
 
@@ -34,6 +33,10 @@ mkdir -p nio/projects && cd nio/projects
 Use the nio CLI (Command Line Interface) to create a new project named "my_project":
 ```
 nio new my_project
+```
+**If you'd rather install the Plant Service from our [Distributed Demostration](https://workshops.n.io/plant/virtual/), enter the following:**
+```
+nio new plant_demo -t plant_demo
 ```
 > You'll be prompted for your Pubkeeper Hostname and Port. To locate these values:
 > * Open the **System Designer** in a browser: http://designer.n.io/
