@@ -10,7 +10,7 @@ This tutorial introduces you to the nio System Designer and the fundamental conc
 [blocks](/blocks/).
 
 
-{% video %}https://www.youtube.com/watch?v=8XFcEts6gco{% endvideo %}
+{% video %}https://www.youtube.com/watch?v=jCRUpoJ7oFY{% endvideo %}
 
 ## Create System
 
