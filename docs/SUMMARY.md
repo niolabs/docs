@@ -7,7 +7,7 @@
     * [Windows Installer](installation/windows.md)
 * [Running nio](running-nio/README.md)
   * [In the Cloud](running-nio/in-the-cloud.md)
-  * [Locally](running-nio/locally/locally.md)
+  * [Locally](running-nio/locally.md)
   * [Using Docker](running-nio/docker.md)
   * [Long Running Instances](running-nio/long-running.md)
 * [System Designer](system-designer/README.md)

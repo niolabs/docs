@@ -7,7 +7,7 @@ There’s no “right way” to learn how to use the nio Platform. With nearly u
 We have created workshops for users looking for a guided learning experience. Going through the workshops will help you do the following:  
 * Get acquainted with [the basic architecture of a nio system](https://workshops.n.io/)
 * Walk though the seven [nio 101 workshops](https://workshops.n.io/nio-101/)
-* Install and run a pre-built service where you [try and keep a thirsty plant happy](https://workshops.n.io/plant_demo/)
+* Install and run a pre-built service where you [try and keep a thirsty plant happy](http://workshops.n.io/distributed-demonstration/virtual.html)
 
 Ready to jump in and start creating? Check out the workshops at [https://workshops.n.io](https://workshops.n.io/) and start with the first tutorial.
 
