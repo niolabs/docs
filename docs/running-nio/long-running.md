@@ -42,3 +42,18 @@ After you have created your service file and placed it in `/etc/systemd/system`,
 sudo systemctl daemon-reload 
 sudo systemctl enable nio.service
 ```
+
+Now, you can start your nio instance like so:
+```
+sudo service nio start
+```
+
+Stopping is similar:
+```
+sudo service nio stop
+```
+
+Check the status and recent logs of your nio instance with
+```
+sudo service nio status
+```
