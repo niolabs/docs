@@ -1,12 +1,16 @@
 # Workshops
 
-There’s no “right way” to learn how to use the nio Platform. With nearly unlimited applications and wide-ranging skill sets, everyone can and should take a slightly different approach.  
+While each of us contributes uniquely to the infinitely complex tapestry of the human experience, you probably fall into one of two groups for the purposes of learning how to use **nio**.
 
-While the more technical users may dive right into the nio System Designer and teach themselves with the aid of the documentation, we have created workshops for users looking for a guided learning experience. Workshop topics include:  
- - how to use the System Designer
- - exploring nio-in-action with a real world use case
- - learning fundamental concepts of building with nio in [nio 101](https://workshops.n.io/nio-101/)
+**Technical users** can dive right in:
+* Log into the nio [System Designer](https://designer.n.io)
+* Read the [documentation](https://docs.n.io)
+* Check out the [block library](https://blocks.n.io)
+* Master intra-instance communication with [Pubkeeper](https://docs.pubkeeper.com)
 
-Ready to jump in and start creating? Head over to workshops at [https://workshops.n.io/](https://workshops.n.io/) and start with the first tutorial.
+**Everyone else** (including those seeking a more guided learning experience) can:
+* Get acquainted with [the basic architecture of a nio system](https://workshops.n.io/)
+* Walk though the seven [nio 101 workshops](https://workshops.n.io/nio-101/)
+* Install and run a pre-built service where you [try and keep a thirsty plant happy](https://workshops.n.io/plant_demo/)
 
 Have any feedback or ideas for additional workshops? Contact <editor@niolabs.com>.
