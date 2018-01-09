@@ -2,17 +2,18 @@
 
 * [Introduction](README.md)
 * [Getting Started](getting-started/README.md)
-* [Running nio](running-nio/README.md)
-  <!-- * [nio Platform](running-nio/portal.md) -->
-  * [Workshops](running-nio/workshops.md)
-  * [Cloud Quickstart](running-nio/in-the-cloud.md)
-  * [Local Quickstart](running-nio/locally/locally.md)
+* [Installation](installation/README.md)
     * [Install Binary](running-nio/locally/binary.md)
     * [Windows Installer](running-nio/locally/windows-installer.md)
+* [Running nio](running-nio/README.md)
+  <!-- * [nio Platform](running-nio/portal.md) -->
+  * [In the Cloud](running-nio/in-the-cloud.md)
+  * [Locally](running-nio/locally/locally.md)
     * [Create a Project](running-nio/locally/project.md)
     * [Run nio](running-nio/locally/run-nio.md)
     * [Add Instance](running-nio/locally/add-instance.md)
     * [Manual Installation](running-nio/locally/manual.md)
+  * [Using Docker](running-nio/docker.md)
 * [System Designer](system-designer/README.md)
   * [Functionality](system-designer/designer-tasks.md)
   * [Sharing](system-designer/sharing.md)
