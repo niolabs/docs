@@ -4,9 +4,9 @@ The cloud is an easy way to get the nio Platform up and running, but it doesn't 
 
 The simplest way to get nio running on a device other than a nio-managed cloud instance is to use a cloud-based [Pubkeeper](/pubkeeper/) server to handle communications. To set up a local instance, follow these steps:
 
-* [Install Binary](/getting-started/locally/binary.md)
-* [Create a Project](/getting-started/locally/project.md)
-* [Run nio](/getting-started/locally/run-nio.md)
-* [Add Instance](/getting-started/locally/add-instance.md)
+* [Install Binary](/running-nio/locally/binary.md)
+* [Create a Project](/running-nio/locally/project.md)
+* [Run nio](/running-nio/locally/run-nio.md)
+* [Add Instance](/running-nio/locally/add-instance.md)
 
-If you require further customizations or are interested in how to configure the process manually, see the section [Manual Installation](/getting-started/locally/manual.md).
+If you require further customizations or are interested in how to configure the process manually, see the section [Manual Installation](/running-nio/locally/manual.md).

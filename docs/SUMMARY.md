@@ -1,17 +1,17 @@
 # Summary
 
 * [Introduction](README.md)
-* [Getting Started](getting-started/README.md)
-  <!-- * [nio Platform](getting-started/portal.md) -->
-  * [Workshops](getting-started/workshops.md)
-  * [Cloud Quickstart](getting-started/in-the-cloud.md)
-  * [Local Quickstart](getting-started/locally/locally.md)
-    * [Install Binary](getting-started/locally/binary.md)
-    * [Windows Installer](getting-started/locally/windows-installer.md)
-    * [Create a Project](getting-started/locally/project.md)
-    * [Run nio](getting-started/locally/run-nio.md)
-    * [Add Instance](getting-started/locally/add-instance.md)
-    * [Manual Installation](getting-started/locally/manual.md)
+* [Getting Started](running-nio/README.md)
+  <!-- * [nio Platform](running-nio/portal.md) -->
+  * [Workshops](running-nio/workshops.md)
+  * [Cloud Quickstart](running-nio/in-the-cloud.md)
+  * [Local Quickstart](running-nio/locally/locally.md)
+    * [Install Binary](running-nio/locally/binary.md)
+    * [Windows Installer](running-nio/locally/windows-installer.md)
+    * [Create a Project](running-nio/locally/project.md)
+    * [Run nio](running-nio/locally/run-nio.md)
+    * [Add Instance](running-nio/locally/add-instance.md)
+    * [Manual Installation](running-nio/locally/manual.md)
 * [System Designer](system-designer/README.md)
   * [Functionality](system-designer/designer-tasks.md)
   * [Sharing](system-designer/sharing.md)

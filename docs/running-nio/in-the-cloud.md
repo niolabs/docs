@@ -1,3 +1,6 @@
+# nio in the Cloud
+**Estimated time: 5–10 minutes**
+
 Hello to a new world of connected intelligence using the nio Platform!
 
 This tutorial introduces you to the nio System Designer and the fundamental concepts of building a nio [project](/instances/projects.md) including how to create
