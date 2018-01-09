@@ -7,6 +7,7 @@
   * [Cloud Quickstart](getting-started/in-the-cloud.md)
   * [Local Quickstart](getting-started/locally/locally.md)
     * [Install Binary](getting-started/locally/binary.md)
+    * [Windows Installer](getting-started/locally/windows-installer.md)
     * [Create a Project](getting-started/locally/project.md)
     * [Run nio](getting-started/locally/run-nio.md)
     * [Add Instance](getting-started/locally/add-instance.md)
