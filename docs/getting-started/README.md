@@ -13,5 +13,5 @@ Ready to jump in and start creating? Check out the workshops at [https://worksho
 
 ## Feeling Ambitious? Dive right in
 
-If you want to just start using nio on your own, you can log in to the [https://designer.n.io](System Designer) to get started. There you can [create a managed cloud instance](/running-nio/in-the-cloud.md) or [install nio locally](/running-nio/locally.md).
+If you want to just start using nio on your own, you can log in to the [System Designer](https://designer.n.io) to get started. There you can [create a managed cloud instance](/running-nio/in-the-cloud.md) or [install nio locally](/running-nio/locally.md).
 
