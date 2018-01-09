@@ -208,7 +208,7 @@ To view the logger panel, click anywhere on the canvas to deselect the blocks an
 
   %accordion%**Click arrow to collapse/expand image**%accordion%
 
-  ![](/img/cloud/Hello-SimLogger.png)
+  ![](/img/cloud/Hello-SimLogger.gif)
 
   %/accordion%
 
