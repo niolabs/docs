@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
 * [Getting Started](getting-started/README.md)
-  <!-- * [nio Platform](getting-started/portal.md) -->
   * [Cloud Quickstart](getting-started/in-the-cloud.md)
   * [Local Quickstart](getting-started/locally.md)
   * [Workshops](getting-started/workshops.md)
