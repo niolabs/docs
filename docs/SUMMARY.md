@@ -1,7 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-* [Getting Started](running-nio/README.md)
+* [Getting Started](getting-started/README.md)
+* [Running nio](running-nio/README.md)
   <!-- * [nio Platform](running-nio/portal.md) -->
   * [Workshops](running-nio/workshops.md)
   * [Cloud Quickstart](running-nio/in-the-cloud.md)
