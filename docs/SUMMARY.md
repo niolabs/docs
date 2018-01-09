@@ -6,7 +6,6 @@
     * [Install Binary](running-nio/locally/binary.md)
     * [Windows Installer](running-nio/locally/windows-installer.md)
 * [Running nio](running-nio/README.md)
-  <!-- * [nio Platform](running-nio/portal.md) -->
   * [In the Cloud](running-nio/in-the-cloud.md)
   * [Locally](running-nio/locally/locally.md)
     * [Create a Project](running-nio/locally/project.md)
@@ -14,6 +13,7 @@
     * [Add Instance](running-nio/locally/add-instance.md)
     * [Manual Installation](running-nio/locally/manual.md)
   * [Using Docker](running-nio/docker.md)
+  * [Long Running Instances](running-nio/long-running.md)
 * [System Designer](system-designer/README.md)
   * [Functionality](system-designer/designer-tasks.md)
   * [Sharing](system-designer/sharing.md)
