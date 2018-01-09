@@ -138,7 +138,7 @@ Icon                      |Label             | Description      |
 
 ## Service
 
-A [Services](/services/README.md) is a user-configurable signal path that connects a collection of blocks so they can work together to perform a desired task or service.
+[Services](/services/README.md) are a user-configurable signal path that connects a collection of blocks so they can work together to perform a desired task or service.
 
 Services are created inside an instance and contain blocks.
 
