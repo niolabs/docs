@@ -18,7 +18,7 @@ nohup niod -r path/to/my_project 2>&1 > /dev/null &
 
 systemd is an init system that comes included with many Linux distributions. Running nio as a systemd service allows you to manage the instance using standard `sysctl` commands.
 
-To create a systemd service for running nio, create a new systemd service file in `/etc/systemd/`. Here is a template service file you can start with. You can find more systemd service options on the [official systemd documentation](https://www.freedesktop.org/software/systemd/man/systemd.service.html). Update the `WorkingDirectory` to the location of your nio project and make sure the executable path for `niod` is correct.
+To create a systemd service for running nio, create a new systemd service file in `/etc/systemd/system/nio.service`. Here is a template service file you can start with. You can find more systemd service options on the [official systemd documentation](https://www.freedesktop.org/software/systemd/man/systemd.service.html). Update the `WorkingDirectory` to the location of your nio project and make sure the executable path for `niod` is correct.
 
 ```
 [Unit]
@@ -34,4 +34,11 @@ Restart=always
 
 [Install]
 WantedBy=multi-user.target
+```
+
+After you have created your service file and placed it in `/etc/systemd/system`, you can activate the new service with the following commands:
+
+```
+sudo systemctl daemon-reload 
+sudo systemctl enable nio.service
 ```
