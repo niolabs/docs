@@ -1,6 +1,6 @@
 # Communication/Notification
 
-In addition to computers, UI's, sensors, and other devices, humans are one of the most important components of a distributed system. Within nio, humans can interact with a system via several common notification blocks.
+In addition to computers, UI's, sensors, and other devices, humans are one of the most important components of a distributed system. Within the nio Platform, humans can interact with a system via several common notification blocks.
 
 Whether you are a farmer who would like to receive a text when the soil moisture drops below a certain threshold in your vineyard or a plant manager who needs to receive a warning email when vital motors are about to fail, nio has the ability to easily configure a communication method (or methods) that work best for you.
 

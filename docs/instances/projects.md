@@ -1,6 +1,6 @@
 # nio Projects
 
-The configuration files for nio instances are called nio projects. A project contains the configurations of the blocks, services, communication, and instance itself. The project is functionally the source code of an instance; it defines what that instance will do within a nio system. Multiple instances can use the same project.
+The configuration files for nio instances are called nio projects. A project contains the configurations of the blocks, nio services, communication, and the nio instance itself. The project is functionally the source code of an instance; it defines what that instance will do within a nio system. Multiple instances can use the same project.
 
 In addition to the configuration of an instance, the project also includes the blocks and the block code of the instance. Blocks are typically included in a project directory as Git submodules.
 

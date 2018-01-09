@@ -1,6 +1,6 @@
 # Services Types API
 
-Service types contain metadata for services and can be accessed with `/services_types` API.
+Service types contain metadata for nio services and can be accessed with `/services_types` API.
 
 ## Get API
 
@@ -10,7 +10,7 @@ The Get API returns a JSON body with information about the service type with a p
 
 and the result will be
 
-```
+```json
 {
   "Service": {
     "name": "Service",

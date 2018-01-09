@@ -1,6 +1,6 @@
 # Instances
 
-Instances are running versions of nio. They, along with [user interfaces](/ui/README.md) and [Pubkeeper](/pubkeeper/README.md), are the entities that work cooperatively together to form a nio [system](/systems/README.md).
+nio instances are running versions of the nio Platform. They, along with [user interfaces](/ui/README.md) and [Pubkeeper](/pubkeeper/README.md), are the entities that work cooperatively together to form a nio [system](/systems/README.md).
 
 nio can be installed on a chip, cloud, and anything in between, so instances come in all shapes and sizes. Having multiple distinct instances in a system enables distributed processing and intelligence.
 

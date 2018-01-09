@@ -20,7 +20,7 @@ cd ui-scaffold
 npm i -s
 ```
 2. In the root of the project, update the `config.js` file.
-  1. Open the System Designer in a browser: https://designer.n.io/.
+  1. Open the nio **System Designer** in a browser: https://designer.n.io/.
   2. Select your system in the left-hand navigation.
       1. If you need to create your first system, follow the instructions [here](/system-designer/designer-tasks.html).
   2. Click the **edit** button in the contextual toolbar to open its configuration.

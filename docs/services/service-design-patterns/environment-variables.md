@@ -1,6 +1,6 @@
 # Environment Variables
 
-nio allows you to define and use variables when configuring your instance, services, or blocks. These variables are called "environment variables" and are specified using the square bracket syntax: `[[ ENV_VAR_NAME ]]`. There are several different use cases for environment variables which are detailed below.
+The nio Platform allows you to define and use variables when configuring your instance, services, or blocks. These variables are called "environment variables" and are specified using the square bracket syntax: <br>`[[ ENV_VAR_NAME ]]`. There are several different use cases for environment variables which are detailed below.
 
 ## Access Tokens and Other Secrets
 
@@ -9,7 +9,7 @@ Often a block will need some sort of access token or password in its configurati
 MY_SECRET: p@$$w0rd
 ```
 
-Then, in your block config you can use that secret token by using the environment variable syntax: `[[ MY_SECRET ]]`. The block will receive the proper value when the service is started, but the block's configuration will always contain the unreplaced environment variable.
+Then, in your block config you can use that secret token by using the environment variable syntax: <br>`[[ MY_SECRET ]]`. The block will receive the proper value when the service is started, but the block's configuration will always contain the unreplaced environment variable.
 
 ## Different Environments
 
@@ -47,17 +47,17 @@ In general, environment variables can be sourced from two places.
 
    ```bash
    $ export DB_HOST=localhost
-   $ nio_run
+   $ niod
    ```
 
    ```bash
    $ docker run -e DB_HOST=localhost nio_binary_image
    ```
 
-2. The `.env` files in your project directory. Assuming you have a `prod.env` file in your project directory, you can source from that using the `-e` flag of `nio_run`.
+2. The `.env` files in your project directory. Assuming you have a `prod.env` file in your project directory, you can source from that using the `-e` flag of `niod`.
 
    ```bash
-   $ nio_run -e prod.env
+   $ niod -e prod.env
    ```
 
 In the event that an environment variable is set both at the system level and the local `.env` file level, the system environment variable will take precedence.

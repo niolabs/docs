@@ -1,30 +1,23 @@
-# Introducing nio
+# Getting Started
 
-Every state, every change, and every interaction in our world is a signal—from the percentage of moisture in the soil beneath your feet, to the vibration of your car motor, to the individual characters within your last tweet. Every _thing_ is producing context that already has, or will soon, become digitally available in the Internet of Things era. But how can these trillions of disparate signals work harmoniously to produce any meaningful value?
+There’s no “right way” to learn how to use the nio Platform. With nearly unlimited applications and wide-ranging skill sets, everyone can and should take a slightly different approach.  
 
-The nio platform was built to act as the nervous system for a world with trillions of unique signals. It  allows you to create real-world, innovative, and impactful solutions with connected, distributed systems.
+## First Timer? Check out our workshops
 
-We’ve built solutions for [agriculture](https://niolabs.com/case-studies/agriculture), [machine learning](https://niolabs.com/case-studies/industrial), [enterprise IT](https://niolabs.com/case-studies/case-study-real-time-database-migration), [smart toys](https://niolabs.com/case-studies/raspberry-pi-car), and [industrial operations](https://niolabs.com/case-studies/case-study-industrial-operations-intelligence). We can’t wait to see what you build!
+We have created workshops for users looking for a guided learning experience. Going through the workshops will help you do the following:  
+* Get acquainted with [the basic architecture of a nio system](https://workshops.n.io/)
+* Walk though the seven [nio 101 workshops](https://workshops.n.io/nio-101/)
+* Install and run a pre-built service where you [try and keep a thirsty plant happy](http://workshops.n.io/distributed-demonstration/virtual.html)
 
-## Blocks
-A [block](/blocks/) is the component nio uses to apply logic to a signal. Blocks consume, alter, and publish signals. They are the basic units of functionality that allow unlimited interoperability and possibilities.
+Ready to jump in and start creating? Check out the workshops at [https://workshops.n.io](https://workshops.n.io/) and start with the first tutorial.
 
-![](/img/intro-blocks.png)
+## Feeling Ambitious? Dive right in
 
-## Service
-Multiple nio blocks are intelligently connected to form a nio service. A [service](/services/) is a real-time process that can be connected with other services to create more complex processes.
+If you want to just start using nio on your own, you can get started right away. Try some of the following topics on for size.
 
-![](/img/intro-service.png)
-
-## Instance
-Services exist within a running version of nio, known as a nio [instance](/instances/). The nio instance can be installed on a chip, cloud, or anywhere in between to distribute processing and intelligence throughout an entire nio system.
-
-![](/img/intro-instance.png)
-
-## System
-Just like your biological system is a group of organs working together to keep you alive, a nio [system](/systems/) is a group of distributed instances working together to achieve a common goal. Regardless of where the instances live within the system (chip, gateway, or cloud), they work in harmony on the same platform to listen, transform, share, and act upon signals with intelligence.
-
-![](/img/intro-system.png)
-
-## System Designer
-The [System Designer](/system-designer/) is the tool that allows you to arrange these blocks, services and instances to build your own nio systems. The only limitation is your imagination.
+* Log into the nio [System Designer](https://designer.n.io)
+* Create a [Managed Cloud Instance](/running-nio/in-the-cloud.md)
+* [Install nio locally](/installation)
+* Read the [documentation](https://docs.n.io)
+* Check out the [block library](https://blocks.n.io)
+* Master inter-instance communication with [Pubkeeper](https://docs.pubkeeper.com)

@@ -1,6 +1,6 @@
 # Blocks
 
-Blocks are nio components that perform operations on signals. Blocks can consume, alter, and/or publish signals. They are the basic unit of functionality that allows for unlimited interoperability within the nio platform.
+Blocks are nio Platform components that perform operations on signals. Blocks can consume, alter, and/or publish signals. They are the basic unit of functionality that allows for unlimited interoperability within the nio platform.
 
 ![block illustration](/img/intro-blocks.png)
 
@@ -14,7 +14,7 @@ What makes a block a block?
 ## Commands
 Commands allow a user to interact with a running configuration of a block. While the configuration API allows you view and change how a block is configured, the command API lets users work with blocks actually running inside of a service. Commands are often a useful way to perform actions on blocks without having to restart the service.
 
-When you [develop a block type](/blocks/block-development/README.md), you can expose certain methods in your block class as commands. This allows you to run functions inside the instance of your block via the API or from the System Designer.
+When you [develop a block type](/blocks/block-development/README.md), you can expose certain methods in your block class as commands. This allows you to run functions inside the instance of your block via the API or from the nio System Designer.
 
 For example, the [Queue](https://blocks.n.io/Queue) block exposes a command to empty the internal queue. This is a better way to perform this action than restarting the entire service because the latter may negatively affect other blocks in the service.
 
