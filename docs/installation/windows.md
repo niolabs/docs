@@ -3,7 +3,7 @@
 >**[info] Prerequisites**
 >
 >* The nio binary executable file (`.exe`). You will need a license agreement.
->* A nio system with Pubkeeper configuration. A step-by-step on how to create one can be found [here](/running-nio/in-the-cloud.html).
+>* A nio system with Pubkeeper configuration. A step-by-step on how to create one can be found [here](/getting-started/in-the-cloud.html).
 
 If you are installing the nio Platform on a Windows machine, we have an installer to make the process easier on you. To download the executable, download the "windows installer" from our [downloads](https://app.n.io/binaries/download) page.
 

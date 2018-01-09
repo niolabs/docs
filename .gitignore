@@ -6,3 +6,4 @@ package-lock.json
 _book
 
 .DS_Store
+.idea
