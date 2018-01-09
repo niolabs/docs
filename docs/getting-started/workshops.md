@@ -1,7 +1,5 @@
 # Workshops
 
-If you've gotten this far, you should have a [cloud instance](/getting-started/in-the-cloud.html) AND a [local instance](/getting-started/locally.html) up and running... but what are your instances _doing_? Not a lot, yet... but here's where we change that.
-
 While each of us contributes uniquely to the infinitely complex tapestry of the human experience, you probably fall into one of two groups for the purposes of learning how to use **nio**.
 
 **Technical users** can dive right in:

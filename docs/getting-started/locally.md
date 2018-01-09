@@ -10,9 +10,9 @@ The cloud is an easy way to get the nio Platform up and running, but to see the 
 
 ## Installation
 
-Open a terminal (Applications > Utilities > Terminal on MacOS), and install nio using Python’s pip3 installer (verify the filepath and binary filename below):
+Open a terminal (Applications > Utilities > Terminal on MacOS), and install nio using Python’s pip3 installer (verify the filepath and binary filename below- the X's represent the date of the binary in YYYMMDD format):
 ```
-pip3 install -U ~/Downloads/nio_lite-20180105-py3-none-any.whl
+pip3 install -U ~/Downloads/nio_lite-XXXXXXXX-py3-none-any.whl
 ```
 > MacOS Users: You may be prompted to install a dependency called "clang". This is a standard component that comes directly from Apple, so it's safe to click "OK" and re-run the command above.
 
@@ -34,7 +34,7 @@ Use the nio CLI (Command Line Interface) to create a new project named "my_proje
 ```
 nio new my_project
 ```
-**If you'd rather install the Plant Service from our [Distributed Demostration](https://workshops.n.io/plant/virtual/), enter the following:**
+**If you'd rather install the Plant Service from our [Distributed Demostration](https://workshops.n.io/distributed-demonstration/), enter the following:**
 ```
 nio new plant_demo -t plant_demo
 ```
@@ -66,7 +66,7 @@ If you see those logs, the nio Platform is up and running. Congratulations!
 
 > By default, new projects use port 8181. If port 8181 isn’t available, you'll see an error. Change the NIOPORT value in your project's nio.env file to fix this error.
 
-> **MacOS Users**: Python 3.6.4+ requires that you install and trust a set of Root Certificates for Python's SSL package. That file is located at /Applications/Python 3.6/Install Certificates.command. Just double-click that file to complete the process. Check /Applications/Python 3.6/ReadMe.rtf for more details.
+> **MacOS Users**: While your system comes pre-installed with Python, it is an older version. When installing newer versions, Python may require that you install and trust a set of Root Certificates for its SSL package. That file is located at /Applications/Python 3.x/Install Certificates.command. Just double-click that file to complete the process. Check /Applications/Python 3.x/ReadMe.rtf for more details.
 
 Start a nio project from any directory by specifying the project root via the -r flag:
 ```
@@ -91,6 +91,8 @@ To manage your local instance, you need to add it to the **System Designer**:
 1. Click **accept**.
 
 > Note: When the System Designer connects to a nio instance, it communicates with that instance directly from your browser via an XHR request. Hostnames like `localhost` and other internal IP addresses will work. You must have access to the localhost or other IP address from your machine to use the System Designer.
+>
+>You may see an issue regarding HTTPS and HTTP instances. Since you launched your instance and presumably didn't load any SSL certificates, the instance is accessible only by HTTP. However, if you are logged into the System Designer via HTTPS, your browser will restrict an XHR request going over HTTP. To connect to a local instance, you can log into the designer via HTTP at http://designer.n.io. All of your instances and systems will be the same, except the nio commands to edit these instances won't happen over HTTPS.
 
 ## View Your Logs
 
