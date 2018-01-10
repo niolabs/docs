@@ -14,15 +14,6 @@ Use the nio CLI (Command Line Interface) to create a new project named "my_proje
 ```
 nio new my_project
 ```
-**If you'd rather install the Plant Service from our [Distributed Demostration](https://workshops.n.io/distributed-demonstration/), enter the following:**
-```
-nio new plant_demo -t plant_demo
-```
-> You'll be prompted for your Pubkeeper Hostname and Port. To locate these values:
-> * Open the **System Designer** in a browser: http://designer.n.io/
-> * Select your system in the left hand nav. (To create your first system, follow the instructions [here](https://docs.n.io/getting_started/in_the_cloud.html))
-> * Click the **Edit** button in the system toolbar to open its configuration.
-> * Enter the values for **hostname** and **token** when prompted.
 
 ## Start your Project
 
