@@ -14,7 +14,7 @@ cp your-wheel-file.whl nio-docker
 
 2. Build the Docker image by passing the name of the wheel file as the `WHEEL_FILE` build argument.
 ```
-docker build -t my-binary-image:latest --build-arg WHEEL_FILE=nio_lite-20171127-py3-none-any.whl .
+docker build -t my-binary-image:latest --build-arg WHEEL_FILE=nio_lite-20180108-py3-none-any.whl .
 ```
 
 ## Running nio as a Docker container
