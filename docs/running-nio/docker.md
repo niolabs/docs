@@ -6,7 +6,7 @@ Running the nio platform as a [Docker](https://docker.com) container offers seve
 
 Once you have downloaded your binary from the [binary downloads page](https://app.n.io/binaries/download), you can build a corresponding Docker image from that binary with the help of the [nio-docker repository](https://github.com/niolabs/nio-docker).
 
-1. Clone the repository and copy your wheel file into the directory
+1. Clone the repository and copy your wheel file into the directory.
 ```
 git clone https://github.com/niolabs/nio-docker.git nio-docker
 cp your-wheel-file.whl nio-docker
