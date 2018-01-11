@@ -149,6 +149,12 @@ Start your service to see the simulated signals log to the logger panel.
 
   %accordion%**Click arrow to collapse/expand**%accordion%
 
+  ![](/img/open-logger.png)
+
+  %/accordion%
+
+  %accordion%**Click arrow to collapse/expand**%accordion%
+
   ![](/img/cloud/Hello-SimLogger.gif)
 
   %/accordion%

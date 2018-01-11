@@ -46,7 +46,7 @@ The new output signal will be `{"plus_one": 2, "sim": 1}`.
 
 Anything typed directly into a field is stored as a string, for example:
 
-![string](/img/expressions/string.png)
+![string](/img/expressions/string-input.png)
 
 This will create the following signal:  `{"string": "this is a string"}`.
 
