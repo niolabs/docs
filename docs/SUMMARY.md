@@ -1,18 +1,24 @@
 # Summary
 
-* [Introduction](README.md)
-* [Getting Started](getting-started/README.md)
-* [Installation](installation/README.md)
-  * [Windows Installer](installation/windows.md)
-* [Running nio](running-nio/README.md)
-  * [In the Cloud](running-nio/in-the-cloud.md)
+* Introduction
+
+* [Welcome](README.md)
+* [Install nio](installation/README.md)
+  * [On Windows](installation/windows.md)
+  * [Supported Systems](installation/supported-systems.md)
+* [Run nio](running-nio/README.md)
+  * [In a nio-Managed Cloud](running-nio/in-the-cloud.md)
   * [Locally](running-nio/locally.md)
-  * [Using Docker](running-nio/docker.md)
-  * [Long Running Instances](running-nio/long-running.md)
+  * [In a Docker Container](running-nio/docker.md)
+  * [In Production](running-nio/long-running.md)
+* [Deploy nio](deployment/README.md)
 * [System Designer](system-designer/README.md)
-  * [Functionality](system-designer/designer-tasks.md)
-  * [Sharing](system-designer/sharing.md)
   * [Browser Support](system-designer/browser-support.md)
+
+---
+* Architecture
+
+* [Overview](architecture/README.md)
 * [Systems](systems/README.md)
   * [Multiple Systems](systems/multiple.md)
 * [Instances](instances/README.md)
@@ -38,11 +44,10 @@
     * [Block Patterns](blocks/block-development/block-patterns.md)
     * [The nio Framework](blocks/block-development/framework.md)
     * [Mixins](blocks/block-development/mixins.md)
-* [Binaries](binaries/README.md)
-  * [nio Core](binaries/core.md)
-  * [Modules](binaries/modules.md)
-  * [Components](binaries/components.md)
-    * [SNMP](binaries/snmp.md)
+
+---
+* Building with nio
+
 * [CLI](cli/README.md)
   * [New](cli/new.md)
   * [Add](cli/add.md)
@@ -52,23 +57,16 @@
   * [Command](cli/command.md)
   * [Clone Services](cli/clone-services.md)
   * [Shutdown](cli/shutdown.md)
-* [Hardware](hardware/README.md)
-  * [Supported Compute and Install](hardware/compute-install.md)
-  * [Kits and Sensors](hardware/kits-sensors.md)
 * [Data](data/README.md)
   * [Cloud Storage](data/cloud-storage.md)
   <!-- * [Common Blocks](data/common-blocks.md) -->
   * [Persistence](data/persistence.md)
 * [User Interfaces](ui/README.md)
   * [How to Build a UI with nio](ui/build-a-ui.md)
-* [Communications](communications/README.md)
-* [Deployment](deployment/README.md)
-* [Pubkeeper](pubkeeper/README.md)
-* [Organizations](organizations/README.md)
-  * [Management](organizations/management.md)
-  * [Users](organizations/users.md)
-  * [Teams](organizations/teams.md)
-  * [Plan](organizations/upgrade.md)
+
+---
+* nio Core
+
 * [API](api/README.md)
   * [Conventions](api/conventions.md)
   * [Core](api/core.md)
@@ -77,6 +75,27 @@
   * [Services](api/services.md)
   * [Services Types](api/services_types.md)
   * [Additional Endpoints](api/additional.md)
+* [Binaries](binaries/README.md)
+  * [nio Core](binaries/core.md)
+  * [Modules](binaries/modules.md)
+  * [Components](binaries/components.md)
+    * [SNMP](binaries/snmp.md)
+* [Communications](communications/README.md)
+* [Pubkeeper](pubkeeper/README.md)
+
+---
+* Users / Account
+
+* [Organizations](organizations/README.md)
+  * [Management](organizations/management.md)
+  * [Users](organizations/users.md)
+  * [Teams](organizations/teams.md)
+  * [Plan](organizations/upgrade.md)
+
+---
+* Support
+
 * [Glossary of Terms](glossary/README.md)
-* [Support](support/README.md)
+* [Customer Support](support/README.md)
+* [Recommended Hardware](hardware/README.md)
 * [Copyright](copyright.md)

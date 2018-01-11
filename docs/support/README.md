@@ -1,4 +1,4 @@
-# Support
+# Customer Support
 
 We understand that designing distributed systems isn't always easy. That's why niolabs is here to help!
 

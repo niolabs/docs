@@ -1,10 +1,11 @@
-# Running nio
+# Run nio
 
-nio is a software product that should run throughout your IoT system. These docs will help you figure out how to run nio in whatever way you choose.
+The nio Platform facilitates the creation of distributed computing solutions across an almost unlimited array of platforms and devices. As such, there are lots of ways to use it. We've outlined some of the most common implementations below.
 
-If you want to run nio locally or on a device, make sure you have completed the [installation instructions](/installation) first.
+---
+**Run nio**
 
-* [Run in the cloud](/running-nio/in-the-cloud.md)
-* [Running Locally](/running-nio/locally.md)
-* [Running with Docker](/running-nio/docker.md)
-* [Long Running nio Instances](/running-nio/long-running.md)
+* [In a nio-Managed Cloud](/running-nio/in-the-cloud.md): we run nio for you, and you build cloud-based solutions
+* [Locally](/running-nio/locally.md): you run nio wherever you want, and use the System Designer to build and administer it
+* [In a Docker Container](/running-nio/docker.md): containerize nio, and use Kubernetes or some other Docker orchestration tool
+* [For a Long Time](/running-nio/long-running.md): you run nio in the background, and need it to be fault-tolerant
