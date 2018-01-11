@@ -1,15 +1,15 @@
 # nio-managed Cloud Instance
 
-While the true power of nio is experienced when you have multiple [local installations](/running-nio/locally) communicating across a distributed network, we also offer the ability to spin up cloud instances through the **System Designer**.
+While the true power of nio is experienced when you have multiple [local installations](/running-nio/locally) communicating across a distributed network, we also offer the ability to spin up cloud instances through the **nio System Designer**.
 
-A nio-managed Cloud Instance allows you to get up and running quickly, and to start building services right away (although our local installation process usually only takes 5 minutes!).
+A nio-managed cloud instance allows you to get up and running quickly, and to start building services right away (although our local installation process usually only takes 5 minutes!).
 
 >**[info] Prerequisites**
 >
 >* **a nio account**: [Sign up here](https://app.n.io/signup)
 
 ---
-## Create A System
+## Create a system
 
 The first time you visit the system Designer
 
@@ -28,7 +28,7 @@ The first time you visit the system Designer
 ####&nbsp;
 
 ---
-## Create a nio-managed Cloud Instance
+## Create a nio-managed cloud instance
 
 A cloud instance runs a version of nio that is installed in the cloud and managed by niolabs.
 
@@ -52,7 +52,7 @@ In addition to a running instance of nio, we've also set up a nio-managed instan
   * Your **Pubkeeper** configuration details will be shown in the modal window.
 
 ---
-## Now What?
+## Now what?
 
 If you're wondering how to use your cloud instance? Head over to the [nio Workshop Site](https://workshops.n.io)!
 
