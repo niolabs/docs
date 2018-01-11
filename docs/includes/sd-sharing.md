@@ -1,8 +1,8 @@
 When an owner or organizer shares a nio system with a collaborator or team, they must assign one of the three permissions:
 
-	admin
-	editor
-	viewer
+* admin
+* editor
+* viewer
 
 ![](/img/organizations/org-share-viewer.jpg)
 

@@ -1,9 +1,10 @@
 # Running nio Locally
 
-## Install nio
+>**[info] Prerequisites**
+>
+>* **nio installed on your device**: Follow the [installation instructions](/installation)
 
-Make sure to follow the [installation instructions](/installation) first. You will need nio installed on your device before running it.
-
+---
 ## Create a Project
 
 Projects are collections of services, blocks and configurations. Create a nio folder to keep things tidy:
@@ -24,6 +25,7 @@ nio new plant_demo -t plant_demo
 > * Click the **Edit** button in the system toolbar to open its configuration.
 > * Enter the values for **hostname** and **token** when prompted.
 
+---
 ## Start your Project
 
 ```
@@ -61,6 +63,7 @@ Run a project in the background on MacOS and Linux using `nohup` (so you can clo
 nohup niod -r path/to/my_project 2>&1 > /dev/null &
 ```
 
+---
 ## Add Your Local Instance to the System Designer
 
 To manage your local instance, you need to add it to the **System Designer**:
@@ -82,6 +85,7 @@ Once your instance is loaded and available, you can add services and blocks in t
 
 Available nio Blocks can be explored in the nio [Block Library](https://blocks.n.io) where you will find a summary of the block's purpose, a list of its properties, commands, inputs, and outputs, and a link to the block code repository.
 
+---
 ## View Your Logs
 
 When running in background mode, you can monitor your logs using the “tail” command:
@@ -89,6 +93,7 @@ When running in background mode, you can monitor your logs using the “tail” 
 tail -f /path/to/my_project/logs/main.log
 ```
 
+---
 ## Stop your Project
 
 ```
