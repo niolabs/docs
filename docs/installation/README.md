@@ -1,4 +1,4 @@
-# Install nio
+# Install nio locally
 
 The cloud is an easy way to get the nio Platform up and running, but to see the power of nio as a distributed system, you should install and run nio on a locally or at the edge.
 
