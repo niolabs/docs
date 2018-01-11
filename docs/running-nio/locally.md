@@ -15,15 +15,6 @@ Use the nio CLI (Command Line Interface) to create a new project named "my_proje
 ```
 nio new my_project
 ```
-**If you'd rather install the Plant Service from our [Distributed Demostration](https://workshops.n.io/distributed-demonstration/), enter the following:**
-```
-nio new plant_demo -t plant_demo
-```
-> You'll be prompted for your Pubkeeper Hostname and Port. To locate these values:
-> * Open the **System Designer** in a browser: http://designer.n.io/
-> * Select your system in the left hand nav. (To create your first system, follow the instructions [here](https://docs.n.io/getting_started/in_the_cloud.html))
-> * Click the **Edit** button in the system toolbar to open its configuration.
-> * Enter the values for **hostname** and **token** when prompted.
 
 ---
 ## Start your Project
@@ -81,7 +72,7 @@ To manage your local instance, you need to add it to the **System Designer**:
 >
 >You may see an issue regarding HTTPS and HTTP instances. Since you launched your instance and presumably didn't load any SSL certificates, the instance is accessible only by HTTP. However, if you are logged into the System Designer via HTTPS, your browser will restrict an XHR request going over HTTP. To connect to a local instance, you can log into the designer via HTTP at http://designer.n.io. All of your instances and systems will be the same, except the nio commands to edit these instances won't happen over HTTPS.
 
-Once your instance is loaded and available, you can add services and blocks in the same manner as the [cloud instance](https://docs.n.io/getting-started/in-the-cloud.html#create-service).
+Once your instance is loaded and available, you can add services and blocks in the same manner as the [cloud instance](https://docs.n.io/running-nio/in-the-cloud.html).
 
 Available nio Blocks can be explored in the nio [Block Library](https://blocks.n.io) where you will find a summary of the block's purpose, a list of its properties, commands, inputs, and outputs, and a link to the block code repository.
 

@@ -7,15 +7,15 @@ Running the nio platform as a [Docker](https://docker.com) container offers seve
 
 Once you have downloaded your binary from the [binary downloads page](https://app.n.io/binaries/download), you can build a corresponding Docker image from that binary with the help of the [nio-docker repository](https://github.com/niolabs/nio-docker).
 
-1. Clone the repository and copy your wheel file into the directory
+1. Clone the repository and copy your wheel file into the directory.
 ```
 git clone https://github.com/niolabs/nio-docker.git nio-docker
 cp your-wheel-file.whl nio-docker
 ```
 
-2. Build the Docker image by passing the name of the wheel file as the `WHEEL_FILE` build argument.
+2. Build the Docker image by passing the name of the wheel file as the `WHEEL_FILE` build argument (the X's represent the date of the binary in YYYYMMDD format):.
 ```
-docker build -t my-binary-image:latest --build-arg WHEEL_FILE=nio_lite-20171127-py3-none-any.whl .
+docker build -t my-binary-image:latest --build-arg WHEEL_FILE=nio_lite-XXXXXXXX-py3-none-any.whl .
 ```
 
 ---
