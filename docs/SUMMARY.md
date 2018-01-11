@@ -10,7 +10,7 @@
   * [In a nio-Managed Cloud](running-nio/in-the-cloud.md)
   * [Locally](running-nio/locally.md)
   * [In a Docker Container](running-nio/docker.md)
-  * [For a Long Time](running-nio/long-running.md)
+  * [In Production](running-nio/long-running.md)
 * [Deploy nio](deployment/README.md)
 * [System Designer](system-designer/README.md)
   * [Browser Support](system-designer/browser-support.md)
@@ -44,11 +44,28 @@
     * [Block Patterns](blocks/block-development/block-patterns.md)
     * [The nio Framework](blocks/block-development/framework.md)
     * [Mixins](blocks/block-development/mixins.md)
+
+---
+* Building with nio
+
+* [CLI](cli/README.md)
+  * [New](cli/new.md)
+  * [Add](cli/add.md)
+  * [New Block](cli/newblock.md)
+  * [List](cli/list.md)
+  * [Config](cli/config.md)
+  * [Command](cli/command.md)
+  * [Clone Services](cli/clone-services.md)
+  * [Shutdown](cli/shutdown.md)
+* [Data](data/README.md)
+  * [Cloud Storage](data/cloud-storage.md)
+  <!-- * [Common Blocks](data/common-blocks.md) -->
+  * [Persistence](data/persistence.md)
 * [User Interfaces](ui/README.md)
   * [How to Build a UI with nio](ui/build-a-ui.md)
 
 ---
-* Core Components
+* nio Core
 
 * [API](api/README.md)
   * [Conventions](api/conventions.md)
@@ -63,20 +80,7 @@
   * [Modules](binaries/modules.md)
   * [Components](binaries/components.md)
     * [SNMP](binaries/snmp.md)
-* [CLI](cli/README.md)
-  * [New](cli/new.md)
-  * [Add](cli/add.md)
-  * [New Block](cli/newblock.md)
-  * [List](cli/list.md)
-  * [Config](cli/config.md)
-  * [Command](cli/command.md)
-  * [Clone Services](cli/clone-services.md)
-  * [Shutdown](cli/shutdown.md)
 * [Communications](communications/README.md)
-* [Data](data/README.md)
-  * [Cloud Storage](data/cloud-storage.md)
-  <!-- * [Common Blocks](data/common-blocks.md) -->
-  * [Persistence](data/persistence.md)
 * [Pubkeeper](pubkeeper/README.md)
 
 ---

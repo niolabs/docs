@@ -7,9 +7,8 @@ The nio System Designer is the graphical user interface used to build your nio s
 ---
 ## System Designer Navigation
 
-<center>
-<img src="/img/system-designer-overview.png" height="350" vspace="10" />
-</center>
+
+<img src="/img/system-designer-overview.png" style="display:block; height:350px; margin: 0 auto; border: 1px solid #ccc; border-radius: 6px;" />
 
 ### Systems List
 * The designer automatically creates an abbreviation for each system name.
@@ -28,9 +27,7 @@ The nio System Designer is the graphical user interface used to build your nio s
 ### Breadcrumb
 * As you navigate from system to service, the breadcrumb allows you to easily identify your location in the system.
 
-<center>
-<img src="/img/cloud/hierarchy.gif" height="150" vspace="10" />
-</center>
+<img src="/img/cloud/hierarchy.gif" style="display:block; height:150px; margin: 10px auto; border: 1px solid #ccc; border-radius: 6px;" />
 
 ### Contextual Toolbar
 * The contextual toolbar changes based on your location in the project, and displays the available functions.

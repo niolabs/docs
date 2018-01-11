@@ -40,12 +40,8 @@ Pubkeeper simplifies security because Pubkeeper clients encrypt the data before 
 ---
 ## Use nio-Managed Cloud Pubkeeper
 
+<img src="/img/pubkeeper-edit-modal.png" style="width:275px; margin: 5px 0 0 15px; float:right; border: 1px solid #ccc; border-radius: 6px;" />
 When you create a system in the nio System Designer, by default, a Pubkeeper server is spun up in the cloud. You can override this behavior by selecting something other than “auto” in the “advanced” section of the **create system** dialog. You can see the configuration of the cloud Pubkeeper server if you select a system then click the **edit** icon in the contextual toolbar.
-
-<center>
-<img src="/img/pubkeeper-edit-modal.png" height="350" vspace="10" />
-</center>
-
 
 To configure your local project to use the cloud Pubkeeper server, copy the Pubkeeper `host`, `port`, `token`, and `secure` settings shown in your system's edit modal to the following four lines in the `# Pubkeeper Client` section of your project directory's `nio.env` file:
 

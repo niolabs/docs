@@ -7,5 +7,5 @@ nio facilitates the creation of distributed computing solutions across an almost
 
 * [In a nio-Managed Cloud](/running-nio/in-the-cloud.md): we run nio for you, and you build cloud-based solutions
 * [Locally](/running-nio/locally.md): you run nio wherever you want, and use the System Designer to build and administer it
-* [In a Docker Container](/running-nio/docker.md): containerize nio, and run it using Kubernetes or something like it
+* [In a Docker Container](/running-nio/docker.md): containerize nio, and use Kubernetes or some other Docker orchestration tool
 * [For a Long Time](/running-nio/long-running.md): you run nio in the background, and need it to be fault-tolerant
