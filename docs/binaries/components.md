@@ -6,6 +6,8 @@ For example, a nio core component may be responsible for managing an instance’
 
 Currently, development of core components requires core source-code access. Eventually the component base classes may be moved to the nio development framework.
 
+---
+
 ## Disabling Core Components
 You cannot add core components to your binary, but you can disable existing ones if you do not want or need them. To disable a core component, in the `nio.conf` file under the component section, add or uncomment the disable line.
 To disable the SNMPAgent component, your `nio.conf` would look like the following example:

@@ -2,6 +2,8 @@
 
 The SNMP Agent core component allows you to monitor the health of a nio system through the standard [SNMP protocol](https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol).
 
+---
+
 ## Behavior
 
 The SNMP component can be configured to work as an agent that can issue traps asynchronously or respond to requests synchronously.
@@ -9,10 +11,11 @@ The SNMP component can be configured to work as an agent that can issue traps as
 * Asynchronous mode sends traps whenever a service changes its status, and the new status is configured as part of the `status_traps` setting.
 * Synchronous mode allows retrieving the system uptime and service statuses.
 
+---
 
 ## Configuration
 
-You can configure the behavior of this component in your `nio.conf` file under the `[snmp]` section. 
+You can configure the behavior of this component in your `nio.conf` file under the `[snmp]` section.
 
 The following configuration options are available:
 

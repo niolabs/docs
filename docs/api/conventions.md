@@ -4,6 +4,8 @@ You can interact with most nio binaries through a REST API. The API supports the
 
 The REST API is available in nio binaries that include the nio REST Component. Read more about nio core components [here](/binaries/components.md).
 
+---
+
 ## Authentication and Authorization
 
 Authentication is the action to verify the identity of a user or process.
@@ -53,6 +55,8 @@ When using JSON Web Tokens (JWT), first obtain an access token, and then include
 `{ "authorization": "Bearer <your token>" }`
 
 For examples of adding headers to a curl request, see [Headers](#headers).
+
+---
 
 ## Testing with curl
 

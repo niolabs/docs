@@ -14,7 +14,9 @@ In the above example, a [_Sleep_](https://blocks.n.io/Sleep) block loads from pe
 
 This timeline shows how a [_StateChange_](https://blocks.n.io/StateChange) evaluation that is loaded from persistence does not emit a signal after restarting, because the state evaluation is the same as it was when stopped. The next signal where <br>`x > 0` will evaluate to "True" and be emitted normally. If not loaded from persistence, the second signal with `x = 0` would have evaluated "False" and also emitted a signal. Depending on your application and system, this repetition of a "False" state may or may not be desirable.
 
-### Persistence Mixin
+---
+
+## Persistence Mixin
 
 The persistence module in the nio framework is ultimately responsible for persisting data from blocks through instance and service stops and restarts. However, for block developers, the nio framework includes a handy [mixin](https://github.com/niolabs/nio/tree/master/nio/block/mixins/persistence) to add persistence to blocks. Use the persistence [mixin](https://github.com/niolabs/nio/tree/master/nio/block/mixins/persistence) when you want to easily add persistence to your custom block.
 

@@ -12,6 +12,8 @@ Other elements of a block to keep in mind include [block patterns](block-pattern
 
 Once you have developed your block, you will want to [test](block-testing.md) and [document](documenting.md) your block.
 
+---
+
 ## Base Block Class
 
 All nio blocks inherit from the base block class. The first import in the block template's `example_block.py` is `nio.block.base`. If you explore the code inside `nio.block.base`, you'll find explanatory docstrings for each method—including methods to override in your custom block—along with higher-level context.
@@ -31,9 +33,13 @@ The following methods from the base block are designed to be overridden:
   * `process_signals(<list of signals>, input_id)`: receives input signals.
   * `notify_signals(<list of signals>, output_id)`: emits signals from the block. This method isn't intended to be overridden, but should be called by the block to send out signals. For example, you will usually call `notify_signals` at the end of your `process_signals` method.
 
+---
+
 ## Current nio Blocks
 
 An additional resource for developing your custom block is the [nio Block Library](https://blocks.n.io). Search the nio Block Library for a block that has similar functionality to the block you need. Open the link to its code and explore its properties, methods, commands, inputs, outputs, mixins, and any modules imported from the [framework](framework.md).
+
+---
 
 ## Properties
 
@@ -80,6 +86,8 @@ Block properties can include the following types:
 
 - **Property**<br>A property that can assume any type.
 
+---
+
 ## Commands
 
 Commands are declared as decorators.
@@ -95,6 +103,8 @@ Commands are declared as decorators.
     def emit(self, foo=None):
           self._emit_job(foo) # where you have set up your own _emit_job method…
   ```
+
+---
 
 ## Inputs and Outputs
 

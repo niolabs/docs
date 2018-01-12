@@ -6,6 +6,9 @@ You can view your plan info under your account settings. To navigate to your acc
 
 To view your plan information, click the **Plan** tab in the left navigation.
 
+
+---
+
 ## Upgrade Plan
 
 Whether you are a Sandbox, Enterprise, or OEM user, you have several options to upgrade your plan.
@@ -18,6 +21,8 @@ To upgrade to an Enterprise or OEM plan, click the button or text link that says
 ### Upgrade Enterprise or OEM Plan
 If you have outgrown your Enterprise or OEM plan, you can upgrade to a more robust plan by contacting us. From your plan page, click the button or text link that says **contact us** and fill out and submit your inquiry. We will get back to you shortly to discuss additional plan options.
 
+---
+
 ## Billing
 
 If you are the owner of the plan, you can update your credit card information and view invoices.
@@ -29,6 +34,8 @@ If you are the owner of the plan, you can update your credit card information by
 ### Invoices
 
 If you are the owner of the plan, you can view and print invoices from the **Plan** page.
+
+---
 
 ## Billing and Plan Questions
 

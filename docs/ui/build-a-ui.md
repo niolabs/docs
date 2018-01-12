@@ -1,7 +1,10 @@
 # How to Build a UI for a nio System
 The easiest way to create a nio-powered UI is to start with our [UI Scaffold](https://github.com/niolabs/ui-scaffold). It gets you up and running in minutes.
 
+---
+
 ## What’s In The Box
+
 The UI Scaffold:
 - Imports ReactJS
 - Imports the nio UI Kit component library
@@ -11,8 +14,12 @@ The UI Scaffold:
 
 If you’re at all familiar with React, this simple example covers most of what you need to know to get started.
 
+---
+
 ## Hello World (What Time Is It?)
+
 Follow these steps to create a simple UI that can publish to, subscribe to, and display the output of your nio services.
+
 1. In your terminal, clone the UI Scaffold, enter the directory, and install dependencies.
 ```
 git clone https://github.com/niolabs/ui-scaffold.git
@@ -44,6 +51,8 @@ What’s actually happening is this:
   - The React `Clock` component from the nio UI Kit then renders itself based on the inbound time.
 
 Sure, you could have just had the timer set the local state variable, but then you wouldn’t have become such an expert at using Pubkeeper.
+
+---
 
 ## What’s Next?
 The output of any service that shares the same Pubkeeper host and token that you configured above can be consumed by your UI. All you need to do is update the patron’s topic (or add new patrons!), register a handler, and render the data.

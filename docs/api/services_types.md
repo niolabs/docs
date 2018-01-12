@@ -2,6 +2,8 @@
 
 Service types contain metadata for nio services and can be accessed with `/services_types` API.
 
+---
+
 ## Get API
 
 The Get API returns a JSON body with information about the service type with a particular name. For example, send a GET request to `/services_types` with the name `Service` as its endpoint
@@ -148,6 +150,8 @@ and the result will be
   **name**<br>The name of the service type, in this case, `Service`.
 
   **properties**<br>The properties of the service. In this case, there is only one service type, `Service`, and all services contain these properties.
+
+---
 
 ## Get All API
 
