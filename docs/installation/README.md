@@ -17,4 +17,4 @@ The cloud is an easy way to get the nio Platform up and running, but to see the 
 
 ## Installation
 
-{% include "/includes/install-binary.md" %}
+{% include "/includes/install-nio.md" %}
