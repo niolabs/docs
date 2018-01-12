@@ -6,6 +6,8 @@ We recommend signing up for a [Google Cloud Platform account](https://cloud.goog
 
 Take a look through the [Database blocks](https://blocks.n.io/?category=Database) that are currently built and reach out to support with any questions about working with managed data partners.
 
+---
+
 ## See Also
 
-[Firebase Workshop](https://workshops.n.io/nio-101/database-insertion/)
+* [Firebase Workshop](https://workshops.n.io/nio-101/database-insertion/)

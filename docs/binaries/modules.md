@@ -2,6 +2,8 @@
 
 Unlike a nio core component that runs only once in the core/main process, a nio module is a piece of functionality that runs in every nio service. Each nio module is broken down into two parts, an interface and an implementation.
 
+---
+
 ## Interface
 The interface of a module exists in the [block development framework](/blocks/block-development/framework.html) and can be called by the nio core or by blocks. This allows blocks to use the same implementation that the core uses in a particular installation without having to worry about the details of the implementation.
 
@@ -14,6 +16,8 @@ There are currently six module interfaces defined in the framework:
 * Persistence
 * Security
 * Settings
+
+---
 
 ## Implementation
 

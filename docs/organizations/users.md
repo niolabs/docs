@@ -8,6 +8,8 @@ Click the **Users** tab in the left navigation to navigate to the users page. Fr
 
 Collaborators can view users and user profiles but can not make any changes.
 
+---
+
 ## Invite Users to an Organization
 
 If you are an owner or a collaborator, you can invite anyone to become a member of your organization by sending them an email invitation.
@@ -17,6 +19,8 @@ If you are an owner or a collaborator, you can invite anyone to become a member 
 If you want to invite multiple users with the same [permission level](/organizations/management.md), separate the email addresses with commas to bulk-send invites to multiple users.
 
 ![](/img/organizations/org-invite-multiple.jpg)
+
+---
 
 ## Status of Users: Invited or Active
 Users that have been invited but have not yet set up an account will have a gold circle next to their photos.
@@ -31,6 +35,8 @@ If you want to remind someone to set up an account, from the users page, find th
 You may also revoke an invitation from the same drop-down menu. If you no longer wish to invite the user to be a part of your organization, click **remove**.
 
 Users that have been invited and have set up accounts will have a green circle next to their photo indicating that they are active within your organization.
+
+---
 
 ## User Profile Page
 Clicking a user’s card will navigate you to that user's profile page.
@@ -57,6 +63,8 @@ To remove a user from your organization, go to the user's profile page. In the t
 
 ![](/img/organizations/org-user-profile.jpg)
 
+---
+
 ## Update Your Profile Picture
 To update your profile picture, click the user icon in the top navigation and then select your name from the dropdown.
 
@@ -65,6 +73,8 @@ To update your profile picture, click the user icon in the top navigation and th
 While on your profile page, click the **edit photo** text. Upload your new profile image (jpg, png, bmp, or gif file under 1MB) from your computer or external drive.
 
 ![](/img/organizations/org-update-profile-pic.jpg)
+
+---
 
 ## Linking Accounts
 

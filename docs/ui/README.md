@@ -7,12 +7,12 @@ At niolabs, we use React for UI development. We’ve created a themed collection
 
 Check out our [quickstart guide](/ui/build-a-ui.md) to building a UI for a nio system. Please note that [Node.js](https://nodejs.org/en/) is required in order to build with the UI Kit
 
+---
+
 ## Related Links
-> _These are not nio supported products
-> The following resources are designed to provide helpful information to nio users regarding the development and integration of user interfaces within a nio system. They are not official niolabs products and are not supported as such._
 
-You can clone the nio UI Scaffold here: https://github.com/niolabs/ui-scaffold.git
+> _The following resources are designed to provide helpful information to nio users regarding the development and integration of user interfaces within a nio system. **They are not official niolabs products and are not supported as such**._
 
-You can learn about how to use the nio UI Kit here: https://uikit.niolabs.com
-
-And if need additional help, you can learn more about React here: https://reactjs.org/
+* You can clone the nio UI Scaffold here: https://github.com/niolabs/ui-scaffold.git
+* You can learn about how to use the nio UI Kit here: https://uikit.niolabs.com
+* And if need additional help, you can learn more about React here: https://reactjs.org/

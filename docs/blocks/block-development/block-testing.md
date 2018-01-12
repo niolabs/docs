@@ -2,6 +2,8 @@
 
 nio Blocks are not meant to be run as stand-alone Python modules, so testing can be a challenging process. The nio Platform provides a couple of tools and offers best practices to make your testing easier.
 
+---
+
 ## NIOBlockTestCase
 
 When building your tests, use the `NIOBlockTestCase`. The test case extends the `unittest.TestCase` and uses the same infrastructure as the base class. However, `NIOBlockTestCase` also provides a number of helpful methods for testing blocks. Here's a real-world example from our internal block repositories:
@@ -29,15 +31,21 @@ class TestYourBlock(NIOBlockTestCase):
 
  ```
 
+---
+
 ## setUp/tearDown
 
 Just like the `unittest.TestCase`, nio supports the setUp/tearDown pattern. This is a great place to do any initialization and/or cleanup that will be required across every test. Do not repeat yourself! Be aware, though, that the block provides crucial initialization and finalization in `NIOBlockTestCase.setUp/tearDown`. If you override either of these methods, you need to call the method in the parent class at the top of your method.
+
+---
 
 ## Helper Methods
 
 - **configure_block(block, block_properties)**<br>The process of configuring and initializing blocks manually is somewhat nuanced (and not something we want you to worry about). We provide this method to configure your block instance semi-automatically. Just pass the block object itself and a dictionary containing any block properties you want to configure (and the associated values).
 - **assert_num_signals_notified(num, block=None)**<br>This method provides access to the total number of signals notified over the course of the current test. If `block` is not `None`, then you will receive the number of signals notified by that block over its lifetime.
 - **last_signal_notified(output_id)**<br>This method returns the last signal that was notified from a particular output. If an output_id is not specified, it will return the last signal notified from any output on the block.
+
+---
 
 ## Overridable Methods
 
@@ -55,6 +63,8 @@ Just like the `unittest.TestCase`, nio supports the setUp/tearDown pattern. This
 def signals_notified(self, signals, output_id):
 	self.signals[output_id].extend(signals)
 ```
+
+---
 
 ## Events
 
@@ -83,6 +93,8 @@ e.wait(2)
 
 Using the _EventBlock_, your test will wait until  `YourBlock.configure` returns control to the method on the child class. Your test will never proceed until `EventBlock.e` is set.
 
+---
+
 ## Mocking
 
 Patching and mocking are extremely useful concepts in software verification; this is especially relevant when the modules in question interact with external resources (such as APIs and OS services). We won't go into too much details of mocking right now, but the [Python documentation](https://docs.python.org/3/library/unittest.mock.html) contains great material on the subject. We recommend using these concepts liberally; in fact, in many cases you won't have much choice.
@@ -99,6 +111,8 @@ def test_it(self, load_patch):
 	load_patch.assert_called_once_with(ANY)
 ```
 Again, you don't necessarily have to construct your tests in this manner; however, we've found this practice to be more convenient and less prone to user error than others.
+
+---
 
 ## Mocking Persistence Module
 
@@ -125,6 +139,8 @@ class TestPersistenceBlock(NIOBlockTestCase):
 		 self.configure_block(blk, {})
 		 blk.persistence.save = MagicMock()
 ```
+
+---
 
 ## nio Modules
 

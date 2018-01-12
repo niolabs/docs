@@ -2,6 +2,8 @@
 
 The nio Platform allows you to define and use variables when configuring your instance, services, or blocks. These variables are called "environment variables" and are specified using the square bracket syntax: <br>`[[ ENV_VAR_NAME ]]`. There are several different use cases for environment variables which are detailed below.
 
+---
+
 ## Access Tokens and Other Secrets
 
 Often a block will need some sort of access token or password in its configuration. Rather than store those in the block config directly, where they are visible in plain text, we recommend using an environment variable for that. Add an entry to your environment variable file `nio.env`.
@@ -10,6 +12,8 @@ MY_SECRET: p@$$w0rd
 ```
 
 Then, in your block config you can use that secret token by using the environment variable syntax: <br>`[[ MY_SECRET ]]`. The block will receive the proper value when the service is started, but the block's configuration will always contain the unreplaced environment variable.
+
+---
 
 ## Different Environments
 
@@ -36,6 +40,8 @@ DB_PASS: password
 In your blocks and services, you can use `[[ DB_HOST ]]` as the database host and be assured that when you are running nio locally you aren't talking to the production database.
 
 See the [Deployment](/deployment) section for more information.
+
+---
 
 ## Setting Environment Variables
 

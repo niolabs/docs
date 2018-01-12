@@ -2,6 +2,8 @@
 
 While block types are classes and have code, blocks are specific configurations of a block type's properties. Information about and interaction with individual block configurations in a running nio instance are available through the `/blocks` API.
 
+---
+
 ## Get API
 
 The Get API returns a JSON body with information about a block based on its name. The following example gets the information for a configured _Logger_ block with the name **Log**
@@ -37,11 +39,15 @@ Other block types will show their own properties in the response. For example, t
 
       "attributes": []
 
+---
+
 ## Get All API
 
 In addition to getting the details of one block configuration, specified by name, you can get the details of all block configurations in one request
 
     curl -XGET 'http://localhost:8181/blocks'
+
+---
 
 ## Create API
 
@@ -49,11 +55,15 @@ If you're working with a nio project from scratch, you need to create and config
 
     curl -XPOST 'http://localhost:8181/blocks' --data '{"type": "LoggerBlock", "name": "Log"}' -H 'Content-Type: application/json'
 
+---
+
 ## Update API
 
 When you want to update the configuration of a block, send a PUT request to `/blocks` with the block-name endpoint and include the new JSON data. You only need to include the properties that you are updating in your PUT request, in this case `log_level`.
 
     curl -XPUT 'http://localhost:8181/blocks/Log' --data '{"log_level": "DEBUG"}' -H 'Content-Type: application/json'
+
+---
 
 ## Delete API
 

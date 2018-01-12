@@ -2,6 +2,8 @@
 
 Most of the time, the first service you build with the nio Platform involves simulating signals using a _Simulator_ block and then logging that data using a _Logger_ block. That is the "Hello, World" nio service. However, simulators are much more powerful and do much more than generate random data. This document attempts to define and explain other use cases for simulators.
 
+---
+
 ## Understanding Simulators
 
 Before we get into too many use cases, it is helpful to understand how simulators work along with their naming conventions. There are many types of simulator blocks, but once you understand the naming, their function will be clear. The basic idea is that a simulator block consists of a generator and a trigger. Each simulator block will be named `<Generator><Trigger>Simulator`. For example, if you want to use the `Counter` generator and the `Interval` trigger as your simulator, then you can use the _CounterIntervalSimulator_ block type.
@@ -20,6 +22,8 @@ Triggers define when a simulator should notify signals. Triggers  are only conce
 * `Interval` - Notify signals at a fixed time interval \(for example, every 5 minutes\)
 * `Cron` - Notify signals at certain times of the day, similar to how you would configure a [cron job](https://en.wikipedia.org/wiki/Cron)
 
+---
+
 ## Driving Another Block
 
 The general design of nio assumes that **signals** represent data and information, while **blocks** represent functions and transformations. However, blocks need to know when and how to perform these functions. Some blocks may need to do an action periodically while others may need to wait for some external action, such as a button press. To avoid building that logic in the block's configuration, you can use incoming signals to trigger the action instead. This also allows the block to "tap in to" the incoming signals and perhaps change its behavior based on the content of the signals. For example, rather than making a fixed HTTP request every interval, a block could send the contents of the incoming signal as part of the HTTP payload instead.
@@ -27,6 +31,8 @@ The general design of nio assumes that **signals** represent data and informatio
 In some cases, you will not care about the contents of the incoming signal, but you will want to perform an action. For example, if you wanted to poll the Twitter API every five minutes for new tweets, you would need an incoming signal to the Twitter block when you wanted to poll. Since you don't care about the contents of the signal, any signal, even an empty signal, would suffice. You could use the _IdentityIntervalSimulator_ to create the signal and kick-off polling of the Twitter block. The Identity generator combined with the Interval trigger would drive the block to periodically poll the API.
 
 Because of the way we use simulators to kick off the actions of a service, almost every service will either begin with a _Subscriber_ block \(to subscribe to signals from another service\) or with a _Simulator_ block \(to generate the driving signals on its own\).
+
+---
 
 ## Testing and Custom Simulators
 
