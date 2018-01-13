@@ -6,11 +6,14 @@ Just like your biological system is a group of organs working together to keep y
 
 Building digital distributed systems can be extraordinarily complex.  nio simplifies this by giving a common platform to listen, transform, share, and act upon signals regardless of where the instances live within the system (chip, gateway, or cloud).
 
+---
+
 ![agriculture system example](/img/intro-system.png)
 
 **Fig 1. Example precision agriculture system**
 
+---
 ## See Also
-[Systems in the System Designer](/system-designer/designer-tasks.html#system)
 
-Glossary—[System](/glossary#system)
+* [Systems in the System Designer](/system-designer/designer-tasks.html#system)
+* Glossary—[System](/glossary#system)

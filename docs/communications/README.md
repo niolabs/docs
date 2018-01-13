@@ -1,4 +1,4 @@
-# Communication/Notification
+# Communication / Notification
 
 In addition to computers, UI's, sensors, and other devices, humans are one of the most important components of a distributed system. Within the nio Platform, humans can interact with a system via several common notification blocks.
 

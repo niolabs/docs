@@ -6,6 +6,8 @@ The nio Platform leverages Python syntax inside blocks to operate on signals. To
 {{ <code goes here> }}
 ```
 
+---
+
 ## Signal Property Syntax `$`
 
 Signals in nio are passed as key value pairs `{“key1”: value1, “key2”: value2}`. Use the `$` syntax to access signal properties.
@@ -16,78 +18,80 @@ Signals in nio are passed as key value pairs `{“key1”: value1, “key2”: v
 -> "6 dogs went to the park"
 ```
 
+---
+
 ## Raw Signal
 
 You can access the raw signal itself, rather than just the attributes, with a lone `$`. As long as the character following the `$` is not a [valid Python identifier](https://docs.python.org/3/reference/lexical_analysis.html#identifiers), the `$` will evaluate to the incoming signal.
+
+---
 
 ## nio Expression Examples
 
 ### Rename a Signal
 
-With an incoming signal of `{“sim”: 1}`, we can rename it inside a _Modifier_ block:
-
-![rename a signal](/img/expressions/rename.png)
+<img src="/img/expressions/rename.png" width="225" align="right" hspace="10" />
+With an incoming signal of `{“sim”: 1}`, we can rename it inside a _Modifier_ block.
 
 This will create a new signal attribute called "new" with the same value as `sim`.
-The new output signal will be `{"new": 1, "sim": 1}`.  
+
+The new output signal will be `{"new": 1, "sim": 1}`.
 
 To remove `{“sim”: 1}` from the output, check the **Exclude existing fields?** block property.
 
 ### Math Operations
 
-With an incoming signal of `{“sim”: 1}` we can perform math inside a _Modifier_ block:
-
-![math](/img/expressions/plus-one.png)
+<img src="/img/expressions/plus-one.png" width="225" align="right" hspace="10" />
+With an incoming signal of `{“sim”: 1}` we can perform math inside a _Modifier_ block.
 
 This operation creates a new attribute **plus_one** that will be equal to `sim + 1`.
+
 The new output signal will be `{"plus_one": 2, "sim": 1}`.
 
 ### Create Attributes
 
-Anything typed directly into a field is stored as a string, for example:
+<img src="/img/expressions/string-input.png" width="225" align="right" hspace="10" />
+Anything typed directly into a field is stored as a string.
 
-![string](/img/expressions/string-input.png)
-
-This will create the following signal:  `{"string": "this is a string"}`.
+The expression at right will create the following signal:  `{"string": "this is a string"}`.
 
 ### Conditionals
+
+<img src="/img/expressions/logic.png" width="225" align="right" hspace="10" />
 Expressions can perform logic.
 
-With a signal stream `{“sim”:1}, {“sim”: 0}`:
+The signal stream `{“sim”:1}, {“sim”: 0}` will result in the following signal output:
 
-![logic](/img/expressions/logic.png)
-
-Will result in the following signal output:
 ```
 {"sim": 1, "zero": false}
 {"sim": 0, "zero": true}
 ```
 
 ### Negation
+
+<img src="/img/expressions/negation.png" width="225" align="right" hspace="10" />
 Negation (!=) can also be used.
-With a signal stream `{“sim”:1}, {“sim”: 0}`:
 
-![negation](/img/expressions/negation.png)
+The signal stream `{“sim”:1}, {“sim”: 0}` will result in the following signal output:
 
-Will result in the following signal output:
 ```
 {"sim": 1, "zero": false}
 {"sim": 0, "zero": true}
 ```
 
 ### Timestamp (default libraries)
+
+<img src="/img/expressions/timestamp.png" width="225" align="right" hspace="10" />
 nio expressions allow you to import the following Python libraries by default:
+
 - datetime
 - json
 - math
 - random
 - re
 
-For example, datetime, used to apply a timestamp to data:
+`datetime`, used to apply a timestamp to data as shown will output:
 
-![timestamp](/img/expressions/timestamp.png)
-
-Will output:
 ```
 {"timestamp": "2017-12-13 23:52:09.661182"}
 ```

@@ -1,6 +1,8 @@
 # Restructure and Group Signals
 
-If you have a list of signals that you want to condense into fewer signals or even one signal, there are a few nio Blocks that will help. The [_Join_ block](https://blocks.n.io/Join) is commonly used.  
+If you have a list of signals that you want to condense into fewer signals or even one signal, there are a few nio Blocks that will help. The [_Join_ block](https://blocks.n.io/Join) is commonly used.
+
+---
 
 ## Paring Down Lists of Signals with the Join Block
 
@@ -21,6 +23,8 @@ This configuration (based on the configuration of `key`\ will create a new signa
   1: [1, 3, 5]
 }
 ```
+
+---
 
 ## Using Group By
 
@@ -61,7 +65,11 @@ The block configuration results in a single output signal.
 
 That looks great, but what if you want to have a separate signal for each department, but still have a list of names. One inefficient option would be to filter the stream based on the department and then put the individual streams into copies of the _Join_ block from before. The following image displays this example. Note that this is **not** the advised way to do this.
 
-![Bad Join Example](/img/bad-join.png)
+---
+
+<img src="/img/bad-join.png" style="display:block; height:300px; margin: 10px auto; border: 1px solid #ccc; border-radius: 6px;" />
+
+---
 
 There are several downsides to this approach.
 

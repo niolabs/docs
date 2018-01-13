@@ -6,6 +6,8 @@ The following communication blocks are used for publishing and subscribing to da
 * [_Publisher_](https://blocks.n.io/Publisher)
 * [_Subscriber_](https://blocks.n.io/Subscriber)
 
+---
+
 ## Topic Tree
 
 When using the _Publisher_ and _Subscriber_ blocks, you connect systems and instances by defining a topic you wish to publish to or subscribe to. The information structure of an entire nio system can be viewed as a hierarchical topic tree.
@@ -25,25 +27,25 @@ Publisher Topics:
 These topics can be visualized as the following tree:
 
 ```
-                                        ┌────────┐                      
-                                        │  Root  │                      
-                                        └────────┘                      
-                                             │                          
-                            ┌────────────────┴──────────────────┐          
-                            ▼                                   ▼       
+                                        ┌────────┐
+                                        │  Root  │
+                                        └────────┘
+                                             │
+                            ┌────────────────┴──────────────────┐
+                            ▼                                   ▼
                      ┌────────────┐                      ┌────────────┐
                      │ California │                      │  Colorado  │
                      └────────────┘                      └────────────┘
-                            │                                   │       
-              ┌─────────────┴──────┬─────────────┐              │       
-              ▼                    ▼             ▼              ▼       
+                            │                                   │
+              ┌─────────────┴──────┬─────────────┐              │
+              ▼                    ▼             ▼              ▼
        ┌────────────┐       ┌────────────┐┌────────────┐ ┌────────────┐
        │    San     │       │    Los     ││    (4)     │ │ Broomfield │
        │ Francisco  │       │  Angeles   ││ Population │ │            │
        └────────────┘       └────────────┘└────────────┘ └────────────┘
-              │                    │                            │       
-       ┌──────┴──────┐             │                            │       
-       ▼             ▼             ▼                            ▼       
+              │                    │                            │
+       ┌──────┴──────┐             │                            │
+       ▼             ▼             ▼                            ▼
 ┌─────────────┬────────────┐┌─────────────┐              ┌─────────────┐
 │     (1)     │    (2)     ││     (3)     │              │     (5)     │
 │ Temperature │ Population ││ Temperature │              │ Temperature │
@@ -62,9 +64,13 @@ Subscribers can subscribe to a single topic or also portions of the topic tree t
 * Subscribe: `California.*.**`—Publishers: 1, 2, 3 (Publisher 4 is still not matched since the single asterisk forces us down one more level)
 * Subscribe: `California.**`—Publishers: 1, 2, 3, 4
 
+---
+
 ## Pubkeeper
 
 Perhaps the most impactful reason to use the nio pub/sub system is because of the interoperability enabled through the use of [Pubkeeper](/pubkeeper/README.md). Pubkeeper allows the information hierarchy, or topic tree, to be independent of the underlying protocols that are be responsible for transmitting data between services and instances. In other words, it allows service designers to define what data goes to which services without worrying about how it will get there.
+
+---
 
 ## Hints in the System Designer
 

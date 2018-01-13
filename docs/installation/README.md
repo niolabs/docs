@@ -2,17 +2,19 @@
 
 The cloud is an easy way to get the nio Platform up and running, but to see the power of nio as a distributed system, you should install and run nio on a locally or at the edge.
 
-{% include "/includes/install-requirements.md" %}
 
-## Download nio binary
+>**[info] Requirements**
+>
+>Linux / MacOS
+>* **Python3**: https://www.python.org/downloads (you need Python 3.4+)
+>* **A nio binary**: https://app.n.io/binaries/download (you'll need to agree to the license)
+>* **A Pubkeeper Server**: A step-by-step on how to create one can be found [here](/running-nio/in-the-cloud.md).
+>
+>Windows users, [click here for installation instructions](/installation/windows.md).
+>
 
-{% include "/includes/download-binary.md" %}
+---
 
 ## Installation
 
 {% include "/includes/install-nio.md" %}
-
-
-## Run nio
-
-That's it! nio is officially installed on your local machine. Check out our documentation on [running nio locally](/running-nio/locally.md) to set up a new nio project and launch the platform.

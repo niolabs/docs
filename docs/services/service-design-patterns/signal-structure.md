@@ -10,6 +10,8 @@ Signals are the pieces of information that are passed from block to block throug
 
 In this signal, the key "name" has a value of "John Doe" and the key "age" has a value of 34. The keys are also often called "attributes." Each key or attribute has its corresponding value.
 
+---
+
 ## Lists of Signals
 
 Signals are passed from block to block and drive the system. You define your systems by designing how signals should move from block to block. However, what is actually happening is that **lists** of signals are being passed between blocks. If a block notifies only one signal, then the next block will receive a list of signals that contains that single signal.

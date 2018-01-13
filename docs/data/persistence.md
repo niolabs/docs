@@ -6,23 +6,17 @@ This block [mixin](/blocks/block-development/mixins.html) uses the persistence m
 
 The data saved depends on the block type, but generally allows a block to start where it left off when it was last stopped. This may include the current state evaluation, the contents of a buffer, or a scheduled task. Persistence is not a storage solution, but a method of handling interruptions to a running system.
 
-<br>
-<br>
-![](/img/persistence1.png)
-<br>
-<br>
+<img src="/img/persistence1.png" style="display:block; width:500px; margin: 30px auto; padding: 20px; border: 1px solid #ccc; border-radius: 6px;" />
 
 In the above example, a [_Sleep_](https://blocks.n.io/Sleep) block loads from persistence after an interruption and continues with its scheduled tasks. Without this function, or if the service was not restarted before the end of the sleep interval, the signal received would have been dropped and never been sent.
 
-<br>
-<br>
-![](/img/persistence2.png)
-<br>
-<br>
+<img src="/img/persistence2.png" style="display:block; width:500px; margin: 30px auto; padding: 20px; border: 1px solid #ccc; border-radius: 6px;" />
 
 This timeline shows how a [_StateChange_](https://blocks.n.io/StateChange) evaluation that is loaded from persistence does not emit a signal after restarting, because the state evaluation is the same as it was when stopped. The next signal where <br>`x > 0` will evaluate to "True" and be emitted normally. If not loaded from persistence, the second signal with `x = 0` would have evaluated "False" and also emitted a signal. Depending on your application and system, this repetition of a "False" state may or may not be desirable.
 
-### Persistence Mixin
+---
+
+## Persistence Mixin
 
 The persistence module in the nio framework is ultimately responsible for persisting data from blocks through instance and service stops and restarts. However, for block developers, the nio framework includes a handy [mixin](https://github.com/niolabs/nio/tree/master/nio/block/mixins/persistence) to add persistence to blocks. Use the persistence [mixin](https://github.com/niolabs/nio/tree/master/nio/block/mixins/persistence) when you want to easily add persistence to your custom block.
 

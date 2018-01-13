@@ -4,19 +4,20 @@ Block properties are the configuration fields of a block.
 
 In the nio System Designer, when you double-click a block, the configuration panel displays the block's properties.
 
-As an example, the configuration panel for a _Modifier_ block is shown below. It displays four properties of the _Modifier_ block:
+<img src="/img/modifier-block-config.png" width="225" align="right" hspace="10" />
+As an example, the configuration panel for a _Modifier_ block is shown at right. It displays four properties of the _Modifier_ block:
 - **Exclude existing fields**
 - **Fields**
 - **Log Level**
 - **Version**
-
-<img src="/img/modifier-block-config.png" width="300" />
 
 The input fields are block properties that can be edited, updated, and saved to create a configured block.
 
 The property configuration of the block makes it unique. A **block type name**—_Filter_, _Modifier_, _CounterIntervalSimulator_—defines the block type and the configurable fields. (In the System Designer, this name is abbreviated in a vertical bar on the left side of the block.)
 
 The unique **block name**, which you define when dragging a new instance of the block type onto the canvas of the System Designer, saves a specific configuration of the block and defines how the block acts on signals. All blocks with the same **block name** share a configuration. For example, if you change the configuration of your "isWatering" _Filter_ block, the configuration of every "isWatering" block will be be updated to match. The unique **block name** is the link to a block's property configuration. For this reason, it is good to give your blocks descriptive names that reflect their configured properties.
+
+---
 
 ## Property Types
 
@@ -65,9 +66,13 @@ This _Modifier_ block is named **ShowAlertLevel** and is configured to enrich th
 ]
 ```
 
+---
+
 ## Expressions
 
 Expressions are used to dynamically define properties. Many property types can accept expressions. Expressions are found inside the double curly braces. In the _Modifier_ block configuration shown above, you can see example expressions in the **Attribute Value** inputs. Learn more about how to create expressions in [nio Expressions](/blocks/expressions.md).
+
+---
 
 ## Environment Variables
 

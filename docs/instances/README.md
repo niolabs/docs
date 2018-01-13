@@ -8,13 +8,17 @@ All instances run on some form of compute. We have specialized nio [binaries](/b
 
 A single instance of nio can have multiple [services](/services/README.md) with related or unrelated functions. In general, each device or cloud instance will run one instance of nio. However, running parallel instances of nio is possible and is sometimes helpful for failover and load balancing.
 
+---
 ![instances](/img/intro-instance.png)
 
 **Fig. Instance with multiple interrelated services used for precision agriculture.**
 
+---
+
 Where you decide to install nio instances (or logic) throughout a system should ultimately be determined by the desired outcome and constraints of your specific application. These decisions are usually decided during the design and solution architecture phase of a project.
 
+---
 ## See Also
-[Instances in the System Designer](/system-designer/designer-tasks.html#instance)
 
-Glossary—[Instance](/glossary#instance)
+* [Instances in the System Designer](/system-designer/designer-tasks.html#instance)
+* Glossary—[Instance](/glossary#instance)

@@ -6,12 +6,16 @@ To view your organization's teams, click the user icon in the top navigation and
 
 Click the **Teams** tab in the left navigation to navigate to the teams page. From the teams page you can view all the teams in the organization and navigate to each team's profile page. If you are an owner or an organizer, you can also create teams.
 
+---
+
 ## Create a Team
 If you are an organizer or an owner of the organization, you can create a team. Creating teams is beneficial when you want to share a system from the nio System Designer with a group of users instead of sharing the same system with each user individually. On the teams page, enter a team name and click **add** to create a team.
 
 ![](/img/organizations/org-create-team.jpg)
 
 If you are a collaborator, you can view teams but you are not able to create teams or modify the members of a team.
+
+---
 
 ## Team Profile
 If your organization has teams, you can click any team card to navigate to that team's profile.

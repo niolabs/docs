@@ -1,4 +1,4 @@
-Open a terminal (Applications > Utilities > Terminal on MacOS), and install nio using Python’s pip3 installer (verify the filepath and binary filename below- the X's represent the date of the binary in YYYYMMDD format):
+Open a terminal (Applications > Utilities > Terminal on MacOS), and install nio using Python’s pip3 installer (verify the filepath and binary filename below–the X's represent the date of the binary in YYYYMMDD format):
 ```
 pip3 install -U ~/Downloads/nio_lite-XXXXXXXX-py3-none-any.whl
 ```
