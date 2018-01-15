@@ -11,7 +11,7 @@ A single instance of nio can have multiple [services](/services/README.md) with 
 ---
 ![instances](/img/intro-instance.png)
 
-**Fig. Instance with multiple interrelated services used for precision agriculture.**
+**Instance with multiple interrelated services used for precision agriculture.**
 
 ---
 
