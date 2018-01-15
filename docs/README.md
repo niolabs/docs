@@ -4,11 +4,12 @@
 
 ### First Timers: Check out the Workshops
 
-For users looking for a guided learning experience, we've created workshops to help you:
+For users looking for a guided learning experience, we've created [workshops](http://workshops.n.io) to help you:
 
-* Familiarize yourself with the [nio System Designer](https://workshops.n.io/system-designer)
+* Learn about the nio Platform [System Architecture](http://workshops.n.io/architecture/)
+* Familiarize yourself with the [nio System Designer](https://workshops.n.io/system-designer/)
+* Install and run a pre-built service where you [try and keep a thirsty plant happy](http://workshops.n.io/distributed-demonstration/)
 * Walk though the seven [nio 101 workshops](https://workshops.n.io/nio-101/)
-* Install and run a pre-built service where you [try and keep a thirsty plant happy](http://workshops.n.io/distributed-demonstration)
 
 
 ### Experienced Adventurers: Dive In
