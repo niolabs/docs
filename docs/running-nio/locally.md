@@ -37,9 +37,9 @@ NIO [INFO] Component: ServiceManager status changed from: starting to: started
 
 If you see those logs, the nio Platform is up and running. Congratulations!
 
->By default, new projects use port 8181. If port 8181 isn’t available, you'll see an error. Change the NIOPORT value in your project's nio.env file to fix this error.
+>By default, new projects use port 8181. If port 8181 isn’t available, you'll see an error. Change the NIOPORT value in your project's `nio.env` file to fix this error.
 
->**MacOS Users**: While your system comes pre-installed with Python, it is an older version. When installing newer versions, Python may require that you install and trust a set of Root Certificates for its SSL package. That file is located at /Applications/Python 3.x/Install Certificates.command. Just double-click that file to complete the process. Check /Applications/Python 3.x/ReadMe.rtf for more details.
+>**MacOS Users**: While your system comes pre-installed with Python, it is an older version. When installing newer versions, Python may require that you install and trust a set of Root Certificates for its SSL package. That file is located at `/Applications/Python 3.x/Install Certificates.command`. Just double-click that file to complete the process. Check `/Applications/Python 3.x/ReadMe.rtf` for more details.
 
 >The error string you'll see will look something like this:
 
@@ -59,7 +59,7 @@ nohup niod -r path/to/my_project 2>&1 > /dev/null &
 
 To manage your local instance, you need to add it to the **System Designer**:
 
-1. Open the **System Designer** in a browser: http://designer.n.io/
+1. Open the **nio System Designer** in a browser: http://designer.n.io/
 1. Select your system in the left hand nav.
 1. Click **create local instance**.
   * In the **instance name** box, enter an instance name.
