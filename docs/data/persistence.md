@@ -16,7 +16,7 @@ This timeline shows how a [_StateChange_](https://blocks.n.io/StateChange) evalu
 
 ---
 
-## Persistence Mixin
+## Persistence mixin
 
 The persistence module in the nio framework is ultimately responsible for persisting data from blocks through instance and service stops and restarts. However, for block developers, the nio framework includes a handy [mixin](https://github.com/niolabs/nio/tree/master/nio/block/mixins/persistence) to add persistence to blocks. Use the persistence [mixin](https://github.com/niolabs/nio/tree/master/nio/block/mixins/persistence) when you want to easily add persistence to your custom block.
 

@@ -1,10 +1,10 @@
-# Environment Variables
+# Environment variables
 
 The nio Platform allows you to define and use variables when configuring your instance, services, or blocks. These variables are called "environment variables" and are specified using the square bracket syntax: <br>`[[ ENV_VAR_NAME ]]`. There are several different use cases for environment variables which are detailed below.
 
 ---
 
-## Access Tokens and Other Secrets
+## Access tokens and other secrets
 
 Often a block will need some sort of access token or password in its configuration. Rather than store those in the block config directly, where they are visible in plain text, we recommend using an environment variable for that. Add an entry to your environment variable file `nio.env`.
 ```
@@ -15,7 +15,7 @@ Then, in your block config you can use that secret token by using the environmen
 
 ---
 
-## Different Environments
+## Different environments
 
 A large-scale nio system will generally run in multiple environments. Here are several examples:
 
@@ -23,7 +23,7 @@ A large-scale nio system will generally run in multiple environments. Here are s
 2. A staging environment used for validation and testing.
 3. A local test environment used for building blocks or writing service unit tests.
 
-For any of these setups, the use of environment variables can help you. If you find that a value may differ from one environment to the next \(e.g., an IP address, a database password, whether a service should run or not\), then replace that value with an environment variable and create a different env file for the respective environment. For example, your production env file \(`prod.env`\) may look something like this:
+For any of these setups, the use of environment variables can help you. If you find that a value may differ from one environment to the next \(e.g., an IP address, a database password, whether a service should run or not\), then replace that value with an environment variable and create a different `.env` file for the respective environment. For example, your production `.env` file \(`prod.env`\) may look something like this:
 
 ```
 DB_HOST: real-data-host.com
@@ -43,7 +43,7 @@ See the [Deployment](/deployment) section for more information.
 
 ---
 
-## Setting Environment Variables
+## Setting environment variables
 
 nio environment variables are slightly different than operating system environment variables. nio environment variables can also be set by operating system environment variables. This can be useful when running nio using Docker, systemd, or some other process manager where you can pass environment variables to the process.
 

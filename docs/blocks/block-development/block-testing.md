@@ -1,4 +1,4 @@
-# Testing Your Block
+# Testing your block
 
 nio Blocks are not meant to be run as stand-alone Python modules, so testing can be a challenging process. The nio Platform provides a couple of tools and offers best practices to make your testing easier.
 
@@ -39,7 +39,7 @@ Just like the `unittest.TestCase`, nio supports the setUp/tearDown pattern. This
 
 ---
 
-## Helper Methods
+## Helper methods
 
 - **configure_block(block, block_properties)**<br>The process of configuring and initializing blocks manually is somewhat nuanced (and not something we want you to worry about). We provide this method to configure your block instance semi-automatically. Just pass the block object itself and a dictionary containing any block properties you want to configure (and the associated values).
 - **assert_num_signals_notified(num, block=None)**<br>This method provides access to the total number of signals notified over the course of the current test. If `block` is not `None`, then you will receive the number of signals notified by that block over its lifetime.
@@ -47,7 +47,7 @@ Just like the `unittest.TestCase`, nio supports the setUp/tearDown pattern. This
 
 ---
 
-## Overridable Methods
+## Overridable methods
 
 -   **get_test_modules()**<br>By default, `NIOBlockTestCase` automatically initializes the logging, threading, scheduler, and security modules. However, you can customize this by overriding this method and returning a list of strings corresponding to the particular modules you want to initialize.
     * logging
@@ -114,7 +114,7 @@ Again, you don't necessarily have to construct your tests in this manner; howeve
 
 ---
 
-## Mocking Persistence Module
+## Mocking persistence module
 
 To mock `load`, the persistence module:
 
@@ -142,7 +142,7 @@ class TestPersistenceBlock(NIOBlockTestCase):
 
 ---
 
-## nio Modules
+## nio modules
 
 `NIOBlockTestCase` configures the following nio modules by default: `['logging', 'scheduler', 'security', 'threading']`. If your block test case needs to use any other nio modules, you must specify by implementing the `get_test_modules` method.
 

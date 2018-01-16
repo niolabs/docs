@@ -1,4 +1,4 @@
-# SNMP Agent Component
+# SNMP Agent component
 
 The SNMP Agent core component allows you to monitor the health of a nio system through the standard [SNMP protocol](https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol).
 

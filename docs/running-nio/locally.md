@@ -19,6 +19,8 @@ nio new my_project
 ---
 ## Start your project
 
+The command to run nio locally is `niod`. This will start a running instance on your machine. This command requires that you run it from the root of your project directory.
+
 ```
 cd my_project && niod
 ```
@@ -45,11 +47,12 @@ If you see those logs, the nio Platform is up and running. Congratulations!
 
 >```WARNING:tornado.general:SSL Error on 7 ('x.x.x.x', 443): [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed```
 
-Start a nio project from any directory by specifying the project root via the -r flag:
+`niod` can be run from outside of a project directory by using the `-r` flag and specifying the location of the project directory. For example:
+
 ```
 niod -r path/to/my_project
 ```
-Run a project in the background on MacOS and Linux using `nohup` (so you can close your terminal):
+You can run a project in the background on MacOS and Linux using `nohup` (so you can close your terminal):
 ```
 nohup niod -r path/to/my_project 2>&1 > /dev/null &
 ```

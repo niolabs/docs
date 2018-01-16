@@ -1,4 +1,4 @@
-# Services Types API
+# Services types API
 
 Service types contain metadata for nio services and can be accessed with `/services_types` API.
 
@@ -153,7 +153,7 @@ and the result will be
 
 ---
 
-## Get All API
+## Get all API
 
 You can get the details of all the service types configurations in one request with a request to the `/services_types` endpoint.
 

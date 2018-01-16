@@ -1,4 +1,4 @@
-# nio Binaries
+# nio binaries
 
 The nio Platform architecture is extensible and modular. It can be sized and repackaged with different standard components specified for your use case and technology stack. nio can also be built to run with different programming languages and in different runtimes.
 

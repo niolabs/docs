@@ -1,10 +1,10 @@
-# nio Core
+# nio core
 
 The nio core is the engine that runs in every nio binary. It is responsible for orchestrating all of the different pieces that constitute the nio instance. In most cases, the core will run in its own main process and will spawn services in their own individual system processes. This allows service builders to make use of multiprocessing by splitting their logic across different services. The core process will take care of setting up the appropriate IPC pipes and will monitor the lifecycle of the service process.
 
 ---
 
-## Block and Service Managers
+## Block and service managers
 
 The core contains manager components that are responsible for keeping track of the types of blocks and configurations of services. We call these components that keep track of their corresponding resources the **Block Manager** and the **Service Manager**, respectively.
 
@@ -14,7 +14,7 @@ The **Service Manager** is responsible for launching service processes and maint
 
 ---
 
-## Auto Discovery
+## Auto discovery
 
 One of the core's main functions is to manage the different modules, components, blocks, and services that exist within a nio instance. It includes an auto-discovery mechanism to find each of these. Based on the configuration in your project's `nio.conf` file, the core will walk through the Python namespace searching for objects that match the signature of the resources. For example, the core's discoverability mechanism will walk the namespace of `niocore.components` searching for discoverable classes that are subclasses of the `Component` class.
 

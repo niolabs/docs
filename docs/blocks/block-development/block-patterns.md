@@ -1,4 +1,4 @@
-# Base Block Pattern
+# Base block pattern
 
 Implementing a base block pattern is useful in complex configurable blocks. In this pattern, configure the options that are not block-specific in a [non-discoverable](framework.md#discoverability) base block. The blocks that do the work and process signals will inherit from the base block.
 

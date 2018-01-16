@@ -1,4 +1,4 @@
-# Block Development
+# Block development
 
 To create a new function or connect to a new framework, library, or custom piece of hardware not currently included in the nio Block Library at [blocks.n.io](https://blocks.n.io/), you can develop your own custom block. To create a custom block, follow the resources here under Block Development as well as the [Develop a Custom Block](https://workshops.n.io/custom-block/) tutorial in workshops.
 

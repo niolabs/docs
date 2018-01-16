@@ -1,4 +1,4 @@
-# Cloud Data
+# Cloud data
 
 The nio Platform Sandbox plans do not include managed cloud storage. In order to have your cloud instances store data in a managed cloud data environment, you will need to sign up for a managed cloud data provider.
 
@@ -8,6 +8,6 @@ Take a look through the [Database blocks](https://blocks.n.io/?category=Database
 
 ---
 
-## See Also
+## See also
 
 * [Firebase Workshop](https://workshops.n.io/nio-101/database-insertion/)

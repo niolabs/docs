@@ -1,4 +1,4 @@
-# Blocks Types API
+# Blocks types API
 
 nio Block types are the functional pieces of code that generate or transform signals. Information about and interaction with the block types in a running nio instance are available through the `/blocks_types` API.
 
@@ -141,7 +141,7 @@ The result of the previous request follows:
 
 ---
 
-## Get All API
+## Get all API
 
 In addition to getting the details of one block type, specified by name, you can get the details of all the block types in your project with one request.
 
