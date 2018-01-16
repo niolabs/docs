@@ -13,7 +13,7 @@ Building digital distributed systems can be extraordinarily complex.  nio simpli
 **Example precision agriculture system**
 
 ---
-## See Also
+## See also
 
 * [Systems in the System Designer](/system-designer/designer-tasks.html#system)
 * Glossary—[System](/glossary#system)

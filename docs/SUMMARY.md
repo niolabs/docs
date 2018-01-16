@@ -13,6 +13,7 @@
   * [In Production](running-nio/long-running.md)
 * [Deploy nio](deployment/README.md)
 * [System Designer](system-designer/README.md)
+  * [Reference](system-designer/designer-tasks.md)
   * [Browser Support](system-designer/browser-support.md)
 
 ---

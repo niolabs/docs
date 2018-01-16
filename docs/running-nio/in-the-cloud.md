@@ -12,7 +12,7 @@ A nio-managed cloud instance allows you to get up and running quickly and to sta
 ## Create a system
 <img src="/img/cloud/Hello-CreateNewSystem.png" width="250" align="right" hspace="10" />
 
-A nio system is a group of interrelated nio instances. Think of it as a workspace where you can put related projects.
+A system is a group of interrelated elements. In the nio System Designer, a system contains interrelated nio instances. Think of it as a workspace where you can put related projects.
 1. Open the **System Designer**: https://designer.n.io/
 
 1. You can create a new system in two ways.
