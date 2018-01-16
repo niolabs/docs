@@ -1,4 +1,4 @@
-# Running nio Locally
+# Running nio locally
 
 >**[info] Prerequisites**
 >
@@ -7,7 +7,7 @@
 ---
 ## Create a Project
 
-Projects are collections of services, blocks and configurations. Create a nio folder to keep things tidy:
+Projects are collections of services, blocks, and configurations. Create a nio folder to keep things tidy:
 ```
 mkdir -p nio/projects && cd nio/projects
 ```
@@ -17,7 +17,7 @@ nio new my_project
 ```
 
 ---
-## Start your Project
+## Start your project
 
 ```
 cd my_project && niod
@@ -55,7 +55,7 @@ nohup niod -r path/to/my_project 2>&1 > /dev/null &
 ```
 
 ---
-## Add Your Local Instance to the System Designer
+## Add your local instance to the System Designer
 
 To manage your local instance, you need to add it to the **System Designer**:
 
