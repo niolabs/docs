@@ -8,6 +8,8 @@ This section details all of the tasks that can be performed in the nio System De
 
 It can help you answer questions about what you can do in each level of the System Designer as you navigate from creating a system, to editing an instance name, to deleting a block.
 
+---
+
 ## System
 [Systems](/systems/README.md) are the largest container for projects in the nio System Designer.
 
@@ -54,6 +56,8 @@ In the system context you will see the system toolbar that can perform the follo
   ![](/img/IconEdit.gif)    |Edit              | Edit system name. View Pubkeeper configuration information.
   ![](/img/IconShare.gif)   |Share             | Share system. Read more information about system sharing [here](/system-designer/sharing.html).
   ![](/img/IconDelete.gif)  |Delete            | Delete system. Instances must be deleted first.
+
+---
 
 ## Instance
 
@@ -134,6 +138,7 @@ Icon                      |Label             | Description      |
 ![](/img/IconSave.gif)    |Save              | Save instance.
 ![](/img/IconDelete.gif)  |Delete            | Delete instance.
 
+---
 
 ## Service
 
@@ -211,6 +216,7 @@ To view the logger panel, click anywhere on the canvas to deselect the blocks an
 
   %/accordion%
 
+---
 
 ## Blocks
 
@@ -285,14 +291,16 @@ Icon                      |Label             | Description      |
 1. Enter the required parameters.
 1. Click **accept**.
 
+---
+
 ## Additional resources
 
 In the upper-right corner next to your name, a navigation menu provides links to other helpful resources.
 
   ![](/img/tasks/helpoptions.png)
-  * **docs**—reference documentation
-  * **blocks**—information about all the nio blocks
-  * **workshops**—self-paced tutorials
-  * **support**—FAQs and contact form
-  * **forum**—interact with other nio users
-  * **account**—edit your profile
+  * [**docs**](https://docs.n.io)—reference documentation
+  * [**blocks**](https://blocks.n.io)—information about all the nio blocks
+  * [**workshops**](https://workshops.n.io)—self-paced tutorials
+  * [**support**](https://app.n.io/support)—FAQs and contact form
+  * [**forum**](https://forum.n.io)—interact with other nio users
+  * [**account**](https://app.n.io/settings)—edit your profile
