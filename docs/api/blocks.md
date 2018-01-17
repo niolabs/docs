@@ -41,7 +41,7 @@ Other block types will show their own properties in the response. For example, t
 
 ---
 
-## Get All API
+## Get all API
 
 In addition to getting the details of one block configuration, specified by name, you can get the details of all block configurations in one request
 

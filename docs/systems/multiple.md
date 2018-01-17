@@ -1,4 +1,4 @@
-# Multiple Systems
+# Multiple systems
 
 Users of the nio Platform may build and manage multiple nio systems within the nio System Designer. Sizing and division of systems should be driven by the use case.
 

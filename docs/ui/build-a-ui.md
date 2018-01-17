@@ -1,13 +1,13 @@
-# How to Build a UI for a nio System
-The easiest way to create a nio-powered UI is to start with our [UI Scaffold](https://github.com/niolabs/ui-scaffold). It gets you up and running in minutes.
+# How to build a UI for a nio system
+The easiest way to create a nio-powered UI is to start with our [UI scaffold](https://github.com/niolabs/ui-scaffold). It gets you up and running in minutes.
 
 ---
 
-## What’s In The Box
+## What’s in the box
 
-The UI Scaffold:
+The UI scaffold:
 - Imports ReactJS
-- Imports the nio UI Kit component library
+- Imports the nio UI kit component library
 - Imports the Pubkeeper browser client
 - Imports the Auth0 library to handle authorization (optional)
 - Bootstraps a simple site that, when configured, publishes and subscribes to data via your cloud Pubkeeper server
@@ -16,11 +16,11 @@ If you’re at all familiar with React, this simple example covers most of what 
 
 ---
 
-## Hello World (What Time Is It?)
+## Hello world (what time is it?)
 
 Follow these steps to create a simple UI that can publish to, subscribe to, and display the output of your nio services.
 
-1. In your terminal, clone the UI Scaffold, enter the directory, and install dependencies.
+1. In your terminal, clone the UI scaffold, enter the directory, and install dependencies.
 ```
 git clone https://github.com/niolabs/ui-scaffold.git
 cd ui-scaffold
@@ -54,7 +54,7 @@ Sure, you could have just had the timer set the local state variable, but then y
 
 ---
 
-## What’s Next?
+## What’s next?
 The output of any service that shares the same Pubkeeper host and token that you configured above can be consumed by your UI. All you need to do is update the patron’s topic (or add new patrons!), register a handler, and render the data.
 The nio UI Kit at [https://uikit.niolabs.com](https://uikit.niolabs.com) is full of components for layout, charts, etc. that can be pulled into any React project that accommodates scss (we use webpack).
 

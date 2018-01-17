@@ -1,4 +1,4 @@
-# Introduction to Organizations
+# Introduction to organizations
 
 {% video %}https://www.youtube.com/watch?v=aRgEDaga8I8{% endvideo %}
 

@@ -10,7 +10,7 @@ Collaborators can view users and user profiles but can not make any changes.
 
 ---
 
-## Invite Users to an Organization
+## Invite users to an organization
 
 If you are an owner or a collaborator, you can invite anyone to become a member of your organization by sending them an email invitation.
 
@@ -22,7 +22,7 @@ If you want to invite multiple users with the same [permission level](/organizat
 
 ---
 
-## Status of Users: Invited or Active
+## Status of users: invited or active
 Users that have been invited but have not yet set up an account will have a gold circle next to their photos.
 
 ![](/img/organizations/org-status-orange-grey-dots.jpg)
@@ -38,7 +38,7 @@ Users that have been invited and have set up accounts will have a green circle n
 
 ---
 
-## User Profile Page
+## User profile page
 Clicking a user’s card will navigate you to that user's profile page.
 
 ![](/img/organizations/org-user-profile.jpg)
@@ -47,25 +47,25 @@ If you are an owner or an organizer in the organization, you can update permissi
 
 If you are a collaborator in the organization, you can see profile pages, but you cannot make any changes.
 
-### Updating the Permission Level of a User
+### Updating the permission level of a user
 To update the permission level of the user, from the user's profile page, simply change the radio button beneath the user’s name. To see more detailed information about permission levels, see [organization management](/organizations/management.md).
 
-### Add a User to a Team
+### Add a user to a team
 While on a user’s profile page, you can quickly add the user to existing teams at the bottom of the page.
 
 After you have added the user to a team, an icon will appear in the user’s card to show which team(s) that user is on. This icon also acts as a link to the team profile page.
 
-### Remove a User from a Team
+### Remove a user from a team
 The “Current Teams” section on a user’s profile page shows all of the teams a user belongs to. To remove the user from a team, click the blue button in the top right corner of the team card.
 
-### Remove a User from an Organization
+### Remove a user from an organization
 To remove a user from your organization, go to the user's profile page. In the top right corner of the user’s profile, click the red text link. You will be prompted with a pop up modal to confirm that you want to remove the user from the organization.
 
 ![](/img/organizations/org-user-profile.jpg)
 
 ---
 
-## Update Your Profile Picture
+## Update your profile picture
 To update your profile picture, click the user icon in the top navigation and then select your name from the dropdown.
 
 ![](/img/organizations/org-account-settings.jpg)
@@ -76,6 +76,6 @@ While on your profile page, click the **edit photo** text. Upload your new profi
 
 ---
 
-## Linking Accounts
+## Linking accounts
 
 If you sign up for a nio account with an email and a password and then try to use social sign on (i.e., Sign on with Google) with the same email, you will notice that they are technically different accounts with different nio systems and instances. There is no automatic way to link your email/password and social sign on accounts at this time. If you would like to link your accounts together so you can use either sign on mechanism then please contact support and we can take care of that for you.

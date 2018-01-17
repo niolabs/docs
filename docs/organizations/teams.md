@@ -8,7 +8,7 @@ Click the **Teams** tab in the left navigation to navigate to the teams page. Fr
 
 ---
 
-## Create a Team
+## Create a team
 If you are an organizer or an owner of the organization, you can create a team. Creating teams is beneficial when you want to share a system from the nio System Designer with a group of users instead of sharing the same system with each user individually. On the teams page, enter a team name and click **add** to create a team.
 
 ![](/img/organizations/org-create-team.jpg)
@@ -17,7 +17,7 @@ If you are a collaborator, you can view teams but you are not able to create tea
 
 ---
 
-## Team Profile
+## Team profile
 If your organization has teams, you can click any team card to navigate to that team's profile.
 
 ![](/img/organizations/org-team-profile.jpg)
@@ -26,23 +26,23 @@ From the team profile, owners and organizers can add an image to represent the t
 
 Collaborators can view the team profile but can not make any changes.
 
-### Modify a Team Name
+### Modify a team name
 If you are an organizer or owner of an organization, you can rename a team. To update the team name, simply enter a new name in the form field and click the blue button to update.
 
-### Add Team Image
+### Add team image
 If you are an organizer or owner of an organization, you can edit the team image. To add an image that represents your team, click the **edit photo** text under the team avatar and upload a new image (jpg, png, bmp, or gif file under 1MB) from your computer.
 
-### Add Users to a Team
+### Add users to a team
 To add users to a team, navigate to the bottom of the team profile page, find the user that you want to add, and click the **add to team** button in the top right corner of the user card.
 
 ![](/img/organizations/org-add-user-to-team.jpg)
 
-### Remove Users from a Team
+### Remove users from a team
 To remove a user from the team, find the user's card on the team profile page. Click the blue **remove from team** button.
 
 ![](/img/organizations/org-remove-user-from-team.jpg)
 
-### Remove a Team from the Organization
+### Remove a team from the organization
 To remove a team from your organization, click the red text link in the top right corner of the team page. You will be prompted with a pop-up modal to confirm that you actually want to remove the team from the organization.
 
 ![](/img/organizations/org-team-profile.jpg)

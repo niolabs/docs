@@ -1,11 +1,11 @@
 # Run nio
 
-The nio Platform facilitates the creation of distributed computing solutions across an almost unlimited array of platforms and devices. As such, there are lots of ways to use it. We've outlined some of the most common implementations below.
+The nio Platform facilitates the creation of distributed computing solutions across an almost unlimited array of platforms and devices. There are lots of ways to use it. We've outlined some of the most common implementations below.
 
 ---
 **Run nio**
 
-* [In a nio-Managed Cloud](/running-nio/in-the-cloud.md): we run nio for you, and you build cloud-based solutions
-* [Locally](/running-nio/locally.md): you run nio wherever you want, and use the System Designer to build and administer it
-* [In a Docker Container](/running-nio/docker.md): containerize nio, and use Kubernetes or some other Docker orchestration tool
-* [For a Long Time](/running-nio/long-running.md): you run nio in the background, and need it to be fault-tolerant
+* [In a nio-managed cloud](/running-nio/in-the-cloud.md): we run nio for you, and you use the nio System Designer to build cloud-based solutions.
+* [Locally](/running-nio/locally.md): you run nio wherever you want, and use the System Designer to build and administer it.
+* [In a Docker container](/running-nio/docker.md): containerize nio, and use Kubernetes or some other Docker orchestration tool.
+* [In production](/running-nio/long-running.md): you run nio in the background over a sustained time period, and need it to be fault tolerant.

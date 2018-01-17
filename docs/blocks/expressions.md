@@ -1,4 +1,4 @@
-# nio Expressions
+# nio expressions
 
 The nio Platform leverages Python syntax inside blocks to operate on signals. To perform block operations using Python, simply place your desired expression between two sets of curly brackets `{{ }}` inside a block configuration field. In addition to Python, block configurations can also accept environment variables by using two sets of double brackets `[[ ]]`, as well as string values without any brackets. For more information on environment variables, please see our documentation here: [https://docs.n.io/service-design-patterns/environment-variables.html](https://docs.n.io/service-design-patterns/environment-variables.html)
 
@@ -8,7 +8,7 @@ The nio Platform leverages Python syntax inside blocks to operate on signals. To
 
 ---
 
-## Signal Property Syntax `$`
+## Signal property syntax `$`
 
 Signals in nio are passed as key value pairs `{“key1”: value1, “key2”: value2}`. Use the `$` syntax to access signal properties.
 
@@ -20,15 +20,15 @@ Signals in nio are passed as key value pairs `{“key1”: value1, “key2”: v
 
 ---
 
-## Raw Signal
+## Raw signal
 
 You can access the raw signal itself, rather than just the attributes, with a lone `$`. As long as the character following the `$` is not a [valid Python identifier](https://docs.python.org/3/reference/lexical_analysis.html#identifiers), the `$` will evaluate to the incoming signal.
 
 ---
 
-## nio Expression Examples
+## nio expression examples
 
-### Rename a Signal
+### Rename a signal
 
 <img src="/img/expressions/rename.png" width="225" align="right" hspace="10" />
 With an incoming signal of `{“sim”: 1}`, we can rename it inside a _Modifier_ block.
@@ -39,7 +39,7 @@ The new output signal will be `{"new": 1, "sim": 1}`.
 
 To remove `{“sim”: 1}` from the output, check the **Exclude existing fields?** block property.
 
-### Math Operations
+### Math operations
 
 <img src="/img/expressions/plus-one.png" width="225" align="right" hspace="10" />
 With an incoming signal of `{“sim”: 1}` we can perform math inside a _Modifier_ block.
@@ -48,7 +48,7 @@ This operation creates a new attribute **plus_one** that will be equal to `sim +
 
 The new output signal will be `{"plus_one": 2, "sim": 1}`.
 
-### Create Attributes
+### Create attributes
 
 <img src="/img/expressions/string-input.png" width="225" align="right" hspace="10" />
 Anything typed directly into a field is stored as a string.
@@ -96,7 +96,7 @@ nio expressions allow you to import the following Python libraries by default:
 {"timestamp": "2017-12-13 23:52:09.661182"}
 ```
 
-### Library Imports
+### Library imports
 
 Additional Python libraries can be imported within blocks for more advanced or specific operations.
 

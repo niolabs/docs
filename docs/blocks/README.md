@@ -26,7 +26,7 @@ For example, the [Queue](https://blocks.n.io/Queue) block exposes a command to e
 
 ---
 
-## See Also
+## See also
 
 * [Block in the System Designer](/system-designer/designer-tasks.html#blocks)
 * Glossary—[Block](/glossary#block)

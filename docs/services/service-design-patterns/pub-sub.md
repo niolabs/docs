@@ -1,4 +1,4 @@
-# Publishing and Subscribing to Data
+# Publishing and subscribing
 
 An easy way to communicate between nio services and instances in the nio Platform is by using a publisher/subscriber pattern.
 
@@ -8,7 +8,7 @@ The following communication blocks are used for publishing and subscribing to da
 
 ---
 
-## Topic Tree
+## Topic tree
 
 When using the _Publisher_ and _Subscriber_ blocks, you connect systems and instances by defining a topic you wish to publish to or subscribe to. The information structure of an entire nio system can be viewed as a hierarchical topic tree.
 

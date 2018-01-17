@@ -1,4 +1,4 @@
-# Developing Your Block
+# Developing your block
 
 After cloning the [block template](block-template.md) repository, you are ready to develop your block.
 
@@ -14,13 +14,13 @@ Once you have developed your block, you will want to [test](block-testing.md) an
 
 ---
 
-## Base Block Class
+## Base block class
 
 All nio blocks inherit from the base block class. The first import in the block template's `example_block.py` is `nio.block.base`. If you explore the code inside `nio.block.base`, you'll find explanatory docstrings for each method—including methods to override in your custom block—along with higher-level context.
 
 An important principle to remember when developing your block is that [signals are passed as lists](/services/service-design-patterns/signal-structure.md#lists-of-signals).
 
-### Methods to Override
+### Methods to override
 
 The following methods from the base block are designed to be overridden:
 
@@ -35,7 +35,7 @@ The following methods from the base block are designed to be overridden:
 
 ---
 
-## Current nio Blocks
+## Current nio blocks
 
 An additional resource for developing your custom block is the [nio Block Library](https://blocks.n.io). Search the nio Block Library for a block that has similar functionality to the block you need. Open the link to its code and explore its properties, methods, commands, inputs, outputs, mixins, and any modules imported from the [framework](framework.md).
 
@@ -60,7 +60,7 @@ If you want to use the `$` syntax to refer to your signal, pass in `signal` when
  file = self.file(signal).value
  ```
 
-### Property Types
+### Property types
 
 Block properties can include the following types:
 
@@ -106,7 +106,7 @@ Commands are declared as decorators.
 
 ---
 
-## Inputs and Outputs
+## Inputs and outputs
 
 Inputs and outputs are declared as decorators.
   ```python
