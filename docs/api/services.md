@@ -62,7 +62,7 @@ The result of the previous request is
 
 ---
 
-## Get All API
+## Get all API
 
 In addition to getting the details of one service configuration, specified by name, you can get the details of all service configurations in one request
 

@@ -1,6 +1,6 @@
 # Run nio in a Docker container
 
-Running the nio platform as a [Docker](https://docker.com) container offers several benefits such as better deployment and lifecycle management. However, because different licenses often have different nio binaries, niolabs does not currently make public a downloadable Docker image. Instead, you will have to build and manage your own Docker image based off your nio binary.
+Running the nio platform as a [Docker](https://docker.com) container offers several benefits such as better deployment and lifecycle management. However, because different licenses often have different nio binaries, niolabs does not currently have a public downloadable Docker image. Instead, you can build and manage your own Docker image using your nio binary.
 
 ---
 ## Creating a Docker Image
@@ -13,7 +13,7 @@ git clone https://github.com/niolabs/nio-docker.git nio-docker
 cp your-wheel-file.whl nio-docker
 ```
 
-2. Build the Docker image by passing the name of the wheel file as the `WHEEL_FILE` build argument (the X's represent the date of the binary in YYYYMMDD format):
+2. Build the Docker image by passing the name of the wheel file as the `WHEEL_FILE` build argument (the `X`s represent the date of the binary in YYYYMMDD format):
 ```
 docker build -t my-binary-image:latest --build-arg WHEEL_FILE=nio_lite-XXXXXXXX-py3-none-any.whl .
 ```
@@ -23,7 +23,7 @@ docker build -t my-binary-image:latest --build-arg WHEEL_FILE=nio_lite-XXXXXXXX-
 
 Assuming you have built a Docker image from your binary, you can run the image for different nio project configurations.
 
-To run the nio binary with an empty project just run the image like so:
+To run the nio binary with an empty project, just run the image like so:
 
 ```
 docker run -p 8181:8181 my-binary-image:latest

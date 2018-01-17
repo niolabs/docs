@@ -1,4 +1,4 @@
-# Data Storage with nio
+# Data storage with nio
 
 The nio Platform acts on streams of signals in real time and data storage is optional. But often, data storage is desired.
 

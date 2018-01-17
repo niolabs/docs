@@ -1,4 +1,4 @@
-# API Conventions
+# API conventions
 
 You can interact with most nio binaries through a REST API. The API supports the standard HTTP request types of `GET`, `POST`, `PUT`, and `DELETE`. Data responses are returned in JSON format.
 
@@ -6,7 +6,7 @@ The REST API is available in nio binaries that include the nio REST Component. R
 
 ---
 
-## Authentication and Authorization
+## Authentication and authorization
 
 Authentication is the action to verify the identity of a user or process.
 
@@ -62,7 +62,7 @@ For examples of adding headers to a curl request, see [Headers](#headers).
 
 To test nio API requests and responses, you can use a tool such as [Postman](https://www.getpostman.com/) or a curl command from your terminal. curl commands start with `curl`, and then include the request type, a URL, and possibly a request header and a request body. For the nio API, an authorization [header](#headers) is required.
 
-### Request Type
+### Request type
 Your request type will be one of `GET`, `POST`, `PUT`, or `DELETE`.
 
 With the curl command, you can specify the request type with following options:
@@ -117,7 +117,7 @@ In the request body, if you need to include data, add body data to a curl reques
     --data '{"type": "LoggerBlock", "name": "Log"}'
 
 
-### Putting It All Together
+### Putting it all together
 
 A typical curl request to the nio API incorporating all these parts follows:
 

@@ -1,4 +1,4 @@
-# Block Properties
+# Block properties
 
 Block properties are the configuration fields of a block.
 
@@ -19,7 +19,7 @@ The unique **block name**, which you define when dragging a new instance of the 
 
 ---
 
-## Property Types
+## Property types
 
 In the example above, **Exclude existing fields** is a checkbox, **Fields** is a list of input pairs, **Log Level** is a drop-down menu, and **Version** is a series of three numbers separated by periods (0.1.0).
 
@@ -68,13 +68,19 @@ This _Modifier_ block is named **ShowAlertLevel** and is configured to enrich th
 
 ---
 
+## Common mixins
+
+Some commonly used block properties are [mixins](/blocks/block-development/mixins.md) and include `enrich`, which creates the **Exclude Existing?** property, `persistence`, which creates the **Load from Persistence?** property, and `group-by` which creates the **Group By** input field. For an example of how to configure and use `group-by` using the _Join_ block, see [Restructure and group signals](/services/service-design-patterns/join.md#using-group-by) in [Service Design Patterns](/services/service-design-patterns).
+
+---
+
 ## Expressions
 
 Expressions are used to dynamically define properties. Many property types can accept expressions. Expressions are found inside the double curly braces. In the _Modifier_ block configuration shown above, you can see example expressions in the **Attribute Value** inputs. Learn more about how to create expressions in [nio Expressions](/blocks/expressions.md).
 
 ---
 
-## Environment Variables
+## Environment variables
 
 Another syntax that nio uses in property configuration is the double-square-bracket notation for an [environment variable](/services/service-design-patterns/environment-variables.md).
 

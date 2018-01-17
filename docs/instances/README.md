@@ -15,10 +15,10 @@ A single instance of nio can have multiple [services](/services/README.md) with 
 
 ---
 
-Where you decide to install nio instances (or logic) throughout a system should ultimately be determined by the desired outcome and constraints of your specific application. These decisions are usually decided during the design and solution architecture phase of a project.
+Where you decide to install nio instances (or logic) throughout a system should ultimately be determined by the desired outcome and constraints of your specific application. These decisions are usually made during the design and solution architecture phase of a project.
 
 ---
-## See Also
+## See also
 
 * [Instances in the System Designer](/system-designer/designer-tasks.html#instance)
 * Glossary—[Instance](/glossary#instance)

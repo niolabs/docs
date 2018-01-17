@@ -9,10 +9,12 @@
 * [Run nio](running-nio/README.md)
   * [In a nio-Managed Cloud](running-nio/in-the-cloud.md)
   * [Locally](running-nio/locally.md)
+    * [Manual Install](running-nio/manually.md)
   * [In a Docker Container](running-nio/docker.md)
   * [In Production](running-nio/long-running.md)
 * [Deploy nio](deployment/README.md)
 * [System Designer](system-designer/README.md)
+  * [Reference](system-designer/designer-tasks.md)
   * [Browser Support](system-designer/browser-support.md)
 
 ---
@@ -29,7 +31,7 @@
   * [Service Design Patterns](services/service-design-patterns/README.md)
     * [Signal Structure](services/service-design-patterns/signal-structure.md)
     * [Restructure and Group Signals](services/service-design-patterns/join.md)
-    * [Pub-Sub](services/service-design-patterns/pub-sub.md)
+    * [Publishing and Subscribing](services/service-design-patterns/pub-sub.md)
     * [Simulators](services/service-design-patterns/simulators.md)
     * [Environment Variables](services/service-design-patterns/environment-variables.md)
   * [Service Testing](services/service-testing.md)
@@ -59,8 +61,8 @@
   * [Shutdown](cli/shutdown.md)
 * [Data](data/README.md)
   * [Cloud Storage](data/cloud-storage.md)
-  <!-- * [Common Blocks](data/common-blocks.md) -->
   * [Persistence](data/persistence.md)
+* [Communications](communications/README.md)
 * [User Interfaces](ui/README.md)
   * [How to Build a UI with nio](ui/build-a-ui.md)
 
@@ -80,7 +82,6 @@
   * [Modules](binaries/modules.md)
   * [Components](binaries/components.md)
     * [SNMP](binaries/snmp.md)
-* [Communications](communications/README.md)
 * [Pubkeeper](pubkeeper/README.md)
 
 ---

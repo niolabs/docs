@@ -4,7 +4,7 @@ When you develop blocks, you use the nio framework. The framework holds all the 
 
 ---
 
-## Block Context
+## Block context
 
 In the configure method, blocks are passed context about themselves and the environment in which they run. Block developers should refer to the following information:
 

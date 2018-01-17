@@ -1,4 +1,4 @@
-# Documenting Your Block
+# Documenting your block
 
 There is a standard way to document a nio block. Much of this documentation can be generated automatically using the `nio-cli`.
 

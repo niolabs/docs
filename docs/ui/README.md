@@ -1,4 +1,4 @@
-# User Interfaces
+# User interfaces
 In the nio Platform, User Interfaces (UIs) are treated as first-class citizens within a [system](/systems/README.md), capable of both subscribing to and producing signals. Traditional application architectures normally route all signals through a central server, which increases network traffic and load on that centralized infrastructure.
 
 [Pubkeeper](/pubkeeper/), niolabs’ patent pending peer-to-peer pub/sub communication product, allows UIs to subscribe to signals by leveraging the Pubkeeper browser client. The UI then secures the requested data directly from any node within a nio system that is able to publish it. The data may also be sent to or picked up from a central location like a websocket server or Kafka store.
@@ -9,7 +9,7 @@ Check out our [quickstart guide](/ui/build-a-ui.md) to building a UI for a nio s
 
 ---
 
-## Related Links
+## Related links
 
 > _The following resources are designed to provide helpful information to nio users regarding the development and integration of user interfaces within a nio system. **They are not official niolabs products and are not supported as such**._
 
