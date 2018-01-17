@@ -9,7 +9,7 @@
 * [Run nio](running-nio/README.md)
   * [In a nio-Managed Cloud](running-nio/in-the-cloud.md)
   * [Locally](running-nio/locally.md)
-    * [Manual Install](running-nio/manually.md)
+    * [Custom Project](running-nio/manually.md)
   * [In a Docker Container](running-nio/docker.md)
   * [In Production](running-nio/long-running.md)
 * [Deploy nio](deployment/README.md)

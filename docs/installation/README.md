@@ -18,10 +18,3 @@ The cloud is an easy way to get the nio Platform up and running, but to see the 
 ## Installation
 
 {% include "/includes/install-nio.md" %}
-
-## Upgrade the nio binary and CLI
-
-If you already have a version of nio installed and want to upgrade it, enter the following command:
-```
-pip3 install -U your_wheel_file.whl
-```

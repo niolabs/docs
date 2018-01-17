@@ -1,4 +1,4 @@
-# Manual installation
+# Custom project
 
 There are a few steps in a local install of the nio binary that can be done manually instead of using functionality that has been built into the nio Platform for you.
 
