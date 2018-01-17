@@ -8,7 +8,7 @@ Each user in an organization can have one of three roles: owner, organizer, or c
 
 ---
 ## Owner
-There is only one owner and the owner has complete administrative access to the organization. The owner role is limited to the person who originally set up the Enterprise or OEM plan.
+There is only one owner and the owner has complete administrative access to the organization. The owner role is limited to the person who originally set up the license.
 
 The owner is able to invite users at two different permission levels: organizer or collaborator.
 
@@ -104,6 +104,7 @@ Users with `see-who-has-access` privileges can see which systems another user ha
 | **editor** | ![](/img/icons/times-red.svg) |
 | **viewer** | ![](/img/icons/times-red.svg) |
 
+
 ### Revoking access
 
 Users with `revoking-access` can revoke another user’s access to a system as shown in the table below. Only admins can revoke a user’s access to a system.
@@ -113,4 +114,3 @@ Users with `revoking-access` can revoke another user’s access to a system as s
 | **admin** | ![](/img/icons/checkmark-green.svg) |
 | **editor** | ![](/img/icons/times-red.svg) |
 | **viewer** | ![](/img/icons/times-red.svg) |
-
