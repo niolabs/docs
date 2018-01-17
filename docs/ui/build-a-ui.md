@@ -5,12 +5,15 @@ The easiest way to create a nio-powered UI is to start with our [UI scaffold](ht
 
 ## What’s in the box
 
-The UI scaffold:
-- Imports ReactJS
-- Imports the nio UI kit component library
-- Imports the Pubkeeper browser client
-- Imports the Auth0 library to handle authorization (optional)
-- Bootstraps a simple site that, when configured, publishes and subscribes to data via your cloud Pubkeeper server
+- From niolabs
+    - [niolabs ui-kit](https://uikit.niolabs.com/) for components and styles
+    - [niolabs pubkeeper](https://niolabs.com/product/pubkeeper) for publishing and subscribing to topics
+
+- Third party software (click to review each library's licensing)
+    - [ReactJS](https://reactjs.org/) site scaffold
+    - [react-router](https://reacttraining.com/react-router/) for navigation
+    - [webpack 3](https://webpack.js.org/) module bundling and development webserver
+    - [auth0](https://auth0.com/) for securing the site (optional, default true)
 
 If you’re at all familiar with React, this simple example covers most of what you need to know to get started.
 
@@ -28,6 +31,7 @@ Follow these steps to create a simple UI that can publish to, subscribe to, and 
     ```
 
 1. In the root of the project, rename `config.js.example` to `config.js`, and open it in a text editor.
+    1. **Never commit configuration details! We've added `config.js` to `.gitignore`. Even though these are public urls and tokens, it's bad practice to commit them. For deployment, make sure you put `config.js` at your project root.**
 
 1. Get your Pubkeeper **hostname** and **token** from your nio-managed cloud-instance:
     1. Open the nio **System Designer** in a browser: https://designer.n.io/.
@@ -71,3 +75,21 @@ Of course, if React isn’t your thing, the Pubkeeper browser client can be used
  ```
  npm i -s @pubkeeper/browser-client
  ```
+
+---
+
+### Apache 2.0 License
+
+Copyright 2017-2018 n.io innovation, LLC
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+[http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
