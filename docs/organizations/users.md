@@ -50,7 +50,7 @@ If you are a collaborator in the organization, you can see profile pages, but yo
 ### Updating the permission level of a user
 To update the permission level of the user, from the user's profile page, simply change the radio button beneath the user’s name. To see more detailed information about permission levels, see [organization management](/organizations/management.md).
 
-### Add a user to a yeam
+### Add a user to a team
 While on a user’s profile page, you can quickly add the user to existing teams at the bottom of the page.
 
 After you have added the user to a team, an icon will appear in the user’s card to show which team(s) that user is on. This icon also acts as a link to the team profile page.
