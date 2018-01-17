@@ -1,4 +1,4 @@
-# Organization Management
+# Organization management
 
 To view your organization, click the user icon in the top navigation and select your organization from the dropdown.
 
