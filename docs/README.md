@@ -17,7 +17,7 @@ For users looking for a guided learning experience, we've created [workshops](ht
 To get started right away, immerse yourself in the core concepts by:
 
 * Logging into the nio [System Designer](https://designer.n.io)
-* Creating a [managed cloud instance](/running-nio/in-the-cloud.md)
+* Creating a [nio-managed cloud instance](/running-nio/in-the-cloud.md)
 * [Installing nio locally](/installation)
 * Checking out the nio [Block Library](https://blocks.n.io)
 * Mastering inter-instance communication with [Pubkeeper](https://docs.pubkeeper.com)
