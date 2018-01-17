@@ -21,29 +21,38 @@ If you’re at all familiar with React, this simple example covers most of what 
 Follow these steps to create a simple UI that can publish to, subscribe to, and display the output of your nio services.
 
 1. In your terminal, clone the UI scaffold, enter the directory, and install dependencies.
-```
-git clone https://github.com/niolabs/ui-scaffold.git
-cd ui-scaffold
-npm i -s
-```
-2. In the root of the project, update the `config.js` file.
-  1. Open the nio **System Designer** in a browser: https://designer.n.io/.
-  2. Select your system in the left-hand navigation.
-      1. If you need to create your first system, follow the instructions [here](/system-designer/designer-tasks.html).
-  2. Click the **edit** button in the contextual toolbar to open its configuration.
-  2. Copy the values for `hostname` and `token` into the `config.js` file.
-  2. Use the Pubkeeper hostname as your `WS_HOST`, replacing the word “pubkeeper” with “websocket”.
-      1. For example, if your Pubkeeper hostname was `aaaaa.pubkeeper.nio.works`, your websocket hostname would be `aaaaa.websocket.nio.works`.
+    ```
+    git clone https://github.com/niolabs/ui-scaffold.git my-project
+    cd my-project
+    npm i -s
+    ```
+
+1. In the root of the project, rename `config.js.example` to `config.js`, and open it in a text editor.
+
+1. Get your Pubkeeper **hostname** and **token** from your nio-managed cloud-instance:
+    1. Open the nio **System Designer** in a browser: https://designer.n.io/.
+    1. Select your system in the left-hand navigation.
+        1. If you need to create your first system, follow the instructions [here](/system-designer/designer-tasks.html).
+    1. Click the **edit** button in the contextual toolbar to open its configuration.
+
+1. In `config.js`:
+    1. Set `PK_HOST` to your **hostname** value.
+    1. Set `PK_JWT` to your **token** value.
+    1. Set `WS_HOST` to your **hostname** value, but swap the word 'pubkeeper' for 'websocket'.
+        1. e.g.- if your **hostname** is `aaaaa.pubkeeper.nio.works`, use `aaaaa.websocket.nio.works`.
+
 1. Start the project.
-```
-npm start
-```
+    ```
+    npm start
+    ```
+
 1. Visit the project at https://0.0.0.0:3000.
-  1. The development web server uses a self-signed certificate, and you may see a warning about the site being insecure. In your local development environment, it is safe to click “proceed to site anyway."
+    1. The development web server uses a self-signed certificate, and you may see a warning about the site being insecure. In your local development environment, it is safe to click "Advanced" > "proceed to site anyway."
 
 You’ll see a simple UI with a clock that updates every second.
 
-What’s actually happening is this:
+### What’s actually happening?
+
   - The UI connects to your cloud Pubkeeper server.
   - When the main page renders, it sets a local variable of the current time and sets an interval to update that time every second.
   - The Pubkeeper brewer publishes the time to the topic “ui_scaffold.example_brew”.
