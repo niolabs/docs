@@ -5,15 +5,17 @@ The easiest way to create a nio-powered UI is to start with our [UI scaffold](ht
 
 ## What’s in the box
 
-- From niolabs
+- **From niolabs**
     - [niolabs ui-kit](https://uikit.niolabs.com/) for components and styles
     - [niolabs pubkeeper](https://niolabs.com/product/pubkeeper) for publishing and subscribing to topics
 
-- Third party software (click to review each library's licensing)
+
+- **Third party software** (click to review each library's licensing)
     - [ReactJS](https://reactjs.org/) site scaffold
     - [react-router](https://reacttraining.com/react-router/) for navigation
     - [webpack 3](https://webpack.js.org/) module bundling and development webserver
     - [auth0](https://auth0.com/) for securing the site (optional, default true)
+
 
 If you’re at all familiar with React, this simple example covers most of what you need to know to get started.
 
