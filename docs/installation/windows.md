@@ -10,11 +10,11 @@ Download and double-click the executable file to start the process, then follow 
 ---
 
 
-<img src="/img/installer/windows1.png" style="display:block; height:300px; margin: 10px auto; border: 1px solid #ccc; border-radius: 6px;" />
-<img src="/img/installer/windows2.png" style="display:block; height:300px; margin: 10px auto; border: 1px solid #ccc; border-radius: 6px;" />
-<img src="/img/installer/windows3.png" style="display:block; height:300px; margin: 10px auto; border: 1px solid #ccc; border-radius: 6px;" />
-<img src="/img/installer/windows4.png" style="display:block; height:300px; margin: 10px auto; border: 1px solid #ccc; border-radius: 6px;" />
-<img src="/img/installer/windows5.png" style="display:block; height:300px; margin: 10px auto; border: 1px solid #ccc; border-radius: 6px;" />
+<img class="border" src="/img/installer/windows1.png" height="300" />
+<img class="border" src="/img/installer/windows2.png" height="300" />
+<img class="border" src="/img/installer/windows3.png" height="300" />
+<img class="border" src="/img/installer/windows4.png" height="300" />
+<img class="border" src="/img/installer/windows5.png" height="300" />
 
 
 ---
@@ -23,11 +23,11 @@ The next window in the setup process asks for your Pubkeeper host and token. To 
 
 ---
 
-<img src="/img/installer/windows6.png" style="display:block; height:300px; margin: 10px auto; border: 1px solid #ccc; border-radius: 6px;" />
-<img src="/img/installer/windows7.png" style="display:block; height:300px; margin: 10px auto; border: 1px solid #ccc; border-radius: 6px;" />
-<img src="/img/installer/windows8.png" style="display:block; height:300px; margin: 10px auto; border: 1px solid #ccc; border-radius: 6px;" />
-<img src="/img/installer/windows9.png" style="display:block; height:300px; margin: 10px auto; border: 1px solid #ccc; border-radius: 6px;" />
-<img src="/img/installer/windows10.png" style="display:block; height:300px; margin: 10px auto; border: 1px solid #ccc; border-radius: 6px;" />
+<img class="border" src="/img/installer/windows6.png" height="300" />
+<img class="border" src="/img/installer/windows7.png" height="300" />
+<img class="border" src="/img/installer/windows8.png" height="300" />
+<img class="border" src="/img/installer/windows9.png" height="300" />
+<img class="border" src="/img/installer/windows10.png" height="300" />
 
 ---
 

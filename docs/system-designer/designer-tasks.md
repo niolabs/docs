@@ -17,7 +17,7 @@ Systems are created in the System Designer to contain instances (running install
 
 ### Create a system
 
-<img src="/img/cloud/Hello-CreateNewSystem.png" width="250" align="right" hspace="10" />
+<img class="right" src="/img/cloud/Hello-CreateNewSystem.png" width="250" />
 
 From the **System Designer** (https://designer.n.io/), you can create a new system in two ways.
   * If this is your first time opening nio, the **create new system** window displays automatically.

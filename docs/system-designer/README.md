@@ -9,7 +9,7 @@ The nio System Designer is the graphical user interface used to build your nio s
 ---
 ## System Designer navigation
 
-<img src="/img/system-designer-overview.png" style="display:block; height:350px; margin: 0 auto; border: 1px solid #ccc; border-radius: 6px;" />
+<img class="left" src="/img/system-designer-overview.png" height="375" />
 
 ### Systems list
 The systems list is the leftmost column in the designer.
@@ -30,7 +30,7 @@ The instances and services list is located to the right side of the systems colu
 The breadcrumb is located at the top of the System Designer.
 * As you navigate from system to service, the breadcrumb allows you to easily identify your location in the system.
 
-<img src="/img/cloud/hierarchy.gif" style="display:block; height:150px; margin: 10px auto; border: 1px solid #ccc; border-radius: 6px;" />
+<img class="display" height="150 src="/img/cloud/hierarchy.gif" />
 
 ### Contextual toolbar
 The contextual toolbar is located underneath the breadcrumb.

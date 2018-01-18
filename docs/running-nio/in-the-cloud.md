@@ -10,7 +10,7 @@ A nio-managed cloud instance allows you to get up and running quickly and to sta
 
 ---
 ## Create a system
-<img src="/img/cloud/Hello-CreateNewSystem.png" width="250" align="right" hspace="10" />
+<img class="right" src="/img/cloud/Hello-CreateNewSystem.png" width="250" />
 
 A system is a group of interrelated elements. In the nio System Designer, a system contains interrelated nio instances. Think of it as a workspace where you can put related projects.
 1. Open the **System Designer**: https://designer.n.io/
@@ -31,7 +31,7 @@ A system is a group of interrelated elements. In the nio System Designer, a syst
 
 A cloud instance is a running version of nio that is installed in the cloud and managed by niolabs.
 
-<img src="/img/cloud/Hello-CreateCloudInstance.png" width="250" align="right" hspace="10" />
+<img class="right" src="/img/cloud/Hello-CreateCloudInstance.png" width="250" />
 1. In your system's top nav, click **create cloud instance**.
 
 1. Complete the **create cloud instance** window.

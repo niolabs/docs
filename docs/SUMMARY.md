@@ -85,7 +85,7 @@
 * [Pubkeeper](pubkeeper/README.md)
 
 ---
-* Users / Account
+* Users/Account
 
 * [Organizations](organizations/README.md)
   * [Management](organizations/management.md)
