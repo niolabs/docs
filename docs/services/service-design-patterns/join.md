@@ -69,7 +69,7 @@ That looks great, but what if you want to have a separate signal for each depart
 >
 > This is **not** the advised way to create separate lists of signals by group.
 >
-> <img src="/img/bad-join.png" style="display:block; height:300px; margin: 10px auto; border: 1px solid #ccc; border-radius: 6px;" />
+> <img class="border display" src="/img/bad-join.png" height="350" />
 >
 
 There are several downsides to this approach.

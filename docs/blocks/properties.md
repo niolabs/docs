@@ -4,7 +4,7 @@ Block properties are the configuration fields of a block.
 
 In the nio System Designer, when you double-click a block, the configuration panel displays the block's properties.
 
-<img src="/img/modifier-block-config.png" width="225" align="right" hspace="10" />
+<img class="right" src="/img/modifier-block-config.png" width="225" />
 As an example, the configuration panel for a _Modifier_ block is shown at right. It displays four properties of the _Modifier_ block:
 - **Exclude existing fields**
 - **Fields**
