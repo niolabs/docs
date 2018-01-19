@@ -8,6 +8,8 @@ This section details all of the tasks that can be performed in the nio System De
 
 It can help you answer questions about what you can do in each level of the System Designer as you navigate from creating a system, to editing an instance name, to deleting a block.
 
+---
+
 ## System
 [Systems](/systems/README.md) are the largest container for projects in the nio System Designer.
 
@@ -15,7 +17,7 @@ Systems are created in the System Designer to contain instances (running install
 
 ### Create a system
 
-<img src="/img/cloud/Hello-CreateNewSystem.png" width="250" align="right" hspace="10" />
+<img class="right" src="/img/cloud/Hello-CreateNewSystem.png" width="250" />
 
 From the **System Designer** (https://designer.n.io/), you can create a new system in two ways.
   * If this is your first time opening nio, the **create new system** window displays automatically.
@@ -39,21 +41,20 @@ Complete the **create new system** window:
 
 Once you create a system, you can enter the system context by clicking either a system in the system list, the system name at the top of the navigation list, or the system name in the breadcrumb.
 
-%accordion%**Click arrow to collapse/expand image**%accordion%
-
-![](/img/cloud/Hello-SelectSystemCreateInstancePoint.png)
-
-%/accordion%
+<img class="left" src="/img/cloud/Hello-SelectSystemCreateInstancePoint.png" width="600" />
 
 
 In the system context you will see the system toolbar that can perform the following tasks:
-  ![](/img/Toolbar-System.gif)
+
+<img class="left" src="/img/Toolbar-System.gif" height="75" />
 
   Icon                      |Label             | Description      |
   --------------------------|------------------|------------------|
   ![](/img/IconEdit.gif)    |Edit              | Edit system name. View Pubkeeper configuration information.
   ![](/img/IconShare.gif)   |Share             | Share system. Read more information about system sharing [here](/system-designer/sharing.html).
   ![](/img/IconDelete.gif)  |Delete            | Delete system. Instances must be deleted first.
+
+---
 
 ## Instance
 
@@ -65,49 +66,28 @@ Instances are created inside a system and contain services.
 
 To enter the system context, select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
 
-%accordion%**Click arrow to collapse/expand image**%accordion%
-
-![](/img/cloud/Hello-SelectSystemCreateInstancePoint.png)
-
-%/accordion%
+<img class="left" src="/img/cloud/Hello-SelectSystemCreateInstancePoint.png" width="600" />
 
 1. Click **create cloud instance**.
 1. Complete the **create cloud instance** window:
-
-  %accordion%**Click arrow to collapse/expand image**%accordion%
-
-  ![](/img/tasks/createcloudinstance.png)
-
-  %/accordion%
-
+<img class="left" src="/img/tasks/createcloudinstance.png" width="250" />
   * In the **instance name** box, enter a meaningful name.
-
 1. Click **accept**.
 
 ### Connect to a local instance
 
 To enter the system context, select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
 
-%accordion%**Click arrow to collapse/expand image**%accordion%
+<img class="left" src="/img/cloud/Hello-SelectSystemCreateInstancePoint.png" width="600" />
 
-![](/img/cloud/Hello-SelectSystemCreateInstancePoint.png)
-
-%/accordion%
 
 1. Click **create local instance**.
 1. Complete the **create local instance** window:
-
-  %accordion%**Click arrow to collapse/expand image**%accordion%
-
-  ![](/img/tasks/createlocalinstance.png)
-
-  %/accordion%
-
+<img class="left" src="/img/tasks/createlocalinstance.png" width="250" />
   * **instance name**: enter a meaningful name
   * **hostname**: enter the hostname for the instance
   * **port**: enter the port number configured on the instance
   * **access mode**: leave as **basic**
-
 1. Click **accept**.
 
 > **[info] Instance Names**
@@ -118,15 +98,12 @@ To enter the system context, select the name of your system in the left navigati
 
 Once you create an instance, you can enter the instance context by clicking the instance name in the instance list or in the breadcrumb.
 
-%accordion%**Click arrow to collapse/expand image**%accordion%
-
-![](/img/cloud/Hello-SelectInstancePoint.png)
-
-%/accordion%
+<img class="left" src="/img/cloud/Hello-SelectInstancePoint.png" width="600" />
 
 In the instance context you will see the the instance toolbar and can perform the following tasks:
 
-![](/img/Toolbar-Instance.gif)
+<img class="left" src="/img/Toolbar-Instance.gif" height="75" />
+
 
 Icon                      |Label             | Description      |
 --------------------------|------------------|------------------|
@@ -134,6 +111,7 @@ Icon                      |Label             | Description      |
 ![](/img/IconSave.gif)    |Save              | Save instance.
 ![](/img/IconDelete.gif)  |Delete            | Delete instance.
 
+---
 
 ## Service
 
@@ -145,19 +123,11 @@ Services are created inside an instance and contain blocks.
 
 Select the name of the instance in the left navigation panel or on the breadcrumb above the contextual toolbar.
 
-%accordion%**Click arrow to collapse/expand image**%accordion%
+<img class="left" src="/img/cloud/Hello-SelectInstancePoint.png" width="600" />
 
-![](/img/cloud/Hello-SelectInstancePoint.png)
-
-%/accordion%
 1. Click **create new service**.
 1. Complete the **create new service** window:
-
-  %accordion%**Click arrow to collapse/expand image**%accordion%
-
-  ![](/img/tasks/createnewservice.png)
-
-  %/accordion%
+<img class="left" src="/img/tasks/createnewservice.png" width="250" />
   * In the **service name** box, enter a meaningful name.
   * Leave the **service type** as **Service**.
 
@@ -176,7 +146,7 @@ Once you create a service, you can enter the service context by clicking the ser
 
 In the service context you will see the the service toolbar that can perform the following tasks:
 
-![](/img/Toolbar-Service.gif)
+<img class="left" src="/img/Toolbar-Service.gif" height="75" />
 
 Icon                      |Label             | Description      |
 --------------------------|------------------|------------------|
@@ -205,12 +175,10 @@ To view the logger panel, click anywhere on the canvas to deselect the blocks an
 1. Click **start** on the toolbar to run your service.
 1. Click **open logger panel** to view the logs.
 
-  %accordion%**Click arrow to collapse/expand image**%accordion%
+<img class="left" src="/img/cloud/Hello-SimLogger.gif" />
 
-  ![](/img/cloud/Hello-SimLogger.gif)
 
-  %/accordion%
-
+---
 
 ## Blocks
 
@@ -220,19 +188,13 @@ To view the logger panel, click anywhere on the canvas to deselect the blocks an
 
 Click the service name in the service list or on the breadcrumb above the contextual toolbar to enter the service context.
 
-%accordion%**Click arrow to collapse/expand image**%accordion%
-
-![](/img/cloud/Hello-SelectInstanceName.png)
-
-%/accordion%
+<img class="left" src="/img/cloud/Hello-SelectInstanceName.png" width="600" />
 
 In the **block library** search box, enter a block type name.
 
-%accordion%**Click arrow to collapse/expand image**%accordion%
 
-![](/img/BlockLibrary.gif)
+<img class="left" src="/img/BlockLibrary.gif" />
 
-%/accordion%
 
   > **[info] Block library tabs**
   >
@@ -244,12 +206,7 @@ In the **block library** search box, enter a block type name.
 
 1. Drag the block type to the canvas.
 1. In the **block name** box, enter a meaningful name and click **accept**.
-
-  %accordion%**Click arrow to collapse/expand image**%accordion%
-
-  ![](/img/cloud/Hello-CreateBlockSimulate.png)
-
-  %/accordion%
+<img class="left" src="/img/cloud/Hello-CreateBlockSimulate.png" width="250" />
 
 > **[info] Block Names**
 >
@@ -262,8 +219,7 @@ Once you have added a block, you can enter the block context by clicking the blo
 
 In the block context you will see the the block toolbar that can perform the following tasks:
 
-
-![](/img/Toolbar-Block.gif)
+<img class="left" src="/img/Toolbar-Block.gif" height="75" />
 
 Icon                      |Label             | Description      |
 --------------------------|------------------|------------------|
@@ -285,14 +241,17 @@ Icon                      |Label             | Description      |
 1. Enter the required parameters.
 1. Click **accept**.
 
+---
+
 ## Additional resources
 
 In the upper-right corner next to your name, a navigation menu provides links to other helpful resources.
 
-  ![](/img/tasks/helpoptions.png)
-  * **docs**—reference documentation
-  * **blocks**—information about all the nio blocks
-  * **workshops**—self-paced tutorials
-  * **support**—FAQs and contact form
-  * **forum**—interact with other nio users
-  * **account**—edit your profile
+<img class="left" src="/img/tasks/helpoptions.png" />
+
+  * [**docs**](https://docs.n.io)—reference documentation
+  * [**blocks**](https://blocks.n.io)—information about all the nio blocks
+  * [**workshops**](https://workshops.n.io)—self-paced tutorials
+  * [**support**](https://app.n.io/support)—FAQs and contact form
+  * [**forum**](https://forum.n.io)—interact with other nio users
+  * [**account**](https://app.n.io/settings)—edit your profile

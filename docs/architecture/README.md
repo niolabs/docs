@@ -1,3 +1,3 @@
-# Architecting a nio Solution
+# Architecting a nio solution
 
 {% include "/includes/architecture.md" %}

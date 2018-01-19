@@ -8,7 +8,7 @@ The nio Platform leverages Python syntax inside blocks to operate on signals. To
 
 ---
 
-## Signal property syntax `$`
+## Signal property syntax
 
 Signals in nio are passed as key value pairs `{“key1”: value1, “key2”: value2}`. Use the `$` syntax to access signal properties.
 
@@ -30,7 +30,8 @@ You can access the raw signal itself, rather than just the attributes, with a lo
 
 ### Rename a signal
 
-<img src="/img/expressions/rename.png" width="225" align="right" hspace="10" />
+<img class="right border" src="/img/expressions/rename.png" width="250"/>
+
 With an incoming signal of `{“sim”: 1}`, we can rename it inside a _Modifier_ block.
 
 This will create a new signal attribute called "new" with the same value as `sim`.
@@ -41,7 +42,8 @@ To remove `{“sim”: 1}` from the output, check the **Exclude existing fields?
 
 ### Math operations
 
-<img src="/img/expressions/plus-one.png" width="225" align="right" hspace="10" />
+<img class="right border" src="/img/expressions/plus-one.png" width="250"/>
+
 With an incoming signal of `{“sim”: 1}` we can perform math inside a _Modifier_ block.
 
 This operation creates a new attribute **plus_one** that will be equal to `sim + 1`.
@@ -50,14 +52,14 @@ The new output signal will be `{"plus_one": 2, "sim": 1}`.
 
 ### Create attributes
 
-<img src="/img/expressions/string-input.png" width="225" align="right" hspace="10" />
-Anything typed directly into a field is stored as a string.
+<img class="right border" src="/img/expressions/string-input.png" width="250"/>
 
-The expression at right will create the following signal:  `{"string": "this is a string"}`.
+Anything typed directly into a field is stored in the signal as a string:  `{"string": "this is a string"}`.
 
 ### Conditionals
 
-<img src="/img/expressions/logic.png" width="225" align="right" hspace="10" />
+<img class="right border" src="/img/expressions/logic.png" width="250"/>
+
 Expressions can perform logic.
 
 The signal stream `{“sim”:1}, {“sim”: 0}` will result in the following signal output:
@@ -69,7 +71,8 @@ The signal stream `{“sim”:1}, {“sim”: 0}` will result in the following s
 
 ### Negation
 
-<img src="/img/expressions/negation.png" width="225" align="right" hspace="10" />
+<img class="right border" src="/img/expressions/negation.png" width="250"/>
+
 Negation (!=) can also be used.
 
 The signal stream `{“sim”:1}, {“sim”: 0}` will result in the following signal output:
@@ -81,7 +84,8 @@ The signal stream `{“sim”:1}, {“sim”: 0}` will result in the following s
 
 ### Timestamp (default libraries)
 
-<img src="/img/expressions/timestamp.png" width="225" align="right" hspace="10" />
+<img class="right border" src="/img/expressions/timestamp.png" width="250"/>
+
 nio expressions allow you to import the following Python libraries by default:
 
 - datetime
