@@ -67,6 +67,7 @@
   * [How to Build a UI with nio](ui/build-a-ui.md)
 * [Monitoring](monitoring/README.md)
   * [Google Stackdriver](monitoring/stackdriver.md)
+  * [Datadog](monitoring/datadog.md)
 
 ---
 * nio Core
