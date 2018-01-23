@@ -1,6 +1,6 @@
 # Datadog
 
-To integrate the nio Platform into your [Datadog](https://app.datadoghq.com/) account to begin monitoring individual nio services, you will need to add three simple blocks into the service(s) you wish to monitor. This section outlines how to configure and connect those block to send data up to Datadog and how to configure your graph in Datadog to display that data.
+To integrate the nio Platform into your [Datadog](https://app.datadoghq.com/) account to begin monitoring individual nio services, you will need to add three simple blocks into the service(s) you wish to monitor. This section outlines how to configure and connect those block to post data to Datadog and how to configure your graph in Datadog to display that same data.
 
 ---
 
@@ -18,7 +18,7 @@ The following example explains how to configure your service to send metrics abo
 
 #### Configure the blocks
 
-The _IdentityIntervalSimulator_ block will trigger nio to send data up to Datadog. Configure the block to send a signal every minute.
+The _IdentityIntervalSimulator_ block will trigger nio to post data to Datadog. Configure the block to send a signal every minute.
 
 The _ProcessMetrics_ block should be configured to send the data that you are most interested monitoring. In the block configuration, select the checkboxes next to the metrics that you will monitor. In the **PID** property, set the value to `{{ __import__('os').getpid() }}`. This gets the process ID of the running service so that it can report data on itself. You will know if the service has gone into an error state if metrics have stopped reporting to your dashboard.
 
@@ -45,7 +45,7 @@ Your JSON configuration should look similar to what follows:
   "status": "done",
   "requests": [
     {
-      "q": "nio.service{*}",
+      "q": "nio.<service name>{*}",
       "type": "line",
       "style": {
         "palette": "dog_classic",
