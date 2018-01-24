@@ -2,7 +2,9 @@
 
 **Welcome to nio!** Get familiar with designing and building distributed systems with the nio Platform.
 
-### First timers: check out the workshops
+To access the nio binary and nio System Designer, sign up for a plan here: [https://niolabs.com/licensing](https://niolabs.com/licensing).
+
+## First timers: check out the workshops
 
 For users looking for a guided learning experience, we've created [workshops](http://workshops.n.io) to help you:
 
@@ -12,7 +14,7 @@ For users looking for a guided learning experience, we've created [workshops](ht
 * Walk though the series of [nio 101 workshops](https://workshops.n.io/nio-101/)
 
 
-### Experienced adventurers: dive in
+## Experienced adventurers: dive in
 
 To get started right away, immerse yourself in the core concepts by:
 
