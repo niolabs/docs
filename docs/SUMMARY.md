@@ -3,6 +3,7 @@
 * Introduction
 
 * [Welcome](README.md)
+* [The nio Portal](portal/README.md)
 * [Install nio](installation/README.md)
   * [On Windows](installation/windows.md)
   * [Supported Systems](installation/supported-systems.md)
