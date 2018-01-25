@@ -1,6 +1,6 @@
 # Supported Systems
 
-nio requires a few basic dependencies for local installation.
+The nio Platform requires a few basic dependencies for local installation.
 
 ---
 ### System Requirements
@@ -26,7 +26,7 @@ nio requires a few basic dependencies for local installation.
     For more information on our automated nio installation for the Raspberry Pi 3 or Raspberry Pi Zero, check out this [helpful blog](https://niolabs.com/blog/baking-nio-into-a-raspberry-pi).
 
 * **MacOS** (Version 10.9, Maverick, or above)<br />
-    For installation instructions, [click here](/installation)
+    For installation instructions, [click here](/installation).
 
 * **Windows** (7–10, Server 2008–2012)<br />
-    For installation instructions, [click here](/installation/windows)
+    For installation instructions, [click here](/installation/windows).

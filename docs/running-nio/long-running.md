@@ -5,10 +5,10 @@ Eventually you will want to run your nio instances for longer durations and have
 ---
 ## Run with Docker
 
-Running nio as a Docker container allows you to manage its lifecycle through standard Docker deployment practices and use orchestration managers like Kubernetes. Check out our [guide to running nio with Docker](/running-nio/docker.md) for more information on how to do this.
+Running the nio Platform as a Docker container allows you to manage its lifecycle through standard Docker deployment practices and use orchestration managers like Kubernetes. Check out our [guide to running nio with Docker](/running-nio/docker.md) for more information on how to do this.
 
 ---
-## Run nio in the Background
+## Run nio in the background
 
 When you run `niod` without any other shell options the nio instance will die if your terminal is closed or your SSH session disconnects. To prevent this, you can run nio in the background on MacOS and Linux using `nohup` like so:
 

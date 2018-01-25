@@ -43,7 +43,7 @@
     * [Developing Your Block](blocks/block-development/development.md)
     * [Testing Your Block](blocks/block-development/block-testing.md)
     * [Documenting Your Block](blocks/block-development/documenting.md)
-    * [Block Patterns](blocks/block-development/block-patterns.md)
+    * [Base Block Pattern](blocks/block-development/block-patterns.md)
     * [The nio Framework](blocks/block-development/framework.md)
     * [Mixins](blocks/block-development/mixins.md)
 

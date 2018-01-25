@@ -36,7 +36,7 @@ You can change the location of your users and permissions files in the `[securit
 
 The default configuration is shown. You can uncomment the default configuration and it will not change. To find your users and permissions in files other than `etc/users.json` and `etc/permissions.json`, uncomment the configuration and edit it.
 
-You can use different types of authentication, such as basic authentication and JSON Web Tokens, with nio.
+You can use different types of authentication, such as basic authentication and JSON Web Tokens, with the nio Platform.
 
 ### Basic Authentication (Basic Auth)
 

@@ -12,4 +12,4 @@ Adding blocks to your project is a simple as using:
 nio add [block name]
 ```
 
-This section outlines all of the available CLI commands that can be used when running nio locally.
+This section outlines all of the available CLI commands that can be used when running the nio Platform locally.

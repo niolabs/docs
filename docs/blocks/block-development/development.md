@@ -16,7 +16,7 @@ Once you have developed your block, you will want to [test](block-testing.md) an
 
 ## Base block class
 
-All nio blocks inherit from the base block class. The first import in the block template's `example_block.py` is `nio.block.base`. If you explore the code inside `nio.block.base`, you'll find explanatory docstrings for each method—including methods to override in your custom block—along with higher-level context.
+All nio Blocks inherit from the base block class. The first import in the block template's `example_block.py` is `nio.block.base`. If you explore the code inside `nio.block.base`, you'll find explanatory docstrings for each method—including methods to override in your custom block—along with higher-level context.
 
 An important principle to remember when developing your block is that [signals are passed as lists](/services/service-design-patterns/signal-structure.md#lists-of-signals).
 
@@ -25,9 +25,9 @@ An important principle to remember when developing your block is that [signals a
 The following methods from the base block are designed to be overridden:
 
 #### life cycle management
-  * `configure`: at the end of the `configure` method, the block is ready to receive signals. If an exception is raised during configure, the service will not start.
-  * `start`: during start, a block begins to send out signals. This method needs to eventually return so that the block status can change to “started." For this reason, anything that runs continuously, should be run in a new thread.
-  * `stop`: after stop, the block stops sending out signals and cancels jobs.
+  * **configure**: at the end of the `configure` method, the block is ready to receive signals. If an exception is raised during configure, the service will not start.
+  * **start**: during start, a block begins to send out signals. This method needs to eventually return so that the block status can change to “started". For this reason, anything that runs continuously, should be run in a new thread.
+  * **stop**: after stop, the block stops sending out signals and cancels jobs.
 
 #### signaling
   * `process_signals(<list of signals>, input_id)`: receives input signals.
@@ -43,7 +43,7 @@ An additional resource for developing your custom block is the [nio Block Librar
 
 ## Properties
 
-Block properties are declared as class attributes and have a [property type](#property-types). For example, to declare a configurable speed property as an `IntProperty` type
+Block properties are declared as class attributes and have a [property type](#property-types). For example, to declare a configurable speed property as an `IntProperty` type.
 ```python
 speed = IntProperty(title='Speed', default=30)
 ```
@@ -51,7 +51,7 @@ And in the _FileReader_ block type a `file` property is declared with a `FilePro
 ```python
 file = FileProperty(title='File', default='/tmp/file.txt')
 ```
-To obtain the value of a block property, call the property with a function invocation. For example, you can get the value of the speed property defined above with
+To obtain the value of a block property, call the property with a function invocation. For example, you can get the value of the speed property defined above with:
 ```python
  self.setSpeed(self.speed())
  ```

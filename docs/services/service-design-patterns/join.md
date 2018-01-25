@@ -1,10 +1,10 @@
 # Restructure and group signals
 
-If you have a list of signals that you want to condense into fewer signals or even one signal, there are a few nio Blocks that will help. The [_Join_ block](https://blocks.n.io/Join) is commonly used.
+If you have a list of signals that you want to condense into fewer signals or even one signal, there are a few nio Blocks that will help. The [_Join_](https://blocks.n.io/Join) block is commonly used.
 
 ---
 
-## Paring down lists of signals with the Join block
+## Paring down lists of signals with the _Join_ block
 
 The _Join_ block goes through every signal in an incoming list and consolidates them into a single signal based on the specified criteria. For example, if you have your signal with the numbers 1 through 5 from the previous example, you can shrink the list of five signals into one signal containing two attributes—one for odds and one for evens.
 ```
@@ -16,7 +16,7 @@ The _Join_ block goes through every signal in an incoming list and consolidates 
 }
 ```
 
-This configuration (based on the configuration of `key`) will create a new signal with two attributes.
+This configuration (based on the configuration of **key**) will create a new signal with two attributes.
 ```
 {
   0: [2, 4],
@@ -65,7 +65,7 @@ The block configuration results in a single output signal.
 
 That looks great, but what if you want to have a separate signal for each department, but still have a list of names. One inefficient option would be to filter the stream based on the department and then put the individual streams into copies of the _Join_ block from before. The following image displays this example.
 
-> **[danger] Inefficient Join**
+> **[danger] Inefficient use of _Join_ block**
 >
 > This is **not** the advised way to create separate lists of signals by group.
 >
@@ -90,7 +90,7 @@ The [group-by mixin](https://github.com/niolabs/nio/tree/master/nio/block/mixins
 }
 ```
 
-You added an attribute to your block configuration identifying the attribute to group by. The output of the block is a list of two signals, one for each department. Again, remember that since you only have one list of inputs, you can only have one list of outputs. Even though there are two signals being notified, they will be notified together in the same list.
+You added an attribute to your block configuration identifying the attribute to group by. The output of the block is a list of two signals, one for each department. Again, remember that since you only have one list of inputs, you can only have one list of outputs. Even though there are two signals being emitted, they will be emitted together in the same list.
 ```
 [
   {

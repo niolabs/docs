@@ -1,7 +1,7 @@
-# Glossary of Terms
+# Glossary of terms
 
 ## Binary
-A binary is the executable program that you run to run nio. Depending on your circumstances, you will run one of many nio binaries. Binaries range in complexity and are often tuned for particular hardware. If you're tinkering around on a Raspberry Pi, you don't need to run the same binary as a network of a dozen supercomputers built to analyze hundreds of thousands signals per second.
+A binary is the executable program that you run to run the nio Platform. Depending on your circumstances, you will run one of many nio binaries. Binaries range in complexity and are often tuned for particular hardware. If you're tinkering around on a Raspberry Pi, you don't need to run the same binary as a network of a dozen supercomputers built to analyze hundreds of thousands signals per second.
 
 ---
 

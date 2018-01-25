@@ -13,18 +13,18 @@ It can help you answer questions about what you can do in each level of the Syst
 ## System
 [Systems](/systems/README.md) are the largest container for projects in the nio System Designer.
 
-Systems are created in the System Designer to contain instances (running installations) of nio.
+Systems are created in the System Designer to contain instances (running installations) of the nio Platform.
 
 ### Create a system
 
-<img class="right" src="/img/cloud/Hello-CreateNewSystem.png" width="250" />
+<img class="right display" src="/img/cloud/Hello-CreateNewSystem.png" width="250" />
 
 From the **System Designer** (https://designer.n.io/), you can create a new system in two ways.
-  * If this is your first time opening nio, the **create new system** window displays automatically.
+  * If this is your first time opening the System Designer, the **create new system** modal window displays automatically.
   * If it doesn't open automatically, click the **`+`** button in the lower-left corner of the designer.
 
 
-Complete the **create new system** window:
+Complete the **create new system** modal:
   * In the **system name** box, enter a name for your system.
   * Click **accept**.
 
@@ -32,14 +32,14 @@ Complete the **create new system** window:
 
 > **[info] System Names**
 >
-> The designer automatically creates an abbreviation for each system name.
+> The System Designer automatically creates an abbreviation for each system name.
 >
 > Tip: try using an acronym for your system name.
 
 
 ### System edit, share, delete
 
-Once you create a system, you can enter the system context by clicking either a system in the system list, the system name at the top of the navigation list, or the system name in the breadcrumb.
+Once you create a nio system, you can enter the system context by clicking either the system in the system list, the system name at the top of the navigation list, or the system name in the breadcrumb.
 
 <img class="left" src="/img/cloud/Hello-SelectSystemCreateInstancePoint.png" width="600" />
 
@@ -66,11 +66,9 @@ Instances are created inside a system and contain services.
 
 To enter the system context, select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
 
-<img class="left" src="/img/cloud/Hello-SelectSystemCreateInstancePoint.png" width="600" />
-
+<img class="left" src="/img/cloud/Hello-SelectSystemCreateInstancePoint.png" width="500" /> <img class="right" src="/img/tasks/createcloudinstance.png" width="250" />
 1. Click **create cloud instance**.
-1. Complete the **create cloud instance** window:
-<img class="left" src="/img/tasks/createcloudinstance.png" width="250" />
+1. Complete the **create cloud instance** modal:
   * In the **instance name** box, enter a meaningful name.
 1. Click **accept**.
 
@@ -78,16 +76,14 @@ To enter the system context, select the name of your system in the left navigati
 
 To enter the system context, select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
 
-<img class="left" src="/img/cloud/Hello-SelectSystemCreateInstancePoint.png" width="600" />
-
+<img class="left" src="/img/cloud/Hello-SelectSystemCreateInstancePoint.png" width="500" /> <img class="right" src="/img/tasks/createlocalinstance.png" width="250" />
 
 1. Click **create local instance**.
-1. Complete the **create local instance** window:
-<img class="left" src="/img/tasks/createlocalinstance.png" width="250" />
-  * **instance name**: enter a meaningful name
-  * **hostname**: enter the hostname for the instance
-  * **port**: enter the port number configured on the instance
-  * **access mode**: leave as **basic**
+1. Complete the **create local instance** modal:
+  * **instance name**: enter a meaningful name.
+  * **hostname**: enter the hostname for the instance.
+  * **port**: enter the port number configured on the instance.
+  * **access mode**: leave as **basic**.
 1. Click **accept**.
 
 > **[info] Instance Names**
@@ -115,7 +111,7 @@ Icon                      |Label             | Description      |
 
 ## Service
 
-[Services](/services/README.md) are a user-configurable signal path that connects a collection of blocks so they can work together to perform a desired task or service.
+A nio [service](/services/README.md) is a user-configurable signal path that connects a collection of blocks so they can work together to perform a desired task or service.
 
 Services are created inside an instance and contain blocks.
 
@@ -123,15 +119,12 @@ Services are created inside an instance and contain blocks.
 
 Select the name of the instance in the left navigation panel or on the breadcrumb above the contextual toolbar.
 
-<img class="left" src="/img/cloud/Hello-SelectInstancePoint.png" width="600" />
+<img class="left" src="/img/cloud/Hello-SelectInstancePoint.png" width="500" /> <img class="right" src="/img/tasks/createnewservice.png" width="250" />
 
 1. Click **create new service**.
-1. Complete the **create new service** window:
-<img class="left" src="/img/tasks/createnewservice.png" width="250" />
+1. Complete the **create new service** modal:
   * In the **service name** box, enter a meaningful name.
   * Leave the **service type** as **Service**.
-
-
 1. Click **accept**.
 1. Click **save** in the toolbar.
 
@@ -232,12 +225,12 @@ Icon                      |Label             | Description      |
 
 1. Search for the configured block in the **block library**.
 1. Click the vertical ellipsis menu and select **delete**.
-1. If the **block in use** warning is displayed, click **Got it!** and delete the block from all services before deleting the configured block.
-1. Click **delete** in the confirmation window.
+1. If the **block in use** warning is displayed, click **got it!** and delete the block from all services before deleting the configured block.
+1. Click **delete** in the block confirmation modal window.
 
 ### Configure blocks
 
-1. Double-click the block to view the configuration window.
+1. Double-click the block to view the block configuration modal.
 1. Enter the required parameters.
 1. Click **accept**.
 

@@ -85,7 +85,7 @@ Permission levels assigned to collaborators in the System Designer
 
 ### Deleting
 
-Users with `deleting` access can delete nio artifacts as shown in the table below. Editors can delete services and blocks but not systems or instances.
+Users with **deleting** access can delete nio artifacts as shown in the table below. Editors can delete services and blocks but not systems or instances.
 
 | | system |instance | service | block |
 | ------------- | ------------- |------------- |------------- |------------- |
@@ -96,7 +96,7 @@ Users with `deleting` access can delete nio artifacts as shown in the table belo
 
 ### See who has access
 
-Users with `see-who-has-access` privileges can see which systems another user has access to. As shown in the table below, only admins can see which systems another user has access to.
+Users with **see-who-has-access** privileges can see which systems another user has access to. As shown in the table below, only admins can see which systems another user has access to.
 
 | | system |
 | ------------- | ------------- |
@@ -107,7 +107,7 @@ Users with `see-who-has-access` privileges can see which systems another user ha
 
 ### Revoking access
 
-Users with `revoking-access` can revoke another user’s access to a system as shown in the table below. Only admins can revoke a user’s access to a system.
+Users with **revoking-access** can revoke another user’s access to a system as shown in the table below. Only admins can revoke a user’s access to a system.
 
 | | system |
 | ------------- | ------------- |

@@ -1,6 +1,6 @@
 # Run nio
 
-The nio Platform facilitates the creation of distributed computing solutions across an almost unlimited array of platforms and devices. There are lots of ways to use it. We've outlined some of the most common implementations below.
+The nio Platform facilitates the creation of distributed computing solutions across an almost unlimited array of platforms and devices. There are many ways to use it. We have outlined some of the most common implementations below.
 
 ---
 **Run nio**

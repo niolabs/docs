@@ -42,8 +42,8 @@ Just like the `unittest.TestCase`, nio supports the setUp/tearDown pattern. This
 ## Helper methods
 
 - **configure_block(block, block_properties)**<br>The process of configuring and initializing blocks manually is somewhat nuanced (and not something we want you to worry about). We provide this method to configure your block instance semi-automatically. Just pass the block object itself and a dictionary containing any block properties you want to configure (and the associated values).
-- **assert_num_signals_notified(num, block=None)**<br>This method provides access to the total number of signals notified over the course of the current test. If `block` is not `None`, then you will receive the number of signals notified by that block over its lifetime.
-- **last_signal_notified(output_id)**<br>This method returns the last signal that was notified from a particular output. If an output_id is not specified, it will return the last signal notified from any output on the block.
+- **assert_num_signals_notified(num, block=None)**<br>This method provides access to the total number of signals emitted over the course of the current test. If `block` is not `None`, then you will receive the number of signals emitted by that block over its lifetime.
+- **last_signal_notified(output_id)**<br>This method returns the last signal that was emitted from a particular output. If an **output_id** is not specified, it will return the last signal emitted from any output on the block.
 
 ---
 
@@ -57,7 +57,7 @@ Just like the `unittest.TestCase`, nio supports the setUp/tearDown pattern. This
     * communication
     * persistence
     * web
--   **signals_notified(signals, output_id)**<br>This method gets called every time signals are notified in your tests. If you'd like to record something in the test case, trigger an event, or perform some aggregation when that happens, override this method. One common use is to add `self.signals = defaultdict(list)` to `setUp` and
+-   **signals_notified(signals, output_id)**<br>This method gets called every time signals are emitted in your tests. If you'd like to record something in the test case, trigger an event, or perform some aggregation when that happens, override this method. One common use is to add `self.signals = defaultdict(list)` to `setUp`.
 
 ```python
 def signals_notified(self, signals, output_id):
@@ -97,7 +97,7 @@ Using the _EventBlock_, your test will wait until  `YourBlock.configure` returns
 
 ## Mocking
 
-Patching and mocking are extremely useful concepts in software verification; this is especially relevant when the modules in question interact with external resources (such as APIs and OS services). We won't go into too much details of mocking right now, but the [Python documentation](https://docs.python.org/3/library/unittest.mock.html) contains great material on the subject. We recommend using these concepts liberally; in fact, in many cases you won't have much choice.
+Patching and mocking are extremely useful concepts in software verification; this is especially relevant when the modules in question interact with external resources (such as APIs and OS services). We will not go into too much detail about mocking right now, but the [Python documentation](https://docs.python.org/3/library/unittest.mock.html) contains great material on the subject. We recommend using these concepts liberally; in fact, in many cases you will not have much choice.
 
 As you progress, one thing you may notice is that `unittest.mock.patch` doesn't play nice with relative module paths. This makes patching a method at the class or module level difficult.  One solution is to directly import the object using  `unittest.mock.patch.object`
 
@@ -110,13 +110,13 @@ def test_it(self, load_patch):
 	...
 	load_patch.assert_called_once_with(ANY)
 ```
-Again, you don't necessarily have to construct your tests in this manner; however, we've found this practice to be more convenient and less prone to user error than others.
+Again, you do not necessarily have to construct your tests in this manner; however, we have found this practice to be more convenient and less prone to user error than others.
 
 ---
 
 ## Mocking persistence module
 
-To mock `load`, the persistence module:
+To mock **load**, the persistence module:
 
 ```python
 class TestPersistenceBlock(NIOBlockTestCase):
@@ -127,7 +127,7 @@ class TestPersistenceBlock(NIOBlockTestCase):
 			load.return_value = 'i was persisted'
 			self.configure_block(blk, {})
 ```
-To mock `save`:
+To mock **save**:
 
 ```python
 from unittest.mock import  MagicMock

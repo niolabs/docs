@@ -16,7 +16,7 @@ The systems list is the leftmost column in the designer.
 * The designer automatically creates an abbreviation for each system name.
 * To create a system, click the **`+`** button in the lower-left corner.
 * To change into the system context and view a system, click the system name.
-* Learn more about [systems](/systems)
+* Learn more about [systems](/systems).
 
 ### Instances and services list
 The instances and services list is located to the right side of the systems column.
@@ -24,13 +24,13 @@ The instances and services list is located to the right side of the systems colu
     * The list of services displays below the instance name.
 * To view the contents of an instance in the canvas, click the instance name.
 * To enter the service context and view the contents of a service, click a service name.
-* Learn more about [instances](/instances) and [services](/services)
+* Learn more about [instances](/instances) and [services](/services).
 
 ### Breadcrumb
 The breadcrumb is located at the top of the System Designer.
 * As you navigate from system to service, the breadcrumb allows you to easily identify your location in the system.
 
-<img class="display" height="150 src="/img/cloud/hierarchy.gif" />
+<img class="left" src="/img/cloud/hierarchy.gif" width="600" />
 
 ### Contextual toolbar
 The contextual toolbar is located underneath the breadcrumb.
@@ -58,7 +58,7 @@ The canvas is located in the center of the System Designer.
 * In the service context, the canvas shows the interactions of blocks in your service.
     * The block workflow is designed by the user and represents the flow of data between the inputs and outputs of the [blocks](/blocks/README.md) in a service.
     * To view a service's block workflow in the canvas, click the service's name.
-    * To add a block to the service, install and then drag and drop a block from the block library on to the canvas.
+    * To add a block to the service, install and then drag and drop a block from the block library onto the canvas.
     * Connect the blocks from output to input to create the block workflow.
 
 ### Block library

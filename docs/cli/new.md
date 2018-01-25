@@ -17,7 +17,7 @@ Example (niolabs template):
 nio new my_plant --template demo_plant
 ```
 
-pulls the demo_plant project from the official [niolabs GitHub](https://github.com/niolabs) and places it in a directory named `my_plant`.
+pulls the **demo_plant** project from the official [niolabs GitHub](https://github.com/niolabs/plant_demo) and places it in a directory named `my_plant`.
 
 Example (GitHub template):
 ```bash

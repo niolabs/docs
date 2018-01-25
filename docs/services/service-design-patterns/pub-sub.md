@@ -1,6 +1,6 @@
 # Publishing and subscribing
 
-An easy way to communicate between nio services and instances in the nio Platform is by using a publisher/subscriber pattern.
+An easy way to communicate between nio services and instances in the nio Platform is by using the publisher/subscriber pattern.
 
 The following communication blocks are used for publishing and subscribing to data signals:
 * [_Publisher_](https://blocks.n.io/Publisher)
@@ -10,17 +10,17 @@ The following communication blocks are used for publishing and subscribing to da
 
 ## Topic tree
 
-When using the _Publisher_ and _Subscriber_ blocks, you connect systems and instances by defining a topic you wish to publish to or subscribe to. The information structure of an entire nio system can be viewed as a hierarchical topic tree.
+When using the nio _Publisher_ and _Subscriber_ Blocks, you connect systems and instances by defining a topic you wish to publish to or subscribe to. The information structure of an entire nio system can be viewed as a hierarchical topic tree.
 
 ### Publishers
 
-Publishers publish data to a specific topic, denoted by a dot-separated string. The following is an example of publisher topics and the resulting topic tree that would be generated in the system.
+_Publisher_ blocks publish data to a specific topic, denoted by a dot-separated string. The following is an example of publisher topics and the resulting topic tree that would be generated in the system.
 
 Publisher Topics:
 
-1. California.San Francisco.Temperature
-2. California.San Francisco.Population
-3. California.Los Angeles.Temperature
+1. California.SanFrancisco.Temperature
+2. California.SanFrancisco.Population
+3. California.LosAngeles.Temperature
 4. California.Population
 5. Colorado.Broomfield.Temperature
 
@@ -54,7 +54,7 @@ These topics can be visualized as the following tree:
 
 ### Subscribers
 
-Subscribers can subscribe to a single topic or also portions of the topic tree through a similar dot-separated string that publishers use. The only difference is that subscribers can supply wildcards represented as `*` and `**`. The single asterisk will match one and only one level of the topic tree. The double asterisk will match zero or more levels of the topic tree. Below are some examples of subscribers and the corresponding publishers they would receive data from according to the publisher examples above.
+_Subscriber_ blocks can subscribe to a single topic or also portions of the topic tree through a similar dot-separated string that _Publisher_ blocks use. The only difference is that subscribers can supply wildcards represented as `*` and `**`. The single asterisk will match one and only one level of the topic tree. The double asterisk will match zero or more levels of the topic tree. Below are some examples of subscribers and the corresponding publishers they would receive data from according to the publisher examples above.
 
 * Subscribe: `California.*.Temperature`—Publishers: 1, 3
 * Subscribe: `California.*.Population`—Publishers: 2 (Publisher 4 is not matched since the single asterisk is used.)
@@ -74,4 +74,4 @@ Perhaps the most impactful reason to use the nio pub/sub system is because of th
 
 ## Hints in the System Designer
 
-Another benefit of using the nio pub/sub mechanism is that the nio System Designer understands the topic tree as well. If your service has a _Publisher_ or _Subscriber_ block with a topic, the designer can show you services that either subscribe to or publish to that topic, respectively. It also permits the System Designer to draw the graph relationship between services and instances that share topics.
+Another benefit of using the nio pub/sub mechanism is that the nio System Designer understands the topic tree as well. If your service has a _Publisher_ or _Subscriber_ block with a topic, the System Designer can show you services that either subscribe to or publish to that topic, respectively. It also permits the System Designer to draw the graph relationship between services and instances that share topics.
