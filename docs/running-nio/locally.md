@@ -80,7 +80,7 @@ Once your instance is loaded and available, you can add services and blocks in t
 Available nio Blocks can be explored in the nio [Block Library](https://blocks.n.io) where you will find a summary of the block's purpose, a list of its properties, commands, inputs, and outputs, and a link to the block code repository.
 
 ---
-## View Your logs
+## View your logs
 
 When running in background mode, you can monitor your logs using the “tail” command:
 ```
