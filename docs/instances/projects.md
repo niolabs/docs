@@ -4,7 +4,7 @@ The configuration files for nio instances are called nio projects. A project con
 
 In addition to the configuration of an instance, the project also includes the blocks and the block code of the instance. Blocks are typically included in a project directory as Git submodules.
 
-nio-managed instances come pre-configured with our standard project template. It is configured for our cloud environment and ships with a default set of blocks.
+nio-managed instances come pre-configured with our standard project template. It is configured for our cloud environment and ships with a default set of nio Blocks.
 
 The nio [project template repository](https://github.com/niolabs/project_template) is provided as the suggested base project for your self-managed nio instances. The project can be modified and added to to suit your requirements.
 

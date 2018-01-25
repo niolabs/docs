@@ -43,6 +43,6 @@ To remove a user from the team, find the user's card on the team profile page. C
 ![](/img/organizations/org-remove-user-from-team.jpg)
 
 ### Remove a team from the organization
-To remove a team from your organization, click the red text link in the top right corner of the team page. You will be prompted with a pop-up modal to confirm that you actually want to remove the team from the organization.
+To remove a team from your organization, click the red text link in the top right corner of the team page. You will be prompted by a modal window to confirm that you actually want to remove the team from the organization.
 
 ![](/img/organizations/org-team-profile.jpg)

@@ -4,7 +4,7 @@ Most nio Platform licenses do not include managed cloud storage. In order to hav
 
 We recommend signing up for a [Google Cloud Platform account](https://cloud.google.com/) and using their managed data solutions. As a Google Cloud Technology Partner, we often release new blocks and connections to GCP services.
 
-Take a look through the [Database blocks](https://blocks.n.io/?category=Database) that are currently built and reach out to support with any questions about working with managed data partners.
+Take a look through the nio [Database Blocks](https://blocks.n.io/?category=Database) that are currently built and reach out to support with any questions about working with managed data partners.
 
 ---
 

@@ -20,8 +20,8 @@ Then, in your block config you can use that secret token by using the environmen
 A large-scale nio system will generally run in multiple environments. Here are several examples:
 
 1. A multi-tenant setup where the same project runs in many different locations. For example, a smart retail store system where the project runs in every store.
-2. A staging environment used for validation and testing.
-3. A local test environment used for building blocks or writing service unit tests.
+1. A staging environment used for validation and testing.
+1. A local test environment used for building blocks or writing service unit tests.
 
 For any of these setups, the use of environment variables can help you. If you find that a value may differ from one environment to the next \(e.g., an IP address, a database password, whether a service should run or not\), then replace that value with an environment variable and create a different `.env` file for the respective environment. For example, your production `.env` file \(`prod.env`\) may look something like this:
 

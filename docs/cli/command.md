@@ -2,7 +2,7 @@
 
 `command` or `co` allows you to command running nio instances from the terminal.
 
-This command must be run from the root level of your project directory.
+This command must be run from the root level of your nio project directory.
 
 Example:
 ```bash

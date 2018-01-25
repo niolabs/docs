@@ -1,4 +1,4 @@
-# The nio Framework
+# The nio framework
 
 When you develop blocks, you use the nio framework. The framework holds all the classes required to create your block as well as the functionality to tie everything together. Think of the framework as a toolshed of useful tools and context for working with the nio Platform.
 

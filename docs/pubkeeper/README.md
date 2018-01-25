@@ -16,7 +16,7 @@ The Pubkeeper server is a matchmaker, not a translator. It is aware that two dif
 ---
 ## Pubkeeper clients
 
-Pubkeeper clients can be extremely diverse. Every instance of nio includes the ability to be a Pubkeeper client. Other examples of potential Pubkeeper clients include a website, a Raspberry Pi, a laptop, or a cloud instance. Currently, a Pubkeeper client must be able to communicate to the Pubkeeper server via a websocket.
+Pubkeeper clients can be extremely diverse. Every instance of nio includes the ability to be a Pubkeeper client. Other examples of potential Pubkeeper clients include a browser, a Raspberry Pi, a laptop, or a cloud instance. Currently, a Pubkeeper client must be able to communicate to the Pubkeeper server via a websocket.
 
 When you use _Publisher_ or _Subscriber_ blocks within nio, you create Pubkeeper communication channels. A _Publisher_ will create a Pubkeeper “brewer” and a _Subscriber_ will create a Pubkeeper “patron” for the block’s respective topic.
 
@@ -44,7 +44,7 @@ Pubkeeper simplifies security because Pubkeeper clients encrypt the data before 
 
 When you create a system in the nio System Designer, by default, a Pubkeeper server is spun up in the cloud. You can override this behavior by selecting something other than “auto” in the “advanced” section of the **create system** dialog. You can see the configuration of the cloud Pubkeeper server if you select a system then click the **edit** icon in the contextual toolbar.
 
-To configure your local project to use the cloud Pubkeeper server, copy the Pubkeeper `host`, `port`, `token`, and `secure` settings shown in your system's edit modal to the following four lines in the `# Pubkeeper Client` section of your project directory's `nio.env` file:
+To configure your local project to use the cloud Pubkeeper server, copy the Pubkeeper `host`, `port`, `token`, and `secure` settings shown in your system's edit modal to the following four lines in the <br>`# Pubkeeper Client` section of your project directory's `nio.env` file:
 
   ```
   PK_HOST: [your copied host]

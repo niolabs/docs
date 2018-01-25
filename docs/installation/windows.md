@@ -2,8 +2,8 @@
 
 >**[info] Prerequisites**
 >
->* **nio Windows Installer**: [Get it here](https://app.n.io/binaries/download) (You will need a license agreement)
->* **A nio system with Pubkeeper**: [Click here to learn how to create one](/running-nio/in-the-cloud.md).
+>* **A nio Platform Windows Installer**: [Get it here](https://app.n.io/binaries/download) (You will need a license agreement)
+>* **A nio system with Pubkeeper**: [Click here to learn how to create one](/running-nio/in-the-cloud.md)
 
 Download and double-click the executable file to start the process, then follow the screens below
 
@@ -19,7 +19,7 @@ Download and double-click the executable file to start the process, then follow 
 
 ---
 
-The next window in the setup process asks for your Pubkeeper host and token. To find this within the nio System Designer, click your system's name on the left hand side of the System Designer and then click **edit** in the toolbar. This will bring up the edit system modal. Copy and paste your Pubkeeper configuration from that window into the installer window.
+The next window in the setup process asks for your Pubkeeper host and token. To find this within the nio System Designer, click your system's name on the left hand side of the System Designer and then click **edit** in the toolbar. This will bring up the edit system modal window. Copy and paste your Pubkeeper configuration from that window into the installer window.
 
 ---
 
