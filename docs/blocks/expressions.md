@@ -1,6 +1,6 @@
 # nio expressions
 
-The nio Platform leverages Python syntax inside blocks to operate on signals. To perform block operations using Python, simply place your desired expression between two sets of curly brackets `{{ }}` inside a block configuration field. In addition to Python, block configurations can also accept environment variables by using two sets of double brackets `[[ ]]`, as well as string values without any brackets. For more information on environment variables, please see our documentation here: [https://docs.n.io/service-design-patterns/environment-variables.html](https://docs.n.io/service-design-patterns/environment-variables.html)
+The nio Platform leverages Python syntax inside blocks to operate on signals. To perform block operations using Python, simply place your desired expression between two sets of curly brackets `{{ }}` inside a block configuration field. In addition to Python, block configurations can also accept environment variables by using two sets of double brackets `[[ ]]`, as well as string values without any brackets. For more information on environment variables, please see our documentation here: <https://docs.n.io/service-design-patterns/environment-variables.html>.
 
 ```
 {{ <code goes here> }}
@@ -62,7 +62,7 @@ Anything typed directly into a field is stored in the signal as a string:  `{"st
 
 Expressions can perform logic.
 
-The signal stream `{“sim”:1}, {“sim”: 0}` will result in the following signal output:
+The signal stream `{“sim”: 1}, {“sim”: 0}` will result in the following signal output:
 
 ```
 {"sim": 1, "zero": false}
@@ -75,7 +75,7 @@ The signal stream `{“sim”:1}, {“sim”: 0}` will result in the following s
 
 Negation (!=) can also be used.
 
-The signal stream `{“sim”:1}, {“sim”: 0}` will result in the following signal output:
+The signal stream `{“sim”: 1}, {“sim”: 0}` will result in the following signal output:
 
 ```
 {"sim": 1, "zero": false}

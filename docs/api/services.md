@@ -54,7 +54,7 @@ The result of the previous request is
 
   **status**<br>Current status of the service: configuring, configured, starting, started, stopping, stopped, and error.
 
-  **execution**<br>The configuration of inter-block connections in the service. Block connections are defined as a list of dictionaries that specify a block `name` and the blocks it sends signals to, called `receivers`. The `receivers` specify the output terminal in the source block that emits signals and the input terminal in the receiver block that receives signals.
+  **execution**<br>The configuration of inter-block connections in the service. Block connections are defined as a list of dictionaries that specify a block **name** and the blocks it sends signals to, called **receivers**. The **receivers** specify the output terminal in the source block that emits signals and the input terminal in the receiver block that receives signals.
 
   **mappings**<br>The local ID of a block configuration. If a single block configuration is used multiple times in a service, a new local name is created for each additional use of that block, and those new names are specified in mappings.
 
@@ -64,7 +64,7 @@ The result of the previous request is
 
 ## Get all API
 
-In addition to getting the details of one service configuration, specified by name, you can get the details of all service configurations in one request
+In addition to getting the details of one service configuration, specified by name, you can get the details of all service configurations in one request.
 
     curl -XGET 'http://localhost:8181/services'
 
@@ -72,7 +72,7 @@ In addition to getting the details of one service configuration, specified by na
 
 ## Create API
 
-If you're working with a nio project from scratch, you need to create and configure services. Create a new service with the Create API by sending a POST request with the applicable JSON data. When creating a new service, you can optionally include the configured values of the service type properties. At a minimum, you must specify the service `type` and `name` and any configuration values for required service properties that do not have a default value. For example, to create the **SimulateAndLog** service of the basic type `Service`
+If you're working with a nio project from scratch, you need to create and configure services. Create a new service with the Create API by sending a POST request with the applicable JSON data. When creating a new service, you can optionally include the configured values of the service type properties. At a minimum, you must specify the service **type** and **name** and any configuration values for required service properties that do not have a default value. The following example creates a **SimulateAndLog** service of the basic type `Service`.
 
     curl -XPOST 'http://localhost:8181/services' --data '{"type": "Service", "name": "SimulateAndLog"}' -H 'Content-Type: applcation/json'
 
@@ -80,7 +80,7 @@ If you're working with a nio project from scratch, you need to create and config
 
 ## Update API
 
-When you want to update the configuration of a service, send a PUT request to `/services` with the service name as the endpoint and include any new JSON data. You only need to include the properties that you are updating in your PUT request, in this case, **log_level**
+When you want to update the configuration of a service, send a PUT request to `/services` with the service name as the endpoint and include any new JSON data. You only need to include the properties that you are updating in your PUT request, in this case, **log_level**.
 
     curl -XPUT 'http://localhost:8181/services/SimulateAndLog' --data '{"log_level": "DEBUG"}' -H 'Content-Type: applcation/json'
 

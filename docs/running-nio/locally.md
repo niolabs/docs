@@ -2,10 +2,10 @@
 
 >**[info] Prerequisites**
 >
->* **nio installed on your device**: Follow the [installation instructions](/installation)
+>* **The nio Platform installed on your device**: follow the [installation instructions](/installation)
 
 ---
-## Create a Project
+## Create a project
 
 Projects are collections of services, blocks, and configurations. Create a nio folder to keep things tidy:
 ```
@@ -19,7 +19,7 @@ nio new my_project
 ---
 ## Start your project
 
-The command to run nio locally is `niod`. This will start a running instance on your machine. This command requires that you run it from the root of your project directory.
+The command to run nio locally is `niod`. This will start running a nio instance on your machine. This command requires that you run it from the root of your project directory.
 
 ```
 cd my_project && niod
@@ -37,7 +37,7 @@ NIO [INFO] Component: ServiceManager status changed from: configured to: startin
 NIO [INFO] Component: ServiceManager status changed from: starting to: started
 ```
 
-If you see those logs, the nio Platform is up and running. Congratulations!
+If you see those logs, nio is up and running. Congratulations!
 
 >By default, new projects use port 8181. If port 8181 isn’t available, you'll see an error. Change the NIOPORT value in your project's `nio.env` file to fix this error.
 
@@ -58,11 +58,11 @@ nohup niod -r path/to/my_project 2>&1 > /dev/null &
 ```
 
 ---
-## Add your local instance to the System Designer
+## Add the instance to the System Designer
 
 To manage your local instance, you need to add it to the **System Designer**:
 
-1. Open the **nio System Designer** in a browser: http://designer.n.io/
+1. Open the **nio System Designer** in a browser: http://designer.n.io/.
 1. Select your system in the left hand nav.
 1. Click **create local instance**.
   * In the **instance name** box, enter an instance name.
@@ -75,12 +75,12 @@ To manage your local instance, you need to add it to the **System Designer**:
 >
 >You may see an issue regarding HTTPS and HTTP instances. Since you launched your instance and presumably didn't load any SSL certificates, the instance is accessible only by HTTP. However, if you are logged into the System Designer via HTTPS, your browser will restrict an XHR request going over HTTP. To connect to a local instance, you can log into the designer via HTTP at http://designer.n.io. All of your instances and systems will be the same, except the nio commands to edit these instances won't happen over HTTPS.
 
-Once your instance is loaded and available, you can add services and blocks in the same manner as the [cloud instance](https://docs.n.io/running-nio/in-the-cloud.html). For more information about adding services and blocks see the workshops at [workshops.n.io](https://workshops.n.io).
+Once your instance is loaded and available, you can add services and blocks in the same manner as a [cloud instance](https://workshops.n.io/system-designer/).
 
 Available nio Blocks can be explored in the nio [Block Library](https://blocks.n.io) where you will find a summary of the block's purpose, a list of its properties, commands, inputs, and outputs, and a link to the block code repository.
 
 ---
-## View Your Logs
+## View your logs
 
 When running in background mode, you can monitor your logs using the “tail” command:
 ```
@@ -88,7 +88,7 @@ tail -f /path/to/my_project/logs/main.log
 ```
 
 ---
-## Stop your Project
+## Stop your project
 
 ```
 nio shutdown -p {NIOPORT}

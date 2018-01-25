@@ -8,4 +8,4 @@ Example:
 ```bash
 nio newblock my_block
 ```
-creates a new folder in your current directory named `my_block` containing everything needed to begin developing your custom nio block.
+creates a new folder in your current directory named `my_block` containing everything needed to begin developing your custom block.

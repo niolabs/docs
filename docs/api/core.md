@@ -6,7 +6,7 @@ The nio core has a few crucial API endpoints: `/nio` and `/shutdown`.
 
 ## nio
 
-The `/nio` endpoint is used to find information, such as versioning, about your running nio instances
+The `/nio` endpoint is used to find information, such as versioning, about your running nio instances.
 
     curl -XGET 'localhost:8181/nio'
 
