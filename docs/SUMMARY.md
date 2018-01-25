@@ -100,4 +100,4 @@
 * [Glossary of Terms](glossary/README.md)
 * [Customer Support](support/README.md)
 * [Recommended Hardware](hardware/README.md)
-* [Copyright](copyright.md)
+* [Copyright and EULA](copyright.md)
