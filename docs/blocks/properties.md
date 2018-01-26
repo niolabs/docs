@@ -70,7 +70,7 @@ This _Modifier_ block is named **ShowAlertLevel** and is configured to enrich th
 
 ## Common mixins
 
-Some commonly used block properties are [mixins](/blocks/block-development/mixins.md) and include `enrich`, which creates the **Exclude Existing?** property, `persistence`, which creates the **Load from Persistence?** property, and `group-by` which creates the **Group By** input field. For an example of how to configure and use `group-by` using the _Join_ block, see [Restructure and group signals](/services/service-design-patterns/join.md#using-group-by) in [Service Design Patterns](/services/service-design-patterns).
+Some commonly used block properties are [mixins](/blocks/block-development/mixins.md) and include `enrich`, which creates the **Exclude Existing?** property, `persistence`, which creates the **Load from Persistence?** property, and `group-by` which creates the **Group By** input field. For an example of how to configure and use `group-by` using the _Join_ block, see [Restructure and group signals](/services/service-design-patterns/join.md#using-group-by) in [Service Design Patterns](/services/service-design-patterns/README.md).
 
 ---
 
