@@ -2,7 +2,7 @@
 
 The `config` or `cfg` command displays the configuration of any block or service within your running nio instance. The configuration is returned from the nio Platform in JSON format and displayed.
 
-When run without any parameters or with the optional `project` parameter, you will be prompted to enter configuration for Pubkeeper. These values are optional. Pressing enter without typing in configuration values will not change the corresponding fields in `nio.env`.
+When run without any parameters or with the optional `project` parameter, you will be prompted to enter configuration for Pubkeeper. These values are optional. Pressing enter without typing in configuration values will not change the corresponding fields in `nio.conf`.
 
 This command must be run from the root level of your nio project directory.
 
@@ -63,4 +63,4 @@ Example (project):
 ```bash
 nio cfg project
 ```
-Will prompt you for `PK Host` and `PK Token` values to be put in the `nio.env` file of your project.
+Will prompt you for `PK Host` and `PK Token` values to be put in the `nio.conf` file under the [user_defined] section of your project.

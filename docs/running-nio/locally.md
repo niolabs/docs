@@ -39,7 +39,7 @@ NIO [INFO] Component: ServiceManager status changed from: starting to: started
 
 If you see those logs, nio is up and running. Congratulations!
 
->By default, new projects use port 8181. If port 8181 isn’t available, you'll see an error. Change the NIOPORT value in your project's `nio.env` file to fix this error.
+>By default, new projects use port 8181. If port 8181 isn’t available, you'll see an error. Change the NIOPORT value in your project's `nio.conf` file under the [user_defined] section to fix this error.
 
 >**MacOS Users**: While your system comes pre-installed with Python, it is an older version. When installing newer versions, Python may require that you install and trust a set of Root Certificates for its SSL package. That file is located at `/Applications/Python 3.x/Install Certificates.command`. Just double-click that file to complete the process. Check `/Applications/Python 3.x/ReadMe.rtf` for more details.
 
@@ -93,4 +93,11 @@ tail -f /path/to/my_project/logs/main.log
 ```
 nio shutdown -p {NIOPORT}
 ```
-> NIOPORT is set in your project's nio.env file
+> NIOPORT is set in your project's nio.conf file under the [user_defined] section
+
+---
+## nio.env is obsolete
+
+nio Binaries released after January 26, 2018 no longer use the `nio.env` file for user defined variables. Instead, all of these variables are located under the `[user_defined]` section of `nio.conf`.
+
+>If you would like to use your old projects with the latest binary, run the following [script](https://gist.github.com/tlugger/2da9c8e615265243c07c76549f402ca6) from your project directory with `python move-conf.py` to easily move your variables from `nio.env` to `nio.conf`.
