@@ -63,4 +63,4 @@ Example (project):
 ```bash
 nio cfg project
 ```
-Will prompt you for `PK Host` and `PK Token` values to be put in the `nio.conf` file under the [user_defined] section of your project.
+Will prompt you for `PK Host` and `PK Token` values to be put in your projects `nio.conf` file under the [user_defined] section.
