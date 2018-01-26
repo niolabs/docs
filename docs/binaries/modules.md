@@ -5,7 +5,7 @@ Unlike a nio core component that runs only once in the core/main process, a nio 
 ---
 
 ## Interface
-The interface of a module exists in the [block development framework](/blocks/block-development/framework.html) and can be called by the nio core or by blocks. This allows blocks to use the same implementation that the core uses in a particular installation without having to worry about the details of the implementation.
+The interface of a module exists in the [block development framework](/blocks/block-development/framework.md) and can be called by the nio core or by blocks. This allows blocks to use the same implementation that the core uses in a particular installation without having to worry about the details of the implementation.
 
 For example, rather than a block needing to define its own communication module, it can publish data using the same communication module interface that the core uses. This allows you to swap out the implementation of a service's communication without having to update all of your block code.
 
