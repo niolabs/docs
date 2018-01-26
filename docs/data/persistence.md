@@ -2,7 +2,7 @@
 
 Certain nio Block types, such as [_StateChange_](https://blocks.n.io/StateChange), [_Buffer_](https://blocks.n.io/Buffer), and [_Sleep_](https://blocks.n.io/Sleep), give the user an option to "Load from Persistence".
 
-The persistence block [mixin](/blocks/block-development/mixins.html) uses the persistence module to give a block the ability to save its current data to disk when the parent service is stopped and to load that data when started. Without this function, data or state within the block would be lost when the service stops.
+The persistence block [mixin](/blocks/block-development/mixins.md) uses the persistence module to give a block the ability to save its current data to disk when the parent service is stopped and to load that data when started. Without this function, data or state within the block would be lost when the service stops.
 
 The data saved depends on the block type, but generally allows a block to start where it left off when it was last stopped. This may include the current state evaluation, the contents of a buffer, or a scheduled task. Persistence is not a storage solution, but a method of handling interruptions to a running system.
 
