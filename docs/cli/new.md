@@ -2,7 +2,7 @@
 
 The `new` command creates a fresh project from the official [project template](https://github.com/niolabs/project_template) repository. This command will run through the steps of cloning the project, updating all block submodules, and set the initial commit for your project. The new project folder will be made inside the current directory.
 
-You will be prompted to enter values for `PK Host` and `PK Token`. These values will be put in your projects `nio.env` file. Pressing enter without typing in configuration values will leave the values in the `nio.env` unchanged.
+You will be prompted to enter values for `PK Host` and `PK Token`. These values will be put in your project's `nio.conf` file under the `[user_defined]` section. Pressing enter without typing in configuration values will leave the values in the `nio.conf` unchanged.
 
 An optional `--template` or `-t` can be specified to pull from a different project directory. This field will accept a repo name in the [niolabs GitHub](https://github.com/niolabs) or an entire GitHub link.
 
