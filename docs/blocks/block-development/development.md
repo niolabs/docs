@@ -60,6 +60,17 @@ If you want to use the `$` syntax to refer to your signal, pass in `signal` when
  file = self.file(signal).value
  ```
 
+> **[info] Reserved block property names**
+>
+> Within nio, the following block property names
+> - **name**
+> - **type**
+> - **log_level**
+> - **version**
+>
+> are reserved and should not be used while creating blocks.
+
+
 ### Property types
 
 Block properties can include the following types:
