@@ -44,18 +44,20 @@ Pubkeeper simplifies security because Pubkeeper clients encrypt the data before 
 
 When you create a system in the nio System Designer, by default, a Pubkeeper server is spun up in the cloud. You can override this behavior by selecting something other than “auto” in the “advanced” section of the **create system** dialog. You can see the configuration of the cloud Pubkeeper server if you select a system then click the **edit** icon in the contextual toolbar.
 
-To configure your local project to use the cloud Pubkeeper server, copy the Pubkeeper `host`, `port`, `token`, and `secure` settings shown in your system's edit modal to the following four lines in the <br>`# Pubkeeper Client` section of your project directory's `nio.conf` file under the `[user_defined]` section:
+To configure your local project to use the cloud Pubkeeper server, copy the Pubkeeper `host`, `port`, `token`, and `secure` settings shown in your system's edit modal to the following four lines in the `# Pubkeeper Client` section of your project directory's `nio.conf` file under the `[user_defined]` section:
 
   ```
+  # Pubkeeper Client
   PK_HOST: [your copied host]
   PK_PORT: 443
   PK_TOKEN: [your copied token]
   PK_SECURE: True
   ```
 
-Alongside your system’s Pubkepeer server, a websocket server is also spun up that can be used by websocket brews. To use this websocket brew in your local nio instance, update the following three lines in the `# WebsocketBrew Variables` section:
+Alongside your system’s Pubkepeer server, a websocket server is also spun up that can be used by websocket brews. To use this websocket brew in your local nio instance, update the following three lines in the `# WebsocketBrew Variables` of your project directory's `nio.conf` file under the `[user_defined]` section:
 
   ```
+  # WebsocketBrew Variables
   WS_HOST: [your copied host, replacing `pubkeeper` with `websocket`]
   WS_PORT: 443
   WS_SECURE: True

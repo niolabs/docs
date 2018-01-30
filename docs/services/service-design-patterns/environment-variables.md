@@ -1,6 +1,6 @@
 # Environment variables
 
-The nio Platform allows you to define and use variables when configuring your instance, services, or blocks. These variables are called "environment variables" and are specified using the square bracket syntax: <br>`[[ ENV_VAR_NAME ]]`. There are several different use cases for environment variables which are detailed below.
+The nio Platform allows you to define and use variables when configuring your instance, services, or blocks. These variables are called "environment variables" and are referenced using the square bracket syntax: `[[ ENV_VAR_NAME ]]`. There are several different use cases for environment variables which are detailed below.
 
 ---
 
@@ -11,7 +11,7 @@ Often a block will need some sort of access token or password in its configurati
 MY_SECRET=p@$$w0rd
 ```
 
-Then, in your block config you can use that secret token by using the environment variable syntax: <br>`[[ MY_SECRET ]]`. The block will receive the proper value when the service is started, but the block's configuration will always contain the unreplaced environment variable.
+Then, in your block config you can use that secret token by using the environment variable syntax: `[[ MY_SECRET ]]`. The block will receive the proper value when the service is started, but the block's configuration will always contain the unreplaced environment variable.
 
 ---
 
@@ -23,19 +23,25 @@ A large-scale nio system will generally run in multiple environments. Here are s
 1. A staging environment used for validation and testing.
 1. A local test environment used for building blocks or writing service unit tests.
 
-For any of these setups, the use of environment variables can help you. If you find that a value may differ from one environment to the next \(e.g., an IP address, a database password, whether a service should run or not\), then replace that value with an environment variable and create a different `.env` file for the respective environment. For example, your production `.env` file \(`prod.env`\) may look something like this:
+For any of these setups, the use of environment variables can help you. If you find that a value may differ from one environment to the next \(e.g., an IP address, a database password, whether a service should run or not\), then replace that value with an environment variable and create a different `.conf` file for the respective environment. For example, your production `.conf` file \(`prod.conf`\) may look something like this:
 
 ```
-DB_HOST: real-data-host.com
-DB_PASS: a357v34bs434vb34
+DB_HOST=real-data-host.com
+DB_PASS=a357v34bs434vb34
 ```
 
-but your local testing environment file \(`test.env`\) may look like this:
+but your local testing environment file \(`test.conf`\) may look like this:
 
 ```
-DB_HOST: localhost
-DB_PASS: password
+DB_HOST=localhost
+DB_PASS=password
 ```
+
+One can have multiple configuration files, each with a `[user_defined]` section, and chain them together using -s flag. Each subsequent file definitions will override former definitions when same variable is specified for example: <br>
+   ```bash
+   $ niod -s prod.conf -s redis-prod.conf
+   ```
+
 
 In your blocks and services, you can use `[[ DB_HOST ]]` as the database host and be assured that when you are running nio locally you aren't talking to the production database.
 
@@ -45,9 +51,14 @@ See the [Deployment](/deployment/README.md) section for more information.
 
 ## Setting environment variables
 
-nio environment variables are slightly different than operating system environment variables. nio environment variables can also be set by operating system environment variables. This can be useful when running nio using Docker, systemd, or some other process manager where you can pass environment variables to the process.
+The nio Platform allows the definition of an environment variable in three distinct ways. The following also describes the priority order from higher to lower.
+* the variable is defined as an OS environment variable.
+* the variable is saved using persistence, and edited manually (local persistence) or through a user interface (remote persistence)
+* the variable is defined as an entry under `[user_defined]` in a nio configuration file.
 
-In general, environment variables can be sourced from two places.
+Setting a nio environment variable as an operating system environment variable can be useful when running nio using Docker, systemd, or some other process manager where you can pass environment variables to the process.
+
+Some examples of environment variables definitions are depicted below.
 
 1. The operating system environment variables.
 
@@ -60,10 +71,10 @@ In general, environment variables can be sourced from two places.
    $ docker run -e DB_HOST=localhost nio_binary_image
    ```
 
-2. The `.env` files in your project directory. Assuming you have a `prod.env` file in your project directory, you can source from that using the `-e` flag of `niod`.
+2. The `.conf` files in your project directory under a `[user_defined]` section. Assuming you have a `prod.conf` file in your project directory, you can specify it using using the `-s` flag of `niod`.
 
    ```bash
-   $ niod -e prod.env
+   $ niod -s prod.conf
    ```
 
-In the event that an environment variable is set both at the system level and the local `.env` file level, the system environment variable will take precedence.
+Again, in the event that an environment variable is set both at the system level and the local `.conf` file level, the system environment variable will take precedence.
