@@ -97,6 +97,7 @@
 ---
 * Support
 
+* [Troubleshooting](troubleshooting/README.md)
 * [Glossary of Terms](glossary/README.md)
 * [Customer Support](support/README.md)
 * [Recommended Hardware](hardware/README.md)
