@@ -4,7 +4,9 @@ The `config` or `cfg` command displays the configuration of any block or service
 
 When run without any parameters or with the optional `project` parameter, you will be prompted to enter configuration for Pubkeeper. These values are optional. Pressing enter without typing in configuration values will not change the corresponding fields in `nio.conf`.
 
-This command must be run from the root level of your nio project directory.
+The `project` option of this command must be run from the root level of your nio project directory.
+
+The `blocks` and `services` option of this command will default for instances running on port 8181. The `-p` flag can be used to list block or service configurations from instances on other ports.
 
 Example (blocks):
 ```bash
