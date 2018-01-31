@@ -48,19 +48,19 @@ To configure your local project to use the cloud Pubkeeper server, copy the Pubk
 
   ```
   # Pubkeeper Client
-  PK_HOST: [your copied host]
-  PK_PORT: 443
-  PK_TOKEN: [your copied token]
-  PK_SECURE: True
+  PK_HOST=[your copied host]
+  PK_PORT=443
+  PK_TOKEN=[your copied token]
+  PK_SECURE=True
   ```
 
 Alongside your system’s Pubkepeer server, a websocket server is also spun up that can be used by websocket brews. To use this websocket brew in your local nio instance, update the following three lines in the `# WebsocketBrew Variables` of your project directory's `nio.conf` file under the `[user_defined]` section:
 
   ```
   # WebsocketBrew Variables
-  WS_HOST: [your copied host, replacing `pubkeeper` with `websocket`]
-  WS_PORT: 443
-  WS_SECURE: True
+  WS_HOST=[your copied host, replacing `pubkeeper` with `websocket`]
+  WS_PORT=443
+  WS_SECURE=True
   ```
 
 Using Pubkeeper in your running nio instances along with the websocket brew allows you to take advantage of the real-time logging feature of the System Designer. If your nio instance is configured to use the websocket brew and the Pubkeeper connection information in the System Designer, then you can view real-time logs from your instance by clicking the **open logger panel** button. Without Pubkeeper and the websocket brew, you would only be able to view historical logs, not streaming logs.
