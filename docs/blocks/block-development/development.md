@@ -1,6 +1,10 @@
 # Developing your block
 
-After cloning the [block template](block-template.md) repository, you are ready to develop your block.
+After running the `nio newblock` command from the `blocks/` directory of your project, you are ready to develop your block.
+
+Read more about what `nio newblock` does [here](/cli/newblock.md).
+
+Read more about setting up a new project with `nio new` [here](/cli/new.md).
 
 A good resource for new block development is the nio base block along with other blocks that have functionality similar to the one you would like to develop.
 
