@@ -36,12 +36,16 @@ but your local testing environment file \(`test.conf`\) may look like this:
 DB_HOST=localhost
 DB_PASS=password
 ```
+### Chaining `.conf` files  
 
-One can have multiple configuration files, each with a `[user_defined]` section, and chain them together using -s flag. Each subsequent file definitions will override former definitions when same variable is specified for example: <br>
+One can have multiple configuration files, each with a `[user_defined]` section, and chain them together using the `-s` flag. Each subsequent file definitions will override former definitions when the same variable is specified, for example:
+
+
    ```bash
    $ niod -s prod.conf -s redis-prod.conf
    ```
 
+This will take your production environment and then implement the more specific configuration for your Redis database found in `redis-prod.conf`.
 
 In your blocks and services, you can use `[[ DB_HOST ]]` as the database host and be assured that when you are running nio locally you aren't talking to the production database.
 
@@ -51,16 +55,16 @@ See the [Deployment](/deployment/README.md) section for more information.
 
 ## Setting environment variables
 
-The nio Platform allows the definition of an environment variable in three distinct ways. The following also describes the priority order from higher to lower.
-* the variable is defined as an OS environment variable.
-* the variable is saved using persistence, and edited manually (local persistence) or through a user interface (remote persistence)
-* the variable is defined as an entry under `[user_defined]` in a nio configuration file.
+The nio Platform allows the definition of an environment variable in three distinct ways. The following also describes the priority order from highest to lowest.
+  1. The variable is defined as an OS environment variable.
+  2. The variable is saved using persistence, and either edited manually (local persistence) or through a user interface (remote persistence).
+  3. The variable is defined as an entry under `[user_defined]` in a nio configuration file.
 
 Setting a nio environment variable as an operating system environment variable can be useful when running nio using Docker, systemd, or some other process manager where you can pass environment variables to the process.
 
-Some examples of environment variables definitions are depicted below.
+Some examples of environment variable definitions are illustrated below.
 
-1. The operating system environment variables.
+1. Defining environment variables from the operating system level:
 
    ```bash
    $ export DB_HOST=localhost
@@ -71,7 +75,9 @@ Some examples of environment variables definitions are depicted below.
    $ docker run -e DB_HOST=localhost nio_binary_image
    ```
 
-2. The `.conf` files in your project directory under a `[user_defined]` section. Assuming you have a `prod.conf` file in your project directory, you can specify it using using the `-s` flag of `niod`.
+2. Defining environment variables using `.conf` files in your project directory under a `[user_defined]` section:
+
+  Assuming you have a `prod.conf` file in your project directory, you can specify it using using the `-s` flag of `niod`.
 
    ```bash
    $ niod -s prod.conf
