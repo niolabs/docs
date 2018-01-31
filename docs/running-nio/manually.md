@@ -1,6 +1,6 @@
-# Custom project
+# With command line and Git
 
-There are a few steps in a local install of the nio binary that can be done manually instead of using functionality that has been built into the nio Platform for you.
+There are a few steps in a local install of the nio binary that can be done manually instead of using the nio CLI functionality that has been built into the nio Platform for you.
 
 ---
 
@@ -14,7 +14,7 @@ git submodule update --init --recursive
 
 ---
 
-## Add blocks manually
+## Add blocks from the command line
 In addition to adding blocks from within the nio System Designer, you can add blocks to your instance directly from the command line.
 
 From the project root directory, add the relevant block repository into the `blocks/` folder. For example, the _Logger_ block:
