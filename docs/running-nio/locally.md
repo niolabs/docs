@@ -98,6 +98,6 @@ nio shutdown -p {NIOPORT}
 ---
 ## nio.env is obsolete
 
-nio Binaries released after January 26, 2018, no longer use the `nio.env` file for user defined variables. Instead, all of these variables are located under the `[user_defined]` section of `nio.conf`.
+nio Binaries released after January 26, 2018, no longer use the `nio.env` file for user-defined variables. Instead, all of these variables are located under the `[user_defined]` section of `nio.conf`.
 
 >If you would like to use your old projects with the latest binary, run the following [script](https://gist.github.com/tlugger/2da9c8e615265243c07c76549f402ca6) from your project directory with `python move-conf.py` to easily move your variables from `nio.env` to `nio.conf`.
