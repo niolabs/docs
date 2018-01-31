@@ -1,6 +1,6 @@
 # Datadog
 
-To integrate the nio Platform into your [Datadog](https://app.datadoghq.com/) account to begin monitoring individual nio services, use the _DatadogCustomMetrics_ nio block.
+To integrate the nio Platform into your [Datadog](https://app.datadoghq.com/) account, use the _DatadogCustomMetrics_ nio block to begin monitoring individual nio services.
 
 ---
 
@@ -10,7 +10,7 @@ The [_DatadogCustomMetrics_](https://blocks.n.io/DatadogCustomMetrics) nio block
 
 ### Monitoring a service
 
-The [_ProcessMetrics_](https://blocks.n.io/ProcessMetrics) _DatadogCustomMetrics_ blocks can be used together to monitor the environment that the service is running in.
+The [_ProcessMetrics_](https://blocks.n.io/ProcessMetrics) and _DatadogCustomMetrics_ blocks can be used together to monitor the environment that the service is running in.
 
 >**[info] Service process ID**
 >
@@ -18,7 +18,7 @@ The [_ProcessMetrics_](https://blocks.n.io/ProcessMetrics) _DatadogCustomMetrics
 
 #### Displaying the data in Datadog
 
-On the Datadog dashboard that you want to add your nio metrics to, create a new **timeseries** graph. Click the JSON tab in the graph editor window. In the **requests** section of the JSON, change the **q** value from the default value to the value you configured in the _DatadogCustomMetrics_ block (i.e., `nio.<service name>`).
+On the Datadog dashboard where you want to view your nio metrics, create a new **timeseries** graph. Click the JSON tab in the graph editor window. In the **requests** section of the JSON, change the **q** value from the default value to the value you configured in the _DatadogCustomMetrics_ block (i.e., `nio.<service name>`).
 
 Your JSON configuration should look similar to what follows:
 

@@ -1,6 +1,6 @@
 # Google Stackdriver
 
-To integrate the nio Platform into your [Google Stackdriver](https://cloud.google.com/stackdriver/) account to begin monitoring individual nio services, use the _StackdriverCustomMetrics_ nio block.
+To integrate the nio Platform into your [Google Stackdriver](https://cloud.google.com/stackdriver/) account, use the _StackdriverCustomMetrics_ nio block to begin monitoring individual nio services.
 
 ---
 
@@ -18,4 +18,4 @@ The [_ProcessMetrics_](https://blocks.n.io/ProcessMetrics) and _StackdriverCusto
 
 #### Finding the data in Stackdriver
 
-The custom metric that nio reports on can now be found in the Stackdriver Metrics Explorer.
+The custom metric reported via nio can be found in the Stackdriver Metrics Explorer.
