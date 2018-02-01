@@ -1,5 +1,5 @@
 # The nio Portal
-The nio Portal at https://app.n.io is the gateway to the nio Platform and serves the following purposes:
+The nio Portal at https://app.n.io is the gateway to the nio Platform and provides access to the following areas:
 
 **Learning:**
 - [Documentation](https://docs.n.io)—technical reference documentation
@@ -7,13 +7,18 @@ The nio Portal at https://app.n.io is the gateway to the nio Platform and serves
 - [Workshops](https://workshops.n.io)—tutorials to teach new users how to build with nio
 - [Support](https://app.n.io/support)—live chat, forums, and other support resources
 
-**Account management:**
-- Edit your username and password
-- View receipts
-- Edit/upgrade/cancel your plan
+**[Account profile](/portal/profile.md):**
+- Edit username, password, and profile picture
 
-**Team management (if applicable):**
+**[Organization(s)](/portal/organization.md):**
+- Edit organization name and profile picture
+- View and change your plan
+- Update payment information
+- View receipts
+
+**[Enterprise management](/organizations/README.md):**
 - Add/delete users
-- Create teams and add and remove team members
 - Edit user roles and permissions
+- Create and delete teams
+- Add and remove team members
 - Notification center for team and licensing plan changes
