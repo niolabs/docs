@@ -1,10 +1,9 @@
 # Users
 
-To view or manage users in your organization, click the user icon in the top navigation and select your organization from the dropdown.
+<img class="right shadow" src="/img/organizations/org-account-settings.jpg" width="200"/>
+To view or manage users in your organization, hover over the user icon <img class="inline" src="/img/organizations/user-icon.png" height="20"/> in the top navigation  (on mobile, select **Settings** from the dropdown menu) and select your organization from the dropdown.
 
-![](/img/organizations/org-account-settings.jpg)
-
-Click the **Users** tab in the left navigation to navigate to the users page. From the users page, owners and organizers can invite users to the organization, view each user and their status, and navigate to each user's profile page.
+Click **Users** in the left navigation to navigate to the users page. From the users page, owners and organizers can invite users to the organization, view each user and their status, and navigate to each user's profile page.
 
 Collaborators can view users and user profiles but can not make any changes.
 
@@ -62,20 +61,3 @@ The “Current Teams” section on a user’s profile page shows all of the team
 To remove a user from your organization, go to the user's profile page. In the top right corner of the user’s profile, click the red text link. You will be prompted with a pop up modal to confirm that you want to remove the user from the organization.
 
 ![](/img/organizations/org-user-profile.jpg)
-
----
-
-## Update your profile picture
-To update your profile picture, click the user icon in the top navigation and then select your name from the dropdown.
-
-![](/img/organizations/org-account-settings.jpg)
-
-While on your profile page, click the **edit photo** text. Upload your new profile image (jpg, png, bmp, or gif file under 1MB) from your computer or external drive.
-
-![](/img/organizations/org-update-profile-pic.jpg)
-
----
-
-## Linking accounts
-
-If you sign up for a nio account with an email and a password and then try to use social sign on (i.e., Sign on with Google) with the same email, you will notice that they are technically different accounts with different nio systems and instances. There is no automatic way to link your email/password and social sign on accounts at this time. If you would like to link your accounts together so you can use either sign on mechanism then please contact support and we can take care of that for you.

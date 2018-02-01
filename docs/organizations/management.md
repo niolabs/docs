@@ -1,10 +1,14 @@
 # Organization management
 
-To view your organization, click the user icon in the top navigation and select your organization from the dropdown.
+<img class="right shadow" src="/img/organizations/org-account-settings.jpg" width="200"/>
+To view your organization, hover over the user icon <img class="inline" src="/img/organizations/user-icon.png" height="20"/> in the top navigation  (on mobile, select **Settings** from the dropdown menu) and select your organization from the dropdown.
 
-![](/img/organizations/org-account-settings.jpg)
-
+<br>
+<br>
+<br>
+<br>
 Each user in an organization can have one of three roles: owner, organizer, or collaborator.
+
 
 ---
 ## Owner
