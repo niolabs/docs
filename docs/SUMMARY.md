@@ -3,7 +3,6 @@
 * Introduction
 
 * [Welcome](README.md)
-* [The nio Portal](portal/README.md)
 * [Install nio](installation/README.md)
   * [On Windows](installation/windows.md)
   * [Supported Systems](installation/supported-systems.md)
@@ -89,12 +88,13 @@
 
 ---
 * Users/Account
-
-* [Organizations](organizations/README.md)
+* [The nio Portal](portal/README.md)
+* [Account Profile](portal/profile.md)
+* [Organizations](portal/organization.md)
+* [Enterprise](organizations/README.md)
   * [Management](organizations/management.md)
   * [Users](organizations/users.md)
   * [Teams](organizations/teams.md)
-  * [Plan](organizations/upgrade.md)
 
 ---
 * Support
