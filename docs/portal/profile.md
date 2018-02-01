@@ -1,22 +1,36 @@
 # Account profile
 
----
+<img class="right shadow" src="/img/organizations/org-account-settings.jpg" width="200"/>
+To access your profile, click the user icon &nbsp;<img class="inline" src="/img/organizations/user-icon.png" height="20"/>&nbsp; in the top navigation (on mobile, select **Settings>Account Profile** from the dropdown menu). You can also select your **name** from a dropdown that appears when you hover over the user icon.
 
-## Update your profile image
-To update your profile image, click the user icon in the top navigation and then select your name from the dropdown.
-
-![](/img/organizations/org-account-settings.jpg)
-
-While on your profile page, click the **edit photo** text. Upload your new profile image (jpg, png, bmp, or gif file under 1MB) from your computer or external drive.
-
-![](/img/organizations/org-update-profile-pic.jpg)
+<br>
+<br>
+<br>
 
 ---
 
-## Change your password
+## Update profile image
+
+From your profile page, click the **edit photo** text. Upload your new profile image (jpg, png, bmp, or gif file under 1MB) from your computer or external drive.
 
 
 ---
+
+## Update password
+
+Users who created an account by entering their email and password will see this option on their profile. Users who signed up using the **sign up with google** button will not have the option of editing their credentials from the nio Portal.
+
+From your profile page, enter your **new password** and **confirm password**. Click **update** and your password will be updated.
+
+Password must be at least 8 character and contain at least one of each of these four character types:
+
+- lowercase letters (a–z)
+- uppercase letters (A–Z)
+- numbers (0–9)
+- special characters (!@#$%^&\*)
+
+
+___
 
 ## Linking accounts
 

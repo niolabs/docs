@@ -1,10 +1,9 @@
 # Users
 
-To view or manage users in your organization, click the user icon in the top navigation and select your organization from the dropdown.
+<img class="right shadow" src="/img/organizations/org-account-settings.jpg" width="200"/>
+To view or manage users in your organization, hover over the user icon <img class="inline" src="/img/organizations/user-icon.png" height="20"/> in the top navigation  (on mobile, select **Settings** from the dropdown menu) and select your organization from the dropdown.
 
-![](/img/organizations/org-account-settings.jpg)
-
-Click the **Users** tab in the left navigation to navigate to the users page. From the users page, owners and organizers can invite users to the organization, view each user and their status, and navigate to each user's profile page.
+Click **Users** in the left navigation to navigate to the users page. From the users page, owners and organizers can invite users to the organization, view each user and their status, and navigate to each user's profile page.
 
 Collaborators can view users and user profiles but can not make any changes.
 

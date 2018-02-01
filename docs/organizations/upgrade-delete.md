@@ -1,10 +1,10 @@
 # Change your license
 
-You can view your license info under your account settings. To navigate to your account settings, click the user icon in the top navigation and select your name or an organization that you own from the dropdown.
+You can view your license info under your account settings. To navigate to your account settings, click the user icon in the top navigation (on mobile, select **Settings** from the dropdown menu) and select an organization that you own from the dropdown.
 
 ![](/img/organizations/org-account-settings.jpg)
 
-To view your license information, click the **License** tab in the left navigation.
+To view your license information, click **License** in the left navigation.
 
 
 ---

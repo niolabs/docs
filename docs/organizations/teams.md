@@ -1,10 +1,9 @@
 # Teams
 
-To view your organization's teams, click the user icon in the top navigation and select your organization from the dropdown.
+<img class="right shadow" src="/img/organizations/org-account-settings.jpg" width="200"/>
+To view your organization's teams, hover over the user icon <img class="inline" src="/img/organizations/user-icon.png" height="20"/> in the top navigation  (on mobile, select **Settings** from the dropdown menu) and select your organization from the dropdown.
 
-![](/img/organizations/org-account-settings.jpg)
-
-Click the **Teams** tab in the left navigation to navigate to the teams page. From the teams page you can view all the teams in the organization and navigate to each team's profile page. If you are an owner or an organizer, you can also create teams.
+Click **Teams** in the left navigation to navigate to the teams page. From the teams page you can view all the teams in the organization and navigate to each team's profile page. If you are an owner or an organizer, you can also create teams.
 
 ---
 
@@ -26,10 +25,10 @@ From the team profile, owners and organizers can add an image to represent the t
 
 Collaborators can view the team profile but can not make any changes.
 
-### Modify a team name
+### Edit team name
 If you are an organizer or owner of an organization, you can rename a team. To update the team name, simply enter a new name in the form field and click the blue button to update.
 
-### Add team image
+### Update team image
 If you are an organizer or owner of an organization, you can edit the team image. To add an image that represents your team, click the **edit photo** text under the team avatar and upload a new image (jpg, png, bmp, or gif file under 1MB) from your computer.
 
 ### Add users to a team
