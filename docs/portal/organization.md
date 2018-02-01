@@ -17,15 +17,15 @@ The **Overview** page contains your organization name and profile image.
 
 Owners and organizers can edit an organization's name and profile image.
 
-### Edit organization profile image
-
-To change your organization's profile image, click the **edit photo** text. Upload your new profile image (jpg, png, bmp, or gif file under 1MB) from your computer or external drive.
-
 ### Edit organization name
 
 To change your organizations name, edit the text in the **organization name** field. Click **update**.
 
 You will see confirmation that your organization name has been updated.
+### Update organization image
+
+To change your organization's profile image, click the **edit photo** text. Upload your new profile image (jpg, png, bmp, or gif file under 1MB) from your computer or external drive.
+
 
 ---
 
