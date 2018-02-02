@@ -65,8 +65,8 @@ Instances are created inside a system and contain services.
 ### Create an instance in the cloud
 
 To enter the system context, select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
-
-<img class="left" src="/img/cloud/Hello-SelectSystemCreateInstancePoint.png" width="500" /> <img class="right" src="/img/tasks/createcloudinstance.png" width="250" />
+<br>
+<img class="right" src="/img/tasks/createcloudinstance.png" width="250" /><img class="left" src="/img/cloud/Hello-SelectSystemCreateInstancePoint.png" width="500" />
 1. Click **create cloud instance**.
 1. Complete the **create cloud instance** modal:
   * In the **instance name** box, enter a meaningful name.
@@ -75,8 +75,9 @@ To enter the system context, select the name of your system in the left navigati
 ### Connect to a local instance
 
 To enter the system context, select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
-
-<img class="left" src="/img/cloud/Hello-SelectSystemCreateInstancePoint.png" width="500" /> <img class="right" src="/img/tasks/createlocalinstance.png" width="250" />
+<br>
+<img class="right" src="/img/tasks/createlocalinstance.png" width="250" />
+<img class="left" src="/img/cloud/Hello-SelectSystemCreateInstancePoint.png" width="500" />
 
 1. Click **create local instance**.
 1. Complete the **create local instance** modal:
@@ -118,8 +119,9 @@ Services are created inside an instance and contain blocks.
 ### Create a service
 
 Select the name of the instance in the left navigation panel or on the breadcrumb above the contextual toolbar.
-
-<img class="left" src="/img/cloud/Hello-SelectInstancePoint.png" width="500" /> <img class="right" src="/img/tasks/createnewservice.png" width="250" />
+<br>
+<img class="right" src="/img/tasks/createnewservice.png" width="250" />
+<img class="left" src="/img/cloud/Hello-SelectInstancePoint.png" width="500" />
 
 1. Click **create new service**.
 1. Complete the **create new service** modal:
