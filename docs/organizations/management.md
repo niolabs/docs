@@ -1,7 +1,7 @@
 # Organization management
 
 <img class="right shadow" src="/img/organizations/org-account-settings.jpg" width="200"/>
-To view your organization, hover over the user icon <img class="inline" src="/img/organizations/user-icon.png" height="20"/> in the top navigation  (on mobile, select **Settings** from the dropdown menu) and select your organization from the dropdown.
+To view your organization, hover over the user icon &nbsp;<img class="inline" src="/img/organizations/user-icon.png" height="20"/>&nbsp; in the top navigation  (on mobile, select **Settings** from the dropdown menu) and select your organization from the dropdown.
 
 <br>
 <br>

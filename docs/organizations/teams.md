@@ -1,7 +1,7 @@
 # Teams
 
 <img class="right shadow" src="/img/organizations/org-account-settings.jpg" width="200"/>
-To view your organization's teams, hover over the user icon <img class="inline" src="/img/organizations/user-icon.png" height="20"/> in the top navigation  (on mobile, select **Settings** from the dropdown menu) and select your organization from the dropdown.
+To view your organization's teams, hover over the user icon &nbsp;<img class="inline" src="/img/organizations/user-icon.png" height="20"/>&nbsp; in the top navigation  (on mobile, select **Settings** from the dropdown menu) and select your organization from the dropdown.
 
 Click **Teams** in the left navigation to navigate to the teams page. From the teams page you can view all the teams in the organization and navigate to each team's profile page. If you are an owner or an organizer, you can also create teams.
 
