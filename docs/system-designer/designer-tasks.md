@@ -17,7 +17,7 @@ Systems are created in the System Designer to contain instances (running install
 
 ### Create a system
 
-<img class="right display" src="/img/cloud/Hello-CreateNewSystem.png" width="250" />
+<img class="right border" src="/img/cloud/Hello-CreateNewSystem.png" width="250" />
 
 From the **System Designer** (https://designer.n.io/), you can create a new system in two ways.
   * If this is your first time opening the System Designer, the **create new system** modal window displays automatically.
@@ -66,7 +66,7 @@ Instances are created inside a system and contain services.
 
 To enter the system context, select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
 <br>
-<img class="right" src="/img/tasks/createcloudinstance.png" width="250" /><img class="left" src="/img/cloud/Hello-SelectSystemCreateInstancePoint.png" width="500" />
+<img class="right border" src="/img/tasks/createcloudinstance.png" width="250" /><img class="left" src="/img/cloud/Hello-SelectSystemCreateInstancePoint.png" width="500" />
 1. Click **create cloud instance**.
 1. Complete the **create cloud instance** modal:
   * In the **instance name** box, enter a meaningful name.
@@ -76,7 +76,7 @@ To enter the system context, select the name of your system in the left navigati
 
 To enter the system context, select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
 <br>
-<img class="right" src="/img/tasks/createlocalinstance.png" width="250" />
+<img class="right border" src="/img/tasks/createlocalinstance.png" width="250" />
 <img class="left" src="/img/cloud/Hello-SelectSystemCreateInstancePoint.png" width="500" />
 
 1. Click **create local instance**.
@@ -86,6 +86,8 @@ To enter the system context, select the name of your system in the left navigati
   * **port**: enter the port number configured on the instance.
   * **access mode**: leave as **basic**.
 1. Click **accept**.
+
+<br>
 
 > **[info] Instance Names**
 >
@@ -120,7 +122,7 @@ Services are created inside an instance and contain blocks.
 
 Select the name of the instance in the left navigation panel or on the breadcrumb above the contextual toolbar.
 <br>
-<img class="right" src="/img/tasks/createnewservice.png" width="250" />
+<img class="right border" src="/img/tasks/createnewservice.png" width="250" />
 <img class="left" src="/img/cloud/Hello-SelectInstancePoint.png" width="500" />
 
 1. Click **create new service**.
@@ -201,11 +203,12 @@ In the **block library** search box, enter a block type name.
 
 1. Drag the block type to the canvas.
 1. In the **block name** box, enter a meaningful name and click **accept**.
-<img class="left" src="/img/cloud/Hello-CreateBlockSimulate.png" width="250" />
+<img class="left border" src="/img/cloud/Hello-CreateBlockSimulate.png" width="250" />
 
 > **[info] Block Names**
 >
 > Block names cannot be edited after creation.
+>
 > Block names cannot contain the following characters: `*  |  \ /  :  ”  <> / ?`
 
 ### Block edit, command, delete
