@@ -51,7 +51,7 @@ In the system context you will see the system toolbar that can perform the follo
   Icon                      |Label             | Description      |
   --------------------------|------------------|------------------|
   ![](/img/IconEdit.gif)    |Edit              | Edit system name. View Pubkeeper configuration information.
-  ![](/img/IconShare.gif)   |Share             | Share system. This option is only available to teams within an organization. Read more information about system sharing [here](/organizations/management.html#sharing).
+  ![](/img/IconShare.gif)   |Share             | Share system. This option is only available to teams within an organization. Read more information about system sharing [here](/organizations/management.md#sharing).
   ![](/img/IconDelete.gif)  |Delete            | Delete system. Instances must be deleted first.
 
 ---
