@@ -1,6 +1,6 @@
 # nio-managed cloud instance
 
-While the true power of the nio Platform is experienced when you have multiple [local installations](/running-nio/locally.md) communicating across a distributed network, we also offer the ability to spin up nio-managed cloud instances through the **nio System Designer**.
+While the true power of the nio Platform is experienced when you have multiple [local installations](/running-nio/locally.html) communicating across a distributed network, we also offer the ability to spin up nio-managed cloud instances through the **nio System Designer**.
 
 A nio-managed cloud instance allows you to get up and running quickly and to start building services right away (although our local installation process usually only takes 5 minutes!).
 

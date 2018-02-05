@@ -10,4 +10,4 @@ Take a look through the nio [Database Blocks](https://blocks.n.io/?category=Data
 
 ## See also
 
-* [Firebase Workshop](https://workshops.n.io/nio-101/database-insertion/)
+* [Firebase Workshop](https://workshops.n.io/nio-101/database-insertion.html)
