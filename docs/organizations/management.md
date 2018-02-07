@@ -45,7 +45,7 @@ When an owner or organizer shares a nio system with a collaborator or team, they
 
 Each of these three levels of permissions allows a varying level of access within the nio System Designer.
 
-### Sharing
+### Sharing {#sharing}
 
 Permission levels assigned to collaborators in the System Designer
 

@@ -17,5 +17,5 @@ Where you decide to install nio instances (or logic) throughout a system should 
 ---
 ## See also
 
-* [Instances in the System Designer](/system-designer/designer-tasks.html#instance)
-* Glossary—[Instance](/glossary#instance)
+* [Instances in the System Designer](/system-designer/designer-tasks.md#instance-sd)
+* Glossary—[Instance](/glossary/README.md#instance)
