@@ -26,5 +26,5 @@ For example, the [_Queue_](https://blocks.n.io/Queue) block exposes a command to
 
 ## See also
 
-* [Block in the System Designer](/system-designer/designer-tasks.html#blocks)
-* Glossary—[Block](/glossary#block)
+* [Block in the System Designer](/system-designer/designer-tasks.md#blocks-sd)
+* Glossary—[Block](/glossary/README.md#block)

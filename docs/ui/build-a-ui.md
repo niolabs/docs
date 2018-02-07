@@ -36,7 +36,7 @@ Follow these steps to create a simple UI that can publish to, subscribe to, and 
 1. Get your Pubkeeper **hostname** and **token** from your nio-managed cloud-instance:
     1. Open the nio **System Designer** in a browser: https://designer.n.io/.
     1. Select your system in the left-hand navigation.
-        1. If you need to create your first system, follow the instructions [here](/system-designer/designer-tasks.html).
+        1. If you need to create your first system, follow the instructions [here](/system-designer/designer-tasks.md#create-a-system).
     1. Click the **edit** button in the contextual toolbar to open its configuration.
 1. In `config.js`:
     1. Set `PK_HOST` to your **hostname** value.

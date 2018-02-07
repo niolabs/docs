@@ -1,16 +1,16 @@
 # System Designer reference
 
 This section details all of the tasks that can be performed in the nio System Designer, and is organized by context:
- - [system](/system-designer/designer-tasks.md#system)
- - [instance](/system-designer/designer-tasks.md#instance)
- - [service](/system-designer/designer-tasks.md#service)
- - [block](/system-designer/designer-tasks.md#blocks)
+ - [system](#system-sd)
+ - [instance](#instance-sd)
+ - [service](#service-sd)
+ - [block](#blocks-sd)
 
 It can help you answer questions about what you can do in each level of the System Designer as you navigate from creating a system, to editing an instance name, to deleting a block.
 
 ---
 
-## System
+## System {#system-sd}
 [Systems](/systems/README.md) are the largest container for projects in the nio System Designer.
 
 Systems are created in the System Designer to contain instances (running installations) of the nio Platform.
@@ -30,7 +30,7 @@ Complete the **create new system** modal:
 
   ####&nbsp;
 
-> **[info] System Names**
+> **[info] System names**
 >
 > The System Designer automatically creates an abbreviation for each system name.
 >
@@ -56,7 +56,7 @@ In the system context you will see the system toolbar that can perform the follo
 
 ---
 
-## Instance
+## Instance {#instance-sd}
 
 [Instances](/instances/README.md) are running versions of nio.
 
@@ -89,7 +89,7 @@ To enter the system context, select the name of your system in the left navigati
 
 <br>
 
-> **[info] Instance Names**
+> **[info] Instance names**
 >
 > Instance names cannot contain spaces or underscores.
 
@@ -112,7 +112,7 @@ Icon                      |Label             | Description      |
 
 ---
 
-## Service
+## Service {#service-sd}
 
 A nio [service](/services/README.md) is a user-configurable signal path that connects a collection of blocks so they can work together to perform a desired task or service.
 
@@ -132,7 +132,7 @@ Select the name of the instance in the left navigation panel or on the breadcrum
 1. Click **accept**.
 1. Click **save** in the toolbar.
 
-> **[info] Service Names**
+> **[info] Service names**
 >
 > Service names cannot contain the following characters: ` *  |  \ /  :  ”  <> / ? `
 >
@@ -177,7 +177,7 @@ To view the logger panel, click anywhere on the canvas to deselect the blocks an
 
 ---
 
-## Blocks
+## <a name="blocks-sd">Blocks</a> {#blocks-sd}
 
 [Blocks](/blocks/README.md) are the units of work inside a nio service.
 
@@ -205,7 +205,7 @@ In the **block library** search box, enter a block type name.
 1. In the **block name** box, enter a meaningful name and click **accept**.
 <img class="left border" src="/img/cloud/Hello-CreateBlockSimulate.png" width="250" />
 
-> **[info] Block Names**
+> **[info] Block names**
 >
 > Block names cannot be edited after creation.
 >
