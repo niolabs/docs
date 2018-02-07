@@ -22,5 +22,5 @@ Services can be started and stopped, and thus have a lifecycle of their own. Typ
 ---
 ## See also
 
-* [Services in the System Designer](/system-designer/designer-tasks.html#service)
-* Glossary—[Service](/glossary#service)
+* [Services in the System Designer](/system-designer/designer-tasks.md#service-sd)
+* Glossary—[Service](/glossary/README.md#service)
