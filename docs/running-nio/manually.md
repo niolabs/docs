@@ -1,10 +1,10 @@
-# With command line and Git
+# With command line and `git`
 
 There are a few steps in a local install of the nio binary that can be done manually instead of using the nio CLI functionality that has been built into the nio Platform for you.
 
 ---
 
-## Download a nio project template using Git
+## Download a nio project template using `git`
 To download the project template using Git, clone the template and initialize the submodules, which contain the default blocks, using the following commands:
 ```
 git clone https://github.com/niolabs/project_template.git first_project

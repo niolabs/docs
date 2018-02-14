@@ -58,7 +58,7 @@ nohup niod -r path/to/my_project 2>&1 > /dev/null &
 ```
 
 ---
-## Add the instance to the System Designer
+## Add the instance to the <span class="allow-caps">System Designer</span>
 
 To manage your local instance, you need to add it to the **System Designer**:
 

@@ -1,4 +1,4 @@
-# Datadog
+# <span class="allow-caps">Datadog</span>
 
 To integrate the nio Platform into your [Datadog](https://app.datadoghq.com/) account, use the _DatadogCustomMetrics_ nio block to begin monitoring individual nio services.
 
