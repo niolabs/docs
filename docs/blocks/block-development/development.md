@@ -14,7 +14,9 @@ Any required Python dependencies for your block can be added to your `requiremen
 
 Other elements of a block to keep in mind include [block patterns](block-patterns.md), the [nio framework](/blocks/block-development/framework.md) (including [discoverability](/blocks/block-development/framework.md#discoverability), and [mixins](/blocks/block-development/mixins.md).
 
-Once you have developed your block, you will want to [test](/blocks/block-development/block-testing.md) and [document](/blocks/block-development/documenting.md) your block. Blocks can be manually installed for local use in the nio System Designer by adding them as a submodule with the `git submodule add [repository link]` command. Once you have completed, tested, and documented your block, E-mail the github respository link to blocks@n.io for approval of submission to the nio Block Library.
+Be sure to [test](/blocks/block-development/block-testing.md) and [document](/blocks/block-development/documenting.md) your block.
+
+Custom blocks can be [manually installed for local use in the nio System Designer](/blocks/block-development/README.md#add-a-custom-block-to-the-system-designer) and [submitted](/blocks/block-development/README.md#submit-your-block-to-the-nio-block-library) to the nio Block Library. 
 
 ---
 
