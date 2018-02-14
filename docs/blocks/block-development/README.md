@@ -16,7 +16,7 @@ Your custom blocks can be manually installed for local use in the nio System Des
 ```
 git submodule add [repository link]
 ```
-command.
+command, and restarting your local nio instance.
 
 ---
 
