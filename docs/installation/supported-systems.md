@@ -3,7 +3,7 @@
 The nio Platform requires a few basic dependencies for local installation.
 
 ---
-### System Requirements
+## System Requirements
 
 * **Python version 3.4+**<br />
     Visit the [Python downloads page](https://www.python.org/downloads/) to download python.
@@ -17,7 +17,7 @@ The nio Platform requires a few basic dependencies for local installation.
     Follow this [installation guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to get started with Git.
 
 ---
-### Operating System
+## Operating System
 
 * **Linux** (with Kernel 3.0 or above & GCC)<br />
     If using a Linux OS, we recommend using a distribution that includes a modern kernel (Version 3.0 or above), with GCC and a package manager (like APT) pre-installed. This expedites the installation/setup process for our Python binary.

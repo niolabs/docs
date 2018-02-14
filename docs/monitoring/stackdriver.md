@@ -1,4 +1,4 @@
-# Google Stackdriver
+# <span class="allow-caps">Google Stackdriver</span>
 
 To integrate the nio Platform into your [Google Stackdriver](https://cloud.google.com/stackdriver/) account, use the _StackdriverCustomMetrics_ nio block to begin monitoring individual nio services.
 

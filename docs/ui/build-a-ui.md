@@ -10,7 +10,7 @@ The easiest way to create a nio Platform-powered UI is to start with our [UI sca
     - [niolabs Pubkeeper](https://niolabs.com/product/pubkeeper) for publishing and subscribing to topics
 
 
-- **Third party software** (click to review each library's licensing)
+- **Third-party software** (click to review each library's licensing)
     - [ReactJS](https://reactjs.org/) site scaffold
     - [react-router](https://reacttraining.com/react-router/) for navigation
     - [webpack 3](https://webpack.js.org/) module bundling and development webserver
@@ -41,7 +41,7 @@ Follow these steps to create a simple UI that can publish to, subscribe to, and 
 1. In `config.js`:
     1. Set `PK_HOST` to your **hostname** value.
     1. Set `PK_JWT` to your **token** value.
-    1. Set `WS_HOST` to your **hostname** value, but swap the word 'pubkeeper' for 'websocket' (e.g., if your **hostname** is `aaaaa.pubkeeper.nio.works`, use `aaaaa.websocket.nio.works`).
+    1. Set `WS_HOST` to your **hostname** value, but swap the word 'pubkeeper' for 'websocket' (e.g., if your **hostname** is `aaaaa.pubkeeper.nio.solutions`, use `aaaaa.websocket.nio.solutions`).
 1. Start the project.
     ```
     npm start

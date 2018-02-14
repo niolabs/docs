@@ -1,4 +1,4 @@
-# Installing nio on Windows
+# Installing nio on <span class="allow-caps">Windows</span>
 
 >**[info] Prerequisites**
 >

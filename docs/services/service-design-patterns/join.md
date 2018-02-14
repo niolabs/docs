@@ -4,7 +4,7 @@ If you have a list of signals that you want to condense into fewer signals or ev
 
 ---
 
-## Paring down lists of signals with the _Join_ block
+## Paring down lists of signals with the _<span class="allow-caps">Join</span>_ block
 
 The _Join_ block goes through every signal in an incoming list and consolidates them into a single signal based on the specified criteria. For example, if you have your signal with the numbers 1 through 5 from the previous example, you can shrink the list of five signals into one signal containing two attributes—one for odds and one for evens.
 ```
@@ -63,9 +63,11 @@ The block configuration results in a single output signal.
 }
 ```
 
-That looks great, but what if you want to have a separate signal for each department, but still have a list of names. One inefficient option would be to filter the stream based on the department and then put the individual streams into copies of the _Join_ block from before. The following image displays this example.
+That looks great, but what if you want to have a separate signal for each department, but still have a list of names?
 
-> **[danger] Inefficient use of _Join_ block**
+One inefficient option would be to filter the stream based on the department and then put the individual streams into copies of the _Join_ block from before. The following image displays this example.
+
+> **[danger] Inefficient use of _<span class="allow-caps">Join</span>_ block**
 >
 > This is **not** the advised way to create separate lists of signals by group.
 >
