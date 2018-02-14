@@ -3,7 +3,7 @@
 Eventually you will want to run your nio instances for longer durations and have them be more resilient to network outages and system restarts. There are many ways to use existing tools to make this easier, here are a few recommended options.
 
 ---
-## Run with Docker
+## Run with <span class="allow-caps">Docker</span>
 
 Running the nio Platform as a Docker container allows you to manage its lifecycle through standard Docker deployment practices and use orchestration managers like Kubernetes. Check out our [guide to running nio with Docker](/running-nio/docker.md) for more information on how to do this.
 

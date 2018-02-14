@@ -31,7 +31,7 @@ Just like your biological system is a group of organs working together to keep y
 ![system](/img/intro-system.png)
 
 ---
-## System Designer
+## <span class="allow-caps">System Designer</span>
 The nio [System Designer](https://docs.n.io/system-designer) is the tool that allows you to arrange these blocks, services and instances to build your own nio systems. The only limitation is your imagination.
 
 ![system designer](/img/intro-systemdesigner.jpg)

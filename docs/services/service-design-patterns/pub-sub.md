@@ -66,12 +66,12 @@ _Subscriber_ blocks can subscribe to a single topic or also portions of the topi
 
 ---
 
-## Pubkeeper
+## <span class="allow-caps">Pubkeeper</span>
 
 Perhaps the most impactful reason to use the nio pub/sub system is because of the interoperability enabled through the use of [Pubkeeper](/pubkeeper/README.md). Pubkeeper allows the information hierarchy, or topic tree, to be independent of the underlying protocols that are be responsible for transmitting data between services and instances. In other words, it allows service designers to define what data goes to which services without worrying about how it will get there.
 
 ---
 
-## Hints in the System Designer
+## Hints in the <span class="allow-caps">System Designer</span>
 
 Another benefit of using the nio pub/sub mechanism is that the nio System Designer understands the topic tree as well. If your service has a _Publisher_ or _Subscriber_ block with a topic, the System Designer can show you services that either subscribe to or publish to that topic, respectively. It also permits the System Designer to draw the graph relationship between services and instances that share topics.

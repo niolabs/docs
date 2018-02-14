@@ -3,7 +3,6 @@
 The nio Platform facilitates the creation of distributed computing solutions across an almost unlimited array of platforms and devices. There are many ways to use it. We have outlined some of the most common implementations below.
 
 ---
-**Run nio**
 
 * [In a nio-managed cloud](/running-nio/in-the-cloud.md): we run nio for you, and you use the nio System Designer to build cloud-based solutions.
 * [Locally](/running-nio/locally.md): you run nio wherever you want, and use the System Designer to build and administer it.

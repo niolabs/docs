@@ -1,4 +1,4 @@
-# System Designer reference
+# <span class="allow-caps">System Designer</span> reference
 
 This section details all of the tasks that can be performed in the nio System Designer, and is organized by context:
  - [system](#system-sd)

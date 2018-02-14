@@ -1,6 +1,6 @@
 # Modules
 
-Unlike a nio core component that runs only once in the core/main process, a nio module is a piece of functionality that runs in every nio service. Each nio module is broken down into two parts, an interface and an implementation.
+Unlike a nio core component that runs only once in the core/main process, a nio module is a piece of functionality that runs in every nio service. Each nio module is broken down into two parts: an interface and an implementation.
 
 ---
 

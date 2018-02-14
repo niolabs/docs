@@ -4,7 +4,7 @@ nio Blocks are not meant to be run as stand-alone Python modules, so testing can
 
 ---
 
-## NIOBlockTestCase
+## <span class="allow-caps">NIOBlockTestCase</span>
 
 When building your tests, use the `NIOBlockTestCase`. The test case extends the `unittest.TestCase` and uses the same infrastructure as the base class. However, `NIOBlockTestCase` also provides a number of helpful methods for testing blocks. Here's a real-world example from our internal block repositories:
 
@@ -35,7 +35,7 @@ class TestYourBlock(NIOBlockTestCase):
 
 ## setUp/tearDown
 
-Just like the `unittest.TestCase`, nio supports the setUp/tearDown pattern. This is a great place to do any initialization and/or cleanup that will be required across every test. Do not repeat yourself! Be aware, though, that the block provides crucial initialization and finalization in `NIOBlockTestCase.setUp/tearDown`. If you override either of these methods, you need to call the method in the parent class at the top of your method.
+Just like the `unittest.TestCase`, nio supports the setup/teardown pattern. This is a great place to do any initialization and/or cleanup that will be required across every test. Do not repeat yourself! Be aware, though, that the block provides crucial initialization and finalization in `NIOBlockTestCase.setUp/tearDown`. If you override either of these methods, you need to call the method in the parent class at the top of your method.
 
 ---
 

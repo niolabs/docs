@@ -3,7 +3,7 @@
 Designing a stable nio system means having reliable mechanisms for deployment and maintenance. The deployment of nio systems is very flexible, but there are a few best practices to follow.
 
 ---
-## Git for version control
+## `git` for version control
 
 nio projects can be defined as files in a file system. Git permits you to use a standard version control system to record changes to a project. The [project template repository](https://github.com/niolabs/project_template) provides a good starting point to model how to store a project in a Git repository. With Git, you can use different branches for development and production.
 

@@ -1,4 +1,4 @@
-# System Designer introduction
+# <span class="allow-caps">System Designer</span> introduction
 
 The nio System Designer is the graphical user interface used to build your nio system.
 
@@ -7,7 +7,7 @@ The nio System Designer is the graphical user interface used to build your nio s
 > The [System Designer workshop](https://workshops.n.io/system-designer) provides a good introduction to using the System Designer to build your first service.
 
 ---
-## System Designer navigation
+## <span class="allow-caps">System Designer</span> navigation
 
 <img class="left" src="/img/system-designer-overview.png" height="375" />
 

@@ -1,4 +1,4 @@
-# Pubkeeper
+# <span class="allow-caps">Pubkeeper</span>
 
 Pubkeeper is the nio Platform communications broker. Using standard publish-subscribe patterns, Pubkeeper can orchestrate communications in systems that contain a variety of devices and protocols.
 
@@ -7,14 +7,14 @@ Pubkeeper is the nio Platform communications broker. Using standard publish-subs
 {% video %}https://www.youtube.com/watch?v=8d3ACNVVhKA{% endvideo %}
 
 ---
-## Pubkeeper server
+## <span class="allow-caps">Pubkeeper</span> server
 
 At the root of the Pubkeeper component is the Pubkeeper server. All devices running the Pubkeeper client will register with this Pubkeeper server.
 
 The Pubkeeper server is a matchmaker, not a translator. It is aware that two different devices share a common protocol, but it does not need to understand how that protocol works. The Pubkeeper server is ignorant of a protocol's methods and the contents of any signal, but it intelligently constructs a pathway for two devices to communicate with one another. As a result, signals are able move directly between devices and do not need to be routed through the Pubkeeper server.
 
 ---
-## Pubkeeper clients
+## <span class="allow-caps">Pubkeeper</span> clients
 
 Pubkeeper clients can be extremely diverse. Every instance of nio includes the ability to be a Pubkeeper client. Other examples of potential Pubkeeper clients include a browser, a Raspberry Pi, a laptop, or a cloud instance. Currently, a Pubkeeper client must be able to communicate to the Pubkeeper server via a websocket.
 
@@ -38,7 +38,7 @@ To define which protocols your nio instance supports, you must register Pubkeepe
 Pubkeeper simplifies security because Pubkeeper clients encrypt the data before it is published. The encrypted signal is sent over the network and isn’t decrypted until it reaches its final destination. This is known as end-to-end encryption. You can configure your Pubkeeper encryption keys and certificates in your instance’s configuration file.
 
 ---
-## Use nio-managed cloud Pubkeeper
+## Use nio-managed cloud <span class="allow-caps">Pubkeeper</span>
 
 <img class="right border" src="/img/pubkeeper-edit-modal.png" width="250" />
 
@@ -68,7 +68,7 @@ Using Pubkeeper in your running nio instances along with the websocket brew allo
 To see which brews are configured for your project, go to the `[pubkeeper_client]` section of your `nio.conf` file in your project directory.
 
 ---
-## Use Pubkeeper locally
+## Use <span class="allow-caps">Pubkeeper</span> locally
 
 If your nio license includes the Pubkeeper component, you can also run a Pubkeeper server on a local instance. See the documentation at [docs.pubkeeper.com](https://docs.pubkeeper.com) to learn more.
 
