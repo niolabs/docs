@@ -10,6 +10,22 @@ You can adopt one of two philosophies when creating a block:
 
 ---
 
+## Add a custom block to the <span class="allow-caps">System Designer</span>
+
+Your custom blocks can be manually installed for local use in the nio System Designer by adding them to your project's `blocks/` directory as a submodule with the
+```
+git submodule add [repository link]
+```
+command, and restarting your local nio instance.
+
+---
+
+## Submit your block to the nio <span class="allow-caps">Block Library</span>
+
+Once you have completed, [tested](/blocks/block-development/block-testing.md), and [documented](/blocks/block-development/documenting.md) your block, you can submit your block for approval to the [nio Block Library](https://blocks.n.io) by emailing the block's GitHub repository link to [blocks@n.io](mailto:blocks@n.io).
+
+---
+
 ## Create a new block
 
 Begin development of your block with the `nio newblock` command.
