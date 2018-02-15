@@ -21,6 +21,7 @@
 * Architecture
 
 * [Overview](/architecture/README.md)
+* [Signals](/signals/README.md)
 * [Blocks](/blocks/README.md)
   * [Properties](/blocks/properties.md)
   * [Expressions](/blocks/expressions.md)
