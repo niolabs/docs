@@ -3,13 +3,32 @@
 Running the nio Platform as a [Docker](https://docker.com) container offers several benefits such as better deployment and lifecycle management. However, niolabs does not currently have a public downloadable Docker image because different licenses often have different nio binaries. Instead, you can build and manage your own Docker image using your nio binary.
 
 ---
-## Creating a <span class="allow-caps">Docker</span> image
+## Clone the repository
 
-Once you have downloaded your binary from the [binary downloads page](https://app.n.io/binaries/download), you can build a corresponding Docker image from that binary with the help of the [nio-docker repository](https://github.com/niolabs/nio-docker).
+The repository to help you build a Docker image can be found in the [nio-docker repository](https://github.com/niolabs/nio-docker).
 
-1. Clone the repository and copy your wheel file into the directory.
+1. Clone the repository.
 ```
 git clone https://github.com/niolabs/nio-docker.git nio-docker
+cd nio-docker
+```
+
+---
+## Configure <span class="allow-caps">Pubkeeper</span> communication
+
+Before running nio, the `nio.conf` file of the project will need to be configured for Pubkeeper communication. If you are using a nio hosted Pubkeeper server, obtain your hostname and token from the [System Designer](http://designer.n.io) in the edit modal for your system.
+
+1. Open `default_project/nio.conf`.
+2. Copy your Pubkeeper hostname and token in for `PK_HOST` and `PK_TOKEN` under the `user_defined` section.
+3. Copy your hostname in for `WS_HOST` under the `user_defined` section being sure to replace `pubkeeper` with `websocket`.
+
+---
+## Creating a <span class="allow-caps">Docker</span> image
+
+Once you have downloaded your binary from the [binary downloads page](https://app.n.io/binaries/download), you can build a corresponding Docker image from that binary.
+
+1. copy your wheel file into the directory.
+```
 cp your-wheel-file.whl nio-docker
 ```
 
