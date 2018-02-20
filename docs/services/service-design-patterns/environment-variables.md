@@ -6,7 +6,7 @@ The nio Platform allows you to define and use variables when configuring your in
 
 ## Access tokens and other secrets
 
-Often a block will need some sort of access token or password in its configuration. Rather than store those in the block config directly, where they are visible in plain text, we recommend using an environment variable for that. Add an entry to your configuration file `nio.conf` under the `[user_defined]` section.
+Often a block will need some sort of access token or password in its configuration. Rather than store those in the block config directly, where they are visible in plain text, we recommend using an environment variable for that. There are two ways to manage your environment variables.  The easiest way is to use the [Instance Editor](/system-designer/designer-tasks.md#instance-sd).  If you are running an instance locally, you can add an entry to your configuration file `nio.conf` under the `[user_defined]` section at the top of the file.
 ```
 MY_SECRET=p@$$w0rd
 ```

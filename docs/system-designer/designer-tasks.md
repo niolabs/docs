@@ -72,7 +72,13 @@ To enter the system context, select the name of your system in the left navigati
   * In the **instance name** box, enter a meaningful name.
 1. Click **accept**.
 
-### Connect to a local instance
+> **[info] Environment variables**
+>
+> The environment variables section below your instance name can be used to set insance-wide variables.
+> This is useful for securely storing values such as API keys/secrets, or other variables that you do not want to hardcode directly into block properties.
+> More information about environment variables can be found [here](/services/service-design-patterns/environment-variables.md#environment-varialbes)
+
+### Connect to a Local Instance
 
 To enter the system context, select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
 <br>
@@ -106,7 +112,7 @@ In the instance context you will see the the instance toolbar and can perform th
 
 Icon                      |Label             | Description      |
 --------------------------|------------------|------------------|
-![](/img/IconEdit.gif)    |Edit              | Edit instance name.
+![](/img/IconEdit.gif)    |Edit              | Edit instance name and set environment variables.
 ![](/img/IconSave.gif)    |Save              | Save instance.
 ![](/img/IconDelete.gif)  |Delete            | Delete instance.
 
