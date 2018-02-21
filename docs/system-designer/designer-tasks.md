@@ -50,9 +50,9 @@ In the system context you will see the system toolbar that can perform the follo
 
   Icon                      |Label             | Description      |
   --------------------------|------------------|------------------|
-  ![](/img/IconEdit.gif)    |Edit              | Edit system name. View Pubkeeper configuration information.
-  ![](/img/IconShare.gif)   |Share             | Share system. This option is only available to teams within an organization. Read more information about system sharing [here](/organizations/management.md#sharing).
-  ![](/img/IconDelete.gif)  |Delete            | Delete system. Instances must be deleted first.
+  ![](/img/IconEdit.gif)    |edit              | Edit system name. View Pubkeeper configuration information.
+  ![](/img/IconShare.gif)   |share             | Share system. This option is only available to teams within an organization. Read more information about system sharing [here](/organizations/management.md#sharing).
+  ![](/img/IconDelete.gif)  |delete            | Delete system. Instances must be deleted first.
 
 ---
 
@@ -72,13 +72,8 @@ To enter the system context, select the name of your system in the left navigati
   * In the **instance name** box, enter a meaningful name.
 1. Click **accept**.
 
-> **[info] Environment variables**
->
-> The environment variables section below your instance name can be used to set insance-wide variables.
-> This is useful for securely storing values such as API keys/secrets, or other variables that you do not want to hardcode directly into block properties.
-> More information about environment variables can be found [here](/services/service-design-patterns/environment-variables.md#environment-varialbes)
 
-### Connect to a Local Instance
+### Connect to a local instance
 
 To enter the system context, select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
 <br>
@@ -109,12 +104,25 @@ In the instance context you will see the the instance toolbar and can perform th
 
 <img class="left" src="/img/Toolbar-Instance.gif" height="75" />
 
-
 Icon                      |Label             | Description      |
 --------------------------|------------------|------------------|
-![](/img/IconEdit.gif)    |Edit              | Edit instance name and set environment variables.
-![](/img/IconSave.gif)    |Save              | Save instance.
-![](/img/IconDelete.gif)  |Delete            | Delete instance.
+![](/img/IconEdit.gif)    |edit              | Edit instance name and set environment variables.
+![](/img/IconSave.gif)    |save              | Save instance.
+![](/img/IconDelete.gif)  |delete            | Delete instance.
+
+## {#instance-env}
+> <img class="right border" src="/img/tasks/editcloudinstance.png" width="200" />
+> **[info] Environment variables**
+
+
+> The environment variables section in the edit instance modal window can be used to set instance-wide variables.
+> This is useful for storing values such as API keys/secrets or other variables that you do not want to hardcode directly into block properties.
+>
+> Only admin-level users can view/edit the values of the environment variables in the edit instance modal.
+>
+> More information about environment variables can be found [here](/services/service-design-patterns/environment-variables.md).
+> <br>
+
 
 ---
 
@@ -153,13 +161,13 @@ In the service context you will see the the service toolbar that can perform the
 
 Icon                      |Label             | Description      |
 --------------------------|------------------|------------------|
-![](/img/IconEdit.gif)    |Edit              | Edit service name and color.
-![](/img/IconSave.gif)    |Save              | Save service.
-![](/img/IconStopAnim.gif)|Start/Stop        | Toggle to start and stop service.
-![](/img/IconAuto.gif)    |Auto-Start On/Off | Toggle Auto-Start on and off. Default is on.
-![](/img/IconRevert.gif)  |Revert            | Revert changes to service.
-![](/img/IconClone.gif)   |Clone             | Clone service.
-![](/img/IconDelete.gif)  |Delete            | Delete service.
+![](/img/IconEdit.gif)    |edit              | Edit service name and color.
+![](/img/IconSave.gif)    |save              | Save service.
+![](/img/IconStopAnim.gif)|start/stop        | Toggle to start and stop service.
+![](/img/IconAuto.gif)    |auto-start on/off | Toggle Auto-Start on and off. Default is on.
+![](/img/IconRevert.gif)  |revert            | Revert changes to service.
+![](/img/IconClone.gif)   |clone             | Clone service.
+![](/img/IconDelete.gif)  |delete            | Delete service.
 
 
 ### Connect/disconnect blocks
@@ -227,9 +235,9 @@ In the block context you will see the the block toolbar that can perform the fol
 
 Icon                      |Label             | Description      |
 --------------------------|------------------|------------------|
-![](/img/IconEdit.gif)    |Edit              | Edit block configuration.
-![](/img/IconCommand.gif) |Command           | Command block.
-![](/img/IconDelete.gif)  |Delete            | Delete block.
+![](/img/IconEdit.gif)    |edit              | Edit block configuration.
+![](/img/IconCommand.gif) |command           | Command block.
+![](/img/IconDelete.gif)  |delete            | Delete block.
 
 
 ### Delete a configured block
