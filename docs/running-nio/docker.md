@@ -12,8 +12,13 @@ git clone https://github.com/niolabs/nio-docker.git nio-docker
 cd nio-docker
 ```
 
+Then update the submodules for the default project
+```
+git submodule update --init --recurisve
+```
+
 ---
-## Configure <span class="allow-caps">Pubkeeper</span> communication
+## Configure the Project
 
 Before running nio, the `nio.conf` file of the project will need to be configured for Pubkeeper communication. If you are using a nio-hosted Pubkeeper server, obtain your hostname and token from the [System Designer](http://designer.n.io) in the edit modal for your system as explained [here](/running-nio/in-the-cloud.md#pk-credentials).
 
