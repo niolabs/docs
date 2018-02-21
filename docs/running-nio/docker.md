@@ -5,9 +5,8 @@ Running the nio Platform as a [Docker](https://docker.com) container offers seve
 ---
 ## Clone the repository
 
-The repository to help you build a Docker image can be found in the [nio-docker repository](https://github.com/niolabs/nio-docker).
+To build a Docker image, start by cloning the [nio-docker repository](https://github.com/niolabs/nio-docker).
 
-1. Clone the repository.
 ```
 git clone https://github.com/niolabs/nio-docker.git nio-docker
 cd nio-docker
@@ -16,11 +15,11 @@ cd nio-docker
 ---
 ## Configure <span class="allow-caps">Pubkeeper</span> communication
 
-Before running nio, the `nio.conf` file of the project will need to be configured for Pubkeeper communication. If you are using a nio hosted Pubkeeper server, obtain your hostname and token from the [System Designer](http://designer.n.io) in the edit modal for your system.
+Before running nio, the `nio.conf` file of the project will need to be configured for Pubkeeper communication. If you are using a nio-hosted Pubkeeper server, obtain your hostname and token from the [System Designer](http://designer.n.io) in the edit modal for your system as explained [here](/running-nio/in-the-cloud.md#pk-credentials).
 
 1. Open `default_project/nio.conf`.
-2. Copy your Pubkeeper hostname and token in for `PK_HOST` and `PK_TOKEN` under the `user_defined` section.
-3. Copy your hostname in for `WS_HOST` under the `user_defined` section being sure to replace `pubkeeper` with `websocket`.
+2. Under the `user_defined` section, copy your Pubkeeper hostname and token to `PK_HOST` and `PK_TOKEN`.
+3. For `WS_HOST`, copy your Pubkeeper hostname, but replace `pubkeeper` with `websocket`.
 
 ---
 ## Creating a <span class="allow-caps">Docker</span> image

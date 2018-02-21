@@ -16,6 +16,8 @@ Use the nio CLI (Command Line Interface) to create a new project named "my_proje
 nio new my_project
 ```
 
+You will be prompted for you Pubkeeper credentials. Obtain your Pubkeeper hostname and token from the [System Designer](http://designer.n.io) in the edit modal for your system as explained [here](/running-nio/in-the-cloud.md#pk-credentials).
+
 ---
 ## Start your project
 
