@@ -14,13 +14,17 @@ cd nio-docker
 ```
 
 ---
-## Configure <span class="allow-caps">Pubkeeper</span> communication
+## Configure the Project
 
 Before running nio, the `nio.conf` file of the project will need to be configured for Pubkeeper communication. If you are using a nio hosted Pubkeeper server, obtain your hostname and token from the [System Designer](http://designer.n.io) in the edit modal for your system.
 
-1. Open `default_project/nio.conf`.
-2. Copy your Pubkeeper hostname and token in for `PK_HOST` and `PK_TOKEN` under the `user_defined` section.
-3. Copy your hostname in for `WS_HOST` under the `user_defined` section being sure to replace `pubkeeper` with `websocket`.
+1. Update the submodules for the default project
+```
+git submodule update --init --recurisve
+```
+2. Open `default_project/nio.conf`.
+3. Copy your Pubkeeper hostname and token in for `PK_HOST` and `PK_TOKEN` under the `user_defined` section.
+4. Copy your hostname in for `WS_HOST` under the `user_defined` section being sure to replace `pubkeeper` with `websocket`.
 
 ---
 ## Creating a <span class="allow-caps">Docker</span> image
