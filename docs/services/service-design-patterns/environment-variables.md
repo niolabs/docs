@@ -6,12 +6,13 @@ The nio Platform allows you to define and use variables when configuring your in
 
 ## Access tokens and other secrets
 
-Often a block will need some sort of access token or password in its configuration. Rather than store those in the block config directly, where they are visible in plain text, we recommend using an environment variable for that. Add an entry to your configuration file `nio.conf` under the `[user_defined]` section.
+Often a block will need some sort of access token or password in its configuration. Rather than store those in the block config directly—where they are visible in plain text—we recommend using an environment variable. There are two ways to manage your environment variables. The easiest way is to use the [Instance Editor](/system-designer/designer-tasks.md#instance-env). Alternatively, if you are running an instance locally, you can add environment variables to the `[user_defined]` section at the top of your `nio.conf` configuration file.
+
 ```
 MY_SECRET=p@$$w0rd
 ```
 
-Then, in your block config you can use that secret token by using the environment variable syntax: `[[ MY_SECRET ]]`. The block will receive the proper value when the service is started, but the block's configuration will always contain the unreplaced environment variable.
+Then, in your block config, you can use that secret token by using the environment variable syntax: `[[ MY_SECRET ]]`. The block will receive the proper value when the service is started, but the block's configuration will always contain the unreplaced environment variable.
 
 ---
 
@@ -36,7 +37,7 @@ but your local testing environment file \(`test.conf`\) may look like this:
 DB_HOST=localhost
 DB_PASS=password
 ```
-### Chaining `.conf` files  
+### Chaining `.conf` files
 
 One can have multiple configuration files, each with a `[user_defined]` section, and chain them together using the `-s` flag. Each subsequent file definitions will override former definitions when the same variable is specified, for example:
 
