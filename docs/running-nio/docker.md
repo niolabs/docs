@@ -12,9 +12,9 @@ git clone https://github.com/niolabs/nio-docker.git nio-docker
 cd nio-docker
 ```
 
-Then update the submodules for the default project
+Then add a submodule for the default project
 ```
-git submodule update --init --recurisve
+git submodule add https://github.com/niolabs/project_template.git default_project
 ```
 
 ---
