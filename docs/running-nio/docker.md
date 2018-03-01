@@ -1,6 +1,6 @@
 # Run nio in a <span class="allow-caps">Docker</span> container
 
-Running the nio Platform as a [Docker](https://docker.com) container offers several benefits such as better deployment and lifecycle management. However, niolabs does not currently have a public downloadable Docker image because different licenses often have different nio binaries. Instead, you can build and manage your own Docker image using your nio binary.
+Running the nio Platform as a [Docker](https://docker.com) container offers several benefits such as better deployment and lifecycle management. However, niolabs does not currently have a public downloadable Docker image because different plans often have different nio binaries. Instead, you can build and manage your own Docker image using your nio binary.
 
 ---
 ## Clone the repository
