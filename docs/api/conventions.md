@@ -12,7 +12,7 @@ Authentication is the action to verify the identity of a user or process.
 
 Authorization is the process of giving someone permission to perform an action.
 
-You will need to include an authorization header with your nio API requests. For examples, see [Basic Auth](#basic-authentication-basic-auth) and [JWT](#json-web-tokens-jwt). For examples of adding headers to curl requests, see [Headers](#headers).
+You will need to include an authorization header with your nio API requests. For examples, see [Basic Auth](#basic-authentication-basic-auth) and [JWT](#json-web-tokens-jwt). For examples of adding headers to curl requests, see [headers](#headers).
 
 User names and passwords are specified in the `users.json` file in the `etc` directory.
 
@@ -38,7 +38,7 @@ The default configuration is shown. You can uncomment the default configuration 
 
 You can use different types of authentication, such as basic authentication and JSON Web Tokens, with the nio Platform.
 
-### Basic Authentication (Basic Auth)
+### Basic Authentication (<span class="allow-caps">Basic Auth</span>)
 
 When using basic authentication, the REST API requires a username and password.
 
@@ -46,9 +46,9 @@ To use basic auth, include a base-64 encoded version of your `username:password`
 
 `{ "authorization": "Basic QWRtaW46QWRtaW4=" }`
 
-For examples of adding headers to a curl request, see  [Headers](#headers).
+For examples of adding headers to a curl request, see  [headers](#headers).
 
-### JSON Web Tokens (JWT)
+### <span class="allow-caps">JSON</span> Web Tokens (<span class="allow-caps">JWT</span>)
 
 When using JSON Web Tokens (JWT), first obtain an access token, and then include it in the header.
 
@@ -72,7 +72,7 @@ With the curl command, you can specify the request type with following options:
       -XPUT
       -XDELETE
 
-### URL
+### <span class="allow-caps">URL</span>
 Your request type will be followed by a URL.
 
 #### Base URL
