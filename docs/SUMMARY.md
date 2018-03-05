@@ -46,6 +46,7 @@
 
 * [Systems](/systems/README.md)
   * [Multiple Systems](/systems/multiple.md)
+  * [Templates](/systems/templates.md)
 
 ---
 * Building with nio
