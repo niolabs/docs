@@ -2,7 +2,7 @@
 
 **Welcome to nio!** Get familiar with designing and building distributed systems with the nio Platform.
 
-To access the nio binary and nio System Designer, sign up for a plan here: <https://niolabs.com/licensing>.
+To access the nio binary and nio System Designer, sign up for a plan here: <https://niolabs.com/pricing>.
 
 ---
 

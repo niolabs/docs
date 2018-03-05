@@ -39,6 +39,7 @@
   * [Environment Variables](/services/service-design-patterns/environment-variables.md)
 * [Systems](/systems/README.md)
   * [Multiple Systems](/systems/multiple.md)
+  * [Templates](/systems/templates.md)
 
 ---
 * Building with nio
@@ -84,6 +85,7 @@
   * [Modules](/binaries/modules.md)
   * [Components](/binaries/components.md)
     * [SNMP](/binaries/snmp.md)
+  * [Changelog](/binaries/changelog.md)
 * [Pubkeeper](/pubkeeper/README.md)
 
 ---
