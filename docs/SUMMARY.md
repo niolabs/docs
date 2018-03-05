@@ -86,6 +86,7 @@
   * [Modules](/binaries/modules.md)
   * [Components](/binaries/components.md)
     * [SNMP](/binaries/snmp.md)
+  * [Changelog](/binaries/changelog.md)
 * [Pubkeeper](/pubkeeper/README.md)
 
 ---
