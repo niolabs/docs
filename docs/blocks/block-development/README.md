@@ -1,6 +1,6 @@
 # Block development
 
-To create a new function or connect to a new framework, library, or custom piece of hardware not currently included in the nio Block Library at [blocks.n.io](https://blocks.n.io/), you can develop your own custom block. To create a custom block, follow the resources here under Block Development as well as the [Develop a Custom Block](https://workshops.n.io/custom-block/) tutorial in workshops.
+To create a new function or connect to a new framework, library, or custom piece of hardware not currently included in the nio Block Library at [blocks.n.io](https://blocks.n.io/), you can develop your own custom block. To create a custom block, follow these block development resources as well as the [develop a custom block](https://workshops.n.io/custom-block/) tutorial in workshops.
 
 You can adopt one of two philosophies when creating a block:
 
@@ -49,7 +49,7 @@ For more information about your project directory, refer to the `project_templat
 
 ---
 
-Use the examples provided in [Developing your block](/blocks/block-development/development.md) to guide you in creating your custom block.
+Use the examples provided in [developing your block](/blocks/block-development/development.md) to guide you in creating your custom block.
 
 ---
 
