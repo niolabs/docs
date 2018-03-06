@@ -74,7 +74,7 @@ Of course, if React isn’t your thing, the Pubkeeper browser client can be used
 
 ---
 
-### Apache 2.0 License
+### <span class="allow-caps>Apache</span> 2.0 License
 
 Copyright 2017-2018 n.io innovation, LLC
 

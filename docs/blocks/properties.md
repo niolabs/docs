@@ -70,7 +70,7 @@ This _Modifier_ block is named **ShowAlertLevel** and is configured to enrich th
 
 ## Common mixins
 
-Some commonly used block properties are [mixins](/blocks/block-development/mixins.md) and include `enrich`, which creates the **Exclude Existing?** property, `persistence`, which creates the **Load from Persistence?** property, and `group-by` which creates the **Group By** input field. For an example of how to configure and use `group-by` using the _Join_ block, see [Restructure and group signals](/services/service-design-patterns/join.md#using-group-by) in [Service Design Patterns](/services/service-design-patterns/README.md).
+Some commonly used block properties are [mixins](/blocks/block-development/mixins.md) and include `enrich`, which creates the **Exclude Existing?** property, `persistence`, which creates the **Load from Persistence?** property, and `group-by` which creates the **Group By** input field. For an example of how to configure and use `group-by` using the _Join_ block, see [restructure and group signals](/service-design-patterns/join.md#using-group-by) in [service design patterns](/service-design-patterns/README.md).
 
 ---
 
@@ -82,7 +82,7 @@ Expressions are used to dynamically define properties. Many property types can a
 
 ## Environment variables
 
-Another syntax that the nio Platform uses in property configuration is the double-square-bracket notation for an [environment variable](/services/service-design-patterns/environment-variables.md).
+Another syntax that the nio Platform uses in property configuration is the double-square-bracket notation for an [environment variable](/instances/environment-variables.md).
 
 `[[YOUR_ENV_VAR]]`
 
