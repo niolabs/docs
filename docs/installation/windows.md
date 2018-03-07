@@ -19,7 +19,7 @@ Download and double-click the executable file to start the process, then follow 
 
 ---
 
-The next window in the setup process asks for your Pubkeeper host and token. To find this within the nio System Designer, click your system's name on the left hand side of the System Designer and then click **edit** in the toolbar. This will bring up the edit system modal window. Copy and paste your Pubkeeper configuration from that window into the installer window.
+The next window in the setup process asks for your Pubkeeper host and token. You will be prompted for you Pubkeeper credentials. Obtain your Pubkeeper hostname and token from the [System Designer](http://designer.n.io) in the edit modal for your system as explained [here](/running-nio/in-the-cloud.md#pk-credentials).
 
 ---
 
