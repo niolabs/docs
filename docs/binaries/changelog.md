@@ -9,7 +9,9 @@ None
 None
 
 **Fixes**<br>
-New binaries which contain pubkeeper_server, pin it to v1.0.2.
+New binaries which contain pubkeeper_server pin it to v1.0.3
+Pubkeeper server doesn't set DEBUG log level for all loggers anymore
+Pin pyjwt version to 1.5.x
 
 ## 20180305
 
