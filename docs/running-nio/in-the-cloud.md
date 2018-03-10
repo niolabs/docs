@@ -29,7 +29,7 @@ A system is a group of interrelated elements. In the nio System Designer, a syst
   > **[info] <span class="allow-caps">Pubkeeper</span> server credentials**
   >
   > To access your **Pubkeeper** credentials:
-  > 1. Click on your system's name on the left hand side of the System Designer.
+  > 1. Click on your system's name on the leftmost side of the System Designer.
   > 1. Click the **edit** button in the contextual toolbar above the canvas.
   > 1. Your **Pubkeeper** configuration details will be shown in the modal window.
 
