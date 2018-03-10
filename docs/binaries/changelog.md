@@ -1,5 +1,16 @@
 # nio binary changelog
 
+## 20180309
+
+**Potentially breaking changes**<br>
+None
+
+**New features**<br>
+None
+
+**Fixes**<br>
+New binaries which contain pubkeeper_server, pin it to v1.0.2.
+
 ## 20180305
 
 **Potentially breaking changes**<br>
