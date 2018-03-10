@@ -84,7 +84,7 @@ You may see an issue regarding HTTPS and HTTP instances.
 >
 > If you launched your instance without any SSL certificates, the instance is only accessible via HTTP. If you are logged into the System Designer via HTTPS, your browser will restrict any XHR requests going over HTTP.
 >
-> To connect to a local HTTP instance with the System Designer, you'll need to log into the designer via HTTP at [http://designer.n.io](http://designer.n.io). All of your instances and systems will be the same, the only difference is, the nio commands to edit these instances won't happen over HTTPS.
+> To connect to a local HTTP instance of nio with the System Designer, you'll need to log into the designer via HTTP at [http://designer.n.io](http://designer.n.io). All of your instances and systems will be the same, the only difference is, the nio commands to edit these instances won't happen over HTTPS.
 
 Once your instance is loaded and available, you can add services and blocks in the same manner as a [cloud instance](https://workshops.n.io/system-designer/).
 
