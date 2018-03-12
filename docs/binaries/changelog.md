@@ -1,5 +1,6 @@
 # nio binary changelog
 
+<hr>
 ## 20180309
 
 **Potentially breaking changes**<br>
@@ -13,6 +14,7 @@ None
  * Pubkeeper server doesn't set DEBUG log level for all loggers anymore
  * Pin pyjwt version to 1.5.x
 
+<hr>
 ## 20180305
 
 **Potentially breaking changes**<br>
@@ -24,6 +26,7 @@ None
 **Fixes**<br>
  * pubkeeper client version 1.0.3 - pins version of tornado library to 4.5.x
 
+<hr>
 ## 20180301
 
 **Potentially breaking changes**<br>
@@ -35,6 +38,7 @@ None
 **Fixes**<br>
  * Log API Component - Requesting a service with no log files no longer returns an error (NIO-1052)
 
+<hr>
 ## 20180228
 
 **Potentially breaking changes**<br>
@@ -46,6 +50,7 @@ None
 **Fixes**<br>
  * Pubkeeper client bump to 1.0.2 - brew in the ioloop to prevent bad thread access
 
+<hr>
 ## 20180213
 **Potentially breaking changes**<br>
 None
@@ -56,6 +61,7 @@ None
 **Fixes**<br>
 None
 
+<hr>
 ## 20180207
 
 **Potentially breaking changes**<br>
@@ -67,7 +73,7 @@ None
 **Fixes**<br>
  * cherrypy custom error page to return json response rather than html
 
-
+<hr>
 ## 20180130
 
 **Potentially breaking changes**<br>
