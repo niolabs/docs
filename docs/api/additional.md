@@ -22,15 +22,15 @@ The optional URL parameters are `name` (service name), `level`, `component`, and
 Sample log entry requests:
 ```
 - read last 100 entries from main (core process)
-    http://[host]:[port]/log/entries
+    curl -XGET 'localhost:8181/log/entries' --user 'Admin:Admin'
 - read last 100 entries at ERROR level from main (core process)
-    http://[host]:[port]/log/entries?component=main&level=ERROR
+    curl -XGET 'localhost:8181/log/entries?component=main&level=ERROR' --user 'Admin:Admin'
 - read last 20 entries at ERROR level from service1
-    http://[host]:[port]/log/entries?name=service1&level=ERROR&count=20
+    curl -XGET 'localhost:8181/log/entries?name=service1&level=ERROR&count=20' --user 'Admin:Admin'
 - read last 100 entries at WARNING level for service 'service1'
-    http://[host]:[port]/log/entries?name=service1&level=WARNING
+    curl -XGET 'localhost:8181/log/entries?name=service1&level=WARNING' --user 'Admin:Admin'
 - read last 100 entries for component 'main.BlockManager'
-    http://[host]:[port]/log/entries?component=main.BlockManager
+    curl -XGET 'localhost:8181/log/entries?component=main.BlockManager' --user 'Admin:Admin'
 ```
 
 To change the log level of a specific logger, send a POST request to `/log` with a JSON body containing
@@ -40,3 +40,11 @@ To change the log level of a specific logger, send a POST request to `/log` with
     "logger_name": "<name of logger to change level>"
 }
 ```
+
+You can also send GET/POST requests to read and modify service-specific logs.  This is done using the `/log/service/<service_name>` endpoint.  
+The service will need to be running and started for the endpoint to work.
+The service-specific endpoint will not return log entries but the request
+```
+curl -XGET 'localhost:8181/log/service/service1?level' --user 'Admin:Admin'
+```
+will return all the loggers and associated levels for the service1 service.  Use the same JSON body above to modify the log levels.
