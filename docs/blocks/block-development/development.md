@@ -16,7 +16,7 @@ Other elements of a block to keep in mind include [block patterns](block-pattern
 
 Be sure to [test](/blocks/block-development/block-testing.md) and [document](/blocks/block-development/documenting.md) your block.
 
-Custom blocks can be [manually installed for local use in the nio System Designer](/blocks/block-development/README.md#add-a-custom-block-to-the-system-designer) and [submitted](/blocks/block-development/README.md#submit-your-block-to-the-nio-block-library) to the nio Block Library. 
+Custom blocks can be [manually installed for local use in the nio System Designer](/blocks/block-development/README.md#add-a-custom-block-to-the-system-designer) and [submitted](/blocks/block-development/README.md#submit-your-block-to-the-nio-block-library) to the nio Block Library.
 
 ---
 
@@ -24,7 +24,7 @@ Custom blocks can be [manually installed for local use in the nio System Designe
 
 All nio Blocks inherit from the base block class. The first import in the block template's `example_block.py` is `nio.block.base`. If you explore the code inside `nio.block.base`, you'll find explanatory docstrings for each method—including methods to override in your custom block—along with higher-level context.
 
-An important principle to remember when developing your block is that [signals are passed as lists](/services/service-design-patterns/signal-structure.md#lists-of-signals).
+An important principle to remember when developing your block is that [signals are passed as lists](/service-design-patterns/signal-structure.md#lists-of-signals).
 
 ### Methods to override
 

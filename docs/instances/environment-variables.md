@@ -50,7 +50,7 @@ This will take your production environment and then implement the more specific 
 
 In your blocks and services, you can use `[[ DB_HOST ]]` as the database host and be assured that when you are running nio locally you aren't talking to the production database.
 
-See the [Deployment](/deployment/README.md) section for more information.
+See the [deployment](/deployment/README.md) section for more information.
 
 ---
 
