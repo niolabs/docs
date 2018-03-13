@@ -74,7 +74,7 @@ In addition to getting the details of one service configuration, specified by na
 
 If you're working with a nio project from scratch, you need to create and configure services. Create a new service with the Create API by sending a POST request with the applicable JSON data. When creating a new service, you can optionally include the configured values of the service type properties. At a minimum, you must specify the service **type** and **name** and any configuration values for required service properties that do not have a default value. The following example creates a **SimulateAndLog** service of the basic type `Service`.
 
-    curl -XPOST 'http://localhost:8181/services' --data '{"type": "Service", "name": "SimulateAndLog"}' -H 'Content-Type: applcation/json'
+    curl -XPOST 'http://localhost:8181/services' --data '{"type": "Service", "name": "SimulateAndLog"}' -H 'Content-Type: application/json'
 
 ---
 
@@ -82,7 +82,7 @@ If you're working with a nio project from scratch, you need to create and config
 
 When you want to update the configuration of a service, send a PUT request to `/services` with the service name as the endpoint and include any new JSON data. You only need to include the properties that you are updating in your PUT request, in this case, **log_level**.
 
-    curl -XPUT 'http://localhost:8181/services/SimulateAndLog' --data '{"log_level": "DEBUG"}' -H 'Content-Type: applcation/json'
+    curl -XPUT 'http://localhost:8181/services/SimulateAndLog' --data '{"log_level": "DEBUG"}' -H 'Content-Type: application/json'
 
 ---
 
