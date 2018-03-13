@@ -32,7 +32,7 @@ To change the log level of a specific logger, send a POST request to `/log` with
   "logger_name": "<name of logger to change level>"
 }
 ```
-This changes the log level of `logger1` to `INFO`.
+This changes the log level of `logger1` to `INFO`:
 ```
 curl -XPOST 'http://localhost:8181/log' --user 'Admin:Admin' --data '{"log_level": "INFO", "logger_name": "logger1"}' -H 'Content-Type: application/json'
 ```
