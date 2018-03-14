@@ -120,7 +120,7 @@ Icon                      |Label             | Description      |
 >
 > Only admin-level users can view/edit the values of the environment variables in the edit instance modal.
 >
-> More information about environment variables can be found [here](/instances/environment-variables.md).
+> More information about environment variables can be found here: [docs.n.io/instances/environment-variables.html](/instances/environment-variables.md).
 > <br>
 
 

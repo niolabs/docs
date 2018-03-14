@@ -36,7 +36,7 @@ Follow these steps to create a simple UI that can publish to, subscribe to, and 
 1. Get your Pubkeeper **hostname** and **token** from your nio-managed cloud-instance:
     1. Open the nio **System Designer** in a browser: https://designer.n.io/.
     1. Select your system in the left-hand navigation.
-        1. If you need to create your first system, follow the instructions [here](/system-designer/designer-tasks.md#create-a-system).
+        1. If you need to create your first system, follow the instructions here: [docs.n.io/system-designer/designer-tasks.html#create-a-system](/system-designer/designer-tasks.md#create-a-system).
     1. Click the **edit** button in the contextual toolbar to open its configuration.
 1. In `config.js`:
     1. Set `PK_HOST` to your **hostname** value.
@@ -65,7 +65,7 @@ Sure, you could have just had the timer set the local state variable, but then y
 
 ## What’s next?
 The output of any service that shares the same Pubkeeper host and token that you configured above can be consumed by your UI. All you need to do is update the patron’s topic (or add new patrons!), register a handler, and render the data.
-The nio UI Kit at [https://uikit.niolabs.com](https://uikit.niolabs.com) is full of components for layout, charts, etc. that can be pulled into any React project that accommodates scss (we use webpack).
+The nio UI Kit at [uikit.niolabs.com](https://uikit.niolabs.com) is full of components for layout, charts, etc., that can be pulled into any React project that accommodates scss (we use webpack).
 
 Of course, if React isn’t your thing, the Pubkeeper browser client can be used on any site that supports JavaScript:
  ```
