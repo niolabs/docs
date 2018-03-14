@@ -2,7 +2,7 @@
 
 You can interact with most nio binaries through a REST API. The API supports the standard HTTP request types of `GET`, `POST`, `PUT`, and `DELETE`. Data responses are returned in JSON format.
 
-The REST API is available in nio binaries that include the nio REST Component. Read more about nio core components [here](/binaries/components.md).
+The REST API is available in nio binaries that include the nio REST Component. Read more about nio core components here: [docs.n.io/binaries/components.html](/binaries/components.md).
 
 ---
 
@@ -46,7 +46,7 @@ To use basic auth, include a base-64 encoded version of your `username:password`
 
 `{ "authorization": "Basic QWRtaW46QWRtaW4=" }`
 
-For examples of adding headers to a curl request, see  [headers](#headers).
+For examples of adding headers to a curl request, see [headers](#headers).
 
 ### <span class="allow-caps">JSON</span> Web Tokens (<span class="allow-caps">JWT</span>)
 

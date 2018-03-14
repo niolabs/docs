@@ -40,7 +40,8 @@ To add an organization, click the **add an organization** button in the banner a
 Your **plan** page shows your active plan and other available plans.
 
 ### Update billing cycle
-If your plan offers monthly or annual billing and you would prefer to pay annually with a discount, toggle the **annually** option and click the button on the plan card. A modal will ask you to confirm. Click **update** to confirm or **cancel** if you want to keep your current billing cycle.
+
+If your plan offers monthly or annual billing and you would prefer to pay annually with a discount, click the **active plan** button to view the update modal. In the update modal, toggle the billing option to **annually**, accept the terms, and click **update** to confirm or **cancel** if you want to keep your current billing cycle.
 
 ### Custom upgrade
 
