@@ -38,7 +38,7 @@ A service is a real-time process that runs on an instance. The logic is configur
 ---
 
 ## Signal
-A signal is a unit of data that is passed from block to block within a service or between services. You can think of it as a little box of data, containing any data from a temperature reading to a tweet. It is internally represented as a key-value store.
+A signal is a unit of data that is passed from block to block within a service or between services. You can think of it as a little package of data, containing any data from a temperature reading to a tweet. It is internally represented as a key-value store.
 
 ---
 

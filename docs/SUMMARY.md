@@ -34,7 +34,6 @@
     * [Mixins](/blocks/block-development/mixins.md)
 * [Services](/services/README.md)
   * [Service Design Patterns](/services/service-design-patterns/README.md)
-    * [Signal Structure](/services/service-design-patterns/signal-structure.md)
     * [Restructure and Group Signals](/services/service-design-patterns/join.md)
     * [Publishing and Subscribing](/services/service-design-patterns/pub-sub.md)
     * [Simulators](/services/service-design-patterns/simulators.md)
