@@ -8,7 +8,7 @@ Blocks are nio Platform components that perform operations on signals. Blocks ca
 
 ## What makes a block a block?
 - A block has a 6-stage life cycle: configuring, configured, starting, started, stopping, stopped. Each block in a service will match the life cycle of the service it belongs to. In other words, a block is started when its service is started.
-- A block receives signals through an input terminal and/or sends signals via an output terminal to allow interblock interaction. Signals are implemented as a collection of key-value pairs and are always passed between blocks inside of a list. See [signal structure](/service-design-patterns/signal-structure.md).
+- A block receives lists of signals through an input terminal and/or sends lists of signals via an output terminal to allow interblock interaction. Signals are implemented as a collection of key-value pairs and are always passed between blocks inside of a list. See [signals](/signals/README.md).
 - A block is a class that is written in the same language as the nio binary that it is running in. For example, in a Python nio binary, a block is a Python class that inherits from the base class nio.block.base.Block.
 - Except for the most narrow-purpose blocks, a block contains configurable [properties](/blocks/properties.md).
 - A block has the potential to accept commands from the block REST API.
