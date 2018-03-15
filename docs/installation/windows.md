@@ -19,7 +19,10 @@ Download and double-click the executable file to start the process, then follow 
 
 ---
 
-The next window in the setup process asks for your Pubkeeper host and token. You will be prompted for you Pubkeeper credentials. Obtain your Pubkeeper hostname and token from the [System Designer](http://designer.n.io) in the edit modal for your system as explained [here](/running-nio/in-the-cloud.md#pk-credentials).
+The next window in the setup process asks for your Pubkeeper host and token. You will be prompted for you Pubkeeper credentials. Obtain your Pubkeeper hostname and token from the System Designer at [http://designer.n.io](http://designer.n.io) in the edit modal for your system as explained here: [docs.n.io/running-nio/in-the-cloud.html#pk-credentials](/running-nio/in-the-cloud.md#pk-credentials).
+
+Read more about the [HTTP version of the System Designer](/running-nio/locally.md#http) and why you will most likely use it for your local instance.
+
 
 ---
 
