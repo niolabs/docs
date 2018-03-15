@@ -33,19 +33,15 @@
     * [The nio Framework](/blocks/block-development/framework.md)
     * [Mixins](/blocks/block-development/mixins.md)
 * [Services](/services/README.md)
-  * [Service Design Patterns](/services/service-design-patterns/README.md)
-    * [Restructure and Group Signals](/services/service-design-patterns/join.md)
-    * [Publishing and Subscribing](/services/service-design-patterns/pub-sub.md)
-    * [Simulators](/services/service-design-patterns/simulators.md)
-    * [Environment Variables](/services/service-design-patterns/environment-variables.md)
   * [Service Testing](/services/service-testing.md)
 * [Instances](/instances/README.md)
   * [Self or nio-managed](/instances/self-v-nio.md)
   * [Projects](/instances/projects.md)
   * [Communication](/instances/instance-to-instance.md)
-
+  * [Environment Variables](/instances/environment-variables.md)
 * [Systems](/systems/README.md)
   * [Multiple Systems](/systems/multiple.md)
+  * [Templates](/systems/templates.md)
 
 ---
 * Building with nio
@@ -59,6 +55,10 @@
   * [Command](/cli/command.md)
   * [Clone Services](/cli/clone-services.md)
   * [Shutdown](/cli/shutdown.md)
+* [Service Design Patterns](/service-design-patterns/README.md)
+  * [Restructure and Group Signals](/service-design-patterns/join.md)
+  * [Publishing and Subscribing](/service-design-patterns/pub-sub.md)
+  * [Simulators](/service-design-patterns/simulators.md)
 * [Data](/data/README.md)
   * [Cloud Storage](/data/cloud-storage.md)
   * [Persistence](/data/persistence.md)
@@ -85,6 +85,7 @@
   * [Modules](/binaries/modules.md)
   * [Components](/binaries/components.md)
     * [SNMP](/binaries/snmp.md)
+  * [Changelog](/binaries/changelog.md)
 * [Pubkeeper](/pubkeeper/README.md)
 
 ---
@@ -105,4 +106,4 @@
 * [Glossary of Terms](/glossary/README.md)
 * [Customer Support](/support/README.md)
 * [Recommended Hardware](/hardware/README.md)
-* [Copyright and EULA](/copyright.md)
+* [Copyright](/copyright.md)

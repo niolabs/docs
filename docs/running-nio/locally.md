@@ -16,6 +16,8 @@ Use the nio CLI (Command Line Interface) to create a new project named "my_proje
 nio new my_project
 ```
 
+You will be prompted for you Pubkeeper credentials. Obtain your Pubkeeper hostname and token from the [System Designer](http://designer.n.io) in the edit modal for your system as explained here: [docs.n.io/running-nio/in-the-cloud.html#pk-credentials](/running-nio/in-the-cloud.md#pk-credentials).
+
 ---
 ## Start your project
 
@@ -63,7 +65,7 @@ nohup niod -r path/to/my_project 2>&1 > /dev/null &
 To manage your local instance, you need to add it to the **System Designer**:
 
 1. Open the **nio System Designer** in a browser: http://designer.n.io/.
-1. Select your system in the left hand nav.
+1. Select your system in the left side nav.
 1. Click **create local instance**.
   * In the **instance name** box, enter an instance name.
   * In the **hostname** box, enter **localhost**.
@@ -71,9 +73,18 @@ To manage your local instance, you need to add it to the **System Designer**:
   * Leave the **access mode** as **basic**.
 1. Click **accept**.
 
-> Note: When the System Designer connects to a nio instance, it communicates with that instance directly from your browser via an XHR request. Hostnames like `localhost` and other internal IP addresses will work. You must have access to the localhost or other IP address from your machine to use the System Designer.
+
+When the System Designer connects to a nio instance, it communicates with that instance directly from your browser via an XHR request. Hostnames like `localhost` and other internal IP addresses will work. You must have access to the localhost or other IP address from your machine to use the System Designer.
+
+You may see an issue regarding HTTPS and HTTP instances.
+
+#### {#http}
+
+> **[info] security error?**
 >
->You may see an issue regarding HTTPS and HTTP instances. Since you launched your instance and presumably didn't load any SSL certificates, the instance is accessible only by HTTP. However, if you are logged into the System Designer via HTTPS, your browser will restrict an XHR request going over HTTP. To connect to a local instance, you can log into the designer via HTTP at http://designer.n.io. All of your instances and systems will be the same, except the nio commands to edit these instances won't happen over HTTPS.
+> If you launched your instance without any SSL certificates, the instance is only accessible via HTTP. If you are logged into the System Designer via HTTPS, your browser will restrict any XHR requests going over HTTP.
+>
+> To connect to a local HTTP instance of nio with the System Designer, you'll need to log into the designer via HTTP at [http://designer.n.io](http://designer.n.io). All of your instances and systems will be the same, the only difference is, the nio commands to edit these instances won't happen over HTTPS.
 
 Once your instance is loaded and available, you can add services and blocks in the same manner as a [cloud instance](https://workshops.n.io/system-designer/).
 

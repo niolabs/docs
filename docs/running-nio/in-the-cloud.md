@@ -4,6 +4,8 @@ While the true power of the nio Platform is experienced when you have multiple [
 
 A nio-managed cloud instance allows you to get up and running quickly and to start building services right away (although our local installation process usually only takes 5 minutes!).
 
+You can also choose to start with one of our [system templates](https://workshops.n.io/system-templates) to quickly explore and configure annotated, pre-built systems.
+
 >**[info] Prerequisites**
 >
 >* **A nio account**: [Sign up here](https://app.n.io/signup)
@@ -11,7 +13,7 @@ A nio-managed cloud instance allows you to get up and running quickly and to sta
 ---
 
 ## Create a system
-<img class="right border" src="/img/cloud/Hello-CreateNewSystem.png" width="250" />
+<img class="right border" src="/img/cloud/Hello-CreateNewSystem.gif" width="250" />
 
 A system is a group of interrelated elements. In the nio System Designer, a system contains interrelated nio instances. Think of it as a workspace where you can put related projects.
 1. Open the **System Designer**: https://designer.n.io/.
@@ -20,7 +22,19 @@ A system is a group of interrelated elements. In the nio System Designer, a syst
   * If it doesn't open automatically, click the **`+`** button in the lower-left corner of the System Designer.
 1. Complete the **create new system** modal:
   1. In the **system name** box, enter a name for your system.
+  2. In the **template** dropdown, you can keep the default blank system or select a system template.
   1. Click **accept**.
+
+  ## {#pk-credentials}
+
+  Your system has just spun up with a nio-managed [**Pubkeeper**](/pubkeeper) server. Pubkeeper is the network communications broker that enables elements in a nio system (other nio instances, UIs, or non-nio applications that use the Pubkeeper client) to talk to each other directly and securely.
+
+  > **[info] <span class="allow-caps">Pubkeeper</span> server credentials**
+  >
+  > To access your **Pubkeeper** credentials:
+  > 1. Click on your system's name on the leftmost side of the System Designer.
+  > 1. Click the **edit** button in the contextual toolbar above the canvas.
+  > 1. Your **Pubkeeper** configuration details will be shown in the modal window.
 
 ---
 
@@ -40,15 +54,11 @@ A cloud instance is a running version of nio that is installed in the cloud and 
 
 Congratulations, you've set up a cloud instance!
 
-In addition to a running nio instance, we have also set up a nio-managed instance of [**Pubkeeper**](/pubkeeper). Pubkeeper is the network communication broker that enables elements in a nio system (other nio instances, UIs, or non-nio applications that use the Pubkeeper client) to talk to each other directly and securely.
-
-To access your **Pubkeeper** credentials:
-1. Click on your system's name on the left hand side of the System Designer.
-1. Click the **edit** button in the contextual toolbar above the canvas.
-1. Your **Pubkeeper** configuration details will be shown in the modal window.
 
 ---
 
 ## Now what?
 
-If you are wondering how to use your cloud instance? Head over to the workshops at [workshops.n.io](https://workshops.n.io)!
+If you are wondering how to use your cloud instance, head over to the workshops at [workshops.n.io](https://workshops.n.io)!
+
+If you selected a system template, you should already have an instance (or two) pre-populated with some annotated services, ready for you to explore. See more information about system templates here: [workshops.n.io/system-templates](https://workshops.n.io/system-templates).

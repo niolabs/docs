@@ -10,4 +10,4 @@ nio-managed cloud instances are a quick, headache-free way for users to spin up 
 ## Self-managed
 Self-managed instances allow users to download and install nio binaries throughout their systems. This provides the flexibility to distribute nio as needed in a solution. Users also maintain control of their data and services.
 
-The number of available nio-managed and self-managed instances will differ depending on your license. If you would like to increase your number of available instances, contact nio sales at [sales@niolabs.com](mailto:sales@niolabs.com).
+The number of available nio-managed and self-managed instances will differ depending on your plan. If you would like to increase your number of available instances, contact nio sales at [sales@niolabs.com](mailto:sales@niolabs.com).

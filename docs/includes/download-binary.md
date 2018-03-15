@@ -2,4 +2,4 @@ Navigate to <https://app.n.io/binaries/download>, agree to the license, and down
 
 >**[info] Windows users**
 >
->Windows users should download the Windows Installer. Double-click and follow the prompts. Specific Windows installation instructions can be found [here](https://docs.n.io/installation/windows.html).
+>Windows users should download the Windows Installer. Double-click and follow the prompts. Specific Windows installation instructions can be found here: [docs.n.io/installation/windows.html](https://docs.n.io/installation/windows.html).

@@ -8,4 +8,4 @@ When designing your system, consider building services/logic close to the signal
 
 To nio, a database is just another input (reading from a database is a signal producer) and/or output (writing to a database is a signal consumer). nio Blocks are available for most popular [datastores](https://blocks.n.io/?category=Database) ranging from CSV to open-source databases to robust enterprise solutions. If you have a data environment that does not have a block built for it yet, try using our [block development documentation](/blocks/block-development/README.md) to build your own.
 
-An alternative to data storage is nio's persistence feature. Persistence allows services and blocks to persist data across restarts without requiring external data storage. Read more about persistence [here](/data/persistence.md).
+An alternative to data storage is nio's persistence feature. Persistence allows services and blocks to persist data across restarts without requiring external data storage. Read more about persistence here:  [docs.n.io/data/persistence.html](/data/persistence.md).
