@@ -8,7 +8,7 @@ The nio core is the engine that runs in every nio binary. It is responsible for 
 
 The core contains manager components that are responsible for keeping track of the types of blocks and configurations of services. We call these components that keep track of their corresponding resources the **Block Manager** and the **Service Manager**, respectively.
 
-[Block](/blocks) types correspond to the different blocks that are installed in the instance. While having multiple service types is possible, almost all nio instances currently ship with only one type of service that we cleverly call `Service`. This service type is the type used for every service in an instance. In the future, additional service types may be included to perform different types of functions.
+[Block](/blocks) types correspond to the different blocks that are installed in the instance. While having multiple service types is possible, almost all nio instances currently ship with only one type of service that is cleverly called `Service`. This service type is the type used for every service in an instance. In the future, additional service types may be included to perform different types of functions.
 
 The **Service Manager** is responsible for launching service processes and maintaining a persistent connection to them via an IPC pipe. Commands to the service such as fetching its status or commanding a block can be passed from the core to the service process through its pipe.
 

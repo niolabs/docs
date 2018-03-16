@@ -6,7 +6,7 @@ Most of the time, the first service you build with the nio Platform involves sim
 
 ## Understanding simulators
 
-Before we get into too many use cases, it is helpful to understand how simulators work along with their naming conventions. There are many types of nio _Simulator_ blocks, but once you understand the naming, their function will be clear. The basic idea is that a simulator block consists of a generator and a trigger. Each simulator block will be named **<Generator><Trigger>Simulator**. For example, if you want to use the `Counter` generator and the `Interval` trigger as your simulator, then you can use the _CounterIntervalSimulator_ block type.
+Before getting into too many use cases, it is helpful to understand how simulators work along with their naming conventions. There are many types of nio _Simulator_ blocks, but once you understand the naming, their function will be clear. The basic idea is that a simulator block consists of a generator and a trigger. Each simulator block will be named **<Generator><Trigger>Simulator**. For example, if you want to use the `Counter` generator and the `Interval` trigger as your simulator, then you can use the _CounterIntervalSimulator_ block type.
 
 ### Generators
 
@@ -30,7 +30,7 @@ The general design of nio assumes that **signals** represent data and informatio
 
 In some cases, you will not care about the contents of the incoming signal, but you will want to perform an action. For example, if you wanted to poll a newspaper's API every five minutes for new articles, the _HTTPRequests_ block would need a new signal every time you wanted to poll. Since you do not care about the contents of the signal, any signal, even an empty signal, would suffice. You could use the _IdentityIntervalSimulator_ block to create the signal that would trigger the _HTTPRequests_ block to poll the API. The **identity** generator combined with the **interval** trigger would drive the block to periodically poll the API.
 
-Because of the way we use simulators to trigger the actions of a service, almost every service will either begin with a _Subscriber_ block \(to subscribe to signals from another service\) or with a _Simulator_ block \(to generate the driving signals on its own\).
+Because of the way simulators trigger the actions of a service, almost every service will either begin with a _Subscriber_ block \(to subscribe to signals from another service\) or with a _Simulator_ block \(to generate the driving signals on its own\).
 
 ---
 

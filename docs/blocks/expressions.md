@@ -32,7 +32,7 @@ You can access the raw signal itself, rather than just the attributes, with a lo
 
 <img class="right border" src="/img/expressions/rename.png" width="250"/>
 
-With an incoming signal of `{“sim”: 1}`, we can rename it inside a _Modifier_ block.
+With an incoming signal of `{“sim”: 1}`, you can rename it inside a _Modifier_ block.
 
 This will create a new signal attribute called "new" with the same value as `sim`.
 
@@ -44,7 +44,7 @@ To remove `{“sim”: 1}` from the output, check the **Exclude existing fields?
 
 <img class="right border" src="/img/expressions/plus-one.png" width="250"/>
 
-With an incoming signal of `{“sim”: 1}` we can perform math inside a _Modifier_ block.
+With an incoming signal of `{“sim”: 1}` you can perform math inside a _Modifier_ block.
 
 This operation creates a new attribute **plus_one** that will be equal to `sim + 1`.
 
