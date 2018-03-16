@@ -67,4 +67,4 @@ In other words, the _Filter_ block will process one list of five incoming signal
 ---
 ## See also
 
-* Glossary—[Signal](/glossary/README.md#signal)
+* Glossary—[signal](/glossary/README.md#signal)
