@@ -21,6 +21,7 @@
 * Architecture
 
 * [Overview](/architecture/README.md)
+* [Signals](/signals/README.md)
 * [Blocks](/blocks/README.md)
   * [Properties](/blocks/properties.md)
   * [Expressions](/blocks/expressions.md)
@@ -55,7 +56,6 @@
   * [Clone Services](/cli/clone-services.md)
   * [Shutdown](/cli/shutdown.md)
 * [Service Design Patterns](/service-design-patterns/README.md)
-  * [Signal Structure](/service-design-patterns/signal-structure.md)
   * [Restructure and Group Signals](/service-design-patterns/join.md)
   * [Publishing and Subscribing](/service-design-patterns/pub-sub.md)
   * [Simulators](/service-design-patterns/simulators.md)
