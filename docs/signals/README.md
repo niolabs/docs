@@ -20,7 +20,7 @@ A signal is denoted by curly braces with its inner attributes separated by comma
 
 In nio, signals are passed from block to block as lists. You define your services by designing how lists of signals move from block to block. Signals always travel between blocks as part of a list, even if there is only one signal in that list. Blocks will typically operate on an entire list of incoming signals as one event.
 
-For example, let's imagine a [_Filter_](https://blocks.n.io/Filter) block that we have set up to filter out a stream of odd numbers:
+For example, imagine a [_Filter_](https://blocks.n.io/Filter) block that you set up to filter out a stream of odd numbers:
 
 <img class="shadow left" src="/img/signals/filter-block-config.png" width="275"/>
 
