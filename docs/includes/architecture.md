@@ -1,6 +1,6 @@
 The nio Platform is built for users like you to build real-world, innovative, and impactful solutions.
 
-{% video %}https://www.youtube.com/watch?v=1d76U5_7riE{% endvideo %}
+{% video start="3" %}https://www.youtube.com/watch?v=1d76U5_7riE{% endvideo %}
 
 Every state, every change, and every interaction in our world is a signal—from the percentage of moisture in the soil beneath your feet, to the vibration of your car motor, to the individual characters within your last tweet. Every _thing_ is producing context that already has—or will soon—become digitally available in the Internet of Things era. But how can these trillions of disparate signals work harmoniously to produce any meaningful value?
 
