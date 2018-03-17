@@ -24,7 +24,8 @@ Custom blocks can be [manually installed for local use in the nio System Designe
 
 All nio Blocks inherit from the base block class. The first import in the block template's `example_block.py` is `nio.block.base`. If you explore the code inside `nio.block.base`, you'll find explanatory docstrings for each method—including methods to override in your custom block—along with higher-level context.
 
-An important principle to remember when developing your block is that [signals are passed as lists](/service-design-patterns/signal-structure.md#lists-of-signals).
+An important principle to remember when developing your block is that [signals are passed as lists](/signals/README.md#lists-of-signals).
+
 
 ### Methods to override
 
@@ -36,7 +37,8 @@ The following methods from the base block are designed to be overridden:
   * **stop**: after stop, the block stops sending out signals and cancels jobs.
 
 #### signaling
-  * `process_signals(<list of signals>, input_id)`: receives input signals.
+
+  * `process_signals(<list of signals>, input_id)`: receives incoming signals.
   * `notify_signals(<list of signals>, output_id)`: emits signals from the block. This method isn't intended to be overridden, but should be called by the block to send out signals. For example, you will usually call `notify_signals` at the end of your `process_signals` method.
 
 ---

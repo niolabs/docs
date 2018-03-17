@@ -76,9 +76,9 @@ One inefficient option would be to filter the stream based on the department and
 
 There are several downsides to this approach.
 
-* It is not dynamic based on department. If we add another department, we have to add a new _Filter_ block and replicate the _Join_ again.
+* It is not dynamic based on department. If you add another department, you have to add a new _Filter_ block and replicate the _Join_ again.
 * You lose your original list. When the chain started you had a list of all employees, and now you have different lists floating around. You would have to merge the streams back together to get a list of all the employee names.
-* It is very tedious and repetitive. We have the same blocks used over and over again.
+* It is very tedious and repetitive. You have the same blocks used over and over again.
 
 The [group-by mixin](https://github.com/niolabs/nio/tree/master/nio/block/mixins/group_by) can group the signals into smaller lists first before performing the same action. This is very similar to the SQL [`GROUP BY`](https://www.w3schools.com/sql/sql_groupby.asp) operator. Fortunately, the _Join_ block includes the group-by mixin, so you can eliminate the _Filter_ blocks and rely on only one _Join_ block. Using the group-by mixin, the block will first group the signals by the department attribute under a new key called "group". Then, since you don't need the department name as the key to the list of names anymore, you can hard code the new key to be the string `"names"` instead.
 

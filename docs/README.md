@@ -22,7 +22,7 @@ We've created [workshops](http://workshops.n.io) and [system templates](http://w
 Become an expert in the core concepts of nio:
 
 * Learn about the nio Platform [system architecture](/architecture/)
-* Learn about [signal structure](/service-design-patterns/signal-structure.md) and smart [service design patterns](/service-design-patterns/)
+* Learn about [signals](/signals/README.md) and smart [service design patterns](/service-design-patterns/)
 * [Install nio locally](/installation/README.md)
 * Browse the nio [Block Library](https://blocks.n.io)
 * Master inter-instance communication with [Pubkeeper](https://docs.pubkeeper.com)

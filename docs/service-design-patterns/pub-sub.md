@@ -58,7 +58,7 @@ _Subscriber_ blocks can subscribe to a single topic or also portions of the topi
 
 * Subscribe: `California.*.Temperature`—Publishers: 1, 3
 * Subscribe: `California.*.Population`—Publishers: 2 (Publisher 4 is not matched since the single asterisk is used.)
-* Subscribe: `California.**.Population`—Publishers: 2, 4 (Publisher 4 is matched this time because we supplied a double asterisk which can match zero levels of the tree.)
+* Subscribe: `California.**.Population`—Publishers: 2, 4 (Publisher 4 is matched this time because a double asterisk can match zero levels of the tree.)
 * Subscribe: `**.Temperature`—Publishers: 1, 3, 5
 * Subscribe: `California.*.*`—Publishers: 1, 2, 3
 * Subscribe: `California.*.**`—Publishers: 1, 2, 3 (Publisher 4 is still not matched since the single asterisk forces us down one more level)

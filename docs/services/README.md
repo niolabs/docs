@@ -17,10 +17,11 @@ On the other end of the spectrum, a service can be as complicated as the one bel
 
 The [System Designer](/system-designer/README.md) is the user interface that allows users to build services and inspect and alter the state of existing systems, instances, services, and blocks. From the System Designer, users can start/stop services, view logs, and the check the status of running services via a web browser.
 
-Services can be started and stopped, and thus have a lifecycle of their own. Typically, each service will run in its own system process on the underlying hardware that the nio instance is running on. The nio core is responsible for spawning and monitoring these systems for you. This allows service builders to get the benefit of multiprocessing without dealing with the headaches typically associated with it.
+Services can be started and stopped, and thus have a lifecycle of their own. Typically, each service will run in its own system process on the underlying hardware that the nio instance is running on. The nio core is responsible for spawning and monitoring these processes for you. This allows service builders to get the benefit of multiprocessing without dealing with the headaches typically associated with it.
 
 ---
 ## See also
 
 * [Services in the System Designer](/system-designer/designer-tasks.md#service-sd)
+* [Service design patterns](/service-design-patterns/)
 * Glossary—[service](/glossary/README.md#service)
