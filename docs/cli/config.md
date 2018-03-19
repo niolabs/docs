@@ -65,4 +65,6 @@ Example (project):
 ```bash
 nio cfg project
 ```
-Will prompt you for `PK Host` and `PK Token` values to be put in your project's `nio.conf` file under the ``[user_defined]`` section.
+Will first prompt you for `PK Host` and `PK Token` values to be put in your project's `nio.conf` file under the ``[user_defined]`` section.
+
+Additionally, it will prompt you to create and/or install an SSL certificate for your nio instance.  For more information on SSL certificates and their application, click on this [link](https://www.globalsign.com/en/ssl-information-center/what-is-an-ssl-certificate/).
