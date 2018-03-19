@@ -67,4 +67,4 @@ nio cfg project
 ```
 Will first prompt you for `PK Host` and `PK Token` values to be put in your project's `nio.conf` file under the ``[user_defined]`` section.
 
-Additionally, it will prompt you to create and/or install an SSL certificate for your nio instance.  For more information on SSL certificates and their application, click on this [link](https://www.globalsign.com/en/ssl-information-center/what-is-an-ssl-certificate/).
+Additionally, it will prompt you with the option to create and/or install an SSL certificate for your nio instance.  This allows you to configure your nio instance with an additional layer of security and enables the nio System Designer to connect via HTTPS.  For more information on SSL certificates and their application, follow this [link](https://www.globalsign.com/en/ssl-information-center/what-is-an-ssl-certificate/).
