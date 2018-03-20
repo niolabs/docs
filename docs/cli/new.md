@@ -4,6 +4,8 @@ The `new` command creates a fresh project from the official [project template](h
 
 You will be prompted to enter values for `PK Host` and `PK Token`. These values will be put in your project's `nio.conf` file under the `[user_defined]` section. Pressing enter without typing in configuration values will leave the values in the `nio.conf` unchanged.
 
+Additionally, it will prompt you with the option to create and/or install an SSL certificate for your nio instance.  This allows you to configure your nio instance with an additional layer of security and enables the nio System Designer to connect via HTTPS.  For more information on SSL certificates and their application, follow this [link](https://www.globalsign.com/en/ssl-information-center/what-is-an-ssl-certificate/).
+
 An optional `--template` or `-t` can be specified to pull from a different project directory. This field will accept a repo name in the [niolabs GitHub](https://github.com/niolabs) or an entire GitHub link.
 
 Example:
