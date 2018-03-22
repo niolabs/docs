@@ -2,7 +2,12 @@
 
 There is a standard way to document a nio Block. Much of this documentation can be generated automatically using the `nio-cli`.
 
-1. Create a `release.json` file. Once you have built your block, navigate to the root of your project directory and type
+> **[info] Note**
+>
+> These instructions assume that you are working in a nio project directory or that your block directory is inside of a directory labeled `blocks`. In other words, "the root of your project" is equivalent to the directory where you can access your block repo with the path `blocks/<your block repo>`.
+>
+
+1. Create a `release.json` file. Once you have built your block, navigate to the root of your project directory (or, if you aren't developing your block in a project directory, to the directory below `blocks/<block repo name>`) and type
 
   ```
   nio buildrelease <block repo name>
