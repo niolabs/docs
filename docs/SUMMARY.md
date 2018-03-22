@@ -55,6 +55,7 @@
   * [Command](/cli/command.md)
   * [Clone Services](/cli/clone-services.md)
   * [Shutdown](/cli/shutdown.md)
+  * [Changelog](/cli/changelog.md)
 * [Service Design Patterns](/service-design-patterns/README.md)
   * [Restructure and Group Signals](/service-design-patterns/join.md)
   * [Publishing and Subscribing](/service-design-patterns/pub-sub.md)
