@@ -19,11 +19,11 @@ The `/log` endpoint, provided by the `log_api` component, can be used to retriev
 ### log
 To view an instance's loggers, use a GET request to `/log`.
 
-    curl -XGET 'localhost:8181/config/log' --user 'Admin:Admin'
+    curl -XGET 'localhost:8181/log' --user 'Admin:Admin'
 
 To retrieve all the loggers and the associated log levels, send a GET request to `/log?level`.
 
-    curl -XGET 'localhost:8181/config/log?level' --user 'Admin:Admin'
+    curl -XGET 'localhost:8181/log?level' --user 'Admin:Admin'
 
 To change the log level of a specific logger, send a POST request to `/log` with a JSON body containing
 ```
