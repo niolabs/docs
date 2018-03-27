@@ -73,6 +73,16 @@ To see which brews are configured for your project, go to the `[pubkeeper_client
 If your nio plan includes the Pubkeeper component, you can also run a Pubkeeper server on a local instance. See the documentation at [docs.pubkeeper.com](https://docs.pubkeeper.com) to learn more.
 
 ---
+## Manage your tokens
+
+A Pubkeeper server that includes the Pubkeeper auth module allows you to create tokens and manage publish/subscribe permissions by topic. Log in and manage your system's tokens with the button below:
+<br>
+<br>
+
+<a href="https://auth.pubkeeper.com" class="n-button n-button--primary n-button--solid">manage tokens</a>
+
+
+---
 ## Documentation
 
 Find the documentation for Pubkeeper at [docs.pubkeeper.com](https://docs.pubkeeper.com).
