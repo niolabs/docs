@@ -265,6 +265,6 @@ In the upper-right corner next to your name, a navigation menu provides links to
   * [**docs**](https://docs.n.io)—reference documentation
   * [**blocks**](https://blocks.n.io)—information about all the nio blocks
   * [**workshops**](https://workshops.n.io)—self-paced tutorials
-  * [**support**](https://app.n.io/support)—FAQs and contact form
+  * [**support**](https://account.n.io/support)—FAQs and contact form
   * [**forum**](https://forum.n.io)—interact with other nio users
-  * [**account**](https://app.n.io/settings)—edit your profile
+  * [**account**](https://account.n.io/settings)—edit your profile
