@@ -8,7 +8,7 @@ You can also choose to start with one of our [system templates](https://workshop
 
 >**[info] Prerequisites**
 >
->* **A nio account**: [Sign up here](https://app.n.io/signup)
+>* **A nio account**: [Sign up here](https://account.n.io/signup)
 
 ---
 

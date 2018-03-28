@@ -1,4 +1,4 @@
-Navigate to <https://app.n.io/binaries/download>, agree to the license, and download the correct nio binary for your system.
+Navigate to <https://account.n.io/binaries/download>, agree to the license, and download the correct nio binary for your system.
 
 >**[info] Windows users**
 >
