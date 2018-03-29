@@ -31,7 +31,7 @@ Before running nio, the `nio.conf` file of the project will need to be configure
 
 Once you have downloaded your binary from the [binary downloads page](https://account.n.io/binaries/download), you can build a corresponding Docker image from that binary.
 
-1. copy your wheel file into the directory.
+1. Copy your wheel file into the directory.
 ```
 cp your-wheel-file.whl nio-docker
 ```
