@@ -19,7 +19,7 @@ Systems are created in the System Designer to contain instances (running install
 
 <img class="right border" src="/img/cloud/Hello-CreateNewSystem.gif" width="250" />
 
-From the **System Designer** (https://designer.n.io/), you can create a new system in two ways.
+From the **System Designer** (https://app.n.io/design), you can create a new system in two ways.
   * If this is your first time opening the System Designer, the **create new system** modal window displays automatically.
   * If it doesn't open automatically, click the **`+`** button in the lower-left corner of the designer.
 

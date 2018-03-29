@@ -20,7 +20,7 @@ git submodule add https://github.com/niolabs/project_template.git default_projec
 ---
 ## Configure the Project
 
-Before running nio, the `nio.conf` file of the project will need to be configured for Pubkeeper communication. If you are using a nio-hosted Pubkeeper server, obtain your hostname and token from the [System Designer](http://designer.n.io) in the edit modal for your system as explained here: [docs.n.io/running-nio/in-the-cloud.html#pk-credentials](/running-nio/in-the-cloud.md#pk-credentials).
+Before running nio, the `nio.conf` file of the project will need to be configured for Pubkeeper communication. If you are using a nio-hosted Pubkeeper server, obtain your hostname and token from the [System Designer](http://app.n.io/design) in the edit modal for your system as explained here: [docs.n.io/running-nio/in-the-cloud.html#pk-credentials](/running-nio/in-the-cloud.md#pk-credentials).
 
 1. Open `default_project/nio.conf`.
 2. Under the `user_defined` section, copy your Pubkeeper hostname and token to `PK_HOST` and `PK_TOKEN`.
