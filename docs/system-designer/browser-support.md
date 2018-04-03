@@ -14,7 +14,7 @@ To have the best experience with the nio System Designer on your computer, use a
 Development of the System Designer is targeted at the current, or most recent, version of supported browsers.
 
 ## Required browser settings
-To use the System Designer, enable cookies and JavaScript<sup>®</sup> in your browser.
+To use the System Designer, enable cookies and JavaScript<sup>®</sup> in your browser. Certain browser extensions, like Privacy Badger, Adblock Plus, and Ghostery have been found to negatively impact the System Designer API calls and the functionality of Intercom support. For best performance, disable these services while using the System Designer. 
 
 <!-- ## Using a Virtual Browser
 Browsers in virtual environments, such as Citrix<sup>®</sup> and VMware<sup>®</sup>, might not support all the System Designer functionality. For the best experience, use a supported browser on your local computer. -->
