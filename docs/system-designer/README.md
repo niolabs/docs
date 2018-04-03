@@ -2,8 +2,6 @@
 
 The nio System Designer is the graphical user interface used to build your nio system.
 
-{% video %}https://www.youtube.com/watch?v=GFs5EK6zao8{% endvideo %}
-
 > The [System Designer workshop](https://workshops.n.io/system-designer) provides a good introduction to using the System Designer to build your first service.
 
 ---
@@ -11,15 +9,13 @@ The nio System Designer is the graphical user interface used to build your nio s
 
 <img class="left" src="/img/system-designer-overview.png" height="375" />
 
-### Systems list
-The systems list is the leftmost column in the designer.
-* The designer automatically creates an abbreviation for each system name.
-* To create a system, click the **`+`** button in the lower-left corner.
-* To change into the system context and view a system, click the system name.
+### Systems cards
+The systems cards are shown on the first screen in the System Designer.
+* To create a system, click the **add new system** card.
 * Learn more about [systems](/systems).
 
 ### Instances and services list
-The instances and services list is located to the right side of the systems column.
+The instances and services list is located on the left side of the System Designer.
 * To view the services within an instance, click the arrow next to the instance name.
     * The list of services displays below the instance name.
 * To view the contents of an instance in the canvas, click the instance name.
