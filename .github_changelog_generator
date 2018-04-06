@@ -1,0 +1,7 @@
+add_issues_wo_labels=false
+add_pr_wo_labels=false
+enhancement_prefix=**Added features:**
+include_labels=bug,enhancement,deprecated,removed,security,breaking,change,add
+header=# Changelog
+breaking_labels=change,Change
+breaking_prefix=**Possibly breaking changes:**
