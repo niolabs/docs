@@ -1,7 +1,12 @@
 add_issues_wo_labels=false
 add_pr_wo_labels=false
-enhancement_prefix=**Added features:**
-include_labels=bug,enhancement,deprecated,removed,security,breaking,change,add
+include_labels=change/added,change/changed,change/fixed,change/deprecated,change/removed,change/security
 header=# Changelog
-breaking_labels=change,Change
+breaking_labels=change/changed
 breaking_prefix=**Possibly breaking changes:**
+enhancement_labels=change/added
+enhancement_prefix=**Added:**
+bug_labels=change/fixed
+deprecated_labels=change/deprecated
+removed_labels=change/removed
+security_labels=change/security
