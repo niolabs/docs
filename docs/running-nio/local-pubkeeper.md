@@ -4,7 +4,7 @@ Sometimes you don't want to have to connect to the managed Pubkeeper server in t
 
 ## Installation
 
-If your nio license supports it, you may download a Python wheel from your [binary download page](https://account.n.io/binaries/download). This wheel contains the necessary libraries to run the Pubkeeper server.
+If your nio license supports it, you may download a Pubkeeper Server Python wheel from your [binary download page](https://account.n.io/binaries/download). This wheel contains the necessary libraries to run the Pubkeeper server.
 
 Install it like any other wheel, with pip:
 
