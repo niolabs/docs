@@ -19,24 +19,13 @@ Systems are created in the System Designer to contain instances (running install
 
 <img class="right border" src="/img/cloud/Hello-CreateNewSystem.gif" width="250" />
 
-From the **System Designer** (https://app.n.io/design), you can create a new system in two ways.
-  * If this is your first time opening the System Designer, the **create new system** modal window displays automatically.
-  * If it doesn't open automatically, click the **`+`** button in the lower-left corner of the designer.
-
-
-Complete the **create new system** modal:
+1. From the **System Designer** (https://app.n.io/design), click the **add new system** card to create a new nio system.
+1. Complete the **create new system** modal:
   * In the **system name** box, enter a name for your system.
   * In the **template** dropdown, you can keep the default blank system or select a system template.
   * Click **accept**.
 
   ####&nbsp;
-
-> **[info] System names**
->
-> The System Designer automatically creates an abbreviation for each system name.
->
-> Tip: try using an acronym for your system name.
-
 
 ### System edit, share, delete
 

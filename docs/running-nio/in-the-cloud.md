@@ -13,15 +13,14 @@ You can also choose to start with one of our [system templates](https://workshop
 ---
 
 ## Create a system
-<img class="right border" src="/img/cloud/Hello-CreateNewSystem.gif" width="250" />
+<img class="right border" src="/img/cloud/add-system.png" width="250" />
 
 A system is a group of interrelated elements. In the nio System Designer, a system contains interrelated nio instances. Think of it as a workspace where you can put related projects.
 1. Open the **System Designer**: https://app.n.io/design.
-1. You can create a new system in two ways:
-  * If this is your first time opening the System Designer, the **create new system** modal window displays automatically.
-  * If it doesn't open automatically, click the **`+`** button in the lower-left corner of the System Designer.
+1. Click the **add new system** card on the screen.
 1. Complete the **create new system** modal:
   1. In the **system name** box, enter a name for your system.
+  <img class="right border" src="/img/cloud/Hello-CreateNewSystem.gif" width="250" />
   2. In the **template** dropdown, you can keep the default blank system or select a system template.
   1. Click **accept**.
 
