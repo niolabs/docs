@@ -112,13 +112,13 @@ To send data with your request, you need to include the data's Content-Type in y
 
 In the request body, if you need to include data, add body data to a curl request with the `-d` or `--data` flag.
 
-    -d '{"type": "LoggerBlock", "name": "Log"}'
+    -d '{"type": "Logger", "name": "Log"}'
 
-    --data '{"type": "LoggerBlock", "name": "Log"}'
+    --data '{"type": "Logger", "name": "Log"}'
 
 
 ### Putting it all together
 
 A typical curl request to the nio API incorporating all these parts follows:
 
-    curl -XPOST 'http://localhost:8181/blocks' --user 'Admin:Admin' --data '{"type": "LoggerBlock", "name": "Log"}' -H 'Content-Type: application/json'
+    curl -XPOST 'http://localhost:8181/blocks' --user 'Admin:Admin' --data '{"type": "Logger", "name": "Log"}' -H 'Content-Type: application/json'

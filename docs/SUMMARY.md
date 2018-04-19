@@ -10,6 +10,7 @@
   * [In a nio-Managed Cloud](/running-nio/in-the-cloud.md)
   * [Locally](/running-nio/locally.md)
     * [With command line and Git](/running-nio/manually.md)
+    * [With a local Pubkeeper server](/running-nio/local-pubkeeper.md)
   * [In a Docker Container](/running-nio/docker.md)
   * [In Production](/running-nio/long-running.md)
 * [Deploy nio](/deployment/README.md)
