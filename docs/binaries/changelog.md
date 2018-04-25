@@ -1,6 +1,17 @@
 # nio binary changelog
 
 ----
+## 20180425
+
+### New features
+- nio framework to use id for services and blocks
+- Backwards compatibility: an id will be generated if has none
+- updated `component_log_api` to be able to query by id
+
+### Potentially breaking changes
+- execution / receiver / mappings to use `id` rather than `name`
+
+----
 ## 20180309
 
 **Potentially breaking changes**<br>
