@@ -4,7 +4,10 @@ The `newblock` command creates a custom block from the official [block template]
 
 This command should be run from the `blocks/` directory of your nio project.
 
-Example:
+---
+
+## Example:
+
 ```bash
 nio newblock my_block
 ```

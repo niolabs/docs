@@ -4,7 +4,10 @@ The `clone services` command creates a copy of one nio service configuration. Th
 
 This command must be run from the root level of your nio project directory.
 
-Example:
+---
+
+## Example:
+
 ```bash
 nio clone service simulate-and-log simulate-and-log2
 ```
