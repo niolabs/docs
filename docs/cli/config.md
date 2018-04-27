@@ -8,7 +8,10 @@ The `project` option of this command must be run from the root level of your nio
 
 The `blocks` and `services` option of this command will default for instances running on port 8181. The `-p` flag can be used to list block or service configurations from instances on other ports.
 
-Example (blocks):
+---
+
+## Example (blocks):
+
 ```bash
 nio cfg blocks Simulate
 ```
@@ -27,7 +30,10 @@ returns the following JSON:
 }
 ```
 
-Example (services):
+---
+
+## Example (services):
+
 ```bash
 nio cfg services simulate-and-log
 ```
@@ -61,7 +67,10 @@ returns the following JSON:
 }
 ```
 
-Example (project):
+---
+
+## Example (project):
+
 ```bash
 nio cfg project
 ```

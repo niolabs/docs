@@ -6,7 +6,10 @@ This command must be run from the root level of your nio project directory.
 
 Multiple blocks can be specified by listing them with spaces.
 
-Example:
+---
+
+## Example:
+
 ```bash
 nio add web_handler
 ```
