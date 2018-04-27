@@ -31,6 +31,7 @@
     * [Documenting Your Block](/blocks/block-development/documenting.md)
     * [Base Block Pattern](/blocks/block-development/block-patterns.md)
     * [The nio Framework](/blocks/block-development/framework.md)
+    * [Framework Changelog](/blocks/block-development/framework-changelog.md)
     * [Mixins](/blocks/block-development/mixins.md)
 * [Services](/services/README.md)
   * [Service Testing](/services/service-testing.md)
