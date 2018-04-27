@@ -6,12 +6,18 @@ This command can be run from anywhere to shut down a currently running nio insta
 
 This command will default for instances running on port 8181. The `-p` flag can be used to shutdown instances on other ports.
 
+---
 
-Example:
+## Example:
+
 ```bash
 nio shutdown
 ```
-Example (port `8282`):
+
+---
+
+## Example (port `8282`):
+
 ```bash
 nio shutdown -p 8282
 ```

@@ -1,6 +1,8 @@
 # Running a Local Pubkeeper Server
 
-Sometimes you don't want to have to connect to the managed Pubkeeper server in the cloud but rather run and connect to one on your local network. This allows for the design of fully offline systems that do not require an internet connection. 
+Sometimes you don't want to have to connect to the managed Pubkeeper server in the cloud but rather run and connect to one on your local network. This allows for the design of fully offline systems that do not require an internet connection.
+
+---
 
 ## Installation
 
@@ -13,6 +15,8 @@ pip install pubkeeper.server.core-1.1.3-py3-none-any.whl
 ```
 
 This will make the `pubkeeper.server.core` library available in your Python environment. Contact support if your installation fails.
+
+---
 
 ## Running the Server Standalone
 
@@ -32,6 +36,8 @@ pk_server
 ```
 
 This will launch a Pubkeeper server on port 9898 using the [Internal Auth Module](https://docs.pubkeeper.com/python-server/auth/internal.html) that will only accept clients using the token specified in the conf file. More details about running the Pubkeeper server in a standalone mode can be found on [the Pubkeeper documentation pages](https://docs.pubkeeper.com/python-server/).
+
+---
 
 ## Running the Server in the nio Instance
 
