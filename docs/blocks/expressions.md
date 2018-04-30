@@ -52,7 +52,7 @@ The new output signal will be `{"plus_one": 2, "sim": 1}`.
 
 ### Create attributes
 
-<img class="right border" src="/img/expressions/string-input.png" width="250"/>
+<img class="right border" src="/img/expressions/string.png" width="250"/>
 
 Anything typed directly into a field is stored in the signal as a string:  `{"string": "this is a string"}`.
 
