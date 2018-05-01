@@ -237,18 +237,3 @@ Icon                      |Label             | Description      |
 1. Double-click the block to view the block configuration modal.
 1. Enter the required parameters.
 1. Click **accept**.
-
----
-
-## Additional resources
-
-In the upper-right corner next to your name, a navigation menu provides links to other helpful resources.
-
-<img class="left" src="/img/tasks/helpoptions.png" />
-
-  * [**docs**](https://docs.n.io)—reference documentation
-  * [**blocks**](https://blocks.n.io)—information about all the nio blocks
-  * [**workshops**](https://workshops.n.io)—self-paced tutorials
-  * [**support**](https://account.n.io/support)—FAQs and contact form
-  * [**forum**](https://forum.n.io)—interact with other nio users
-  * [**account**](https://account.n.io/settings)—edit your profile
