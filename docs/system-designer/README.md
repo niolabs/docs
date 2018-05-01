@@ -26,7 +26,7 @@ The instances and services list is located on the left side of the System Design
 The breadcrumb is located at the top of the System Designer.
 * As you navigate from system to service, the breadcrumb allows you to easily identify your location in the system.
 
-<img class="left" src="/img/cloud/hierarchy.gif" width="600" />
+<img class="left" src="/img/cloud/breadcrumb.gif" width="600" />
 
 ### Contextual toolbar
 The contextual toolbar is located underneath the breadcrumb.

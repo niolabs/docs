@@ -30,25 +30,26 @@ A system is a group of interrelated elements. In the nio System Designer, a syst
 
   > **[info] <span class="allow-caps">Pubkeeper</span> server credentials**
   >
+  > <img class="right border" src="/img/cloud/editSystem.png" width="250" />
   > To access your **Pubkeeper** credentials:
-  > 1. Click on your system's name on the leftmost side of the System Designer.
-  > 1. Click the **edit** button in the contextual toolbar above the canvas.
-  > 1. Your **Pubkeeper** configuration details will be shown in the modal window.
+  > 1. In the app switcher on the left side of the System Designer, click the **design** app icon.
+  > 1. You can see the configuration of the cloud Pubkeeper server if you hover over a system card and click the **edit** icon in the toolbar.
 
 ---
 
 ## Create a nio-managed cloud instance
 
+<img class="right shadow" src="/img/cloud/addInstanceButton.png" width="200" />
+
 A cloud instance is a running version of nio that is installed in the cloud and managed by niolabs.
 
-<img class="right border" src="/img/cloud/Hello-CreateCloudInstance.png" width="250" />
-
-1. In your system's toolbar, click **create cloud instance**.
-1. Complete the **create cloud instance** window.
+1. From within your system, click **add instance** on the left side of the System Designer.
+<img class="right border" src="/img/cloud/addInstance.png" width="250" />
+1. Check the **cloud instance** checkbox if it is not checked automatically.
+1. Complete the **add instance** window.
   1. In the **instance name** box, enter a name for your instance.
   1. Click **accept**.
 
-<br>
 <br>
 
 Congratulations, you've set up a cloud instance!

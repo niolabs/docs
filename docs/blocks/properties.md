@@ -4,7 +4,7 @@ Block properties are the configuration fields of a block.
 
 In the nio System Designer, when you double-click a block, the configuration panel displays the block's properties.
 
-<img class="right display" src="/img/modifier-block-config.png" width="225" />
+<img class="right shadow" src="/img/blocks/modifier-block-config.png" width="225" />
 As an example, the configuration panel for a _Modifier_ block is shown at the right. It displays four properties of the _Modifier_ block:
 - **Exclude existing fields**
 - **Fields**
@@ -37,7 +37,7 @@ The different types of inputs in the configuration panel represent different pro
 - **TimeDeltaProperty**<br>Requires integer values in minutes, seconds, and milliseconds.
 - **VersionProperty**<br>Specifies the version of the block type. It represents the block’s version when this configuration was created. One should only update the version property of a block configuration once they have updated a block’s version and have confirmed that the block configuration works with the new version of the block.
 
-Some properties can take any type of input while others require specific types of input. The IntProperty can only take integers while the SelectProperty requires a selection from a specific list. If your property input is filled with the incorrect type of content, your block will not configure and your service will not run.
+Some properties can take any type of input while others require specific types of input. The IntProperty can only take integers while the SelectProperty requires a selection from a specific list. If your property input is filled with the incorrect type of content, your block will not configure and your service will not start.
 
 For more information on applying these properties, please feel free to check out our GitHub repository for the nio framework <https://github.com/niolabs/nio/tree/master/nio/properties>.
 
