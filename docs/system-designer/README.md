@@ -18,8 +18,8 @@ The systems cards are shown on the first screen in the System Designer.
 * To create a system, click the **add new system** card.
 * Learn more about [systems](/systems).
 
-### App selector
-The leftmost column shows the app selector and allows you to switch between apps. To access your systems in the System Designer, click the design icon in the app selector. If your license includes monitoring, you can view the system monitoring tool by clicking the monitor icon.
+### App switcher
+The leftmost column shows the app switcher that enables you to switch between applications. To access your systems in the System Designer, click the design icon in the app selector. If your license includes monitoring, you can view the system monitoring tool by clicking the monitor icon.
 
 ### Instances and services list
 The instances and services list is located on the left side of the System Designer.
