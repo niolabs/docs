@@ -2,7 +2,7 @@
 
 While the true power of the nio Platform is experienced when you have multiple [local installations](/running-nio/locally.md) communicating across a distributed network, we also offer the ability to spin up nio-managed cloud instances through the **nio System Designer**.
 
-A nio-managed cloud instance allows you to get up and running quickly and to start building services right away (although our local installation process usually only takes 5 minutes!).
+A nio-managed cloud instance allows you to get up and running quickly and to start building services right away.
 
 You can also choose to start with one of our [system templates](https://workshops.n.io/system-templates) to quickly explore and configure annotated, pre-built systems.
 
@@ -34,6 +34,8 @@ A system is a group of interrelated elements. In the nio System Designer, a syst
   > To access your **Pubkeeper** credentials:
   > 1. In the app switcher on the left side of the System Designer, click the **design** app icon.
   > 1. You can see the configuration of the cloud Pubkeeper server if you hover over a system card and click the **edit** icon in the toolbar.
+  > <br>
+  > <br>
 
 ---
 

@@ -10,7 +10,7 @@ nio projects can be defined as files in a file system. Git permits you to use a 
 ---
 ## Different environments
 
-You should use staging and other test environments to run nio projects outside of production. Using nio environment variable files is a good way to achieve this. For example, your project could have two configuration variable files each defining a `[user_defined]` entry `stage.conf` and `prod.conf` that define how the nio Platform should run in the respective environment. You can run nio using a different environment variable by using the `-s` flag of `niod`.
+You should use staging and other test environments to run nio projects outside of production. Using nio environment variable files is a good way to achieve this. For example, your project could have two configuration variable files, `stage.conf` and `prod.conf`, each containing a `[user_defined]` entry  that defines how the nio Platform should run in the respective environment. You can run nio using a different environment variable by using the `-s` flag of `niod`.
 
 ```
 niod -s stage.conf
