@@ -64,13 +64,14 @@ nohup niod -r path/to/my_project 2>&1 > /dev/null &
 
 To manage your local instance, you need to add it to the **System Designer**:
 
+<img class="right shadow" src="/img/cloud/addInstanceButton.png" width="200" />
 1. Open the **nio System Designer** in a browser: http://app.n.io/design.
-1. Select your system in the left side nav.
-1. Click **create local instance**.
+1. Select your system card from the grid.
+1. Click **add instance** on the left side of your screen.
+<img class="right border" src="/img/addLocalInstance.png" width="250" />
+  * Check the **local instance** checkbox.
   * In the **instance name** box, enter an instance name.
-  * In the **hostname** box, enter **localhost**.
-  * In the **port** box, enter **8181**.
-  * Leave the **access mode** as **basic**.
+1. The rest of the text inputs will be pre-filled with default values that you may edit if necessary.
 1. Click **accept**.
 
 

@@ -29,20 +29,17 @@ Systems are created in the System Designer to contain instances (running install
 
 ### System edit, share, delete
 
-Once you create a nio system, you can enter the system context by clicking either the system in the system list, the system name at the top of the navigation list, or the system name in the breadcrumb.
+Once you create a nio system, you can edit, share or delete that system by clicking the **design** icon in the app switcher.
 
-<img class="left" src="/img/cloud/Hello-SelectSystemCreateInstancePoint.png" width="600" />
+<img class="left" src="/img/tasks/designApp.png" width="500" />
 
-
-In the system context you will see the system toolbar that can perform the following tasks:
-
-<img class="left" src="/img/Toolbar-System.gif" height="75" />
+When you hover over each system card, you will see the system toolbar that can perform the following tasks:
 
   Icon                      |Label             | Description      |
   --------------------------|------------------|------------------|
-  ![](/img/IconEdit.gif)    |edit              | Edit system name. View Pubkeeper configuration information.
-  ![](/img/IconShare.gif)   |share             | Share system. This option is only available to teams within an organization. Read more information about system sharing [here](/organizations/management.md#sharing).
-  ![](/img/IconDelete.gif)  |delete            | Delete system. Instances must be deleted first.
+  ![](/img/tasks/CardEdit.png)    |edit              | Edit system name. View Pubkeeper configuration information.
+  ![](/img/tasks/CardShare.png)   |share             | Share system. This option is only available to teams within an organization. Read more information about system sharing [here](/organizations/management.md#sharing).
+  ![](/img/tasks/CardDelete.png)  |delete            | Delete system. Instances must be deleted first.
 
 ---
 
@@ -54,28 +51,27 @@ Instances are created inside a system and contain services.
 
 ### Create an instance in the cloud
 
-To enter the system context, select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
+To enter the system context, select the system card from the grid or click the breadcrumb.
 <br>
-<img class="right border" src="/img/tasks/createcloudinstance.png" width="250" /><img class="left" src="/img/cloud/Hello-SelectSystemCreateInstancePoint.png" width="500" />
-1. Click **create cloud instance**.
-1. Complete the **create cloud instance** modal:
+<img class="right border" src="/img/cloud/addInstance.png" width="250" /><img class="left" src="/img/tasks/selectSystem.png" width="500" />
+1. Click **add instance**.
+1. Check the **cloud instance** checkbox.
+1. Complete the **add instance** modal:
   * In the **instance name** box, enter a meaningful name.
 1. Click **accept**.
 
-
 ### Connect to a local instance
 
-To enter the system context, select the name of your system in the left navigation panel or on the breadcrumb above the contextual toolbar.
+To enter the system context, select the system card from the grid or click the breadcrumb.
 <br>
-<img class="right border" src="/img/tasks/createlocalinstance.png" width="250" />
-<img class="left" src="/img/cloud/Hello-SelectSystemCreateInstancePoint.png" width="500" />
+<img class="right border" src="/img/addLocalInstance.png" width="250" />
+<img class="left" src="/img/tasks/selectSystem.png" width="500" />
 
-1. Click **create local instance**.
-1. Complete the **create local instance** modal:
+1. Click **add instance**.
+1. Check the **local instance** checkbox.
+1. Complete the **add instance** modal:
   * **instance name**: enter a meaningful name.
-  * **hostname**: enter the hostname for the instance.
-  * **port**: enter the port number configured on the instance.
-  * **access mode**: leave as **basic**.
+1. The rest of the text inputs will be pre-filled with default values that you may edit if necessary.
 1. Click **accept**.
 
 <br>
@@ -86,9 +82,9 @@ To enter the system context, select the name of your system in the left navigati
 
 ### Instance edit, save, delete
 
-Once you create an instance, you can enter the instance context by clicking the instance name in the instance list or in the breadcrumb.
+Once you create an instance, you can enter the instance context by clicking the instance name in the instance list or in the breadcrumb above the contextual toolbar.
 
-<img class="left" src="/img/cloud/Hello-SelectInstancePoint.png" width="600" />
+<img class="left" src="/img/tasks/selectInstance.png" width="600" />
 
 In the instance context you will see the the instance toolbar and can perform the following tasks:
 
@@ -126,15 +122,14 @@ Services are created inside an instance and contain blocks.
 
 Select the name of the instance in the left navigation panel or on the breadcrumb above the contextual toolbar.
 <br>
-<img class="right border" src="/img/tasks/createnewservice.png" width="250" />
-<img class="left" src="/img/cloud/Hello-SelectInstancePoint.png" width="500" />
+<img class="right border" src="/img/tasks/createService.png" width="250" />
+<img class="left" src="/img/tasks/selectInstance.png" width="500" />
 
 1. Click **create new service**.
 1. Complete the **create new service** modal:
   * In the **service name** box, enter a meaningful name.
   * Leave the **service type** as **Service**.
 1. Click **accept**.
-1. Click **save** in the toolbar.
 
 > **[info] Service names**
 >
@@ -161,6 +156,8 @@ Icon                      |Label             | Description      |
 
 
 ### Connect/disconnect blocks
+
+<img class="right shadow" src="/img/JoinUnjoin.gif" width="250"/>
 
 The signal paths between blocks are part of the service-level configuration. If you change the connections between your blocks, you will need to save your service in the service toolbar.
 
@@ -189,13 +186,12 @@ To view the logger panel, click anywhere on the canvas to deselect the blocks an
 
 Click the service name in the service list or on the breadcrumb above the contextual toolbar to enter the service context.
 
-<img class="left" src="/img/cloud/Hello-SelectInstanceName.png" width="600" />
+<img class="left" src="/img/tasks/selectService.png" width="600" />
 
 In the **block library** search box, enter a block type name.
 
 
 <img class="left" src="/img/BlockLibrary.gif" />
-
 
   > **[info] Block library tabs**
   >
@@ -206,12 +202,11 @@ In the **block library** search box, enter a block type name.
   > * The **configured** tab contains blocks that have already been installed, named, and configured.
 
 1. Drag the block type to the canvas.
-1. In the **block name** box, enter a meaningful name and click **accept**.
-<img class="left border" src="/img/cloud/Hello-CreateBlockSimulate.png" width="250" />
+1. In the **name** box, enter a meaningful name and click **accept**.
 
 > **[info] Block names**
 >
-> Block names cannot be edited after creation.
+> In nio versions less than 3.0, block names cannot be edited after creation.
 >
 > Block names cannot contain the following characters: `*  |  \ /  :  ”  <> / ?`
 
@@ -242,18 +237,3 @@ Icon                      |Label             | Description      |
 1. Double-click the block to view the block configuration modal.
 1. Enter the required parameters.
 1. Click **accept**.
-
----
-
-## Additional resources
-
-In the upper-right corner next to your name, a navigation menu provides links to other helpful resources.
-
-<img class="left" src="/img/tasks/helpoptions.png" />
-
-  * [**docs**](https://docs.n.io)—reference documentation
-  * [**blocks**](https://blocks.n.io)—information about all the nio blocks
-  * [**workshops**](https://workshops.n.io)—self-paced tutorials
-  * [**support**](https://account.n.io/support)—FAQs and contact form
-  * [**forum**](https://forum.n.io)—interact with other nio users
-  * [**account**](https://account.n.io/settings)—edit your profile
