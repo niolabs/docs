@@ -190,7 +190,6 @@ Click the service name in the service list or on the breadcrumb above the contex
 
 In the **block library** search box, enter a block type name.
 
-
 <img class="left" src="/img/BlockLibrary.gif" />
 
   > **[info] Block library tabs**
@@ -202,7 +201,7 @@ In the **block library** search box, enter a block type name.
   > * The **configured** tab contains blocks that have already been installed, named, and configured.
 
 1. Drag the block type to the canvas.
-1. In the **name** box, enter a meaningful name and click **accept**.
+1. In the block configuration window, fill out any of the block properties you need and click **accept**.
 
 > **[info] Block names**
 >

@@ -15,7 +15,7 @@ The input fields are block properties that can be edited, updated, and saved to 
 
 The property configuration of the block makes it unique. A **block type name**—_Filter_, _Modifier_, _CounterIntervalSimulator_—defines the block type and the configurable fields. (In the System Designer, this name is abbreviated in a vertical bar on the left side of the block.)
 
-The unique **block name**, which you define when dragging a new instance of the block type onto the canvas of the System Designer, saves a specific configuration of the block and defines how the block acts on signals. All blocks with the same **block name** share a configuration. For example, if you change the configuration of your **Is Watering** _Filter_ block, the configuration of every **Is Watering** block will be be updated to match. The unique **block name** is the link to a block's property configuration. For this reason, it is good to give your blocks descriptive names that reflect their configured properties.
+The unique **block id**, which is created for you when dragging a new instance of the block type onto the canvas of the System Designer, saves a specific configuration of the block and defines how the block acts on signals. All blocks with the same **block id** share a configuration. For example, if you change the configuration of your **Is Watering** _Filter_ block, the configuration of every **Is Watering** _Filter_ block will that you added from the **configured** tab of the **block library** will be be updated to match. The unique **block id** is the link to a block's property configuration. For this reason, it is best to give your blocks descriptive names that reflect their configured properties even though you can have multiple blocks with the same name.
 
 ---
 
