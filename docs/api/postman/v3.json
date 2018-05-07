@@ -70,6 +70,93 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Create Service",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/javascript"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"auto_start\": true,\n\t\"execution\": [],\n\t\"log_level\": \"NOTSET\",\n\t\"mappings\": [],\n\t\"name\": \"servicev2--1\",\n\t\"type\": \"Service\",\n\t\"version\": \"0.1.0\"\n}"
+						},
+						"url": {
+							"raw": "{{nio_url}}/services",
+							"host": [
+								"{{nio_url}}"
+							],
+							"path": [
+								"services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Stop Service",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{nio_url}}/services/{id}/stop",
+							"host": [
+								"{{nio_url}}"
+							],
+							"path": [
+								"services",
+								"{id}",
+								"stop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Start Service",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{nio_url}}/services/{id}/start",
+							"host": [
+								"{{nio_url}}"
+							],
+							"path": [
+								"services",
+								"{id}",
+								"start"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Service Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{nio_url}}/services/{{service_id}}/status",
+							"host": [
+								"{{nio_url}}"
+							],
+							"path": [
+								"services",
+								"{{service_id}}",
+								"status"
+							]
+						},
+						"description": "Gets the Service status including the process ID the service is running on"
+					},
+					"response": []
 				}
 			]
 		},
@@ -302,6 +389,31 @@
 							"path": [
 								"services_types",
 								"Service"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "project",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Blocks in Project",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{nio_url}}/project/blocks",
+							"host": [
+								"{{nio_url}}"
+							],
+							"path": [
+								"project",
+								"blocks"
 							]
 						}
 					},
@@ -554,9 +666,16 @@
 	],
 	"variable": [
 		{
-			"id": "0bd5e303-1973-417a-aacb-cdc2a7cb0e04",
+			"id": "89757978-2020-45ff-ae24-16f87080c66d",
 			"key": "nio_url",
 			"value": "http://localhost:8181",
+			"type": "string",
+			"description": ""
+		},
+		{
+			"id": "e68975ea-07fe-40e8-9e23-5cc67410f462",
+			"key": "service_id",
+			"value": "690275f8-78fb-44d7-84eb-bfdcf10101f6",
 			"type": "string",
 			"description": ""
 		}
