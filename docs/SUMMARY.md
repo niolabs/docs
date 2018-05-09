@@ -4,8 +4,10 @@
 
 * [Welcome](/README.md)
 * [Install nio](/installation/README.md)
-  * [On Windows](/installation/windows.md)
-  * [Supported Systems](/installation/supported-systems.md)
+  * [Windows](/installation/windows.md)
+  * [MacOS](/installation/mac.md)
+  * [Linux](/installation/linux.md)
+  * [Raspbian](/installation/rasp.md)
 * [Run nio](/running-nio/README.md)
   * [In a nio-Managed Cloud](/running-nio/in-the-cloud.md)
   * [Locally](/running-nio/locally.md)
