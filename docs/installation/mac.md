@@ -29,3 +29,10 @@ which niod
 If you don’t see a path to niod, make sure Python’s binary directory is on your PATH.
 
 >  [Set your PATH in MacOS](http://osxdaily.com/2014/08/14/add-new-path-to-path-command-line/).
+
+<br>
+>**MacOS Users**: While your system comes pre-installed with Python, it is an older version. When installing newer versions, Python may require that you install and trust a set of Root Certificates for its SSL package. That file is located at `/Applications/Python 3.x/Install Certificates.command`. Just double-click that file to complete the process. Check `/Applications/Python 3.x/ReadMe.rtf` for more details.
+
+>The error string you'll see will look something like this:
+
+>```WARNING:tornado.general:SSL Error on 7 ('x.x.x.x', 443): [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed```

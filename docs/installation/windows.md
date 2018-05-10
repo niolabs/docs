@@ -21,8 +21,10 @@ pip3 install -U ~/Downloads/nio_lite-XXXXXXXX-py3-none-any.whl
 ```
 You can test that nio is correctly installed by running the following command:
 ```
-which niod
+where niod
 ```
 If you don’t see a path to niod, make sure Python’s binary directory is on your PATH.
 
-> To update your PATH: [Windows](https://msdn.microsoft.com/en-us/library/aa922003.aspx)
+> Follow this link [to update your PATH in Windows](https://msdn.microsoft.com/en-us/library/aa922003.aspx)
+
+Once you have nio installed, you will need a project to run it against. Follow these instructions to [run nio locally](/running-nio/locally.md) in a project.
