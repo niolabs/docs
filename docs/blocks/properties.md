@@ -2,7 +2,11 @@
 
 Block properties are the configuration fields of a block.
 
-In the nio System Designer, when you double-click a block, the configuration panel displays the block's properties.
+A **block type name**—_Filter_, _Modifier_, _CounterIntervalSimulator_—defines the block type and the configurable fields. (In the System Designer, this name is abbreviated in a vertical bar on the left side of the block.)
+
+When you drag a new instance of a block type onto the canvas of the System Designer, you will see that block's available configuration fields.
+
+When you save your block, its configuration is saved and you can find that configured block under the **configured** tab of the block library. Each instance of a configured block will have a unique block ID that is visible under the name field.
 
 <img class="right shadow" src="/img/blocks/modifier-block-config.png" width="225" />
 As an example, the configuration panel for a _Modifier_ block is shown at the right. It displays four properties of the _Modifier_ block:
@@ -11,11 +15,6 @@ As an example, the configuration panel for a _Modifier_ block is shown at the ri
 - **Log Level**
 - **Version**
 
-The input fields are block properties that can be edited, updated, and saved to create a configured block.
-
-The property configuration of the block makes it unique. A **block type name**—_Filter_, _Modifier_, _CounterIntervalSimulator_—defines the block type and the configurable fields. (In the System Designer, this name is abbreviated in a vertical bar on the left side of the block.)
-
-The unique **block name**, which you define when dragging a new instance of the block type onto the canvas of the System Designer, saves a specific configuration of the block and defines how the block acts on signals. All blocks with the same **block name** share a configuration. For example, if you change the configuration of your **Is Watering** _Filter_ block, the configuration of every **Is Watering** block will be be updated to match. The unique **block name** is the link to a block's property configuration. For this reason, it is good to give your blocks descriptive names that reflect their configured properties.
 
 ---
 
