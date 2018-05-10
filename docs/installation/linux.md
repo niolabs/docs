@@ -1,10 +1,29 @@
 # Installing nio on <span class="allow-caps">Linux</span>
 
-The nio Platform requires a few basic dependencies for local installation.
-
-{% include "/includes/install-requirements.md" %}
-> **GCC**
+Your Linux setup should include the following:
+> **[info] <span class="allow-caps">Linux</span> System Requirements**
+>
+> **Kernel 3.0**
+>
+> **GCC** compiler
 >
 > **APT** or similar package manager
 
-A Linux distribution that includes a modern kernel (Version 3.0 or above), with GCC and a package manager (like APT) pre-installed. This expedites the installation/setup process for our Python binary.
+The nio Platform requires a few basic dependencies for local installation.
+{% include "/includes/basic-requirements.md" %}
+
+You will also need the following, provided by nio:
+{% include "/includes/nio-requirements.md" %}
+
+---
+## Installation
+
+Open a terminal and install nio using Python’s pip3 installer (verify the filepath and binary filename below—the `X`s represent the date of the binary in YYYYMMDD format):
+```
+pip3 install -U ~/Downloads/nio_lite-XXXXXXXX-py3-none-any.whl
+```
+You can test that nio is correctly installed by running the following command:
+```
+which niod
+```
+If you don’t see a path to niod, make sure Python’s binary directory is on your PATH.
