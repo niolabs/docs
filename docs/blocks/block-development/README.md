@@ -12,7 +12,12 @@ You can adopt one of two philosophies when creating a block:
 
 ## Add a custom block to the <span class="allow-caps">System Designer</span>
 
-Your custom blocks can be manually installed for local use in the nio System Designer by adding them to your project's `blocks/` directory as a submodule with the
+<img class="right shadow" src="/img/blocks/custom-block-button.png" width="225" />
+Your custom blocks can be added to your nio instance from within the nio System Designer. To add a custom block, click on the **custom** block template under the **available** tab in the **block library**. Enter the custom block's repository link in the modal and click **accept**. The block will now show up under the **installed** tab of the **block library**.
+
+### Manually install custom blocks
+
+Custom blocks can also be manually installed for local use in the nio System Designer by adding them to your project's `blocks/` directory as a submodule with the
 ```
 git submodule add [repository link]
 ```
