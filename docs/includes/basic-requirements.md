@@ -5,7 +5,7 @@
 >    Visit the [Python downloads page](https://www.python.org/downloads/) to download Python.
 
 > **Pip**<br />
->    Pip is a package management system built for software written in Python. It already comes with Python3 >= 3.4, but it's a good bet you will need to update to the most recent version.<br />
+>    Pip is a package management system built for software written in Python. We recommend updating to the most recent version of Pip.<br />
 >    Update to the most recent version here: [pip.pypa.io/en/stable/installing/](https://pip.pypa.io/en/stable/installing/).
 
 > **Git**<br />
