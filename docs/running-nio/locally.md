@@ -4,27 +4,43 @@
 >
 >* **The nio Platform installed on your device**: follow the [installation instructions](/installation)
 
+
+The command to run nio locally is `niod`. This will start running a nio instance on your machine. Run this command from the root of a project directory.
+
 ---
 ## Create a project
+The easiest way to create and run a new nio project is to first create a new local instance in the System Designer and then copy and run the `nio new` command containing your system's Pubkeeper credentials.
 
-Projects are collections of services, blocks, and configurations. Create a nio folder to keep things tidy:
+<img class="right shadow" src="/img/cloud/addInstanceButton.png" width="200" />
+1. Open the **nio System Designer** in a browser: http://app.n.io/design (note the http protocol for local instances without SSL certificates).
+1. Select your system card from the grid.
+1. Click **add instance** on the left side of your screen.
+<img class="right border" src="/img/addLocalInstance.png" width="250" />
+  * Check the **local instance** checkbox.
+  * In the **instance name** box, enter an instance name.
+1. The rest of the text inputs will be pre-filled with default values that you may edit if necessary.
+1. At the bottom, copy the nio-cli command that will create your project with the correct Pubkeeper credentials.
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+Back in your terminal, paste the command to create your project.
+
 ```
-mkdir -p nio/projects && cd nio/projects
-```
-Use the nio CLI (Command Line Interface) to create a new project named "my_project":
-```
-nio new my_project
+nio new LocalInstance --pubkeeper-hostname xxxxx.pubkeeper.nio.works --pubkeeper-token xxxxxxxx
 ```
 
-You will be prompted for you Pubkeeper credentials. Obtain your Pubkeeper hostname and token from the [System Designer](http://app.n.io/design) in the edit modal for your system as explained here: [docs.n.io/running-nio/in-the-cloud.html#pk-credentials](/running-nio/in-the-cloud.md#pk-credentials).
-
----
-## Start your project
-
-The command to run nio locally is `niod`. This will start running a nio instance on your machine. This command requires that you run it from the root of your project directory.
-
+Then navigate into your new project directory
 ```
-cd my_project && niod
+cd LocalInstance
+```
+and run nio:
+```
+niod
 ```
 Log messages should display, similar to the following output. There should be no errors.
 
@@ -41,28 +57,12 @@ NIO [INFO] Component: ServiceManager status changed from: starting to: started
 
 If you see those logs, nio is up and running. Congratulations!
 
->By default, new projects use port 8181. If port 8181 isn’t available, you'll see an error. Change the NIOPORT value in your project's `nio.conf` file under the `[user_defined]` section to fix this error.
-
->**MacOS Users**: While your system comes pre-installed with Python, it is an older version. When installing newer versions, Python may require that you install and trust a set of Root Certificates for its SSL package. That file is located at `/Applications/Python 3.x/Install Certificates.command`. Just double-click that file to complete the process. Check `/Applications/Python 3.x/ReadMe.rtf` for more details.
-
->The error string you'll see will look something like this:
-
->```WARNING:tornado.general:SSL Error on 7 ('x.x.x.x', 443): [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed```
-
-`niod` can be run from outside of a project directory by using the `-r` flag and specifying the location of the project directory. For example:
-
-```
-niod -r path/to/my_project
-```
-You can run a project in the background on MacOS and Linux using `nohup` (so you can close your terminal):
-```
-nohup niod -r path/to/my_project 2>&1 > /dev/null &
-```
+>By default, new projects use port 8181. If port 8181 isn’t available, you'll see an error. The value of NIOPORT in your project's `nio.conf` file under the `[user_defined]` section and the port for your local instance in the System Designer should match.
 
 ---
-## Add the instance to the <span class="allow-caps">System Designer</span>
+## Add an existing local instance/project to the <span class="allow-caps">System Designer</span>
 
-To manage your local instance, you need to add it to the **System Designer**:
+You can also add an existing local instance to the **System Designer**. Make sure your local instance is running.
 
 <img class="right shadow" src="/img/cloud/addInstanceButton.png" width="200" />
 1. Open the **nio System Designer** in a browser: http://app.n.io/design.
@@ -75,11 +75,18 @@ To manage your local instance, you need to add it to the **System Designer**:
 1. Click **accept**.
 
 
-When the System Designer connects to a nio instance, it communicates with that instance directly from your browser via an XHR request. Hostnames like `localhost` and other internal IP addresses will work. You must have access to the localhost or other IP address from your machine to use the System Designer.
+When the System Designer connects to a nio instance, it communicates with that instance directly from your browser via an XHR request. Hostnames like `localhost` and other internal IP addresses will work. **You must have access to the localhost or other IP address from your machine to use the System Designer.**
+<br>
+<br>
+<br>
+
+
+---
+## http
+#### {#http}
 
 You may see an issue regarding HTTPS and HTTP instances.
 
-#### {#http}
 
 > **[info] security error?**
 >
@@ -90,6 +97,23 @@ You may see an issue regarding HTTPS and HTTP instances.
 Once your instance is loaded and available, you can add services and blocks in the same manner as a [cloud instance](https://workshops.n.io/system-designer/).
 
 Available nio Blocks can be explored in the nio [Block Library](https://blocks.n.io) where you will find a summary of the block's purpose, a list of its properties, commands, inputs, and outputs, and a link to the block code repository.
+
+---
+## Run nio from outside the project directory
+
+`niod` can be run from outside of a project directory by using the `-r` flag and specifying the location of the project directory. For example:
+
+```
+niod -r path/to/my_project
+```
+
+---
+## Run in the background
+
+You can run a project in the background on MacOS and Linux using `nohup` (so you can close your terminal):
+```
+nohup niod -r path/to/my_project 2>&1 > /dev/null &
+```
 
 ---
 ## View your logs

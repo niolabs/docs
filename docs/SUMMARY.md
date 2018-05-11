@@ -3,11 +3,6 @@
 * Introduction
 
 * [Welcome](/README.md)
-* [Install nio](/installation/README.md)
-  * [Windows](/installation/windows.md)
-  * [MacOS](/installation/mac.md)
-  * [Linux](/installation/linux.md)
-  * [Raspbian](/installation/rasp.md)
 * [Run nio](/running-nio/README.md)
   * [In a nio-Managed Cloud](/running-nio/in-the-cloud.md)
   * [Locally](/running-nio/locally.md)
@@ -15,6 +10,11 @@
     * [With a local Pubkeeper server](/running-nio/local-pubkeeper.md)
   * [In a Docker Container](/running-nio/docker.md)
   * [In Production](/running-nio/long-running.md)
+* [Install nio](/installation/README.md)
+  * [Windows](/installation/windows.md)
+  * [MacOS](/installation/mac.md)
+  * [Linux](/installation/linux.md)
+  * [Raspbian](/installation/rasp.md)
 * [Deploy nio](/deployment/README.md)
 * [System Designer](/system-designer/README.md)
   * [Reference](/system-designer/designer-tasks.md)

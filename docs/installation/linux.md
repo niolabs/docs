@@ -5,7 +5,7 @@ Your Linux setup should include the following:
 >
 > **Kernel 3.0**
 >
-> **GCC** compiler
+> **GCC** or similar C compiler
 >
 > **APT** or similar package manager
 
@@ -27,3 +27,5 @@ You can test that nio is correctly installed by running the following command:
 which niod
 ```
 If you don’t see a path to niod, make sure Python’s binary directory is on your PATH.
+
+Once you have nio installed, you will need a project to run it against. Follow these instructions to [create a project](/running-nio/locally.md) and run nio.
