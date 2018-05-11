@@ -5,7 +5,7 @@ Your Mac should include the following:
 >
 > **Version 10.9, Maverick, or above**
 >
-> **A C compiler** such as Clang, available by installing [XCode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
+> **Clang** or similar C compiler, available by installing [XCode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
 >
 
 The nio Platform requires a few basic dependencies for local installation.
@@ -29,6 +29,8 @@ which niod
 If you don’t see a path to niod, make sure Python’s binary directory is on your PATH.
 
 >  [Set your PATH in MacOS](http://osxdaily.com/2014/08/14/add-new-path-to-path-command-line/).
+
+Once you have nio installed, you will need a project to run it against. Follow these instructions to [create a project](/running-nio/locally.md) and run nio.
 
 <br>
 >**MacOS Users**: While your system comes pre-installed with Python, it is an older version. When installing newer versions, Python may require that you install and trust a set of Root Certificates for its SSL package. That file is located at `/Applications/Python 3.x/Install Certificates.command`. Just double-click that file to complete the process. Check `/Applications/Python 3.x/ReadMe.rtf` for more details.

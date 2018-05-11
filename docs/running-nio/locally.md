@@ -19,20 +19,27 @@ The easiest way to create and run a new nio project is to first create a new loc
   * Check the **local instance** checkbox.
   * In the **instance name** box, enter an instance name.
 1. The rest of the text inputs will be pre-filled with default values that you may edit if necessary.
-1. At the bottom, you can copy the nio-cli command that will create your project with the correct Pubkeeper credentials.
-1. Click **accept**.
+1. At the bottom, copy the nio-cli command that will create your project with the correct Pubkeeper credentials.
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+
 Back in your terminal, paste the command to create your project.
 
 ```
 nio new LocalInstance --pubkeeper-hostname xxxxx.pubkeeper.nio.works --pubkeeper-token xxxxxxxx
 ```
 
-Then navigate into your new project directory and run nio:
+Then navigate into your new project directory
 ```
 cd LocalInstance
+```
+and run nio:
+```
 niod
 ```
 Log messages should display, similar to the following output. There should be no errors.
@@ -52,20 +59,10 @@ If you see those logs, nio is up and running. Congratulations!
 
 >By default, new projects use port 8181. If port 8181 isn’t available, you'll see an error. The value of NIOPORT in your project's `nio.conf` file under the `[user_defined]` section and the port for your local instance in the System Designer should match.
 
-`niod` can be run from outside of a project directory by using the `-r` flag and specifying the location of the project directory. For example:
-
-```
-niod -r path/to/my_project
-```
-You can run a project in the background on MacOS and Linux using `nohup` (so you can close your terminal):
-```
-nohup niod -r path/to/my_project 2>&1 > /dev/null &
-```
-
 ---
-## Add an existing local instance to the <span class="allow-caps">System Designer</span>
+## Add an existing local instance/project to the <span class="allow-caps">System Designer</span>
 
-You can also add an existing local instance to the **System Designer**:
+You can also add an existing local instance to the **System Designer**. Make sure your local instance is running.
 
 <img class="right shadow" src="/img/cloud/addInstanceButton.png" width="200" />
 1. Open the **nio System Designer** in a browser: http://app.n.io/design.
@@ -78,11 +75,18 @@ You can also add an existing local instance to the **System Designer**:
 1. Click **accept**.
 
 
-When the System Designer connects to a nio instance, it communicates with that instance directly from your browser via an XHR request. Hostnames like `localhost` and other internal IP addresses will work. You must have access to the localhost or other IP address from your machine to use the System Designer.
+When the System Designer connects to a nio instance, it communicates with that instance directly from your browser via an XHR request. Hostnames like `localhost` and other internal IP addresses will work. **You must have access to the localhost or other IP address from your machine to use the System Designer.**
+<br>
+<br>
+<br>
+
+
+---
+## http
+#### {#http}
 
 You may see an issue regarding HTTPS and HTTP instances.
 
-#### {#http}
 
 > **[info] security error?**
 >
@@ -93,6 +97,23 @@ You may see an issue regarding HTTPS and HTTP instances.
 Once your instance is loaded and available, you can add services and blocks in the same manner as a [cloud instance](https://workshops.n.io/system-designer/).
 
 Available nio Blocks can be explored in the nio [Block Library](https://blocks.n.io) where you will find a summary of the block's purpose, a list of its properties, commands, inputs, and outputs, and a link to the block code repository.
+
+---
+## Run nio from outside the project directory
+
+`niod` can be run from outside of a project directory by using the `-r` flag and specifying the location of the project directory. For example:
+
+```
+niod -r path/to/my_project
+```
+
+---
+## Run in the background
+
+You can run a project in the background on MacOS and Linux using `nohup` (so you can close your terminal):
+```
+nohup niod -r path/to/my_project 2>&1 > /dev/null &
+```
 
 ---
 ## View your logs

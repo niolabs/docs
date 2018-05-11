@@ -27,4 +27,4 @@ If you don’t see a path to niod, make sure Python’s binary directory is on y
 
 > Follow this link [to update your PATH in Windows](https://msdn.microsoft.com/en-us/library/aa922003.aspx)
 
-Once you have nio installed, you will need a project to run it against. Follow these instructions to [run nio locally](/running-nio/locally.md) in a project.
+Once you have nio installed, you will need a project to run it against. Follow these instructions to [create a project](/running-nio/locally.md) and run nio.
