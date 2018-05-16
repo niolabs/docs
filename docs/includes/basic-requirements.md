@@ -1,4 +1,4 @@
-> **[info] nio Dependencies**
+> **[info] nio Requirements**
 >
 >
 > **Python version 3.4+**<br />

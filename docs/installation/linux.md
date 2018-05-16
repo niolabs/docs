@@ -1,6 +1,5 @@
 # Installing nio on <span class="allow-caps">Linux</span>
 
-Your Linux setup should include the following:
 > **[info] <span class="allow-caps">Linux</span> System Requirements**
 >
 > **Kernel 3.0**
@@ -9,7 +8,7 @@ Your Linux setup should include the following:
 >
 > **APT** or similar package manager
 
-The nio Platform requires a few basic dependencies for local installation.
+The nio Platform requires the following for local installation.
 {% include "/includes/basic-requirements.md" %}
 
 You will also need the following, provided by nio:

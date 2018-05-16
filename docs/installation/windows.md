@@ -1,12 +1,11 @@
 # Installing nio on <span class="allow-caps">Windows</span>
 
-Your Windows machine should include the following:
 > **[info] <span class="allow-caps">Windows</span> System Requirements**
 >
 > **Windows 7–10, Server 2008–2012**
 >
 
-The nio Platform requires a few basic dependencies for local installation.
+The nio Platform requires the following for local installation.
 {% include "/includes/basic-requirements.md" %}
 
 You will also need the following, provided by nio:
