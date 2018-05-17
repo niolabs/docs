@@ -14,8 +14,8 @@ The nio Platform requires the following for local installation.
 > **[info] nio Requirements**
 >
 > **Python version 3.4+**<br />
->    In your terminal (**Applications > Utilities > Terminal**), type `python3 --version` to see which version of Python 3 you have installed.
->    If you don't have Python 3 or have an older version, [download Python 3](https://www.python.org/downloads/).
+>    In your terminal (**Applications > Utilities > Terminal**), type `python3 --version` to see which version of Python 3 you have installed.<br>
+>    If you don't have Python 3 or have an older version, [download Python 3](https://www.python.org/downloads/).<br>
 >    Complete the installation process of Python 3.6+ by double clicking the **Install Certificates.command** file in your **Applications > Python 3.6** folder.
 
 > **Pip**<br />
