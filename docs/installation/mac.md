@@ -19,13 +19,13 @@ The nio Platform requires the following for local installation.
 >    Complete the installation process of Python 3.6+ by double clicking the **Install Certificates.command** file in your **Applications > Python 3.6** folder.
 
 > **Pip**<br />
->    Pip is a package management system built for software written in Python. We recommend updating to the most recent version of pip3.<br />
->    In your terminal (**Applications > Utilities > Terminal**), type `pip3 --version` to see which version of pip you have installed.
+>    Pip is a package management system built for software written in Python. We recommend updating to the most recent version of pip3.<br>
+>    In your terminal (**Applications > Utilities > Terminal**), type `pip3 --version` to see which version of pip you have installed.<br>
 >    Update to the most recent version of pip3 with the command: `pip3 install -U pip`.
 
 > **Git**<br />
 >    Git is a fast, scalable, distributed version-control system with a rich command set that the nio System Designer relies on for adding and updating blocks as part of your nio instance.<br />
->    In your terminal (**Applications > Utilities > Terminal**), type `git --version` to see if git is installed.
+>    In your terminal (**Applications > Utilities > Terminal**), type `git --version` to see if git is installed.<br>
 >    Follow this [installation guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to get started with Git.
 >
 
