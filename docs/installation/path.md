@@ -12,7 +12,7 @@ Paste the location path into the following command:
 echo 'export PATH=$PATH:/paste/your/path/here'  >> ~/.bash_profile
 ```
 
-Close your terminal, open it again, then try `which niod`.
+**Close your terminal, open it again,** then try `which niod`.
 
 If you see a path to `niod`, nio is correctly installed.
 
