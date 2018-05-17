@@ -20,7 +20,6 @@ The nio Platform requires the following for local installation.
 > **Pip**<br />
 >    Pip is a package management system built for software written in Python. We recommend updating to the most recent version of pip3.<br />
 >    In your terminal (**Applications > Utilities > Terminal**), type `pip3 --version` to see which version of pip you have installed.
->    For best results, the version of Python 3 listed in the pip3 version's path should match the version returned when you type `python3 --version`.<br>
 >    Update to the most recent version of pip3 with the command: `pip3 install -U pip`.
 
 > **Git**<br />
@@ -46,3 +45,5 @@ which niod
 ```
 
 If you don’t see a path to niod, follow these instructions to [set your PATH in MacOS](path.md).
+
+Once you have nio installed, you will need a project with a `nio.conf` file to run it against. Follow these instructions to [create a project](/running-nio/locally.md) and run nio.
