@@ -44,3 +44,5 @@ You can test that nio is correctly installed by running the following command:
 ```
 which niod
 ```
+
+If you don’t see a path to niod, follow these instructions to [set your PATH in MacOS](path.md).
