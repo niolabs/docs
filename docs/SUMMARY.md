@@ -13,6 +13,8 @@
 * [Install nio](/installation/README.md)
   * [Windows](/installation/windows.md)
   * [MacOS](/installation/mac.md)
+    * [Python with HomeBrew](/installation/homebrew.md)
+    * [Set your Path](/installation/path.md)
   * [Linux](/installation/linux.md)
   * [Raspbian](/installation/rasp.md)
 * [Deploy nio](/deployment/README.md)

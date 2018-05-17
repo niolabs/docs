@@ -15,7 +15,7 @@ The nio Platform requires the following for local installation.
 >
 > **Python version 3.4+**<br />
 >    In your terminal (**Applications > Utilities > Terminal**), type `python3 --version` to see which version of Python 3 you have installed.
->    If you don't have Python 3 or have an older version, you can visit the [Python downloads page](https://www.python.org/downloads/).
+>    If you don't have Python 3 or have an older version, follow these instructions to [install Python 3 with HomeBrew](homebrew.md).
 
 > **Pip**<br />
 >    Pip is a package management system built for software written in Python. We recommend updating to the most recent version of pip3.<br />
@@ -44,16 +44,3 @@ You can test that nio is correctly installed by running the following command:
 ```
 which niod
 ```
-
-If you don’t see a path to niod, make sure Python’s binary directory is on your PATH.
-
->  [Set your PATH in MacOS](http://osxdaily.com/2014/08/14/add-new-path-to-path-command-line/).
-
-Once you have nio installed, you will need a project with a `nio.conf` file to run it against. Follow these instructions to [create a project](/running-nio/locally.md) and run nio.
-
-<br>
->**MacOS Users**: While your system comes pre-installed with Python, it is an older version. When installing newer versions, Python may require that you install and trust a set of Root Certificates for its SSL package. That file is located at `/Applications/Python 3.x/Install Certificates.command`. Just double-click that file to complete the process. Check `/Applications/Python 3.x/ReadMe.rtf` for more details.
-
->The error string you'll see will look something like this:
-
->```WARNING:tornado.general:SSL Error on 7 ('x.x.x.x', 443): [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed```
