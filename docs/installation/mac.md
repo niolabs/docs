@@ -29,8 +29,6 @@ The following must be in your environment to run nio. You can install these requ
 >    In your terminal (**Applications > Utilities > Terminal**), type `pip3 --version` to see which version of pip you have installed.<br>
 >    Update to the most recent version of pip3 with the command: `pip3 install -U pip`.
 
-
-
 You will also need the following, provided by nio:
 {% include "/includes/nio-requirements.md" %}
 

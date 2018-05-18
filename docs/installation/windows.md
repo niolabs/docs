@@ -4,7 +4,7 @@
 >
 > **Windows 7–10, Server 2008–2012**
 >
-> **A C Compiler** such as the one available through http://landinghub.visualstudio.com/visual-cpp-build-tools. You have a C compiler available when you can open a **Developer Command Prompt** window and type `cl.exe`.
+> **A C compiler** such as the one available through http://landinghub.visualstudio.com/visual-cpp-build-tools. You have a C compiler available when you can open a **Developer Command Prompt** window and type `cl.exe`.
 >
 > **Git**<br />
 >    Git is a fast, scalable, distributed version-control system with a rich command set that the nio System Designer relies on for adding and updating blocks as part of your nio instance.<br />
