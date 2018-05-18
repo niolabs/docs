@@ -4,7 +4,7 @@ The nio command line interface (CLI) is a tool that simplifies many of the tasks
 
 ---
 
-## Create a new project
+## [Create a new project](new.md)
 
 ```bash
 nio new [your project name]
@@ -12,7 +12,7 @@ nio new [your project name]
 
 ---
 
-## Add blocks to your project:
+## [Add blocks to your project:](add.md)
 
 ```bash
 nio add [block name]
