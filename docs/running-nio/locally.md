@@ -28,13 +28,16 @@ The easiest way to create and run a new nio project is to first create a new loc
 <br>
 <br>
 
-Back in your terminal, paste the command to create your project.
-
+Back in your terminal, paste the command copied from the create instance modal into the command line to create your project.
 ```
 nio new LocalInstance --pubkeeper-hostname xxxxx.pubkeeper.nio.works --pubkeeper-token xxxxxxxx
 ```
 
-Then navigate into your new project directory
+> Note: you need nio-cli 0.6.0+ to run this command. Type `nio --version` to see which version of the nio-cli you are running. You can update with `pip3 install -U nio` or `pip install -U nio` (depending which pip you have in your environment). 
+
+When it prompts you for an optional secure instance configuration, choose Yes (Y). Press return for the default on all following prompts.
+
+Navigate into your new project directory
 ```
 cd LocalInstance
 ```
@@ -42,7 +45,7 @@ and run nio:
 ```
 niod
 ```
-Log messages should display, similar to the following output. There should be no errors.
+Log messages should display in your terminal, similar to the following output. There should be no errors.
 
 ```
 NIO [INFO] [main.WebServer] Server configured on 0.0.0.0:8181
@@ -58,6 +61,10 @@ NIO [INFO] Component: ServiceManager status changed from: starting to: started
 If you see those logs, nio is up and running. Congratulations!
 
 >By default, new projects use port 8181. If port 8181 isn’t available, you'll see an error. The value of NIOPORT in your project's `nio.conf` file under the `[user_defined]` section and the port for your local instance in the System Designer should match.
+
+Once your instance is loaded and available, you can add services and blocks in the same manner as a [cloud instance](https://workshops.n.io/system-designer/).
+
+Available nio Blocks can be explored in the nio [Block Library](https://blocks.n.io) where you will find a summary of the block's purpose, a list of its properties, commands, inputs, and outputs, and a link to the block code repository.
 
 ---
 ## Add an existing local instance/project to the <span class="allow-caps">System Designer</span>
@@ -93,10 +100,6 @@ You may see an issue regarding HTTPS and HTTP instances.
 > If you launched your instance without any SSL certificates, the instance is only accessible via HTTP. If you are logged into the System Designer via HTTPS, your browser will restrict any XHR requests going over HTTP.
 >
 > To connect to a local HTTP instance of nio with the System Designer, you'll need to log into the designer via HTTP at [http://app.n.io/design](http://app.n.io/design). All of your instances and systems will be the same, the only difference is, the nio commands to edit these instances won't happen over HTTPS.
-
-Once your instance is loaded and available, you can add services and blocks in the same manner as a [cloud instance](https://workshops.n.io/system-designer/).
-
-Available nio Blocks can be explored in the nio [Block Library](https://blocks.n.io) where you will find a summary of the block's purpose, a list of its properties, commands, inputs, and outputs, and a link to the block code repository.
 
 ---
 ## Run nio from outside the project directory
