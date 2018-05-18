@@ -16,6 +16,8 @@ You will also need the following, provided by nio:
 ---
 ## Installation
 
+Open a terminal (**Applications > Utilities > Terminal**), and install nio using Python’s pip3 installer (substitute your filepath and binary filename below—the `X`s represent the date of the binary in YYYYMMDD format):
+
 From the command line, type
 ```
 pip3 install -U ~/Downloads/nio_lite-XXXXXXXX-py3-none-any.whl
