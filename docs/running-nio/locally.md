@@ -29,14 +29,13 @@ The easiest way to create and run a new nio project is to first create a new loc
 <br>
 
 Back in your terminal, paste the command copied from the create instance modal into the command line to create your project.
-
-When it prompts you for an optional secure instance configuration, choose Yes (Y). Press return for the default on all following prompts.
-
-> Note: you need nio-cli 0.6.0+ to run this command.
-
 ```
 nio new LocalInstance --pubkeeper-hostname xxxxx.pubkeeper.nio.works --pubkeeper-token xxxxxxxx
 ```
+
+> Note: you need nio-cli 0.6.0+ to run this command. Type `nio --version` to see which version of the nio-cli you are running. You can update with `pip3 install -U nio` or `pip install -U nio` (depending which pip you have in your environment). 
+
+When it prompts you for an optional secure instance configuration, choose Yes (Y). Press return for the default on all following prompts.
 
 Navigate into your new project directory
 ```

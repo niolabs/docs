@@ -26,4 +26,4 @@ which niod
 ```
 You should see a path to niod.
 
-Once you have nio installed, you will need a project to run it against. Follow these instructions to [create a project](/running-nio/locally.md) and run nio.
+Once you have nio installed, you will need a project with a `nio.conf` file to run it against. Follow these instructions to [create a project](/running-nio/locally.md) and run nio.

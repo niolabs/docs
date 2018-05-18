@@ -9,8 +9,14 @@
 > In your terminal (**Applications > Utilities > Terminal**), type `clang --version` to confirm that you have clang installed. If not, you can get it by
 > installing [XCode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12).
 >
+> **Git**<br />
+>    Git is a fast, scalable, distributed version-control system with a rich command set that the nio System Designer relies on for adding and updating blocks as part of your nio instance.<br />
+>    In your terminal (**Applications > Utilities > Terminal**), type `git --version` to see if git is installed.<br>
+>    Follow this [installation guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to get started with Git.
+>
 
-The nio Platform requires the following for local installation.
+The following must be in your environment to run nio. You can install these requirements globally if you have a dedicated, fresh machine running Python and nio. If you intend to run other Python projects on the same machine, we recommend you avoid version conflicts by using a separate Python environment containing these requirements.
+
 > **[info] nio Requirements**
 >
 > **Python version 3.4+**<br />
@@ -23,11 +29,6 @@ The nio Platform requires the following for local installation.
 >    In your terminal (**Applications > Utilities > Terminal**), type `pip3 --version` to see which version of pip you have installed.<br>
 >    Update to the most recent version of pip3 with the command: `pip3 install -U pip`.
 
-> **Git**<br />
->    Git is a fast, scalable, distributed version-control system with a rich command set that the nio System Designer relies on for adding and updating blocks as part of your nio instance.<br />
->    In your terminal (**Applications > Utilities > Terminal**), type `git --version` to see if git is installed.<br>
->    Follow this [installation guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to get started with Git.
->
 
 
 You will also need the following, provided by nio:
