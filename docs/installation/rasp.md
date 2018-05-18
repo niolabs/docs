@@ -7,7 +7,6 @@
 > **APT** or similar package manager
 
 The nio Platform requires the following for local installation.
-{% include "/includes/basic-requirements.md" %}
 
 You will also need the following, provided by nio:
 {% include "/includes/nio-requirements.md" %}
