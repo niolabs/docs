@@ -1,19 +1,27 @@
-In your terminal (**Applications > Utilities > Terminal**), find the location of nio:
+In your terminal (**Applications > Utilities > Terminal**), find the location of your `niod` executible using the `pip3 show` command:
+
+For Example:
+```
+pip3 show nio-lite
+```
+Would return something similar to the following path under **Location**:
+```
+ /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages
+ ```
+
+Copy your path up to `/lib` and replace it with `/bin`. Using the example path above, your copied path would look something like:
+```
+ /Library/Frameworks/Python.framework/Versions/3.6/bin
+ ```
+
+Paste your copied path into the following command:
 
 ```
-pip3 show nio
+echo 'export PATH=$PATH:/paste/your/path/here'  >> ~/.bash_profile && source ~/.bash_profile
 ```
 
-Copy the path after the **Location** heading to your clipboard.
+Now try the command `which niod`.
 
-Paste the location path into the following command:
-
-```
-echo 'export PATH=$PATH:/paste/your/path/here'  >> ~/.bash_profile
-```
-
-**Close your terminal, open it again,** then try `which niod`.
-
-If you see a path to `niod`, nio is correctly installed.
+If you see a path to `niod`, the nio executible is now correctly part of your path.
 
 Once you have nio installed, you will need a project with a `nio.conf` file to run it against. Follow these instructions to [create a project](/running-nio/locally.md) and run nio.
