@@ -17,9 +17,6 @@
   * [Linux](/installation/linux.md)
   * [Raspbian](/installation/rasp.md)
 * [Deploy nio](/deployment/README.md)
-* [System Designer](/system-designer/README.md)
-  * [Reference](/system-designer/designer-tasks.md)
-  * [Browser Support](/system-designer/browser-support.md)
 
 ---
 * Architecture
@@ -49,8 +46,12 @@
   * [Templates](/systems/templates.md)
 
 ---
-* Building with nio
+* Applications
 
+* [System Designer](/system-designer/README.md)
+  * [Reference](/system-designer/designer-tasks.md)
+  * [Browser Support](/system-designer/browser-support.md)
+* [System Monitor](/system-monitor/README.md)
 * [CLI](/cli/README.md)
   * [New](/cli/new.md)
   * [Add](/cli/add.md)
@@ -61,6 +62,10 @@
   * [Clone Services](/cli/clone-services.md)
   * [Shutdown](/cli/shutdown.md)
   * [Changelog](/cli/changelog.md)
+
+---
+* Building with nio
+
 * [Service Design Patterns](/service-design-patterns/README.md)
   * [Restructure and Group Signals](/service-design-patterns/join.md)
   * [Publishing and Subscribing](/service-design-patterns/pub-sub.md)
