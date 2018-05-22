@@ -6,8 +6,8 @@
 > Click **Apple Menu > About this Mac** to view your MacOS version.
 >
 > **Clang** or similar C compiler<br>
-> In your terminal (**Applications > Utilities > Terminal**), type `clang --version` to confirm that you have clang installed. If not, you can get it by
-> installing [XCode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12).
+> In your terminal (**Applications > Utilities > Terminal**), type `clang --version` to confirm that you have clang installed. If you do not, you can get it by
+> installing Xcode Command Line Tools by entering `xcode-select --install` into your terminal.
 >
 > **Git**<br />
 >    Git is a fast, scalable, distributed version-control system with a rich command set that the nio System Designer relies on for adding and updating blocks as part of your nio instance.<br />
@@ -27,6 +27,7 @@ The following must be in your environment to run nio. You can install these requ
 > **Pip**<br />
 >    Pip is a package management system built for software written in Python. We recommend updating to the most recent version of pip3.<br>
 >    In your terminal (**Applications > Utilities > Terminal**), type `pip3 --version` to see which version of pip you have installed.<br>
+>    If you do not have pip installed you can do so by typing `curl https://bootstrap.pypa.io/get-pip.py | python3` into your terminal.<br>
 >    Update to the most recent version of pip3 with the command: `pip3 install -U pip`.
 
 You will also need the following, provided by nio:

@@ -14,6 +14,8 @@
   * [Windows](/installation/windows.md)
   * [MacOS](/installation/mac.md)
     * [Set your Path](/installation/path.md)
+  * [Linux](/installation/linux.md)
+  * [Raspbian](/installation/rasp.md)
 * [Deploy nio](/deployment/README.md)
 * [System Designer](/system-designer/README.md)
   * [Reference](/system-designer/designer-tasks.md)
