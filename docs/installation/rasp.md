@@ -10,7 +10,7 @@
 >    In your terminal, type `git --version` to see if git is installed.<br>
 >    Follow this [installation guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to get started with Git.
 >
-> **APT** or similar package tool (_recomended_ ).
+> **APT** or similar package tool (_recommended_ ).
 >
 
 The following must be in your environment to run nio. You can install these requirements globally if you have a dedicated, fresh machine running Python and nio. If you intend to run other Python projects on the same machine, we recommend you avoid version conflicts by using a separate Python environment containing these requirements.
