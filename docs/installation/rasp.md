@@ -29,11 +29,13 @@ The nio Platform requires the following for local installation.
 >    If you do not have pip installed you can do so by typing the following command into your terminal:<br> 
 >   `curl https://bootstrap.pypa.io/get-pip.py | python3`<br>
 >    Update to the most recent version of pip3 with the following commands: 
-> ```
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-python3 get-pip.py —user
-echo ‘export PATH=/home/pi/.local/bin:/usr/local/bin:$PATH’ >> ~/.bashrc && source ~/.bashrc
-```
+>```
+>curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+>python3 get-pip.py —-user
+>echo ‘export PATH=/home/pi/.local/bin:$PATH’ >> ~/.bashrc && source ~/.bashrc
+>```
+>   After running these commands, typing `pip3 --version` should return with the most up to date version of the Pip package manager.
+>
 
 
 You will also need the following, provided by nio:
