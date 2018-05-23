@@ -40,7 +40,7 @@ In the header you can switch between organizations with the organization dropdow
   * [**workshops**](https://workshops.n.io)—self-paced tutorials
   * [**support**](https://account.n.io/support)—FAQs and contact form
   * [**forum**](https://forum.n.io)—interact with other nio users
-  * [**account**](https://account.n.io/settings)—edit your profile
+  * [**binaries**](https://account.n.io/binaries/download)—download the nio binary
 
 ### Breadcrumb
 The breadcrumb is located at the top of the System Designer.
