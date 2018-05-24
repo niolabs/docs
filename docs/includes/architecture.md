@@ -53,3 +53,6 @@ Just like your biological system is a group of organs working together to keep y
 The nio [System Designer](/system-designer) is the tool that allows you to arrange these blocks, services and instances to build your own nio systems. The only limitation is your imagination.
 
 ![system designer](/img/intro-systemdesigner.jpg)
+
+## <span class="allow-caps">System Monitor</span>
+The nio [System Monitor](/monitoring/system-monitor) is the tool that allows you to monitor the status of all deployed instances within nio systems. 

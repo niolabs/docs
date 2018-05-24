@@ -5,7 +5,7 @@ The nio system monitoring application, found at [app.n.io/monitor](https://app.n
 
 Access the System Monitor by clicking the monitor icon in the application switcher in the far left column.
 
-<img class="left" src="/img/tasks/monitorApp.png" width="500" />
+<img class="left" src="/img/tasks/monitorApp.png" width="300" />
 
 ---
 ## <span class="allow-caps">System Monitor</span> overview
@@ -19,6 +19,22 @@ The leftmost column shows the app switcher that enables you to switch between ap
 The systems list is located on the left side of the System Monitor.
 * To view the instances within a system, click the system name.
 
+### Instance cards
+All instances within a selected system will display as cards in the System Monitor. Each instance card contains the name of the instance, hostname, and port that the instance is running on.
+* Instances with issues:
+  * Any instances with issues will display under this section. All issues that put the instance in this state will display under **Issues:**.
+* Instances without issues:
+  * All instances without issues will diaplay under this section.
+
+### Viewing instance logs
+Additional issue details and error logs can be viewed by clicking on the instance card. This view provides a logger pannel which is default to view logs in *error* state. Other useful information includes instance uptime and the version of the nio Platform that is running on the instance. 
+
+<img class="left" src="/img/tasks/monitorlogger.png" />
+
+### Auto refresh
+The auto refresh toggle is located at the top of the system view. When on, the system monitoring tool will poll instances every 5 minutes for status information. When this toggle is off, the system monitoring tool will need to be refreshed to see any new issues on instances. 
+
+<img class="center" src="/img/tasks/monitorautorefresh.png" />
 
 ### Header navigation
 
