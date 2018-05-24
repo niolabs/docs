@@ -11,6 +11,7 @@
 **Changed**<br>
 - updated `component_project_manager` removes failed block download folders
 - **Block and service config name changes** will rename old v3.0.0 configs with a more human friendly label
+- Replace time calculations using datetime with a monotonic time
 ---
 ## 20180425
 
