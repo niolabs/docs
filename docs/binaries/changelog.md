@@ -1,5 +1,16 @@
 # nio binary changelog
 
+
+---
+## 20180524
+
+**Added**<br>
+- updated package metadata shown in `pip3 show nio-lite`
+- block properties have an `advanced` option for display purposes
+
+**Changed**<br>
+- updated `component_project_manager` removes failed block download folders
+- **Block and service config name changes** will rename old v3.0.0 configs with a more human friendly label
 ---
 ## 20180425
 
