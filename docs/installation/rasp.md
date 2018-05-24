@@ -10,7 +10,8 @@
 >    In your terminal, type `git --version` to see if git is installed.<br>
 >    Follow this [installation guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to get started with Git.
 >
-> **APT** or similar package tool (_recommended_ ).
+> **APT** or similar package tool (_recommended_ )<br />
+> Check for an installation of APT by typing the command `apt --version` into your terminal.
 >
 
 The following must be in your environment to run nio. You can install these requirements globally if you have a dedicated, fresh machine running Python and nio. If you intend to run other Python projects on the same machine, we recommend you avoid version conflicts by using a separate Python environment containing these requirements.
@@ -27,7 +28,14 @@ The nio Platform requires the following for local installation.
 >    In your terminal, type `pip3 --version` to see which version of pip you have installed.<br>
 >    If you do not have pip installed you can do so by typing the following command into your terminal:<br> 
 >   `curl https://bootstrap.pypa.io/get-pip.py | python3`<br>
->    Update to the most recent version of pip3 with the command: `pip3 install -U pip`.
+>    Update to the most recent version of pip3 with the following commands: 
+>```
+>curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+>python3 get-pip.py —-user
+>echo ‘export PATH=/home/pi/.local/bin:$PATH’ >> ~/.bashrc && source ~/.bashrc
+>```
+>   After running these commands, typing `pip3 --version` should return with the most up to date version of the Pip package manager.
+>
 
 
 You will also need the following, provided by nio:
@@ -40,7 +48,7 @@ Open a terminal, and install nio using Python’s pip3 installer (substitute you
 
 From the command line, type
 ```
-pip3 install -U nio_lite-XXXXXXXX-py3-none-any.whl
+pip3 install -U ~/Downloads/nio_lite-XXXXXXXX-py3-none-any.whl --user
 ```
 You can test that nio is correctly installed by running the following command:
 ```

@@ -206,8 +206,6 @@ In the **block library** search box, enter a block type name.
 > **[info] Block names**
 >
 > In nio versions less than 3.0, block names cannot be edited after creation.
->
-> Block names cannot contain the following characters: `*  |  \ /  :  ”  <> / ?`
 
 ### Block edit, command, delete
 
