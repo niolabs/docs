@@ -4,12 +4,21 @@
 >
 > **Windows 7–10, Server 2008–2012**
 >
-> **A C compiler** such as the one available through http://landinghub.visualstudio.com/visual-cpp-build-tools. You have a C compiler available when you can open a **Developer Command Prompt** window and type `cl.exe`.
+> **A C++ compiler** available through http://landinghub.visualstudio.com/visual-cpp-build-tools.<br />
+>You have a C++ compiler available when you can open a **Developer Command Prompt** window and run `cl`.
+> If you do not have a C++ compiler available, follow the download instructions on the link provided above. Select: **Build Tools for Visual Studio** for download and follow the instrutions to install Build Tools for Visual Studio. 
+>
+> **Chocolatey** Package Manager (_recommended_ )<br />
+> Check for an installation of Chocolatey with the command `choco --version` in your Command Prompt.
+> To install Chocolatey, open an **Administratior Command Prompt** (right click on Command Prompt and select 'run as administrator'), and run the following line:
+>```
+>@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+>```  
 >
 > **Git**<br />
 >    Git is a fast, scalable, distributed version-control system with a rich command set that the nio System Designer relies on for adding and updating blocks as part of your nio instance.<br />
->    In your terminal (Command Prompt/Developer Command Prompt), type `git --version` to see if git is installed.
->    If not, you can download git for windows on this [Git download page](https://git-scm.com/download/win).
+>    In your Command Prompt, type `git --version` to see if git is installed.
+>    You can use Chocolatey to install git. Open an **Administratior Command Prompt** (right click on Command Prompt and select 'run as administrator'), and run `choco install git`.
 >
 
 The following must be in your environment to run nio. You can install these requirements globally if you have a dedicated, fresh machine running Python and nio. If you intend to run other Python projects on the same machine, we recommend you avoid version conflicts by using a separate Python environment containing these requirements.
@@ -17,14 +26,12 @@ The following must be in your environment to run nio. You can install these requ
 > **[info] nio Requirements**
 >
 > **Python version 3.5+**<br />
->    In your terminal (Command Prompt/Developer Command Prompt), type `python --version` to see which version of Python you have installed.
->    If you don't have Python 3.5+ or have an older version, you can visit the [Python downloads page](https://www.python.org/downloads/).
->    During installation, watch for on option to set your PATH and select it.
->
+>    In your Command Prompt, type `python --version` to see which version of Python you have installed.
+>    If you do not have python3.5+, you can install it using Chocolatey. Open an **Administratior Command Prompt** (right click on Command Prompt and select 'run as administrator'), and run `choco install python`.
 
 > **Pip**<br />
 >    Pip is a package management system built for software written in Python. We recommend updating to the most recent version.<br />
->    In your terminal (Command Prompt/Developer Command Prompt), type `pip --version` to see which version of pip you have installed.
+>    In your Command Prompt, type `pip --version` to see which version of pip you have installed.
 >    Update to the most recent version with the command: `python -m pip install -U pip`.
 
 
@@ -34,9 +41,9 @@ You will also need the following, provided by nio:
 ---
 ## Installation
 
-Open a terminal (**Command Prompt > Developer Command Prompt**), and install nio using Python’s pip3 installer (substitute your filepath and binary filename below—the `X`s represent the date of the binary in YYYYMMDD format):
+Open a Command Prompt, and install nio using Python’s pip3 installer (substitute your filepath and binary filename below—the `X`s represent the date of the binary in YYYYMMDD format):
 ```
-pip install Downloads/nio_lite-XXXXXXXX-py3-none-any.whl
+pip install Downloads\nio_lite-XXXXXXXX-py3-none-any.whl
 ```
 You can test that nio is correctly installed by running the following command:
 ```
