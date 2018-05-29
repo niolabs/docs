@@ -22,12 +22,12 @@ The systems list is located on the left side of the System Monitor.
 ### Instance cards
 All instances within a selected system will display as cards in the System Monitor. Each instance card contains the name of the instance, hostname, and port that the instance is running on.
 * Instances with issues:
-  * Any instances with issues will display under this section. All issues that put the instance in this state will display under **Issues:**.
+  * Any instances with issues will display under this section. All issues that put the instance in this state will display under **Issues**.
 * Instances without issues:
-  * All instances without issues will diaplay under this section.
+  * All instances without issues will display under this section.
 
 ### Viewing instance logs
-Additional issue details and error logs can be viewed by clicking on the instance card. This view provides a logger pannel which is default to view logs in *error* state. Other useful information includes instance uptime and the version of the nio Platform that is running on the instance. 
+Additional issue details and error logs can be viewed by clicking on the instance card. This view provides a logger pannel which defaults to viewing logs in an *error* state. Other useful information includes instance uptime and the version of the nio Platform that is running on the instance. 
 
 <img class="left" src="/img/tasks/monitorlogger.png" />
 
