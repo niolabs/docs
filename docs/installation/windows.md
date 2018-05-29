@@ -5,8 +5,10 @@
 > **Windows 7–10, Server 2008–2012**
 >
 > **A C++ compiler** available through http://landinghub.visualstudio.com/visual-cpp-build-tools.<br />
->You have a C++ compiler available when you can open a **Developer Command Prompt** window and run `cl`.
-> If you do not have a C++ compiler available, follow the download instructions on the link provided above. Select: **Build Tools for Visual Studio** for download and follow the instrutions to install Build Tools for Visual Studio. 
+>   You have a C++ compiler available when you can open a **Developer Command Prompt** window and run `cl`.
+>   If you do not have a C++ compiler available, follow the download instructions on the link provided above. Select: **Build Tools for Visual Studio** for download and follow the instrutions to install Build Tools for Visual Studio. 
+>   Select Visual C++ build tools and click **Install**.
+>   To confirm that everything installed correctly, you can now open a **Developer Command Prompt** and run `cl`.
 >
 > **Chocolatey** Package Manager (_recommended_ )<br />
 > Check for an installation of Chocolatey with the command `choco --version` in your Command Prompt.
