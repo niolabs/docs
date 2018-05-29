@@ -13,5 +13,5 @@ Building digital distributed systems can be extraordinarily complex.  nio simpli
 ---
 ## See also
 
-* [Systems in the System Designer](/system-designer/designer-tasks.md#system-sd)
+* [Systems in the System Designer](/system-designer/reference.md#system-sd)
 * Glossary—[system](/glossary/README.md#system)
