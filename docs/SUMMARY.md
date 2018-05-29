@@ -17,9 +17,6 @@
   * [Linux](/installation/linux.md)
   * [Raspbian](/installation/rasp.md)
 * [Deploy nio](/deployment/README.md)
-* [System Designer](/system-designer/README.md)
-  * [Reference](/system-designer/reference.md)
-  * [Browser Support](/system-designer/browser-support.md)
 
 ---
 * Architecture
@@ -49,8 +46,16 @@
   * [Templates](/systems/templates.md)
 
 ---
-* Building with nio
+* Applications
 
+* [System Designer](/system-designer/README.md)
+  * [Reference](/system-designer/designer-tasks.md)
+  * [Browser Support](/system-designer/browser-support.md)
+* [Monitoring](/monitoring/README.md)
+  * [nio System Monitor](/monitoring/system-monitor/README.md)
+  * [Third Party Tools](/monitoring/third-party/README.md)
+    * [Google Stackdriver](/monitoring/third-party/stackdriver.md)
+    * [Datadog](/monitoring/third-party/datadog.md)
 * [CLI](/cli/README.md)
   * [New](/cli/new.md)
   * [Add](/cli/add.md)
@@ -61,6 +66,10 @@
   * [Clone Services](/cli/clone-services.md)
   * [Shutdown](/cli/shutdown.md)
   * [Changelog](/cli/changelog.md)
+
+---
+* Building with nio
+
 * [Service Design Patterns](/service-design-patterns/README.md)
   * [Restructure and Group Signals](/service-design-patterns/join.md)
   * [Publishing and Subscribing](/service-design-patterns/pub-sub.md)
@@ -71,9 +80,6 @@
 * [Communications](/communications/README.md)
 * [User Interfaces](/ui/README.md)
   * [How to Build a UI with nio](/ui/build-a-ui.md)
-* [Monitoring](/monitoring/README.md)
-  * [Google Stackdriver](/monitoring/stackdriver.md)
-  * [Datadog](/monitoring/datadog.md)
 
 ---
 * nio Core
