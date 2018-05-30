@@ -4,9 +4,9 @@
 >
 > **Windows 7–10, Server 2008–2012**
 >
-> **A C++ compiler** such as the one available [here](https:/aka.ms/BuildTools). Select the Download link for **Build Tools for Visual Studio 2017** and _Run_. Follow the on screen instructions, being sure to select **Visual C++ build tools** when prompted on the _Workloads_ tab, then click _Install_.<br> 
+> **A C++ compiler** such as the one available [here](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017). Select the Download link for **Build Tools for Visual Studio 2017** and _Run_. Follow the on screen instructions, being sure to select **Visual C++ build tools** when prompted on the _Workloads_ tab, then click _Install_.<br> 
 >   You have a C++ compiler available when you can open a **Developer Command Prompt** window and run the command `cl`. 
->   * This should be the only time you need to use a **Developer Command Prompt**. You can close this window after confirming a C++ compiler exists.
+>   * This should be the only time you need to use a **Developer Command Prompt**. You can close this window after confirming a C++ compiler is available.
 >
 > **Git**<br />
 >    Git is a fast, scalable, distributed version-control system with a rich command set that the nio System Designer relies on for adding and updating blocks as part of your nio instance.<br />
