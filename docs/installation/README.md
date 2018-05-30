@@ -1,13 +1,16 @@
 # Install nio locally
 
-You do not need to install nio to build systems in the the System Designer—running nio in [the cloud](/running-nio/in-the-cloud.md) is the easiest way to begin. But to see the power of nio as a distributed system, you should install and run nio locally or at the edge.
-
-{% include "/includes/install-requirements.md" %}
+You do not need to install nio to build systems in the System Designer—running nio [in the cloud](/running-nio/in-the-cloud.md) is the quickest way to begin. But to see the power of nio as a distributed system, you should install and run nio locally or at the edge.
 
 ---
-## Installation
+## Operating System
 
-{% video width='90%', height='90%' %}https://www.youtube.com/watch?v=tEo2OSfPlG4{% endvideo %}
-{% video width='90%', height='90%' %}https://www.youtube.com/watch?v=cc5ZjTWRX7A{% endvideo %}
+Choose one of the following supported systems:
 
-{% include "/includes/install-nio.md" %}
+- [Windows](windows.md)<br>
+
+- [MacOS](mac.md)<br>
+
+- [Linux](linux.md)
+
+- [Raspbian](rasp.md) (Raspberry Pi)

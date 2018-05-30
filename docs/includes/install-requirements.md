@@ -1,9 +1,18 @@
->**[info] Requirements**
+> **[info] Requirements**
 >
->Linux / MacOS
->* **Python3**: https://www.python.org/downloads (you need Python 3.4+)
->* **A nio binary**: https://account.n.io/binaries/download (you'll need to agree to the license)
->* **A Pubkeeper server**: A step-by-step on how to create one can be found here: [docs.n.io/running-nio/in-the-cloud.html](/running-nio/in-the-cloud.md)
 >
->Windows users, [click here for installation instructions](/installation/windows.md).
+> **Python version 3.4+**<br />
+>    Visit the [Python downloads page](https://www.python.org/downloads/) to download Python.
+
+> **Pip**<br />
+>    Pip is a package management system built for software written in Python. It already comes with Python3 >= 3.4, but it's a good bet you will need to update to the most recent version.<br />
+>    Update to the most recent version here: [pip.pypa.io/en/stable/installing/](https://pip.pypa.io/en/stable/installing/).
+
+> **Git**<br />
+>    Git is a fast, scalable, distributed version-control system with a rich command set that the nio System Designer relies on for adding and updating blocks as part of your nio instance.<br />
+>    Follow this [installation guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to get started with Git.
+>
+> **A nio binary:** https://account.n.io/binaries/download (you'll need to agree to the license)
+>
+> **A Pubkeeper server:** Instructions to access one can be found here: >[docs.n.io/running-nio/in-the-cloud.html](/running-nio/in-the-cloud.md)
 >
