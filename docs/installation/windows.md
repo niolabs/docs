@@ -4,7 +4,7 @@
 >
 > **Windows 7–10, Server 2008–2012**
 >
-> **A C++ compiler** such as the one available [here](http://landinghub.visualstudio.com/visual-cpp-build-tools). Follow the on screen instructions, being sure to select **Visual C++ build tools** when prompted.<br> 
+> **A C++ compiler** such as the one available [here](https:/aka.ms/BuildTools). Select the Download link for **Build Tools for Visual Studio 2017** and _Run_. Follow the on screen instructions, being sure to select **Visual C++ build tools** when prompted on the _Workloads_ tab, then click _Install_.<br> 
 >   You have a C++ compiler available when you can open a **Developer Command Prompt** window and run the command `cl`. 
 >   * This should be the only time you need to use a **Developer Command Prompt**. You can close this window after confirming a C++ compiler exists.
 >
@@ -33,6 +33,7 @@ The following must be in your environment to run nio. You can install these requ
 
 You will also need the following, provided by nio:
 {% include "/includes/nio-requirements.md" %}
+>   If prompted, select to **Save** this file and not **Open**.
 
 ---
 ## Installation
@@ -45,8 +46,5 @@ You can test that nio is correctly installed by running the following command:
 ```
 where niod
 ```
-If you don’t see a path to niod, make sure Python’s binary directory is on your PATH.
-
-> Follow this link [to update your PATH in Windows](https://msdn.microsoft.com/en-us/library/aa922003.aspx)
 
 Once you have nio installed, you will need a project with a `nio.conf` file to run it against. Follow these instructions to [create a project](/running-nio/locally.md) and run nio.
