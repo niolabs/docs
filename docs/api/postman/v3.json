@@ -418,6 +418,33 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Download Block to Project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/javascript"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"url\": \"git://github.com/nio-blocks/intel_mraa.git\"\n}"
+						},
+						"url": {
+							"raw": "{{nio_url}}/project/blocks",
+							"host": [
+								"{{nio_url}}"
+							],
+							"path": [
+								"project",
+								"blocks"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -666,14 +693,14 @@
 	],
 	"variable": [
 		{
-			"id": "89757978-2020-45ff-ae24-16f87080c66d",
+			"id": "04ac1a71-6257-41ea-a6b1-2b7194a1a5b4",
 			"key": "nio_url",
 			"value": "http://localhost:8181",
 			"type": "string",
 			"description": ""
 		},
 		{
-			"id": "e68975ea-07fe-40e8-9e23-5cc67410f462",
+			"id": "b698a9c0-f9a6-415e-89be-73830c57c2a3",
 			"key": "service_id",
 			"value": "690275f8-78fb-44d7-84eb-bfdcf10101f6",
 			"type": "string",
