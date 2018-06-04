@@ -3,20 +3,20 @@
 * Introduction
 
 * [Welcome](/README.md)
-* [Run nio](/running-nio/README.md)
-  * [In a nio-Managed Cloud](/running-nio/in-the-cloud.md)
-  * [Locally](/running-nio/locally.md)
-    * [With command line and Git](/running-nio/manually.md)
-    * [With a local Pubkeeper server](/running-nio/local-pubkeeper.md)
-  * [In a Docker Container](/running-nio/docker.md)
-  * [In Production](/running-nio/long-running.md)
-* [Install nio](/installation/README.md)
-  * [Windows](/installation/windows.md)
-  * [MacOS](/installation/mac.md)
-    * [Set your Path](/installation/path.md)
-  * [Linux](/installation/linux.md)
-  * [Raspbian](/installation/rasp.md)
-* [Deploy nio](/deployment/README.md)
+* [Quick Start](/quickstart/README.md)
+* [Install nio locally](/installation/nio/README.md)
+  * [Windows](/installation/nio/windows.md)
+  * [MacOS](/installation/nio/mac.md)
+    * [Set your Path](/installation/nio/path.md)
+  * [Linux](/installation/nio/linux.md)
+  * [Raspbian](/installation/nio/rasp.md)
+* [Install Pubkeeper Server](/installation/pubkeeper/README.md)
+  * [Windows](/installation/pubkeeper/windows.md)
+  * [MacOS](/installation/pubkeeper/mac.md)
+    * [Set your Path](/installation/pubkeeper/path.md)
+  * [Linux](/installation/pubkeeper/linux.md)
+  * [Raspbian](/installation/pubkeeper/rasp.md)
+* [Run nio locally](/running-nio/README.md)
 
 ---
 * Architecture
@@ -66,6 +66,12 @@
   * [Clone Services](/cli/clone-services.md)
   * [Shutdown](/cli/shutdown.md)
   * [Changelog](/cli/changelog.md)
+* [Deploy nio](/deployment/README.md)
+  * [In a Docker Container](/deployment/docker.md)
+  * [In Production](/deployment/long-running.md) 
+  * [With command line and Git](/deployment/manually.md)
+  * [With a local Pubkeeper server](/deployment/local-pubkeeper.md) 
+
 
 ---
 * Building with nio
