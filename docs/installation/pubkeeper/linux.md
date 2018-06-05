@@ -6,7 +6,8 @@
 > Check your kernel version by typing the command `uname -r` into your terminal.
 >
 > **GCC** or similar C compiler<br />
-> Check for an installation of GCC by typing the command `gcc --version` into your terminal.
+> Check for an installation of GCC by typing the command `gcc --version` into your terminal.<br>
+> If you do not have a C complier, follow the instructions to install GCC [here](https://gcc.gnu.org/wiki/InstallingGCC).
 >
 > **APT** or similar package tool (_recommended_ ).
 >
@@ -24,7 +25,7 @@ Pubkeeper Server requires the following for local installation.
 >    Pip is a package management system built for software written in Python. We recommend updating to the most recent version of pip3.<br>
 >    In your terminal, type `pip3 --version` to see which version of pip you have installed.<br>
 >    If you do not have pip installed you can do so by typing the following command into your terminal:<br> 
->   `curl https://bootstrap.pypa.io/get-pip.py | python3`<br>
+>   `sudo apt install python3-pip`<br>
 >    Update to the most recent version of pip3 with the command: `pip3 install -U pip`.
 
 

@@ -3,7 +3,8 @@
 > **[info] <span class="allow-caps">Raspbian</span> System Requirements**
 >
 > **GCC** or similar C compiler<br />
-> Check for an installation of GCC by typing the command `gcc --version` into your terminal.
+> Check for an installation of GCC by typing the command `gcc --version` into your terminal.<br>
+> If you do not have a C complier, follow the instructions to install GCC [here](https://gcc.gnu.org/wiki/InstallingGCC).
 >
 > **Git**<br />
 >    Git is a fast, scalable, distributed version-control system with a rich command set that the nio System Designer relies on for adding and updating blocks as part of your nio instance.<br />

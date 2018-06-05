@@ -3,7 +3,8 @@
 > **[info] <span class="allow-caps">Raspbian</span> System Requirements**
 >
 > **GCC** or similar C compiler<br />
-> Check for an installation of GCC by typing the command `gcc --version` into your terminal.
+> Check for an installation of GCC by typing the command `gcc --version` into your terminal.<br>
+> If you do not have a C complier, follow the instructions to install GCC [here](https://gcc.gnu.org/wiki/InstallingGCC).
 >
 > **APT** or similar package tool (_recommended_ )<br />
 > Check for an installation of APT by typing the command `apt --version` into your terminal.
