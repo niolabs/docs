@@ -5,7 +5,7 @@ Eventually you will want to run your nio instances for longer durations and have
 ---
 ## Run with <span class="allow-caps">Docker</span>
 
-Running the nio Platform as a Docker container allows you to manage its lifecycle through standard Docker deployment practices and use orchestration managers like Kubernetes. Check out our [guide to running nio with Docker](/running-nio/docker.md) for more information on how to do this.
+Running the nio Platform as a Docker container allows you to manage its lifecycle through standard Docker deployment practices and use orchestration managers like Kubernetes. Check out our [guide to running nio with Docker](/deployment/docker.md) for more information on how to do this.
 
 ---
 ## Run nio in the background

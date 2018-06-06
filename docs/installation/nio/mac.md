@@ -47,4 +47,4 @@ which niod
 
 If you don’t see a path to niod, follow these instructions to [set your PATH in MacOS](path.md).
 
-Once you have nio installed, you will need a project with a `nio.conf` file to run it against. Follow these instructions to [create a project](/running-nio/locally.md) and run nio.
+Once you have nio installed, you will need a project with a `nio.conf` file to run it against. Follow these instructions to [create a project](/running-nio) and run nio.

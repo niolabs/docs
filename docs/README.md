@@ -6,23 +6,31 @@ To access the nio System Designer, sign up for a plan here: <https://niolabs.com
 
 ---
 
-## Quick start
+## How do you want to use nio?
 
-We've created [workshops](http://workshops.n.io) and [system templates](http://workshops.n.io/system-templates) to help you get up and running quickly:
+**The quickest way to use nio is [in the cloud](/quickstart).** A nio-managed cloud system does not require any installation and comes with a [Pubkeeper server](/pubkeeper).
 
-* Dive in to your first system with the **mobile phone** [system template](https://workshops.n.io/system-templates/)
-* Familiarize yourself with building services in the [nio System Designer](https://workshops.n.io/system-designer/)
-* Install and run a pre-built system where you [try to keep a thirsty plant happy](http://workshops.n.io/distributed-demonstration/)
-* Walk through the series of [nio 101 workshops](https://workshops.n.io/nio-101/)
+Most of the time, Pubkeeper runs invisibly in the background. However, for more customizable use cases, you can sign up for a license that includes a downloadable Pubkeeper server.
+
+Here are some example configurations of nio and Pubkeeper ranked from simplest to the most customizable:
+
+| nio Platform | Pubkeeper Server | use case | personal | commercial
+|------| -----|  ----| -----| ----|
+| [cloud](/quickstart) | cloud | [cloud applications](/quickstart) | ✔️ | ✔️ |
+| [local](/installation/nio) | cloud | [distributed applications](/installation/nio) | ✔️ | ✔️ |
+| local | [local](/installation/pubkeeper) | [enterprise applications](https://niolabs.com/enterprise) |  | ✔️ |
 
 ---
 
-## Deeper understanding
+Follow each link to see instructions for your use case:
 
-Become an expert in the core concepts of nio:
+* [Cloud Applications](/quickstart):  (_Beginner_)
+  * We run nio for you, and you use the nio System Designer to build cloud-based solutions.
+  * **The easiest way to get started quickly**
+* [Distributed Applications](/installation/nio): (_Intermediate_)
+  * You run nio wherever you want and use the System Designer to build and administer it. 
+* [Enterprise Applications](https://niolabs.com/enterprise): (_Advanced_)
+  * You run nio connected to a Pubkeeper server on your local network.
+  * To get started with your Enterprise Application, contact nio sales at [sales@niolabs.com](mailto:sales@niolabs.com).
 
-* Learn about the nio Platform [system architecture](/architecture/)
-* Learn about [signals](/signals/README.md) and smart [service design patterns](/service-design-patterns/)
-* [Install nio locally](/installation/README.md)
-* Browse the nio [Block Library](https://blocks.n.io)
-* Master inter-instance communication with [Pubkeeper](https://docs.pubkeeper.com)
+
