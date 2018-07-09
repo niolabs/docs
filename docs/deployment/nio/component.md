@@ -1,0 +1,30 @@
+# Component Deployment
+
+A Component Deployment is a deferred deployment to instances that **are not** externally accessible, or a component that should self update once a new version is released. This utilizes the [nio config component](https://github.com/niolabs/component_config).
+
+## Doing a Component Deployment
+
+> **[danger] Requirements**
+>
+> An initial [Release](/deployment/nio/release.md) must be done before continuing further.
+>
+
+#### To do a component deployment:
+- Make sure your nio instance has the [nio config component](https://github.com/niolabs/component_config)
+- Get the Instance Configuration ID from the Release modal in the System Designer.
+<!-- @TODO - the instance will need a valid API_KEY, do we need to add an API_KEY section to the docs? -->
+
+<img src="/img/deploy/component/id.png" height="350" />
+
+- Copy the `id` value for the configuration you would like to use.
+- Paste that value into your `nio.conf` file under the `[configuration]` section
+- Update the `config_poll_interval` value to the number of **seconds** you would like the component to check if an update is available. In this example we will use 60 minutes.
+- Your `nio.conf` `[configuration]` section should look like this:
+
+```
+[configuration]
+config_id=id-copied-from-designer
+config_poll_interval=3600
+```
+
+- That's all the configuration necessary for the config component. You can now run nio and do a [new Release](/deployment/nio/release.md) and your nio instance will sync itself to the updated version!

@@ -51,6 +51,16 @@
 * [System Designer](/system-designer/README.md)
   * [Reference](/system-designer/reference.md)
   * [Browser Support](/system-designer/browser-support.md)
+* [Deploy](/deployment/README.md)
+  * [nio Deploy Tool](/deployment/nio/README.md)
+    * [Release Cycle](/deployment/nio/release.md)
+    * [Direct Deploy](/deployment/nio/direct.md)
+    * [Component Deploy](/deployment/nio/component.md)
+  * [Third Party Tools](/deployment/third-party/README.md)
+    * [In a Docker Container](/deployment/third-party/docker.md)
+    * [In Production](/deployment/third-party/long-running.md) 
+    * [With command line and Git](/deployment/third-party/manually.md)
+    * [With a local Pubkeeper server](/deployment/third-party/local-pubkeeper.md) 
 * [Monitoring](/monitoring/README.md)
   * [nio System Monitor](/monitoring/system-monitor/README.md)
   * [Third Party Tools](/monitoring/third-party/README.md)
@@ -66,12 +76,6 @@
   * [Clone Services](/cli/clone-services.md)
   * [Shutdown](/cli/shutdown.md)
   * [Changelog](/cli/changelog.md)
-* [Deploy nio](/deployment/README.md)
-  * [In a Docker Container](/deployment/docker.md)
-  * [In Production](/deployment/long-running.md) 
-  * [With command line and Git](/deployment/manually.md)
-  * [With a local Pubkeeper server](/deployment/local-pubkeeper.md) 
-
 
 ---
 * Building with nio
