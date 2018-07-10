@@ -1,4 +1,4 @@
-# nio Deploy
+# nio Deploy Tool
 
 The nio deployment application, found at [app.n.io/deploy](https://app.n.io/deploy), is the graphical user interface used to deploy a version of an instance out to other instances.
 

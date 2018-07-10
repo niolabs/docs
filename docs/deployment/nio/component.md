@@ -2,6 +2,11 @@
 
 A Component Deployment is a deferred deployment to instances that **are not** externally accessible, or a component that should self update once a new version is released. This utilizes the [nio config component](https://github.com/niolabs/component_config).
 
+> **[info] Designer**
+>
+> If your instance is not externally accessible, design the configuration and [do a release](/deployment/nio/release.md) in the [nio System Designer](https://app.n.io/design) using a [Cloud Instance](/quickstart/README.md) or an accessible local instance.
+>
+
 ## Doing a Component Deployment
 
 > **[danger] Requirements**
@@ -12,7 +17,6 @@ A Component Deployment is a deferred deployment to instances that **are not** ex
 #### To do a component deployment:
 - Make sure your nio instance has the [nio config component](https://github.com/niolabs/component_config)
 - Get the Instance Configuration ID from the Release modal in the System Designer.
-<!-- @TODO - the instance will need a valid API_KEY, do we need to add an API_KEY section to the docs? -->
 
 <img src="/img/deploy/component/id.png" height="350" />
 

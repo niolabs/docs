@@ -48,3 +48,13 @@ A Direct Deployment is an instant deployment to instances that **are** externall
 
 - After that is done, review the deployment and if everything looks correct click `deploy`!
 - The deployment will begin and will report it's progress when complete. 
+
+<img src="/img/deploy/direct/complete.png" />
+
+---
+
+## Deployment Details
+
+- The deployment can be clicked on to view specific details about each instance that was deployed to. For instance, if the deployment is reporting as failed, you can click in and investigate which instance in particular may have caused the failure.
+
+<img src="/img/deploy/direct/details.png" />

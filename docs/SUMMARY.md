@@ -48,7 +48,7 @@
 ---
 * Applications
 
-* [System Designer](/system-designer/README.md)
+* [Design](/system-designer/README.md)
   * [Reference](/system-designer/reference.md)
   * [Browser Support](/system-designer/browser-support.md)
 * [Deploy](/deployment/README.md)
@@ -61,7 +61,7 @@
     * [In Production](/deployment/third-party/long-running.md) 
     * [With command line and Git](/deployment/third-party/manually.md)
     * [With a local Pubkeeper server](/deployment/third-party/local-pubkeeper.md) 
-* [Monitoring](/monitoring/README.md)
+* [Monitor](/monitoring/README.md)
   * [nio System Monitor](/monitoring/system-monitor/README.md)
   * [Third Party Tools](/monitoring/third-party/README.md)
     * [Google Stackdriver](/monitoring/third-party/stackdriver.md)
