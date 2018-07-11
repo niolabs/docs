@@ -4,31 +4,31 @@ A Direct Deployment is an instant deployment to instances that **are** externall
 
 > **[info] Compatibility**
 >
-> If you can load your instance in the System Designer, you can do a Direct Deployment to it.
+> If you can load your instance in the System Designer, you can deploy directly to it.
 >
 
 ## Doing a Direct Deployment
 
 > **[danger] Requirements**
 >
-> A [Release](/deployment/nio/release.md) must be done before a deployment can be done.
+> A [release](/deployment/nio/release.md) must be done before a deployment can be done.
 >
 
 - To do a direct deployment, navigate to the deployment tool on [app.n.io/deploy](https://app.n.io/deploy).
-- Next click the **Deploy** button in the top right corner.
+- Next click the **deploy** button in the top right corner.
 
 <img class="left" src="/img/deploy/direct/button.png" />
 
 ---
 
-- Select the System with which you would like to deploy to.
+- Select the system with which you would like to deploy to.
 - You will then be prompted with the new Deployment Page:
 
 <img src="/img/deploy/direct/new.png" />
 
 ---
 
-- Notice the instances on bottom. They need to be assigned to the configuration that should be deployed.
+- Notice the instances at the bottom. They need to be assigned to the configuration that should be deployed.
 
 <img src="/img/deploy/direct/assign.png" />
 
@@ -46,8 +46,8 @@ A Direct Deployment is an instant deployment to instances that **are** externall
 
 ---
 
-- After that is done, review the deployment and if everything looks correct click `deploy`!
-- The deployment will begin and will report it's progress when complete. 
+- After that is done, review the deployment and if everything looks correct click **deploy**!
+- The deployment will begin and will report its progress when complete. 
 
 <img src="/img/deploy/direct/complete.png" />
 
@@ -55,6 +55,6 @@ A Direct Deployment is an instant deployment to instances that **are** externall
 
 ## Deployment Details
 
-- The deployment can be clicked on to view specific details about each instance that was deployed to. For instance, if the deployment is reporting as failed, you can click in and investigate which instance in particular may have caused the failure.
+- The deployment can be clicked on to view specific details about each instance that was deployed to. For instance, if the deployment reported as failed, you can click in and investigate which instance in particular may have caused the failure.
 
 <img src="/img/deploy/direct/details.png" />
