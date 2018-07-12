@@ -2,7 +2,7 @@
 
 Designing a stable nio system means having reliable mechanisms for deployment and maintenance. The deployment of nio systems is very flexible. 
 
-## nio Deploy Tool
+## <span class="allow-caps">nio Deploy Tool</span>
 
 nio offers a [Deployment Tool](/deployment/nio/README.md) for deploying to instances managed by the nio App.
 
