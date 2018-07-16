@@ -20,11 +20,11 @@ The owner is able to invite users at two different permission levels: organizer 
 
 Each permission level comes with the following abilities:
 
-| | Create Organizations | Create Teams | Add Users | Share Systems | Manage Plan |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| **Owner** | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) |
-| **Organizer** | ![](/img/icons/times-red.svg) |  ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/times-red.svg) |
-| **Collaborator** | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) |
+|    | Create Organizations | Create Teams | Add Users | Manage Plan |
+| -- | -------------------- | ------------ | --------- | ----------- |
+| **Owner** | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) |
+| **Organizer** | ![](/img/icons/times-red.svg) |  ![](/img/icons/checkmark-green.svg) | ![](/img/icons/checkmark-green.svg) | ![](/img/icons/times-red.svg) |
+| **Collaborator** | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) | ![](/img/icons/times-red.svg) |
 
 
 ---
