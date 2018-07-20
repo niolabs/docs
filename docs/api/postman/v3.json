@@ -35,7 +35,7 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "{{nio_url}}/config/refresh",
+							"raw": "{{nio_url}}/project/refresh",
 							"host": [
 								"{{nio_url}}"
 							],
@@ -459,7 +459,7 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "{{nio_url}}/config/refresh",
+							"raw": "{{nio_url}}/project/refresh",
 							"host": [
 								"{{nio_url}}"
 							],
