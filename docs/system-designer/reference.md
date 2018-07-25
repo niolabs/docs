@@ -71,6 +71,9 @@ To enter the system context, select the system card from the grid or click the b
 1. Check the **local instance** checkbox.
 1. Complete the **add instance** modal:
   * **instance name**: enter a meaningful name.
+  * **username** and **password** will default to `Admin` `Admin`. If your instance has a different username / password (see [authentication and authorization](/api/conventions.md)), enter them here.
+  * **save credentials**: Store username / password connection information in local Storage so you don't have to enter it everytime you want to connect. 
+    > **Note** We do not store your username / password on our servers, you will be prompted to re-enter it if you view the designer from a different browser
 1. The rest of the text inputs will be pre-filled with default values that you may edit if necessary.
 1. Click **accept**.
 
@@ -79,6 +82,10 @@ To enter the system context, select the system card from the grid or click the b
 > **[info] Instance names**
 >
 > Instance names cannot contain spaces or underscores.
+
+#### Unauthorized Error
+
+If you are seeing an **Unauthorized, Invalid Credentials** error, you may have entered the wrong username / password. Review the section on [authentication and authorization](/api/conventions.md) and make sure your user and permissions are correctly set up.
 
 ### Instance edit, save, delete
 

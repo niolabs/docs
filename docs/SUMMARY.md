@@ -64,6 +64,7 @@
   * [Config](/cli/config.md)
   * [Command](/cli/command.md)
   * [Clone Services](/cli/clone-services.md)
+  * [Users](/cli/users.md)
   * [Shutdown](/cli/shutdown.md)
   * [Changelog](/cli/changelog.md)
 * [Deploy nio](/deployment/README.md)
