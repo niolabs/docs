@@ -48,6 +48,42 @@ To use basic auth, include a base-64 encoded version of your `username:password`
 
 For examples of adding headers to a curl request, see [headers](#headers).
 
+### Adding a user example
+
+If I wanted to add a user with username `nio` and password `superSecretPassword`, first the password needs to be to base64 encoded, which gives `c3VwZXJTZWNyZXRQYXNzd29yZA==`. The `etc/users.json` file then needs to be updated with the new username / password, which would look like:
+
+```javascript
+{
+    "Admin": {
+        "password": "QWRtaW4="
+    },
+    "nio": {
+        "password": "c3VwZXJTZWNyZXRQYXNzd29yZA=="
+    }
+}
+```
+
+Next the `etc/permissions.json` file would have to be updated to give that user rwx permissions.
+
+```javascript
+{
+    "Admin": {
+        ".*": "rwx"
+    },
+    "nio": {
+        ".*": "rwx"
+    }
+}
+```
+
+After saving and restarting, you will be able to authenticate to nio by using this BasicAuth:
+```javascript
+authorization: Basic bmlvOnN1cGVyU2VjcmV0UGFzc3dvcmQ=
+```
+
+> bmlvOnN1cGVyU2VjcmV0UGFzc3dvcmQ= is nio:superSecretPassword base64 encoded
+
+
 ### <span class="allow-caps">JSON</span> Web Tokens (<span class="allow-caps">JWT</span>)
 
 When using JSON Web Tokens (JWT), first obtain an access token, and then include it in the header.
