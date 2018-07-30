@@ -24,14 +24,14 @@ disabled=DiagnosticManager
 ```
 
 
-To disable the Service Diagnostics component, your `nio.conf` would look like the following example:
+To disable `service` statistics within the Diagnostics component, your `nio.conf` would look like the following example:
 ```
 [diagnostic]
 service=false
 ```
 
 
-To disable the Signals Diagnostics component, your `nio.conf` would look like the following example:
+To disable the `signal` statistics within the Diagnostics component, your `nio.conf` would look like the following example:
 ```
 [diagnostic]
 signals=false
