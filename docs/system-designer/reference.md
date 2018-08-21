@@ -37,9 +37,9 @@ When you hover over each system card, you will see the system toolbar that can p
 
   Icon                      |Label             | Description      |
   --------------------------|------------------|------------------|
-  ![](/img/tasks/CardEdit.png)    |edit              | Edit system name. View Pubkeeper configuration information.
-  ![](/img/tasks/CardShare.png)   |share             | Share system. This option is only available to teams within an organization. Read more information about system sharing [here](/organizations/management.md#sharing).
-  ![](/img/tasks/CardDelete.png)  |delete            | Delete system. Instances must be deleted first.
+  ![](/img/tasks/cardEdit.png)    |edit              | Edit system name. View Pubkeeper configuration information.
+  ![](/img/tasks/cardShare.png)   |share             | Share system. This option is only available to teams within an organization. Read more information about system sharing [here](/organizations/management.md#sharing).
+  ![](/img/tasks/cardDelete.png)  |delete            | Delete system. Instances must be deleted first.
 
 ---
 
@@ -72,7 +72,7 @@ To enter the system context, select the system card from the grid or click the b
 1. Complete the **add instance** modal:
   * **instance name**: enter a meaningful name.
   * **username** and **password** will default to `Admin` `Admin`. If your instance has a different username / password (see [authentication and authorization](/api/conventions.md)), enter them here.
-  * **save credentials**: Store username / password connection information in local Storage so you don't have to enter it everytime you want to connect. 
+  * **save credentials**: Store username / password connection information in local Storage so you don't have to enter it every time you want to connect.
     > **Note** We do not store your username / password on our servers, you will be prompted to re-enter it if you view the designer from a different browser
 1. The rest of the text inputs will be pre-filled with default values that you may edit if necessary.
 1. Click **accept**.
@@ -99,9 +99,9 @@ In the instance context you will see the the instance toolbar and can perform th
 
 Icon                      |Label             | Description      |
 --------------------------|------------------|------------------|
-![](/img/IconEdit.gif)    |edit              | Edit instance name and set environment variables.
-![](/img/IconSave.gif)    |save              | Save instance.
-![](/img/IconDelete.gif)  |delete            | Delete instance.
+![](/img/IconEdit.png)    |edit              | Edit instance name and set environment variables.
+![](/img/IconSave.png)    |save              | Save instance.
+![](/img/IconDelete.png)  |delete            | Delete instance.
 
 ## {#instance-env}
 > <img class="right border" src="/img/tasks/editcloudinstance.png" width="200" />
@@ -153,13 +153,17 @@ In the service context you will see the the service toolbar that can perform the
 
 Icon                      |Label             | Description      |
 --------------------------|------------------|------------------|
-![](/img/IconEdit.gif)    |edit              | Edit service name and color.
-![](/img/IconSave.gif)    |save              | Save service.
+![](/img/IconEdit.png)    |edit              | Edit service name and color.
+![](/img/IconSave.png)    |save              | Save service.
 ![](/img/IconStopAnim.gif)|start/stop        | Toggle to start and stop service.
 ![](/img/IconAuto.gif)    |auto-start on/off | Toggle Auto-Start on and off. Default is on.
-![](/img/IconRevert.gif)  |revert            | Revert changes to service.
-![](/img/IconClone.gif)   |clone             | Clone service.
-![](/img/IconDelete.gif)  |delete            | Delete service.
+![](/img/IconRevert.png)  |revert            | Revert changes to service.
+![](/img/IconClone.png)   |clone             | Clone service.
+![](/img/IconDelete.png)  |delete            | Delete service.
+
+> **[info] Deleting a service**
+>
+> A service can only be deleted from the instance context. To delete a service, click on the service from within the instance context, then click the **delete** icon in the toolbar.
 
 
 ### Connect/disconnect blocks
@@ -224,9 +228,9 @@ In the block context you will see the the block toolbar that can perform the fol
 
 Icon                      |Label             | Description      |
 --------------------------|------------------|------------------|
-![](/img/IconEdit.gif)    |edit              | Edit block configuration.
-![](/img/IconCommand.gif) |command           | Command block.
-![](/img/IconDelete.gif)  |delete            | Delete block.
+![](/img/IconEdit.png)    |edit              | Edit block configuration.
+![](/img/IconCommand.png) |command           | Command block.
+![](/img/IconDelete.png)  |delete            | Delete block.
 
 
 ### Delete a configured block

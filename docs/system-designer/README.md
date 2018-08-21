@@ -57,13 +57,12 @@ The contextual toolbar is located underneath the breadcrumb.
 Icon                      |Description       |
 --------------------------|------------------|
 ![](/img/IconAuto.gif)    |Auto-Start On/Off
-![](/img/IconClone.gif)   |Clone
-![](/img/IconCommand.gif) |Command
-![](/img/IconDelete.gif)  |Delete
-![](/img/IconEdit.gif)    |Edit
-![](/img/IconRevert.gif)  |Revert
-![](/img/IconSave.gif)    |Save
-![](/img/IconShare.gif)   |Share
+![](/img/IconClone.png)   |Clone
+![](/img/IconCommand.png) |Command
+![](/img/IconDelete.png)  |Delete
+![](/img/IconEdit.png)    |Edit
+![](/img/IconRevert.png)  |Revert
+![](/img/IconSave.png)    |Save
 ![](/img/IconStopAnim.gif)|Start/Stop
 
 ### Canvas (service or block workflow graph)

@@ -12,10 +12,25 @@ nio new [your project name]
 
 ---
 
-## [Add blocks to your project:](add.md)
+## [Add blocks to your project](add.md)
 
 ```bash
 nio add [block name]
 ```
 
+---
+
+## [List services in a running instance](list.md)
+
+```bash
+nio ls services
+```
+
+---
+
+## [Start/Stop services in a running instance](command.md)
+
+```bash
+nio command <start|stop> <service-id>
+```
 This section outlines all of the available CLI commands that can be used when running the nio Platform locally.

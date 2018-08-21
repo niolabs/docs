@@ -72,8 +72,13 @@ returns the following JSON:
 ## Example (project):
 
 ```bash
-nio cfg project
+nio cfg project --ip <ip> --port <port> --username <username> --password <password> --pubkeeper-hostname <hostname> --pubkeeper-token <token> --ssl
 ```
-Will first prompt you for `Pubkeeper hostname` and `Pubkeeper token` values to be put in your project's `nio.conf` file under the ``[user_defined]`` section.
 
-Additionally, it will prompt you with the option to create and/or install an SSL certificate for your nio instance.  This allows you to configure your nio instance with an additional layer of security and enables the nio System Designer to connect via HTTPS.  For more information on SSL certificates and their application, follow this [link](https://www.globalsign.com/en/ssl-information-center/what-is-an-ssl-certificate/).
+Your instance hostname and runtime port can be specified with `--ip` and `--port`. When these flags are set, nio will configure to run at `ip:port` rather than the default `0.0.0.0:8181`. The changes made from these flags are reflected in your project `nio.conf` file under the `[user_defined]` section.
+
+Pubkeeper communication settings can be added using the `--pubkeeper-hostname` and `--pubkeeper-token` options. When these are set, your nio instance will configure to connect to a specified Pubkeeper server for system wide communication. The changes made from these flags are reflected in your project `nio.conf` file under the `[user_defined]` section.
+
+Instance authentication can be configured by passing `--username` and `--password` options. This will update the authentication used by your instance for all HTTP requests. By default, instances use basic authentication credentials (Admin:Admin) to authorize access. The changes made from these flags are reflected in your project `etc/users.json` and `etc/permissions.json` files.
+
+Additionally, a `--ssl` flag can be passed to create and/or install an SSL certificate for your nio instance.  This allows you to configure your nio instance with an additional layer of security and enables the nio System Designer to connect via HTTPS.  For more information on SSL certificates and their application, follow this [link](https://www.globalsign.com/en/ssl-information-center/what-is-an-ssl-certificate/).
