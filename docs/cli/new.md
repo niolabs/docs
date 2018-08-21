@@ -70,7 +70,7 @@ creates a new folder in your current directory named `my_project` with a specifi
 nio new my_project --ssl
 ```
 
-creates a new folder in your current directory named `my_project`. Follow the prompts to configure your instance encryption
+creates a new folder in your current directory named `my_project`. Follow the prompts to configure instance encryption allowing you to enable secure authentication for your new instance.
 
 ---
 
@@ -85,12 +85,10 @@ Once you've executed one of the commands above, follow the prompts to configure 
 **Configure your local nio instance:**
 - `nio new <project> --ip <ip> --port <port>`
 - Instance hostname or IP \[default: localhost\]:
-- Instance port \[number, below 1024 requires "sudo", default: 8181\]:
+- Instance port \[number, below 1024 requires superuser access, default: 8181\]:
 
 **Configure Pubkeeper for instance communications:**
 - `nio new <project> --pubkeeper-hostname <hostname> --pubkeeper-token <token>`
-- Pubkeeper hostname \[required\]:
-- Pubkeeper token \[required\]:
 
 **Configure instance encryption:**
 - Secure instance with SSL? \[y/N, default = N\]:

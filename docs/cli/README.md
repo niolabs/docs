@@ -31,6 +31,6 @@ nio ls services
 ## [Start/Stop services in a running instance](command.md)
 
 ```bash
-nio command start <service-id>
+nio command <start|stop> <service-id>
 ```
 This section outlines all of the available CLI commands that can be used when running the nio Platform locally.
