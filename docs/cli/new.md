@@ -70,7 +70,7 @@ creates a new folder in your current directory named `my_project` with a specifi
 nio new my_project --ssl
 ```
 
-creates a new folder in your current directory named `my_project`. Follow the prompts to configure instance encryption allowing you to enable secure authentication for your new instance.
+creates a new folder in your current directory named `my_project`. Follow the prompts to configure instance encryption enabling secure authentication for your new instance.
 
 ---
 
