@@ -2,7 +2,7 @@
 
 The `new` command creates a fresh project from the official [project template](https://github.com/niolabs/project_template) repository. This command will run through the steps of cloning the project, updating all block submodules, and set the initial commit for your project. The new project folder will be made inside the current directory.
 
-The `new` command accepts several options to allow for quick instance configuration. Your instance hostname and runtime port can be specified with `--ip` and `--port`. When these flags are set, nio will configure to run at `ip:port` rather than the default `0.0.0.0:8181`. The changes made from these flags are reflected in your project `nio.conf` file under the `[user_defined]` section.
+The `new` command accepts several options to allow for quick instance configuration. Your instance hostname and runtime port can be specified with `--ip` and `--port`. When these flags are set, nio will configure to run at `ip:port` rather than the default `127.0.0.1:8181`. The changes made from these flags are reflected in your project `nio.conf` file under the `[user_defined]` section.
 
 Pubkeeper communication settings can be added using the `--pubkeeper-hostname` and `--pubkeeper-token` options. When these are set, your nio instance will configure to connect to a specified Pubkeeper server for system wide communication. The changes made from these flags are reflected in your project `nio.conf` file under the `[user_defined]` section.
 
@@ -84,7 +84,7 @@ Once you've executed one of the commands above, follow the prompts to configure 
 
 **Configure your local nio instance:**
 - `nio new <project> --ip <ip> --port <port>`
-- Instance hostname or IP \[default: localhost\]:
+- Instance hostname or IP \[default: 127.0.0.1\]:
 - Instance port \[number, below 1024 requires superuser access, default: 8181\]:
 
 **Configure Pubkeeper for instance communications:**

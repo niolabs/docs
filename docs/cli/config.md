@@ -75,7 +75,7 @@ returns the following JSON:
 nio cfg project --ip <ip> --port <port> --username <username> --password <password> --pubkeeper-hostname <hostname> --pubkeeper-token <token> --ssl
 ```
 
-Your instance hostname and runtime port can be specified with `--ip` and `--port`. When these flags are set, nio will configure to run at `ip:port` rather than the default `0.0.0.0:8181`. The changes made from these flags are reflected in your project `nio.conf` file under the `[user_defined]` section.
+Your instance hostname and runtime port can be specified with `--ip` and `--port`. When these flags are set, nio will configure to run at `ip:port` rather than the default `127.0.0.1:8181`. The changes made from these flags are reflected in your project `nio.conf` file under the `[user_defined]` section.
 
 Pubkeeper communication settings can be added using the `--pubkeeper-hostname` and `--pubkeeper-token` options. When these are set, your nio instance will configure to connect to a specified Pubkeeper server for system wide communication. The changes made from these flags are reflected in your project `nio.conf` file under the `[user_defined]` section.
 
