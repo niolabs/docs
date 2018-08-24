@@ -19,7 +19,7 @@ The following must be in your environment to run nio. You can install these requ
 
 > **[info] nio Requirements**
 >
-> **Python version 3.5+**<br />
+> **Python version 3.5-3.6**<br />
 >    In a **Command Prompt**, type `python --version` to see which version of Python you have installed.
 >    If you don't have a version of Python 3.5 or higher, you can visit the [Python downloads page](https://www.python.org/downloads/).
 >   * **Note:** During the installation, watch for on option to set your PATH and select it.
