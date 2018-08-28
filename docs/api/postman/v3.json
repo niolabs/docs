@@ -7,10 +7,11 @@
 	},
 	"item": [
 		{
+			"_postman_id": "9b602443-771e-4767-a099-588b9573e72f",
 			"name": "core",
-			"description": "",
 			"item": [
 				{
+					"_postman_id": "fe2616dd-2b34-4982-ae0c-2b847dc01f34",
 					"name": "Get Core configuration",
 					"request": {
 						"method": "GET",
@@ -29,13 +30,14 @@
 					"response": []
 				},
 				{
+					"_postman_id": "5732a775-8ab9-49e9-a9d2-f460086c4e0f",
 					"name": "Shutdown",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "{{nio_url}}/project/refresh",
+							"raw": "{{nio_url}}/config/refresh",
 							"host": [
 								"{{nio_url}}"
 							],
@@ -50,10 +52,11 @@
 			]
 		},
 		{
+			"_postman_id": "b9345666-5fab-49bc-a98f-81195bfc1af3",
 			"name": "services",
-			"description": "",
 			"item": [
 				{
+					"_postman_id": "d5ffd8e2-6143-49ab-acf2-762dab9ce85c",
 					"name": "Get Services",
 					"request": {
 						"method": "GET",
@@ -72,6 +75,7 @@
 					"response": []
 				},
 				{
+					"_postman_id": "347c7896-8e2e-42b8-b9f8-a4ee1405d698",
 					"name": "Create Service",
 					"request": {
 						"method": "POST",
@@ -98,6 +102,7 @@
 					"response": []
 				},
 				{
+					"_postman_id": "039805fc-e988-4ac4-bc04-8069b5180fa4",
 					"name": "Stop Service",
 					"request": {
 						"method": "GET",
@@ -118,6 +123,7 @@
 					"response": []
 				},
 				{
+					"_postman_id": "5f2f65a2-de84-4f68-a6f4-5ae494902429",
 					"name": "Start Service",
 					"request": {
 						"method": "GET",
@@ -138,6 +144,7 @@
 					"response": []
 				},
 				{
+					"_postman_id": "c107605d-234c-4c66-8f02-4a557a716b95",
 					"name": "Get Service Status",
 					"request": {
 						"method": "GET",
@@ -157,14 +164,37 @@
 						"description": "Gets the Service status including the process ID the service is running on"
 					},
 					"response": []
+				},
+				{
+					"_postman_id": "46bb9f3e-43c1-42b6-b14f-62eefe1d1445",
+					"name": "Command Service",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{nio_url}}/services/{{service_id}}/{{command}}",
+							"host": [
+								"{{nio_url}}"
+							],
+							"path": [
+								"services",
+								"{{service_id}}",
+								"{{command}}"
+							]
+						},
+						"description": "Sends a command to a service"
+					},
+					"response": []
 				}
 			]
 		},
 		{
+			"_postman_id": "eab4aa9f-eb25-458c-8025-51837ae0eb8f",
 			"name": "blocks",
-			"description": "",
 			"item": [
 				{
+					"_postman_id": "1e4f60ee-52d2-4865-bb0a-40c3b9fc5789",
 					"name": "Get Blocks",
 					"request": {
 						"method": "GET",
@@ -183,6 +213,7 @@
 					"response": []
 				},
 				{
+					"_postman_id": "27cc263c-eeb1-4655-925a-a5537c43a5e7",
 					"name": "Get Block by Name or ID",
 					"request": {
 						"method": "GET",
@@ -202,6 +233,7 @@
 					"response": []
 				},
 				{
+					"_postman_id": "ba9d860d-d077-4b2b-a7d0-00e62d4445ba",
 					"name": "Create new Block",
 					"request": {
 						"method": "POST",
@@ -228,6 +260,7 @@
 					"response": []
 				},
 				{
+					"_postman_id": "9c1c2e42-6040-4cb5-b413-13b37ce019db",
 					"name": "Create new Block (w/ name)",
 					"request": {
 						"method": "POST",
@@ -254,6 +287,7 @@
 					"response": []
 				},
 				{
+					"_postman_id": "97973170-7bbe-402f-8a13-0244a5caa650",
 					"name": "Update Block",
 					"request": {
 						"method": "PUT",
@@ -282,6 +316,7 @@
 					"response": []
 				},
 				{
+					"_postman_id": "71c5c47c-5942-4c0b-b0ef-6fb233d9e2c4",
 					"name": "Delete Block",
 					"request": {
 						"method": "DELETE",
@@ -307,14 +342,38 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"_postman_id": "16862f79-c51e-482f-9ba3-31f68d32802d",
+					"name": "Command Block",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{nio_url}}/services/{{service_id}}/{{block_id}}/{{command}}",
+							"host": [
+								"{{nio_url}}"
+							],
+							"path": [
+								"services",
+								"{{service_id}}",
+								"{{block_id}}",
+								"{{command}}"
+							]
+						},
+						"description": "Sends a command to a specific block"
+					},
+					"response": []
 				}
 			]
 		},
 		{
+			"_postman_id": "b811194a-5093-4f4a-91e4-6fcaee90d0c8",
 			"name": "blocks_types",
-			"description": "",
 			"item": [
 				{
+					"_postman_id": "5ebc3a08-624c-48ee-b1e4-dddc373861a3",
 					"name": "Get Block Types",
 					"request": {
 						"method": "GET",
@@ -333,6 +392,7 @@
 					"response": []
 				},
 				{
+					"_postman_id": "faa4c17a-5e2a-49a7-9b27-a55d960c7a5d",
 					"name": "Get Block by Type",
 					"request": {
 						"method": "GET",
@@ -354,10 +414,11 @@
 			]
 		},
 		{
+			"_postman_id": "e00badb8-bec1-42a9-b630-275f2cd1f8cd",
 			"name": "services_types",
-			"description": "",
 			"item": [
 				{
+					"_postman_id": "904ae449-f971-4004-af16-304a1e1f9449",
 					"name": "Get Service Types",
 					"request": {
 						"method": "GET",
@@ -376,6 +437,7 @@
 					"response": []
 				},
 				{
+					"_postman_id": "6a15470a-e007-4167-a792-8ade8ff5eeb1",
 					"name": "Get Service by Type",
 					"request": {
 						"method": "GET",
@@ -397,10 +459,11 @@
 			]
 		},
 		{
+			"_postman_id": "606d23a5-b32b-4727-b6e1-8e95ca3af220",
 			"name": "project",
-			"description": "",
 			"item": [
 				{
+					"_postman_id": "2b122256-301f-4df1-91fc-1cd206628805",
 					"name": "Get Blocks in Project",
 					"request": {
 						"method": "GET",
@@ -420,6 +483,7 @@
 					"response": []
 				},
 				{
+					"_postman_id": "abc36b38-b07a-4f7b-ad0c-58c78568dcd9",
 					"name": "Download Block to Project",
 					"request": {
 						"method": "POST",
@@ -449,17 +513,18 @@
 			]
 		},
 		{
+			"_postman_id": "071f4773-8efe-46b0-a2a6-938424cd0130",
 			"name": "config",
-			"description": "",
 			"item": [
 				{
+					"_postman_id": "c9726d7a-e60a-4223-974f-e3b5bbf57152",
 					"name": "Refresh Config",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "{{nio_url}}/project/refresh",
+							"raw": "{{nio_url}}/config/refresh",
 							"host": [
 								"{{nio_url}}"
 							],
@@ -474,10 +539,11 @@
 			]
 		},
 		{
+			"_postman_id": "a9da110c-769a-4635-a197-7cc2449f9b51",
 			"name": "logs",
-			"description": "",
 			"item": [
 				{
+					"_postman_id": "69f021a4-a979-43a6-94eb-3b3ac798a481",
 					"name": "Get Loggers",
 					"request": {
 						"method": "GET",
@@ -496,6 +562,7 @@
 					"response": []
 				},
 				{
+					"_postman_id": "d3633683-cdbf-44fc-b74c-406cc3d32b43",
 					"name": "Get Loggers (w/ levels)",
 					"request": {
 						"method": "GET",
@@ -520,6 +587,7 @@
 					"response": []
 				},
 				{
+					"_postman_id": "c6cf8e30-45cf-4f09-93bd-6e1dc5e4eb5e",
 					"name": "Update Logger Level",
 					"request": {
 						"method": "POST",
@@ -546,6 +614,7 @@
 					"response": []
 				},
 				{
+					"_postman_id": "c7d455ff-3357-4a8f-946a-5b217cd2900a",
 					"name": "Get Last 100 Logs",
 					"request": {
 						"method": "GET",
@@ -565,6 +634,7 @@
 					"response": []
 				},
 				{
+					"_postman_id": "0a0468d3-2133-4610-a3dd-66fc9969bc56",
 					"name": "Get Last 200 Logs from Service with ERROR",
 					"request": {
 						"method": "GET",
@@ -598,6 +668,7 @@
 					"response": []
 				},
 				{
+					"_postman_id": "d81acfa7-1939-493b-945f-346e1bae4b5a",
 					"name": "Get Service Loggers",
 					"request": {
 						"method": "GET",
@@ -624,6 +695,7 @@
 					"response": []
 				},
 				{
+					"_postman_id": "4139c72b-a00a-4bee-beb1-346c19a43cd1",
 					"name": "Update Service Logger Level",
 					"request": {
 						"method": "POST",
@@ -693,18 +765,28 @@
 	],
 	"variable": [
 		{
-			"id": "04ac1a71-6257-41ea-a6b1-2b7194a1a5b4",
+			"id": "269dfb86-9ef3-4563-b1e0-19f745a0aaae",
 			"key": "nio_url",
 			"value": "http://localhost:8181",
-			"type": "string",
-			"description": ""
+			"type": "string"
 		},
 		{
-			"id": "b698a9c0-f9a6-415e-89be-73830c57c2a3",
+			"id": "e69745cc-22eb-433b-a454-f8217df604da",
 			"key": "service_id",
-			"value": "690275f8-78fb-44d7-84eb-bfdcf10101f6",
-			"type": "string",
-			"description": ""
+			"value": "e54bf97c-5705-43bf-8557-5f04904ab607",
+			"type": "string"
+		},
+		{
+			"id": "03a43fca-696f-4d5c-9dd3-1d3809ed24a2",
+			"key": "block_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "65566f14-44e1-4b07-8272-2b2efb47f6d5",
+			"key": "command",
+			"value": "",
+			"type": "string"
 		}
 	]
 }
