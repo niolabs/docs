@@ -1,6 +1,6 @@
 # Direct Deployment
 
-A Direct Deployment is an instant deployment to instances that **are** externally accessible. 
+A Direct Deployment is an instant deployment to instances that **are** externally accessible.
 
 > **[info] Compatibility**
 >
@@ -30,7 +30,7 @@ A Direct Deployment is an instant deployment to instances that **are** externall
 
 - Notice the instances at the bottom. They need to be assigned to the configuration that should be deployed.
 
-<img src="/img/deploy/direct/assign.png" />
+<img class="border" src="/img/deploy/direct/assign.png" />
 
 ---
 
@@ -47,7 +47,7 @@ A Direct Deployment is an instant deployment to instances that **are** externall
 ---
 
 - After that is done, review the deployment and if everything looks correct click **deploy**!
-- The deployment will begin and will report its progress when complete. 
+- The deployment will begin and will report its progress when complete.
 
 <img src="/img/deploy/direct/complete.png" />
 
