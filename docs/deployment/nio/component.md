@@ -29,6 +29,13 @@ A Component Deployment is a deferred deployment to instances that **are not** ex
 [configuration]
 config_id=id-copied-from-designer
 config_poll_interval=3600
+# specifies if modified services are to be started/stopped based on the
+# auto_start flag
+#start_stop_services=True
+
+# specifies if existing blocks and services are to be deleted when not found
+# in the incoming configuration
+#delete_missing=False
 ```
 
 - That's all the configuration necessary for the config component. You can now run nio and do a [new release](/deployment/nio/release.md) and your nio instance will sync itself to the updated version!
