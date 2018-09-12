@@ -7,6 +7,20 @@ A Direct Deployment is an instant deployment to instances that **are** externall
 > If you can load your instance in the System Designer, you can deploy directly to it.
 >
 
+## Configuration
+
+A few options can be set under the `configuration` section of your `nio.conf` file:
+```
+[configuration]
+# specifies if modified services are to be started/stopped based on the
+# auto_start flag
+#start_stop_services=True
+
+# specifies if existing blocks and services are to be deleted when not found
+# in the incoming configuration
+#delete_missing=False
+```
+
 ## Doing a Direct Deployment
 
 > **[danger] Requirements**
