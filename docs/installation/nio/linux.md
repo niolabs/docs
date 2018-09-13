@@ -22,7 +22,7 @@ The following must be in your environment to run nio. You can install these requ
 The nio Platform requires the following for local installation.
 > **[info] nio Requirements**
 >
-> **Python version 3.4-3.6**<br />
+> **Python version 3.4+**<br />
 >    In your terminal, type `python3 --version` to see which version of Python 3 you have installed.<br>
 >    If you don't have Python 3 or have an older version, download Python 3 by typing the following command in your terminal `sudo apt install python3`.<br>
 
