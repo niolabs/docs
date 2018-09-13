@@ -1,5 +1,16 @@
 # nio binary changelog
 
+---
+## 20180910
+
+**Added**<br>
+- Blocks installed through the project manager component are now installed as submodules 
+- Introduced support for Basic Security module to verify passwords hashed using bcrypt
+- Introduced queuing into Pubkeeper Communication module to prevent warnings on startup
+- Enforce service name validation. Names can only include aphanumeric, `_`, `-`, and whitespace.
+
+**Fixed**<br>
+- Fixed compatibility with Python 3.7
 
 ---
 ## 20180524
