@@ -15,7 +15,7 @@ A Component Deployment is a deferred deployment to instances that **are not** ex
 >
 
 #### To do a component deployment:
-- Make sure your nio instance has the [nio config component](https://github.com/niolabs/component_config).
+- Make sure your nio instance has the [nio deployment API component](https://github.com/niolabs/component_deployment_api).
 - Get the Instance Configuration ID from the Release modal in the System Designer.
 
 <img class="left border" src="/img/deploy/component/id.png" height="350" />
