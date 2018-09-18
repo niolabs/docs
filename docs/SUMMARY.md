@@ -61,6 +61,7 @@
     * [In Production](/deployment/third-party/long-running.md) 
     * [With command line and Git](/deployment/third-party/manually.md)
     * [With a local Pubkeeper server](/deployment/third-party/local-pubkeeper.md) 
+  * [Best Practices](/deployment/best-practices/README.md)
 * [Monitor](/monitoring/README.md)
   * [nio System Monitor](/monitoring/system-monitor/README.md)
   * [Third Party Tools](/monitoring/third-party/README.md)
