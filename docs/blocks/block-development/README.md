@@ -15,13 +15,13 @@ You can adopt one of two philosophies when creating a block:
 <img class="right shadow" src="/img/blocks/custom-block-button.png" width="225" />
 Your custom blocks can be added to your nio instance from within the nio System Designer. To add a custom block, click on the **custom** block template under the **available** tab in the **block library**. Enter the custom block's repository link in the modal and click **accept**. The block will now show up under the **installed** tab of the **block library**.
 
->**[info] Github Repostiory URL**
->
->For any repository Github offers an SSH and an HTTPS URL to copy, **you must use the SSH URL**. If the instance's host machine does not have an SSH key enabled on Github you will need to modify a URL like `git@github.com:<profile>/<repo>.git` to `git://github.com/<profile>/<repo>.git`. Otherwise the block will fail to install and the BlockCloner will log an Error like `while cloning block, command failed with return code: 128`.
-
 ### Manually install custom blocks
 
-Custom blocks can also be manually installed using the command line interface. Block code hosted on github can be added using the `nio add <block>` command from your project root, where `<block>` is either the name of an [official nio block repository](https://github.com/nio-blocks), or the SSH URL to a github repository.
+Custom blocks can also be manually installed for local use in the nio System Designer by adding them to your project's `blocks/` directory as a submodule with the
+```
+git submodule add [repository link]
+```
+command, and restarting your local nio instance.
 
 ---
 
