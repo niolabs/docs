@@ -2,13 +2,15 @@
 
 nio uses BasicAuth to authenticate to all of it's endpoints. For more information on nio authentication see [Authentication and authorization](/api/conventions.md)
 
+For added security, each password associated with a user name will be one way encrypted using the bcrypt hashing method. This protects nio user credentials stored on a device from malicious authentication. bcrypt hashing prevents reverse password lookups through the use of rainbow tables.  
+
 ## Adding a user
 
 ```bash
 nio add_user <username> <password>
 ```
 
-Creates a new user with the provided password to authenticate to nio with. 
+Creates a new user with the provided (hashed) password to authenticate to nio with. 
 
 ### Example
 ```bash

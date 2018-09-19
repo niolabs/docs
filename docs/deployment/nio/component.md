@@ -15,10 +15,10 @@ A Component Deployment is a deferred deployment to instances that **are not** ex
 >
 
 #### To do a component deployment:
-- Make sure your nio instance has the [nio config component](https://github.com/niolabs/component_config).
+- Make sure your nio instance has the [nio deployment API component](https://github.com/niolabs/component_deployment_api).
 - Get the Instance Configuration ID from the Release modal in the System Designer.
 
-<img src="/img/deploy/component/id.png" height="350" />
+<img class="left border" src="/img/deploy/component/id.png" height="350" />
 
 - Copy the **id** value for the configuration you would like to use.
 - Paste that value into your `nio.conf` file under the `[configuration]` section.
@@ -29,6 +29,13 @@ A Component Deployment is a deferred deployment to instances that **are not** ex
 [configuration]
 config_id=id-copied-from-designer
 config_poll_interval=3600
+# specifies if modified services are to be started/stopped based on the
+# auto_start flag
+#start_stop_services=True
+
+# specifies if existing blocks and services are to be deleted when not found
+# in the incoming configuration
+#delete_missing=False
 ```
 
 - That's all the configuration necessary for the config component. You can now run nio and do a [new release](/deployment/nio/release.md) and your nio instance will sync itself to the updated version!

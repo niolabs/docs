@@ -1,6 +1,6 @@
 # nio Deployment Best Practices
 
-The nio software is designed to be flexible in its installation and requirements. This means it fits into many different shapes and sizes of deployments. However, it also means that mistakes can be made when running nio in a production setting. In this documented we've collected some tips and tricks based on our own and our customers' experiences that can help you make sure your nio instance runs reliably and securely.
+The nio software is designed to be flexible in its installation and requirements. This means it fits into many different shapes and sizes of deployments. However, it also means that mistakes can be made when running nio in a production setting. In this document we've collected some tips and tricks based on our own and our customers' experiences that can help you make sure your nio instance runs reliably and securely.
 
 ## Use Virtual Environments
 

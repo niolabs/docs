@@ -58,7 +58,7 @@
     * [Component Deploy](/deployment/nio/component.md)
   * [Third Party Tools](/deployment/third-party/README.md)
     * [In a Docker Container](/deployment/third-party/docker.md)
-    * [In Production](/deployment/third-party/long-running.md) 
+    * [In Production](/deployment/third-party/long-running.md)
     * [With command line and Git](/deployment/third-party/manually.md)
     * [With a local Pubkeeper server](/deployment/third-party/local-pubkeeper.md) 
   * [Best Practices](/deployment/best-practices/README.md)

@@ -2,19 +2,18 @@
 
 Block properties are the configuration fields of a block.
 
+<img class="right shadow" src="/img/blocks/modifier-block-config.png" width="225" />
 A **block type name**—_Filter_, _Modifier_, _CounterIntervalSimulator_—defines the block type and the configurable fields. (In the System Designer, this name is abbreviated in a vertical bar on the left side of the block.)
 
 When you drag a new instance of a block type onto the canvas of the System Designer, you will see that block's available configuration fields.
 
 When you save your block, its configuration is saved and you can find that configured block under the **configured** tab of the block library. Each instance of a configured block will have a unique block ID that is visible under the name field.
 
-<img class="right shadow" src="/img/blocks/modifier-block-config.png" width="225" />
 As an example, the configuration panel for a _Modifier_ block is shown at the right. It displays four properties of the _Modifier_ block:
 - **Exclude existing fields**
 - **Fields**
 - **Log Level**
 - **Version**
-
 
 ---
 

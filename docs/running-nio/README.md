@@ -9,22 +9,17 @@ The command to run nio locally is `niod`. This will start running a nio instance
 
 ---
 ## Create a project
+<img class="right shadow" src="/img/cloud/addInstanceButton.png" width="200" />
 The easiest way to create and run a new nio project is to first create a new local instance in the System Designer and then copy and run the `nio new` command containing your system's Pubkeeper credentials.
 
-<img class="right shadow" src="/img/cloud/addInstanceButton.png" width="200" />
+<img class="right border" src="/img/addLocalInstance.png" width="250" />
 1. Open the **nio System Designer** in a browser: http://app.n.io/design (note the http protocol for local instances without SSL certificates).
 1. Select your system card from the grid.
 1. Click **add instance** on the left side of your screen.
-<img class="right border" src="/img/addLocalInstance.png" width="250" />
   * Check the **local instance** checkbox.
   * In the **instance name** box, enter an instance name.
 1. The rest of the text inputs will be pre-filled with default values that you may edit if necessary.
 1. At the bottom, copy the nio-cli command that will create your project with the correct Pubkeeper credentials.
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>
 
@@ -33,7 +28,7 @@ Back in your terminal, paste the command copied from the create instance modal i
 nio new LocalInstance --pubkeeper-hostname xxxxx.pubkeeper.nio.works --pubkeeper-token xxxxxxxx
 ```
 
-> Note: you need nio-cli 0.6.0+ to run this command. Type `nio --version` to see which version of the nio-cli you are running. You can update with `pip3 install -U nio` or `pip install -U nio` (depending which pip you have in your environment). 
+> Note: you need nio-cli 0.6.0+ to run this command. Type `nio --version` to see which version of the nio-cli you are running. You can update with `pip3 install -U nio` or `pip install -U nio` (depending which pip you have in your environment).
 
 When it prompts you for an optional secure instance configuration, choose Yes (Y). Press return for the default on all following prompts.
 
@@ -69,13 +64,13 @@ Available nio Blocks can be explored in the nio [Block Library](https://blocks.n
 ---
 ## Add an existing local instance/project to the <span class="allow-caps">System Designer</span>
 
+<img class="right shadow" src="/img/cloud/addInstanceButton.png" width="200" />
 You can also add an existing local instance to the **System Designer**. Make sure your local instance is running.
 
-<img class="right shadow" src="/img/cloud/addInstanceButton.png" width="200" />
 1. Open the **nio System Designer** in a browser: http://app.n.io/design.
+<img class="right border" src="/img/addLocalInstance.png" width="250" />
 1. Select your system card from the grid.
 1. Click **add instance** on the left side of your screen.
-<img class="right border" src="/img/addLocalInstance.png" width="250" />
   * Check the **local instance** checkbox.
   * In the **instance name** box, enter an instance name.
 1. The rest of the text inputs will be pre-filled with default values that you may edit if necessary.
@@ -83,10 +78,6 @@ You can also add an existing local instance to the **System Designer**. Make sur
 
 
 When the System Designer connects to a nio instance, it communicates with that instance directly from your browser via an XHR request. Hostnames like `localhost` and other internal IP addresses will work. **You must have access to the localhost or other IP address from your machine to use the System Designer.**
-<br>
-<br>
-<br>
-
 
 ---
 ## http
