@@ -21,13 +21,13 @@ From your project directory, run this command to configure SSL for your local in
 nio config --ssl
 ```
 
-It will prompt you for a CA location, if you don't have a CA that you want to use, don't enter anything and one will be created for you. Once the CA is created and trusted, you will be prompted for a hostname. This is the hostname that you will enter in the System Designer for how you will access your instance. If your instance will only run on your local machine, enter `localhost`. The certificate will be created for that hostname.
+It will prompt you for a CA location, if you don't have a CA that you want to use, don't enter anything and one will be created for you at that location. Read more about the local CA below. Once the CA is created and trusted, you will be prompted for a hostname. This is the hostname that you will enter in the System Designer for how you will access your instance. If your instance will only run on your local machine, enter `localhost`. The certificate will be created for that hostname.
 
 The CA will be created in `~/.nio/` and your certificate and private key will be created in the `etc/ssl` folder of your project.
 
 ## The niolabs Local Certificate Authority
 
-In order to expedite secure local development, the nio CLI can create a local certiifcate authority that can be used to sign your instances' SSL certificates. This authority is only created once and can be trusted in your host's trusted certificate store. Then, all subsequent certificates that are signed by this CA will be trusted as well.
+In order to expedite secure local development, the nio CLI can create a local certificate authority that can be used to sign your instances' SSL certificates. This authority is only created once and can be trusted in your host's trusted certificate store. Then, all subsequent certificates that are signed by this CA will be trusted as well.
 
 This local CA is created by default in your `~/.nio/` folder on your machine. The CA consists of a certificate and a private key that will be used to sign other certificates.
 
