@@ -17,7 +17,7 @@ Your custom blocks can be added to your nio instance from within the nio System 
 
 >**[info] Github Repostiory URL**
 >
->For any repository Github offers an SSH and an HTTPS URL to copy, **you must use the SSH URL**. If the instance's host machine does not have an SSH key enabled on Github you will need to modify a URL like `git@github.com:<profile>/<repo>.git` to `git://github.com/<profile>/<repo>.git`. Otherwise the block will fail to install and the BlockCloner will log an Error like `while cloning block, command failed with return code: 128`.
+>For any repository Github offers multiple URL options to access the repository. niolabs recommends that you use the git protocol URL rather than SSH or HTTPS. Your block URL should look like this: `git://github.com/<profile>/<repo>.git`. If you use a different protocol the block may fail to install and the BlockCloner will log an error like `while cloning block, command failed with return code: 128`.
 
 ### Manually install custom blocks
 
