@@ -21,6 +21,6 @@ nio add queue debounce
 installs both the _Queue_ and the _Debounce_ blocks to a running nio instance.
 
 ```bash
-nio add slack --port 8182 --username foo --password bar
+nio add slack --instance-host https://localhost:8182 --username foo --password bar
 ```
 installs the _Slack_ block to a running nio instance at NIOPORT 8182 with an authorized instance user "foo".

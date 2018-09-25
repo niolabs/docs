@@ -15,9 +15,9 @@ starts the **simulate-and-log** service on your running nio instance.
 
 ---
 
-## Example (port `8282`):
+## Example (custom port `8182`):
 
 ```bash
-nio command stop simulate-and-log -p 8282
+nio command stop simulate-and-log --instance-host https://localhost:8182
 ```
-stops the **simulate-and-log** service on your running nio instance at port `8282`.
+stops the **simulate-and-log** service on your running nio instance at port `8182`.

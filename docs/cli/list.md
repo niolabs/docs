@@ -30,8 +30,8 @@ simulate-and-log
 
 ---
 
-## Example (port `8282`):
+## Example (custom port `8182`):
 ```bash
-nio list blocks -p 8282
+nio list blocks -instance-host https://localhost:8182
 ```
-returns a list of blocks in your running instance at port `8282`
+returns a list of blocks in your running instance at port `8182`

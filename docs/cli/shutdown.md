@@ -16,8 +16,8 @@ nio shutdown
 
 ---
 
-## Example (port `8282`):
+## Example (custom port `8182`):
 
 ```bash
-nio shutdown -p 8282
+nio shutdown --instance-host https://localhost:8182
 ```
