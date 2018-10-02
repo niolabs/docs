@@ -77,7 +77,7 @@ The Task Scheduler provides a simple interface to start a process at the selecte
 1. [Actions] Tab
   - Create a new action
   - Select `Start a Program` from the drop-down
-  - Enter `niod` for *Program/Script*. If you are using a virtual environment (highly recommended) put the absolute path to `niod` inside that environment, for example: `C:\Users\<user>\nio\env\bin\niod`
+  - Enter `niod` for *Program/Script*. If you are using a [virtual environment](https://docs.n.io/deployment/best-practices/) (highly recommended) put the absolute path to `niod` inside that environment, for example: `C:\Users\<user>\nio\env\bin\niod`
   - Enter the absolute path to the project folder for *Start In*, for example: `C:\Users\<user>\nio\projects\<my_project>`
 1. [Settings] Tab
     - Verify these options, by default Windows will stop tasks that run longer than 3 days.
