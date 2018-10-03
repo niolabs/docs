@@ -21,14 +21,19 @@ A Component Deployment is a deferred deployment to instances that **are not** ex
 <img class="left border" src="/img/deploy/component/id.png" height="350" />
 
 - Copy the **id** value for the configuration you would like to use.
-- Paste that value into your `nio.conf` file under the `[configuration]` section.
+- Use that value for **config_id** in your `nio.conf` file, under the `[configuration]` section.
 - Update the **config_poll_interval** value to the number of seconds you would like the component to check if an update is available. In this example we will use 60 minutes.
 - Your `nio.conf` `[configuration]` section should look like this:
 
 ```
 [configuration]
-config_id=id-copied-from-designer
-config_poll_interval=3600
+# url to use when requesting a configuration from the Product API
+#config_api_url_prefix=
+
+# for indirect deployments provide a configuration ID and polling interval
+config_id=<id>
+#config_poll_interval=3600
+
 # specifies if modified services are to be started/stopped based on the
 # auto_start flag
 #start_stop_services=True
