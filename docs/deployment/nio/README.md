@@ -28,4 +28,4 @@ In order to do an initial deployment, first a new instance configuration must be
 After successfully releasing an instance configuration there are two ways to proceed with the deployment.
 
 * [Direct Deployment](/deployment/nio/direct.md)
-* [Component Deployment](/deployment/nio/component.md)
+* [Indirect Deployment](/deployment/nio/component.md)
