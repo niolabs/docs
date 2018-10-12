@@ -8,7 +8,7 @@
 >   You have a C++ compiler available when you can open a **Developer Command Prompt** window and run the command `cl`. 
 >   * This should be the only time you need to use a **Developer Command Prompt**. You can close this window after confirming a C++ compiler is available.
 >
-> **Git**<br />
+> **Git 1.8.4 or later**<br />
 >    Git is a fast, scalable, distributed version-control system with a rich command set that the nio System Designer relies on for adding and updating blocks as part of your nio instance.<br />
 >    In a **Command Prompt** , type `git --version` to see if git is installed.
 >    If not, you can download git for windows on this [Git download page](https://git-scm.com/download/win) and follow the on screen instructions.
