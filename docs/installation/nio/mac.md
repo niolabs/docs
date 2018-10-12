@@ -9,7 +9,7 @@
 > In your terminal (**Applications > Utilities > Terminal**), type `clang --version` to confirm that you have clang installed. If you do not, you can get it by
 > installing Xcode Command Line Tools by entering `xcode-select --install` into your terminal.
 >
-> **Git**<br />
+> **Git 1.8.4 or later**<br />
 >    Git is a fast, scalable, distributed version-control system with a rich command set that the nio System Designer relies on for adding and updating blocks as part of your nio instance.<br />
 >    In your terminal (**Applications > Utilities > Terminal**), type `git --version` to see if git is installed.<br>
 >    Follow this [installation guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to get started with Git.
