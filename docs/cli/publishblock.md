@@ -79,7 +79,7 @@ The following options can be provided the release information object:
  * *from_python* - A Python file where the block information can be sourced. See the documentation above for usage of this property.
  * *version* - The version of the block release (can be inferred using from_python)
 
-### Example spec.json
+### Example release.json
 ```
 {
   "nio/SampleBlock": {
