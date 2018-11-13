@@ -15,16 +15,12 @@ With the default configuration, the block needs a signal to be processed by each
 
             |             |
             |             |
-            |             |
-            |             |
             v             v
        +----O-------------O----+
        | MergeStreams          |
        |   Notify Once: True   |
        |                       |
        +-----------O-----------+
-                   |
-                   |
                    |
                    |
                    v
@@ -48,16 +44,12 @@ By Setting **Notify Once** False (unchecked), every signal received at either in
 
             |             |
             |             |
-            |             |
-            |             |
             v             v
        +----O-------------O----+
        | MergeStreams          |
        |   Notify Once: False  |
        |                       |
        +-----------O-----------+
-                   |
-                   |
                    |
                    |
                    v
@@ -82,8 +74,6 @@ in this example, a **Goup By** expression is used to distinguish two different s
 
             |                   |
             |                   |
-            |                   |
-            |                   |
             v                   v
        +----O-------------------O----+
        | MergeStreams                |
@@ -91,8 +81,6 @@ in this example, a **Goup By** expression is used to distinguish two different s
        |   Stream Expiration: 2 sec  |
        |   Group By: {{ $id }}       |
        +--------------O--------------+
-                      |
-                      |
                       |
                       |
                       v
