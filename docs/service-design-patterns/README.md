@@ -6,3 +6,5 @@ The logic of your entire nio system is determined by the design of your services
  * [Restructure and Group Signals](/service-design-patterns/join.md)
  * [Publishing and Subscribing](/service-design-patterns/pub-sub.md)
  * [Simulators](/service-design-patterns/simulators.md)
+ * [Merging Streams of Signals](/service-design-patterns/merge.md)
+ 
