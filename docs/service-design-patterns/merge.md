@@ -15,7 +15,7 @@ With the default configuration, the block needs a signal to be processed by each
 
             |             |
             |             |
-            v             v
+            V             V
        +----O-------------O----+
        | MergeStreams          |
        |   Notify Once: True   |
@@ -23,7 +23,7 @@ With the default configuration, the block needs a signal to be processed by each
        +-----------O-----------+
                    |
                    |
-                   v
+                   V
 
      {"letters": "A", "numbers": 0}
        none
@@ -44,7 +44,7 @@ By Setting **Notify Once** False (unchecked), every signal received at either in
 
             |             |
             |             |
-            v             v
+            V             V
        +----O-------------O----+
        | MergeStreams          |
        |   Notify Once: False  |
@@ -52,7 +52,7 @@ By Setting **Notify Once** False (unchecked), every signal received at either in
        +-----------O-----------+
                    |
                    |
-                   v
+                   V
 
      {"letters": "A", "numbers": 0}
      {"letters": "A", "numbers": 1}
@@ -74,7 +74,7 @@ in this example, a **Goup By** expression is used to distinguish two different s
 
             |                   |
             |                   |
-            v                   v
+            V                   V
        +----O-------------------O----+
        | MergeStreams                |
        |   Notify Once: False        |
@@ -83,7 +83,7 @@ in this example, a **Goup By** expression is used to distinguish two different s
        +--------------O--------------+
                       |
                       |
-                      v
+                      V
 
        {"id": "A", "foo": 1, "bar": -1}
        {"id": "B", "foo": 1, "bar": -1}
