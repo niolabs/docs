@@ -13,9 +13,9 @@ With the default configuration, the block needs a signal to be processed by each
 {"letters": "C"}           none
   ...                      ...
 
-       |                       |
-       |                       |
-       +----+             +----+
+            |             |
+            |             |
+            |             |
             |             |
             v             v
        +----O-------------O----+
@@ -46,9 +46,9 @@ By Setting **Notify Once** False (unchecked), every signal received at either in
 {"letters": "C"}           none
   ...                      ...
 
-       |                       |
-       |                       |
-       +----+             +----+
+            |             |
+            |             |
+            |             |
             |             |
             v             v
        +----O-------------O----+
@@ -80,9 +80,9 @@ in this example, a **Goup By** expression is used to distinguish two different s
   (1 sec delay)             (1 sec delay)
   ...                            ...
 
-       |                             |
-       |                             |
-       +----+                   +----+
+            |                   |
+            |                   |
+            |                   |
             |                   |
             v                   v
        +----O-------------------O----+
