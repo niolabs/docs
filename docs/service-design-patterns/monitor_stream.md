@@ -3,7 +3,7 @@ When consuming a stream of signals, it's possible that the source of those signa
 
 ---
 
-For every signal processed, the _SignalTimeout_ resets an internal timer for every configured **Interval**, which if allowed to expire will emit the last signal received, with a `timeout` attribute added to it. As long as signals are received at least as often as the configured interval(s), no signals are emitted.
+For every signal processed, the _SignalTimeout_ resets an internal timer for every configured **Interval**, which if allowed to expire will emit the last signal received, with a `timeout` attribute added to it. If the incoming signal already has a `timeout` attribute, it will be overwritten with this new value. As long as signals are received at least as often as the configured interval(s), no signals are emitted.
 
 For example, 1 minute after the `important_data` stream stops (perhaps the publisher has stopped, or a network error has ocurred) a signal will be published to `alerts`, and then repeat every minute until the stream is restored. While `important_data` is working normally, no signals are published to `alerts`.
 ```
@@ -32,7 +32,7 @@ For example, 1 minute after the `important_data` stream stops (perhaps the publi
 |                                  |
 +-----------------O----------------+
 ```
-Every signal emitted from a _SignalTimeout_ has a new attribute, `timeout`, added to it, which contains a `datetime.timedelta` object. The value of this object is equal to the configured **Interval**, and does not increment if configured **Repeatable**. That is to say, the `timeout` attribute represents the configured **Interval** that was triggered, not the cumulative time elapsed. If the incoming signal already has a `timeout` attribute, it will be overwritten with this new value.
+Every signal emitted from a _SignalTimeout_ has a new attribute, `timeout`, added to it, which contains a `datetime.timedelta` object. The value of this object is equal to the configured **Interval**, and does not increment if configured **Repeatable**. That is to say, the `timeout` attribute represents the configured **Interval** that was triggered, not the cumulative time elapsed.
 
 In this example we will use a [_StateChange_](https://blocks.n.io/StateChange) to evaluate if a stream is dry or not, and build an alert message based on that. We will also use [signal grouping](https://docs.n.io/service-design-patterns/group_by.html) to monitor multiple streams identified by the value of an `id` attribute. The defined **State** for each **Group** is the value of the incoming signals' `timeout` attribute, which is `False` if the signal was emitted by the subscriber into the _Modifier_. Any value of `timeout` that isn't explicitly `False`, such as a `datetime.timedelta` assigned by the _SignalTimeout_, will be evaluated as `True` and provide a change of state. This [Truth Value Test](https://docs.python.org/3/library/stdtypes.html#truth-value-testing) is also used in the _ConditionModifier_ to determine which `message` to build. In this configuration a single, customized alert can be sent when a stream goes dry, and another distinct message when it resumes.
 ```
