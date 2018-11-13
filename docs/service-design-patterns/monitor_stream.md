@@ -30,7 +30,7 @@ For example, 1 minute after the `important_data` stream stops (perhaps the publi
 |   Topic: alerts                  |
 |                                  |
 |                                  |
-+-----------------O----------------+
++----------------------------------+
 ```
 Every signal emitted from a _SignalTimeout_ has a new attribute, `timeout`, added to it, which contains a `datetime.timedelta` object. The value of this object is equal to the configured **Interval**, and does not increment if configured **Repeatable**. That is to say, the `timeout` attribute represents the configured **Interval** that was triggered, not the cumulative time elapsed.
 
@@ -79,7 +79,7 @@ In this example we will use a [_StateChange_](https://blocks.n.io/StateChange) t
                 |                                            |
                 |       Formula: {{ not $state }}            |
                 |       Attribute Value": {{ $group }} OK    |
-                +--------------------------------------------+
+                +---------------------O----------------------+
 ```
 ## The More You Know:
 A `datetime.timedelta` object is represented as three integers in the service logs, `{timeout: datetime.timedelta(<days>, <seconds>, <microseconds>)}`, and can be easily converted into seconds: `{{ $timeout.total_seconds() }}`. For more information see the [Python Standard Library](https://docs.python.org/3/library/datetime.html#timedelta-objects).
