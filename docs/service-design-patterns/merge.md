@@ -60,7 +60,7 @@ By Setting **Notify Once** False (unchecked), every signal received at either in
      {"letters": "C", "numbers": 1}
        ...
 ```
-in this example, a **Goup By** expression is used to distinguish two different sources of data by using the incoming signals' `id` attribute. The **Stream Expiration** means that, even though **Notify Once** is False, if one of the streams "goes dry" (stops receiving new signals) its last signal is discarded. This is useful for ensuring that each source of data is working and up to date before using that data. To take action in the case of a dry stream, see [Monitoring a Data Stream](https://docs.n.io/service-design-patterns/signal_timeout.html)
+in this example, a **Goup By** expression is used to distinguish two different sources of data by using the incoming signals' `id` attribute. The **Stream Expiration** means that, even though **Notify Once** is False, if one of the streams "goes dry" (stops receiving new signals) its last signal is discarded. This is useful for ensuring that each source of data is working and up to date before using that data. To take action in the case of a dry stream, see [Monitoring Streams](https://docs.n.io/service-design-patterns/monitor_stream.html)
 ```
 {"id": "A", "foo": 1}     {"id": "A", "bar": -1}
 {"id": "B", "foo": 1}     {"id": "B", "bar": -1}
