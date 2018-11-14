@@ -1,5 +1,5 @@
 # Handling Web Requests
-It is easy to build an HTTP endpoint using nio blocks, and in fact an entire API can be constructed starting with the _WebHandler_ family of blocks. There are two distinct types of each block, "regular" and JSON, where the former is usually used for plain text and the latter for structured data, such as that returned by a RESTful API.
+It is easy to build an HTTP endpoint using nio blocks, and in fact an entire API can be constructed starting with the _WebHandler_ family of blocks. Every HTTP endpoint created will use a Handler block to receive requests, and an Output block to dispatch a response. Furthermore there are two distinct types of each block, "regular" and JSON, where the former is usually used for plain text and websites, and the latter for structured data.
 
 ---
 
@@ -16,7 +16,7 @@ Every web request is made from a *client* to a *server*, which in this case is a
                   V
 +-----------------O----------------+
 | WebOutput                        |
-|   Response Body: hello world     |
+|   Response Body: Hello, world!   |
 |   Response Status: 200           |
 |                                  |
 +----------------------------------+
