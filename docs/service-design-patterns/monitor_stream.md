@@ -80,4 +80,4 @@ In this example we will use a [_StateChange_](https://blocks.n.io/StateChange) t
                 +---------------------O----------------------+
 ```
 ## The More You Know:
-A `datetime.timedelta` object is represented as three integers in the service logs, `{timeout: datetime.timedelta(<days>, <seconds>, <microseconds>)}`, and can be easily converted into seconds: `{{ $timeout.total_seconds() }}`. For more information see the [Python Standard Library](https://docs.python.org/3/library/datetime.html#timedelta-objects).
+A `datetime.timedelta` object is represented as three integers in the service logs, such as `{timeout: datetime.timedelta(<days>, <seconds>, <microseconds>)}`, and can be easily converted into seconds: `{{ $timeout.total_seconds() }}`. For more information see the [Python Standard Library](https://docs.python.org/3/library/datetime.html#timedelta-objects).

@@ -1,4 +1,4 @@
-# Restructure lists of signals
+# Restructure Lists of Signals
 
 If you have a list of signals that you want to condense into fewer signals or even one signal, there are a few nio Blocks that will help. The [_Join_](https://blocks.n.io/Join) block is commonly used and supports [signal grouping](https://docs.n.io/service-design-patterns/group_by.html).
 
