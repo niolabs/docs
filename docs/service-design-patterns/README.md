@@ -10,4 +10,7 @@ The logic of your entire nio system is determined by the design of your services
  * [Monitoring Streams](/service-design-patterns/monitor_stream.md)
  * [Merging Streams of Signals](/service-design-patterns/merge.md)
  * [Handling Web Requests](/service-design-patterns/web_requests.md)
+ * [Making Web Requests]()
+ * [Industrial Protocols: Modbus]()
+ * [Industrial Protocols: Ethernet/IP](/service-design-patterns/eip_comms.md)
  
