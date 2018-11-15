@@ -9,6 +9,7 @@ Every web request is made from a *client* to a *server*, which in this case is a
 | WebHandler                       |
 |   Endpoint: web_test             |
 |   Port: 8182                     |
+|   Require Authentication: False  |
 |                                  |
 +-----------------O----------------+
                   |
