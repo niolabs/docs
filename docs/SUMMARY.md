@@ -78,6 +78,7 @@
   * [Clone Services](/cli/clone-services.md)
   * [Users](/cli/users.md)
   * [Shutdown](/cli/shutdown.md)
+  * [Publishing Blocks](/cli/publishblock.md)
   * [Changelog](/cli/changelog.md)
 
 ---
