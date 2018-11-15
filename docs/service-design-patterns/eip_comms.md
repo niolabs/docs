@@ -40,6 +40,6 @@ For every signal processed, both the [_EIPGetAttribute_](https://blocks.n.io/EIP
 ```
 If for example the device manual specifies that this is an [IEEE 754](https://en.wikipedia.org/wiki/IEEE_754) floating point number (big endian) the value ultimately decodes to `-1.0`. The precision of this float is inferred from the number of bytes to unpack and does not need to be configured. By selecting **Exclude Existing Fields** the final signal in this diagram contains only the unpacked vale in the new attribute(s) configured.
 
-*Setting* an attribute is very similar, using [_PackBytes_](https://blocks.n.io/UnpackBytes) to store an integer or float into the specified number of bytes (therefore defining the range of integers, or precision of floats).
+*Setting* an attribute is very similar, using [_PackBytes_](https://blocks.n.io/PackBytes) to store an integer or float into the specified number of bytes (therefore defining the range of integers, or precision of floats).
 
-To interact with an Allen-Bradley CongtrolLogix or CompactLogix controller, see the [ReadTag](https://blocks.n.io/ReadTag) and [WriteTag](https://blocks.n.io/WriteTag) blocks specific for those devices.
+To interact with an Allen-Bradley CongtrolLogix or CompactLogix controller, see the [_ReadTag_](https://blocks.n.io/ReadTag) and [_WriteTag_](https://blocks.n.io/WriteTag) blocks specific for those devices.
