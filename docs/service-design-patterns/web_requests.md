@@ -3,7 +3,7 @@ It is easy to build an HTTP endpoint using nio blocks, and in fact an entire API
 
 ---
 
-Every web request is made from a *client* to a *server*, which in this case is a _WebHandler_ or _WebJSONHandler_ block. For more information on which to use, see the individual block documentation, this guide applies to either. Every request generally expects a response, which is provided by the _WebOutput_ and _WebJSONOutput_ blocks:
+Every web request is made from a *client* to a *server*, which in this case is a [_WebHandler_](https://blocks.n.io/WebHandler) or [_WebJSONHandler_](https://blocks.n.io/WebJSONHandler) block. For more information on which to use, see the individual block documentation, this guide applies to either. Every request generally expects a response, which is provided by the [_WebOutput_](https://blocks.n.io/Weboutput) and [_WebJSONOutput_](https://blocks.n.io/WebJSONOutput) blocks:
 ```
 +----------------------------------+
 | WebHandler                       |
@@ -47,7 +47,7 @@ This example shows how to create a web service that returns the last temperature
                                    V        V
                       +------------O--------O------------+
                       | MergeStreams                     |
-                      |  Group By: {{ str($freezer) }}   |
+                      |  Group By: {{ int($freezer) }}   |
                       |  Notify Once: False              |
                       |                                  |
                       +-----------------O----------------+
@@ -61,3 +61,4 @@ This example shows how to create a web service that returns the last temperature
                       |                                  |
                       +----------------------------------+
 ```
+Note that while grouping the value of `freezer` is cast to an integer. The parameters included in a web request are generally strings, even if representing an integer. To group successfully all incoming values of `freezer` are forced to an integer before being evaluated for **Group By**. For more information see the standard [Built-in Types](https://docs.python.org/3/library/stdtypes.html).
