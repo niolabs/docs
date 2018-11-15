@@ -22,7 +22,7 @@ Every web request is made from a *client* to a *server*, which in this case is a
 |                                  |
 +----------------------------------+
 ```
-If running this example on `localhost`, one can visit `http://localhost:8182/web_test` in any web browser and see `Hello, world!` on a plain web page. SSL encryption of this endpoint uses the same configuration as the running nio instance. If **Require Authentication** is True, clients must include an `authorization` header in requests.
+If running this example on `localhost`, one can visit `http://localhost:8182/web_test` in any web browser and see `Hello, world!` on a plain web page. SSL encryption of this endpoint uses the same configuration as the running nio instance. If **Require Authentication** is True, clients must include an `authorization` header in requests. For more information on using SSl in your instance please see [the docs](https://docs.n.io/running-nio/ssl.html).
 
 Included in the signal emitted by the _WebHandler_ is a new attribute *id*, which is used by the _WebOutput_ block's **RequestID** to send the response to the correct client and close the socket. Without a valid **RequestID** the _WebOutput_ will fail to build a response.
 
