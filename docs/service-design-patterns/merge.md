@@ -66,7 +66,7 @@ in this example, a **Goup By** expression is used to distinguish two different s
   (1 sec delay)             (1 sec delay)
 {"id": "B", "foo": 3}     {"id": "B", "bar": -3}
   (1 sec delay)             (1 sec delay)
-  ...                            ...
+  ...                       ...
             |                   |
             |                   |
             V                   V
@@ -86,4 +86,5 @@ in this example, a **Goup By** expression is used to distinguish two different s
        {"id": "B", "foo": 2, "bar": -2}
          (1 sec delay)
        {"id": "B", "foo": 3, "bar": -3}
+         ...
 ```
