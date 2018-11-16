@@ -7,7 +7,6 @@ Able to communicate with any device that implements [Ethernet/IP](https://www.od
 For every signal processed, both the [_EIPGetAttribute_](https://blocks.n.io/EIPGetAttribute) and [_EIPSetAttribute_](https://blocks.n.io/EIPSetAttribute) blocks will execute a single request to a target device, and emit a signal containing the results of that request. The path of CIP objects and the attributes available is defined by the target device manufacturer. In the case of *getting* an attribute, the outgoing signal will contain the configured `host` and object `path`, and most importantly a `value` attribute that contains some raw bytes like `{"value": b"\xbf\x80\x00\x00"}`. Generally the easiest way to deal with this binary data is to use an [_UnpackBytes_](https://blocks.n.io/UnpackBytes) block to build a real number. The method of interpretation for this data is provided by the device vendor, and a **New Signal Attrbute** configured following that method:
 ```
                       ...
-
                        |
                        |
                        V
@@ -33,7 +32,6 @@ For every signal processed, both the [_EIPGetAttribute_](https://blocks.n.io/EIP
                        |
                        |
                        V
-
             {"<host>_temp_C": -1.0}
 ```
 If for example the device manual specifies that this is an [IEEE 754](https://en.wikipedia.org/wiki/IEEE_754) floating point number (big endian) the value ultimately decodes to `-1.0`. The precision of this float is inferred from the number of bytes to unpack and does not need to be configured. By selecting **Exclude Existing Fields** the final signal in this diagram contains only the unpacked vale in the new attribute(s) configured.

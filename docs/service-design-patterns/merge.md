@@ -12,7 +12,6 @@ With the default configuration, the block needs a signal to be processed by each
 {"letters": "B"}           none
 {"letters": "C"}           none
   ...                      ...
-
             |             |
             |             |
             V             V
@@ -24,7 +23,6 @@ With the default configuration, the block needs a signal to be processed by each
                    |
                    |
                    V
-
      {"letters": "A", "numbers": 0}
        none
      {"letters": "B", "numbers": 1}
@@ -41,7 +39,6 @@ By Setting **Notify Once** False (unchecked), every signal received at either in
 {"letters": "B"}           none
 {"letters": "C"}           none
   ...                      ...
-
             |             |
             |             |
             V             V
@@ -53,7 +50,6 @@ By Setting **Notify Once** False (unchecked), every signal received at either in
                    |
                    |
                    V
-
      {"letters": "A", "numbers": 0}
      {"letters": "A", "numbers": 1}
      {"letters": "B", "numbers": 1}
@@ -71,7 +67,6 @@ in this example, a **Goup By** expression is used to distinguish two different s
 {"id": "B", "foo": 3}     {"id": "B", "bar": -3}
   (1 sec delay)             (1 sec delay)
   ...                            ...
-
             |                   |
             |                   |
             V                   V
@@ -84,7 +79,6 @@ in this example, a **Goup By** expression is used to distinguish two different s
                       |
                       |
                       V
-
        {"id": "A", "foo": 1, "bar": -1}
        {"id": "B", "foo": 1, "bar": -1}
          (1 sec delay)
