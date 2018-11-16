@@ -1,5 +1,5 @@
 # Industrial Protocols: Ethernet/IP
-Able to communicate with any device that implements CIP Explicit Messaging, these blocks are useful for connecting to automation equipment and controllers and other generic CIP devices.
+Able to communicate with any device that implements [Ethernet/IP](https://www.odva.org/Technology-Standards/EtherNet-IP/Overview) Explicit Messaging, these blocks are useful for connecting to automation equipment and controllers and other generic CIP devices.
 
 ---
 
@@ -16,8 +16,7 @@ For every signal processed, both the [_EIPGetAttribute_](https://blocks.n.io/EIP
 |   Hostname: <host>                        |
 |   Class ID: <id>                          |
 |   Instance: <inst>                        |
-|   ...                                     |
-|                                           |
+|   Attribute: <attr>                       |
 +----------------------O--------------------+
                        |
                        |
@@ -30,7 +29,6 @@ For every signal processed, both the [_EIPGetAttribute_](https://blocks.n.io/EIP
 |     Format: float                         |
 |     Endian: big                           |
 |   Exclude Existing Fields: True           |
-|                                           |
 +----------------------O--------------------+
                        |
                        |
