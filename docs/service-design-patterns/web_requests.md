@@ -22,7 +22,7 @@ Every web request is made from a *client* to a *server*, which in this case is a
 |                                  |
 +----------------------------------+
 ```
-If running this example on `localhost`, one can visit `http://localhost:8182/web_test` in any web browser and see `Hello, world!` on a plain web page. SSL encryption of this endpoint uses the same configuration as the running nio instance. If **Require Authentication** is True, clients must include an `authorization` header in requests. For more information on using SSl in your instance please see [the docs](https://docs.n.io/running-nio/ssl.html).
+If running this example on `localhost`, one can visit `http://localhost:8182/web_test` in any web browser and see `Hello, world!` on a plain web page. SSL encryption of this endpoint uses the same configuration as the running nio instance. If **Require Authentication** is True, clients must include an `authorization` header in requests. For more information on using SSL in your instance please see [the docs](https://docs.n.io/running-nio/ssl.html).
 
 Included in the signal emitted by the _WebHandler_ is a new attribute *id*, which is used by the _WebOutput_ block's **RequestID** to send the response to the correct client and close the socket. Without a valid **RequestID** the _WebOutput_ will fail to build a response.
 
@@ -30,38 +30,39 @@ This example shows how to create a web service that returns the last temperature
 ```
           +--------------------------+
           | WebHandler               |
-          |  Endpoint: get_temp      |
-          |  Port: 8182              |           {"freezer": 1, "temp_C": -1.0}
-          |                          |           {"freezer": 2, "temp_C": -2.0}
-          +--------------O-----------+             ...
-                         |                                      +
-                         |                                      |
-                         V                                      |
-+------------------------O----------------------+               |
-| Modifier                                      |               |
-|   Exclude Existing Fields: False              |               |
-|   Fields:                                     |               |
-|     Attribute Name: freezer                   |               |
-|     Attribute Value: {{ $params["freezer"] }} |               |
-+------------------------O----------------------+               |
-                         |                                      |
-                         +---------+        +-------------------+
+          |  Endpoint: get_temp      |           {"freezer": "1", "temp_C": -1.0}
+          |  Host: 0.0.0.0           |           {"freezer": "2", "temp_C": -2.0}
+          |  Port: 8182              |            ...
+          +--------------O-----------+                           |
+                         |                                       |
+                         |                                       |
+                         V                                       |
++------------------------O----------------------+                |
+| Modifier                                      |                |
+|   Exclude Existing Fields: False              |                |
+|   Fields:                                     |                |
+|     Attribute Name: freezer                   |                |
+|     Attribute Value: {{ $params["freezer"] }} |                |
++------------------------O----------------------+                |
+                         |                                       |
+                         +---------+        +--------------------+
                                    |        |
                                    V        V
                       +------------O--------O------------+
                       | MergeStreams                     |
-                      |  Group By: {{ int($freezer) }}   |
+                      |  Group By: {{ $freezer }}        |
                       |  Notify Once: False              |
                       |                                  |
                       +-----------------O----------------+
                                         |
                                         |
                                         V
-                      +----------------O-----------------+
+                      +-----------------O----------------+
                       | WebOutput                        |
                       |  Response Body: {{ $temp_C }}    |
                       |  Response Status: 200            |
                       |                                  |
                       +----------------------------------+
 ```
-Note that while grouping the value of `freezer` is cast to an integer. The parameters included in a web request are generally strings, even if representing an integer. To group successfully all incoming values of `freezer` are forced to an integer before being evaluated for **Group By**. For more information see the standard [Built-in Types](https://docs.python.org/3/library/stdtypes.html).
+## The More You Know:
+The parameters included with a web request will always be strings, even if representing an integer. It's important that these datatypes match if used in a **Group By** expression, for simplicity this example assumes the values of `freezer` are strings. For more information see the standard [Built-in Types](https://docs.python.org/3/library/stdtypes.html).
