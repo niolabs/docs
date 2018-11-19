@@ -85,8 +85,13 @@
 
 * [Service Design Patterns](/service-design-patterns/README.md)
   * [Restructure and Group Signals](/service-design-patterns/join.md)
+  * [Using Signal Groups](/service-design-patterns/group_by.md)
   * [Publishing and Subscribing](/service-design-patterns/pub-sub.md)
   * [Simulators](/service-design-patterns/simulators.md)
+  * [Monitoring Streams](/service-design-patterns/monitor_stream.md)
+  * [Handling Web Requests](/service-design-patterns/web_requests.md)
+  * [Industrial Protocols: Ethernet/IP](/service-design-patterns/eip_comms.md)
+
 * [Data](/data/README.md)
   * [Cloud Storage](/data/cloud-storage.md)
   * [Persistence](/data/persistence.md)
