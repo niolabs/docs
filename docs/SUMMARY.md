@@ -85,6 +85,7 @@
 * Building with nio
 
 * [Service Design Patterns](/service-design-patterns/README.md)
+  * [Signal Structure](/service-design-patterns/signal-structure.md)
   * [Restructure and Group Signals](/service-design-patterns/join.md)
   * [Using Signal Groups](/service-design-patterns/group_by.md)
   * [Publishing and Subscribing](/service-design-patterns/pub-sub.md)
