@@ -1,54 +1,24 @@
 # Documenting your block
 
-There is a standard way to document a nio Block. Much of this documentation can be generated automatically using the `nio-cli`.
+There is a preferred way to document a nio Block, if you started by using the [Block Template](https://github.com/nio-blocks/block_template) the recommended file structure is already in place and you only need to write a helpful README. For more information on using Markdown, see the official [guide on GitHub](https://guides.github.com/features/mastering-markdown/). If you would like to submit your block to the [nio blocks library](https://blocks.n.io) for public use please [send us a message](mailto:blocks@n.io) with a link to your repository!
 
-> **[info] Note**
->
-> These instructions assume that you are working in a nio project directory or that your block directory is inside of a directory labeled `blocks`. In other words, "the root of your project" is equivalent to the directory where you can access your block repo with the path `blocks/<your block repo>`.
->
+## Create or modify the following files:
+### README.md
+This file is targeted to developers, listing any extra installation requirements, dependencies, or other information that a user may need to get these blocks working.
 
-1. Create a `release.json` file. Once you have built your block, navigate to the root of your project directory (or, if you aren't developing your block in a project directory, to the directory below `blocks/<block repo name>`) and type
+**Style Guide:**
+A root-level readme should always include at least two sections: *Blocks in this collection* and *Dependencies*. Other sections such as *Notes* and *Installation* may be included as necessary. Section headers should be size H2 (start a line with `##`), and list each value under it on a new line. For example:
 
-  ```
-  nio buildrelease <block repo name>
-  ```
+```
+## Blocks in this Collection
+  - (Example)[docs/example_block.md]
 
-  This will create a `release.json` file with meta information about your block.
+## Dependencies
+None
+```
 
-2. Create a `spec.json` file. To create your `spec.json` file, type
+### docs/example_block.md
+Create one file like this for every block included in this repository. This file should include all of the configurable properties and commands for the block, as well as examples of its use. Users will reference this file while building services, for non-custom blocks this is the file displayed in block help windows and the nio blocks library. Examples should illustrate the block's operation given a variety of configurations and conditions.
 
-  ```
-  nio buildspec <block repo name>
-  ```
-
-  Navigate into your `spec.json` file and manually add a text string description to any key labeled "description". You will need to add a description to the block and its properties, commands, inputs, and outputs.
-
-  ```py
-  "description": "List of attribute names and corresponding values to add to the incoming signals."
-  ```
-
-3. Generate your `README.md` file. Once your `spec.json` is complete, you are ready to build your block's README. Navigate into the block folder and type
-
-  ```
-  nio buildreadme
-  ```
-
-  This will populate the README. Manually add any dependencies in this format
-
-  ```
-  Dependencies
-  ------------
-  - face_recognition
-  - numpy
-  - opencv-python
-  ```
-
-  You can also add example code and other helpful information at the bottom.
-
-4. Finally, check your block. To check your block, remain in your block directory and run
-
-  ```
-  nio blockcheck
-  ```
-
-  to check and lint your block. It will check PEP8 styles, confirm you have added descriptions to your `spec.json`, and check your `README.md`, `release.json`, and class and file names.
+**Style Guide:**
+Block readmes should begin with the block's name as an H1 header (line starts with `#`). This is the name of the block's defining class, and the name displayed on blocks inside the System Designer. Include a section for *Properties*, *Advanced Properties*, and *Commands* as necessary (again, all size H2).
