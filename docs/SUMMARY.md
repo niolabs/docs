@@ -35,6 +35,7 @@
     * [The nio Framework](/blocks/block-development/framework.md)
     * [Framework Changelog](/blocks/block-development/framework-changelog.md)
     * [Mixins](/blocks/block-development/mixins.md)
+  * [Managing Blocks](/blocks/managing.md)
 * [Services](/services/README.md)
   * [Service Testing](/services/service-testing.md)
 * [Instances](/instances/README.md)
