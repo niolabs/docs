@@ -1,6 +1,6 @@
 Open a terminal (Applications > Utilities > Terminal on MacOS), and install nio using Python’s pip3 installer (verify the filepath and binary filename below—the `X`s represent the date of the binary in YYYYMMDD format):
 ```
-pip3 install -U ~/Downloads/nio_lite-XXXXXXXX-py3-none-any.whl
+pip3 install -U ~/Downloads/nio_full-XXXXXXXX-py3-none-any.whl
 ```
 > MacOS Users: You may be prompted to install a dependency called "clang". This is a standard component that comes directly from Apple, so it's safe to click "OK" and re-run the command above.
 

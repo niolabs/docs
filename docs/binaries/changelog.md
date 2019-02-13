@@ -16,7 +16,7 @@
 ## 20180524
 
 **Added**<br>
-- updated package metadata shown in `pip3 show nio-lite`
+- updated package metadata shown in `pip3 show nio-full`
 - block properties have an `advanced` option for display purposes
 
 **Changed**<br>

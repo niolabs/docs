@@ -49,7 +49,7 @@ Open a terminal, and install nio using Python’s pip3 installer (substitute you
 
 From the command line, type
 ```
-pip3 install -U ~/Downloads/nio_lite-XXXXXXXX-py3-none-any.whl --user
+pip3 install -U ~/Downloads/nio_full-XXXXXXXX-py3-none-any.whl --user
 ```
 You can test that nio is correctly installed by running the following command:
 ```

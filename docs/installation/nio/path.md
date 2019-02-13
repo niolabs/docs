@@ -2,7 +2,7 @@ In your terminal (**Applications > Utilities > Terminal**), find the location of
 
 For Example:
 ```
-pip3 show nio-lite
+pip3 show nio-full
 ```
 Would return something similar to the following path under **Location**:
 ```

@@ -42,7 +42,7 @@ You will also need the following, provided by nio:
 
 Open a terminal, and install nio using Python’s pip3 installer (substitute your filepath and binary filename below—the `X`s represent the date of the binary in YYYYMMDD format):
 ```
-pip3 install -U nio_lite-XXXXXXXX-py3-none-any.whl
+pip3 install -U nio_full-XXXXXXXX-py3-none-any.whl
 ```
 You can test that nio is correctly installed by running the following command:
 ```
