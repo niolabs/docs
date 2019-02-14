@@ -42,6 +42,7 @@
     * [Persistence](/blocks/block-mixins/persistence.md)
     * [Retry](/blocks/block-mixins/retry.md)
   * [Managing Blocks](/blocks/managing.md)
+  * [Standard Library](/blocks/standard-library.md)
 * [Services](/services/README.md)
   * [Service Testing](/services/service-testing.md)
 * [Instances](/instances/README.md)
