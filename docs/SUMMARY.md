@@ -76,6 +76,8 @@
   * [Third Party Tools](/monitoring/third-party/README.md)
     * [Google Stackdriver](/monitoring/third-party/stackdriver.md)
     * [Datadog](/monitoring/third-party/datadog.md)
+  * [Logging](/monitoring/logging/README.md)
+    * [AWS CloudWatch Logs](/monitoring/logging/cloud-watch.md)
 * [CLI](/cli/README.md)
   * [New](/cli/new.md)
   * [Add](/cli/add.md)
