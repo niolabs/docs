@@ -1,5 +1,7 @@
 # Installing nio on a <span class="allow-caps">Raspberry Pi</span>
 
+The easiest installation method is to run [this script](https://github.com/niolabs/nio_install) by following the instructions in the README of that github repository. This is recommended for most users and/or fresh [Raspbian images](https://www.raspberrypi.org/downloads/raspbian/). Otherwise, if you have an existing environment set up on your Pi, follow the instructions below.
+
 > **[info] <span class="allow-caps">Raspbian</span> System Requirements**
 >
 > **GCC** or similar C compiler<br />
