@@ -52,7 +52,7 @@ WantedBy=multi-user.target
 Use the arrow keys to move your cursor around the file, and:
 1) Update `Description=`, replace `<my_project>` with the name of your nio project.
 1) Update `WorkingDirectory=`, the absolute path to the nio project.
-1) Update `ExecStart=`, the absolute path to the installed `niod` executable. If you are using a [virtual environment](https://docs.n.io/deployment/best-practices/) (highly recommended) use the path to `niod` within that environment.
+1) Update `ExecStart=`, the absolute path to the installed `niod` executable. If you are using a [virtual environment](/deployment/best-practices/) (highly recommended) use the path to `niod` within that environment.
 
 Press `Ctrl X` to exit, followed by `Y` and `Enter` to save changes, and then enable the new service with the following commands:
 
@@ -93,7 +93,7 @@ The Task Scheduler provides a simple interface to start a process at the selecte
 1. [Actions] Tab
   - Create a new action
   - Select `Start a Program` from the drop-down
-  - Enter `niod` for *Program/Script*. If you are using a [virtual environment](https://docs.n.io/deployment/best-practices/) (highly recommended) put the absolute path to `niod` inside that environment, for example: `C:\Users\<user>\nio\env\bin\niod`
+  - Enter `niod` for *Program/Script*. If you are using a [virtual environment](/deployment/best-practices/) (highly recommended) put the absolute path to `niod` inside that environment, for example: `C:\Users\<user>\nio\env\bin\niod`
   - Enter the absolute path to the project folder for *Start In*, for example: `C:\Users\<user>\nio\projects\<my_project>`
 1. [Settings] Tab
     - Verify these options, by default Windows will stop tasks that run longer than 3 days.
