@@ -61,7 +61,7 @@
   * [Reference](/system-designer/reference.md)
   * [Browser Support](/system-designer/browser-support.md)
 * [Deploy](/deployment/README.md)
-  * [Long-Running](/deployment/long-running/README.md)
+  * [Long-Running](/deployment/long-running.md)
   * [nio Deployment Manager](/deployment/nio/README.md)
     * [Release Cycle](/deployment/nio/release.md)
     * [Direct Deployment](/deployment/nio/direct.md)
