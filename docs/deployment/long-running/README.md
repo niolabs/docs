@@ -31,7 +31,7 @@ nohup niod -r /home/<user>/nio/projects/<my_project> 2>&1 > /dev/null &
 
 [**systemd**](https://wiki.debian.org/systemd) is an **init** system that comes included with many Linux distributions. Running nio as a systemd service will start it automatically with the system, and allows you to manage the instance using [systemctl](https://manpages.debian.org/stretch/systemd/systemctl.1.en.html).
 
-To create a `systemd` service nio, create a new systemd service file: `sudo nano /etc/systemd/system/<my_project>.service`, replacing `<my_project>` with the actual name of your project. `nano` is a basic text editor, when it launches you will see an empty file with controls along the bottom of the screen. Copy and paste the following into the empty file:
+To create a `systemd` service for nio, create a new file: `sudo nano /etc/systemd/system/<my_project>.service`, replacing `<my_project>` with the actual name of your project. `nano` is a basic text editor, when it launches you will see an empty file with controls along the bottom of the screen. Copy and paste the following into the empty file:
 
 ```
 [Unit]
