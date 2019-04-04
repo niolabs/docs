@@ -64,17 +64,17 @@ sudo systemctl enable <my_project>.service
 The nio project given in `WorkingDirectory` will be started automatically with the system (using the executable and packages installed at `ExecStart`), but has not been started yet.
 
 ```
-sudo systemctl <my_project> start
+sudo systemctl start <my_project>
 ```
 
 Stopping is similar:
 ```
-sudo systemctl <my_project> stop
+sudo systemctl stop <my_project>
 ```
 
 Check the status and recent logs of your nio instance with
 ```
-sudo systemctl <my_project> status
+sudo systemctl status <my_project>
 ```
 
 ## Run nio with Windows Task Scheduler
