@@ -5,7 +5,7 @@ When you're ready to deploy your project, you will probably need a nio instance 
 ---
 ## Run with <span class="allow-caps">Docker</span>
 
-Running the nio Platform as a Docker container allows you to manage its lifecycle through standard Docker deployment practices and use orchestration managers like Kubernetes. Check out our [guide to running nio with Docker](/deployment/docker.md) for more information on how to do this.
+Running the nio Platform as a Docker container allows you to manage its lifecycle through standard Docker deployment practices and use orchestration managers like Kubernetes. Check out our [guide to running nio with Docker](/deployment/third-party/docker.md) for more information on how to do this.
 
 >**[info] Note**
 >
