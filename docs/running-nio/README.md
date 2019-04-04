@@ -61,6 +61,10 @@ Once your instance is loaded and available, you can add services and blocks in t
 
 Available nio Blocks can be explored in the nio [Block Library](https://blocks.n.io) where you will find a summary of the block's purpose, a list of its properties, commands, inputs, and outputs, and a link to the block code repository.
 
+> **[info] Long-Running**
+>
+> So far we have covered running `niod` inside your terminal, when it's time to deploy your project, including starting automatically, please see the [Long-Running Deployment docs](/deployment/long-running.md).
+
 ---
 ## Add an existing local instance/project to the <span class="allow-caps">System Designer</span>
 
@@ -124,6 +128,16 @@ tail -f /path/to/my_project/logs/main.log
 nio shutdown -p {NIOPORT}
 ```
 > NIOPORT is set in your project's nio.conf file under the [user_defined] section
+
+---
+## Windows - Create a desktop shortcut
+- Right click on the Windows Desktop, and select `New > Shortcut`
+- Enter the absolute path to the `niod` executable to `Location`. If you are using a [virtual environment](/deployment/best-practices/) (highly recommended), `niod.exe` will be inside the environment's `Scripts\` folder, for example `C:\Users\<user>\nio\env\Scripts\niod.exe`
+- Enter a `Name` for the shortcut, for example the name of your project.
+- Find the newly created shortcut on your desktop, right click it, and select `Properties`.
+- Enter the absolute path to your project to `Start in`, for example `C:\Users\<user>\nio\projects\<my_project>`
+- Click `Apply`. Your shortcut is ready to be used, and can be pinned to the Start Menu or Taskbar.
+- Closing the spawned terminal window will terminate the nio process.
 
 ---
 ## `nio.env` is obsolete
