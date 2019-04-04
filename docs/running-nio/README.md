@@ -63,7 +63,7 @@ Available nio Blocks can be explored in the nio [Block Library](https://blocks.n
 
 > **[info] Long-Running**
 >
-> So far we have covered running `niod` inside your terminal, when it's time to deploy your project, including starting automatically, please see the [Long-Running Deployment docs](/deployment/long-running/).
+> So far we have covered running `niod` inside your terminal, when it's time to deploy your project, including starting automatically, please see the [Long-Running Deployment docs](/deployment/long-running).
 
 ---
 ## Add an existing local instance/project to the <span class="allow-caps">System Designer</span>
