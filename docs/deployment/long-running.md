@@ -77,23 +77,8 @@ Check the status and recent logs of your nio instance with
 sudo systemctl status <my_project>.service
 ```
 
-## Run nio with Windows Task Scheduler
+## Windows - Run nio as a Service
 
-The Task Scheduler provides a simple interface to start a process at the selected trigger, in this case start up. Note that the Task Scheduler does not provide any support for restarting a stopped process.
-1. Start the Task Scheduler
-  - Start
-  - Type to search for `task scheduler`
-  - press [Enter]
-1. Click `Create Task` from the right pane
-1. [General] Tab
-  - Enter a name for the task and select a user. If nio is intended to run without a specific user logged on, consult your IT department to set up a service account for this machine, and select that account.
-1. [Triggers] Tab
-  - Create a new trigger
-  - Select the desired value from the drop-down, such as `At startup`
-1. [Actions] Tab
-  - Create a new action
-  - Select `Start a Program` from the drop-down
-  - Enter `niod` for *Program/Script*. If you are using a [virtual environment](/deployment/best-practices/) (highly recommended) put the absolute path to `niod` inside that environment, for example: `C:\Users\<user>\nio\env\bin\niod`
-  - Enter the absolute path to the project folder for *Start In*, for example: `C:\Users\<user>\nio\projects\<my_project>`
-1. [Settings] Tab
-    - Verify these options, by default Windows will stop tasks that run longer than 3 days.
+To run as a Service on a Windows host machine, the `niod` executable needs an interface (wrapper) through which the operating system can send commands and get a status of the running process. This wrapper is provided by niolabs in this [github repository](https://github.com/niolabs/nio_winservice).
+
+{% include "https://github.com/niolabs/nio_winservice/blob/master/README.md" %}
