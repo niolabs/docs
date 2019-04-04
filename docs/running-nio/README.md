@@ -130,6 +130,16 @@ nio shutdown -p {NIOPORT}
 > NIOPORT is set in your project's nio.conf file under the [user_defined] section
 
 ---
+## Windows - Create a desktop shortcut
+- Right click on the Windows Desktop, and select `New > Shortcut`
+- Enter the absolute path to the `niod` executable to `Location`. If you are using a [virtual environment](/deployment/best-practices/) (highly recommended), `niod.exe` will be inside the environment's `Scripts\` folder.
+- Enter a `Name` for the shortcut, for example the name of your project.
+- Find the newly created shortcut on your desktop, right click it, and select `Properties`.
+- Enter the absolute path to your project to `Start in:`.
+- Click `Apply`. Your shortcut is ready to be used, and can be pinned to the Start Menu or Taskbar.
+- Closing the spawned terminal window will terminate the nio process.
+
+---
 ## `nio.env` is obsolete
 
 nio Binaries released after January 26, 2018, no longer use the `nio.env` file for user-defined variables. Instead, all of these variables are located under the `[user_defined]` section of `nio.conf`.
