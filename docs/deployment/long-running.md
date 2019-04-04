@@ -2,14 +2,14 @@
 
 When you're ready to deploy your project, you will probably need a nio instance that starts automatically with the host system and keeps running. Whether that host is a cloud server, a Raspberry Pi, or anywhere in between, the operating system will offer a few methods to control the running nio Platform. In addition to platform-independent options such as Docker, this document covers the basic configuration of nio system services for Linux, MacOS, and Windows.
 
+>**[info] Note**
+>
+>In the following examples, items inside `< ... >` need to be replaced with the actual values for your system. For example, `<my_project>` is replaced with the name you used when creating the project with `nio new <my_project> ...`, and on a Raspberry Pi `<user>` will often be replaced with the default user `pi`.
+
 ---
 ## Run with <span class="allow-caps">Docker</span>
 
 Running the nio Platform as a Docker container allows you to manage its lifecycle through standard Docker deployment practices and use orchestration managers like Kubernetes. Check out our [guide to running nio with Docker](/deployment/third-party/docker.md) for more information on how to do this.
-
->**[info] Note**
->
->In the following examples, items inside `< ... >` need to be replaced with the actual values for your system. For example, `<my_project>` is replaced with the name you used when creating the project with `nio new <my_project> ...`, and on a Raspberry Pi `<user>` will often be replaced with the default user `pi`.
 
 ---
 ## Linux, MacOS - Run nio in the background
