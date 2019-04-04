@@ -1,6 +1,6 @@
 # Long-Running
 
-When you're ready to deploy your project, you will probably need a nio instance that starts automatically with the host system and keep running. Whether that host is a cloud server, a Raspberry Pi, or anywhere in between, the operating system will offer a few methods to control the running nio Platform. In addition to platform-independent options such as Docker, this document covers the basic configuration of nio system services for Linux, MacOS, and Windows.
+When you're ready to deploy your project, you will probably need a nio instance that starts automatically with the host system and keeps running. Whether that host is a cloud server, a Raspberry Pi, or anywhere in between, the operating system will offer a few methods to control the running nio Platform. In addition to platform-independent options such as Docker, this document covers the basic configuration of nio system services for Linux, MacOS, and Windows.
 
 ---
 ## Run with <span class="allow-caps">Docker</span>
@@ -64,17 +64,17 @@ sudo systemctl enable <my_project>.service
 The nio project given in `WorkingDirectory` will be started automatically with the system (using the executable and packages installed at `ExecStart`), but has not been started yet.
 
 ```
-sudo systemctl start <my_project>
+sudo systemctl start <my_project>.service
 ```
 
 Stopping is similar:
 ```
-sudo systemctl stop <my_project>
+sudo systemctl stop <my_project>.service
 ```
 
 Check the status and recent logs of your nio instance with
 ```
-sudo systemctl status <my_project>
+sudo systemctl status <my_project>.service
 ```
 
 ## Run nio with Windows Task Scheduler
