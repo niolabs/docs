@@ -81,4 +81,4 @@ sudo systemctl status <my_project>.service
 
 To run as a Service on a Windows host machine, the `niod` executable needs an interface (wrapper) through which the operating system can send commands and get a status of the running process. This wrapper is provided by niolabs in this [github repository](https://github.com/niolabs/nio_winservice).
 
-{% include "git+https://github.com/niolabs/nio_winservice/README.md" %}
+{% include "git+https://github.com/niolabs/nio_winservice.git/README.md" %}
