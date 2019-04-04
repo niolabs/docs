@@ -61,6 +61,12 @@ Once your instance is loaded and available, you can add services and blocks in t
 
 Available nio Blocks can be explored in the nio [Block Library](https://blocks.n.io) where you will find a summary of the block's purpose, a list of its properties, commands, inputs, and outputs, and a link to the block code repository.
 
+> **[info] Long-Running**
+>
+> So far we have covered running `niod` inside your terminal, when it's time to deploy your project, including starting automatically, please see the [Long-Running Deployment docs](/deployment/long-running/).
+>
+> To connect to a local HTTP instance of nio with the System Designer, you'll need to log into the designer via HTTP at [http://app.n.io/design](http://app.n.io/design). All of your instances and systems will be the same, the only difference is, the nio commands to edit these instances won't happen over HTTPS. Read more about SSL support [here](/running-nio/ssl.html).
+
 ---
 ## Add an existing local instance/project to the <span class="allow-caps">System Designer</span>
 
