@@ -49,10 +49,10 @@ Restart=always
 WantedBy=multi-user.target
 ```
 
-Use the arrow keys to move your cursor around the file, and:
-1) Update `Description=`, replace `<my_project>` with the name of your nio project.
-1) Update `WorkingDirectory=`, the absolute path to the nio project.
-1) Update `ExecStart=`, the absolute path to the installed `niod` executable. If you are using a [virtual environment](/deployment/best-practices/) (highly recommended) use the path to `niod` within that environment.
+Use the arrow keys to move your cursor around the file, and:  
+1) Update `Description=`, replace `<my_project>` with the name of your nio project.  
+2) Update `WorkingDirectory=`, the absolute path to the nio project.  
+3) Update `ExecStart=`, the absolute path to the installed `niod` executable. If you are using a [virtual environment](/deployment/best-practices/) (highly recommended) use the path to `niod` within that environment.
 
 Press `Ctrl X` to exit, followed by `Y` and `Enter` to save changes, and then enable the new service with the following commands:
 
