@@ -42,14 +42,25 @@ Just like the `unittest.TestCase`, nio supports the setup/teardown pattern. This
 ## Helper methods
 
 - **configure_block(block, block_properties)**<br>The process of configuring and initializing blocks manually is somewhat nuanced (and not something we want you to worry about). We provide this method to configure your block instance semi-automatically. Just pass the block object itself and a dictionary containing any block properties you want to configure (and the associated values).
-- **assert_num_signals_notified(num, block=None)**<br>This method provides access to the total number of signals emitted over the course of the current test. If `block` is not `None`, then you will receive the number of signals emitted by that block over its lifetime.
 - **last_signal_notified(output_id)**<br>This method returns the last signal that was emitted from a particular output. If an **output_id** is not specified, it will return the last signal emitted from any output on the block.
+
+---
+
+## Assertion methods
+
+- **assert_block_status(block, status)**<br>Assert that the `block` is in `status`, which is one of `""`, `"ok"`, `"warning"`, or `"error"`.
+- **assert_last_signal_notified(signal, output_id=DEFAULT_TERMINAL)**<br>Assert that the last signal notified from `output_id` matches `signal`. See also `assert_signal_notified`.
+- **assert_last_signal_list_notified(signal_list, output_id=DEFAULT_TERMINAL)**<br>Assert that the last signal list notified from `output_id` matches `signal_list`. See also `assert_signal_list_notified`.
+- **assert_num_mgmt_signals_notified(num, block=None)**<br>Compare the total number of management signals notified from `block` to `num`, and fail if not equal. If `block` is not given (defaulting to `None`) then all blocks will be considered in the comparison. Note that during block testing there is generally only one block configured, so `block` generally does not need to be specified when calling this method.
+- **assert_num_signals_notified(num, block=None)**<br>Compare the total number of signals notified from `block` to `num`, and fail if not equal. If `block` is not given (defaulting to `None`) then all blocks will be considered in the comparison. Note that during block testing there is generally only one block configured, so `block` generally does not need to be specified when calling this method.
+- **assert_signal_notified(signal, position=None, output_id=DEFAULT_TERMINAL)**<br>Check that `signal` is in the list of all signals notified from `output_id`, and fail if an exact match is not found. Optionally pass `position` to assert the index of `signal`. If your block has more than one output terminal, pass a `terminal_id` to `output_id`.
+- **assert_signal_list_notified(signal_list, position=None, output_id=DEFAULT_TERMINAL)**<br>Check that `signal_list` is in the list of all signal lists notified from `output_id`, and fail if an exact match is not found. Optionally pass `position` to assert the index of `signal`. If your block has more than one output terminal, pass a `terminal_id` to `output_id`.
 
 ---
 
 ## Overridable methods
 
--   **get_test_modules()**<br>By default, `NIOBlockTestCase` automatically initializes the logging, threading, scheduler, and security modules. However, you can customize this by overriding this method and returning a list of strings corresponding to the particular modules you want to initialize.
+- **get_test_modules()**<br>By default, `NIOBlockTestCase` automatically initializes the logging, threading, scheduler, and security modules. However, you can customize this by overriding this method and returning a list of strings corresponding to the particular modules you want to initialize.
     * logging
     * threading
     * scheduler
@@ -57,10 +68,27 @@ Just like the `unittest.TestCase`, nio supports the setup/teardown pattern. This
     * communication
     * persistence
     * web
--   **signals_notified(signals, output_id)**<br>This method gets called every time signals are emitted in your tests. If you'd like to record something in the test case, trigger an event, or perform some aggregation when that happens, override this method. One common use is to add `self.signals = defaultdict(list)` to `setUp`.
+- **signals_notified(signals, output_id)**<br>This method gets called every time signals are emitted in your tests. If you'd like to record something in the test case, trigger an event, or perform some aggregation when that happens, override this method.
 
 ```python
+def setUp(self):
+    super().setUp()
+    self.signals = defaultdict(list)
+
 def signals_notified(self, signals, output_id):
+    super().signals_notfied(signals, output_id)
+	self.signals[output_id].extend(signals)
+```
+
+- **management_signal_notified(signals)**<br>This method gets called every time signals are emitted in your tests. If you'd like to record something in the test case, trigger an event, or perform some aggregation when that happens, override this method.
+
+```python
+def setUp(self):
+    super().setUp()
+    self.signals = defaultdict(list)
+
+def signals_notified(self, signals, output_id):
+    super().signals_notfied(signals, output_id)
 	self.signals[output_id].extend(signals)
 ```
 
