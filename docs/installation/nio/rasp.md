@@ -29,9 +29,13 @@ The nio Platform requires the following for local installation.
 > **Pip**<br />
 >    Pip is a package management system built for software written in Python. We recommend updating to the most recent version of pip3.<br>
 >    In your terminal, type `pip3 --version` to see which version of pip you have installed.<br>
->    If you do not have pip installed you can do so by typing the following command into your terminal:<br> 
->   `curl https://bootstrap.pypa.io/get-pip.py | python3`<br>
->    Update to the most recent version of pip3 with the following commands: 
+>    If you do not have pip installed you can do so by running the following commands in your terminal:<br> 
+>```
+>wget https://bootstrap.pypa.io/get-pip.py
+>python3 get-pip.py --user
+>echo 'export PATH=/home/pi/.local/bin:$PATH' >> ~/.bashrc && source ~/.bashrc
+>```
+>    Or, update to the most recent version of pip3 with the following commands: 
 >```
 >curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 >python3 get-pip.py —-user
