@@ -5,16 +5,16 @@ The easiest installation method is to run [this script](https://github.com/niola
 > **[info] <span class="allow-caps">Raspbian</span> System Requirements**
 >
 > **GCC** or similar C compiler<br />
-> Check for an installation of GCC by typing the command `gcc --version` into your terminal.<br>
+> Check for an installation of GCC by typing the command `gcc --version` into your terminal. This should have been included with Raspbian.<br>
 > If you do not have a C complier, follow the instructions to install GCC [here](https://gcc.gnu.org/wiki/InstallingGCC).
 >
 > **Git 1.8.4 or later**<br />
 >    Git is a fast, scalable, distributed version-control system with a rich command set that the nio System Designer relies on for adding and updating blocks as part of your nio instance.<br />
 >    In your terminal, type `git --version` to see if git is installed.<br>
->    Follow this [installation guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to get started with Git.
+>    Follow this [installation guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to get started with Git, `sudo apt install git`
 >
 > **APT** or similar package tool (_recommended_ )<br />
-> Check for an installation of APT by typing the command `apt --version` into your terminal.
+> Check for an installation of APT by typing the command `apt --version` into your terminal. This should have been included with Raspbian.
 >
 
 The following must be in your environment to run nio. You can install these requirements globally if you have a dedicated, fresh machine running Python and nio. If you intend to run other Python projects on the same machine, we recommend you avoid version conflicts by using a separate Python environment containing these requirements.
@@ -53,10 +53,13 @@ You will also need the following, provided by nio:
 
 Open a terminal, and install nio using Python’s pip3 installer (substitute your filepath and binary filename below—the `X`s represent the date of the binary in YYYYMMDD format):
 
-> **[info] Software Updates**
+> **[info] Additional Dependencies**
 >
-> It is recommended, and overall good practice, to begin all new software installations by running `sudo apt update`
-
+> Installing the default communication module's dependencies requires that the following be executed before continuing:
+>```
+>sudo apt update
+>sudo apt install python3-dev libssl-dev libffi-dev
+>```
 From the command line, type
 ```
 pip3 install -U ~/Downloads/nio_full-XXXXXXXX-py3-none-any.whl --user
