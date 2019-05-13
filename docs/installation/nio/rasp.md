@@ -60,6 +60,7 @@ Open a terminal, and install nio using Python’s pip3 installer (substitute you
 >sudo apt update
 >sudo apt install python3-dev libssl-dev libffi-dev
 >```
+
 From the command line, type
 ```
 pip3 install -U ~/Downloads/nio_full-XXXXXXXX-py3-none-any.whl --user
