@@ -31,14 +31,14 @@ Before running nio, the `nio.conf` file of the project will need to be configure
 
 Once you have downloaded your binary from the [binary downloads page](https://account.n.io/binaries/download), you can build a corresponding Docker image from that binary.
 
-1. Copy your wheel file into the directory.
+1. Copy your wheel file into the `nio-docker` directory. Note that you may need to specify different paths in this example:
 ```
-cp your-wheel-file.whl nio-docker
+cp nio_full-XXXXXXXX-py3-none-any.whl nio-docker
 ```
 
-2. Build the Docker image by passing the name of the wheel file as the `WHEEL_FILE` build argument (the `X`s represent the date of the binary in YYYYMMDD format):
+2. Build the Docker image by passing the name of the wheel file as the `WHEEL_FILE` build argument (the `X`s represent the date of the binary in YYYYMMDD format). In this example, the image will be named `nio_full:latest`.
 ```
-docker build -t my-binary-image:latest --build-arg WHEEL_FILE=nio_full-XXXXXXXX-py3-none-any.whl .
+docker build -t nio_full:latest --build-arg WHEEL_FILE=nio_full-XXXXXXXX-py3-none-any.whl .
 ```
 
 ---
@@ -49,11 +49,11 @@ Assuming you have built a Docker image from your binary, you can run the image f
 To run the nio binary with an empty project, just run the image like so:
 
 ```
-docker run -p 8181:8181 my-binary-image:latest
+docker run -p 8181:8181 nio_full:latest
 ```
 
 You can also volume mount in an existing project directory on disk like so:
 
 ```
-docker run -p 8181:8181 -v /path/to/your/project:/nio/project my-binary-image:latest
+docker run -p 8181:8181 -v /path/to/your/project:/nio/project nio_full:latest
 ```
